@@ -66,5 +66,21 @@ python -m nlp.pipeline "pt dtg c/o kencing berbuih, kaki bengkak 3 ari, hx kenci
 
 **Caveat — these numbers are optimistic.** The test notes were written by the same author as the lexicon,
 so they share its vocabulary. A credible number needs test notes written by people who have never seen
-the lexicon (nursing contacts, teammates), ideally reviewed by a clinician. The plan's headline comparison
-(system vs. a plain-prompted LLM) is not implemented yet.
+the lexicon (nursing contacts, teammates), ideally reviewed by a clinician.
+
+## CatatKod vs. a plain-prompted LLM
+
+`training/benchmark_llm.py` asks an LLM for ICD-11 codes on the same held-out notes (no lexicon, no
+normaliser) in two variants: any ICD-11 code, and choose only from the 121 tier-1 codes plus each note's
+tier-2 catalogue suggestions. It scores with the same `metrics()` as `train.py`. Responses are cached in
+`artifacts/llm_cache.json`; results go to `artifacts/llm_benchmark.json`.
+
+```bash
+export GEMINI_API_KEY=...            # or put it in backend/.env; GEMINI_MODEL defaults to gemini-2.5-flash
+export SEALION_API_KEY=...           # optional; SEALION_MODEL defaults to aisingapore/Gemma-SEA-LION-v4-27B-IT
+python training/benchmark_llm.py --update-readme   # fills the table below
+```
+
+<!-- llm-benchmark:start -->
+*Not run yet — no API key was available. Run the command above to fill this table.*
+<!-- llm-benchmark:end -->

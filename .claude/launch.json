@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "api",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd backend && PORT=5055 FRONTEND_ORIGINS=http://localhost:5173,http://127.0.0.1:5173 .venv/bin/python app.py"],
+      "port": 5055
+    },
+    {
+      "name": "web",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "PORT=5173 VITE_API_BASE_URL=http://localhost:5055 npx -y pnpm@10.34.3 dev"],
+      "port": 5173
+    }
+  ]
+}

@@ -1,0 +1,2253 @@
+{
+  "test_notes": 105,
+  "prompt_instruction": "You are a clinical coder. Below is a short note from a Malaysian primary-care clinic, written in colloquial Malay with English and clinical shorthand.\nList the ICD-11 MMS codes for every finding or condition the note states as present. Code symptoms even when a diagnosis is also given. Do not code findings that are negated (e.g. \"takde demam\") or only suspected (e.g. \"?denggi\", \"r/o TB\").\nAnswer with JSON only: {\"codes\": [\"<ICD-11 code>\", ...]}",
+  "catalogue_suggestions_k": 5,
+  "results": {
+    "sealion:open": {
+      "provider": "sealion",
+      "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+      "variant": "open",
+      "metrics": {
+        "micro_precision": 0.028846153846153848,
+        "micro_recall": 0.03614457831325301,
+        "micro_f1": 0.03208556149732621,
+        "macro_f1_present_codes": 0.02181571815718157,
+        "exact_match": 0.01904761904761905,
+        "codes_in_split": 82
+      },
+      "out_of_tier1_codes": 191,
+      "not_in_who_catalogue": 54,
+      "empty_answers": 3
+    },
+    "sealion:tier1": {
+      "provider": "sealion",
+      "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+      "variant": "tier1",
+      "metrics": {
+        "micro_precision": 0.6983240223463687,
+        "micro_recall": 0.7530120481927711,
+        "micro_f1": 0.7246376811594203,
+        "macro_f1_present_codes": 0.6860378830534176,
+        "exact_match": 0.5333333333333333,
+        "codes_in_split": 82
+      },
+      "out_of_tier1_codes": 34,
+      "not_in_who_catalogue": 0,
+      "empty_answers": 1
+    }
+  },
+  "catatkod_results": {
+    "naive_keyword_baseline": {
+      "micro_precision": 0.8315789473684211,
+      "micro_recall": 0.9518072289156626,
+      "micro_f1": 0.8876404494382022,
+      "macro_f1_present_codes": 0.9100517368810052,
+      "exact_match": 0.7047619047619048,
+      "codes_in_split": 82
+    },
+    "catatkod_rules": {
+      "micro_precision": 0.9575757575757575,
+      "micro_recall": 0.9518072289156626,
+      "micro_f1": 0.9546827794561934,
+      "macro_f1_present_codes": 0.9474190563143217,
+      "exact_match": 0.8761904761904762,
+      "codes_in_split": 82
+    },
+    "catatkod_ml": {
+      "micro_precision": 0.9069767441860465,
+      "micro_recall": 0.9397590361445783,
+      "micro_f1": 0.9230769230769231,
+      "macro_f1_present_codes": 0.9501290489095369,
+      "exact_match": 0.7523809523809524,
+      "codes_in_split": 82
+    },
+    "catatkod_ml_plus_rules": {
+      "micro_precision": 0.9421965317919075,
+      "micro_recall": 0.9819277108433735,
+      "micro_f1": 0.9616519174041298,
+      "macro_f1_present_codes": 0.9711124361052624,
+      "exact_match": 0.8761904761904762,
+      "codes_in_split": 82
+    }
+  },
+  "predictions": {
+    "sealion:open": [
+      {
+        "note_id": "CK006",
+        "gold": [
+          "MD12"
+        ],
+        "pred": [
+          "MD11",
+          "MD12"
+        ]
+      },
+      {
+        "note_id": "CK007",
+        "gold": [
+          "MD12"
+        ],
+        "pred": [
+          "MG10.0",
+          "MG10.1"
+        ]
+      },
+      {
+        "note_id": "CK008",
+        "gold": [
+          "MG21",
+          "MG26"
+        ],
+        "pred": [
+          "MG20.1",
+          "MG21.0"
+        ]
+      },
+      {
+        "note_id": "CK012",
+        "gold": [
+          "MF50.0"
+        ],
+        "pred": [
+          "MB23.0",
+          "MB23.1"
+        ]
+      },
+      {
+        "note_id": "CK013",
+        "gold": [
+          "MF50.7"
+        ],
+        "pred": [
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "CK015",
+        "gold": [
+          "MF50.4Z"
+        ],
+        "pred": [
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "CK017",
+        "gold": [
+          "5A11"
+        ],
+        "pred": [
+          "5A1Z",
+          "QE84.0"
+        ]
+      },
+      {
+        "note_id": "CK018",
+        "gold": [
+          "BA00.Z",
+          "QC49"
+        ],
+        "pred": [
+          "BA00",
+          "QE84"
+        ]
+      },
+      {
+        "note_id": "CK019",
+        "gold": [],
+        "pred": [
+          "MG20.0"
+        ]
+      },
+      {
+        "note_id": "CK020",
+        "gold": [
+          "MB48.Z"
+        ],
+        "pred": [
+          "BA00",
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "CK021",
+        "gold": [
+          "MB4D",
+          "MD90.1"
+        ],
+        "pred": [
+          "HA00",
+          "MB23"
+        ]
+      },
+      {
+        "note_id": "CK023",
+        "gold": [
+          "MA80.2Z"
+        ],
+        "pred": [
+          "MG20.0",
+          "MG22.0"
+        ]
+      },
+      {
+        "note_id": "CK024",
+        "gold": [
+          "MB48.0Z"
+        ],
+        "pred": [
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "CK027",
+        "gold": [
+          "ME82"
+        ],
+        "pred": [
+          "ME82.00",
+          "ME82.20"
+        ]
+      },
+      {
+        "note_id": "CK028",
+        "gold": [
+          "MD81.4",
+          "ME05.1"
+        ],
+        "pred": [
+          "1A00",
+          "ME10"
+        ]
+      },
+      {
+        "note_id": "CK029",
+        "gold": [
+          "MD81.4"
+        ],
+        "pred": [
+          "ME81.1"
+        ]
+      },
+      {
+        "note_id": "CK030",
+        "gold": [
+          "MD90.1",
+          "MG43.7"
+        ],
+        "pred": [
+          "MB23.0",
+          "MB23.1"
+        ]
+      },
+      {
+        "note_id": "CK032",
+        "gold": [
+          "ME01",
+          "ME05.0"
+        ],
+        "pred": [
+          "KA00",
+          "ME22"
+        ]
+      },
+      {
+        "note_id": "CK033",
+        "gold": [
+          "ME05.1"
+        ],
+        "pred": [
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "CK034",
+        "gold": [
+          "MD95"
+        ],
+        "pred": [
+          "ME11.0",
+          "ME11.1",
+          "ME11.2"
+        ]
+      },
+      {
+        "note_id": "CK035",
+        "gold": [
+          "MG43.5",
+          "MG43.7"
+        ],
+        "pred": [
+          "5A00.0",
+          "5A00.1"
+        ]
+      },
+      {
+        "note_id": "CK038",
+        "gold": [
+          "EC90.Z",
+          "ME66.6Z"
+        ],
+        "pred": [
+          "EA40"
+        ]
+      },
+      {
+        "note_id": "CK039",
+        "gold": [
+          "EC90.Z"
+        ],
+        "pred": [
+          "EA20"
+        ]
+      },
+      {
+        "note_id": "CK040",
+        "gold": [
+          "5A11"
+        ],
+        "pred": [
+          "5A10",
+          "LD20.0"
+        ]
+      },
+      {
+        "note_id": "CK043",
+        "gold": [
+          "MD90.0"
+        ],
+        "pred": [
+          "GA31.3",
+          "MG22.1"
+        ]
+      },
+      {
+        "note_id": "CK044",
+        "gold": [
+          "GA22",
+          "MB48.Z"
+        ],
+        "pred": [
+          "GA00.0",
+          "MB26.0"
+        ]
+      },
+      {
+        "note_id": "CK045",
+        "gold": [
+          "FB56.2"
+        ],
+        "pred": [
+          "MG20.0"
+        ]
+      },
+      {
+        "note_id": "CK046",
+        "gold": [
+          "MD30.0"
+        ],
+        "pred": [
+          "MD10.0"
+        ]
+      },
+      {
+        "note_id": "CK050",
+        "gold": [],
+        "pred": [
+          "MG20",
+          "MG21"
+        ]
+      },
+      {
+        "note_id": "CK054",
+        "gold": [],
+        "pred": [
+          "MG20.0"
+        ]
+      },
+      {
+        "note_id": "CK055",
+        "gold": [
+          "MB4D"
+        ],
+        "pred": [
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "CK056",
+        "gold": [
+          "MD81.4"
+        ],
+        "pred": [
+          "ME10.6"
+        ]
+      },
+      {
+        "note_id": "CK057",
+        "gold": [
+          "FB56.4",
+          "MG29.01"
+        ],
+        "pred": [
+          "MG22.0",
+          "MG30.0"
+        ]
+      },
+      {
+        "note_id": "CK058",
+        "gold": [
+          "MD90.0",
+          "MG43.7"
+        ],
+        "pred": [
+          "5A00.0",
+          "5A00.1"
+        ]
+      },
+      {
+        "note_id": "CK059",
+        "gold": [
+          "MG43.0"
+        ],
+        "pred": [
+          "MG22.0"
+        ]
+      },
+      {
+        "note_id": "CK060",
+        "gold": [
+          "7A0Z"
+        ],
+        "pred": [
+          "MG30.0",
+          "MG30.02"
+        ]
+      },
+      {
+        "note_id": "HW007",
+        "gold": [
+          "CA40.Z",
+          "MD12",
+          "MG26"
+        ],
+        "pred": [
+          "CA40",
+          "MD10",
+          "MD11",
+          "MD20.0"
+        ]
+      },
+      {
+        "note_id": "HW009",
+        "gold": [
+          "CA23",
+          "MD11.C"
+        ],
+        "pred": [
+          "MD11",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW013",
+        "gold": [
+          "CA03.Z",
+          "MD36.0",
+          "MG26"
+        ],
+        "pred": [
+          "JA00",
+          "JA01",
+          "MG20"
+        ]
+      },
+      {
+        "note_id": "HW014",
+        "gold": [
+          "CA02.Z",
+          "MD36.0"
+        ],
+        "pred": [
+          "MG30.0",
+          "MG30.1"
+        ]
+      },
+      {
+        "note_id": "HW017",
+        "gold": [
+          "1E91.Z"
+        ],
+        "pred": [
+          "EA00",
+          "MG20",
+          "MG30"
+        ]
+      },
+      {
+        "note_id": "HW020",
+        "gold": [
+          "1F28.Z",
+          "EC90.Z"
+        ],
+        "pred": [
+          "EA00.0",
+          "ED70"
+        ]
+      },
+      {
+        "note_id": "HW022",
+        "gold": [
+          "EA80.Z",
+          "EC90.Z"
+        ],
+        "pred": [
+          "EA00",
+          "EA80",
+          "EA81"
+        ]
+      },
+      {
+        "note_id": "HW024",
+        "gold": [
+          "1B70.Z"
+        ],
+        "pred": [
+          "DA80.0",
+          "MG20",
+          "MG21",
+          "PB00"
+        ]
+      },
+      {
+        "note_id": "HW025",
+        "gold": [
+          "1B72.Z"
+        ],
+        "pred": [
+          "1F00",
+          "1F01"
+        ]
+      },
+      {
+        "note_id": "HW026",
+        "gold": [
+          "AA90",
+          "AB70.2",
+          "CA00"
+        ],
+        "pred": [
+          "CA00",
+          "HA60",
+          "HA65",
+          "HA66"
+        ]
+      },
+      {
+        "note_id": "HW029",
+        "gold": [
+          "DA08.0"
+        ],
+        "pred": [
+          "DA00",
+          "ME80",
+          "ME81"
+        ]
+      },
+      {
+        "note_id": "HW030",
+        "gold": [
+          "MG29.01",
+          "ND14.7Z"
+        ],
+        "pred": []
+      },
+      {
+        "note_id": "HW032",
+        "gold": [
+          "FA01.Z"
+        ],
+        "pred": [
+          "FA00",
+          "ME82"
+        ]
+      },
+      {
+        "note_id": "HW035",
+        "gold": [
+          "MB40.Z"
+        ],
+        "pred": [
+          "MG20.0",
+          "MG20.1"
+        ]
+      },
+      {
+        "note_id": "HW036",
+        "gold": [
+          "8C10.0",
+          "MB40.Z"
+        ],
+        "pred": [
+          "8A40",
+          "8E4Z",
+          "XA0L"
+        ]
+      },
+      {
+        "note_id": "HW039",
+        "gold": [
+          "MB48.0Z",
+          "MB48.Z",
+          "MD90.0"
+        ],
+        "pred": [
+          "MB23.0",
+          "MG22.0"
+        ]
+      },
+      {
+        "note_id": "HW040",
+        "gold": [
+          "MG45.Z"
+        ],
+        "pred": [
+          "MB20"
+        ]
+      },
+      {
+        "note_id": "HW042",
+        "gold": [
+          "8B11"
+        ],
+        "pred": [
+          "MG22.0",
+          "NE60"
+        ]
+      },
+      {
+        "note_id": "HW044",
+        "gold": [
+          "BA52.Z",
+          "MD30.Z"
+        ],
+        "pred": [
+          "BA00",
+          "QA00.1"
+        ]
+      },
+      {
+        "note_id": "HW045",
+        "gold": [
+          "BD10",
+          "MD11.5",
+          "MG29.01"
+        ],
+        "pred": [
+          "BA00.0",
+          "MB20.1",
+          "MD10.0"
+        ]
+      },
+      {
+        "note_id": "HW047",
+        "gold": [
+          "5A00.Z",
+          "MG22"
+        ],
+        "pred": [
+          "5A00.0",
+          "MG22",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW052",
+        "gold": [
+          "5C80.2"
+        ],
+        "pred": [
+          "5A60.9"
+        ]
+      },
+      {
+        "note_id": "HW053",
+        "gold": [
+          "1E51.0Z"
+        ],
+        "pred": [
+          "1B60"
+        ]
+      },
+      {
+        "note_id": "HW056",
+        "gold": [
+          "MD36.0",
+          "MG26",
+          "RA01"
+        ],
+        "pred": [
+          "AB40.0",
+          "MG20.0",
+          "MG30.0",
+          "RA01.0"
+        ]
+      },
+      {
+        "note_id": "HW057",
+        "gold": [
+          "1E32",
+          "FB56.2",
+          "MD12",
+          "MG26"
+        ],
+        "pred": [
+          "1E80",
+          "MD10",
+          "MG20",
+          "MG30"
+        ]
+      },
+      {
+        "note_id": "HW058",
+        "gold": [
+          "CA42.Z",
+          "MD12"
+        ],
+        "pred": [
+          "CA20",
+          "MB22.0"
+        ]
+      },
+      {
+        "note_id": "HW059",
+        "gold": [
+          "DB60.Z"
+        ],
+        "pred": []
+      },
+      {
+        "note_id": "HW060",
+        "gold": [
+          "DB60.Z",
+          "ME01",
+          "ME05.0"
+        ],
+        "pred": [
+          "DB90",
+          "LA00",
+          "MD10"
+        ]
+      },
+      {
+        "note_id": "HW062",
+        "gold": [
+          "DA22.Z",
+          "MD12"
+        ],
+        "pred": [
+          "DA20",
+          "MD11.0",
+          "ME11.1"
+        ]
+      },
+      {
+        "note_id": "HW064",
+        "gold": [
+          "ME24.A5"
+        ],
+        "pred": [
+          "MD11.0",
+          "QE84.Z"
+        ]
+      },
+      {
+        "note_id": "HW066",
+        "gold": [
+          "MD93",
+          "MG43.5"
+        ],
+        "pred": [
+          "5B60",
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "HW069",
+        "gold": [
+          "GA20.0Z"
+        ],
+        "pred": [
+          "GA31.01"
+        ]
+      },
+      {
+        "note_id": "HW070",
+        "gold": [
+          "GA22",
+          "MB48.Z",
+          "MG22"
+        ],
+        "pred": [
+          "GA30.0",
+          "MB26.0",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW072",
+        "gold": [
+          "5A11",
+          "BD54"
+        ],
+        "pred": [
+          "5A10",
+          "LA85.0",
+          "MG20"
+        ]
+      },
+      {
+        "note_id": "HW073",
+        "gold": [
+          "5A11",
+          "9B71.0Z"
+        ],
+        "pred": [
+          "5A10",
+          "9A00.0",
+          "9A40"
+        ]
+      },
+      {
+        "note_id": "HW075",
+        "gold": [
+          "QE13"
+        ],
+        "pred": [
+          "6C4Z",
+          "QE80"
+        ]
+      },
+      {
+        "note_id": "HW078",
+        "gold": [
+          "7A0Z"
+        ],
+        "pred": [
+          "6B40",
+          "7A00"
+        ]
+      },
+      {
+        "note_id": "HW080",
+        "gold": [
+          "MF96.Z",
+          "MG29.1"
+        ],
+        "pred": [
+          "MG20.0",
+          "MG20.2",
+          "MG26.0"
+        ]
+      },
+      {
+        "note_id": "HW082",
+        "gold": [
+          "MD22",
+          "MG26"
+        ],
+        "pred": [
+          "MD11.0",
+          "MG00"
+        ]
+      },
+      {
+        "note_id": "HW084",
+        "gold": [
+          "MD30.0"
+        ],
+        "pred": [
+          "MD10.1",
+          "NA80.Z"
+        ]
+      },
+      {
+        "note_id": "HW085",
+        "gold": [
+          "MD30.Z",
+          "ME66.5"
+        ],
+        "pred": [
+          "MG30.0",
+          "MG30.1"
+        ]
+      },
+      {
+        "note_id": "HW086",
+        "gold": [
+          "MB47.3"
+        ],
+        "pred": [
+          "MG22.0"
+        ]
+      },
+      {
+        "note_id": "HW087",
+        "gold": [
+          "FB56.4"
+        ],
+        "pred": [
+          "MB46.1Y"
+        ]
+      },
+      {
+        "note_id": "HW097",
+        "gold": [
+          "MD81.4",
+          "MD90.0"
+        ],
+        "pred": [
+          "ME10.0",
+          "ME22.0"
+        ]
+      },
+      {
+        "note_id": "HW098",
+        "gold": [
+          "1A40.Z",
+          "MD90.1",
+          "ME05.1"
+        ],
+        "pred": [
+          "1A00",
+          "1A01",
+          "1A02"
+        ]
+      },
+      {
+        "note_id": "HW099",
+        "gold": [
+          "MG26"
+        ],
+        "pred": [
+          "MG20"
+        ]
+      },
+      {
+        "note_id": "HW101",
+        "gold": [
+          "CA23"
+        ],
+        "pred": [
+          "CA23.9"
+        ]
+      },
+      {
+        "note_id": "HW102",
+        "gold": [
+          "MF96.Z"
+        ],
+        "pred": [
+          "MB23.0"
+        ]
+      },
+      {
+        "note_id": "HW104",
+        "gold": [
+          "MB48.Z"
+        ],
+        "pred": [
+          "MB26.0"
+        ]
+      },
+      {
+        "note_id": "HW106",
+        "gold": [
+          "FB56.2",
+          "MG26"
+        ],
+        "pred": [
+          "MG20.0",
+          "MG20.1"
+        ]
+      },
+      {
+        "note_id": "HW107",
+        "gold": [
+          "1F03",
+          "MC15",
+          "ME66.6Z",
+          "MG26"
+        ],
+        "pred": [
+          "9A00",
+          "EA10",
+          "MG20",
+          "QA00",
+          "QA02"
+        ]
+      },
+      {
+        "note_id": "HW109",
+        "gold": [
+          "BD10",
+          "MD11.5",
+          "MG29.01"
+        ],
+        "pred": [
+          "BA00",
+          "MD10",
+          "MD11"
+        ]
+      },
+      {
+        "note_id": "HW111",
+        "gold": [
+          "AB70.2",
+          "MG26"
+        ],
+        "pred": [
+          "ME80.0",
+          "MG20.0"
+        ]
+      },
+      {
+        "note_id": "HW112",
+        "gold": [
+          "CA03.Z",
+          "MD36.0",
+          "MG26"
+        ],
+        "pred": [
+          "CA00",
+          "MD10.0",
+          "MG00"
+        ]
+      },
+      {
+        "note_id": "HW113",
+        "gold": [
+          "MG22"
+        ],
+        "pred": [
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW114",
+        "gold": [
+          "ME84.2Z"
+        ],
+        "pred": [
+          "MG30.0"
+        ]
+      },
+      {
+        "note_id": "HW115",
+        "gold": [
+          "MG43.5",
+          "MG43.7"
+        ],
+        "pred": [
+          "5B80",
+          "5B81"
+        ]
+      },
+      {
+        "note_id": "HW119",
+        "gold": [
+          "MD30.Z"
+        ],
+        "pred": [
+          "MG30.0"
+        ]
+      },
+      {
+        "note_id": "HW120",
+        "gold": [
+          "MD11.5"
+        ],
+        "pred": [
+          "MD10.0"
+        ]
+      },
+      {
+        "note_id": "HW123",
+        "gold": [],
+        "pred": [
+          "BA00"
+        ]
+      },
+      {
+        "note_id": "HW124",
+        "gold": [],
+        "pred": []
+      },
+      {
+        "note_id": "HW126",
+        "gold": [],
+        "pred": [
+          "ND60.9"
+        ]
+      },
+      {
+        "note_id": "HW127",
+        "gold": [
+          "EC90.Z",
+          "ME66.6Z"
+        ],
+        "pred": [
+          "EA00",
+          "EA02",
+          "EA20"
+        ]
+      },
+      {
+        "note_id": "HW128",
+        "gold": [
+          "CA00",
+          "CA07.0",
+          "MD12"
+        ],
+        "pred": [
+          "MB20",
+          "MD10",
+          "MD11"
+        ]
+      },
+      {
+        "note_id": "HW129",
+        "gold": [
+          "1E32",
+          "FB56.2",
+          "MG26"
+        ],
+        "pred": [
+          "1E60",
+          "MG20",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW131",
+        "gold": [
+          "MG21",
+          "MG26"
+        ],
+        "pred": [
+          "MG20",
+          "MG21"
+        ]
+      },
+      {
+        "note_id": "HW132",
+        "gold": [
+          "MF50.0"
+        ],
+        "pred": [
+          "MB23.0",
+          "MB23.1"
+        ]
+      },
+      {
+        "note_id": "HW134",
+        "gold": [
+          "7A0Z"
+        ],
+        "pred": [
+          "MG20.0.0",
+          "MG20.0.2"
+        ]
+      },
+      {
+        "note_id": "HW135",
+        "gold": [
+          "MD12",
+          "MD30.0",
+          "MG26"
+        ],
+        "pred": [
+          "MD10.1",
+          "MD11.0",
+          "MG00.0"
+        ]
+      }
+    ],
+    "sealion:tier1": [
+      {
+        "note_id": "CK006",
+        "gold": [
+          "MD12"
+        ],
+        "pred": [
+          "MD12"
+        ]
+      },
+      {
+        "note_id": "CK007",
+        "gold": [
+          "MD12"
+        ],
+        "pred": [
+          "MD12"
+        ]
+      },
+      {
+        "note_id": "CK008",
+        "gold": [
+          "MG21",
+          "MG26"
+        ],
+        "pred": [
+          "MG21",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "CK012",
+        "gold": [
+          "MF50.0"
+        ],
+        "pred": [
+          "MF50.0",
+          "MF50.60"
+        ]
+      },
+      {
+        "note_id": "CK013",
+        "gold": [
+          "MF50.7"
+        ],
+        "pred": [
+          "MF50.6"
+        ]
+      },
+      {
+        "note_id": "CK015",
+        "gold": [
+          "MF50.4Z"
+        ],
+        "pred": [
+          "MF50.40"
+        ]
+      },
+      {
+        "note_id": "CK017",
+        "gold": [
+          "5A11"
+        ],
+        "pred": [
+          "5A14"
+        ]
+      },
+      {
+        "note_id": "CK018",
+        "gold": [
+          "BA00.Z",
+          "QC49"
+        ],
+        "pred": [
+          "BA00.Z",
+          "QC49"
+        ]
+      },
+      {
+        "note_id": "CK019",
+        "gold": [],
+        "pred": [
+          "BA00.Z"
+        ]
+      },
+      {
+        "note_id": "CK020",
+        "gold": [
+          "MB48.Z"
+        ],
+        "pred": [
+          "MB48"
+        ]
+      },
+      {
+        "note_id": "CK021",
+        "gold": [
+          "MB4D",
+          "MD90.1"
+        ],
+        "pred": [
+          "MB4D",
+          "MD90.1"
+        ]
+      },
+      {
+        "note_id": "CK023",
+        "gold": [
+          "MA80.2Z"
+        ],
+        "pred": [
+          "MA80.2Z"
+        ]
+      },
+      {
+        "note_id": "CK024",
+        "gold": [
+          "MB48.0Z"
+        ],
+        "pred": [
+          "MB48",
+          "MB48.0"
+        ]
+      },
+      {
+        "note_id": "CK027",
+        "gold": [
+          "ME82"
+        ],
+        "pred": [
+          "ME82"
+        ]
+      },
+      {
+        "note_id": "CK028",
+        "gold": [
+          "MD81.4",
+          "ME05.1"
+        ],
+        "pred": [
+          "MD81.4",
+          "MD90.1"
+        ]
+      },
+      {
+        "note_id": "CK029",
+        "gold": [
+          "MD81.4"
+        ],
+        "pred": [
+          "MD81.1"
+        ]
+      },
+      {
+        "note_id": "CK030",
+        "gold": [
+          "MD90.1",
+          "MG43.7"
+        ],
+        "pred": [
+          "MD90.1",
+          "MG43.7"
+        ]
+      },
+      {
+        "note_id": "CK032",
+        "gold": [
+          "ME01",
+          "ME05.0"
+        ],
+        "pred": [
+          "ME01",
+          "ME05.0"
+        ]
+      },
+      {
+        "note_id": "CK033",
+        "gold": [
+          "ME05.1"
+        ],
+        "pred": [
+          "ME05.1"
+        ]
+      },
+      {
+        "note_id": "CK034",
+        "gold": [
+          "MD95"
+        ],
+        "pred": [
+          "MD81.4"
+        ]
+      },
+      {
+        "note_id": "CK035",
+        "gold": [
+          "MG43.5",
+          "MG43.7"
+        ],
+        "pred": [
+          "MG43.5",
+          "MG43.7"
+        ]
+      },
+      {
+        "note_id": "CK038",
+        "gold": [
+          "EC90.Z",
+          "ME66.6Z"
+        ],
+        "pred": [
+          "EC90.Z",
+          "ME66.6Z"
+        ]
+      },
+      {
+        "note_id": "CK039",
+        "gold": [
+          "EC90.Z"
+        ],
+        "pred": [
+          "EC90.Z"
+        ]
+      },
+      {
+        "note_id": "CK040",
+        "gold": [
+          "5A11"
+        ],
+        "pred": [
+          "5A14",
+          "BD54"
+        ]
+      },
+      {
+        "note_id": "CK043",
+        "gold": [
+          "MD90.0"
+        ],
+        "pred": [
+          "GA20.0Z",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "CK044",
+        "gold": [
+          "GA22",
+          "MB48.Z"
+        ],
+        "pred": [
+          "GA22",
+          "MB48.Z"
+        ]
+      },
+      {
+        "note_id": "CK045",
+        "gold": [
+          "FB56.2"
+        ],
+        "pred": [
+          "FB56.2"
+        ]
+      },
+      {
+        "note_id": "CK046",
+        "gold": [
+          "MD30.0"
+        ],
+        "pred": [
+          "MD30.0"
+        ]
+      },
+      {
+        "note_id": "CK050",
+        "gold": [],
+        "pred": [
+          "6A7Z"
+        ]
+      },
+      {
+        "note_id": "CK054",
+        "gold": [],
+        "pred": [
+          "MG21"
+        ]
+      },
+      {
+        "note_id": "CK055",
+        "gold": [
+          "MB4D"
+        ],
+        "pred": [
+          "MG31.1"
+        ]
+      },
+      {
+        "note_id": "CK056",
+        "gold": [
+          "MD81.4"
+        ],
+        "pred": [
+          "MD81.4"
+        ]
+      },
+      {
+        "note_id": "CK057",
+        "gold": [
+          "FB56.4",
+          "MG29.01"
+        ],
+        "pred": [
+          "FB56.4",
+          "MG29.01"
+        ]
+      },
+      {
+        "note_id": "CK058",
+        "gold": [
+          "MD90.0",
+          "MG43.7"
+        ],
+        "pred": [
+          "MD90.0",
+          "MG43.7"
+        ]
+      },
+      {
+        "note_id": "CK059",
+        "gold": [
+          "MG43.0"
+        ],
+        "pred": [
+          "MG43.0"
+        ]
+      },
+      {
+        "note_id": "CK060",
+        "gold": [
+          "7A0Z"
+        ],
+        "pred": [
+          "7A0Z"
+        ]
+      },
+      {
+        "note_id": "HW007",
+        "gold": [
+          "CA40.Z",
+          "MD12",
+          "MG26"
+        ],
+        "pred": [
+          "CA40.Z",
+          "MD12",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW009",
+        "gold": [
+          "CA23",
+          "MD11.C"
+        ],
+        "pred": [
+          "MD11.C",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW013",
+        "gold": [
+          "CA03.Z",
+          "MD36.0",
+          "MG26"
+        ],
+        "pred": [
+          "CA03.Y",
+          "MD36.0",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW014",
+        "gold": [
+          "CA02.Z",
+          "MD36.0"
+        ],
+        "pred": [
+          "MD36.0"
+        ]
+      },
+      {
+        "note_id": "HW017",
+        "gold": [
+          "1E91.Z"
+        ],
+        "pred": [
+          "ME65.0",
+          "ME66.6Z"
+        ]
+      },
+      {
+        "note_id": "HW020",
+        "gold": [
+          "1F28.Z",
+          "EC90.Z"
+        ],
+        "pred": [
+          "1F28.2",
+          "EC90"
+        ]
+      },
+      {
+        "note_id": "HW022",
+        "gold": [
+          "EA80.Z",
+          "EC90.Z"
+        ],
+        "pred": [
+          "EA80.1",
+          "EC90.Z"
+        ]
+      },
+      {
+        "note_id": "HW024",
+        "gold": [
+          "1B70.Z"
+        ],
+        "pred": [
+          "1B70.Z"
+        ]
+      },
+      {
+        "note_id": "HW025",
+        "gold": [
+          "1B72.Z"
+        ],
+        "pred": [
+          "1B72.Z"
+        ]
+      },
+      {
+        "note_id": "HW026",
+        "gold": [
+          "AA90",
+          "AB70.2",
+          "CA00"
+        ],
+        "pred": [
+          "AA90",
+          "AB70.2"
+        ]
+      },
+      {
+        "note_id": "HW029",
+        "gold": [
+          "DA08.0"
+        ],
+        "pred": [
+          "DA08.0",
+          "MG30.61"
+        ]
+      },
+      {
+        "note_id": "HW030",
+        "gold": [
+          "MG29.01",
+          "ND14.7Z"
+        ],
+        "pred": [
+          "MG29.00",
+          "ND14.7Z"
+        ]
+      },
+      {
+        "note_id": "HW032",
+        "gold": [
+          "FA01.Z"
+        ],
+        "pred": [
+          "FA01",
+          "ME82"
+        ]
+      },
+      {
+        "note_id": "HW035",
+        "gold": [
+          "MB40.Z"
+        ],
+        "pred": [
+          "MB40"
+        ]
+      },
+      {
+        "note_id": "HW036",
+        "gold": [
+          "8C10.0",
+          "MB40.Z"
+        ],
+        "pred": [
+          "8C10.0",
+          "MB40.Z"
+        ]
+      },
+      {
+        "note_id": "HW039",
+        "gold": [
+          "MB48.0Z",
+          "MB48.Z",
+          "MD90.0"
+        ],
+        "pred": [
+          "MB48.0Z",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW040",
+        "gold": [
+          "MG45.Z"
+        ],
+        "pred": [
+          "MG26",
+          "MG45.Z"
+        ]
+      },
+      {
+        "note_id": "HW042",
+        "gold": [
+          "8B11"
+        ],
+        "pred": [
+          "8B11"
+        ]
+      },
+      {
+        "note_id": "HW044",
+        "gold": [
+          "BA52.Z",
+          "MD30.Z"
+        ],
+        "pred": [
+          "BA52",
+          "MD30.1"
+        ]
+      },
+      {
+        "note_id": "HW045",
+        "gold": [
+          "BD10",
+          "MD11.5",
+          "MG29.01"
+        ],
+        "pred": [
+          "BD10",
+          "MD11.5",
+          "MG29.01"
+        ]
+      },
+      {
+        "note_id": "HW047",
+        "gold": [
+          "5A00.Z",
+          "MG22"
+        ],
+        "pred": [
+          "5A00.Z",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW052",
+        "gold": [
+          "5C80.2"
+        ],
+        "pred": [
+          "5C80.0Z"
+        ]
+      },
+      {
+        "note_id": "HW053",
+        "gold": [
+          "1E51.0Z"
+        ],
+        "pred": [
+          "1E51.0"
+        ]
+      },
+      {
+        "note_id": "HW056",
+        "gold": [
+          "MD36.0",
+          "MG26",
+          "RA01"
+        ],
+        "pred": [
+          "MD36.0",
+          "MG26",
+          "RA01.0"
+        ]
+      },
+      {
+        "note_id": "HW057",
+        "gold": [
+          "1E32",
+          "FB56.2",
+          "MD12",
+          "MG26"
+        ],
+        "pred": [
+          "FB56.2",
+          "MD12",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW058",
+        "gold": [
+          "CA42.Z",
+          "MD12"
+        ],
+        "pred": [
+          "CA42",
+          "MD12"
+        ]
+      },
+      {
+        "note_id": "HW059",
+        "gold": [
+          "DB60.Z"
+        ],
+        "pred": [
+          "DB60",
+          "ME05.0"
+        ]
+      },
+      {
+        "note_id": "HW060",
+        "gold": [
+          "DB60.Z",
+          "ME01",
+          "ME05.0"
+        ],
+        "pred": [
+          "DB60",
+          "ME01",
+          "ME05.0"
+        ]
+      },
+      {
+        "note_id": "HW062",
+        "gold": [
+          "DA22.Z",
+          "MD12"
+        ],
+        "pred": [
+          "DA22.Z",
+          "MD12",
+          "MD95"
+        ]
+      },
+      {
+        "note_id": "HW064",
+        "gold": [
+          "ME24.A5"
+        ],
+        "pred": [
+          "ME24.A5"
+        ]
+      },
+      {
+        "note_id": "HW066",
+        "gold": [
+          "MD93",
+          "MG43.5"
+        ],
+        "pred": [
+          "MD93",
+          "MG43.5"
+        ]
+      },
+      {
+        "note_id": "HW069",
+        "gold": [
+          "GA20.0Z"
+        ],
+        "pred": [
+          "GA20.01"
+        ]
+      },
+      {
+        "note_id": "HW070",
+        "gold": [
+          "GA22",
+          "MB48.Z",
+          "MG22"
+        ],
+        "pred": [
+          "GA22",
+          "MB48.Z",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW072",
+        "gold": [
+          "5A11",
+          "BD54"
+        ],
+        "pred": [
+          "5A14",
+          "BD54"
+        ]
+      },
+      {
+        "note_id": "HW073",
+        "gold": [
+          "5A11",
+          "9B71.0Z"
+        ],
+        "pred": [
+          "5A11",
+          "9B71.0Z"
+        ]
+      },
+      {
+        "note_id": "HW075",
+        "gold": [
+          "QE13"
+        ],
+        "pred": [
+          "QA13",
+          "QE13"
+        ]
+      },
+      {
+        "note_id": "HW078",
+        "gold": [
+          "7A0Z"
+        ],
+        "pred": [
+          "7A0Z",
+          "MB24.3"
+        ]
+      },
+      {
+        "note_id": "HW080",
+        "gold": [
+          "MF96.Z",
+          "MG29.1"
+        ],
+        "pred": [
+          "MF96.Z",
+          "MG29.1"
+        ]
+      },
+      {
+        "note_id": "HW082",
+        "gold": [
+          "MD22",
+          "MG26"
+        ],
+        "pred": [
+          "MD12",
+          "MD22",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW084",
+        "gold": [
+          "MD30.0"
+        ],
+        "pred": [
+          "MD30.0"
+        ]
+      },
+      {
+        "note_id": "HW085",
+        "gold": [
+          "MD30.Z",
+          "ME66.5"
+        ],
+        "pred": [
+          "MD30.Z",
+          "ME66.5"
+        ]
+      },
+      {
+        "note_id": "HW086",
+        "gold": [
+          "MB47.3"
+        ],
+        "pred": [
+          "MB47.3"
+        ]
+      },
+      {
+        "note_id": "HW087",
+        "gold": [
+          "FB56.4"
+        ],
+        "pred": [
+          "FB56.4"
+        ]
+      },
+      {
+        "note_id": "HW097",
+        "gold": [
+          "MD81.4",
+          "MD90.0"
+        ],
+        "pred": [
+          "MD81.1",
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW098",
+        "gold": [
+          "1A40.Z",
+          "MD90.1",
+          "ME05.1"
+        ],
+        "pred": [
+          "1A40.Z",
+          "MD90.1",
+          "ME05.1"
+        ]
+      },
+      {
+        "note_id": "HW099",
+        "gold": [
+          "MG26"
+        ],
+        "pred": [
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW101",
+        "gold": [
+          "CA23"
+        ],
+        "pred": [
+          "CA23.32"
+        ]
+      },
+      {
+        "note_id": "HW102",
+        "gold": [
+          "MF96.Z"
+        ],
+        "pred": [
+          "MF96.Z"
+        ]
+      },
+      {
+        "note_id": "HW104",
+        "gold": [
+          "MB48.Z"
+        ],
+        "pred": [
+          "MB48.Z"
+        ]
+      },
+      {
+        "note_id": "HW106",
+        "gold": [
+          "FB56.2",
+          "MG26"
+        ],
+        "pred": [
+          "FB56.2",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW107",
+        "gold": [
+          "1F03",
+          "MC15",
+          "ME66.6Z",
+          "MG26"
+        ],
+        "pred": [
+          "MC15",
+          "ME66.6Z",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW109",
+        "gold": [
+          "BD10",
+          "MD11.5",
+          "MG29.01"
+        ],
+        "pred": [
+          "BD10",
+          "MD11.5",
+          "MG29.01"
+        ]
+      },
+      {
+        "note_id": "HW111",
+        "gold": [
+          "AB70.2",
+          "MG26"
+        ],
+        "pred": [
+          "AB70.2",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW112",
+        "gold": [
+          "CA03.Z",
+          "MD36.0",
+          "MG26"
+        ],
+        "pred": [
+          "CA03.Z",
+          "MD36.0",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW113",
+        "gold": [
+          "MG22"
+        ],
+        "pred": [
+          "MG22"
+        ]
+      },
+      {
+        "note_id": "HW114",
+        "gold": [
+          "ME84.2Z"
+        ],
+        "pred": [
+          "ME84.2Z"
+        ]
+      },
+      {
+        "note_id": "HW115",
+        "gold": [
+          "MG43.5",
+          "MG43.7"
+        ],
+        "pred": [
+          "MG43.5",
+          "MG43.7"
+        ]
+      },
+      {
+        "note_id": "HW119",
+        "gold": [
+          "MD30.Z"
+        ],
+        "pred": [
+          "MD30.Z"
+        ]
+      },
+      {
+        "note_id": "HW120",
+        "gold": [
+          "MD11.5"
+        ],
+        "pred": [
+          "MD11.5"
+        ]
+      },
+      {
+        "note_id": "HW123",
+        "gold": [],
+        "pred": [
+          "BA00.Z"
+        ]
+      },
+      {
+        "note_id": "HW124",
+        "gold": [],
+        "pred": []
+      },
+      {
+        "note_id": "HW126",
+        "gold": [],
+        "pred": [
+          "NC52.0"
+        ]
+      },
+      {
+        "note_id": "HW127",
+        "gold": [
+          "EC90.Z",
+          "ME66.6Z"
+        ],
+        "pred": [
+          "EC90.Z",
+          "ME66.6Z"
+        ]
+      },
+      {
+        "note_id": "HW128",
+        "gold": [
+          "CA00",
+          "CA07.0",
+          "MD12"
+        ],
+        "pred": [
+          "MD12",
+          "MF50.0"
+        ]
+      },
+      {
+        "note_id": "HW129",
+        "gold": [
+          "1E32",
+          "FB56.2",
+          "MG26"
+        ],
+        "pred": [
+          "1E32",
+          "FB56.2",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW131",
+        "gold": [
+          "MG21",
+          "MG26"
+        ],
+        "pred": [
+          "MG21",
+          "MG26"
+        ]
+      },
+      {
+        "note_id": "HW132",
+        "gold": [
+          "MF50.0"
+        ],
+        "pred": [
+          "MF50.0",
+          "MF50.6"
+        ]
+      },
+      {
+        "note_id": "HW134",
+        "gold": [
+          "7A0Z"
+        ],
+        "pred": [
+          "7A0Z"
+        ]
+      },
+      {
+        "note_id": "HW135",
+        "gold": [
+          "MD12",
+          "MD30.0",
+          "MG26"
+        ],
+        "pred": [
+          "MD12",
+          "MD30.0",
+          "MG26"
+        ]
+      }
+    ]
+  },
+  "warning": "Synthetic, unreviewed labels. Not clinically validated."
+}

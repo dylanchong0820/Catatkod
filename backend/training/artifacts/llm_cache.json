@@ -1,0 +1,1142 @@
+{
+ "5ff9e6f4b6e276bba25adb83e7a5d1664992390dc9f26db99ea4feae524034cb": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"MD11\"\n  ]\n}"
+ },
+ "0e1233d979be6444491864d861e1185eda63050d5738db5f3dc2b0e3093f907f": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"MG26\",\n    \"MG20\"\n  ]\n}"
+ },
+ "d343ab59a6ba57b4f8b919acd2bc4e47056499f21839b45cd5d990bd1de51e0e": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"MD11\",\n    \"MD10\"\n  ]\n}"
+ },
+ "ec139be13b4c3a5c6f7478e36bb5d32e45ec26738f9ddfef80e4d72486ce2d32": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MF50\"]}"
+ },
+ "ebf42e2038a4cdd0caa4075f6c440ad5ce63216536d2609e58be81650b0d1411": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MF96\"]}"
+ },
+ "8f9a3cdb0400035aa3c5b9f12896b3346bc892780b724492a56aad74d059f251": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"MF50.2\"\n  ]\n}"
+ },
+ "c269aa0796b44c921ae10e7a535e8f4040a99dbd76cbce4d7ef6d485f9e9ed52": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"5A14\", \"QA02\"]}"
+ },
+ "ee22cc57e0f9ee15c47b84d4baf0627bebad0e82b9e0b742c1c4882b9bc4a7c2": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"BA04\"]}"
+ },
+ "0afd693b62523a4c40aa2e92c7ef1ddf191ad8cfc0ab4a42c316f495ca073b2b": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MB46\"]}"
+ },
+ "5d411b398691832bbcdc8a335c3e7380db59d2e6d21af30b83cca1c1d5daceb1": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MB40\", \"MD90.1\"]}"
+ },
+ "be56a56e366fbc249d67c575f26df59c46dd92802be0a37a6d0fd4a30d88e5ce": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"BA00\",\n    \"QC11\"\n  ]\n}"
+ },
+ "cdf8d2eac61e8e5ac3ea23b5da639b0430e7933da7c281dd999e5afe65c81da7": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MB48.0\", \"MA80.1\"]}"
+ },
+ "cfc4623507df55b6b703c0cb10dcd3cdbd6b4b93a5b18303ef16da1784812f34": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MB42.0\"]}"
+ },
+ "0de36c72d1cd3dfd6029ecc79e3e023244d204f2ba45ed93d8b8d915737c6822": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"MD81\", \"ME05\"]}"
+ },
+ "aa6d05832e744003ed2c00f8a474c5262f808c23eabff303bc8be36e157ad02f": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"FA34\"]}"
+ },
+ "0069c4198fe2b27f468fbb922f77f5a6b9d2ae2cf850a56c3cda558b63a1478c": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\"codes\": [\"ME05.2\"]}"
+ },
+ "2b1af440ce04424d4ba8b4325dc2f7e92138040879a99be8c5ffe77e4c9a498a": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"DB30\",\n    \"ME05.0\"\n  ]\n}"
+ },
+ "0a5e806e6f36b2222956aa6c623bee6776a71d616202c93a7a377734dfc898fd": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response": "{\n  \"codes\": [\n    \"MD90.1\",\n    \"MD92\"\n  ]\n}"
+ },
+ "6cf88c7a2d66857b64fbef1f79181aff19578e2ef07063536d6629b090aeff3f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD11\", \"MD12\"]}"
+ },
+ "b8e2e4626df19c2dd6e65dc7f2219ba34c96f9176559820419a592386a295679": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG10.0\", \"MG10.1\"]}"
+ },
+ "f3b26aa4c0827d09f9b3d277a7732fbc1ef78bf5a3d599c2e1624561bd4699f8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.1\", \"MG21.0\"]}"
+ },
+ "08964d1b88a8c7724076df35e545da0442ed87be0f1ac375de2864e2addb5977": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\", \"MB23.1\"]}"
+ },
+ "592a7884154be4da1591296d7dbac4ca83268d8819b9c199eb5a48d5bc38734a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22\"]}"
+ },
+ "e2bd0193966d9fa1eb419ac4085c1472868c798faf5f0f4abbc3e61444bb01b2": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\"]}"
+ },
+ "e7d2e4c4943f91b7540aea0474a959f26a6b8b652d3b6591e9f824b960fc4f70": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00\", \"QE84\"]}"
+ },
+ "a3ae6901c32ecd6932531f60a46f5e4749e8b27cfe3c1df4ff4f79dc4c80713a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A1Z\", \"QE84.0\"]}"
+ },
+ "f64563a723efcdee8cf257d97ed28582206edba89ce3713703e2d5e8235e78a9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0\"]}"
+ },
+ "fc67951583e5f91cc80aed1e6bb93d78be7ed6c97b6412883598648bca399d11": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"HA00\", \"MB23\"]}"
+ },
+ "2d7112c49193c0a22cbff5634f3da36df61f320fe6a333f27f3eb3d11a95c81b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22.0\", \"MG20.0\"]}"
+ },
+ "aec538f320a40cc7e304c4baaa99f523e637b3ca89821f482074b4cdc3248763": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00\", \"MB23.0\"]}"
+ },
+ "711681773f2737bb0c2a0d8d5ad4811d74488e68ce8953589e919a09c7172104": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\"]}"
+ },
+ "99284ec5b230f8e81685b56865438304d8ac99fa671607f04e60243949336d72": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME82.00\", \"ME82.20\"]}"
+ },
+ "a74e342d3b30742bdcbf9c19c81b3aece581d182ae94f01a03127f5f4cd6b9b3": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME10\", \"1A00\"]}"
+ },
+ "2043214114086195905d12718ba1d40ef9d2b232f495ceaa1a410c67a3611a2a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME81.1\"]}"
+ },
+ "b1bb2159d7c2c882342251a6c3768bf60e2f121d86e2b47fe519736467d3c248": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\", \"MB23.1\"]}"
+ },
+ "ac528de300e6cfc6f96d359f211fc037d3b046c01651e4d4d67c2d6aa5b34cae": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"KA00\", \"ME22\"]}"
+ },
+ "663bda64f726d8db5865a635c48e891d2bc32fbc62d8f6490f0a0484197bec91": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\"]}"
+ },
+ "d7423cdba239ec9b5cbf371ddd36c06b9478d1e0962edefa1a47e1d8847fa0fb": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A00.0\", \"5A00.1\"]}"
+ },
+ "84ce4d626e167ee46ff3958e126fde4caff81b19305ab967a5f7642e1417d06f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA40\"]}"
+ },
+ "77837fb56f0a67f2ae11f4d40482db859c1525dd798fc02241d4f7d52c157842": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA20\"]}"
+ },
+ "d76e02cdb742ced2b36e5a14f0a688aaba1308ec7162ff0e13a34d19cba14680": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A10\", \"LD20.0\"]}"
+ },
+ "45608a81914bbd295541d102cdcd99a8e5b72fe93584ac5873edeb0ea11aa509": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA31.3\", \"MG22.1\"]}"
+ },
+ "111df7cf904327015a23f48a542dca76363112c7e4a6e8006101b6a0170d5470": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA00.0\", \"MB26.0\"]}"
+ },
+ "971097ea081d548982ae40528d4e6878f21a2b60c2af1941daeff24166d10eb5": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0\"]}"
+ },
+ "2d66710df6c2ec3f43b9ff7e888efeba4751ae23340606fd2b8987d7adf6494e": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD10.0\"]}"
+ },
+ "b3d08bdd764d0d79742e669462003368f08c2ef558327dcab1ca23290a4a7cb3": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20\", \"MG21\"]}"
+ },
+ "5627ed274e1370dac764c61f9f6e10d7d633ae50a9688441f9ba041f25fb3a10": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME11.0\", \"ME11.1\", \"ME11.2\"]}"
+ },
+ "89ddc2e7eca9af610e81686769f726165d8e3900f51013049bf76b79f7383008": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\"]}"
+ },
+ "3286dabcb0cf12a34d70b799691fd17de036c4fad8ddcc4d819b7c18f0aca098": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0\"]}"
+ },
+ "1a49298e4c7ea961f99b74dc00ba5cd2d8190916a097fd1479a5dce78eb0fb37": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME10.6\"]}"
+ },
+ "fbd10e15f45dc93b6affd5741c014b5e5f487a48e08eb42d03f0b3fb766aec35": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A00.0\", \"5A00.1\"]}"
+ },
+ "5c3cff24759b3c10decca5e303b29e3a4c45af849f4fd1776020c8ca18fa78d0": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG30.0 XA0000\", \"MG22.0 XA0000\"]}"
+ },
+ "4eccb36cde9695dac98a3717274bd77277a6c0de4dbfeaa736e4cdd6fb978105": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22.0\"]}"
+ },
+ "301ea5405ef3c3532a0e5f5a1876b8397a67d7fcd1e10b3750a528d35ad0c383": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA40\", \"MD10\", \"MD11\", \"MD20.0\"]}"
+ },
+ "3aab2b521d2305b5c7839aaa4a2248ac0a0f177c8c9b9734b50f73628eba46db": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22\", \"MD11\"]}"
+ },
+ "2f599b288439d5a56b10f1fdcaf4e9c7acee719a8618f09f505a9befcc7cec5f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"R07.0\", \"JA00\", \"JA01\", \"MG20\"]}"
+ },
+ "7f89b1155eb1de7796fcd5759e563bb75a44bb04f1dab362cf1adba6266c4089": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG30.0\", \"MG30.1\"]}"
+ },
+ "35a6acf4ed73d39ce19d3e8d5a9e157726a23f4c57211e85cb836201af9845c5": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA00\", \"MG30\", \"MG20\"]}"
+ },
+ "e6d1c1dbbc448545e1a1be526436646c42e729d15f8728e7b0689215142f8efe": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA00.0\", \"ED70\"]}"
+ },
+ "197eb1a749251f68f61c7ebfb0de4751145b694fb5d53ed1f789e806dc5aa516": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA00\", \"EA80\", \"EA81\"]}"
+ },
+ "3a6f5ea72529b3ffbb1cf05f8c1474a7904c96ab1200a19bcff53c38a90f79a0": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG30.0\", \"MG30.02\"]}"
+ },
+ "c90271358ef8f0d4babf21fb72162ab2fd6feed2e1724a97fdb5921647e3b9e4": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1F00\", \"1F01\"]}"
+ },
+ "3119da005a811d01eece3018a9db79e0a6c9f5a36463bcba6e6abf610cc0ea61": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"HA60\", \"HA65\", \"HA66\", \"CA00\"]}"
+ },
+ "a5feb278f3a555da3e4982e72533a21ddf8f01b7fe275701de3f5bf3b1ed6a28": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"DA00\", \"ME80\", \"ME81\"]}"
+ },
+ "46ebf75401e247b5f734dba97616494844c1a61babed7a65404479d76f120994": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"PB00\", \"DA80.0\", \"MG20\", \"MG21\"]}"
+ },
+ "7721333e895157994b5899b692ca4a17afd12cda255d1f2b3dec275a42ebb46e": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"FA00\", \"ME82\"]}"
+ },
+ "e84ae964e100fd01c1616e45c5c259ef0b01face992c9f0f744e482d6dea869a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0\", \"MG20.1\"]}"
+ },
+ "4149467e1ffd3dd4d3c5889ee61621a1113750174c6371f0bb9508583851b2a1": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"8A40 XA0L\", \"8E4Z XA0L\"]}"
+ },
+ "5597e344da71589c2d6301daf425665d636516bd2899d1c8d9622a52b4bc6534": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\", \"MG22.0\"]}"
+ },
+ "c7339332665c4a36a1fd2c08d236d0e86bbfa0b060a15101177a0d1962cc4dda": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB20\"]}"
+ },
+ "eeb6e5be60a2113a9fc53d9a5cae5e6f07c90be13cfaca766a2c1def74597199": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"NE60\", \"MG22.0\"]}"
+ },
+ "e57cad778538369df1f987e1caa55dcec33e18f0552f976d77a361a83c634434": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00\", \"QA00.1\", \"R07.4\"]}"
+ },
+ "9fc00cccbf8febac8dca8ad29763ae4e35518984342dc3098f29bce53c28f80f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00.0\", \"MB20.1\", \"MD10.0\"]}"
+ },
+ "f5b07c9b26bbdbf195e0b222d66eaa477395e5f11ef5728a9987218d5794eab1": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A00.0\", \"MG22\", \"MG26\"]}"
+ },
+ "b1465c83ad8d5c2c4eaa0de82f23eed8db713e081529d4e078ea1d34f5cca281": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A60.9\"]}"
+ },
+ "44a8c3b9e961b6c1a8a27de5fa59c280aa6d6f571e81ff5461dd3c3b0dd6065d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1B60\"]}"
+ },
+ "616655e55d71bb8f46b23fbfc1c18695348ff487fe1977ab6bba29fffa2e8d19": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"RA01.0\", \"MG20.0\", \"MG30.0\", \"AB40.0\"]}"
+ },
+ "c34f29eadd0707ffe29c9f39239d988221766e488748e61fa91aa72dd85b793b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1E80\", \"MG20\", \"MG30\", \"MD10\"]}"
+ },
+ "e15a1b37c252c6363de56b4710ac391122a53f651a368757b8f350f0ba706cc1": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA20\", \"MB22.0\"]}"
+ },
+ "cd409adcd5e2741a2b87b9a1c5b8d8dc0c7052de1cd270b226fcdf07e26b3abf": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"K64.9\", \"K62.5\", \"R19.5\"]}"
+ },
+ "7fad6c908ab1f689097c1c492787a8bd2a8e274c6c4596fbe1e9699673a0c96d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"LA00\", \"MD10\", \"DB90\"]}"
+ },
+ "50f8c888d9e9e063c822e184176042c21ce3332534eb8d82482c6dec27f95a27": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"DA20\", \"ME11.1\", \"MD11.0\"]}"
+ },
+ "c85a3e95ff67ede97bc6cffe9ff3e420f5865af6e0a651ee9bf60b42a946ae26": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD11.0\", \"QE84.Z\"]}"
+ },
+ "6424e88dbdf553b1850bc7fc10f83a4c0c11cbac4dfad9d953ee906653131a0b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA31.01\"]}"
+ },
+ "d1ff146448cfe7fac7c66299fe13dc551befc0c1bb223b0b4cd82cb97cd24dc9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA30.0\", \"MB26.0\", \"MG22\"]}"
+ },
+ "d8de75c38d0fb5ada307d9f39c438ee668c86e7bf205607c9f5270e0d5a77f65": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\", \"5B60\"]}"
+ },
+ "801e01e84bdde38772f33f6c83ecf27f5c441bb135a5a3a7d4cff270cff29b83": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"LA85.0\", \"5A10\", \"MG20\"]}"
+ },
+ "bbca23336addd8ce3f3be2e8343703428c8cac91dfbb5041f07df067736d36e1": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A10\", \"9A00.0\", \"9A40\"]}"
+ },
+ "69de4ccedbdb396552c5b428f9fc50c9c234f9d0c432378e6c53c597eb2f72a4": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"6C4Z\", \"QE80\"]}"
+ },
+ "ba747c458ae1928e597f490a149a4717b08d08c83f0f33bd191c9744194e4b5a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0\", \"MG20.2\", \"MG26.0\"]}"
+ },
+ "c49a217e71bde2abc0edfbc4f6edc3eb7d04c79aa221e25a073c140e85b52880": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD11.0\", \"MG00\"]}"
+ },
+ "98e291f9fc2232ce748678470f7611cd22580bd4bcdcdae04b3e329f79df0a17": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"7A00\", \"6B40\"]}"
+ },
+ "e31e2c84bca22d3ca37085227e3917f5f9f7b3b8c0a64820dce068576a2f3e1b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG30.0\", \"MG30.1\"]}"
+ },
+ "77998a6db1a23c3f4aa5903cf00e13da13f5ee56ec190e6c4d16cf2291b5fb82": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22.0\"]}"
+ },
+ "c0a7f30ff3c32441e4af1423ed5540bec13b0371de2e51694123d34b1eac5f15": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD10.1\", \"NA80.Z\"]}"
+ },
+ "c63540e56d05655b0ba810318f24555d86f2e673642e42b478e6f9ff93d53b44": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME10.0\", \"ME22.0\"]}"
+ },
+ "f75e658b52b9dc510e98d290aaf92ea4add080b50bbae174b0de7022b5bc74ec": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB46.1Y\"]}"
+ },
+ "947f8132a0d96ca16fb9dadeb9a7196102f4c6963f3a041c12e0621193080228": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20\"]}"
+ },
+ "6c0d6f598cabf56c04641dfd41d6f9eb4011bbce3e7f1aa18e6c43f8632dc483": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1A00\", \"1A01\", \"1A02\"]}"
+ },
+ "b6aec6939ae74bc659ef74e500a4eb76a7a2e8c8e20ff57276af71878505d550": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\"]}"
+ },
+ "175388c37d5ce86ae4b7c81fe370e19be1ab2699a89fc476fecaeb0533339feb": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA23.9\"]}"
+ },
+ "2af625c2ffbe59a4026359e15c92c5df956f1c4cbce8197d75572fc021e4643e": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0\", \"MG20.1\"]}"
+ },
+ "213385125b41cf3d03c5abd14a94cf1e5465633608b12d46195042c1ecd96885": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB26.0\"]}"
+ },
+ "e01bfe425809e917e5c9b408b38218b7c24e0db0c98414f1f7d84a902d969182": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD10\", \"MD11\", \"BA00\"]}"
+ },
+ "2159f11ccfe4f6b562e783c4f7f7b04e220c160df06f2cf454e2b5feafb45779": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME80.0\", \"MG20.0\"]}"
+ },
+ "1fb9b938dd3913b6d016f808b0f6e5be5f396078afc9c4963cab0721a3adac20": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"QA00\", \"MG20\", \"9A00\", \"EA10\", \"QA02\"]}"
+ },
+ "1aef2426700062a45d82326a38ed57330e4f4270f9d86cab5c2884bcba893962": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22\"]}"
+ },
+ "9135b1c90adaff94b50b7d68e37d49efdefd7f7441609f2a078a84da0e7a1532": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA00\", \"MD10.0\", \"MG00\"]}"
+ },
+ "78d2afbada11c443e67897443aaa113ccf8c72a3053b25ad0f7833ff547c9f64": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5B80\", \"5B81\"]}"
+ },
+ "32d02b9d3dbafcb08ca9541e5392c074084b83678a70bb9b9a589657e251c113": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG30.0\"]}"
+ },
+ "b8ac6f1a52eeb4d5d01eba8f4b2433918c5089afa6d396496c6bb4dc17bea9f6": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG30.0\"]}"
+ },
+ "c48d0ec1481c5ddca93b4e958e9a01737f0c7ae23555af6264a6cc7f593cd4f4": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD10.0\"]}"
+ },
+ "a50ed69e2e70edbd00bc11660ad545c59d7cca2ab6659f2867e46e8ff4c64ed8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00\"]}"
+ },
+ "640d9a1d356d546e36e2a01b108e00d3e5f2fc456366a6197bff06534dde4221": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"XA0000\"]}"
+ },
+ "59534311d6807cfe8b2ce6e142c804ea89c48c9c9270b00e39b67eea9c2f2e46": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ND60.9\"]}"
+ },
+ "ba206bed1aba6420b706bdd95d11aabc1cb316e76cbf64cf5c92939ed314d7c2": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB20\", \"MD10\", \"MD11\"]}"
+ },
+ "3e834aef1b23e0542c3f58678e12f66d7bd0eec742305d380713954d54cfc731": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA00\", \"EA20\", \"EA02\"]}"
+ },
+ "3b6e48f2b0fcd96eca201bdac89c4e06d3203cfb506af06ec1950977e6480512": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20\", \"MG21\"]}"
+ },
+ "35bf3ed6d08c60367a3550e19647d255b07e9be106f92e3d0e0233a04b53a45c": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1E60\", \"MG20\", \"MG22\"]}"
+ },
+ "f3f1181bbc4fda8587adfd84959c6ac8f98dbec275a30ffc0378822a609f72ca": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB23.0\", \"MB23.1\"]}"
+ },
+ "02428800ce91c8090dcf2c613adcbf5b7591caed57a777dba598c626202f0fbf": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD10.1\", \"MG00.0\", \"MD11.0\"]}"
+ },
+ "72ad002a7e75bfd016f848bfd93854669a27a5c61bc5769761654f119ee8c698": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG20.0.0\", \"MG20.0.2\"]}"
+ },
+ "d1517a9666785f14358831fb75a66b57b0e5b4af096450894072457db37f8328": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD12\"]}"
+ },
+ "87affc0e30b21188b8446e80efb328ad6daafa2cc57247f725366918f6c7b731": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD12\"]}"
+ },
+ "d824606660e76d9921af5966b4c4e2fa3c1daadd0ffe0d4a4262aaf087b664b9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG26\", \"MG21\"]}"
+ },
+ "1703ee54411211d27ef38aa15a5c30d4c39b8e8de72b0c5bc8a112be931bc089": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MF50.0\", \"MF50.60\"]}"
+ },
+ "1c746f4f5c15c66d26c9e9cf36c65a6bc836e596b28dffa2f282beb307e790ae": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MF50.40\"]}"
+ },
+ "34eb9d0d719fdf20d55635cc8beb21347dc0fed52bea9514959e99d59d2b786d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A14\"]}"
+ },
+ "ce498d086f8c7ad48c22ddfecb15f86d70a76059965bd49435d13851de523574": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00.Z\", \"QC49\"]}"
+ },
+ "1d30a701f11488126173f720462a9797a9f8a0c42d9099bdcf533475fa7b4e1f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MF50.6\"]}"
+ },
+ "08788b4269a7b0af9107337ff768539dbe77e810117383915d05e910d10f8ba1": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00.Z\"]}"
+ },
+ "215f354f0d03d5f6bb076c76e1a8908d3f98e9c986ed6dd76abae4454daf9940": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB48\"]}"
+ },
+ "5025646a231fb73dd7d36931ebf2f6e09fe171256c12b181ed331fcc8d0e1d11": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MA80.2Z\"]}"
+ },
+ "5c11efb757bb145264b541204e68890d6d9533f892bc4c16039f4755bfd64215": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB48\", \"MB48.0\"]}"
+ },
+ "4376be9c698af053dcaa0ef04ecf26ac5d5e20993587e03f114095cc6a418241": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB4D\", \"MD90.1\"]}"
+ },
+ "1373a80a688b6dc2066d1d2f62d778b6bc8348f5f42438e2eb5ab7041a4d13b7": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD81.1\"]}"
+ },
+ "2d77e2d7f37608df34970d2c4185bbcf044f1cb22265bf43d5685bb67e8788f3": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD90.1\", \"MG43.7\"]}"
+ },
+ "f5e9bd3ef2606d4a32ea2788563d21f71bfadb99e09df92b0ad6b013ac879e6e": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME05.0\", \"ME01\"]}"
+ },
+ "2c47028f8b17e531741d91f5a079109fcf1648cb6b16b2fddb54dfde3c277527": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME05.1\"]}"
+ },
+ "525af8bd6db1cc4169664654030ca61c53cc533de59e975320d0bada4066b38c": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD81.4\"]}"
+ },
+ "5e95ea58dc114ad1041aeaa8f799c48735fd07247ea26c5813805c37705ce17c": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG43.7\", \"MG43.5\"]}"
+ },
+ "cf915102125f39acb6339e45a11dbdcf33bb85b25cf4f4dfb0b574d8e0ea39f3": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME66.6Z\", \"EC90.Z\"]}"
+ },
+ "9fb648a59f2d9b465cc37f8ecd4edc2ead31f3e89e9fb36c03e3e82f719688ae": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EC90.Z\"]}"
+ },
+ "9b52e31c05da0b3ad7ef55a9ece2ae0d7c535c656db4d8a4403341d686dece51": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD81.4\", \"MD90.1\"]}"
+ },
+ "c47af207a98fef58555cfa5dbdedbd66adf0ee62456070c48032691b11661e1c": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BD54\", \"5A14\"]}"
+ },
+ "e6ef80647a472585812f78fe81b41166f8bd96a07c5f1e29d30e0715f7060b86": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA20.0Z\", \"MG22\"]}"
+ },
+ "896d3f233c81f1851d3634803469a09ba6f5a4d4ff219790abb24d63a8328a1a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA22\", \"MB48.Z\"]}"
+ },
+ "88cded8cbb99bc896c94457a30c093f8c8e896669d778b84e5a2ecf2020a2fe9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"FB56.2\"]}"
+ },
+ "74803e2376b4172f318799253a58e999d31ef6022e2dbb8682f5946dd7ff972b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD30.0\"]}"
+ },
+ "599a8aae3efc5662d879dc0b336d382c1432ffa804906397106191e1fd202df6": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG21\"]}"
+ },
+ "cdba67adffadeea8b38606066d48f3730a72110c6b951a72e643db065da0a186": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG31.1\"]}"
+ },
+ "d150b78bd68ba400717f6ca33565b18ccc6f4fff091de1d8ab7c4fb5c65c1aef": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"FB56.4\", \"MG29.01\"]}"
+ },
+ "9fe10dc649518fda1a983fc6cdedfe3f17e79ece0128a74789c84dc6314ece79": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD81.4\"]}"
+ },
+ "d68f46c64051e8e8fcf89016564df9df259dc891095d2daba85e2f5d652404f0": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG43.7\", \"MD90.0\"]}"
+ },
+ "6f9fe4b1504ed72bf8e0b0348a462a10c4b4570e9855404f872b5bc44f14d205": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"7A0Z\"]}"
+ },
+ "67e397f82277ea7a664217e65ef9486e34ff33487b258d5913750ea0ede02b68": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG43.0\"]}"
+ },
+ "42dd0081fe2f45b4983d2b896af3b59be534bc96f2569293ecde3f423807ed17": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA40.Z\", \"MD12\", \"MG26\"]}"
+ },
+ "c4a26e6576c25d77af9d596aa35ef8b32cae7efbaaf6bd74bc19bc6344db6bcc": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22\", \"MD11.C\"]}"
+ },
+ "cdfe617aefc6baa69adf4fc0baa1f1820141b1d18bc5703fd7a60df8863c5334": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD36.0\"]}"
+ },
+ "1a86a7f6c886167bb9bf8a02c00622136e59b64ed133d41f31da0f5634438f93": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME82\"]}"
+ },
+ "4bd67abde06679cc12697d2c650d45c19b72475ef703068fa2ad466b44691a92": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"6A7Z\"]}"
+ },
+ "e149b2e13f1600a99880117c3f70e47c50692c8f6e3b3029d3ed258228b9eee9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD36.0\", \"CA03.Y\", \"MG26\"]}"
+ },
+ "f0afd676cb7a1987f0018d7a7fd100086f6b4b02e74c966f375f71fb7f3eef06": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME66.6Z\", \"ME65.0\"]}"
+ },
+ "5738c08bd8dcf7274d2c0f6eba0ac0d02c725e04e0319236d98479ac834074f6": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1F28.2\", \"EC90\"]}"
+ },
+ "a4bf0543d45beb679fcd16fec10161162af6bc81860ce2f3081df1fc84d82021": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"EA80.1\", \"EC90.Z\"]}"
+ },
+ "b6c6ec7f88ca88b01664f311c04e0f2144e653bc105bb1598615a70db1f2d78b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1B72.Z\"]}"
+ },
+ "0d391f175ca96b530434c0e5f62f1ae93ac2b6998ab4182ff10ebee77c1e6b9a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"AB70.2\", \"AA90\"]}"
+ },
+ "bcef6819c56e3384c3e1af63476caa5d290672ad577417223d05b046e5afee03": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"DA08.0\", \"MG30.61\"]}"
+ },
+ "1d34d72da4c7b13de57447a883324d42e35569838429840547a1532235fd7e2f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ND14.7Z\", \"MG29.00\"]}"
+ },
+ "4a47e42e913b2094cf793967ef787093dfd15ee91310358c8fb7ac2f841ef10d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"FA01\", \"ME82\"]}"
+ },
+ "2c4f7cf068826a94e5e0dcd5f0097fde8ada3252847facfdd09da05d3843f25e": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB40\"]}"
+ },
+ "d24a1e0d02de0233a740dc0c9f71c2d00c607891909e91848da2a308503bcac5": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"8C10.0\", \"MB40.Z\"]}"
+ },
+ "9b6448ea1fad5df15fa49b41cc95107f282163dd92d8b98a413fc22e97637482": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB48.0Z\", \"MG22\"]}"
+ },
+ "f68dce23b10d27fe6de95e3be605c874b0a7dd1e6c65d7cb98498952d018dd63": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG26\", \"MG45.Z\"]}"
+ },
+ "b3c5ecec9258856271c8e71112a892aa92d94009eaf6b75c2c065e32849d3f3b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"8B11\"]}"
+ },
+ "1b214835544a0395591388932bbde9e83d68ffaeade5edf01344e142e5155972": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1B70.Z\"]}"
+ },
+ "5c74ecd1ed60586fd4855a2c8daa383285cb65a37b9b3c8a8d532682242b6dd8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BD10\", \"MG29.01\", \"MD11.5\"]}"
+ },
+ "dfb9822a5f57c84b155f0981e95c20ca3438300a5b7932ae330ac5c6478598e9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA52\", \"MD30.1\"]}"
+ },
+ "c754f8a68d18a72e1e79c10db852fc8d3afd17c24bcdfd01b0dbfaacad327d5d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A00.Z\", \"MG22\"]}"
+ },
+ "c4476596c02545c5d0198036f8b66d61b0ef600daa620aac3ce25b76043f1619": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1E51.0\"]}"
+ },
+ "565f554b9a5df77c69e8e9b088b3d07586a651d7d1c667c7049f41e3386f2535": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5C80.0Z\"]}"
+ },
+ "41fc9b6830c73f93c1848cd50bc53168f64149022a51020d417da969898d9394": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"RA01.0\", \"MG26\", \"MD36.0\"]}"
+ },
+ "f9a3becc1a4af487849e13a7d1479b50695efabbaa04d78d4007abf9d82a1c78": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG26\", \"FB56.2\", \"MD12\"]}"
+ },
+ "00d0d86348b1f16e8ffc9027553b7ea8e6caa6972920ad8e7df263ede361fafc": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA42\", \"MD12\"]}"
+ },
+ "b36e82a56b31f325d7ce6888aaefee8d714bf0245f1231949c129dadb6e2e446": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME05.0\", \"ME01\", \"DB60\"]}"
+ },
+ "5828b72631c66131de9aae23fdf8dbabb7f6bb029b44aeb6b35dcb65d3d8b879": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"DA22.Z\", \"MD95\", \"MD12\"]}"
+ },
+ "ffc5d2e1576affbb14f117d9e7d298e486523b95d3fa086c82defd68de173511": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME24.A5\"]}"
+ },
+ "0339b78c40f900de1571af1c7e245ae48241c74e692202d914c56cf51cb893fe": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD93\", \"MG43.5\"]}"
+ },
+ "544733b09584c60566c8b10ff139498d8c40673ea5eb1403d05013e6d34e33a8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA20.01\"]}"
+ },
+ "a6be855df8dfb8f7df37091098fc55fe5b78f754f54f66a22dbd3e7c3f427e63": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"DB60\", \"ME05.0\"]}"
+ },
+ "50feeced7ec82d3d7b333214134fa11fdf03d1bae615900fa537f7009ff9fce0": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"GA22\", \"MB48.Z\", \"MG22\"]}"
+ },
+ "e82a0187f8b3334c5dfcafe3738681a6e1c279f1dec3796c2075094c9a780887": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BD54\", \"5A14\"]}"
+ },
+ "2410a56c2de00d0b6c624932aad5e0b7510465b36fdf09bd34a88f7e9f2321dc": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"5A11\", \"9B71.0Z\"]}"
+ },
+ "fedbb2fd5131a06b05ee40e5ac0352d2325948c505490a4ef259ac1358b0437f": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"QE13\", \"QA13\"]}"
+ },
+ "5588d88b2beb71d1b2ff15bb1a7bdce369c0fdfc2d03ca521c67e1de3e1217d8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"7A0Z\", \"MB24.3\"]}"
+ },
+ "1bfef2ff2481cc344a95e39188d8b8b8e5315ce25966c983e08475b9a706ebbd": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG29.1\", \"MF96.Z\"]}"
+ },
+ "e6a91ff80524be9a24644736dee9dd8b58d68422513371e9db16b3496fd81e05": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD12\", \"MD22\", \"MG26\"]}"
+ },
+ "ff3db1fdc82c48aa8e948f755822bb892bbaa79b779d323642c7d507c17f55ba": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD30.Z\", \"ME66.5\"]}"
+ },
+ "a3c3fbc3ee2497acf61ee47ec8fa86b9ebfbc807e788ab3977d3bb248e2c676b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB47.3\"]}"
+ },
+ "04ab0df39b698da7746eda006a3cf00a21ad340129567753faa1977193bd67ea": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD30.0\"]}"
+ },
+ "dacee7f55ebb0fc7684919d400405b1221f2e36c0d413a7bdeb0d7ff93e8b73b": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"FB56.4\"]}"
+ },
+ "5eeaa537e2fae8e9dde550aa27426785584a77a356072c20ab4a834866311665": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD81.1\", \"MG22\"]}"
+ },
+ "0e9a84d8000ec5eac04cc8c9333d6910dabb8370072b66ce28eef2eb8c14da7e": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG26\"]}"
+ },
+ "a145ee3581c821891447f7ecb2c5a6a09cc05c2fc070470bda5360a506d9bdb0": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME05.1\", \"MD90.1\", \"1A40.Z\"]}"
+ },
+ "619e70e40246b31efba688bd8e3814015c8925bdb1f2cac3b90e2018b399a5c7": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MF96.Z\"]}"
+ },
+ "923412fd3dde386a8a57b543bafaba36cf829921524ad472cf3ccc8949a97a3d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA23.32\"]}"
+ },
+ "6cb77ffa27972b711aaf55acaa477414698b2b9394d277aaa80b11931d687d46": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MB48.Z\"]}"
+ },
+ "b7903c5d42e5f95325202668fcec3f8e91f81b91d54822163c0f62ff55ce6e58": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"FB56.2\", \"MG26\"]}"
+ },
+ "c6be5bc896c055d80a37a8e9508f62da9826b811016effb5925d7c89d7ccf9ff": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD11.5\", \"MG29.01\", \"BD10\"]}"
+ },
+ "e30010a7cd5830e5c989fdea2c2ab401d2cef8b612d81ddf4be8f3c0955e0799": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"AB70.2\", \"MG26\"]}"
+ },
+ "3b1c89c39ae09f672a177b8c7e4f0ebd64d0bfc87c79dcb2f7cd36e9dd8a4a50": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"CA03.Z\", \"MD36.0\", \"MG26\"]}"
+ },
+ "7dadc5bb4324997731cb4860a335feb4e440e89b29638810e355ef6ee45c3ae5": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG22\"]}"
+ },
+ "02281c1acb50ae9e24af2c1ab53eec555630cefa1ff83f59b049521c8bb6e78d": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME84.2Z\"]}"
+ },
+ "5f0630bf43571af1b1379ed954c2985d50c94318574795d49c02e9fa425f8a90": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG43.5\", \"MG43.7\"]}"
+ },
+ "43a117fc48ec26efaa2dec1cef146e7313a0b06960f056ef204f33d8fcea81e8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD30.Z\"]}"
+ },
+ "834c0e38ec1d9c049ded3fcbbd59b2f7b535e1b7296ddc2a3d724afdb63f3f72": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD11.5\"]}"
+ },
+ "f78bddb53bc0e47059d9a7b5097547cd0fbba16c55474f7f05889a3efe929e28": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"BA00.Z\"]}"
+ },
+ "98b27b0d31914438c11f8149dc9b57e0aa80afea0dae5aaf46a8d3e5e625f2f7": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": []}"
+ },
+ "96b21d8139f4c28d7d60264eae4f72f5bc84baa4a5555ef01486e56d055c43ad": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"NC52.0\"]}"
+ },
+ "f0b9fefa39511af57c67ec26dd1c9cb1f943e513f10c402895f17816c3ffe861": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"ME66.6Z\", \"EC90.Z\"]}"
+ },
+ "5352f832868e3684f3f636298dbe57216071e4649ca067e3357f2c0cd9318e8a": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG26\", \"MC15\", \"ME66.6Z\"]}"
+ },
+ "5869b90b041cd2f61ade22cfe837c4a53e24ac3b231b56fd04cf4f47dacc17e8": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"1E32\", \"MG26\", \"FB56.2\"]}"
+ },
+ "119fc2dd7f3d1102455f90e634d6dcc06e6bf05af2a895b4909d5cc3b76b169c": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD12\", \"MF50.0\"]}"
+ },
+ "65c374aba1892d1aa537bbda849c90cb8b51a087f37fc70370326657644e46b9": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MG26\", \"MG21\"]}"
+ },
+ "e6380bda9ed530b2d7254a91995f8ddcf2bcb20997ca8f512014fee215c5abdb": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MF50.0\", \"MF50.6\"]}"
+ },
+ "d1b856a07d0118e845a6aff8a5b84d476340a74387d1ec4f7496b5cb7a065867": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"7A0Z\"]}"
+ },
+ "aff64468e10757e7a462ed661a5ff6e84bd7fb9c1b0dfec09e3fa1fd1e8945cb": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": "{\"codes\": [\"MD30.0\", \"MG26\", \"MD12\"]}"
+ },
+ "c79748d1c5b86cb405c6b517a49747b8ab404ade6af131c07918dc9d0a4ea079": {
+  "provider": "sealion",
+  "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
+  "response": ""
+ }
+}

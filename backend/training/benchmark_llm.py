@@ -80,7 +80,8 @@ def call_gemini(prompt: str, model: str, key: str) -> str:
 
 
 def call_sealion(prompt: str, model: str, key: str) -> str:
-    body = {"model": model, "temperature": 0, "messages": [{"role": "user", "content": prompt}]}
+    # Reasoning models can loop without ever answering; cap output so such a note scores as an empty answer.
+    body = {"model": model, "temperature": 0, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]}
     data = _post("https://api.sea-lion.ai/v1/chat/completions", {"Authorization": f"Bearer {key}"}, body)
     return data["choices"][0]["message"]["content"] or ""
 
@@ -133,12 +134,32 @@ class Cache:
             tmp.replace(self.path)
 
 
+class Pacer:
+    """Space out requests to stay under a requests-per-minute quota instead of hitting it and backing off."""
+
+    def __init__(self, rpm: float):
+        self.interval = 60.0 / rpm if rpm > 0 else 0.0
+        self.lock = threading.Lock()
+        self.next_at = 0.0
+
+    def wait(self) -> None:
+        with self.lock:
+            now = time.monotonic()
+            delay = max(0.0, self.next_at - now)
+            self.next_at = max(now, self.next_at) + self.interval
+        time.sleep(delay)
+
+
+PACER = Pacer(0)
+
+
 def ask(cache: Cache, provider: str, model: str, key: str, prompt: str, retries: int = 6) -> str:
     ck = Cache.key(provider, model, prompt)
     if (hit := cache.get(ck)) is not None:
         return hit["response"]
     call = PROVIDERS[provider][0]
     for attempt in range(retries):
+        PACER.wait()
         try:
             text = call(prompt, model, key)
             cache.put(ck, {"provider": provider, "model": model, "response": text})
@@ -194,9 +215,13 @@ def main() -> None:
     parser.add_argument("--providers", default="gemini,sealion", help="comma list; providers without a key are skipped")
     parser.add_argument("--variants", default="open,tier1")
     parser.add_argument("--workers", type=int, default=2, help="parallel requests (keep low on free-tier quotas)")
+    parser.add_argument("--rpm", type=float, default=0, help="max requests per minute across workers (0 = unlimited); "
+                        "SEA-LION free tier allows 10, so use 9")
     parser.add_argument("--update-readme", action="store_true", help="rewrite the LLM table in training/README.md")
     parser.add_argument("--show-prompt", action="store_true", help="print both prompts for the first test note and exit")
     args = parser.parse_args()
+    global PACER
+    PACER = Pacer(args.rpm)
 
     tier1 = json.loads(CATALOGUE.read_text(encoding="utf-8"))
     allowed = sorted(row["code"] for row in tier1)

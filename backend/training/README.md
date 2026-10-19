@@ -79,8 +79,33 @@ tier-2 catalogue suggestions. It scores with the same `metrics()` as `train.py`.
 export GEMINI_API_KEY=...            # or put it in backend/.env; GEMINI_MODEL defaults to gemini-3.8-flash
 export SEALION_API_KEY=...           # optional; SEALION_MODEL defaults to aisingapore/Gemma-SEA-LION-v4-27B-IT
 python training/benchmark_llm.py --update-readme   # fills the table below
+# SEA-LION free tier = 10 requests/minute; Gemini free tier = 20 requests/day for gemini-3.8-flash
+SEALION_MODEL=aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B python training/benchmark_llm.py --providers sealion --rpm 9 --update-readme
 ```
 
+**Reading the results (run 2026-10-19, SEA-LION v4.8 120B — the largest SEA-LION model available):**
+
+- Asked for ICD-11 codes from memory, the LLM is almost always wrong (micro-F1 0.032). 54 of its answers are
+  not real ICD-11 codes at all, and most of the rest are wrong categories (e.g. `MB23` for frequent urination,
+  `MG10` for cough). Scoring leniently at the 4-character stem level (so `MG29` matches `MG29.01`) only raises
+  it to 0.090, so this is not a strict-scoring artefact.
+- Even when handed the 121-code list plus catalogue suggestions, it reaches 0.725 micro-F1 (0.866 at stem level)
+  vs **0.962** for CatatKod; about 30% of its suggestions are wrong (precision 0.698) vs 6% for CatatKod (0.942).
+- On one note (HW030, ankle sprain) the model reasoned for 4,000 tokens without answering; it is scored as an
+  empty answer. Gemini rows are pending: the free-tier quota ran out after 18 of 210 calls.
+- Same caveat as above: the test notes share vocabulary with CatatKod's lexicon, which favours CatatKod.
+
 <!-- llm-benchmark:start -->
-*Not run yet — no API key was available. Run the command above to fill this table.*
+### CatatKod vs. a plain-prompted LLM (same 105 held-out notes, 82 codes present)
+
+| System | micro-P | micro-R | micro-F1 | macro-F1 | exact match |
+|---|---|---|---|---|---|
+| Naive keyword matching (no negation) | 0.832 | 0.952 | 0.888 | 0.910 | 0.705 |
+| CatatKod rules | 0.958 | 0.952 | 0.955 | 0.947 | 0.876 |
+| CatatKod classifier | 0.907 | 0.940 | 0.923 | 0.950 | 0.752 |
+| **CatatKod rules + classifier** | **0.942** | **0.982** | **0.962** | **0.971** | **0.876** |
+| Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (any ICD-11 code) | 0.029 | 0.036 | 0.032 | 0.022 | 0.019 |
+| Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (choose from 121 tier-1 + catalogue suggestions) | 0.698 | 0.753 | 0.725 | 0.686 | 0.533 |
+
+LLM rows: `training/benchmark_llm.py`, temperature 0, no lexicon or normaliser, one call per note; the prompt states the labelling policy above. Codes outside tier 1 count as false positives. Out-of-tier-1 / not-a-real-ICD-11-code answers: sealion:open: 191 / 54; sealion:tier1: 34 / 0.
 <!-- llm-benchmark:end -->

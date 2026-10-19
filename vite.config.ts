@@ -37,6 +37,9 @@ react(),
       watch: {
         ignored: [
           '**/.figma/**',
+          // Python backend: training jobs write data/model files there; don't reload the web app for them.
+          '**/backend/**',
+          '**/docs/**',
 ],
       },
     },

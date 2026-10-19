@@ -1,18 +1,12 @@
 note_id,note_text,gold,missed,extra
 CK006,"batuk dah 2 minggu, kahak kuning",MD12,,MD22
-CK020,kepala pening bila bangun berdiri,MB48.Z,,MB4D
-CK024,pening macam bilik berpusing bila pusing kepala,MB48.0Z,,MB48.Z
 CK027,"bahu kanan sakit dah seminggu, susah angkat tangan",ME82,ME82,
 CK030,"muntah 2 kali, tak lalu makan hari ni",MD90.1;MG43.7,,MF50.0
 CK040,"luka kaki lambat baik, ada kencing manis",5A11,,BD54
-CK046,sakit dada bila tarik nafas dalam,MD30.0,,MD30.Z
 CK054,"menggigil bila lambat makan, lepas makan ok",,,MG21
 CK057,kaki kanan sakit dan bengkak sejak pagi,FB56.4;MG29.01,FB56.4,
 CK060,"susah tidur, terjaga banyak kali malam",7A0Z,,MF50.0
-HW026,telinga kiri sakit n keluar nanah lepas selsema. AOM,AA90;AB70.2;CA00,AB70.2,
 HW064,"muntah darah 2x pagi ni, hx minum arak",ME24.A5,,MD90.1
 HW069,"period tak datang 3 bulan, UPT negatif",GA20.0Z,,GA34.3
 HW082,"batuk ada darah sikit, demam malam",MD22;MG26,,MD12
-HW084,dada sakit masa tarik nafas dalam lepas jatuh motor,MD30.0,,MD30.Z
 HW106,"r/o dengue. demam 2 hari, badan sakit",FB56.2;MG26,FB56.2,
-HW135,"sakit dada bila bernafas, demam, batuk",MD12;MD30.0;MG26,,MD30.Z

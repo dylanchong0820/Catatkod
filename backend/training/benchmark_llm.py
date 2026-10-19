@@ -35,6 +35,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 from nlp.catalogue import load_who  # noqa: E402
+from nlp.policy import apply as apply_policy  # noqa: E402
 from nlp.retrieval import default_search  # noqa: E402
 from train import ARTIFACTS, CATALOGUE, DATA, metrics, parse_codes  # noqa: E402
 
@@ -230,7 +231,7 @@ def main() -> None:
     allowed = sorted(row["code"] for row in tier1)
     df = pd.read_csv(DATA, dtype=str, keep_default_na=False)
     test = df[df["split"] == "test"].reset_index(drop=True)
-    gold = [parse_codes(v) for v in test["gold_codes"]]
+    gold = [sorted(apply_policy(parse_codes(v))) for v in test["gold_codes"]]
 
     if args.show_prompt:
         for variant in args.variants.split(","):
@@ -259,7 +260,7 @@ def main() -> None:
                 failures[name] = errors
                 print(f"  {len(errors)} calls failed, e.g. {errors[0]}")
                 continue
-            pred = [extract_codes(r) for r in responses]
+            pred = [sorted(apply_policy(extract_codes(r))) for r in responses]  # same coding policy as CatatKod
             extra = sorted({c for p in pred for c in p} - set(allowed))
             classes = allowed + extra  # out-of-tier-1 answers become columns no gold note has -> false positives
             mlb = MultiLabelBinarizer(classes=classes)

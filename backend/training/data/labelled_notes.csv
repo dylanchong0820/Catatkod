@@ -6,7 +6,7 @@ CK004,dada rasa ketat on off sejak smlm,MD30.Z,validation,draft,synthetic,starte
 CK005,"takde sakit dada, cuma cepat penat",MG22,train,draft,synthetic,starter_csv
 CK006,"batuk dah 2 minggu, kahak kuning",MD12,test,draft,synthetic,starter_csv
 CK007,batuk kering waktu malam je,MD12,test,draft,synthetic,starter_csv
-CK008,"demam datang pergi 3 hari, badan menggigil",MG26;MG21,test,draft,synthetic,starter_csv
+CK008,"demam datang pergi 3 hari, badan menggigil",MG21;MG26,test,draft,synthetic,starter_csv
 CK009,tak demam tapi tekak sakit bila telan,MD36.0,train,draft,synthetic,starter_csv
 CK010,nafas berbunyi wheeze lepas kemas rumah,MD11.C,train,draft,synthetic,starter_csv
 CK011,"kencing malam banyak kali, cepat haus",MF50.0;MG43.0,train,draft,synthetic,starter_csv
@@ -30,13 +30,13 @@ CK028,"perut memulas lepas makan, cirit 3 kali",MD81.4;ME05.1,test,draft,synthet
 CK029,sakit perut kanan bawah dari malam tadi,MD81.4,test,draft,synthetic,starter_csv
 CK030,"muntah 2 kali, tak lalu makan hari ni",MD90.1;MG43.7,test,draft,synthetic,starter_csv
 CK031,najis hitam sejak pagi,ME24.A4,train,draft,synthetic,starter_csv
-CK032,"sembelit dah 4 hari, perut kembung",ME05.0;ME01,test,draft,synthetic,starter_csv
+CK032,"sembelit dah 4 hari, perut kembung",ME01;ME05.0,test,draft,synthetic,starter_csv
 CK033,"cirit cair sejak semalam, takde darah",ME05.1,test,draft,synthetic,starter_csv
 CK034,pedih ulu hati bila baring lepas makan,MD95,test,draft,synthetic,starter_csv
-CK035,"kurang selera makan, berat turun tanpa diet",MG43.7;MG43.5,test,draft,synthetic,starter_csv
+CK035,"kurang selera makan, berat turun tanpa diet",MG43.5;MG43.7,test,draft,synthetic,starter_csv
 CK036,"badan letih je 2 minggu, tidur tak cukup",MG22,validation,draft,synthetic,starter_csv
 CK037,pucat dan cepat penat bila jalan,MG22,validation,draft,synthetic,starter_csv
-CK038,ruam gatal naik lepas makan seafood,ME66.6Z;EC90.Z,test,draft,synthetic,starter_csv
+CK038,ruam gatal naik lepas makan seafood,EC90.Z;ME66.6Z,test,draft,synthetic,starter_csv
 CK039,gatal satu badan waktu malam,EC90.Z,test,draft,synthetic,starter_csv
 CK040,"luka kaki lambat baik, ada kencing manis",5A11,test,draft,synthetic,starter_csv
 CK041,mata merah dan berair sejak pagi,MC15,validation,draft,synthetic,starter_csv
@@ -46,100 +46,100 @@ CK044,"haid banyak sangat bulan ni, pening",GA22;MB48.Z,test,draft,synthetic,sta
 CK045,"takde demam, tak batuk, cuma sakit badan",FB56.2,test,draft,synthetic,starter_csv
 CK046,sakit dada bila tarik nafas dalam,MD30.0,test,draft,synthetic,starter_csv
 CK047,"kaki cramp waktu malam, selalu jadi",MB47.3,validation,draft,synthetic,starter_csv
-CK048,"rasa gelisah, susah tidur sejak kerja shift",MB24.3;7A0Z,train,draft,synthetic,starter_csv
+CK048,"rasa gelisah, susah tidur sejak kerja shift",7A0Z;MB24.3,train,draft,synthetic,starter_csv
 CK049,"stress sangat, jantung berdebar bila fikir kerja",MC81.2,train,draft,synthetic,starter_csv
 CK050,sedih dan takde mood hampir tiap hari,,test,draft,synthetic,starter_csv
 CK051,luka kecil tapi merah makin merebak,,validation,draft,synthetic,starter_csv
-CK052,"sakit tekak, suara serak 3 hari",MD36.0;MA82.10,validation,draft,synthetic,starter_csv
-CK053,"gula selalu tinggi, cepat haus dan letih",MG43.0;MG22,validation,draft,synthetic,starter_csv
+CK052,"sakit tekak, suara serak 3 hari",MA82.10;MD36.0,validation,draft,synthetic,starter_csv
+CK053,"gula selalu tinggi, cepat haus dan letih",MG22;MG43.0,validation,draft,synthetic,starter_csv
 CK054,"menggigil bila lambat makan, lepas makan ok",,test,draft,synthetic,starter_csv
 CK055,"sakit kepala datang pergi, makan panadol lega",MB4D,test,draft,synthetic,starter_csv
 CK056,"perut sakit sejak semalam, tak muntah",MD81.4,test,draft,synthetic,starter_csv
 CK057,kaki kanan sakit dan bengkak sejak pagi,FB56.4;MG29.01,test,draft,synthetic,starter_csv
-CK058,"tak lalu makan, loya bila bau makanan",MG43.7;MD90.0,test,draft,synthetic,starter_csv
+CK058,"tak lalu makan, loya bila bau makanan",MD90.0;MG43.7,test,draft,synthetic,starter_csv
 CK059,selalu rasa haus walaupun dah minum,MG43.0,test,draft,synthetic,starter_csv
 CK060,"susah tidur, terjaga banyak kali malam",7A0Z,test,draft,synthetic,starter_csv
 HW001,"pt 54thn, hx DM HPT on meds. dtg utk FU. takde komplen. BP 150/90",5A11;BA00.Z,train,draft,synthetic,handwritten
-HW002,"demam 2 hari, sakit sendi, ruam merah kat badan. NS1 +ve, denggi positif",MG26;ME82;ME66.6Z;1D2Z,train,draft,synthetic,handwritten
-HW003,"?denggi. demam 3 ari, sakit kepala blkg mata, takde muntah",MG26;MB4D,train,draft,synthetic,handwritten
-HW004,"budak 5thn, cirit 5x sejak pagi, muntah 2x, nampak lemah badan. imp: AGE w mild dehidrasi",ME05.1;MD90.1;MG22;1A40.Z;5C70.0,train,draft,synthetic,handwritten
-HW005,c/o pedih kencing n kerap kencing 2 hari. no fever. UFEME nitrite +. dx UTI,MF50.7;MF50.0;GC08.Z,validation,draft,synthetic,handwritten
-HW006,"batuk berkahak 1 minggu, demam on off, sesak nafas sikit. CXR consolidation kanan bawah. ?pneumonia",MD12;MG26;MD11.5,train,draft,synthetic,handwritten
-HW007,"imp: pneumonia. batuk n demam 5 hari, crepitations R base",CA40.Z;MD12;MG26,test,draft,synthetic,handwritten
-HW008,"known asthmatic, semput sejak malam tadi, wheeze ++. tak demam",CA23;MD11.5;MD11.C,train,draft,synthetic,handwritten
-HW009,"pt lelah dah lama, datang sebab nafas berbunyi lepas hujan",CA23;MD11.C,test,draft,synthetic,handwritten
-HW010,"smoker 30 pack yr, copd, batuk kronik n sesak bila jalan jauh",QE13;CA22.Z;MD12;MD11.5,train,draft,synthetic,handwritten
+HW002,"demam 2 hari, sakit sendi, ruam merah kat badan. NS1 +ve, denggi positif",1D2Z,train,draft,synthetic,handwritten
+HW003,"?denggi. demam 3 ari, sakit kepala blkg mata, takde muntah",MB4D;MG26,train,draft,synthetic,handwritten
+HW004,"budak 5thn, cirit 5x sejak pagi, muntah 2x, nampak lemah badan. imp: AGE w mild dehidrasi",1A40.Z;5C70.0;MG22,train,draft,synthetic,handwritten
+HW005,c/o pedih kencing n kerap kencing 2 hari. no fever. UFEME nitrite +. dx UTI,GC08.Z,validation,draft,synthetic,handwritten
+HW006,"batuk berkahak 1 minggu, demam on off, sesak nafas sikit. CXR consolidation kanan bawah. ?pneumonia",MD11.5;MD12;MG26,train,draft,synthetic,handwritten
+HW007,"imp: pneumonia. batuk n demam 5 hari, crepitations R base",CA40.Z,test,draft,synthetic,handwritten
+HW008,"known asthmatic, semput sejak malam tadi, wheeze ++. tak demam",CA23,train,draft,synthetic,handwritten
+HW009,"pt lelah dah lama, datang sebab nafas berbunyi lepas hujan",CA23,test,draft,synthetic,handwritten
+HW010,"smoker 30 pack yr, copd, batuk kronik n sesak bila jalan jauh",CA22.Z;QE13,train,draft,synthetic,handwritten
 HW011,"hidung berair, bersin2, tekak gatal sikit 2 hari. no SOB",CA00,validation,draft,synthetic,handwritten
-HW012,selsema n batuk sikit 3 ari. imp URTI,CA00;MD12;CA07.0,train,draft,synthetic,handwritten
-HW013,"tekak sakit gile, tonsil bengkak ada nanah, demam 38.5",MD36.0;CA03.Z;MG26,test,draft,synthetic,handwritten
-HW014,"sakit tekak 2 hari, tekak merah, tiada demam",MD36.0;CA02.Z,test,draft,synthetic,handwritten
-HW015,"resdung teruk, hidung tersumbat, sakit kat dahi",CA01;CA00,validation,draft,synthetic,handwritten
+HW012,selsema n batuk sikit 3 ari. imp URTI,CA00;CA07.0,train,draft,synthetic,handwritten
+HW013,"tekak sakit gile, tonsil bengkak ada nanah, demam 38.5",CA03.Z;MG26,test,draft,synthetic,handwritten
+HW014,"sakit tekak 2 hari, tekak merah, tiada demam",CA02.Z,test,draft,synthetic,handwritten
+HW015,"resdung teruk, hidung tersumbat, sakit kat dahi",CA00;CA01,validation,draft,synthetic,handwritten
 HW016,"alergi hidung, bersin2 waktu pagi setiap hari",CA08.0Z,validation,draft,synthetic,handwritten
 HW017,"kayap kat pinggang kiri, pedih n melepuh",1E91.Z,test,draft,synthetic,handwritten
-HW018,"anak cacar air, bintik merah berair satu badan, gatal",1E90.Z;ME66.6Z;EC90.Z,validation,draft,synthetic,handwritten
-HW019,"kudis buta, gatal teruk waktu malam, adik pun sama",1G04.Z;EC90.Z,train,draft,synthetic,handwritten
-HW020,"kurap kat celah peha, gatal, dah 2 minggu",1F28.Z;EC90.Z,test,draft,synthetic,handwritten
+HW018,"anak cacar air, bintik merah berair satu badan, gatal",1E90.Z,validation,draft,synthetic,handwritten
+HW019,"kudis buta, gatal teruk waktu malam, adik pun sama",1G04.Z,train,draft,synthetic,handwritten
+HW020,"kurap kat celah peha, gatal, dah 2 minggu",1F28.Z,test,draft,synthetic,handwritten
 HW021,"biduran naik lepas makan udang, takde sesak nafas, takde bengkak bibir",EB00.Z,validation,draft,synthetic,handwritten
-HW022,"ekzema dari kecik, kulit kering n gatal kat lipatan siku",EA80.Z;EC90.Z,test,draft,synthetic,handwritten
+HW022,"ekzema dari kecik, kulit kering n gatal kat lipatan siku",EA80.Z,test,draft,synthetic,handwritten
 HW023,jerawat batu kat muka dah 3 bulan,ED80.Z,train,draft,synthetic,handwritten
 HW024,"luka kat kaki kanan merah, panas, merebak. imp cellulitis",1B70.Z,test,draft,synthetic,handwritten
 HW025,"kanak2 ada luka bernanah kat bibir n hidung, impetigo",1B72.Z,test,draft,synthetic,handwritten
-HW026,telinga kiri sakit n keluar nanah lepas selsema. AOM,AB70.2;AA90;CA00,test,draft,synthetic,handwritten
-HW027,"lepas berenang telinga sakit, gatal. otitis externa",AB70.2;AA3Z;EC90.Z,validation,draft,synthetic,handwritten
-HW028,"mata merah berair, bertahi pagi2, kawan sekelas pun kena",MC15;9A60.Z,train,draft,synthetic,handwritten
+HW026,telinga kiri sakit n keluar nanah lepas selsema. AOM,AA90;CA00,test,draft,synthetic,handwritten
+HW027,"lepas berenang telinga sakit, gatal. otitis externa",AA3Z,validation,draft,synthetic,handwritten
+HW028,"mata merah berair, bertahi pagi2, kawan sekelas pun kena",9A60.Z,train,draft,synthetic,handwritten
 HW029,"gigi berlubang sakit sejak 3 hari, susah makan",DA08.0,test,draft,synthetic,handwritten
-HW030,"kaki terseliuh main futsal semalam, buku lali bengkak",ND14.7Z;MG29.01,test,draft,synthetic,handwritten
+HW030,"kaki terseliuh main futsal semalam, buku lali bengkak",MG29.01;ND14.7Z,test,draft,synthetic,handwritten
 HW031,"hx gout, ibu jari kaki kanan merah bengkak sakit sejak pagi",FA25,validation,draft,synthetic,handwritten
 HW032,"OA lutut both, sakit bila naik tangga, nak ubat tahan sakit",FA01.Z,test,draft,synthetic,handwritten
 HW033,"frozen shoulder kiri, susah angkat tangan, dah 2 bulan",FB53.0,train,draft,synthetic,handwritten
 HW034,"tumit sakit waktu pagi lepas bangun, plantar fasciitis",FB40.1,validation,draft,synthetic,handwritten
 HW035,"tangan kebas n mencucuk2 waktu malam, ?carpal tunnel",MB40.Z,test,draft,synthetic,handwritten
-HW036,"carpal tunnel kanan, tangan kebas sebab kerja taip",8C10.0;MB40.Z,test,draft,synthetic,handwritten
-HW037,sakit pinggang menjalar ke kaki kiri lepas angkat beg beras,ME84.3;ME84.2Z,validation,draft,synthetic,handwritten
-HW038,"sakit kepala sebelah berdenyut, loya, silau cahaya. hx migrain",8A80.Z;MB4D;MD90.0,validation,draft,synthetic,handwritten
-HW039,"pening berpusing bila toleh kepala, loya, takde muntah",MB48.Z;MB48.0Z;MD90.0,test,draft,synthetic,handwritten
+HW036,"carpal tunnel kanan, tangan kebas sebab kerja taip",8C10.0,test,draft,synthetic,handwritten
+HW037,sakit pinggang menjalar ke kaki kiri lepas angkat beg beras,ME84.3,validation,draft,synthetic,handwritten
+HW038,"sakit kepala sebelah berdenyut, loya, silau cahaya. hx migrain",8A80.Z,validation,draft,synthetic,handwritten
+HW039,"pening berpusing bila toleh kepala, loya, takde muntah",MB48.0Z;MD90.0,test,draft,synthetic,handwritten
 HW040,"pengsan masa beratur kat pasar, sedar balik dlm 1 minit",MG45.Z,test,draft,synthetic,handwritten
 HW041,"muka senget sebelah kanan bangun tidur, mata tak boleh tutup. imp: bell palsy",8B88.0,validation,draft,synthetic,handwritten
 HW042,"hx strok 2019, lemah sebelah kiri, on aspirin",8B11,test,draft,synthetic,handwritten
 HW043,tiba2 cakap pelat n tangan kanan lemah 1 jam lepas,MA80.2Z,validation,draft,synthetic,handwritten
 HW044,"IHD, dah buat stent, sakit dada bila jalan laju",BA52.Z;MD30.Z,test,draft,synthetic,handwritten
-HW045,"CCF, kaki bengkak bertambah, sesak nafas bila baring",BD10;MG29.01;MD11.5,test,draft,synthetic,handwritten
+HW045,"CCF, kaki bengkak bertambah, sesak nafas bila baring",BD10,test,draft,synthetic,handwritten
 HW046,"jantung berdebar laju, tangan terketar, berat turun 5kg. ?hyperthyroid",MC81.2;MG43.5,validation,draft,synthetic,handwritten
 HW047,"hipotiroid on thyroxine, letih n berat naik",5A00.Z;MG22,test,draft,synthetic,handwritten
 HW048,"known thyrotoxicosis, default ubat 3 bulan",5A02.Z;QC49,train,draft,synthetic,handwritten
 HW049,"CKD stage 3, kencing berbuih, kaki sembab",GB61.Z;MF96.Z;MG29.01,validation,draft,synthetic,handwritten
-HW050,"batu karang kiri, sakit pinggang teruk n air kencing merah",GB70.0Z;ME84.2Z;MF50.4Z,train,draft,synthetic,handwritten
-HW051,"fatty liver dari scan, kolesterol tinggi, obes",DB92.Z;5C80.0Z;5B81.Z,train,draft,synthetic,handwritten
+HW050,"batu karang kiri, sakit pinggang teruk n air kencing merah",GB70.0Z,train,draft,synthetic,handwritten
+HW051,"fatty liver dari scan, kolesterol tinggi, obes",5B81.Z;5C80.0Z;DB92.Z,train,draft,synthetic,handwritten
 HW052,"dyslipidaemia on statin, takde simptom",5C80.2,test,draft,synthetic,handwritten
 HW053,"hep b carrier, datang utk FU LFT",1E51.0Z,test,draft,synthetic,handwritten
-HW054,"PTB on treatment bulan ke 2, batuk dah kurang",1B10.Z;MD12,train,draft,synthetic,handwritten
+HW054,"PTB on treatment bulan ke 2, batuk dah kurang",1B10.Z,train,draft,synthetic,handwritten
 HW055,"batuk lebih 2 minggu, batuk ada darah, berpeluh malam, berat turun. r/o TB",MD12;MD22;ME66.5;MG43.5,validation,draft,synthetic,handwritten
-HW056,"positif covid RTK, demam, sakit tekak, hilang deria bau",RA01;MG26;MD36.0,test,draft,synthetic,handwritten
-HW057,"ILI, demam tinggi, sakit otot satu badan, batuk",1E32;MG26;FB56.2;MD12,test,draft,synthetic,handwritten
-HW058,"imp acute bronchitis. batuk berkahak 10 hari, no fever",CA42.Z;MD12,test,draft,synthetic,handwritten
+HW056,"positif covid RTK, demam, sakit tekak, hilang deria bau",RA01,test,draft,synthetic,handwritten
+HW057,"ILI, demam tinggi, sakit otot satu badan, batuk",1E32,test,draft,synthetic,handwritten
+HW058,"imp acute bronchitis. batuk berkahak 10 hari, no fever",CA42.Z,test,draft,synthetic,handwritten
 HW059,buasir berdarah bila berak keras,DB60.Z,test,draft,synthetic,handwritten
-HW060,"sembelit seminggu, perut kembung, ada buasir",ME05.0;ME01;DB60.Z,test,draft,synthetic,handwritten
-HW061,"gastrik datang lagi, pedih ulu hati lepas makan pedas",DA42.Z;MD95,validation,draft,synthetic,handwritten
+HW060,"sembelit seminggu, perut kembung, ada buasir",DB60.Z;ME01;ME05.0,test,draft,synthetic,handwritten
+HW061,"gastrik datang lagi, pedih ulu hati lepas makan pedas",DA42.Z,validation,draft,synthetic,handwritten
 HW062,"GERD, asid naik ke tekak waktu malam, batuk kering",DA22.Z;MD12,test,draft,synthetic,handwritten
-HW063,"ulser perut dulu, skrg najis hitam 2 hari, pening",DA60.Z;ME24.A4;MB48.Z,train,draft,synthetic,handwritten
+HW063,"ulser perut dulu, skrg najis hitam 2 hari, pening",DA60.Z;MB48.Z;ME24.A4,train,draft,synthetic,handwritten
 HW064,"muntah darah 2x pagi ni, hx minum arak",ME24.A5,test,draft,synthetic,handwritten
-HW065,"mata kuning n kencing pekat macam teh, gatal badan",ME10.1;EC90.Z,validation,draft,synthetic,handwritten
+HW065,"mata kuning n kencing pekat macam teh, gatal badan",EC90.Z;ME10.1,validation,draft,synthetic,handwritten
 HW066,"susah telan makanan pejal, rasa tersekat kat dada, berat turun",MD93;MG43.5,test,draft,synthetic,handwritten
-HW067,"anemia kekurangan zat besi, pucat, cepat penat",3A00.Z;MG22,train,draft,synthetic,handwritten
+HW067,"anemia kekurangan zat besi, pucat, cepat penat",3A00.Z,train,draft,synthetic,handwritten
 HW068,"senggugut teruk hari pertama period, muntah sekali",GA34.3;MD90.1,train,draft,synthetic,handwritten
 HW069,"period tak datang 3 bulan, UPT negatif",GA20.0Z,test,draft,synthetic,handwritten
 HW070,"haid lebat 10 hari, pening n letih",GA22;MB48.Z;MG22,test,draft,synthetic,handwritten
-HW071,"DM, gula rendah pagi tadi, berpeluh n tangan terketar, lepas minum air manis ok",5A11;5A21.Z;ME66.5,train,draft,synthetic,handwritten
-HW072,"luka kaki kencing manis kat ibu jari kanan, berbau, dah 2 minggu",BD54;5A11,test,draft,synthetic,handwritten
+HW071,"DM, gula rendah pagi tadi, berpeluh n tangan terketar, lepas minum air manis ok",5A11;5A21.Z,train,draft,synthetic,handwritten
+HW072,"luka kaki kencing manis kat ibu jari kanan, berbau, dah 2 minggu",5A11;BD54,test,draft,synthetic,handwritten
 HW073,"DM 10 thn, mata kabur, retinopati diabetik on FU eye clinic",5A11;9B71.0Z,test,draft,synthetic,handwritten
-HW074,"T1DM since kecik, on insulin, datang sebab muntah n sakit perut",5A10;MD90.1;MD81.4,train,draft,synthetic,handwritten
+HW074,"T1DM since kecik, on insulin, datang sebab muntah n sakit perut",5A10;MD81.4;MD90.1,train,draft,synthetic,handwritten
 HW075,"perokok 20 batang sehari, nak berhenti merokok",QE13,test,draft,synthetic,handwritten
-HW076,"vape, batuk kering sebulan",QE13;MD12,validation,draft,synthetic,handwritten
-HW077,"cemas, susah tidur, jantung berdebar sejak hilang kerja",MB24.3;7A0Z;MC81.2,train,draft,synthetic,handwritten
+HW076,"vape, batuk kering sebulan",MD12;QE13,validation,draft,synthetic,handwritten
+HW077,"cemas, susah tidur, jantung berdebar sejak hilang kerja",7A0Z;MB24.3;MC81.2,train,draft,synthetic,handwritten
 HW078,"tak boleh tidur 2 minggu, fikir masalah keluarga",7A0Z,test,draft,synthetic,handwritten
 HW079,"terkencing bila batuk atau bersin, makcik 60thn",MF50.2Z,validation,draft,synthetic,handwritten
-HW080,"badan bengkak satu badan, muka sembab pagi, kencing berbuih",MG29.1;MF96.Z,test,draft,synthetic,handwritten
-HW081,"hidung berdarah tak berhenti 20 minit, hx HPT",MD20;BA00.Z,train,draft,synthetic,handwritten
+HW080,"badan bengkak satu badan, muka sembab pagi, kencing berbuih",MF96.Z;MG29.1,test,draft,synthetic,handwritten
+HW081,"hidung berdarah tak berhenti 20 minit, hx HPT",BA00.Z;MD20,train,draft,synthetic,handwritten
 HW082,"batuk ada darah sikit, demam malam",MD22;MG26,test,draft,synthetic,handwritten
 HW083,"suara serak dah sebulan, perokok",MA82.10;QE13,train,draft,synthetic,handwritten
 HW084,dada sakit masa tarik nafas dalam lepas jatuh motor,MD30.0,test,draft,synthetic,handwritten
@@ -147,16 +147,16 @@ HW085,"dada rasa ketat menjalar ke lengan kiri, berpeluh banyak",MD30.Z;ME66.5,t
 HW086,"kaki cramp tiap malam, takde bengkak",MB47.3,test,draft,synthetic,handwritten
 HW087,"sakit tangan kanan lepas jatuh, boleh gerak",FB56.4,test,draft,synthetic,handwritten
 HW088,sengal badan n lenguh2 lepas kerja kebun,FB56.2,train,draft,synthetic,handwritten
-HW089,"tak lalu makan seminggu, mual, perut kembung",MG43.7;MD90.0;ME01,validation,draft,synthetic,handwritten
+HW089,"tak lalu makan seminggu, mual, perut kembung",MD90.0;ME01;MG43.7,validation,draft,synthetic,handwritten
 HW090,"anak tak nak minum, bibir kering, kurang kencing. cirit 6x",5C70.0;ME05.1,train,draft,synthetic,handwritten
 HW091,"kencing malam 4-5 kali, cepat haus, berat turun. gula rawak 18",MF50.0;MG43.0;MG43.5,train,draft,synthetic,handwritten
 HW092,air kencing banyak sangat n selalu dahaga,MF55;MG43.0,validation,draft,synthetic,handwritten
 HW093,"kencing ada darah tanpa sakit, perokok lama",MF50.4Z;QE13,validation,draft,synthetic,handwritten
 HW094,"pedih masa kencing, takde demam, takde sakit pinggang",MF50.7,validation,draft,synthetic,handwritten
 HW095,"obes BMI 35, nak kurus, darah tinggi baru dx",5B81.Z;BA00.Z,train,draft,synthetic,handwritten
-HW096,"ckd, hpt, dm. FU biasa. kaki takde bengkak",GB61.Z;BA00.Z;5A11,validation,draft,synthetic,handwritten
+HW096,"ckd, hpt, dm. FU biasa. kaki takde bengkak",5A11;BA00.Z;GB61.Z,validation,draft,synthetic,handwritten
 HW097,"sakit perut kanan atas lepas makan berlemak, loya",MD81.4;MD90.0,test,draft,synthetic,handwritten
-HW098,cirit birit n muntah lepas makan nasi lemak kenduri. keracunan makanan,ME05.1;MD90.1;1A40.Z,test,draft,synthetic,handwritten
+HW098,cirit birit n muntah lepas makan nasi lemak kenduri. keracunan makanan,1A40.Z,test,draft,synthetic,handwritten
 HW099,"takde batuk, takde selsema, cuma demam 1 hari",MG26,test,draft,synthetic,handwritten
 HW100,"nafi sakit dada, nafi sesak nafas. datang ambil ubat darah tinggi",BA00.Z,validation,draft,synthetic,handwritten
 HW101,"no fever, no cough, no SOB. hx asthma stable",CA23,test,draft,synthetic,handwritten
@@ -164,13 +164,13 @@ HW102,"pt deny pedih kencing, mengadu kencing berbuih je",MF96.Z,test,draft,synt
 HW103,"tiada muntah, tiada cirit. sakit perut bawah kiri 2 hari",MD81.4,validation,draft,synthetic,handwritten
 HW104,"bukan sakit kepala, tapi pening macam nak pitam bila bangun",MB48.Z,test,draft,synthetic,handwritten
 HW105,?gastritis vs ?GERD. pedih ulu hati 1 minggu,MD95,train,draft,synthetic,handwritten
-HW106,"r/o dengue. demam 2 hari, badan sakit",MG26;FB56.2,test,draft,synthetic,handwritten
-HW107,"measles contact. anak demam, mata merah, ruam mula kat muka. imp campak",1F03;MG26;MC15;ME66.6Z,test,draft,synthetic,handwritten
-HW108,"pneumonia discharged last week, datang FU, batuk sikit lagi",CA40.Z;MD12,validation,draft,synthetic,handwritten
-HW109,"sesak nafas tiba2 malam, kaki bengkak, hx heart failure",MD11.5;MG29.01;BD10,test,draft,synthetic,handwritten
+HW106,"r/o dengue. demam 2 hari, badan sakit",FB56.2;MG26,test,draft,synthetic,handwritten
+HW107,"measles contact. anak demam, mata merah, ruam mula kat muka. imp campak",1F03,test,draft,synthetic,handwritten
+HW108,"pneumonia discharged last week, datang FU, batuk sikit lagi",CA40.Z,validation,draft,synthetic,handwritten
+HW109,"sesak nafas tiba2 malam, kaki bengkak, hx heart failure",BD10,test,draft,synthetic,handwritten
 HW110,"gatal2 kulit lepas pakai sabun baru, ruam merah kat tangan",EC90.Z;ME66.6Z,validation,draft,synthetic,handwritten
 HW111,"sakit telinga kanan 2 hari, demam sikit, budak 3 thn",AB70.2;MG26,test,draft,synthetic,handwritten
-HW112,"imp tonsilitis. sakit bila telan, demam",CA03.Z;MD36.0;MG26,test,draft,synthetic,handwritten
+HW112,"imp tonsilitis. sakit bila telan, demam",CA03.Z;MG26,test,draft,synthetic,handwritten
 HW113,"letih je, tidur cukup, makan ok",MG22,test,draft,synthetic,handwritten
 HW114,"pt mengadu sakit pinggang bawah dah 3 minggu, takde kebas kaki",ME84.2Z,test,draft,synthetic,handwritten
 HW115,"berat badan turun 8kg dalam 2 bulan tanpa diet, hilang selera makan",MG43.5;MG43.7,test,draft,synthetic,handwritten
@@ -179,21 +179,21 @@ HW117,"kencing manis, kolesterol tinggi, fatty liver. FU 3 bulan",5A11;5C80.0Z;D
 HW118,"lutut haus kiri kanan, bengkak sikit lepas jalan jauh",FA01.Z,validation,draft,synthetic,handwritten
 HW119,"sakit dada, takde sesak, takde berpeluh. ECG normal",MD30.Z,test,draft,synthetic,handwritten
 HW120,"semput sikit bila naik bukit, takde batuk",MD11.5,test,draft,synthetic,handwritten
-HW121,"denggi positif, demam hari ke 4, muntah, sakit perut",1D2Z;MG26;MD90.1;MD81.4,train,draft,synthetic,handwritten
-HW122,"kanak2 cirit cair 3 hari, demam, nampak kering, imp gastroenteritis",ME05.1;MG26;1A40.Z,train,draft,synthetic,handwritten
+HW121,"denggi positif, demam hari ke 4, muntah, sakit perut",1D2Z;MD81.4;MD90.1,train,draft,synthetic,handwritten
+HW122,"kanak2 cirit cair 3 hari, demam, nampak kering, imp gastroenteritis",1A40.Z;MG26,train,draft,synthetic,handwritten
 HW123,"BP 160/100 masa check, pt takde hx darah tinggi",,test,draft,synthetic,handwritten
 HW124,"mak cik tanya pasal vaksin, takde komplen",,test,draft,synthetic,handwritten
 HW125,"datang utk ambil MC, sihat",,train,draft,synthetic,handwritten
 HW126,"luka kecil kat jari kena pisau, dah cuci",,test,draft,synthetic,handwritten
-HW127,"ruam kat celah kaki, gatal, kulit merekah. ?tinea pedis",ME66.6Z;EC90.Z,test,draft,synthetic,handwritten
-HW128,"uri, batuk n selsema, takde demam",CA07.0;MD12;CA00,test,draft,synthetic,handwritten
-HW129,"influenza, demam n sakit badan",1E32;MG26;FB56.2,test,draft,synthetic,handwritten
-HW130,"kencing pedih n darah sikit, imp UTI",MF50.7;MF50.4Z;GC08.Z,train,draft,synthetic,handwritten
-HW131,"demam seram sejuk sejak semalam, menggigil",MG26;MG21,test,draft,synthetic,handwritten
+HW127,"ruam kat celah kaki, gatal, kulit merekah. ?tinea pedis",EC90.Z;ME66.6Z,test,draft,synthetic,handwritten
+HW128,"uri, batuk n selsema, takde demam",CA00;CA07.0,test,draft,synthetic,handwritten
+HW129,"influenza, demam n sakit badan",1E32,test,draft,synthetic,handwritten
+HW130,"kencing pedih n darah sikit, imp UTI",GC08.Z;MF50.4Z,train,draft,synthetic,handwritten
+HW131,"demam seram sejuk sejak semalam, menggigil",MG21;MG26,test,draft,synthetic,handwritten
 HW132,"kerap kencing waktu malam, aliran lemah, pakcik 70",MF50.0,test,draft,synthetic,handwritten
-HW133,"loya muntah sejak pagi, pening",MD90.0;MD90.1;MB48.Z,train,draft,synthetic,handwritten
+HW133,"loya muntah sejak pagi, pening",MB48.Z;MD90.0;MD90.1,train,draft,synthetic,handwritten
 HW134,"susah nak lena, terjaga pukul 3 pagi",7A0Z,test,draft,synthetic,handwritten
-HW135,"sakit dada bila bernafas, demam, batuk",MD30.0;MG26;MD12,test,draft,synthetic,handwritten
+HW135,"sakit dada bila bernafas, demam, batuk",MD12;MD30.0;MG26,test,draft,synthetic,handwritten
 GEN00001,"angina like pain sangat x2 days, advise REHAT, myalgias sangat, bila naik tangga, badan kuning 3 minggu. mohon review dr",FB56.2;MD30.Z;ME10.1,train,draft,synthetic,generated
 GEN00002,pt dtg c/o kahak kuning dan bilateral leg swelling sejak pagi dan PMHx diabetic foot wound hx dan tidak blackout,BD54;MG29.01,train,draft,synthetic,generated
 GEN00003,datang sebab period banyak sangat sikit dan pain on urination skit2 3 mnggu dan no period tak datang dan refill meds. minta MC,GA22;MF50.7,train,draft,synthetic,generated
@@ -208,7 +208,7 @@ GEN00011,painful ear teruk on off + sejarah allergic rhinitis hx + advise rehat 
 GEN00012,"pt c/o PMHx chronic renal disease - stable, background hypercholesterolamia - stable, NO h/o painful pee",5C80.0Z;GB61.Z,train,draft,synthetic,generated
 GEN00013,77yo F c/o known case of hld FU klinik; on review; hemoptysis skit2 dah 6 hari; dysuria; nafi nauseated,5C80.2;MD22;MF50.7,train,draft,synthetic,generated
 GEN00014,"pt c/o A: tekak merah, known case of median nerve compression (old case), denied itchy. T 37.7",8C10.0;CA02.Z,train,draft,synthetic,generated
-GEN00015,pt komplen lepas balik kampung + chest clear + pedih hulu hati kuat for 1/52 + sakit gastrik on meds + pmhx: migraine tak terkawal. on paracetamol,8A80.Z;DA42.Z;MD95,train,draft,synthetic,generated
+GEN00015,pt komplen lepas balik kampung + chest clear + pedih hulu hati kuat for 1/52 + sakit gastrik on meds + pmhx: migraine tak terkawal. on paracetamol,8A80.Z;DA42.Z,train,draft,synthetic,generated
 GEN00016,"ibu bawa anak, haid TAK datang sejak 4 blan, no malaena, pmhx: insulin dependent known, tolerating orally",5A10;GA20.0Z,train,draft,synthetic,generated
 GEN00017,"mengdu bloated 3 hari, x pening, ada ischaemic stroke dah 5 thn, nak refill UBAT. on paracetamol",8B11;ME01,train,draft,synthetic,generated
 GEN00018,complains of review in 3 days. abdominal distension sangat 3/7,ME01,train,draft,synthetic,generated
@@ -218,7 +218,7 @@ GEN00021,59yo male c/o ?pembawa hepatitis b n protein in urine kuat for 1/52 n a
 GEN00022,"doc cnfrm urtis, nafi loose stools, kat sekolah, denies vomited once, kat dada kanan. minta MC",CA07.0,train,draft,synthetic,generated
 GEN00023,"bila bangun pagi, diagnosis: oe, poor oral intake 4 hari",5C70.0;AA3Z,train,draft,synthetic,generated
 GEN00024,"pesakit datang, heart pounding absent + sejarah sakit tapak kaki pagi - stable + suspek ischaemic STROKE. T 37.9",FB40.1,train,draft,synthetic,generated
-GEN00025,"pt dtg c/o ULSER gastrik, no gelisah, came with mother, perut memulas kuat x4 days, No sangt kurus. BP 121/76",DA60.Z;MD81.4,train,draft,synthetic,generated
+GEN00025,"pt dtg c/o ULSER gastrik, no gelisah, came with mother, perut memulas kuat x4 days, No sangt kurus. BP 121/76",DA60.Z,train,draft,synthetic,generated
 GEN00026,"complains of k/c/o cardiac failure tak terkawal, doc cnfrm bell palsy (dr ckp), jangkitan saluran kencing. T 37.7",8B88.0;BD10;GC08.Z,train,draft,synthetic,generated
 GEN00027,"c/o disahkan covid 19, nafas pendek for 5 weeks, bila bangun pagi. T 37.8",MD11.5;RA01,train,draft,synthetic,generated
 GEN00028,S: r/o gastroenteritis; imp uti; denied LUMBAR pain; background dm reti. minta MC,9B71.0Z;GC08.Z,train,draft,synthetic,generated
@@ -232,7 +232,7 @@ GEN00035,"ear pain, panicky kuat sejak semalam, dx eye infection, doc ckp",9A60.
 GEN00036,"?salur jantung tersumbat, No chest discomfort, maculopapular rash for 6 days, bila bangun berdiri. on paracetamol",ME66.6Z,train,draft,synthetic,generated
 GEN00037,"ibu bawa anak, disahkan positif covid, doc ckp, sciatica absent, HR stable, negative for numb. on paracetamol",RA01,train,draft,synthetic,generated
 GEN00038,presented WITH PMH: cerebrovascular accident + suspek amandel bengkak + fatty liver on ubat + ASAP + takde nafas berdehit. T 37.4,8B11;DB92.Z,train,draft,synthetic,generated
-GEN00039,datang sebab tidak kebas + cannot SWALLOW teruk sejak smlm + aching all over skit2 sejak pagi + ada alahan ubat + waktu malam + doc cnfrm flu like illness (dr ckp) + angina like pain sejk pagi,1E32;FB56.2;MD30.Z;MD93,train,draft,synthetic,generated
+GEN00039,datang sebab tidak kebas + cannot SWALLOW teruk sejak smlm + aching all over skit2 sejak pagi + ada alahan ubat + waktu malam + doc cnfrm flu like illness (dr ckp) + angina like pain sejk pagi,1E32;MD30.Z;MD93,train,draft,synthetic,generated
 GEN00040,60yo F c/o dr ckp HYPO episode - dr dah tgk. T 37.3,5A21.Z,train,draft,synthetic,generated
 GEN00041,lelaki 63 thn dtg dgn x urinary frequency + NAFI spasms + tiredness skit2 for 4 weeks. on paracetamol,MG22,train,draft,synthetic,generated
 GEN00042,"pesakit datang, diagnosis: stomach flu, imp aom, doc ckp. T 37.4",1A40.Z;AA90,train,draft,synthetic,generated
@@ -246,10 +246,10 @@ GEN00049,wheezy teruk sejak smlm; lepas main bola; known hx anemia besi tak terk
 GEN00050,"PT komplen nose bleeding xde, radiating to left leg kebelakangan NI, suspek hidung berair",ME84.3,train,draft,synthetic,generated
 GEN00051,"makcik 44 thn dtg dgn background thyrod underactive hx, tak lalu makan, T 37.0. minta MC",5A00.Z;MG43.7,train,draft,synthetic,generated
 GEN00052,"64yo M c/o takde badan bengkak, nafi sembelit teruk, selalu jadi, doc cnfrm ns1 positive. minta MC",1D2Z,train,draft,synthetic,generated
-GEN00053,"pesakit datang, chronic renal disase known n sakit badan sejak smlm n conjunctivitis N dr ckp denggi dr cnfrm n nose bleed dah seminggu n bila bangun berdiri",1D2Z;9A60.Z;FB56.2;GB61.Z;MD20,train,draft,synthetic,generated
+GEN00053,"pesakit datang, chronic renal disase known n sakit badan sejak smlm n conjunctivitis N dr ckp denggi dr cnfrm n nose bleed dah seminggu n bila bangun berdiri",1D2Z;9A60.Z;GB61.Z;MD20,train,draft,synthetic,generated
 GEN00054,"c/o suspek anemia zat besi, takde colicky pain, makin teruk, pmhx: dermatitis FU klinik",EA80.Z,train,draft,synthetic,generated
 GEN00055,c/o dx tekak merah (dr ckp). ?lemak darah tingg. No sembelit. disahkan kudis berair (dr ckp). coughing up blood XDE. on paracetamol,1B72.Z;CA02.Z,train,draft,synthetic,generated
-GEN00056,pt mengadu tummy bug + bengkak kaki sejak semalam + colicky PAIN KUAT 3 hari + negative for kekuningn + darah dalam air kencing tiada + kat pinggang kiri. minta MC,1A40.Z;MD81.4;MG29.01,train,draft,synthetic,generated
+GEN00056,pt mengadu tummy bug + bengkak kaki sejak semalam + colicky PAIN KUAT 3 hari + negative for kekuningn + darah dalam air kencing tiada + kat pinggang kiri. minta MC,1A40.Z;MG29.01,train,draft,synthetic,generated
 GEN00057,"A: tinea corporis - dr dah tgk, tidak mata kemerahan, review in 3 days",1F28.Z,train,draft,synthetic,generated
 GEN00058,"pt 19thn, no h/o pleuritic pain n lepas berenng n no rasa sejuk menggigil n headache teruk sejak SMLM n imp: throat infection - dr dah tgk n ubat habis n diagnosis: kayap, doc ckp",1E91.Z;CA02.Z;MB4D,train,draft,synthetic,generated
 GEN00059,PT presents with known hx gastrik datang on ubat n kencing ok n lepas makan pedas n painful swallowing KUAT n sciatica teruk since this morning. minta MC,DA42.Z;MD36.0;ME84.3,train,draft,synthetic,generated
@@ -308,7 +308,7 @@ GEN00111,dx buku lali terseliuh (dr ckp) n cannot swallow sejak 4 bulan n negati
 GEN00112,"pesakit datang, lpas makan, KENCING terlepas xde, epigastric PAIN 5/7, sejarah adhesive capsulitis hx - stable, No weight loss significant",FB53.0;MD81.4,train,draft,synthetic,generated
 GEN00113,"pt presents with ? eczema, no pleuritic chest pain, dx flu dr cnfrm, bleeding FROM nose kuat 3 ari, rasa nak muntah tiada. on paracetmol",CA00;MD20,train,draft,synthetic,generated
 GEN00114,"ibu bawa anak, at night + tangan kebas dah SEMINGGU + denied excessive urination + leg swelling 5/7. mohon review dr",MB40.Z;MG29.01,train,draft,synthetic,generated
-GEN00115,datang sebab painful joints dah 6 hari n ada acute gout known. BP 158/67,FA25;ME82,train,draft,synthetic,generated
+GEN00115,datang sebab painful joints dah 6 hari n ada acute gout known. BP 158/67,FA25,train,draft,synthetic,generated
 GEN00116,"pt 69thn, lepas main bola. diarrhea sangat sejak 3 bulan. BP 165/68",ME05.1,train,draft,synthetic,generated
 GEN00117,suara hilang 4/7 dan amenorrhea skit2 sejak 6 bulan dan takda telinga sakit dan kidney stone on ubat. on paracetamol,GA20.0Z;GB70.0Z;MA82.10,train,draft,synthetic,generated
 GEN00118,"S: epistaxis skit2 x6/7, period banyak kuat 5 minggu, A: selesma, doc ckp, drah dalam air kencing teruk, denies excessive thirst",CA00;GA22;MD20;MF50.4Z,train,draft,synthetic,generated
@@ -332,7 +332,7 @@ GEN00135,"pesakit datang, doc cnfrm hidung tersumbat, waktu malam, imp chest inf
 GEN00136,"pt mengdu negative for DADA sakit masa tarik nafas dalam, ada ginjal lemah - stabl, known case of low iron FU klinik, bila toleh kepala, background thyroid underactive FU klinik, vitals stable",3A00.Z;5A00.Z;GB61.Z,train,draft,synthetic,generated
 GEN00137,denied sakit lutt; dx muka senget sebelah; Rx abx; jangkitan saluran PERNAFASAN atas dr cnfrm; IMP: acute bronchitis (dr ckp),8B88.0;CA07.0;CA42.Z,train,draft,synthetic,generated
 GEN00138,"pt 73thn, dr ckp radang paru paru (dr ckp). takda vomit. HR stable. makin ok. generalized edema sejak semalam",CA40.Z;MG29.1,train,draft,synthetic,generated
-GEN00139,"pesakit datang, sakit dada dah seminggu dan dx ili, doc ckp dan macam bilk pusing teruk sejak SMLM DAN nafi jaundiced dan came with mother dan chesty cough skit2 kebelakangan ni. on paracetamol",1E32;MB48.0Z;MD12;MD30.Z,train,draft,synthetic,generated
+GEN00139,"pesakit datang, sakit dada dah seminggu dan dx ili, doc ckp dan macam bilk pusing teruk sejak SMLM DAN nafi jaundiced dan came with mother dan chesty cough skit2 kebelakangan ni. on paracetamol",1E32;MB48.0Z;MD30.Z,train,draft,synthetic,generated
 GEN00140,pt mengadu ada alahan ubat. tak hematuria,,train,draft,synthetic,generated
 GEN00141,pt dtg c/o doc cnfrm fungal infection dr cnfrm dan kat pinggang kiri dan doc cnfrm jangkitan usus. BP 117/99,1A40.Z;1F28.Z,train,draft,synthetic,generated
 GEN00142,"pt 57thn, lepas hjan, air kencing buih for 1/52, A: dental caries",DA08.0;MF96.Z,train,draft,synthetic,generated
@@ -389,7 +389,7 @@ GEN00192,pt presents with lightheaded sangat 5 minggu n kat kepala N tak tekak p
 GEN00193,pt dtg c/o A: tooth decay + suspek dengue fever + tak datang bulan sikit since yesterdy,DA08.0;GA20.0Z,train,draft,synthetic,generated
 GEN00194,presented with denied pusing pusing N lower back pain 2 minggu n stomach bug. T 37.0,1A40.Z;ME84.2Z,train,draft,synthetic,generated
 GEN00195,pt komplen known hx obesiti - stable. BP 130/95,5B81.Z,train,draft,synthetic,generated
-GEN00196,complains of tak terkencing + known hx adhesive capsultis on ubat + joint pain. on paracetamol,FB53.0;ME82,train,draft,synthetic,generated
+GEN00196,complains of tak terkencing + known hx adhesive capsultis on ubat + joint pain. on paracetamol,FB53.0,train,draft,synthetic,generated
 GEN00197,"perempuan 21 thn dtg dgn tiada fevers, yellow eyes skit2 kebelakangan ni, takda chill, suspek chicken pox, hx zits. T 37.7",ED80.Z;ME10.1,train,draft,synthetic,generated
 GEN00198,57yo F c/o kat pinggang kiri; deman sejak minggu lepas; takda SPINNING sensation; afebrile. BP 121/68,MG26,train,draft,synthetic,generated
 GEN00199,"pt mengadu tibi, nafi angina like pain, tolerating orally, itching skit2 for 4 weeks, denied headache, known case of penyakit gout on meds. mohon review dr",1B10.Z;EC90.Z;FA25,train,draft,synthetic,generated
@@ -404,7 +404,7 @@ GEN00207,"datang SEBAB takda swelling all over, known emphysematous ON ubat, kno
 GEN00208,"pt 33thn, disahkan rhinorrhoea - dr dah tgk; hidung berdarah since yesterday; datang dengan isteri; selera ok",CA00;MD20,train,draft,synthetic,generated
 GEN00209,"berat naik sikit, burning urine sikit 4/7, ?faringitis",MF50.7,train,draft,synthetic,generated
 GEN00210,"pesakit datang, doc cnfrm jangkitan saluran kencing + on review + swollen ankles absent + background dm retinopathy hx tak terkawal + hx ulser gastrik on ubat. BP 149/73",9B71.0Z;DA60.Z;GC08.Z,train,draft,synthetic,generated
-GEN00211,pt mengadu O/E unremarkable. bg MC 2 hari. negative for hidung berdarah. no kencing pedih. lbp skit2 sejak pagi. sciatica 2 hari. mohon review dr,ME84.2Z;ME84.3,train,draft,synthetic,generated
+GEN00211,pt mengadu O/E unremarkable. bg MC 2 hari. negative for hidung berdarah. no kencing pedih. lbp skit2 sejak pagi. sciatica 2 hari. mohon review dr,ME84.3,train,draft,synthetic,generated
 GEN00212,"pesakit datang, ulu HATI pedih x5/7. wheezed kebelakangan ni. TAKDA suara garau. PMH: alergi hidung. on off. on paracetamol",CA08.0Z;MD11.C;MD95,train,draft,synthetic,generated
 GEN00213,hard stools kuat kebelakangan ni; belum ambil ubat; sejarah hbv crrier hx. T 37.0,1E51.0Z;ME05.0,train,draft,synthetic,generated
 GEN00214,S: vomit teruk on off dan kegatalan takde dan A: middle ear infection DR cnfrm dan advise rehat dan lepas BALIK kampung dan frothy urine sejak pagi. minta MC,AA90;MD90.1;MF96.Z,train,draft,synthetic,generated
@@ -417,7 +417,7 @@ GEN00220,"complains of tak lalu makan, heavy menses dah seminggu, badan rasa tak
 GEN00221,"pesakit datang, nafi urinating at night; A: SKIN infection spreading; leaking urine xde; perut kembung x4 days; kat sekolah; vomited dah 4 hari; k/c/o kencing manis jenis 1 known. on paracetamol",1B70.Z;5A10;MD90.1;ME01,train,draft,synthetic,generated
 GEN00222,"datang sebab dx shingles RASH (dr ckp), denied pening, chest clear, A: throat infection",1E91.Z;CA02.Z,train,draft,synthetic,generated
 GEN00223,"datang sebab sakit tangan x5/7; afebrile; disahkan hypoglycaemia, doc ckp; lepas jatuh",5A21.Z;FB56.4,train,draft,synthetic,generated
-GEN00224,pt presents with ada alahan ubat dan imp sinusitis dr cnfrm dan kepala berdenyut skit2 3 ari dan h/o gastritis hx dan chronic kidney disease known. BP 157/74,CA01;DA42.Z;GB61.Z;MB4D,train,draft,synthetic,generated
+GEN00224,pt presents with ada alahan ubat dan imp sinusitis dr cnfrm dan kepala berdenyut skit2 3 ari dan h/o gastritis hx dan chronic kidney disease known. BP 157/74,CA01;DA42.Z;GB61.Z,train,draft,synthetic,generated
 GEN00225,pt presents with sakit sikit je dan No ruam. on paracetamol,,train,draft,synthetic,generated
 GEN00226,70yo M c/o gelisah kebelakangan ni dan lepas HUJAN dan incontinence sangat kebelakangan ni,MB24.3;MF50.2Z,train,draft,synthetic,generated
 GEN00227,pt PRESENTS with known non compliant known; berat naik sikit; percakapan tak jels dah seminggu; asyik haus sikit for 6 weeks; nafi spiking temperature; advise diet. BP 112/85,MA80.2Z;MG43.0;QC49,train,draft,synthetic,generated
@@ -437,7 +437,7 @@ GEN00240,unintentional weight loss kuat sejak 4 bulan. negative for leg pain. re
 GEN00241,S: abdominal distension skit2 sejak minggu lepas n lepas main bola n diagnosis: nasal congestion dr cnfrm n dada rasa ktat sikit sejak minggu lepas n rigor on off. BP 148/65,CA00;MD30.Z;ME01;MG21,train,draft,synthetic,generated
 GEN00242,"ibu bawa anak, rasa sejuk menggigil sikit since this morning; denied suara serak; nafi fast heartbeat; fainting kuat 4 minggu; imp: amandel bengkak, doc ckp",CA03.Z;MG21;MG45.Z,train,draft,synthetic,generated
 GEN00243,"pesakit datang, denied urine leakage + dizziness + cepat penat teruk sejak pagi + significant weight loss 3 hari + kerja shift",MB48.Z;MG22;MG43.5,train,draft,synthetic,generated
-GEN00244,"ibu bawa anak, dr ckp jangkitan perut dr cnfrm, gastric ulcer FU klinik, watery stool sangat for 1/52, bila baring. mohon review dr",1A40.Z;DA60.Z;ME05.1,train,draft,synthetic,generated
+GEN00244,"ibu bawa anak, dr ckp jangkitan perut dr cnfrm, gastric ulcer FU klinik, watery stool sangat for 1/52, bila baring. mohon review dr",1A40.Z;DA60.Z,train,draft,synthetic,generated
 GEN00245,"ibu BAWA anak, takde palpitations + MATA kabur sikit + tak kurang air + knwn hx pernah strok on ubat. T 37.8",8B11,train,draft,synthetic,generated
 GEN00246,"pt 19thn, asthmatic on ubat, nil perut kembung, imp: stuffy nose - dr dah tgk, no h/o nose bleeding, PMHx terlebih berat knwn. T 37.7",5B81.Z;CA00;CA23,train,draft,synthetic,generated
 GEN00247,pt presents with h/o hemorrhoids dah 6 thn. pmhx: ischaemic heart disease. jantung laju sejak semalam. bila jalan juh. T 37.1,BA52.Z;DB60.Z;MC81.2,train,draft,synthetic,generated
@@ -447,7 +447,7 @@ GEN00250,pt komplen doc cnfrm hives (dr ckp). dr ckp urti. BP 117/80,CA07.0;EB00
 GEN00251,"on off, swollen ankles absent. minta MC",,train,draft,synthetic,generated
 GEN00252,"pesakit datang, amenorrhea absent, kat pinggang kiri, demam campak - dr dah tgk, denied dmm, k/c/o diabetic foot wound ON meds, suspek telinga luar bengkak",1F03;BD54,train,draft,synthetic,generated
 GEN00253,pakcik 42 thn dtg dgn ada reflux on UBAT dan lepas angkat barang dan paraesthesia sikit sejak pagi DAN disahkan urti dr cnfrm dan rigor sangat for 5 days,CA07.0;DA22.Z;MB40.Z;MG21,train,draft,synthetic,generated
-GEN00254,"pakcik 63 thn dtg dgn maculopapular rash teruk, imp impetigo infection (dr ckp). mohon review dr",1B72.Z;ME66.6Z,train,draft,synthetic,generated
+GEN00254,"pakcik 63 thn dtg dgn maculopapular rash teruk, imp impetigo infection (dr ckp). mohon review dr",1B72.Z,train,draft,synthetic,generated
 GEN00255,"presented with pmhx: high lipids dah 2 thn, diagnosis: uri, denied haematuria, PMH: acute gout FU klinik, painful joints takde. BP 148/68",5C80.2;CA07.0;FA25,train,draft,synthetic,generated
 GEN00256,S: makin ok dan risau sangat absent. mohon review dr,,train,draft,synthetic,generated
 GEN00257,"pt presents with shingles, bila jalan jauh, hives (dr ckp)",1E91.Z;EB00.Z,train,draft,synthetic,generated
@@ -476,7 +476,7 @@ GEN00279,c/o tak than kencing kuat 3 minggu; foamy urine 6 hari. BP 151/85,MF50.
 GEN00280,pt c/o cirit sikit sejak minggu lepas; r/o lutut haus; kat dada kanan; came with mother; nafi susah telan. BP 110/92,ME05.1,train,draft,synthetic,generated
 GEN00281,"pt komplen kepala berdenyut sikit, berat naik sikit, air kencing mrah 5/7. mohon review dr",MB4D;MF50.4Z,train,draft,synthetic,generated
 GEN00282,"c/o h/o hbv dah 4 thn, A: chest infection dr cnfrm. minta MC",1E51.0Z;CA42.Z,train,draft,synthetic,generated
-GEN00283,pt komplen darah dalam air kencing kuat x4/7 dan tiada shooting pain down leg dan after meals dan PMH: renal stones FU klinik dan selera ok,GB70.0Z;MF50.4Z,train,draft,synthetic,generated
+GEN00283,pt komplen darah dalam air kencing kuat x4/7 dan tiada shooting pain down leg dan after meals dan PMH: renal stones FU klinik dan selera ok,GB70.0Z,train,draft,synthetic,generated
 GEN00284,"pt komplen shivers kuat x3/7, malaise skit2 dah 3 hari",MG21;MG22,train,draft,synthetic,generated
 GEN00285,complains of doc cnfrm dengue - dr dah tgk; selera ok; generalised oedema skit2 5 hari,1D2Z;MG29.1,train,draft,synthetic,generated
 GEN00286,presented with No ruam merah + TELINGA sakit dah 5 hari + red eye since yesterday + sakit haid XDE,AB70.2;MC15,train,draft,synthetic,generated
@@ -537,7 +537,7 @@ GEN00340,"pt 53thn, imp: hidung berair + sakit belakang bawah teruk sejak minggu
 GEN00341,"pesakit datang, T 37.0; doc cnfrm gastro (dr ckp); makin teruk; kemungkinan poor adherence",1A40.Z,train,draft,synthetic,generated
 GEN00342,"ubat habis, prut kembung x3 days, muntah ada darah, pain on urination sangat 6 ari. on paracetamol",ME01;ME24.A5;MF50.7,train,draft,synthetic,generated
 GEN00343,lepas balik kampung. dr ckp conjunctivitis dr cnfrm,9A60.Z,train,draft,synthetic,generated
-GEN00344,makcik 63 thn dtg dgn perut memulas sangat for 1/52 n HR stable n bila toleh kepala n PMHx juvenile diabetes FU klinik n PMH: gastric ulcer stabil,5A10;DA60.Z;MD81.4,train,draft,synthetic,generated
+GEN00344,makcik 63 thn dtg dgn perut memulas sangat for 1/52 n HR stable n bila toleh kepala n PMHx juvenile diabetes FU klinik n PMH: gastric ulcer stabil,5A10;DA60.Z,train,draft,synthetic,generated
 GEN00345,"pesakit datang, k/c/o migraines (old case). lengan sakit skit2 sejak minggu LEPAS. known haemorrhoids ON meds. vertiginous tiada. absent periods teruk on off. BP 144/81",8A80.Z;DB60.Z;FB56.4;GA20.0Z,train,draft,synthetic,generated
 GEN00346,"c/o review in 3 days, ada dm2 hx, stomachache sikit, on off, sakit telinga 3/7, no h/o headaches",5A11;AB70.2;MD81.4,train,draft,synthetic,generated
 GEN00347,"40YO male c/o sweaty tiada. dr ckp enlarged tonsils, doc ckp. lepas angkat barang. dx chest infection pneumonia. BP ok",CA03.Z;CA40.Z,train,draft,synthetic,generated
@@ -578,7 +578,7 @@ GEN00381,30yo male c/o SAKIT telinga sikit sejak PAGI. refill meds. known hx non
 GEN00382,"pt 28thn, bg MC 2 hari + takde kaki sembab. T 37.3",,train,draft,synthetic,generated
 GEN00383,mengadu known hx ulser perut FU klinik; LEG swelling xde; nafi ankle swelling; sakit pinggang kuat; painful throat skit2 sejak pagi; at night; PMHx chronic kidney disease stbil,DA60.Z;GB61.Z;MD36.0;ME84.2Z,train,draft,synthetic,generated
 GEN00384,"S: lesu teruk, kat kaki kanan, PMHx NASH on ubat, tidak dada sesak, cardiac failure FU klinik, pelat tiba2 SKIT2 for 1/52",BD10;DB92.Z;MA80.2Z;MG22,train,draft,synthetic,generated
-GEN00385,datang sebab acute gastritis n kahak kuning n PMH: median nerve compression hx n ulu hati rasa terbakar sikit 5 minggu. minta MC,8C10.0;DA42.Z;MD95,train,draft,synthetic,generated
+GEN00385,datang sebab acute gastritis n kahak kuning n PMH: median nerve compression hx n ulu hati rasa terbakar sikit 5 minggu. minta MC,8C10.0;DA42.Z,train,draft,synthetic,generated
 GEN00386,"c/o backache x4 days, x period sangat banyak, vitals stable, known hx sakit gastrik, x ruam merah, follow up klinik",DA42.Z;ME84.2Z,train,draft,synthetic,generated
 GEN00387,perempuan 18 thn dtg dgn wheezy skit2 5 minggu DAN ada heel pain - stable,FB40.1;MD11.C,train,draft,synthetic,generated
 GEN00388,"pt komplen k/c/o acute gout on ubat, no kencing ada darah, mnum ok, negative FOR amenorrhea, NAIK ruam",FA25;ME66.6Z,train,draft,synthetic,generated
@@ -661,9 +661,9 @@ GEN00464,"complains of PMH: cigarettes dah 4 thn, itch absent, difficulty sleepi
 GEN00465,"ibu bawa anak, negative for selera makan kurang; no h/o chill; imp red throat, doc ckp; A: demam campak. T 37.6",1F03;CA02.Z,train,draft,synthetic,generated
 GEN00466,mengadu tiada wetting herself + selalu JADI + dx chicken pox + tekak perit FOR 6 days + IMP: jangkitan kulit merebak + PMHx sakit jantung known + kat sekolah,1B70.Z;1E90.Z;BA52.Z;MD36.0,train,draft,synthetic,generated
 GEN00467,pt c/o imp: faringitis dr cnfrm dan coughing up blood skit2 dan kemungkinan TB on treatment dan peptic ulcer hx. mohon review dr,CA02.Z;DA60.Z;MD22,train,draft,synthetic,generated
-GEN00468,anemia zat besi stabil + lethargy + otitis externa infection + bawa surat rujukan + nafi syncopal episode + No bunyi siul bila bernafas. BP 118/100,3A00.Z;AA3Z;MG22,train,draft,synthetic,generated
+GEN00468,anemia zat besi stabil + lethargy + otitis externa infection + bawa surat rujukan + nafi syncopal episode + No bunyi siul bila bernafas. BP 118/100,3A00.Z;AA3Z,train,draft,synthetic,generated
 GEN00469,pt PRESENTS with HR stable. fainting since ysterday. tiada sakit tangan,MG45.Z,train,draft,synthetic,generated
-GEN00470,pt prsents with dx facil weakness; nafi dahaga; cts on meds; x blood in sputum; doc cnfrm hypoglycaemia - dr dah tgk; pins and needles skit2 5 minggu; badan rasa tak sedap; cannot sleep sejak minggu lepas; waktu malam. minta MC,5A21.Z;7A0Z;8B88.0;8C10.0;MB40.Z,train,draft,synthetic,generated
+GEN00470,pt prsents with dx facil weakness; nafi dahaga; cts on meds; x blood in sputum; doc cnfrm hypoglycaemia - dr dah tgk; pins and needles skit2 5 minggu; badan rasa tak sedap; cannot sleep sejak minggu lepas; waktu malam. minta MC,5A21.Z;7A0Z;8B88.0;8C10.0,train,draft,synthetic,generated
 GEN00471,lelaki 64 THN dtg dgn letih kuat x4/7; bila toleh kepala; takde chest discomfort; crf on meds,GB61.Z;MG22,train,draft,synthetic,generated
 GEN00472,"mengadu imp biduran, tummy pain KUAT for 4 weeks",EB00.Z;MD81.4,train,draft,synthetic,generated
 GEN00473,"pesakit datang, r/o sinusitis + k/c/o gouty. minta MC",FA25,train,draft,synthetic,generated
@@ -680,7 +680,7 @@ GEN00483,"ibu bawa anak, batuk sejak semalam + F/U if x BAIK",MD12,train,draft,s
 GEN00484,"llaki 75 thn dtg dgn ankle swelling on off, r/o denggi",MG29.01,train,draft,synthetic,generated
 GEN00485,lelaki 52 thn dtg dgn pmhx: heel pain dah 5 thn n BP ok n demam denggi n payah nak telan skit2 sejak smlm n imp: covid 19 dr cnfrm. mohon review DR,1D2Z;FB40.1;MD93;RA01,train,draft,synthetic,generated
 GEN00486,pt mengadu no H/O rasa NAK muntah + came with mother + follow up klinik + cephalgia teruk 4 hari + throat pain 4 minggu + telinga sakit sangat. mohon review dr,AB70.2;MB4D;MD36.0,train,draft,synthetic,generated
-GEN00487,perempuan 44 thn dtg dgn influenza like illness (dr ckp) + missed periods sangat since yesterday + feverish skit2 + negative for kencing berdarah + sejuk sjuk sejak smlm. on paracetamol,1E32;GA20.0Z;MG21;MG26,train,draft,synthetic,generated
+GEN00487,perempuan 44 thn dtg dgn influenza like illness (dr ckp) + missed periods sangat since yesterday + feverish skit2 + negative for kencing berdarah + sejuk sjuk sejak smlm. on paracetamol,1E32;GA20.0Z;MG21,train,draft,synthetic,generated
 GEN00488,makcik 47 thn dtg dgn dx acute sinusitis n maculopapular rash kuat dah seminggu n takde mual2. mohon review dr,CA01;ME66.6Z,train,draft,synthetic,generated
 GEN00489,"pt 65thn, makin ok n h/o lelah stabil n takde sakit otot. BP 134/88",CA23,train,draft,synthetic,generated
 GEN00490,"pt komplen sakit dada BILA tarik nafas sejak pagi, kat dada kanan, lepas hujan, dx rubeola - dr dah tgk. BP 150/67",1F03;MD30.0,train,draft,synthetic,generated
@@ -761,7 +761,7 @@ GEN00564,"pt c/o fast heartbeat snce yesterday, ada kegagalan jantung FU klinik.
 GEN00565,"datang sebab knwn case of t1dm dah 2 thn, advise rehat, tidak missed periods, tidak wetting herself",5A10,train,draft,synthetic,generated
 GEN00566,makcik 72 thn dtg dgn h/o hypot. on paracetamol,5A00.Z,train,draft,synthetic,generated
 GEN00567,"makcik 73 thn dtg dgn h/o JUVENILE diabetes - stable, PMHx acute GOUT (old case), ruam merah since yesterday, OSTEOARTHRITIS of knee FU klinik, nafi myalgias. T 37.9",5A10;FA01.Z;FA25;ME66.6Z,train,draft,synthetic,generated
-GEN00568,known case of kidney stones. no dunia berputar. ssah tidur takde. sejarah copd HX (old case). A: tonsil radang - dr dah tgk. LOWER back pain kebelakangan ni. doc dah TGK,CA03.Z;CA22.Z;GB70.0Z;ME84.2Z,train,draft,synthetic,generated
+GEN00568,known case of kidney stones. no dunia berputar. ssah tidur takde. sejarah copd HX (old case). A: tonsil radang - dr dah tgk. LOWER back pain kebelakangan ni. doc dah TGK,CA03.Z;CA22.Z;GB70.0Z,train,draft,synthetic,generated
 GEN00569,"67yo F c/o advise minum air byk, lepas berenang, passing a lot of urine, bibir kering teruk sejak minggu lepas. on paracetamol",5C70.0;MF55,train,draft,synthetic,generated
 GEN00570,chest clear + NO kencing banyak sangat + asyik haus for 1/52. minta MC,MG43.0,train,draft,synthetic,generated
 GEN00571,"57yo M c/o lenguh badan absent, F/U if x baik, pmhx: eczema - stable. BP 149/94",EA80.Z,train,draft,synthetic,generated
@@ -773,7 +773,7 @@ GEN00576,presented with rasa sjuk menggigil sikit sejak minggu lepas n tight che
 GEN00577,pt c/o h/o high cholesterol stabil n takda painful periods n diagnosis: hypo episde dr cnfrm n nafi pusing pusing. T 37.4,5A21.Z;5C80.0Z,train,draft,synthetic,generated
 GEN00578,"pt DTG c/o known gastrc reflux dan kat kepala dan advise diet dan disahkan buku lali terseliuh, doc ckp. mohon review dr",DA22.Z;ND14.7Z,train,draft,synthetic,generated
 GEN00579,pt komplen abdominal pain sikit dah seminggu n radiating to left leg sangat since this morning n datang dengan isteri n on off. minta MC,MD81.4;ME84.3,train,draft,synthetic,generated
-GEN00580,presented with sakit masa kencing takde dan rashes teruk 6 hari dan kemungkinan jangkitan saluran pernafsan atas dan batuk berdarah teruk 3 hari DAN dr ckp hives,EB00.Z;MD22;ME66.6Z,train,draft,synthetic,generated
+GEN00580,presented with sakit masa kencing takde dan rashes teruk 6 hari dan kemungkinan jangkitan saluran pernafsan atas dan batuk berdarah teruk 3 hari DAN dr ckp hives,EB00.Z;MD22,train,draft,synthetic,generated
 GEN00581,"dry lips on off, T 37.0, DR ckp keracunan makanan (dr ckp), stomach ulcer (old case), no h/o sakit telinga. T 37.1",1A40.Z;5C70.0;DA60.Z,train,draft,synthetic,generated
 GEN00582,54yo F c/o PMH: hipertiroid FU klinik; nil susah tidur; datang dengan isteri; known case OF dm type 1 hx. minta MC,5A02.Z;5A10,train,draft,synthetic,generated
 GEN00583,presented with tarry stools; tiada dada sakit masa tarik nafas dalam; eczematous FU klinik; dysphgia; watery stools SEJAK 2 buln,EA80.Z;MD93;ME05.1;ME24.A4,train,draft,synthetic,generated
@@ -806,13 +806,13 @@ GEN00609,c/o night sweats dah seminggu dan tak red eye dan can't sleep teruk x3/
 GEN00610,bloodshot eyes teruk sejak 5 bulan n DR ckp blocked sinuses n datang dengan isteri n payah nak telan skit2 for 1/52 N kat kepala. minta MC,CA01;MC15;MD93,train,draft,synthetic,generated
 GEN00611,"complains of low back pain dah seminggu, tolerating orally, haid tak datang sikit, NO sakit telinga. minta MC",GA20.0Z;ME84.2Z,train,draft,synthetic,generated
 GEN00612,pedih ulu hati teruk dah seminggu n dx tonsil radang n tiada vomit,CA03.Z;MD95,train,draft,synthetic,generated
-GEN00613,c/o muntah2 for 4 WEEKS. KENCING ok. A: bentol bentol. imp: inflamed throat - dr dah tgk. kegatalan sangat for 1/52. BP 111/75,CA02.Z;EB00.Z;EC90.Z;MD90.1,train,draft,synthetic,generated
+GEN00613,c/o muntah2 for 4 WEEKS. KENCING ok. A: bentol bentol. imp: inflamed throat - dr dah tgk. kegatalan sangat for 1/52. BP 111/75,CA02.Z;EB00.Z;MD90.1,train,draft,synthetic,generated
 GEN00614,"pt c/o breathlessness skit2 for 6 weeks, No heavy menss, takda nauseated, telinga sakit sejak smlm, blocked sinuses, doc ckp",AB70.2;CA01;MD11.5,train,draft,synthetic,generated
 GEN00615,"pesakit datang, diagnosis: mata bertahi. doc cnfrm runny nose dr cnfrm. diagnosis: kudis berair (DR ckp). denied vomited once. bila naik tangga. minta MC",1B72.Z;9A60.Z;CA00,train,draft,synthetic,generated
 GEN00616,"presented with ada acne on ubat, period sangat banyak sejak smlm, panic dah 3 hari, abdominal distension skit2 2/7",ED80.Z;GA22;MB24.3;ME01,train,draft,synthetic,generated
 GEN00617,"Rx abx, jaundiced for 2 days",ME10.1,train,draft,synthetic,generated
 GEN00618,complains of background asid naik ke tekak FU klink dan known case of chronic kidney disease on ubat dan PMHx painful heel known. mohon review dr,DA22.Z;FB40.1;GB61.Z,train,draft,synthetic,generated
-GEN00619,doc cnfrm urine infection dr cnfrm dan nafi tekak sakit dan tolrating orally dan kerap kencing X3 days,GC08.Z;MF50.0,train,draft,synthetic,generated
+GEN00619,doc cnfrm urine infection dr cnfrm dan nafi tekak sakit dan tolrating orally dan kerap kencing X3 days,GC08.Z,train,draft,synthetic,generated
 GEN00620,"ibu bawa anak, paru2 berair - dr dah tgk. BP 115/65",CA40.Z,train,draft,synthetic,generated
 GEN00621,"pt dtg c/o tidur cukup, mata kabur sikit, melaena teruk dah 2 hari. minta MC",ME24.A4,train,draft,synthetic,generated
 GEN00622,"lelaki 57 thn dtg dgn tiada nafas berbunyi, at night, doc cnfrm dental caries dr cnfrm, PMH: mata rosak sebab kencing manis FU klinik. T 37.5",9B71.0Z;DA08.0,train,draft,synthetic,generated
@@ -823,7 +823,7 @@ GEN00626,"presented with gula rendah, rasa semut2 kuat, tiada muntah darah. BP 1
 GEN00627,lelki 20 thn dtg dgn waktu malam. denied nauseated. on paracetamol,,train,draft,synthetic,generated
 GEN00628,pakcik 64 thn dtg dgn tidak haematemesis; takda slurred; bronkitis (dr ckp); hx median nerve compression known. BP 140/79,8C10.0;CA42.Z,train,draft,synthetic,generated
 GEN00629,makcik 38 thn dtg dgn F/U if x baik n known bronchial asthma hx - stble n tolerating orally n dnied amenorrhoea. mohn review dr,CA23,train,draft,synthetic,generated
-GEN00630,"imp: chest infection, gatal badan sejak minggu lepas, diagnosis: rubeol, red eye skit2 sejak minggu lepas, hx dm reti on meds, takda dehydration. mohon review dr",1F03;9B71.0Z;CA42.Z;EC90.Z;MC15,train,draft,synthetic,generated
+GEN00630,"imp: chest infection, gatal badan sejak minggu lepas, diagnosis: rubeol, red eye skit2 sejak minggu lepas, hx dm reti on meds, takda dehydration. mohon review dr",1F03;9B71.0Z;CA42.Z;EC90.Z,train,draft,synthetic,generated
 GEN00631,dm type1 stabil n telinga sakit tiada n doc cnfrm hives n at night. on paracetamol,5A10;EB00.Z,train,draft,synthetic,generated
 GEN00632,pt presents with kat kaki kanan dan giddy since yesterday dan nausea skit2 sejak semalam,MB48.Z;MD90.0,train,draft,synthetic,generated
 GEN00633,perempuan 63 thn dtg dgn hx dm2 hx dan bloated for 5 weeks dan kat tangan kiri dan sjarah current smoker (old case) dan pmhx: hyperthyroidism FU klinik,5A02.Z;5A11;ME01;QE13,train,draft,synthetic,generated
@@ -851,7 +851,7 @@ GEN00654,pt komplen k/c/o plantar fasciitis known. wheeze x4/7. tummy pain. nil 
 GEN00655,"datang sebab sakit sikit je. imp: bladder infection, doc CKP. diabetic foot wound tak terkawal. body ache 2 hari. negative for hemoptysis. perut kembung kuat",BD54;FB56.2;GC08.Z;ME01,train,draft,synthetic,generated
 GEN00656,"datang sebab PMH: migraines - stable, chest pain on inspiration dah seminggu",8A80.Z;MD30.0,train,draft,synthetic,generated
 GEN00657,"pt 21thn, SEJARAH pulmonary tb FU klinik, vertiginous sangat 4 minggu. T 37.6",1B10.Z;MB48.0Z,train,draft,synthetic,generated
-GEN00658,c/o vomited once absent. THROAT infection (dr ckp). r/o rubeola. kencing banyak sangat x4/7. sore throat since this morning. lepas makan pedas,CA02.Z;MD36.0;MF55,train,draft,synthetic,generated
+GEN00658,c/o vomited once absent. THROAT infection (dr ckp). r/o rubeola. kencing banyak sangat x4/7. sore throat since this morning. lepas makan pedas,CA02.Z;MF55,train,draft,synthetic,generated
 GEN00659,"presented with A: low sugar level dr cnfrm, ? retinopathy, known case of high blood pressure hx, batuk berdarah xde, kerja shift, protein in urine sejak mnggu lepas",5A21.Z;BA00.Z;MF96.Z,train,draft,synthetic,generated
 GEN00660,makcik 29 thn dtg dgn buah pinggang lemah tak terkawal dan vitals stable dan gtal teruk on off dan coughs kuat dan sakit pert sikit for 6 days dan type 1 diabetes FU klinik,5A10;EC90.Z;GB61.Z;MD12;MD81.4,train,draft,synthetic,generated
 GEN00661,"pt 30thn, ada sakit tapak kaki pagi known n passed out teruk since this morning n diagnosis: lobar pneumonia - dr DAH tgk. on paracetamol",CA40.Z;FB40.1;MG45.Z,train,draft,synthetic,generated
@@ -864,7 +864,7 @@ GEN00667,datang sebab ASAP dan tidak air kencing buih,,train,draft,synthetic,gen
 GEN00668,"18yo M c/o low backache xde, bila bangun berdiri, dyspnoea kuat since yesterday, tidk terkencing, percakapan tak jelas kuat dah seminggu, pruritic sejak smlm. mohon review dr",EC90.Z;MA80.2Z;MD11.5,train,draft,synthetic,generated
 GEN00669,background frozen shoulder on meds; T 37.0; arm pain dah seminggu. minta MC,FB53.0;FB56.4,train,draft,synthetic,generated
 GEN00670,"datang sebab febrile since yesterday, slurred speech teruk since yesterday, telinga sakit 3/7, breathless, selera ok. on paracetamol",AB70.2;MA80.2Z;MD11.5;MG26,train,draft,synthetic,generated
-GEN00671,pt komplen h/o tb on meds; kat sekolah; dry cough teruk. on paracetmol,1B10.Z;MD12,train,draft,synthetic,generated
+GEN00671,pt komplen h/o tb on meds; kat sekolah; dry cough teruk. on paracetmol,1B10.Z,train,draft,synthetic,generated
 GEN00672,"ibu bawa anak, ?asom dan vomiting blood sejak pagi dan follow up klinik dan background rhinitis alergi hx dan lepas berenang dan tidak hmoptysis dan k/c/o pulmonary tb on ubat dan bloody urine TERUK sejak pagi",1B10.Z;CA08.0Z;ME24.A5;MF50.4Z,train,draft,synthetic,generated
 GEN00673,"mengadu DX COVID 19, k/c/o emphysema on ubat, menggigil x5/7, dah makan ubat, no panic",CA22.Z;MG21;RA01,train,draft,synthetic,generated
 GEN00674,"pt dtg c/o mata kabur sikit, ihd stabil, sakit kaki sikit, waktu malam, known case of heptic steatosis (old case), heavy menstrual bleeding x5/7",BA52.Z;DB92.Z;FB56.4;GA22,train,draft,synthetic,generated
@@ -901,7 +901,7 @@ GEN00704,c/o air kencing berbuih for 5 days n malaise,MF96.Z;MG22,train,draft,sy
 GEN00705,"36yo female c/o A: cellulitis (dr ckp), x payah nak telan, yellowish eyes kebelakangan ni, slurred speech kuat x6 days, review in 3 days, negative for PAINFUL urination. mohon review dr",1B70.Z;MA80.2Z;ME10.1,train,draft,synthetic,generated
 GEN00706,mengadu susah angkat tangan n background gouty arthritis stabil. BP 169/97,FA25,train,draft,synthetic,generated
 GEN00707,pt mengadu konjunktivitis (dr ckp); ASAP; advised flids; panicky skit2 sejak pagi; heavy and irregular periods skit2 2 ari; ? gouty; gatal kuat 2/7. minta MC,9A60.Z;EC90.Z;GA22;MB24.3,train,draft,synthetic,generated
-GEN00708,"lelaki 52 thn dtg dgn advise diet, x urinating at night, gatal sangat SEJAK semalam, diagnosis: bladder infection, nil dyspepsia, background ekzema on mds, doc cnfrm cellulitis",1B70.Z;EA80.Z;EC90.Z;GC08.Z,train,draft,synthetic,generated
+GEN00708,"lelaki 52 thn dtg dgn advise diet, x urinating at night, gatal sangat SEJAK semalam, diagnosis: bladder infection, nil dyspepsia, background ekzema on mds, doc cnfrm cellulitis",1B70.Z;EA80.Z;GC08.Z,train,draft,synthetic,generated
 GEN00709,mengadu anxiety sikit dah 4 hari n known obesiti FU klinik n excessive thirst sejak 2 bulan,5B81.Z;MB24.3;MG43.0,train,draft,synthetic,generated
 GEN00710,"pesakit datang, acute gastroenteritis - dr dah tgk + VITALS stable + vomited blood sejak smlm + rasa haus XDE + No wheezing + CAME with mother. mohon REVIEW dr",1A40.Z;ME24.A5,train,draft,synthetic,generated
 GEN00711,"pt 32thn, no h/o suara hilang; nosebleeds for 6 weeks; dx urt, doc ckp; imp otitis media akut - dr dah tgk",AA90;CA07.0;MD20,train,draft,synthetic,generated
@@ -930,16 +930,16 @@ GEN00733,"pakcik 53 THN dtg dgn kat dada kanan + dx measles rash + disahkan ring
 GEN00734,"datang sebab batuk ada darah since this morning, rasa nak pitam sangat sejak pagi. T 37.4",MB48.Z;MD22,train,draft,synthetic,generated
 GEN00735,datang sebab trouble swallowing teruk for 1/52; sejarah tiroid overactive hx. on paracetamol,5A02.Z;MD93,train,draft,synthetic,generated
 GEN00736,"ibu bawa anak, berpeluh2 sangat x2/7. PMHx hati berlemak FU klinik. tak boleh tidur kuat for 4 days. mohon review dr",7A0Z;DB92.Z;ME66.5,train,draft,synthetic,generated
-GEN00737,"mengadu ?varicella infection, makin ok, dmm kuat sejak minggu lepas, tiada anxiety, positif covd, DAH makan ubat, nafas sesak takde. minta MC",MG26;RA01,train,draft,synthetic,generated
+GEN00737,"mengadu ?varicella infection, makin ok, dmm kuat sejak minggu lepas, tiada anxiety, positif covd, DAH makan ubat, nafas sesak takde. minta MC",RA01,train,draft,synthetic,generated
 GEN00738,"pt presents with muntah2 sangat x3/7, imp tinea pedis - dr dah tgk, passing a lot of urine sangat sejak 6 BULAN",1F28.Z;MD90.1;MF55,train,draft,synthetic,generated
 GEN00739,lepas jatuh; denies heartburn; known HX hati berlemak on ubat; nafi bloody urine; dry lips; advise det. BP 125/91,5C70.0;DB92.Z,train,draft,synthetic,generated
 GEN00740,"pt komplen poor oral intake skit2 for 4 weeks, advise diet, kencing terlepas on off",5C70.0;MF50.2Z,train,draft,synthetic,generated
-GEN00741,"pt 69THN, anak sulung, stomachache kuat sejak smlm, x dry cough, ada ulser gastrik hx",DA60.Z;MD81.4,train,draft,synthetic,generated
+GEN00741,"pt 69THN, anak sulung, stomachache kuat sejak smlm, x dry cough, ada ulser gastrik hx",DA60.Z,train,draft,synthetic,generated
 GEN00742,"ibu bawa anak, ubat habis; weight dropped skit2 sejak minggu lepas; nafi frequent urination; vitals stable; k/c/o obesity; ?diabetic; chest discomfort skit2 5 hari",5B81.Z;MD30.Z;MG43.5,train,draft,synthetic,generated
 GEN00743,"perempuan 56 thn dtg dgn PMHx sakit gula - stable, kat dada kanan",5A11,train,draft,synthetic,generated
 GEN00744,"pt 19thn, kat sekolah. pmhx: iron deficient anaemia FU klinik. melena kuat for 1/52. dr ckp urti. T 37.8",3A00.Z;CA07.0;ME24.A4,train,draft,synthetic,generated
 GEN00745,"pakcik 52 thn dtg dgn PMH: hypothyroid on meds, kulit kuning takde, ? carpal tunnel syndrome, selalu jadi, kurang selera makan kebelakangan ni, no H/O perut sakit, myalgia teruk 2 minggu",5A00.Z;FB56.2;MG43.7,train,draft,synthetic,generated
-GEN00746,presented with tinea corporis dan migrain tak terkawal dan ruam merah teruk dan negative for batuk ada darah dan hoarseness tiada. mohon review dr,1F28.Z;8A80.Z;ME66.6Z,train,draft,synthetic,generated
+GEN00746,presented with tinea corporis dan migrain tak terkawal dan ruam merah teruk dan negative for batuk ada darah dan hoarseness tiada. mohon review dr,1F28.Z;8A80.Z,train,draft,synthetic,generated
 GEN00747,pt dtg c/o r/o mata bertahi n jangkitan saluran kencing n anak sulung N excessive thirst teruk 6/7 n macam bilik pusing for 6 weeks. ON paracetamol,GC08.Z;MB48.0Z;MG43.0,train,draft,synthetic,generated
 GEN00748,datang sebab known case of tumit sakit waktu pagi dan takde bloated dan no h/o heavy irregular periods dan imp: campak dan imp dengue - dr dah tgk dan kepala pusing sangat 6 ari dan tolerating orally,1D2Z;1F03;FB40.1;MB48.Z,train,draft,synthetic,generated
 GEN00749,pt komplen bila baring dan dental caries (dr CKP) dan known hx diabetic retinopathy FU klink dan missed period teruk sejak pagi,9B71.0Z;DA08.0;GA20.0Z,train,draft,synthetic,generated
@@ -950,8 +950,8 @@ GEN00753,"pt presents with polyuria dah seminggu, kepala sakit sangat, no h/o ha
 GEN00754,pt dtg c/o cannot sleep kuat SEJAK 2 bulan dan datang dengan isteri,7A0Z,train,draft,synthetic,generated
 GEN00755,"pt 59thn, muntah darah takde, unable to SLEEP sejak semalam, takde selera makan kurang, known ponteng ubat stabil",7A0Z;QC49,train,draft,synthetic,generated
 GEN00756,"pt dtg c/o tidur cukup, numb absent, kemungkinan plntar fasciitis, disahkn tinea pedis (dr ckp), hx jerawat - STABLE, tiada kaki cramp, PMH: batu karang stabil",1F28.Z;ED80.Z;GB70.0Z,train,draft,synthetic,generated
-GEN00757,perempuan 19 thn dtg dgn advise diet dan knwn dm type 1 dan bintik merah for 6 days dan dx demam campak dan waktu MALAM,1F03;5A10;ME66.6Z,train,draft,synthetic,generated
-GEN00758,c/o naik ruam x2 days + watery stool skit2 sejak MINGGU lepas + dx varicella (dr ckp) + takde poor sleep + kencing malam banyak kali teruk. minta MC,1E90.Z;ME05.1;ME66.6Z;MF50.0,train,draft,synthetic,generated
+GEN00757,perempuan 19 thn dtg dgn advise diet dan knwn dm type 1 dan bintik merah for 6 days dan dx demam campak dan waktu MALAM,1F03;5A10,train,draft,synthetic,generated
+GEN00758,c/o naik ruam x2 days + watery stool skit2 sejak MINGGU lepas + dx varicella (dr ckp) + takde poor sleep + kencing malam banyak kali teruk. minta MC,1E90.Z;ME05.1;MF50.0,train,draft,synthetic,generated
 GEN00759,pt presents with cramps sejak 5 bulan n imp impetigo N disahkan hidung tersumbat - dr dah tgk n pain in leg xde n dx terseliuh buku lali. on paracetamol,1B72.Z;CA00;MB47.3;ND14.7Z,train,draft,synthetic,generated
 GEN00760,C/O O/E unremarkable; ? chicken pox; imp herpes zoster infection - dr dah tgk; PMHx strok - stable. mohon review dr,1E91.Z;8B11,train,draft,synthetic,generated
 GEN00761,c/o sejarah high bmi - stable. mohon review DR,5B81.Z,train,draft,synthetic,generated
@@ -965,7 +965,7 @@ GEN00768,"pesakit datang, swollen feet sejak minggu lepas, came with mother, bll
 GEN00769,"PESAKIT datang, ekzema stabil n cnstipated sikit for 1/52 n ?pharyngitis n HR stable. on paracetamol",EA80.Z;ME05.0,train,draft,synthetic,generated
 GEN00770,"ibu bawa anak, kidney stones, Rx abx, unintentional weight loss tiada, burning micturition since this morning, ?old stroke, kencing berbuih sangt dah seminggu, sembelit takde. T 37.6",GB70.0Z;MF50.7;MF96.Z,train,draft,synthetic,generated
 GEN00771,"67yo male c/o mual2 sikit kebelakangan ni, PMHx HPT FU klinik, lepas MAKAN, difficulty swallowing 4 hari. on paracetamol",BA00.Z;MD90.0;MD93,train,draft,synthetic,generated
-GEN00772,"ibu bawa ank, background lemak darh tinggi on ubat n feverish sejak pagi n sakit sikit je n dyspnoea xde n imp: ili - dr dah tgk. T 37.6",1E32;5C80.2;MG26,train,draft,synthetic,generated
+GEN00772,"ibu bawa ank, background lemak darh tinggi on ubat n feverish sejak pagi n sakit sikit je n dyspnoea xde n imp: ili - dr dah tgk. T 37.6",1E32;5C80.2,train,draft,synthetic,generated
 GEN00773,"c/o known hx HYPERTENSION (old CASE), dx facial drop, tonsil radang, makin teruk. on paracetamol",8B88.0;BA00.Z;CA03.Z,train,draft,synthetic,generated
 GEN00774,"perempuan 72 thn dtg dgn at nght, takda epistaxis",,train,draft,synthetic,generated
 GEN00775,"pt komplen no gatal, datang dengan isteri, x susah buang air besar, came with mother, vomits. mohon review dr",MD90.1,train,draft,synthetic,generated
@@ -986,7 +986,7 @@ GEN00789,"pesakit datang, takda slurring + kepala sakit kuat 4 hari + no h/o hoa
 GEN00790,"presented with tak kekuningan n A: stuffy nose, doc ckp n haid sangat banyak sikit since yesterday n berpeluh2 sangat 6 minggu n itches since yesterday n masa kerja",CA00;EC90.Z;GA22;ME66.5,train,draft,synthetic,generated
 GEN00791,"AFEBRILE, mata kemerahan since this morning, known chf stabil, makin ok, palpitation sejak smlm",BD10;MC15;MC81.2,train,draft,synthetic,generated
 GEN00792,mengdu selalu jadi n blood in sptum skit2 kebelakangan ni n lpas angkat barang n insomnia sangat. on paracetamol,7A0Z;MD22,train,draft,synthetic,generated
-GEN00793,PT presents with A: kudis buta - dr dah tgk; tak amenorrhoea; SAKIT sikit je; disahkan conjunctivitis; jantung laju for 2 days; bloodshot eyes sejak 6 bulan,1G04.Z;9A60.Z;MC15;MC81.2,train,draft,synthetic,generated
+GEN00793,PT presents with A: kudis buta - dr dah tgk; tak amenorrhoea; SAKIT sikit je; disahkan conjunctivitis; jantung laju for 2 days; bloodshot eyes sejak 6 bulan,1G04.Z;9A60.Z;MC81.2,train,draft,synthetic,generated
 GEN00794,pt C/O heart failure ON meds. zits - stable. tak sakit badan. makin teruk. kahak kuning. bilik berpusing absent,BD10;ED80.Z,train,draft,synthetic,generated
 GEN00795,"pt 30thn, takda sakit period dan makin teruk dan queasy 4 hari dan No yellowish eyes",MD90.0,train,draft,synthetic,generated
 GEN00796,"ibu bawa anak, tiada pengsan, h/o gastritis dah 4 thn, refill meds, lepas makan pedas. BP 128/65",DA42.Z,train,draft,synthetic,generated
@@ -1005,7 +1005,7 @@ GEN00808,presented with macam bilik pusing sejak semalam dan nauseous kebelakang
 GEN00809,pt c/o rasa nak pitam n PRN paracetamol N increased thirst sikit dah seminggu n ada diabetic foot wound - stable. on paracetamol,BD54;MB48.Z;MG43.0,train,draft,synthetic,generated
 GEN00810,"pesakit datang, known case of dm type 2 stabil, known hx acne. mohon review dr",5A11;ED80.Z,train,draft,synthetic,generated
 GEN00811,"makcik 34 thn dtg dgn wheeze sangat on off, lepas makan pedas. minta MC",MD11.C,train,draft,synthetic,generated
-GEN00812,"pesakit datang, kemungkinan amandel bengkak, protein dalam urin teruk sejak smlm, dagnosis: impetigo infection (dr ckp), PRN paracetamol, imp chicken pox, selalu jadi, high temperature dah 5 hari",1B72.Z;1E90.Z;MF96.Z;MG26,train,draft,synthetic,generated
+GEN00812,"pesakit datang, kemungkinan amandel bengkak, protein dalam urin teruk sejak smlm, dagnosis: impetigo infection (dr ckp), PRN paracetamol, imp chicken pox, selalu jadi, high temperature dah 5 hari",1B72.Z;1E90.Z;MF96.Z,train,draft,synthetic,generated
 GEN00813,shoulder pain skit2 x4 days. lepas berenang. mohon review dr,ME82,train,draft,synthetic,generated
 GEN00814,pt presents with refill meds dan known on thyroxine dah 6 thn. on paracetamol,5A00.Z,train,draft,synthetic,generated
 GEN00815,mengadu spiking temperature skt2 4 ari. denies pusing kepala. nafas pendek sejak smlm. No runny stools. mohon review dr,MD11.5;MG26,train,draft,synthetic,generated
@@ -1024,7 +1024,7 @@ GEN00827,radiating to left leg kuat kebelakangan ni. masa krja. abd pain sejak p
 GEN00828,"NO missed periods, dx buku lali terseliuh, rfill meds, collapsed teruk x6/7, h/o asid naik (old case), asyik kencing. mohon review dr",DA22.Z;MF50.0;MG45.Z;ND14.7Z,train,draft,synthetic,generated
 GEN00829,"presented with doc cnfrm otitis externa infection dr cnfrm, tiada sakit badan, badn rasa tak sedap, x leaking urine, doc cnfrm URI dr cnfrm. BP 113/67",AA3Z;CA07.0,train,draft,synthetic,generated
 GEN00830,presented with pmhx: luka kaki kencing manis. tinea PEDIS. HR stable,1F28.Z;BD54,train,draft,synthetic,generated
-GEN00831,lelaki 63 thn dtg dgn negative for suara serak. dr ckp dengue - dr DAH tgk. A: sars cov 2 - dr dah tgk. PMHx frozen shoulder dah 6 thn. nafi heavy menses. sengal2 badan skit2 5 hari. bila baring,1D2Z;FB53.0;FB56.2;RA01,train,draft,synthetic,generated
+GEN00831,lelaki 63 thn dtg dgn negative for suara serak. dr ckp dengue - dr DAH tgk. A: sars cov 2 - dr dah tgk. PMHx frozen shoulder dah 6 thn. nafi heavy menses. sengal2 badan skit2 5 hari. bila baring,1D2Z;FB53.0;RA01,train,draft,synthetic,generated
 GEN00832,"ibu bawa anak, negatve for nfas berbunyi. on review. mata kabur sikit. period banyak x4 days. melaena SIKIT kebelakangan ni. bloodshot eyes sangat SEJAK minggu lepas. blood in the urine since yesterday",GA22;MC15;ME24.A4;MF50.4Z,train,draft,synthetic,generated
 GEN00833,mengadu h/o high cholesterol known n tak swelling all over n PMHx foot ulcer diabetic on meds n bila JALAN jauh n throat pain kuat 2 minggu n tak muscle cramps. BP 132/71,5C80.0Z;BD54;MD36.0,train,draft,synthetic,generated
 GEN00834,S: PMH: poor adherence FU klinik + imp: uti (dr ckp) + No indigestion + lepas makan. on paracetamol,GC08.Z;QC49,train,draft,synthetic,generated
@@ -1037,7 +1037,7 @@ GEN00840,presented with risau sangat teruk kebelakangan ni. kat pinggang kiri. b
 GEN00841,PT presents with ada hati berlemk (old case); berak hitam absent; PMHx sakit jantung koronari hx; kat sekolah. T 37.3,BA52.Z;DB92.Z,train,draft,synthetic,generated
 GEN00842,"pt mngadu PRN paracetamol, lost weight absent, ada cad stabil, bila naik tangga, x batuk2, PMH: acute gastritis tak terkawal, dx ili. on paracetamol",1E32;BA52.Z;DA42.Z,train,draft,synthetic,generated
 GEN00843,pt c/o difficulty breathing sejak minggu lepas + suara garau since this morning + nak refill ubat + on review. on paracetamol,MA82.10;MD11.5,train,draft,synthetic,generated
-GEN00844,pt komplen gassy xde n k/c/o hbv carrier hx n background chronic bronchitis on ubat n kat dada kanan n short of breath teruk x5/7. BP 157/84,1E51.0Z;CA22.Z;MD11.5,train,draft,synthetic,generated
+GEN00844,pt komplen gassy xde n k/c/o hbv carrier hx n background chronic bronchitis on ubat n kat dada kanan n short of breath teruk x5/7. BP 157/84,1E51.0Z;CA22.Z,train,draft,synthetic,generated
 GEN00845,"pt komplen kat tangan kiri, h/o hay fever - stable. on paracetamol",CA08.0Z,train,draft,synthetic,generated
 GEN00846,"disahkan drooping face - dr dah tgk, chest clear, disahkan biduran, wheezed skit2 2 hari, dada sakit MASA tarik nafas dalam sangat dah seminggu. mohon review dr",8B88.0;EB00.Z;MD11.C;MD30.0,train,draft,synthetic,generated
 GEN00847,"PT c/o No foamy urine, lepas jatuh, ?ischemic heart disease, PMH: adhesive capsulitis hx dah 6 thn",FB53.0,train,draft,synthetic,generated
@@ -1045,7 +1045,7 @@ GEN00848,"ibu bawa ANAK, PMHx diabetic (old case). k/c/o t1 dm FU klinik. mata k
 GEN00849,"pt komplen mata kuning, x perut memulas. mohon review dr",ME10.1,train,draft,synthetic,generated
 GEN00850,"pesakit datang, chronic bronchitis (old case), x bilateral leg swelling, insulin dependent knwn, tiada giddinss, palpitation x2 days. T 37.0",5A10;CA22.Z;MC81.2,train,draft,synthetic,generated
 GEN00851,"presented with tiada pain in leg, PMH: pinful heel known, suspek darah tinggi, disahkan inflamed throat, tolerating orally. on paracetamol",CA02.Z;FB40.1,train,draft,synthetic,generated
-GEN00852,"pesakit datng, no sleeplessness dan gastritis hx dah 2 thn dan congestive heart failure dan pedih hulu hati sikit dah 5 hari dan luka kecil dan disahkan mata berthi",9A60.Z;BD10;DA42.Z;MD95,train,draft,synthetic,generated
+GEN00852,"pesakit datng, no sleeplessness dan gastritis hx dah 2 thn dan congestive heart failure dan pedih hulu hati sikit dah 5 hari dan luka kecil dan disahkan mata berthi",9A60.Z;BD10;DA42.Z,train,draft,synthetic,generated
 GEN00853,"pt c/o dx campak - dr dah tgk. imp luka bernanah kanak2, doc ckp. imp kudis buta. menstrual cramps tiada. earache sejak semalam. on paracetamol",1B72.Z;1F03;1G04.Z;AB70.2,train,draft,synthetic,generated
 GEN00854,"chest pains teruk 6 hari, headache sangat sejak 6 bulan, LEG cramps sangat 3 ari, tidak hematuria",MB47.3;MB4D;MD30.Z,train,draft,synthetic,generated
 GEN00855,degenerative knee stabil n emesis dah 5 hari n excessive thirst since YESTERDAY n chest clear n review in 3 days n diagnosis: tekak radang n imp ns1 postif n x period tak datang,1D2Z;CA02.Z;FA01.Z;MD90.1;MG43.0,train,draft,synthetic,generated
@@ -1062,17 +1062,17 @@ GEN00865,"lelaki 80 thn dtg dgn tolerating orlly, background acute gout tak terk
 GEN00866,"dysarthria teruk SEJAK pagi, diagnosis: gigi berlubang, doc ckp, after meals. T 37.2",DA08.0;MA80.2Z,train,draft,synthetic,generated
 GEN00867,"pesakit datang, previous stroke tak TERKAWAL + h/o sakit jantung koronari + known HX sakit kepala sebelah + susah angkat tngan. BP 156/75",8A80.Z;8B11;BA52.Z,train,draft,synthetic,generated
 GEN00868,"c/o A: jangkitan paru2 n facial drop, doc ckp n background cts FU klinik n pmhx: darah tinggi stabil. minta MC",8B88.0;8C10.0;BA00.Z;CA40.Z,train,draft,synthetic,generated
-GEN00869,"pt komplen imp demam denggi, Rx abx, myalgias 5/7, known acute gastritis dah 5 thn, review in 3 days",1D2Z;DA42.Z;FB56.2,train,draft,synthetic,generated
+GEN00869,"pt komplen imp demam denggi, Rx abx, myalgias 5/7, known acute gastritis dah 5 thn, review in 3 days",1D2Z;DA42.Z,train,draft,synthetic,generated
 GEN00870,pt presents with belum ambil ubat + tidak short of breath. BP 114/77,,train,draft,synthetic,generated
 GEN00871,k/c/o gouty hx n diagnosis: biduran dr cnfrm n bila toleh kepala n denies jaundice N denies rasa takut TAK tentu pasal n came with mother. BP 133/77,EB00.Z;FA25,train,draft,synthetic,generated
 GEN00872,"tekak pert teruk since this morning, h/o haemorrhoids on meds, A: herpes zoster infection, doc ckp, KAT kaki kanan, watery stools FOR 6 weeks",1E91.Z;DB60.Z;MD36.0;ME05.1,train,draft,synthetic,generated
 GEN00873,"pt komplen no h/o weight droppd, minum ok, HR stable, takde radiating to left leg, tercungap for 1/52",MD11.5,train,draft,synthetic,generated
 GEN00874,"pt komplen x chesty cough, diagnosis: influenza, selera makan kurang TERUK 3 minggu, kencing ok. minta MC",1E32;MG43.7,train,draft,synthetic,generated
-GEN00875,"pesakit datang, dr ckp eye infection; k/c/o hypothyroid known; red eyes teruk; x DEHYDRATED; takde telinga sakit. mohon review dr",5A00.Z;9A60.Z;MC15,train,draft,synthetic,generated
+GEN00875,"pesakit datang, dr ckp eye infection; k/c/o hypothyroid known; red eyes teruk; x DEHYDRATED; takde telinga sakit. mohon review dr",5A00.Z;9A60.Z,train,draft,synthetic,generated
 GEN00876,complains of suspek bronchial asthma hx n t2dm on meds. BP 142/63,5A11,train,draft,synthetic,generated
 GEN00877,pt mengadu kencing buih 3 hari. ada acne FU klinik. dah makan ubat. no whezing. BP 154/65,ED80.Z;MF96.Z,train,draft,synthetic,generated
-GEN00878,"pesakit datang, painful periods tiada + sengal badan kuat for 1/52 + nil ear pains + on review + bibir kering since this mrning + imp: covid. mohon review dr",5C70.0;FB56.2;RA01,train,draft,synthetic,generated
-GEN00879,"makcik 23 thn dtg dgn imp food poisonng, belly pain KUAT dah seminggu. BP 161/62",1A40.Z;MD81.4,train,draft,synthetic,generated
+GEN00878,"pesakit datang, painful periods tiada + sengal badan kuat for 1/52 + nil ear pains + on review + bibir kering since this mrning + imp: covid. mohon review dr",5C70.0;RA01,train,draft,synthetic,generated
+GEN00879,"makcik 23 thn dtg dgn imp food poisonng, belly pain KUAT dah seminggu. BP 161/62",1A40.Z,train,draft,synthetic,generated
 GEN00880,"bila toleh kepala, tidak anorexic. T 37.8",,train,draft,synthetic,generated
 GEN00881,presented with PMH: atopic eczema hx known dan No earache dan chest pain on deep breathing kuat 4/7 dan muntah darah teruk since yesterday dan PMH: hipertensi (OLD case) dan doc dah tgk. BP 116/73,BA00.Z;EA80.Z;MD30.0;ME24.A5,train,draft,synthetic,generated
 GEN00882,"pesakit datang, susah nak menelan sejak pagi dan ? uri dan lepas main bola dan stingng urine teruk 6 ari dan A: tonsillar exudates dan knwn gastrik dah 6 thn dan senggugut. T 37.2",CA03.Z;DA42.Z;GA34.3;MD93;MF50.7,train,draft,synthetic,generated
@@ -1145,7 +1145,7 @@ GEN00948,S: bawa surat rujukan. nauseated on off. obesity dah 6 thn. fatigue for
 GEN00949,pt kompln kat tangn kiri. no bloodshot eyes. constipated sejak 6 bulan. tak heavy and irregular periods. T 37.0,ME05.0,train,draft,synthetic,generated
 GEN00950,pt dtg c/o A: rubeola dr cnfrm. VARICELLA - DR dah tgk. vertigo teruk sejak smlm. susut berat badan skit2 kebelakangan ni. No kencing ada darah,1E90.Z;1F03;MB48.0Z;MG43.5,train,draft,synthetic,generated
 GEN00951,pt presents with k/c/o ekzema known; no h/o kencing ada darah; PMHx knee oa dah 3 thn; imp: konjunktivitis; no panas badan. BP 129/90,9A60.Z;EA80.Z;FA01.Z,train,draft,synthetic,generated
-GEN00952,complains of sinus infection dr cnfrm n tekak perit sangat 6 minggu n imp: swollen tonsils. minta MC,CA01;CA03.Z;MD36.0,train,draft,synthetic,generated
+GEN00952,complains of sinus infection dr cnfrm n tekak perit sangat 6 minggu n imp: swollen tonsils. minta MC,CA01;CA03.Z,train,draft,synthetic,generated
 GEN00953,complains of tiada nausea; ccf (old case); takde urat tegang; kurang air sikit sejak smlm,5C70.0;BD10,train,draft,synthetic,generated
 GEN00954,pt komplen takde dada sakit masa tarik nafas dalam; salur jantung tersumbat known; abdo PAIN 4 minggu; queasy dah 5 hari; on off. T 37.2,BA52.Z;MD81.4;MD90.0,train,draft,synthetic,generated
 GEN00955,"susah angkat tangan, generalized edema xde, No menstrual pain, kahak kuning, selera makan kurang skit2 sejak smlm",MG43.7,train,draft,synthetic,generated
@@ -1174,12 +1174,12 @@ GEN00977,"pt komplen kejang otot takde, vomited teruk x4/7, makin ok, rhinitis a
 GEN00978,"pt presents with doc cnfrm enlarged tonsils, KAT pinggang kiri, nil low grade fevr, dx konjunktivitis",9A60.Z;CA03.Z,train,draft,synthetic,generated
 GEN00979,mengadu luka kecil n COUGHING blood kuat kebelakangan ni n fatigue kebelakangan ni n polydipsia absent N lepas hujan n h/o rhinitis n k/c/o pulmonary tb tak terkawal,1B10.Z;CA08.0Z;MD22;MG22,train,draft,synthetic,generated
 GEN00980,pt komplen k/c/o median nerve compression (old case) dan diagnosis: tinea pedis - dr dah tgk dan anak sulung dan semput sejak pagi. BP 167/68,1F28.Z;8C10.0;MD11.5,train,draft,synthetic,generated
-GEN00981,datang sebab perut pedih sangat sejak 6 bulan + ada retnopathy on ubat + advised fluids + hx stomach ulcer on meds. BP 162/71,9B71.0Z;DA60.Z;MD81.4,train,draft,synthetic,generated
+GEN00981,datang sebab perut pedih sangat sejak 6 bulan + ada retnopathy on ubat + advised fluids + hx stomach ulcer on meds. BP 162/71,9B71.0Z;DA60.Z,train,draft,synthetic,generated
 GEN00982,mengadu otalgia 4 minggu. lepas brenang. BP 119/60,AB70.2,train,draft,synthetic,generated
 GEN00983,pt presents with known case of kencing manis (old case); hidung berdarah kuat 5 hari; coughs sikit kebelakangan ni; doc cnfrm selesema - dr dah tgk; came with mother; negative for angina like pain,5A11;CA00;MD12;MD20,train,draft,synthetic,generated
-GEN00984,susut berat badn skit2 sejak PAGI dan tak bermaya 2 ari dan waktu malam dan kegatalan 4/7 dan anemia besi (old case). T 37.9,3A00.Z;EC90.Z;MG22;MG43.5,train,draft,synthetic,generated
+GEN00984,susut berat badn skit2 sejak PAGI dan tak bermaya 2 ari dan waktu malam dan kegatalan 4/7 dan anemia besi (old case). T 37.9,3A00.Z;EC90.Z;MG43.5,train,draft,synthetic,generated
 GEN00985,"c/o hx dermatitis FU klinik, negative for dada sakit bila bernafas, imp: pharyngitis, facial palsy dr cnfrm. BP 131/74",8B88.0;CA02.Z;EA80.Z,train,draft,synthetic,generated
-GEN00986,mata kemerahan kuat 2 ari n susah angkat tangan n ? ulser kaki diabetik n no h/o poor appetite n dx urticaria n tidak kencing RASA panas n ruam skit2 kebelakangan ni. on paracetamol,EB00.Z;MC15;ME66.6Z,train,draft,synthetic,generated
+GEN00986,mata kemerahan kuat 2 ari n susah angkat tangan n ? ulser kaki diabetik n no h/o poor appetite n dx urticaria n tidak kencing RASA panas n ruam skit2 kebelakangan ni. on paracetamol,EB00.Z;MC15,train,draft,synthetic,generated
 GEN00987,pt mengadu bila naik tangga n bg MC 2 hari n vomiting blood sangat x4/7 n nafi difficulty sleeping N nose bleed teruk 2 ari. mohon review dr,MD20;ME24.A5,train,draft,synthetic,generated
 GEN00988,"complains of skin rash 2/7, x protein dalam urin, bawa surat rujukan, after MEALS. T 37.2",ME66.6Z,train,draft,synthetic,generated
 GEN00989,pt mengadu No ulu hati rasa terbakar. imp: kaki terseliuh. painful periods sejak smlm. kencing ok. imp: enlarged tonsils. on paracetamol,CA03.Z;GA34.3;ND14.7Z,train,draft,synthetic,generated
@@ -1213,7 +1213,7 @@ GEN01016,presented with jangkitan saluran kencing n CHOL tinggi FU klinik n lepa
 GEN01017,"lelaki 73 thn dtg dgn malena 4 ari, suara garau kuat sejak minggu lepas, F/U if x baik. mohon review dr",MA82.10;ME24.A4,train,draft,synthetic,generated
 GEN01018,pt mengadu pusing pusing 6 hari,MB48.0Z,train,draft,synthetic,generated
 GEN01019,"susah nak menelan skit2 sejak smlm, ASAP, ubat habis, takde nafs sesak. mohon review dr",MD93,train,draft,synthetic,generated
-GEN01020,"ibu bawa anak, A: tinea corporis dr cnfrm, kencing pedih sejak pagi, ili, doc ckp, high temperature kuat kebelakangan ni, lemah badan skit2",1E32;1F28.Z;MF50.7;MG22;MG26,train,draft,synthetic,generated
+GEN01020,"ibu bawa anak, A: tinea corporis dr cnfrm, kencing pedih sejak pagi, ili, doc ckp, high temperature kuat kebelakangan ni, lemah badan skit2",1E32;1F28.Z;MF50.7;MG22,train,draft,synthetic,generated
 GEN01021,"datang sebab burning when passing urine takde, x proteinuria, palpitation sangat 5/7, mata kabur sikit. mohon review dr",MC81.2,train,draft,synthetic,generated
 GEN01022,"S: doc cnfrm tested positive for covid, dx dengue (dr ckp). mohon rview dr",1D2Z;RA01,train,draft,synthetic,generated
 GEN01023,pt komplen No light headed dan O/E unremarkable dan sakit period 4 hari dan hx thyroid overactive ON ubat. on paracetamol,5A02.Z;GA34.3,train,draft,synthetic,generated
@@ -1237,7 +1237,7 @@ GEN01040,"pt dtg c/o leg edema sejak semalam, NAUSEA 3 ari, bronktis - dr dah tg
 GEN01041,lelaki 74 thn dtg dgn no h/o malena. bila bangun pagi. sakit kaki sejak 5 bulan,FB56.4,train,draft,synthetic,generated
 GEN01042,"PT 66thn, mata kuning kuat sejak smlm. threw up kuat 3/7. large urine volume sangat 5/7. kat kepala. kat kaki kanan. BP 139/96",MD90.1;ME10.1;MF55,train,draft,synthetic,generated
 GEN01043,"lelaki 42 thn dtg dgn deman teruk dah seminggu, PMHx salur jantung tersumbat",BA52.Z;MG26,train,draft,synthetic,generated
-GEN01044,"ibu bawa anak, denied pedih ULU hati n rash on off n urticaria n ada alahan ubat n diagnosis: resdung n r/o ili n bila toleh kepala. on paracetamol",CA01;EB00.Z;ME66.6Z,train,draft,synthetic,generated
+GEN01044,"ibu bawa anak, denied pedih ULU hati n rash on off n urticaria n ada alahan ubat n diagnosis: resdung n r/o ili n bila toleh kepala. on paracetamol",CA01;EB00.Z,train,draft,synthetic,generated
 GEN01045,"pt 61THN, PMHx chronic renal disease FU klink, very thirsty kuat on off, tiada poor sleep, kepala sakit 6 minggu, ? herpes zoster. T 37.6",GB61.Z;MB4D;MG43.0,train,draft,synthetic,generated
 GEN01046,pakcik 51 thn dtg dgn ?oe n telinga bengkak nanah dr cnfrm n PMH: high cholesterol - stable n imp: tonsillar exudates dr cnfrm n ADVISE rehat n skin rash 3 minggu. on paracetamol,5C80.0Z;AA90;CA03.Z;ME66.6Z,train,draft,synthetic,generated
 GEN01047,"ibu bawa anak, excessive urination, painful pee teruk, kerja shift, doc cnfrm kayap (dr ckp), no h/o gatal badan. T 37.7",1E91.Z;MF50.7;MF55,train,draft,synthetic,generated
@@ -1268,12 +1268,12 @@ GEN01071,"makcik 71 thn dtg dgn croaky voice sangat for 6 days, lepas jatuh, itc
 GEN01072,"pt mengadu no h/o diaphoresis, swimmer ear. BP 111/61",AA3Z,train,draft,synthetic,generated
 GEN01073,"ibu bawa anak, negative for urine leakage; denies badan menggigil; lepas berenang; angina like pain teruk; kat dada kanan; k/c/o old stroke stabil. T 37.7",8B11;MD30.Z,train,draft,synthetic,generated
 GEN01074,pt komplen period tak datang for 5 days; tak anorexic; k/c/o serangan migrain; PRN paracetamol; suspek poor adherence. mohon review dr,8A80.Z;GA20.0Z,train,draft,synthetic,generated
-GEN01075,"S: bunyi siul bila bernafas teruk sejak semalam, makin teruk, disahkan chest infection, TIBI paru - stble, gerd ON ubt, throat pain sejak pagi. minta MC",1B10.Z;CA42.Z;DA22.Z;MD11.C;MD36.0,train,draft,synthetic,generated
+GEN01075,"S: bunyi siul bila bernafas teruk sejak semalam, makin teruk, disahkan chest infection, TIBI paru - stble, gerd ON ubt, throat pain sejak pagi. minta MC",1B10.Z;CA42.Z;DA22.Z;MD36.0,train,draft,synthetic,generated
 GEN01076,"71yo F c/o takda acid reflux, doc cnfrm cacar air (dr ckp), dx urinary infection, kat sekolah, luka kecil. BP 118/88",1E90.Z;GC08.Z,train,draft,synthetic,generated
 GEN01077,pt presents with pmhx: GOUTY (old CASE) + scratchy throat skit2 3/7. T 37.1,FA25;MD36.0,train,draft,synthetic,generated
 GEN01078,"pt c/o radiating to left leg for 1/52, nafi panicky. T 37.0",ME84.3,train,draft,synthetic,generated
 GEN01079,"mengadu pelat tiba2 sangat, datang dengan isteri, advise minum air byk, denies lack OF enrgy, known acute gout - stable",FA25;MA80.2Z,train,draft,synthetic,generated
-GEN01080,"kat kepala, denies burning micturition, diagnosis: jangkitan paru2, difficulty breathing on off, chest clear. BP 145/62",CA40.Z;MD11.5,train,draft,synthetic,generated
+GEN01080,"kat kepala, denies burning micturition, diagnosis: jangkitan paru2, difficulty breathing on off, chest clear. BP 145/62",CA40.Z,train,draft,synthetic,generated
 GEN01081,S: nak refill ubat n pmhx: t1 dm on meds n dr ckp cellulitic n k/c/o eczematous hx n allergic rhinitis dah 3 thn n PMH: batu buah pinggang tak terkawal n berat naik sikit,1B70.Z;5A10;CA08.0Z;EA80.Z;GB70.0Z,train,draft,synthetic,generated
 GEN01082,63yo F c/o known case of HIGH cholesterol known n pedih ulu hati kuat since this MORNING n lethargy KUAT 5 hari,5C80.0Z;MD95;MG22,train,draft,synthetic,generated
 GEN01083,"C/O known hx chronic hepatitis b hx, ubat habis, no stinging urine. mohon review dr",1E51.0Z,train,draft,synthetic,generated
@@ -1285,7 +1285,7 @@ GEN01088,"mengadu sakit pinggang for 4 weeks, ckd tak terkawal, mencucuk2 since 
 GEN01089,mengadu leg cramps. known hx diabetic foot wound dah 3 thn. No pruritus. T 37.2,BD54;MB47.3,train,draft,synthetic,generated
 GEN01090,pt komplen lepas main bola; doc cnfrm fungal infection; no abdo PAIN; tidak dysarthria,1F28.Z,train,draft,synthetic,generated
 GEN01091,datang sebab after meals; sejarah median nerve compression (old case); stomachache teruk x6/7; pedih kencing; ? oe. mohon review dr,8C10.0;MD81.4;MF50.7,train,draft,synthetic,generated
-GEN01092,presented with abd pain sikit sejak pagi. on off. najis hitam teruk. PMH: ulser perut hx. h/o copd. mohon review dr,CA22.Z;DA60.Z;MD81.4;ME24.A4,train,draft,synthetic,generated
+GEN01092,presented with abd pain sikit sejak pagi. on off. najis hitam teruk. PMH: ulser perut hx. h/o copd. mohon review dr,CA22.Z;DA60.Z;ME24.A4,train,draft,synthetic,generated
 GEN01093,"c/o kaki kebas kuat sejak smlm, lost voice teruk x2/7, nauseated since this morning, SELALU jadi, HR stable",MA82.10;MB40.Z;MD90.0,train,draft,synthetic,generated
 GEN01094,"lelaki 71 thn dtg dgn luka kecil dan swelling all over kuat 2/7 DAN ITCHY kuat x5 days dan imp bronchitis, doc ckp dan berak ok. on paracetamol",CA42.Z;EC90.Z;MG29.1,train,draft,synthetic,generated
 GEN01095,imp: rolled ankle dan nafi berat turun dan on off dan pain radiating to leg dan bengkak kaki teruk for 1/52,ME84.3;MG29.01;ND14.7Z,train,draft,synthetic,generated
@@ -1348,7 +1348,7 @@ GEN01151,"complains of bleeding piles on meds, bg MC 2 hari, diarrhoea sejak pag
 GEN01152,"dmam kebelakangan ni, kemungkinan urinary TRACT infection, tak pruritic, kepala sakit teruk for 1/52. minta MC",MB4D;MG26,train,draft,synthetic,generated
 GEN01153,"pt mengadu A: hypo (dr ckp), PMH: batu buah pinggang, ADA alahan ubat, dened blood dalam air kencing, kulit kuning xde, PMHx ESSENTIAL hypertension - stable, dr ckp kudis berair, doc ckp. T 37.6",1B72.Z;5A21.Z;BA00.Z;GB70.0Z,train,draft,synthetic,generated
 GEN01154,datang sebab BG MC 2 hari dan hx cigarettes on mds. mohon review dr,QE13,train,draft,synthetic,generated
-GEN01155,"rashes teruk dah seminggu, eye redness for 1/52, lepas hujan, negative for wheezes, lepas jatuh, diagnosis: skin fungal infection, known asthma known, known cerebrovascular accident stabil. T 37.1",1F28.Z;8B11;CA23;MC15;ME66.6Z,train,draft,synthetic,generated
+GEN01155,"rashes teruk dah seminggu, eye redness for 1/52, lepas hujan, negative for wheezes, lepas jatuh, diagnosis: skin fungal infection, known asthma known, known cerebrovascular accident stabil. T 37.1",1F28.Z;8B11;CA23;MC15,train,draft,synthetic,generated
 GEN01156,datang sebab pedih kencing; pmhx: batu buah pinggang on ubat; berak ok; denies dysphagia; vomited once sikit x6 days. mohon revew dr,GB70.0Z;MD90.1;MF50.7,train,draft,synthetic,generated
 GEN01157,c/o tolerating orally. badan panas sikit sejak minggu lepas. T 37.6,MG26,train,draft,synthetic,generated
 GEN01158,renal STONE FU klinik + known case of darah tinggi stabil + no bowel opening sangat dah 4 hari. BP 133/77,BA00.Z;GB70.0Z;ME05.0,train,draft,synthetic,generated
@@ -1372,11 +1372,11 @@ GEN01175,"c/o cakap tak jelas teruk for 1/52 n makn teruk n denies tekak prit N 
 GEN01176,"datang sebab dr ckp bentol bentol, paraesthesia kuat x2/7, waktu malam, tak susah bernafas, pmhx: heart failure on meds. on paracetamol",BD10;EB00.Z;MB40.Z,train,draft,synthetic,generated
 GEN01177,S: EYE redness sejak minggu lepas. diaphoresis sikit x2 days. tidak perut rasa PENUH angn,MC15;ME66.5,train,draft,synthetic,generated
 GEN01178,lelaki 41 THN dtg dgn kemungkinan high bp. tkde pain on urination. sleeplessness sejak mnggu lepas. ada gastroesophageal reflux on ubat,7A0Z;DA22.Z,train,draft,synthetic,generated
-GEN01179,"pt komplen hx frozen shouldr dah 4 thn, burning when passing urine sejak semalam, haematuria xde, shoulder pain 5 minggu, r/o selulitis, no h/o urine leakage, lepas main bola. BP 160/79",FB53.0;ME82;MF50.7,train,draft,synthetic,generated
+GEN01179,"pt komplen hx frozen shouldr dah 4 thn, burning when passing urine sejak semalam, haematuria xde, shoulder pain 5 minggu, r/o selulitis, no h/o urine leakage, lepas main bola. BP 160/79",FB53.0;MF50.7,train,draft,synthetic,generated
 GEN01180,pt presents with ADA kidney stones. kerja shift. nafas sesak teruk 3/7. cepat HAUS. weight LOSS unintentional sangat 6 hari. on paracetamol,GB70.0Z;MD11.5;MG43.0;MG43.5,train,draft,synthetic,generated
-GEN01181,datang sebab kepala ringan 4 hari; dunia berputar skit2; tidak eye redness; bloody urine sejak semalam. on paracetamol,MB48.0Z;MB48.Z;MF50.4Z,train,draft,synthetic,generated
+GEN01181,datang sebab kepala ringan 4 hari; dunia berputar skit2; tidak eye redness; bloody urine sejak semalam. on paracetamol,MB48.0Z;MF50.4Z,train,draft,synthetic,generated
 GEN01182,"complains of ASAP, diagnosis: kudis berair dr cnfrm",1B72.Z,train,draft,synthetic,generated
-GEN01183,"doc cnfrm common cold (dr ckp), anak sulung, ? herpes zoster infection, imp: varicella (dr ckp), gatal since yesterday. BP 164/62",1E90.Z;CA00;EC90.Z,train,draft,synthetic,generated
+GEN01183,"doc cnfrm common cold (dr ckp), anak sulung, ? herpes zoster infection, imp: varicella (dr ckp), gatal since yesterday. BP 164/62",1E90.Z;CA00,train,draft,synthetic,generated
 GEN01184,pt dtg c/o x shivers; known renal calculi (old case); berak ok. minta MC,GB70.0Z,train,draft,synthetic,generated
 GEN01185,"perempuan 69 thn dtg dgn takde kembung perut, k/c/o tumit sakit waktu pagi hx, muscle aches kuat sejak 5 bulan, kat tangan kiri. minta MC",FB40.1;FB56.2,train,draft,synthetic,generated
 GEN01186,karies gigi. gatal2 kuat dah SEMINGGU. ada high cholesterol level. kat tangan kiri. MOHON review dr,5C80.0Z;DA08.0;EC90.Z,train,draft,synthetic,generated
@@ -1454,7 +1454,7 @@ GEN01257,"pt 37thn, sejarah ischemic heart disease stabil n sakit badan n Rx abx
 GEN01258,pt c/o kencing malam banyak kali tiada; ubat habis; negative FOR arm pain; vomited blood skit2 4 ari,ME24.A5,train,draft,synthetic,generated
 GEN01259,"IBU bawa anak, ada diabetes mellitus type 2 tak terkawal; frothy urine skit2 sejak semalam",5A11;MF96.Z,train,draft,synthetic,generated
 GEN01260,"c/o ada vape dah 3 thn, ?lutut haus, bila jalan jauh, hidung berair, peluh sejuk 3 ari. T 37.1",CA00;ME66.5;QE13,train,draft,synthetic,generated
-GEN01261,"S: hati berlemak - stable, imp sinusitis - dr dah tgk, dah makan ubat, kepala berdenyut x5/7, PMHx sindrom terowong karpal known, bawa surat rujukan, suspk reflux disease",8C10.0;CA01;DB92.Z;MB4D,train,draft,synthetic,generated
+GEN01261,"S: hati berlemak - stable, imp sinusitis - dr dah tgk, dah makan ubat, kepala berdenyut x5/7, PMHx sindrom terowong karpal known, bawa surat rujukan, suspk reflux disease",8C10.0;CA01;DB92.Z,train,draft,synthetic,generated
 GEN01262,"pesakit datang, ear pains tiada, dengue fever dr cnfrm. BP 146/69",1D2Z,train,draft,synthetic,generated
 GEN01263,"pt presents with known case of berat berlebihan on meds; makin ok; kudis berair (dr ckp); denied pain on urination; feeling sick sikit sejak pagi; disahkan EYE infection, doc ckp",1B72.Z;5B81.Z;9A60.Z;MD90.0,train,draft,synthetic,generated
 GEN01264,c/o disahkan resdung dr cnfrm; demam sejak pag; background emphysematous known; biduran; negative for sleeplessness; fainting sangat since yesterday,CA01;CA22.Z;EB00.Z;MG26;MG45.Z,train,draft,synthetic,generated
@@ -1467,7 +1467,7 @@ GEN01270,"pt mengadu spiking temperature sikit kebelakangan ni, PMH: ischaemic s
 GEN01271,"pesakit datang, takda menstrual pain + bila JALAN jauh + takda demam panas + berpeluh banyak for 1/52 + menorrhagia hx for 1/52 + dada sakit masa tarik nafas dalam kuat for 3 days + PMHx hypertensive on meds + breathlessness sejak 4 bulan. BP 161/81",BA00.Z;GA22;MD11.5;MD30.0;ME66.5,train,draft,synthetic,generated
 GEN01272,"pt c/o dyspepsia sangat 4 minggu, room SPINNING skit2, tak tangan sakit, urinary tract infection, susah angkat tangn, berdarah hidung sangat sejak smlm",GC08.Z;MB48.0Z;MD20;MD95,train,draft,synthetic,generated
 GEN01273,pt komplen lepas balik kampung dan dizziness x2/7 dan ?acute otitis media dan known case of known asthma,CA23;MB48.Z,train,draft,synthetic,generated
-GEN01274,presented with cough for 1/52; selalu jadi; k/c/o carpal tunnel syndrome; perut MASUK angin since yesterday; no h/o very thirsty; tolerating orally; tangan kebas teruk sejak pagi,8C10.0;MB40.Z;MD12;ME01,train,draft,synthetic,generated
+GEN01274,presented with cough for 1/52; selalu jadi; k/c/o carpal tunnel syndrome; perut MASUK angin since yesterday; no h/o very thirsty; tolerating orally; tangan kebas teruk sejak pagi,8C10.0;MD12;ME01,train,draft,synthetic,generated
 GEN01275,presented with kat sekolah n aching all over skit2 6 hari n PMH: carpal tunnel SYNDROME hx N kencing pedih tiada n tekak sakit kebelakangan ni,8C10.0;FB56.2;MD36.0,train,draft,synthetic,generated
 GEN01276,c/o No queasy n lemah badan sangat 6 hari. T 37.1,MG22,train,draft,synthetic,generated
 GEN01277,"datang sebab ubat habis, x diaphoretic",,train,draft,synthetic,generated
@@ -1486,10 +1486,10 @@ GEN01289,c/o vitals stable + known overactive thyroid + kurang air xde + melaena
 GEN01290,presented with denies wetting herself. k/c/o on anti tb on ubat. on paracetamol,1B10.Z,train,draft,synthetic,generated
 GEN01291,"sakit telinga skit2 since this mornng, dehydration absent, selera ok, knwn migrain, afebrile",8A80.Z;AB70.2,train,draft,synthetic,generated
 GEN01292,pt presents with review in 3 days + takda sembelit teruk + No najis hitm + knwn acne vulgaris stabil + lepas balik kampung. BP 126/68,ED80.Z,train,draft,synthetic,generated
-GEN01293,pt c/o PMH: ulser perut (old case). pedih ulu hati x5 days. nausea tiada. no h/o angina like pain. known hx cardiac failure known,BD10;DA60.Z;MD95,train,draft,synthetic,generated
+GEN01293,pt c/o PMH: ulser perut (old case). pedih ulu hati x5 days. nausea tiada. no h/o angina like pain. known hx cardiac failure known,BD10;DA60.Z,train,draft,synthetic,generated
 GEN01294,pt mengadu known diabetes melltus type 2 on meds dan ada alahan ubat,5A11,train,draft,synthetic,generated
 GEN01295,? peptic ulcer + vertiginous xde + icterus sejak pagi + imp dermatomycosis dr cnfrm + F/U if x baik. mohon review dr,1F28.Z;ME10.1,train,draft,synthetic,generated
-GEN01296,presented with fungal infection n rashes sikit 6/7 n pmhx: gerd hx n PMHx ckd (old case) n disahkan biduran - dr dah tgk,1F28.Z;DA22.Z;EB00.Z;GB61.Z;ME66.6Z,train,draft,synthetic,generated
+GEN01296,presented with fungal infection n rashes sikit 6/7 n pmhx: gerd hx n PMHx ckd (old case) n disahkan biduran - dr dah tgk,1F28.Z;DA22.Z;EB00.Z;GB61.Z,train,draft,synthetic,generated
 GEN01297,"pt 45thn, frozen shoulder (old case), PMHx tumit sakit waktu pagi, fainted kuat 6/7, berak ok. on paracetamol",FB40.1;FB53.0;MG45.Z,train,draft,synthetic,generated
 GEN01298,"pt 77thn, knee PAIN sangat 6/7, feeling sick kuat sejak semalam, doc cnfrm acute otitis media (dr ckp), generalised oedema skit2 6 minggu, advise rehat",AA90;MD90.0;ME82;MG29.1,train,draft,synthetic,generated
 GEN01299,perempuan 45 thn dtg dgn denied dunia berputar + r/o serangan migrain + wheezing 2/7 + advised fluids + dada sakit masa tarik nafas dalam dah 3 hari + dnies always thirsty. BP 168/90,MD11.C;MD30.0,train,draft,synthetic,generated
@@ -1579,20 +1579,20 @@ GEN01382,S: takda batuk berdarah + known case of tb paru known + belum ambil uba
 GEN01383,c/o KNOWN hx hipertiroid + A: sneezing + PMHx nasal allergy stabil,5A02.Z;CA00;CA08.0Z,train,draft,synthetic,generated
 GEN01384,"pt DTG c/o constipating sejak smlm, gatal2 2 minggu. BP 140/65",EC90.Z;ME05.0,train,draft,synthetic,generated
 GEN01385,datang sebab rash skit2 6 minggu; jaundiced sejak minggu lepas; penat sangat sejak 5 bulan,ME10.1;ME66.6Z;MG22,train,draft,synthetic,generated
-GEN01386,"pt 45thn, maculopapular rash for 5 weeks; imp: biduran; pedal oedema sangt dah seminggu; MASA kerja; takda menorrhagia hx. mohon review dr",EB00.Z;ME66.6Z;MG29.01,train,draft,synthetic,generated
+GEN01386,"pt 45thn, maculopapular rash for 5 weeks; imp: biduran; pedal oedema sangt dah seminggu; MASA kerja; takda menorrhagia hx. mohon review dr",EB00.Z;MG29.01,train,draft,synthetic,generated
 GEN01387,"33yo male c/o known hx dm retinopathy hx known, h/o dm type1 stabil, x haid lebat, masa kerja",5A10;9B71.0Z,train,draft,synthetic,generated
 GEN01388,c/o sejarah dfu dah 6 thn. blackout sikit for 1/52. minta MC,BD54;MG45.Z,train,draft,synthetic,generated
 GEN01389,mengadu period sangat banyak for 6 weeks + PMH: cad known + lepas makan + lbp 3 hari + feeling sick sikit + lepas berenang. T 37.0,BA52.Z;GA22;MD90.0;ME84.2Z,train,draft,synthetic,generated
 GEN01390,berpeluh malam x4/7 dan darah haid banyak skit2 dah 5 hari,GA22;ME66.5,train,draft,synthetic,generated
 GEN01391,"c/o ? tb, sakit masa kencing x4 days, tummy bug, hypoglycaemia, pmhx: ulser gastrik, nafi cemas. T 37.3",1A40.Z;5A21.Z;DA60.Z;MF50.7,train,draft,synthetic,generated
-GEN01392,"urinating at night absent, PMHx reflux disease hx, pedih hulu hati kuat sejak 5 bulan. mohon review dr",DA22.Z;MD95,train,draft,synthetic,generated
+GEN01392,"urinating at night absent, PMHx reflux disease hx, pedih hulu hati kuat sejak 5 bulan. mohon review dr",DA22.Z,train,draft,synthetic,generated
 GEN01393,datang sebab nosebleed sjak pagi dan tak sakit pinggang turun ke kaki dan known hx high blood pressure TAK terkawal dan takda nafas sesak dan advse diet. minta MC,BA00.Z;MD20,train,draft,synthetic,generated
 GEN01394,pt presents with denies urine leakage. numbness for 5 weeks,MB40.Z,train,draft,synthetic,generated
 GEN01395,25yo female c/o negative for susah nak menelan dan advised fluids dan negative for dehidrasi dan kat kepala dan PMHx osteoarthritis of KNEE (old case). BP 165/80,FA01.Z,train,draft,synthetic,generated
 GEN01396,"mengadu can't sleep sangat 4/7, sejarah zits dah 6 thn, renal calculi FU klinik, LEPAS main bola, PMHx hypothyroid hx, lepas berenang. BP 130/78",5A00.Z;7A0Z;ED80.Z;GB70.0Z,train,draft,synthetic,generated
 GEN01397,imp: chicknpox + hx cigarettes known + BP ok. on paracetamol,1E90.Z;QE13,train,draft,synthetic,generated
 GEN01398,S: air kencing berbuih sejak 4 bulan n tiada low backache n darah dalam kencing 4/7. ON paracetamol,MF50.4Z;MF96.Z,train,draft,synthetic,generated
-GEN01399,"diagnosis: jangkitn kulat kulit, doc CKP, threw UP sejak minggu lepas, sinus pain, doc ckp, nafi cemas, dx telinga bengkak nanah, kepala berat kebelakangan ni",1F28.Z;AA90;CA01;MB4D;MD90.1,train,draft,synthetic,generated
+GEN01399,"diagnosis: jangkitn kulat kulit, doc CKP, threw UP sejak minggu lepas, sinus pain, doc ckp, nafi cemas, dx telinga bengkak nanah, kepala berat kebelakangan ni",1F28.Z;AA90;CA01;MD90.1,train,draft,synthetic,generated
 GEN01400,"No kencing malam banyak kali, ear pain sikit sjak pagi, A: kudis buta (dr ckp)",1G04.Z;AB70.2,train,draft,synthetic,generated
 GEN01401,"PT presents with kerja shift, haus sgt tiada. on paracetamol",,train,draft,synthetic,generated
 GEN01402,"S: kat sekolah, pmhx: asid urik naik sendi bengkak, selera ok. minta MC",FA25,train,draft,synthetic,generated
@@ -1601,7 +1601,7 @@ GEN01404,"pesakit datang, disahkan skabies (DR ckp) + takda KENCING terlepas + s
 GEN01405,"datang sebb kat dada kanan, denied anxious, DR ckp bronchitis (dr ckp), A: swimmer's ear - dr dah tgk. BP 157/94",AA3Z;CA42.Z,train,draft,synthetic,generated
 GEN01406,pt dtg c/o pmhx: dm retinopathy hx stabil. known case of gastrik datang - stable. tiada rigors. nak refill ubat. BP 153/69,9B71.0Z;DA42.Z,train,draft,synthetic,generated
 GEN01407,pt komplen takda susah berak dan anak sulung dan tidur cukup dan feeling sick since this morning dan terjaga malam sejak 6 bulan. BP 160/87,7A0Z;MD90.0,train,draft,synthetic,generated
-GEN01408,"pesakit datang, known degenerative knee known; panas badan x4 days; knee pain teruk x5/7; easily tired tiada; susah angkat tangan; PMHx migraines stabil; losing weight 6 hari. minta MC",8A80.Z;FA01.Z;ME82;MG26;MG43.5,train,draft,synthetic,generated
+GEN01408,"pesakit datang, known degenerative knee known; panas badan x4 days; knee pain teruk x5/7; easily tired tiada; susah angkat tangan; PMHx migraines stabil; losing weight 6 hari. minta MC",8A80.Z;FA01.Z;MG26;MG43.5,train,draft,synthetic,generated
 GEN01409,"presented with ADA kolesterol TINGGI known, no lemah badan, kepala sakit since this morning, bila toleh kepala, k/c/o terlebih berat (old case). mohon review dr",5B81.Z;5C80.0Z;MB4D,train,draft,synthetic,generated
 GEN01410,46yo M c/o denies pedih hulu hati; kurang air kuat since yesterday; pain passing urine sangat x6/7; F/U if x baik; headache kebelakangan ni,5C70.0;MB4D;MF50.7,train,draft,synthetic,generated
 GEN01411,c/o nil spinning sensation dan A: jangkitan kulat kulit - dr dah tgk dan imp cavities (dr ckp) dan makan ok DAN ASAP,1F28.Z;DA08.0,train,draft,synthetic,generated
@@ -1622,13 +1622,13 @@ GEN01425,"mengadu sakit sikit je, waktu malam, tiada missed periods, icterus sik
 GEN01426,complains of k/c/o obese + pmhx: alergi hidung - stable + bila baring + demam panas 5 minggu. T 37.8,5B81.Z;CA08.0Z;MG26,train,draft,synthetic,generated
 GEN01427,"ibu bawa anak, athlete's foot, dah makan ubat. T 37.9",1F28.Z,train,draft,synthetic,generated
 GEN01428,presented with makanan tersekat since yesterday n berak ok,MD93,train,draft,synthetic,generated
-GEN01429,A: ns1 positive dr cnfrm + fevr since yesterday + tkde itches. BP 128/67,1D2Z;MG26,train,draft,synthetic,generated
+GEN01429,A: ns1 positive dr cnfrm + fevr since yesterday + tkde itches. BP 128/67,1D2Z,train,draft,synthetic,generated
 GEN01430,"pt komplen denied red urine, nafi presyncope, follow up klinik, disahkan tested positive FOR covid, anxiety for 6 weeks. BP 111/99",MB24.3;RA01,train,draft,synthetic,generated
 GEN01431,"imp sprained ankle, h/o stroke known, pain on urination 5 minggu, ? frozen shoulder, BP ok",8B11;MF50.7;ND14.7Z,train,draft,synthetic,generated
 GEN01432,mengadu selalu jadi + tak demam panas + ADA FOOT ulcer diabetic stabil + k/c/o paru2 tersumbat kronik + known hx dm1 hx + bibir kering takde,5A10;BD54;CA22.Z,train,draft,synthetic,generated
 GEN01433,makcik 40 thn DTG dgn frozen sholder FU klinik dan h/o high cholesterol dah 5 thn dan kat pinggang kiri dan tidak pening kepala. T 37.0,5C80.0Z;FB53.0,train,draft,synthetic,generated
 GEN01434,"pesakit datang, sakit dada bila tarik nafas sejak 5 bulan dan berat naik sikit dan berpeluh banyak 4/7 dan perut kembung sejak minggu lepas dan lepas jatuh dan doc cnfrm tonsil merah - dr dah TGK. on paracetmol",CA03.Z;MD30.0;ME01;ME66.5,train,draft,synthetic,generated
-GEN01435,PT mengadu takde nose bleding; A: ili; bila bangun pagi; tekak perit dah 4 hari; known case of pimples known; WHEEZING sikit 6/7. on paracetamol,1E32;ED80.Z;MD11.C;MD36.0,train,draft,synthetic,generated
+GEN01435,PT mengadu takde nose bleding; A: ili; bila bangun pagi; tekak perit dah 4 hari; known case of pimples known; WHEEZING sikit 6/7. on paracetamol,1E32;ED80.Z;MD11.C,train,draft,synthetic,generated
 GEN01436,presented with lepas berenang. O/E unremarkable. no bowel opening teruk for 6 days. TARRY stools. mohon review dr,ME05.0;ME24.A4,train,draft,synthetic,generated
 GEN01437,complains of darah dalam kencing teruk since yesterday dan darah keluar hidung SIKIT sejak smlm dan eczema known dan TAK jatuh pengsan dan minum ok dan nafi sakit pinggang dan otitis media akut DR cnfrm. minta MC,AA90;EA80.Z;MD20;MF50.4Z,train,draft,synthetic,generated
 GEN01438,presented WITH negative for irregular heavy PERIODS; honey crusted lesions (dr ckp); kat dada knan; losing weight sikit sejak pagi. T 37.4,1B72.Z;MG43.5,train,draft,synthetic,generated
@@ -1665,7 +1665,7 @@ GEN01468,pt mengadu denied abdo pain; advise minum air byk; loc since yesterday;
 GEN01469,imp bronkitis (dr ckp). A: rubeola. x mual2. loss of consciousness tiada. kepala ringan. came with mother. minta MC,1F03;CA42.Z;MB48.Z,train,draft,synthetic,generated
 GEN01470,pt presents with hx hbsag positif - stable; lepas makan pedas; background kidney stones FU klinik; berat berlebihan; weight loss 5 minggu,1E51.0Z;5B81.Z;GB70.0Z;MG43.5,train,draft,synthetic,generated
 GEN01471,"pt 65thn, at night. skabies dr cnfrm. r/o chronic kidney disease. air kencing banyak sangat. T 37.2",1G04.Z;MF55,train,draft,synthetic,generated
-GEN01472,"datang sebab breathless, background renal impairment on meds, luka kecil, tiada high temperature, cephalgia skit2 5 hari, dr ckp chest infection PNEUMONIA dr cnfrm",CA40.Z;GB61.Z;MB4D;MD11.5,train,draft,synthetic,generated
+GEN01472,"datang sebab breathless, background renal impairment on meds, luka kecil, tiada high temperature, cephalgia skit2 5 hari, dr ckp chest infection PNEUMONIA dr cnfrm",CA40.Z;GB61.Z;MB4D,train,draft,synthetic,generated
 GEN01473,"sinus infection; T 37.0; flu like illness, doc ckp; known reflux disease known. minta MC",1E32;CA01;DA22.Z,train,draft,synthetic,generated
 GEN01474,"pt 64thn, chest clear n hidung berdarah skit2 dah 3 hari n background dm2 stabil n polyuria absent n H/O alergi hidung. mohon review dr",5A11;CA08.0Z;MD20,train,draft,synthetic,generated
 GEN01475,"pt mengadu urtis dr cnfrm; selalu jadi; sweating sangat; diagnosis: middle ear infection, doc ckp; lepas angkat barang",AA90;CA07.0;ME66.5,train,draft,synthetic,generated
@@ -1709,12 +1709,12 @@ GEN01512,"pt 30thn, no sakit KEPALA, aching ALL over sangat, semput 5 ari. mohon
 GEN01513,"pt dtg c/o nosebleeds kuat FOR 1/52, PMH: hepatitis b, r/o migraines. on paracetmol",1E51.0Z;MD20,train,draft,synthetic,generated
 GEN01514,kat dada kanan + jaundicd sangat sejak semalam + lemah badan skit2 x6/7. on paracetamol,ME10.1;MG22,train,draft,synthetic,generated
 GEN01515,"presented with bila toleh KEPALA, menstrual pain tiada. minta MC",,train,draft,synthetic,generated
-GEN01516,makcik 41 thn dtg dgn abdo pain 3/7 n suspek ASID naik ke tekak n masa kerja n SEJARAH painful heel on meds n known ulser gastrik - stable,DA60.Z;FB40.1;MD81.4,train,draft,synthetic,generated
+GEN01516,makcik 41 thn dtg dgn abdo pain 3/7 n suspek ASID naik ke tekak n masa kerja n SEJARAH painful heel on meds n known ulser gastrik - stable,DA60.Z;FB40.1,train,draft,synthetic,generated
 GEN01517,"c/o joint pains 5 minggu, x menstrual cramps, sakit haid absent, kemungkinan measles, ada alahan ubat",ME82,train,draft,synthetic,generated
 GEN01518,"denied pyrexia, pmhx: strok ON ubat, no h/o pain in limb. on paracetamol",8B11,train,draft,synthetic,generated
 GEN01519,complains of jerawat on ubat + nafi burning pee + after meals + pleuritic pain takde. mohon review dr,ED80.Z,train,draft,synthetic,generated
 GEN01520,presented with tak penat. known case of bahu beku on meds. coughs kuat sejak semalam,FB53.0;MD12,train,draft,synthetic,generated
-GEN01521,presented with bintik merah sikit kebelakangan ni; shingles rash - dr dah tgk; lepas makan; ada alahan ubat; itching dah 2 hari,1E91.Z;EC90.Z;ME66.6Z,train,draft,synthetic,generated
+GEN01521,presented with bintik merah sikit kebelakangan ni; shingles rash - dr dah tgk; lepas makan; ada alahan ubat; itching dah 2 hari,1E91.Z;EC90.Z,train,draft,synthetic,generated
 GEN01522,"complains of dx toothache decay, doc ckp, ada alahan ubat, x slurred speech, red spots",DA08.0;ME66.6Z,train,draft,synthetic,generated
 GEN01523,mengadu ada emphysema - stable; doc cnfrm rolled ankle dr cnfrm. T 37.0,CA22.Z;ND14.7Z,train,draft,synthetic,generated
 GEN01524,"datang sebab bila bangun berdiri, negative for wheeze",,train,draft,synthetic,generated
@@ -1852,7 +1852,7 @@ GEN01655,lelaki 34 thn dtg dgn background copd hx on meds n doc cnfrm low sugar 
 GEN01656,"pt mengadu bloody urine skit2 for 2 weeks, BLACK stool, imp: twsted ankle - dr dah tgk, denies reduced appetite. BP 168/61",ME24.A4;MF50.4Z;ND14.7Z,train,draft,synthetic,generated
 GEN01657,pmhx: smokes dan suspek alergi hidung dan doc cnfrm kurap dr cnfrm,1F28.Z;QE13,train,draft,synthetic,generated
 GEN01658,"mngadu fevers absent, r/o nasal allergy, known case of ptb on meds. T 37.0",1B10.Z,train,draft,synthetic,generated
-GEN01659,"ibu bawa anak, pmhx: stiff shoulder, joint pains sejak semalam, black stool sangt, bila toleh kepala. BP 124/85",FB53.0;ME24.A4;ME82,train,draft,synthetic,generated
+GEN01659,"ibu bawa anak, pmhx: stiff shoulder, joint pains sejak semalam, black stool sangt, bila toleh kepala. BP 124/85",FB53.0;ME24.A4,train,draft,synthetic,generated
 GEN01660,itches 4/7 + negative FOR termuntah + back pain sangat + ASAP,EC90.Z;ME84.2Z,train,draft,synthetic,generated
 GEN01661,"c/o tkde syncope, kahak kuning, SUSAH nak menelan sejak smlm. T 37.5",MD93,train,draft,synthetic,generated
 GEN01662,"pesakit datang, imp: scabies, doc ckp dan hyperthyroid hx dan dr ckp otitis externa infection, doc ckp. on paracetamol",1G04.Z;5A02.Z;AA3Z,train,draft,synthetic,generated
@@ -1923,7 +1923,7 @@ GEN01726,pt komplen denies maculopapular rash; copd hx - stable; x bppv,CA22.Z,t
 GEN01727,"pt mengadu badan rasa tak sedap, loose stool teruk, susah buang air besar sejak semalam, urine protein skit2 sejak pagi, ? influenza, h/o heel pain dah 3 thn. minta MC",FB40.1;ME05.0;ME05.1;MF96.Z,train,draft,synthetic,generated
 GEN01728,"r/o rubeola; denied risau sangat; NO bowel opening for 4 weeks; vomited blood xde; incontinence kebelakangan ni; at night; disahkan low blood sugar, doc ckp; pain on urination kuat 5 minggu. T 37.1",5A21.Z;ME05.0;MF50.2Z;MF50.7,train,draft,synthetic,generated
 GEN01729,"HX diabetic ulcer, pitam sampai jatuh absent, ? athma, naik ruam for 2 weeks. minta MC",BD54;ME66.6Z,train,draft,synthetic,generated
-GEN01730,datang sebab bahu sakit dah seminggu + cough sejak 2 bulan + PMHx oa knee FU klinik + shooting pain down leg sangat 4/7 + advise rehat. mohon review dr,FA01.Z;MD12;ME82;ME84.3,train,draft,synthetic,generated
+GEN01730,datang sebab bahu sakit dah seminggu + cough sejak 2 bulan + PMHx oa knee FU klinik + shooting pain down leg sangat 4/7 + advise rehat. mohon review dr,FA01.Z;MD12;ME84.3,train,draft,synthetic,generated
 GEN01731,"complains of susah nak lena skt2 sejak smlm, headaches skit2 kebelakangan ni, kemungkinan high cholesterol, A: skin infection spreading (dr ckp), dermatitis (old case)",1B70.Z;7A0Z;EA80.Z;MB4D,train,draft,synthetic,generated
 GEN01732,complains of masa kerja dan ada terlebih berat,5B81.Z,train,draft,synthetic,generated
 GEN01733,"mengadu afebrile, disahkan terseliuh buku lali (dr ckp), kat sekolah, tak selera makan kuat 3 ari, badan panas sangat 4 ari. mohon review dr",MG26;MG43.7;ND14.7Z,train,draft,synthetic,generated
@@ -1976,19 +1976,19 @@ GEN01779,"kahk kuning, fatty liver disease on meds, mata bertahi, doc ckp. minta
 GEN01780,"PESAKIT datang, nil leg swelling; on review; sinus tersumbat",CA01,train,draft,synthetic,generated
 GEN01781,58yo M c/o bila naik tangga n denied dahaga,,train,draft,synthetic,generated
 GEN01782,complains of pmhx: iron deficient anaemia known n disahkan facial drop n headache sikit since yesterday n sengal2 badan sangat sejak minggu lepas n PMH: zits - stable n luka kecil,3A00.Z;8B88.0;ED80.Z;FB56.2;MB4D,train,draft,synthetic,generated
-GEN01783,"perempuan 50 THN DTG dgn no dyspnoea, btk sangat kebelakangan ni, doc cnfrm acute bronchitis (dr ckp), joint pain teruk. BP 140/77",CA42.Z;MD12;ME82,train,draft,synthetic,generated
+GEN01783,"perempuan 50 THN DTG dgn no dyspnoea, btk sangat kebelakangan ni, doc cnfrm acute bronchitis (dr ckp), joint pain teruk. BP 140/77",CA42.Z;ME82,train,draft,synthetic,generated
 GEN01784,S: masa kerja. review in 3 days. tak boleh tidur since this morning. minta MC,7A0Z,train,draft,synthetic,generated
 GEN01785,complains of perut pedih teruk sejak SEMALAM n pmhx: DM retinopathy stabil n chesty cough tiada n after meals n BP ok n no banyak kencing. on paracetmol,9B71.0Z;MD81.4,train,draft,synthetic,generated
 GEN01786,c/o known hx acute gout tak terkawal dan k/c/o degenerative KNEE hx dan HR stable dan dyspepsia for 1/52,FA01.Z;FA25;MD95,train,draft,synthetic,generated
 GEN01787,"datng sebab tak period pains, hard stools sikit sejak pagi, tiada sakit lutut, pmhx: ulser kaki diabetik, malena, at night, doc dah tgk. on paracetamol",BD54;ME05.0;ME24.A4,train,draft,synthetic,generated
 GEN01788,S: coughing blood since this morning + pmhx: thyroid overactive on ubat + sejarah carpal tunnel syndrome TAK terkawal. T 37.5,5A02.Z;8C10.0;MD22,train,draft,synthetic,generated
 GEN01789,"pt komplen kerja shift, rasa nak muntah sikit on off, sejarh cts tak terkawal, imp: drooping face",8B88.0;8C10.0;MD90.0,train,draft,synthetic,generated
-GEN01790,pt mengadu maculopapular rash sikit x6 days + wetting himself FOR 6 weks + r/o sinus infection + BP ok + ada atopic eczema hx known. BP 124/90,EA80.Z;ME66.6Z;MF50.2Z,train,draft,synthetic,generated
+GEN01790,pt mengadu maculopapular rash sikit x6 days + wetting himself FOR 6 weks + r/o sinus infection + BP ok + ada atopic eczema hx known. BP 124/90,EA80.Z;MF50.2Z,train,draft,synthetic,generated
 GEN01791,"ibu bawa anak, letih skit2 n ear ache absent N diagnosis: impetigo infectin dr cnfrm. on paracetamol",1B72.Z;MG22,train,draft,synthetic,generated
 GEN01792,"pt komplen bila jalan jauh, takda short of breath. BP 110/64",,train,draft,synthetic,generated
 GEN01793,"S: DR ckp jangkitan saluran pernafasan atas, diagnosis: erysipelas",1B70.Z;CA07.0,train,draft,synthetic,generated
 GEN01794,"complains of review in 3 days, cold sweat on off, r/o upper respiratory tract infection, background kencing manis FU klinik, red urine sangat. mohon review dr",5A11;ME66.5;MF50.4Z,train,draft,synthetic,generated
-GEN01795,"mengadu KNOWN bahu beku, letih sangat, joint pains skit2 SINCE yesterday, tak very thirsty, lepas makan pedas. BP 152/73",FB53.0;ME82;MG22,train,draft,synthetic,generated
+GEN01795,"mengadu KNOWN bahu beku, letih sangat, joint pains skit2 SINCE yesterday, tak very thirsty, lepas makan pedas. BP 152/73",FB53.0;MG22,train,draft,synthetic,generated
 GEN01796,excessive urination sejak smlm N lepas jatuh n imp: kudis berair n dx scabies n vomiting absent. minta MC,1B72.Z;1G04.Z;MF55,train,draft,synthetic,generated
 GEN01797,datang sebab lightheaded teruk x6/7 n doc cnfrm sakit mata merah berjangkit N ABD pain sejak minggu lepas n threw up 5 hari,9A60.Z;MB48.Z;MD81.4;MD90.1,train,draft,synthetic,generated
 GEN01798,S: tidak easily tired dan PMHx iron deficiency anaemia dan afebrle dan advise rehat. BP 165/88,3A00.Z,train,draft,synthetic,generated
@@ -2067,7 +2067,7 @@ GEN01870,protein in urine tiada n bila naik tangga n k/c/o renal stone n joint p
 GEN01871,"pesakit datang, kejang otot teruk since this morning, chest clear, varicella, doc ckp. minta MC",1E90.Z;MB47.3,train,draft,synthetic,generated
 GEN01872,"pt komplen doc cnfrm bronkitis, doc ckp. on paracetamol",CA42.Z,train,draft,synthetic,generated
 GEN01873,"pt 78thn, nafi lesu + dah makan ubat + h/o heel pain stabil. minta MC",FB40.1,train,draft,synthetic,generated
-GEN01874,"pt mengadu disahkan jangkitan saluran pernafasan atas, sengal badan sangat sejak pagi, DISAHKAN tested positive for covid (dr ckp), takda bloody urine, pain in leg sejak smlm, advise diet. mohon review dr",CA07.0;FB56.2;FB56.4;RA01,train,draft,synthetic,generated
+GEN01874,"pt mengadu disahkan jangkitan saluran pernafasan atas, sengal badan sangat sejak pagi, DISAHKAN tested positive for covid (dr ckp), takda bloody urine, pain in leg sejak smlm, advise diet. mohon review dr",CA07.0;FB56.4;RA01,train,draft,synthetic,generated
 GEN01875,ada haemorrhoid FU klinik n painful periods sejak pagi n bawa surat rujukan,DB60.Z;GA34.3,train,draft,synthetic,generated
 GEN01876,"pt presents with common cold - dr dah tgk, known case of nafld dah 4 thn, takda telinga berdenyut",CA00;DB92.Z,train,draft,synthetic,generated
 GEN01877,"c/o k/c/o heel pain tak terkawal, period banyak sangat teruk sejak semalam, known known asthma (old case), No emesis, denied weight loss. minta MC",CA23;FB40.1;GA22,train,draft,synthetic,generated
@@ -2089,7 +2089,7 @@ GEN01892,"pt 32thn, ? gastritis hx + bibir kering kuat for 2 days + denied chest
 GEN01893,sakit buah PINGGANG kronik hx n makin teruk,GB61.Z,train,draft,synthetic,generated
 GEN01894,"51yo male c/o imp: oe, doc ckp. yellow eyes. mata kabur sikit. DOC dah tgk. T 37.2",AA3Z;ME10.1,train,draft,synthetic,generated
 GEN01895,pt dtg C/O banyak kencing kuat sejak smlm dan kulit kuning teruk sejak semalam dan no bowel opening since this morning dan bila bangun berdiri dan denied perut kembung dan Rx abx. on paracetamol,ME05.0;ME10.1;MF55,train,draft,synthetic,generated
-GEN01896,c/o tiada anxious + takde risau sangat + PMH: heel pain + sakit tangan dah seminggu + lepas makan,FB40.1;FB56.4,train,draft,synthetic,generated
+GEN01896,c/o tiada anxious + takde risau sangat + PMH: heel pain + sakit tangan dah seminggu + lepas makan,FB40.1,train,draft,synthetic,generated
 GEN01897,mengadu hx asid naik ke tekak (old case); takde coughs; tak dapat tahan kencing sejak smlm; ASAP. BP 137/88,DA22.Z;MF50.2Z,train,draft,synthetic,generated
 GEN01898,pt c/o RASA takut tak tentu pasal tiada. shooting pain down leg kuat on off. maculopapular rash xde. sejarah diabetic foot stabil. known hx hipertiroid. kemungkinan tak COMPLY,5A02.Z;BD54;ME84.3,train,draft,synthetic,generated
 GEN01899,"pt c/o ? hepatitis b, berak ok, arthralgia since this morning",ME82,train,draft,synthetic,generated
@@ -2129,11 +2129,11 @@ GEN01932,"pt 57thn, common cold, nose bleeding sikit sejak semalam, menstrual cr
 GEN01933,pt dtg c/o arm pain for 1/52; berdarah hidung kuat. mohon review dr,FB56.4;MD20,train,draft,synthetic,generated
 GEN01934,"pesakit datang, disahkan fungal skin infection, imp konjunktivitis (dr ckp), makin teruk. BP 147/91",1F28.Z;9A60.Z,train,draft,synthetic,generated
 GEN01935,"dehydrated skit2 2 MINGGU, chills KUAT dah seminggu, sejarah asid urik naik sendi bengkak",5C70.0;FA25;MG21,train,draft,synthetic,generated
-GEN01936,"pt 36thn, diagnosis: measles RASH - dr dah tgk; negative for TINGLING; bronkitis; h/o RHINITIS alergi dah 4 thn; ubat habis; spiking temperature skit2 for 1/52; tolerating orally",1F03;CA08.0Z;CA42.Z;MG26,train,draft,synthetic,generated
+GEN01936,"pt 36thn, diagnosis: measles RASH - dr dah tgk; negative for TINGLING; bronkitis; h/o RHINITIS alergi dah 4 thn; ubat habis; spiking temperature skit2 for 1/52; tolerating orally",1F03;CA08.0Z;CA42.Z,train,draft,synthetic,generated
 GEN01937,S: ada tb on treatment - stable. background type 1 diabetes. kat kaki kanan,1B10.Z;5A10,train,draft,synthetic,generated
 GEN01938,"presented with diagnosis: tonsilitis - dr dah tgk, previous stroke tak terkawal, pitam sampai jatuh skit2 sejak smlm, lepas hujan",8B11;CA03.Z;MG45.Z,train,draft,synthetic,generated
 GEN01939,complains of nafas pendek xde + kepala sakit since this morning + naik ruam sejak minggu lepas + imp chst infection pneumonia + on off + diagnosis: upper respiratory tract infection (dr ckp). minta MC,CA07.0;CA40.Z;MB4D;ME66.6Z,train,draft,synthetic,generated
-GEN01940,"datang sebab known lutut haus FU klinik, belum ambil ubat, ada chol tnggi hx, joint pains teruk snce yesterday",5C80.0Z;FA01.Z;ME82,train,draft,synthetic,generated
+GEN01940,"datang sebab known lutut haus FU klinik, belum ambil ubat, ada chol tnggi hx, joint pains teruk snce yesterday",5C80.0Z;FA01.Z,train,draft,synthetic,generated
 GEN01941,"S: diagnosis: dengue fever, doc ckp dan dysarthria xde dan muntah darah sejak minggu lepas dan h/o mixd hyperlipidaemia tak terkawal. on paracetamol",1D2Z;5C80.2;ME24.A5,train,draft,synthetic,generated
 GEN01942,"pt 73thn, amandel bengkak (dr ckp). ear ache sikit x4 days. disahkan blocked nose (dr ckp). denies dry mucosa. on paracetamol",AB70.2;CA00;CA03.Z,train,draft,synthetic,generated
 GEN01943,datang sebab doc cnfrm ili dr cnfrm dan diaphoretic xde dan dada rasa bert sikit dan denies cramp,1E32;MD30.Z,train,draft,synthetic,generated
@@ -2155,8 +2155,8 @@ GEN01958,"PT 46thn, tidak bahu sakit dan PRN paracetamol DAN k/c/o asthma dah 5 
 GEN01959,c/o PMH: dyspepsia gastritis (old case) n known case of peptic ulcer (old case) n tidak terkencing n negative for wheeze,DA42.Z;DA60.Z,train,draft,synthetic,generated
 GEN01960,"pesakit datang, dizzy sejak pagi; rash sangat on off; denies pedih ulu hati; kemungkinan anemia besi; doc cnfrm telinga bengkak nanah (dr ckp); known graves dah 3 thn. mohon review dr",5A02.Z;AA90;MB48.Z;ME66.6Z,train,draft,synthetic,generated
 GEN01961,"lelaki 64 thn dtg dgn chest tightness 3 minggu, no bleeding from nose, kahak kuning, abdominal pain sikit 3/7. minta MC",MD30.Z;MD81.4,train,draft,synthetic,generated
-GEN01962,afebrile dan pitam sampai jatuh tiada dan background migrainous headache on ubat dan disahkan influenza - dr dah tgk dan threw up sikit 5 ari dan loya tekak skit2 for 5 weeks. mhon review dr,1E32;8A80.Z;MD90.0;MD90.1,train,draft,synthetic,generated
-GEN01963,"negative for sakit badan, A: tonsil merah, doc ckp, dx infeksi USUS - dr dah tgk, scratchy throat kuat since yesterday",1A40.Z;CA03.Z;MD36.0,train,draft,synthetic,generated
+GEN01962,afebrile dan pitam sampai jatuh tiada dan background migrainous headache on ubat dan disahkan influenza - dr dah tgk dan threw up sikit 5 ari dan loya tekak skit2 for 5 weeks. mhon review dr,1E32;8A80.Z;MD90.1,train,draft,synthetic,generated
+GEN01963,"negative for sakit badan, A: tonsil merah, doc ckp, dx infeksi USUS - dr dah tgk, scratchy throat kuat since yesterday",1A40.Z;CA03.Z,train,draft,synthetic,generated
 GEN01964,pt presents with haid tak datang skit sejak smlm + itchy xde + rash + advised fluids. BP 158/65,GA20.0Z;ME66.6Z,train,draft,synthetic,generated
 GEN01965,c/o bg MC 2 hari. burning PEE x2 days. seluruh badan sembab absent. F/U if x baik. anxious sejak semalam. diagnosis: hypo episode (dr ckp). minta MC,5A21.Z;MB24.3;MF50.7,train,draft,synthetic,generated
 GEN01966,? influenza + senggugut sejak minggu lepas + PMH: sindrom terowong karpal stabil,8C10.0;GA34.3,train,draft,synthetic,generated
@@ -2182,7 +2182,7 @@ GEN01985,"perempuan 50 thn dtg DGN disahkan otitis media akut, conjunctivitis dr
 GEN01986,"pt presents with sembelit teruk kuat sejak semalam, telinga berdenyut teruk sejak smlm, nafi chesty cough, tingling skit2 6 hari, feeling sick sejak 6 bulan, suspek pharyngitis",AB70.2;MB40.Z;MD90.0;ME05.0,train,draft,synthetic,generated
 GEN01987,PT komplen emphysematous tak terkawal. ada non compliance (old case). berat turun absent. ada alahan ubat. known hx ida. tak hoarse. rasa haus x3/7. pinggang sakit for 4 days,3A00.Z;CA22.Z;ME84.2Z;MG43.0;QC49,train,draft,synthetic,generated
 GEN01988,pt mengadu haemoptysis kuat sejak minggu lepas + doc cnfrm covid dr cnfrm + anak sulung + food getting stuck tiada + denied kencing terlepas. on paracetamol,MD22;RA01,train,draft,synthetic,generated
-GEN01989,datang sebab bladder infection (dr ckp). pain in arm. frequency of urination sejak pagi. kaki kebas kuat 4/7. belum ambil ubat. BP 162/87,FB56.4;GC08.Z;MB40.Z;MF50.0,train,draft,synthetic,generated
+GEN01989,datang sebab bladder infection (dr ckp). pain in arm. frequency of urination sejak pagi. kaki kebas kuat 4/7. belum ambil ubat. BP 162/87,FB56.4;GC08.Z;MB40.Z,train,draft,synthetic,generated
 GEN01990,53yo female C/O PMHx emphysema. A: urtikaria (dr ckp). denies leaking urine. mata kbur sikit. kekuningan tiada. badan rasa tak sedap,CA22.Z;EB00.Z,train,draft,synthetic,generated
 GEN01991,"badan rasa tak sedap, datang dengan ister, tiada difficulty sleeping, background bahu beku - stable, haus sangat sikit for 3 weeks, heavy menstrual bleeding x6 days, no periods sikit dah 5 hari",FB53.0;GA20.0Z;GA22;MG43.0,train,draft,synthetic,generated
 GEN01992,"c/o advised fluids, kekuningan takde",,train,draft,synthetic,generated
@@ -2200,7 +2200,7 @@ GEN02003,"datang sebab atopic eczema (old case), kat kaki kanan",EA80.Z,train,dr
 GEN02004,disahkan chest infection n luka kecil,CA42.Z,train,draft,synthetic,generated
 GEN02005,"presented with ? dm type 2, sakit period dah seminggu, suara serak sejak 5 bulan, doc cnfrm facial palsy, doc ckp, doc dah tgk",8B88.0;GA34.3;MA82.10,train,draft,synthetic,generated
 GEN02006,c/o known case of acne vulgaris on ubat; susah nak lena; bila jalan jauh. on paracetamol,7A0Z;ED80.Z,train,draft,synthetic,generated
-GEN02007,"53yo male c/o batuk kering sejak pagi, suspek eye infection, on review, kidney stones on ubat, takda exhausted, diagnosis: sprained ankle, h/o tb",1B10.Z;GB70.0Z;MD12;ND14.7Z,train,draft,synthetic,generated
+GEN02007,"53yo male c/o batuk kering sejak pagi, suspek eye infection, on review, kidney stones on ubat, takda exhausted, diagnosis: sprained ankle, h/o tb",1B10.Z;GB70.0Z;ND14.7Z,train,draft,synthetic,generated
 GEN02008,"ibu bawa anak, follow up klinik n perut sakit sejak semalam n nak refill ubat n puffy face and legs dah 2 hari",MD81.4;MG29.1,train,draft,synthetic,generated
 GEN02009,"mengadu numb teruk 3/7, palpitation sangat kebelakangan ni, ubat habis, denied chest pain on deep breathing, mual2 for 1/52, anak sulung, hilang selera makan sikit 4/7",MB40.Z;MC81.2;MD90.0;MG43.7,train,draft,synthetic,generated
 GEN02010,perempuan 76 thn dtg DGN masa kerja. bubbly urine sejak semalam. takda rasa haus. abdominal distension 4/7. BP 114/95,ME01;MF96.Z,train,draft,synthetic,generated
@@ -2218,7 +2218,7 @@ GEN02021,pt dtg C/O negative for nausea + telinga luar bengkak - dr dah TGK + ma
 GEN02022,"71yo female c/o ada hyperlipidaemia hx, panicky skit2 3 minggu, background hyperlipidemia, lepas makan pedas, kahak ADA darah sangat sejak minggu lepas. mohon review dr",5C80.0Z;5C80.2;MB24.3;MD22,train,draft,synthetic,generated
 GEN02023,"follow UP klinik, dx red throat, doc ckp, ada asid naik ke tekak stabil, sweating kuat x5/7. minta MC",CA02.Z;DA22.Z;ME66.5,train,draft,synthetic,generated
 GEN02024,denied odynophagia. tidak large URINE volume. thrsty. makan ok. ada dm RETINOPATHY known. hx batu karang dah 5 thn. imp: tonsil sakit dr cnfrm. BP 158/90,9B71.0Z;CA03.Z;GB70.0Z;MG43.0,train,draft,synthetic,generated
-GEN02025,"pt dtg c/o sejarah default rawatan dah 6 thn, ?anemia kekurangan ZAT bes, ruam merah 5 ari, ada alahan ubat, imp: athlete's foot, doc ckp. mohon review dr",1F28.Z;ME66.6Z;QC49,train,draft,synthetic,generated
+GEN02025,"pt dtg c/o sejarah default rawatan dah 6 thn, ?anemia kekurangan ZAT bes, ruam merah 5 ari, ada alahan ubat, imp: athlete's foot, doc ckp. mohon review dr",1F28.Z;QC49,train,draft,synthetic,generated
 GEN02026,shoulder pain sikit since this morning; muscle cramps for 2 weeks; denied rasa haus. T 37.3,MB47.3;ME82,train,draft,synthetic,generated
 GEN02027,datang sebab BP ok + very thirsty sikit on off. minta MC,MG43.0,train,draft,synthetic,generated
 GEN02028,"pt 63thn, kat dada kanan, suspek throat infection, at night, burning sensation in chest sejak 6 bulan, diaphoresis xde, rigors sejak semalam",MD95;MG21,train,draft,synthetic,generated
@@ -2227,7 +2227,7 @@ GEN02030,mengadu vitals stable; pain in limb for 4 weeks; bg MC 2 hari; denies k
 GEN02031,c/o h/o non compliant tak terkawal. T 37.5,QC49,train,draft,synthetic,generated
 GEN02032,pt c/o denies difficulty breathing n truble swallowing sikit for 6 days N X selera kurang n hard stools skit2 n ada alahan ubat. minta MC,MD93;ME05.0,train,draft,synthetic,generated
 GEN02033,"pesakit datang, lepas makan pedas. kat sekolah. dada sakit masa tarik nafas dalam for 1/52. tiada pain in arm. on paracetamol",MD30.0,train,draft,synthetic,generated
-GEN02034,sejarah stiff shoulder tak terkawal; lepas makan; mkin teruk; sendi skit sangat 3 hari,FB53.0;ME82,train,draft,synthetic,generated
+GEN02034,sejarah stiff shoulder tak terkawal; lepas makan; mkin teruk; sendi skit sangat 3 hari,FB53.0,train,draft,synthetic,generated
 GEN02035,c/o A: mites - dr dah tgk dan gastric reflux dan icteric sejak pagi dan proteinuria skit2 sejak smlm dan no h/o dysmenorrhoea. mohon review dr,1G04.Z;DA22.Z;ME10.1;MF96.Z,train,draft,synthetic,generated
 GEN02036,"generalised oedema tiada, kurang air badan kebelakangan ni, kat sekolah, known median nerve compression - stable, afebrile. T 37.1",5C70.0;8C10.0,train,draft,synthetic,generated
 GEN02037,"pesakit datang, dx upper respiratory tract infection dan ns1 positif, doc ckp dan serangan gout stabil dan came with mother dan nil painful throat",1D2Z;CA07.0;FA25,train,draft,synthetic,generated
@@ -2259,7 +2259,7 @@ GEN02062,"pesakit datang, kemungkinan chickenpox, known acne vulgaris, dah makan
 GEN02063,complains of background gastroesophageal reflux dan amandel bengkak - dr dah tgk. on paracetamol,CA03.Z;DA22.Z,train,draft,synthetic,generated
 GEN02064,"mengadu lost weight x3 days, berak OK, muka dan kaki bengkk sejak pagi, trouble swallowing snce yesterday, bengkak leg kuat 3 ari",MD93;MG29.01;MG29.1;MG43.5,train,draft,synthetic,generated
 GEN02065,"ibu bawa anak, ear pain for 1/52, nafi cephalgia, shooting pain down leg teruk dah seminggu, takda sakit tekak",AB70.2;ME84.3,train,draft,synthetic,generated
-GEN02066,S: pening kepala teruk kebelakangan ni n known case of serangan migrain n nafi feverish. T 37.2,8A80.Z;MB4D,train,draft,synthetic,generated
+GEN02066,S: pening kepala teruk kebelakangan ni n known case of serangan migrain n nafi feverish. T 37.2,8A80.Z,train,draft,synthetic,generated
 GEN02067,"pt presents with imp: conjunctivitis, gassy, berpeluh2 5 ari, r/o biduran",9A60.Z;ME01;ME66.5,train,draft,synthetic,generated
 GEN02068,c/o nil terkencng dan hx kegagalan jantung dan no loss of consciousness dan pedih ulu hati skit2 sejak 3 bulan dan heavy periods,BD10;GA22;MD95,train,draft,synthetic,generated
 GEN02069,"pt dtg c/o dx acute sinusitis, DRY lips kuat, telinga bengkak nanah, doc ckp, tolerating orally",5C70.0;AA90;CA01,train,draft,synthetic,generated
@@ -2300,7 +2300,7 @@ GEN02103,"suspek hbv carrier, no constipation, terkencing skit2 dah 4 hari, miss
 GEN02104,"numbness sangat, makin teruk, nauseous sikit, HX hbv - stable, shoting pain down leg skit2 for 5 days, kemungkinan carpal tunnel, refill meds",1E51.0Z;MB40.Z;MD90.0;ME84.3,train,draft,synthetic,generated
 GEN02105,"pt komplen joint pans xde, known case of hld FU klinik, ? bentol",5C80.2,train,draft,synthetic,generated
 GEN02106,"nak refill ubat, diagnosis: facial weakness dr cnfrm, denies bahu sakit, throwing UP teruk kebelakangan ni, nfas berbunyi for 5 days",8B88.0;MD11.C;MD90.1,train,draft,synthetic,generated
-GEN02107,"frequency of URINATION x2/7, disahkan uti (dr ckp), kat pinggang kiri, r/o acute gastritis, proteinuria 5 ari",GC08.Z;MF50.0;MF96.Z,train,draft,synthetic,generated
+GEN02107,"frequency of URINATION x2/7, disahkan uti (dr ckp), kat pinggang kiri, r/o acute gastritis, proteinuria 5 ari",GC08.Z;MF96.Z,train,draft,synthetic,generated
 GEN02108,pt dtg c/o tak heavy and irregular periods dan yellow eyes dah seminggu dan pmhx: iddm. T 37.4,5A10;ME10.1,train,draft,synthetic,generated
 GEN02109,presented with dsahkan luka bernanah kanak2. BP 135/92,1B72.Z,train,draft,synthetic,generated
 GEN02110,pmhx: dyslipidaemia FU klinik; nafi selalu haus; imp: pharyngitis,5C80.2;CA02.Z,train,draft,synthetic,generated
@@ -2322,7 +2322,7 @@ GEN02125,mengadu sejarah anemia kekurangan zat besi hx + pusing pusing + denies 
 GEN02126,"c/o berak ok, panicky sikit, haid banyak xde, dah makan ubat, ear pain skit2 for 6 weeks. T 37.7",AB70.2;MB24.3,train,draft,synthetic,generated
 GEN02127,"O/E unremarkable, haus sgt skt2, masa kerja, nil myalgia, background plantar fasciitis dah 5 thn, imp: chest infction - dr dah tgk. minta MC",CA42.Z;FB40.1;MG43.0,train,draft,synthetic,generated
 GEN02128,"pt mengadu sore throat, tak dapat tahan kencing skit2 since yesterday, leg oedema since this morning, denied terlepas period. T 37.7",MD36.0;MF50.2Z;MG29.01,train,draft,synthetic,generated
-GEN02129,"ibu bawa anak, dx influenza like illness, doc ckp; pleuritic pain teruk for 3 days; acute gastritis stabil; takde increased thirst; colicky pain 2 hari",1E32;DA42.Z;MD30.0;MD81.4,train,draft,synthetic,generated
+GEN02129,"ibu bawa anak, dx influenza like illness, doc ckp; pleuritic pain teruk for 3 days; acute gastritis stabil; takde increased thirst; colicky pain 2 hari",1E32;DA42.Z;MD30.0,train,draft,synthetic,generated
 GEN02130,52yo male c/o makan ok n tiada sakit perut. mohon review dr,,train,draft,synthetic,generated
 GEN02131,"pesakit datang, advise minum air byk n bladder infection - dr dah tgk n r/o migrainous headache n heavy menses 2 minggu n imp: throat infection - dr dah tgk",CA02.Z;GA22;GC08.Z,train,draft,synthetic,generated
 GEN02132,"pesakit datang, tb HX tak terkawal, No paresthesia, kat kepala, no h/o leaking urine, lepas makan pedas",1B10.Z,train,draft,synthetic,generated
@@ -2370,7 +2370,7 @@ GEN02173,"pesakit datang, negative for panas badan; background chf hx dah 6 thn;
 GEN02174,pt komplen nak refill ubat; background dm reti on meds; A: kurap; hx rhinitis - stable; dr ckp pink eye. on paracetamol,1F28.Z;9A60.Z;9B71.0Z;CA08.0Z,train,draft,synthetic,generated
 GEN02175,"datang sebab palpitation teruk x4/7, spasms xde, ada default ubat tak terkawal, negative for sakit menjalar ke kaki, nose bleeding x6/7, X SELERA skit2, loss OF voice teruk x4 days. mohon review dr",MA82.10;MC81.2;MD20;MG43.7;QC49,train,draft,synthetic,generated
 GEN02176,"pesakit datang, HR stable; tak perut sakit; imp measles rash. mohon review dr",1F03,train,draft,synthetic,generated
-GEN02177,"pt mengadu sejarah asthma hx, wheezes skit2 x4 days. T 37.3",CA23;MD11.C,train,draft,synthetic,generated
+GEN02177,"pt mengadu sejarah asthma hx, wheezes skit2 x4 days. T 37.3",CA23,train,draft,synthetic,generated
 GEN02178,"pt presents with dysmenorrhoea skit2 sejak semalam, disahkan tinea, DOC ckp, hoarse voice skit2, bila naik tangga, bila naik tangga. mohon review DR",1F28.Z;GA34.3;MA82.10,train,draft,synthetic,generated
 GEN02179,"pt 72thn, No nauseous; tak perut sakit; kencing malam banyak kali x3/7; O/E unremarkable",MF50.0,train,draft,synthetic,generated
 GEN02180,"ibu bawa anak, NO sore throat n disahkan cap - dr dah tgk n k/c/o tb paru on meds. T 37.5",1B10.Z;CA40.Z,train,draft,synthetic,generated
@@ -2402,14 +2402,14 @@ GEN02205,"pt c/o mata kabur sikit, x bengkak leg. minta MC",,train,draft,synthet
 GEN02206,"mengadu dada rasa berat skit2 for 4 days n No pain passing urine N denies susah nak menelan N k/c/o on ANTI tb n imp sinus infection, doc ckp",1B10.Z;CA01;MD30.Z,train,draft,synthetic,generated
 GEN02207,makan ok + kekejangan otot 2 hari + ? median nerve compression. mohon review dr,MB47.3,train,draft,synthetic,generated
 GEN02208,complains of PMH: batu dalam kencing tak terkawal + tak coffee ground vomit + batuk ada darah sejak 6 bulan + no urinary incontinence,GB70.0Z;MD22,train,draft,synthetic,generated
-GEN02209,denes generalised swelling. doc cnfrm bronkitis. R/O fatty liver. menstrual pain for 1/52. coughing skit2 sejak 3 bulan. PMHX: high bmi - stable. mohon review dr,5B81.Z;CA42.Z;GA34.3;MD12,train,draft,synthetic,generated
+GEN02209,denes generalised swelling. doc cnfrm bronkitis. R/O fatty liver. menstrual pain for 1/52. coughing skit2 sejak 3 bulan. PMHX: high bmi - stable. mohon review dr,5B81.Z;CA42.Z;GA34.3,train,draft,synthetic,generated
 GEN02210,S: known case of bahu beku - stable + tiada nosebleed + tak bengkak leg + dx tonsil merah + doc cnfrm outer ear infection - dr dah TGK,AA3Z;CA03.Z;FB53.0,train,draft,synthetic,generated
 GEN02211,pt presents with lepas jatuh; generalized edma kuat DAH 4 hari. on paracetamol,MG29.1,train,draft,synthetic,generated
 GEN02212,"S: tekak pedih sejak semalam, hx ckd on meds, nausea for 5 weeks, luka kecil. on paracetamol",GB61.Z;MD36.0;MD90.0,train,draft,synthetic,generated
 GEN02213,datang sebab tonsillitis (dr ckp) n came WITH mother n dry lips teruk on off N background cad tak terkawal n after meals n hx t2 dm FU klinik. BP 161/65,5A11;5C70.0;BA52.Z;CA03.Z,train,draft,synthetic,generated
 GEN02214,datang sebab gastrik datang on meds + dysuria sikit 5 HARI + known case of insulin dependent on meds + refill meds + nil muscle aches,5A10;DA42.Z;MF50.7,train,draft,synthetic,generated
 GEN02215,period tak datang sikit x3 days; hx anaemia besi (old case); selera ok; black stool TAKDE,3A00.Z;GA20.0Z,train,draft,synthetic,generated
-GEN02216,"c/o body aches kebelakangan ni + kerap KENCING on off + A: red throat, doc ckp + imp chickenpox + diagnosis: urine infection dr cnfrm. minta MC",1E90.Z;CA02.Z;FB56.2;GC08.Z;MF50.0,train,draft,synthetic,generated
+GEN02216,"c/o body aches kebelakangan ni + kerap KENCING on off + A: red throat, doc ckp + imp chickenpox + diagnosis: urine infection dr cnfrm. minta MC",1E90.Z;CA02.Z;FB56.2;GC08.Z,train,draft,synthetic,generated
 GEN02217,presented with nafi coughing up blood dan hx strok stabil dan PMH: hati berlemak - stable,8B11;DB92.Z,train,draft,synthetic,generated
 GEN02218,air kencing banyak sangat on off + negative for badan menggigil + period banyak sejak SMLM. BP 129/84,GA22;MF55,train,draft,synthetic,generated
 GEN02219,complains of kat dada kanan + ASAP + susah tidur dah seminggu. on paracetamol,7A0Z,train,draft,synthetic,generated
@@ -2430,7 +2430,7 @@ GEN02233,S: h/o hypertension on meds n advise minum air byk n tidak painful thro
 GEN02234,"pt 29thn, gigi rosak dan kepala ringan sikit for 6 weeks dan doc cnfrm fungal infection dan takda haid tak datang dan dm retinopathy known dan leaking urine teruk x5 days",1F28.Z;9B71.0Z;DA08.0;MB48.Z;MF50.2Z,train,draft,synthetic,generated
 GEN02235,nose bleeding DAH 6 hari + ruam merah absent + absent periods skit2 for 1/52. BP 138/86,GA20.0Z;MD20,train,draft,synthetic,generated
 GEN02236,"pesakit datang, O/E unremarkable dan sengal badan sangat 3 hari dan impetigo infection dan disahkan eye infection dr cnfrm. on paracetamol",1B72.Z;9A60.Z;FB56.2,train,draft,synthetic,generated
-GEN02237,c/o pulmonary tuberculosis hx. period TAK datang takde. A: varicella infection dr cnfrm. background gord on meds. mual teruk x2/7. badan rasa tak sedap. deman x5 days,1B10.Z;1E90.Z;DA22.Z;MD90.0;MG26,train,draft,synthetic,generated
+GEN02237,c/o pulmonary tuberculosis hx. period TAK datang takde. A: varicella infection dr cnfrm. background gord on meds. mual teruk x2/7. badan rasa tak sedap. deman x5 days,1B10.Z;1E90.Z;DA22.Z;MD90.0,train,draft,synthetic,generated
 GEN02238,pt dtg c/o pain in leg 3/7 dan ruam absent DAN leg oedema skit2 sejak semalam dan no h/o red urine. minta MC,FB56.4;MG29.01,train,draft,synthetic,generated
 GEN02239,"pt mengadu sejarah foot ulcer diabetic hx, known gastrik, bppv skit2, burning micturition kuat kebelakangan ni, kepala ringn takde, tak foamy urine",BD54;DA42.Z;MB48.0Z;MF50.7,train,draft,synthetic,generated
 GEN02240,perempuan 58 thn dtg dgn SAKIT sikit je; denies urinary incontinence,,train,draft,synthetic,generated
@@ -2466,8 +2466,8 @@ GEN02269,presented with kaki cramp kuat dah 6 hari n background ulser kaki diabe
 GEN02270,"pt dtg c/o no menorrhagia, bila naik tangga, sakit sendi sejak smlm, r/o nasal congestion, nafas sesak sikit since yesterday. BP 142/62",MD11.5;ME82,train,draft,synthetic,generated
 GEN02271,"65yo female c/o A: stomach flu, doc ckp. nafi hemoptysis. on paracetamol",1A40.Z,train,draft,synthetic,generated
 GEN02272,"pesakit datang, bloating x5/7 dan k/c/o skit tapak kaki pagi hx dan nil leg cramps",FB40.1;ME01,train,draft,synthetic,generated
-GEN02273,pt dtg c/o known case of serangan MIGRAIN stabil dan loya sejak minggu lepas dan imp: dengue fever dr cnfrm dan dehydration teruk sejak 6 bulan dan takda haus sangat dan negative for diaphoresis. mohon review dr,1D2Z;5C70.0;8A80.Z;MD90.0,train,draft,synthetic,generated
-GEN02274,"makin ok, headache kebelakangan ni, diagnosis: sinusitis, sejarah nasal allergy on meds. mohon review dr",CA01;CA08.0Z;MB4D,train,draft,synthetic,generated
+GEN02273,pt dtg c/o known case of serangan MIGRAIN stabil dan loya sejak minggu lepas dan imp: dengue fever dr cnfrm dan dehydration teruk sejak 6 bulan dan takda haus sangat dan negative for diaphoresis. mohon review dr,1D2Z;5C70.0;8A80.Z,train,draft,synthetic,generated
+GEN02274,"makin ok, headache kebelakangan ni, diagnosis: sinusitis, sejarah nasal allergy on meds. mohon review dr",CA01;CA08.0Z,train,draft,synthetic,generated
 GEN02275,pt mengadu diarrhoeas kuat sejak minggu lepas dan NEGATIVE for frequent urination dan kerja shift DAN swollen ankles tiada dan ada dm type1 - stable dan bila jalan jauh,5A10;ME05.1,train,draft,synthetic,generated
 GEN02276,dahaga absent n hematuria teruk sejak smlm. MOHON review dr,MF50.4Z,train,draft,synthetic,generated
 GEN02277,"dx enlarged tonsils - dr dah tgk, hx gouty arthritis - stable. BP 128/95",CA03.Z;FA25,train,draft,synthetic,generated
@@ -2487,7 +2487,7 @@ GEN02290,pt dtg c/o x protein dalam urin n takde pening kepala n queasy teruk se
 GEN02291,"pt komplen pyrexia teruk sejak minggu lepas, PMHx chronic renal disease on ubat. mohon review dr",GB61.Z;MG26,train,draft,synthetic,generated
 GEN02292,vertigo sejak pagi + known case of chol tinggi FU klinik,5C80.0Z;MB48.0Z,train,draft,synthetic,generated
 GEN02293,"mengadu luka kecil, dx inflamed THROAT, denied SELERA makan kurang, frozen shoulder on meds, tolerating orally",CA02.Z;FB53.0,train,draft,synthetic,generated
-GEN02294,"complains of heartburn 5/7, refill meds, known hx perut gastrik known, takda kegatalan. BP 133/87",DA42.Z;MD95,train,draft,synthetic,generated
+GEN02294,"complains of heartburn 5/7, refill meds, known hx perut gastrik known, takda kegatalan. BP 133/87",DA42.Z,train,draft,synthetic,generated
 GEN02295,"pesakit datang, imp: telinga bengkak nanh, doc ckp, myalgias xde, A: cellulitis dr cnfrm. BP 144/72",1B70.Z;AA90,train,draft,synthetic,generated
 GEN02296,pt mengadu doc cnfrm urinary infection + kurang air badan sikit for 2 days + susah angkat tangan + ?ida + diagnosis: biduran - dr dah tgk + spiking temperature FOR 2 WEEKS + nil lightheaded. minta MC,5C70.0;EB00.Z;GC08.Z;MG26,train,draft,synthetic,generated
 GEN02297,mengadu kerja shift n denies senggugut,,train,draft,synthetic,generated
@@ -2541,7 +2541,7 @@ GEN02344,"datang sebab lepas makan, no h/o bleeding from nose",,train,draft,synt
 GEN02345,"S: nil polyuria, dr ckp urtis - dr dah tgk, ASAP, on review, pmhx: buah pinggang lemah - stable. T 37.8",CA07.0;GB61.Z,train,draft,synthetic,generated
 GEN02346,pt dtg c/o suspek chronic obstructive. kencing berbuih sikit 2 hari. BP 159/62,MF96.Z,train,draft,synthetic,generated
 GEN02347,mengadu susah bernafas sejak 2 bulan + denies night sweats + appetite loss SIKIT SINCE this morning + doc cnfrm kudis berair - dr dah tgk + lepas berenang. minta MC,1B72.Z;MD11.5;MG43.7,train,draft,synthetic,generated
-GEN02348,complains OF chest clear n advise rehat n tkda bengkak satu badan n maculopapular rash skit2 4 ari n ringworm. on paracetamol,1F28.Z;ME66.6Z,train,draft,synthetic,generated
+GEN02348,complains OF chest clear n advise rehat n tkda bengkak satu badan n maculopapular rash skit2 4 ari n ringworm. on paracetamol,1F28.Z,train,draft,synthetic,generated
 GEN02349,"pt dtg c/o background hyperlipidaemia, bila bangun pagi, makan ok. BP 132/100",5C80.2,train,draft,synthetic,generated
 GEN02350,"pt 51thn, advised fluids, tak syncopal episode, backache sejak 3 bulan. BP 112/76",ME84.2Z,train,draft,synthetic,generated
 GEN02351,c/o sejarah smoking (old case) dan serangan migrain FU klinik dan takde tangan sakit,8A80.Z;QE13,train,draft,synthetic,generated
@@ -2573,7 +2573,7 @@ GEN02376,complains of background luka kaki kencing manis dah 4 thn dan no itchy 
 GEN02377,pt c/o imp herpes zoster infection - dr dah tgk n h/o haemorrhoid on ubat,1E91.Z;DB60.Z,train,draft,synthetic,generated
 GEN02378,"S: badan rasa tak sedap, kahak berdarah ABSENT, negative for chest pain, h/o hbsag positif tak terkawal, hoarseness sejak semalam",1E51.0Z;MA82.10,train,draft,synthetic,generated
 GEN02379,pt komplen radiating to left leg sejak 5 bulan; follow up klinik; PMHX rhinitis alergi known; takde pngsan; tekak perit sangat snce this morning; HR stable,CA08.0Z;MD36.0;ME84.3,train,draft,synthetic,generated
-GEN02380,"pt 54thn, nafi kurang air, at night, bintik merah teruk since yesterday, diagnosis: gatal bentol. on paracetamol",EB00.Z;ME66.6Z,train,draft,synthetic,generated
+GEN02380,"pt 54thn, nafi kurang air, at night, bintik merah teruk since yesterday, diagnosis: gatal bentol. on paracetamol",EB00.Z,train,draft,synthetic,generated
 GEN02381,"c/o lepas berenang, takde sakit haid",,train,draft,synthetic,generated
 GEN02382,"pt 24thn, PMHx dm retinopathy hx dah 4 thn + pmhx: gastric ulcer dah 4 thn + frequency of urination + review in 3 days",9B71.0Z;DA60.Z;MF50.0,train,draft,synthetic,generated
 GEN02383,pt mengadu takda sakit badan n doc dah tgk n denies heavy and irregular periods n advise diet n diarrhoea for 1/52 n x berak x5 DAYS n ? bronkitis. mohon review dr,ME05.0;ME05.1,train,draft,synthetic,generated
@@ -2611,14 +2611,14 @@ GEN02414,"58yo female c/o icteric x6/7, kat kepala, sejarah acute gastritis on u
 GEN02415,38yo M c/o No loose stools. denies anxious. kerja shift. pain in leg 3 ari. makin teruk. PMHx stiff shoulder. minta MC,FB53.0;FB56.4,train,draft,synthetic,generated
 GEN02416,pt mengadu radiating to RIGHT LEG skit2 since this morning. otalgia takde. doc cnfrm acute sinusitis. terseliuh buku lali. lepas angkat barang. deman takde. T 37.8,CA01;ME84.3;ND14.7Z,train,draft,synthetic,generated
 GEN02417,pt dtg C/O disahkan sneezing + A: upper respiratory infection + A: jangkitan telinga tengah dr cnfrm + tidur cukup + kat kaki kann,AA90;CA00;CA07.0,train,draft,synthetic,generated
-GEN02418,c/o doc DAH TGK; period sangat BANYAK sikit since this morning; doc cnfrm INFLUENZA like illness; tekak sakit sikit; denied berak hitam; chest discomfort skit2 4 hari. mohon review dr,1E32;GA22;MD30.Z;MD36.0,train,draft,synthetic,generated
+GEN02418,c/o doc DAH TGK; period sangat BANYAK sikit since this morning; doc cnfrm INFLUENZA like illness; tekak sakit sikit; denied berak hitam; chest discomfort skit2 4 hari. mohon review dr,1E32;GA22;MD30.Z,train,draft,synthetic,generated
 GEN02419,"ibu bawa anak, masa kerja. dada sakit x4/7. dr ckp throat infection, doc ckp. sejarah obes - stable. jantung BERDEBAR tiada. tidak chills. Rx abx. minta MC",5B81.Z;CA02.Z;MD30.Z,train,draft,synthetic,generated
 GEN02420,"76yo female c/o x SELERA teruk for 5 days, sakit period xde, known case of carpal tunnel, ? acute bronchitis. on paracetamol",8C10.0;MG43.7,train,draft,synthetic,generated
 GEN02421,"complains of abdominal distension kuat on off, KAHAK kuning, indigestion, makin teruk, doc cnfrm dengue. on paracetamol",1D2Z;MD95;ME01,train,draft,synthetic,generated
 GEN02422,mengadu F/U if x baik + no exhausted + known hx acne vulgaris hx + rasa berpusing sejak semalam,ED80.Z;MB48.0Z,train,draft,synthetic,generated
 GEN02423,haus sgt X2 days. nafi loose stools. A: tekak merah. on paracetamol,CA02.Z;MG43.0,train,draft,synthetic,generated
 GEN02424,77yo female c/o suspek zoster + dx outer ear infection + thyroid overactive + sejarah gastrik known + wktu malam + F/U if x baik,5A02.Z;AA3Z;DA42.Z,train,draft,synthetic,generated
-GEN02425,"65yo male c/o k/c/o renal stones dah 6 thn, diagnosis: dengue positive, doc ckp, lutut sakit sangat, k/c/o buasir berdarah stbil, known hx dm retinopathy hx - stable",1D2Z;9B71.0Z;DB60.Z;GB70.0Z;ME82,train,draft,synthetic,generated
+GEN02425,"65yo male c/o k/c/o renal stones dah 6 thn, diagnosis: dengue positive, doc ckp, lutut sakit sangat, k/c/o buasir berdarah stbil, known hx dm retinopathy hx - stable",1D2Z;9B71.0Z;DB60.Z;GB70.0Z,train,draft,synthetic,generated
 GEN02426,"pt 68thn, nafi air kencing banyak sangat. known case of chronic hepatitis b on meds. tidak rdiating to rght leg. nak refill ubat. ubat habis. disahkan measles rash. T 37.6",1E51.0Z;1F03,train,draft,synthetic,generated
 GEN02427,pt mengadu known case of hepatitis b on ubat; doc cnfrm sinus tersumbat (dr ckp); perut memulas; rasa berpusing x4/7,1E51.0Z;CA01;MB48.0Z;MD81.4,train,draft,synthetic,generated
 GEN02428,buih dalam kencing sikit sejak pagi + bila toleh kepala + takda epistaxis + k/c/o plantar fasciitis on meds + k/c/o gerd stabil,DA22.Z;FB40.1;MF96.Z,train,draft,synthetic,generated
@@ -2639,14 +2639,14 @@ GEN02442,"A: bladder infection - dr dah tgk, vitals stable, sejarah copd hx FU k
 GEN02443,"pakcik 36 thn dtg dgn kencing berdarah absent, vomited blood since this morning",ME24.A5,train,draft,synthetic,generated
 GEN02444,"pt dtg c/o kat kaki kanan, loose stools sikit for 1/52. on paracetamol",ME05.1,train,draft,synthetic,generated
 GEN02445,tak haus sgt + coughing SINCE yesterday. BP 157/60,MD12,train,draft,synthetic,generated
-GEN02446,"pt presents with dr ckp jangkitan perut (dr ckp), queasy skit2 x5 days, lepas angkat barang, diagnosis: luka bernanah kanak2 (dr ckp), tiada fainting, nafi cirit birit. T 37.9",1A40.Z;1B72.Z;MD90.0,train,draft,synthetic,generated
+GEN02446,"pt presents with dr ckp jangkitan perut (dr ckp), queasy skit2 x5 days, lepas angkat barang, diagnosis: luka bernanah kanak2 (dr ckp), tiada fainting, nafi cirit birit. T 37.9",1A40.Z;1B72.Z,train,draft,synthetic,generated
 GEN02447,pt komplen PRN paracetamol dan cakap tak jelas sangat 5 ari dan bila jalan jauh. on paracetamol,MA80.2Z,train,draft,synthetic,generated
 GEN02448,"pt c/o berat turun teruk sejak smlm, fast heartbeat TERUK sejak minggu lepas, nak rfill ubat, bengkak satu badan sangat. T 37.3",MC81.2;MG29.1;MG43.5,train,draft,synthetic,generated
 GEN02449,pt c/o makan ok n tidak DADA berdebar N advise rehat n denies reduced urine output n wheezy sejak smlm. minta MC,MD11.C,train,draft,synthetic,generated
 GEN02450,denies eye redness dan suspek heart failure dan painful periods kuat dah 3 hari dan fevers sangat sejak semalam. on paracetamol,GA34.3;MG26,train,draft,synthetic,generated
 GEN02451,complains OF terkencing for 1/52 n hx emphysema n lepas makan,CA22.Z;MF50.2Z,train,draft,synthetic,generated
-GEN02452,"pesakit datang, imp: kaki terseliuh (dr ckp), painful EAR sejak semalam, known case of ALERGI hidung - stable, outer ear infection. BP 130/71",AA3Z;AB70.2;CA08.0Z;ND14.7Z,train,draft,synthetic,generated
-GEN02453,"pt dtg c/o NUMBNESS 2 minggu, carpal tunnel syndrome stabil",8C10.0;MB40.Z,train,draft,synthetic,generated
+GEN02452,"pesakit datang, imp: kaki terseliuh (dr ckp), painful EAR sejak semalam, known case of ALERGI hidung - stable, outer ear infection. BP 130/71",AA3Z;CA08.0Z;ND14.7Z,train,draft,synthetic,generated
+GEN02453,"pt dtg c/o NUMBNESS 2 minggu, carpal tunnel syndrome stabil",8C10.0,train,draft,synthetic,generated
 GEN02454,"ibu bawa anak, TIDAK naik ruam, known frozen shoulder dah 2 thn, No vomited blood, pmhx: hypot - stable, A: mites. minta MC",1G04.Z;5A00.Z;FB53.0,train,draft,synthetic,generated
 GEN02455,pt presents with tidur cukup dan No period banyak dan fevers kuat dan lepas makan pedas. mohon review dr,MG26,train,draft,synthetic,generated
 GEN02456,"pt 52thn, passing a lot of urine x4 days, vomited once kuat, sembelit teruk sikit, x cemas. T 37.5",MD90.1;ME05.0;MF55,train,draft,synthetic,generated
@@ -2710,7 +2710,7 @@ GEN02513,"pt komplen hypoglycemia, doc ckp N loss of voice takde. minta MC",5A21
 GEN02514,"pt dtg c/o advise minum air byk, h/o underactive thyroid known, denied missed period, no h/o bengkak satu badan, mata kuning kuat sejak semalam. BP 132/63",5A00.Z;ME10.1,train,draft,synthetic,generated
 GEN02515,datang sebab missed periods skit2 for 4 days. lepas hujan. IMP: ankle sprain. on review. kurang AIR badn sangat x6 days. nafas pendek 3 ARI,5C70.0;GA20.0Z;MD11.5;ND14.7Z,train,draft,synthetic,generated
 GEN02516,"ibu bawa anak, takda hemoptysis, difficulty passing stool for 1/52, nocturia kuat sejak smlm, imp: coryza, kurng air xde. T 37.0",CA00;ME05.0;MF50.0,train,draft,synthetic,generated
-GEN02517,"73yo F c/o sakit menjalar dari punggung skit2 dah 5 hari, k/c/o painful heel FU klinik, pain in leg KUAT kebelakangan ni. T 37.3",FB40.1;FB56.4;ME84.3,train,draft,synthetic,generated
+GEN02517,"73yo F c/o sakit menjalar dari punggung skit2 dah 5 hari, k/c/o painful heel FU klinik, pain in leg KUAT kebelakangan ni. T 37.3",FB40.1;ME84.3,train,draft,synthetic,generated
 GEN02518,S: epistaxis for 4 days. mohon review dr,MD20,train,draft,synthetic,generated
 GEN02519,"pt 33thn, black stools teruk sejak 2 bulan dan background sakit kepala sebelah on ubat dan facial droop - dr dah tgk dan PMHx sindrom terowong karpal FU klinik. mohon review dr",8A80.Z;8B88.0;8C10.0;ME24.A4,train,draft,synthetic,generated
 GEN02520,denied throbbing head dan tak difficulty speaking dan kencing ada darah SIKIT since this morning,MF50.4Z,train,draft,synthetic,generated
@@ -2738,11 +2738,11 @@ GEN02541,"S: pmhx: anemia kekurangan zat besi, x pening, bilateral leg swelling 
 GEN02542,"pt 62THN, kat sekolah n rasa takut tak tentu pasal absent. BP 148/76",,train,draft,synthetic,generated
 GEN02543,complains of heavy irregular periods x6/7. tidur cukup. takde frothy urine. jantung berdebar xde. perut pedih skit2 for 1/52. panicky teruk x5/7. BP 111/93,GA22;MB24.3;MD81.4,train,draft,synthetic,generated
 GEN02544,26yo male C/O hx atpic eczema (old case) dan pink eye. on paracetamol,9A60.Z;EA80.Z,train,draft,synthetic,generated
-GEN02545,"pt 19thn, denies PARAESTHESIA, btk sejak smlm, imp rubeola - dr dah tgk. minta MC",1F03;MD12,train,draft,synthetic,generated
+GEN02545,"pt 19thn, denies PARAESTHESIA, btk sejak smlm, imp rubeola - dr dah tgk. minta MC",1F03,train,draft,synthetic,generated
 GEN02546,"presented with disahkan lobar pneumonia, doc ckp + PMHx pulmnary tuberculosis + AFTER meals. minta MC",1B10.Z;CA40.Z,train,draft,synthetic,generated
-GEN02547,lelaki 51 thn dtg dgn PMH: gastroesophageal reflux hx. sengal2 badan skit2. tiada wetting himself. ASAP. doc cnfrm influenza. takda hematemesis. kurus mendadak sejak pagi. PMH: gastric ulcer on meds. mohon review dr,1E32;DA22.Z;DA60.Z;FB56.2;MG43.5,train,draft,synthetic,generated
+GEN02547,lelaki 51 thn dtg dgn PMH: gastroesophageal reflux hx. sengal2 badan skit2. tiada wetting himself. ASAP. doc cnfrm influenza. takda hematemesis. kurus mendadak sejak pagi. PMH: gastric ulcer on meds. mohon review dr,1E32;DA22.Z;DA60.Z;MG43.5,train,draft,synthetic,generated
 GEN02548,"27yo M c/o doc cnfrm jangkitan saluran telinga luar, doc ckp, lepas makan pedas, fever FOR 4 days",AA3Z;MG26,train,draft,synthetic,generated
-GEN02549,"datang sebab vomits kebelakangan ni, denid kepala berat, imp keracunan makanan (DR ckp)",1A40.Z;MD90.1,train,draft,synthetic,generated
+GEN02549,"datang sebab vomits kebelakangan ni, denid kepala berat, imp keracunan makanan (DR ckp)",1A40.Z,train,draft,synthetic,generated
 GEN02550,"pt c/o batuk berkahak sangat 2/7. tolerating orlly. suspek cardiac failure. vomiting blood for 6 weeks. haemoptysis terk on off. generalized edema skit2. minum ok. doc cnfrm selesema, doc ckp. minta MC",CA00;MD12;MD22;ME24.A5;MG29.1,train,draft,synthetic,generated
 GEN02551,"perempuan 52 thn dtg dgn rash on off, dx influenza, generalised swelling absent, minum ok, masa kerja. minta MC",1E32;ME66.6Z,train,draft,synthetic,generated
 GEN02552,mengadu suara garau teruk 6 minggu. passing a lot of urine 3 minggu. itching skit2. poor appetite sangat. nafi kembung perut. mohon review dr,EC90.Z;MA82.10;MF55;MG43.7,train,draft,synthetic,generated
@@ -2764,13 +2764,13 @@ GEN02567,DATANG sebab senak perut for 1/52 dan wheezing sejak smlm dan lepas mak
 GEN02568,"presented with HX RETINOPATHY; diagnosis: urinary infection, doc ckp; background acne vulgaris tak terkawal; varicella; gastroenteritis dr cnfrm",1A40.Z;1E90.Z;9B71.0Z;ED80.Z;GC08.Z,train,draft,synthetic,generated
 GEN02569,"presented with pelat tiba2, bila bangun pagi, lower back pain x2/7, red spots 2 hari, known case of tobacco USE, No suara serak. minta MC",MA80.2Z;ME66.6Z;ME84.2Z;QE13,train,draft,synthetic,generated
 GEN02570,"datang sebab reflx disease known, penat since this morning, Rx abx, tkda sakit menjalar DARI punggung. on paracetamol",DA22.Z;MG22,train,draft,synthetic,generated
-GEN02571,mengadu kat sekolah n takde frequency of urination n batuk berdarah absent n sakit menjalar dari punggung for 6 weeks n pinggang sakit kuat 3 hari n BP ok,ME84.2Z;ME84.3,train,draft,synthetic,generated
+GEN02571,mengadu kat sekolah n takde frequency of urination n batuk berdarah absent n sakit menjalar dari punggung for 6 weeks n pinggang sakit kuat 3 hari n BP ok,ME84.3,train,draft,synthetic,generated
 GEN02572,S: kepala ringan sngat since yesterday. masa kerja,MB48.Z,train,draft,synthetic,generated
 GEN02573,c/o tidur cukup; kembung perut for 1/52; denies headache; known hx jantung lemah on meds; h/o previous stroke; yellow eyes sangat for 2 days. mohon review dr,8B11;BD10;ME01;ME10.1,train,draft,synthetic,generated
 GEN02574,"pesakit datang, nak refill ubat. bila bangun pagi. dmm sangat. kencing berdarah. T 37.1",MF50.4Z;MG26,train,draft,synthetic,generated
 GEN02575,S: haematemesis kuat dah SEMINGGU. T 37.0. spinning sensation 3 ari,MB48.0Z;ME24.A5,train,draft,synthetic,generated
 GEN02576,sakit pinggang turun ke kaki sikit since THIS morning + muscle spasm x4 days + advised fluids + mata kabur sikit + denied batuk + acid reflux skit2 on off,MB47.3;MD95;ME84.3,train,draft,synthetic,generated
-GEN02577,anasarca. masa kerja. denied kepala sakit. athlete's foot (dr ckp). ruam SANGAT on off. sakit telinga sikit for 6 days. minta MC,1F28.Z;AB70.2;ME66.6Z;MG29.1,train,draft,synthetic,generated
+GEN02577,anasarca. masa kerja. denied kepala sakit. athlete's foot (dr ckp). ruam SANGAT on off. sakit telinga sikit for 6 days. minta MC,1F28.Z;AB70.2;MG29.1,train,draft,synthetic,generated
 GEN02578,"pesakit dtang, advised fluids; O/E unremarkable; suara garau x2 days; sakit haid sikit since yesterday; HX ginjal lemh ON ubat; no H/O rash. on paracetamol",GA34.3;GB61.Z;MA82.10,train,draft,synthetic,generated
 GEN02579,"ibu bawa anak, tolerating orally dan dx varicella dan skit bila telan x5/7",1E90.Z;MD36.0,train,draft,synthetic,generated
 GEN02580,perempuan 40 thn dtg dgn kat dada kanan. kemungkinan chickenpx. No kencing banyak sangat. pusing keliling. haus sangat sikit kebelakangan ni. T 37.1,MB48.0Z;MG43.0,train,draft,synthetic,generated
@@ -2797,7 +2797,7 @@ GEN02600,"otitis media akut, doc ckp; kencing ok; chest tightness kuat 6 ari",AA
 GEN02601,"c/o denied hemoptysis, PMH: dm reti, kencing berbuih sejak smlm, lepas main bola",9B71.0Z;MF96.Z,train,draft,synthetic,generated
 GEN02602,"k/c/o dm reti FU klinik, sakit tekak tiada, sleeplessness sangat ON off, k/c/o plantar fasciitis on meds, advise minum air byk, imp: tonsil merah - dr dah tgk",7A0Z;9B71.0Z;CA03.Z;FB40.1,train,draft,synthetic,generated
 GEN02603,"datang sebab burning sensation IN chest skit2 5 hari, r/o hbv, doc cnfrm gigi berlubang - dr dah tgk, HX emphysematous ON meds, tolerating orally",CA22.Z;DA08.0;MD95,train,draft,synthetic,generated
-GEN02604,35yo male c/o sejarah eczema; background tumit sakit waktu pagi (old case); A: jangkitan saluran kencing - dr dah tgk; lengan sakit sejak 6 bulan; tiada ulu hati rasa terbakar; tak odynophagia. minta MC,EA80.Z;FB40.1;FB56.4;GC08.Z,train,draft,synthetic,generated
+GEN02604,35yo male c/o sejarah eczema; background tumit sakit waktu pagi (old case); A: jangkitan saluran kencing - dr dah tgk; lengan sakit sejak 6 bulan; tiada ulu hati rasa terbakar; tak odynophagia. minta MC,EA80.Z;FB40.1;GC08.Z,train,draft,synthetic,generated
 GEN02605,"pesakit datang, masa kerja dan dr ckp urtis dan abdominal cramps dah seminggu DAN denied hard stools DAN telinga sakit sejak minggu lepas",AB70.2;CA07.0;MD81.4,train,draft,synthetic,generated
 GEN02606,kemungkinan serangan gout. icterus teruk. imp: mites (dr ckp). mohon review dr,1G04.Z;ME10.1,train,draft,synthetic,generated
 GEN02607,mengadu leg cramps takde. known CCF. malaise for 6 weeks. kencng OK. BP 162/62,BD10;MG22,train,draft,synthetic,generated
@@ -2829,7 +2829,7 @@ GEN02632,"c/o kulit kuning SIKIT, lepas angkat barang, tak berdarah hidung, itch
 GEN02633,mengadu terlebih berat known. nafi diarrhoea. diaphoretic tiada. NUMB teruk since this mrning. darah keluar hidung sejak minggu LEPAS. blood in urine x5 days. bila toleh kepala. T 37.1,5B81.Z;MB40.Z;MD20;MF50.4Z,train,draft,synthetic,generated
 GEN02634,anak sulung; heavy irreglar periods skit2 4 minggu; follw up klinik; disahkan low sugar level dr cnfrm,5A21.Z;GA22,train,draft,synthetic,generated
 GEN02635,pt kmplen yellow skin since yesterday. diagnosis: uri dr cnfrm. ADVISE diet,CA07.0;ME10.1,train,draft,synthetic,generated
-GEN02636,pakcik 57 thn dtg dgn disahkan kudis buta; disahkan ns1 positive (dr ckp); mata kabur sikit; imp lung infection; low grade fever sejak 3 bulan,1D2Z;1G04.Z;CA40.Z;MG26,train,draft,synthetic,generated
+GEN02636,pakcik 57 thn dtg dgn disahkan kudis buta; disahkan ns1 positive (dr ckp); mata kabur sikit; imp lung infection; low grade fever sejak 3 bulan,1D2Z;1G04.Z;CA40.Z,train,draft,synthetic,generated
 GEN02637,pt komplen collapsed terk x6 days n bunyi siul bila bernafas teruk dah 2 hari n nafi pain in limb n tiada jaundice n giddiness x4 days,MB48.Z;MD11.C;MG45.Z,train,draft,synthetic,generated
 GEN02638,c/o advsed fluids; berdebar sangat on off; makin ok,MC81.2,train,draft,synthetic,generated
 GEN02639,"pt dtg c/o ada allergic rhinitis hx stabil, takda anxiety, mencucuk2 takde. minta MC",CA08.0Z,train,draft,synthetic,generated
@@ -2882,7 +2882,7 @@ GEN02685,pt dtg c/o afebrile. PROTEIN in urine sangat 4 minggu. darah dalam kenc
 GEN02686,"complains of x dysphagia, LOC kebelakangan ni, O/E unremarkable, poor appetite kuat 4 hari, tak kencing ada darah",MG43.7;MG45.Z,train,draft,synthetic,generated
 GEN02687,58yo F c/o O/E unremarkable. wheezing teruk x2/7. palpitations teruk on off. weight dropped takde,MC81.2;MD11.C,train,draft,synthetic,generated
 GEN02688,pt presents with queasy since this morning. vitals stable. pain on urination 5 ari. takde cepat penat. F/U if x baik,MD90.0;MF50.7,train,draft,synthetic,generated
-GEN02689,pt dtg c/o O/E unremarkable n chest tightness teruk x5/7 n burning sensation in chest tiada n pleuritic chest pain for 4 weeks n sakit period sangat for 1/52 n ada mixed hyperlipidaemia stabil n sakit badn 3/7 n TIADA blood in urine,5C80.2;FB56.2;GA34.3;MD30.0;MD30.Z,train,draft,synthetic,generated
+GEN02689,pt dtg c/o O/E unremarkable n chest tightness teruk x5/7 n burning sensation in chest tiada n pleuritic chest pain for 4 weeks n sakit period sangat for 1/52 n ada mixed hyperlipidaemia stabil n sakit badn 3/7 n TIADA blood in urine,5C80.2;FB56.2;GA34.3;MD30.0,train,draft,synthetic,generated
 GEN02690,"diagnosis: cvid-19 - dr dah tgk, dry lips sejak pagi, known hx batu karang - stable, no KNEE pain. mohon review dr",5C70.0;GB70.0Z;RA01,train,draft,synthetic,generated
 GEN02691,c/o x susah berak + chest clear + doc cnfrm mata bertahi - dr dah tgk. mohon review dr,9A60.Z,train,draft,synthetic,generated
 GEN02692,"S: nak refill ubat, at night, hx kidney stones STABIL, incontinence kuat sejak 2 bulan",GB70.0Z;MF50.2Z,train,draft,synthetic,generated
@@ -2927,7 +2927,7 @@ GEN02730,"presented with frequent urination 4 hari, chest clear, r/o underactive
 GEN02731,62yo male c/o tiada blood dalam AIR KENCING. makan ok. weight loss significant sangat dah seminggu. no h/o icteric. known bleeding piles,DB60.Z;MG43.5,train,draft,synthetic,generated
 GEN02732,"pesakt datang, suspek jangkitan kulit merebak. selera ok. kahak KUNING. No arm pain. gastro enteritis. chill KUAT since yesterday. minta MC",1A40.Z;MG21,train,draft,synthetic,generated
 GEN02733,skabies DAN h/o median nerve compression stabil dan throat pain. on paracetamol,1G04.Z;8C10.0;MD36.0,train,draft,synthetic,generated
-GEN02734,pt presents with anak sulung; radiating to right leg X2 days; tiada unclear speech; denied giddiness; k/c/o low thyroid ON ubat; easily tired teruk x4/7; sakit pinggang kuat. mohon review dr,5A00.Z;ME84.2Z;ME84.3;MG22,train,draft,synthetic,generated
+GEN02734,pt presents with anak sulung; radiating to right leg X2 days; tiada unclear speech; denied giddiness; k/c/o low thyroid ON ubat; easily tired teruk x4/7; sakit pinggang kuat. mohon review dr,5A00.Z;ME84.3;MG22,train,draft,synthetic,generated
 GEN02735,pt c/o anxiety. bahu sakt absent. sejuk sejuk x5 days. berak ok. minta MC,MB24.3;MG21,train,draft,synthetic,generated
 GEN02736,pt c/o bilik berpusing sikit 2 ari; dr ckp radang PARU paru (dr ckp); PMH: pulmnary tuberculosis FU klinik,1B10.Z;CA40.Z;MB48.0Z,train,draft,synthetic,generated
 GEN02737,"pt presents with pmhx: hepatic steatosis (old case), takde coughing, r/o oa lutut, takde tekak sakit, advise rehat, known dyslipidemia FU klinik. BP 166/62",5C80.2;DB92.Z,train,draft,synthetic,generated
@@ -2937,7 +2937,7 @@ GEN02740,"pt dtg c/o batuk berkahak skit2 since yesterday, HR stable, feeling si
 GEN02741,denied bengkak LEG + known reflux hx + tiada chills. on paracetamol,DA22.Z,train,draft,synthetic,generated
 GEN02742,"migraine tak terkawal, T 37.0, dx bronkits dr cnfrm, known case of copd hx knwn",8A80.Z;CA22.Z;CA42.Z,train,draft,synthetic,generated
 GEN02743,"ibu bawa anak, hx NOT taking medication FU klinik + disahkan swimmer ear (dr ckp) + diagnosis: chest infection pneumonia",AA3Z;CA40.Z;QC49,train,draft,synthetic,generated
-GEN02744,"c/o batuk teruk 4/7, nauseated sangat 6 minggu, nafi large urine volme, takda burning urine, PRN paracetamol, dx chest infection, tidur cukup. BP 117/69",CA42.Z;MD12;MD90.0,train,draft,synthetic,generated
+GEN02744,"c/o batuk teruk 4/7, nauseated sangat 6 minggu, nafi large urine volme, takda burning urine, PRN paracetamol, dx chest infection, tidur cukup. BP 117/69",CA42.Z;MD90.0,train,draft,synthetic,generated
 GEN02745,"lelaki 79 thn dtg dgn diagnosis: hives, doc ckp + dr ckp covid positif, DOC ckp. minta MC",EB00.Z;RA01,train,draft,synthetic,generated
 GEN02746,c/o vomits tiada dan known case of darah tinggi dah 6 thn dan bawa surat rujukan,BA00.Z,train,draft,synthetic,generated
 GEN02747,pt c/o negative for appetite loss dan red eye kebelakangan ni dan ada high lipids (old case),5C80.2;MC15,train,draft,synthetic,generated
@@ -2950,7 +2950,7 @@ GEN02753,"pt 42thn, nafi dunia berputar, PMHx HEP b carrier FU klinik, ubat habi
 GEN02754,"pt 73thn, generalised oedema kuat since yesterday, nafi gatal2, acid reflux 2/7. minta MC",MD95;MG29.1,train,draft,synthetic,generated
 GEN02755,"known hx hemorrhoids hx, A: gigi berlubang dr cnfrm, ASAP. mohon review dr",DA08.0;DB60.Z,train,draft,synthetic,generated
 GEN02756,"pesakit datang, known tak ambil ubat dah 3 thn. suspek chf. hard stools ON off. doc cnfrm swimmer's ear dr cnfrm. masa kerja. tarry stools sikit. minta MC",AA3Z;ME05.0;ME24.A4;QC49,train,draft,synthetic,generated
-GEN02757,"tak dapat tahan kencing kuat for 1/52, abdominal cramps 2 ari, A: age",1A40.Z;MD81.4;MF50.2Z,train,draft,synthetic,generated
+GEN02757,"tak dapat tahan kencing kuat for 1/52, abdominal cramps 2 ari, A: age",1A40.Z;MF50.2Z,train,draft,synthetic,generated
 GEN02758,"pt mengadu batuk berdarah sikit dah seminggu, TAK nak makan teruk sejak 4 bulan, tiada hidung berdarah, disahkan hypoglycaemia dr cnfrm, nil kencing pedih, badan rasa tak sedap. mohon review dr",5A21.Z;MD22;MG43.7,train,draft,synthetic,generated
 GEN02759,"pt 34THN, haus SGT sikit sejak 5 bulan, dx low sugar (dr ckp), room spinning since this morning. on paracetamol",5A21.Z;MB48.0Z;MG43.0,train,draft,synthetic,generated
 GEN02760,doc cnfrm urinary tract infectin; disahkan chicken pox dr cnfrm; ada alahan ubat; tiada diarrhea. BP 152/78,1E90.Z;GC08.Z,train,draft,synthetic,generated
@@ -3102,7 +3102,7 @@ GEN02905,"pt presents with hx chronic hepatitis b - stable, advise minum air byk
 GEN02906,MENGADU lepas berenang; lepas angkt barang; pmhx: tiroid kurang aktif; feeling sick SKIT2 5 har. BP 157/92,5A00.Z;MD90.0,train,draft,synthetic,generated
 GEN02907,"suspek jangkitan kuman kencing, vitals stable, nil period tak datang, disahkan red throat. on paracetamol",CA02.Z,train,draft,synthetic,generated
 GEN02908,datang sebab nose bleeding on off. BP 133/72,MD20,train,draft,synthetic,generated
-GEN02909,"32yo female c/o achng joints sejak smlm, takde weight loss, known HX bahu beku hx, excessive urination skit2 since yesterday. on paracetamol",FB53.0;ME82;MF55,train,draft,synthetic,generated
+GEN02909,"32yo female c/o achng joints sejak smlm, takde weight loss, known HX bahu beku hx, excessive urination skit2 since yesterday. on paracetamol",FB53.0;MF55,train,draft,synthetic,generated
 GEN02910,S: difficulty sleeping tiada n background hemorrhoid FU klinik n known oa lutut tak terkawal n pleuritic pain xde n ruam sejak pagi,DB60.Z;FA01.Z;ME66.6Z,train,draft,synthetic,generated
 GEN02911,"pt mengadu r/o otitis externa infection, DX denggi (dr ckp), sejarah hep B stabil, air kencing berbuih kuat dah seminggu. on paracetamol",1D2Z;1E51.0Z;MF96.Z,train,draft,synthetic,generated
 GEN02912,presented with tb + lepas hujan + H/O dyspepsia gastritis on ubat + tiada malena,1B10.Z;DA42.Z,train,draft,synthetic,generated
@@ -3129,7 +3129,7 @@ GEN02932,"pt c/o ADA eczema, background known asthma, disahkan gastroenteritis -
 GEN02933,takda sejuk sejuk + No malaena + tidur cukup + known case of raised cholesterl tak terkawal + ada foot ulcer diabetic,5C80.0Z;BD54,train,draft,synthetic,generated
 GEN02934,pt presents with denied buang air besar cair; mata merah since yesterday; urinating at night 6 minggu; suspek urine infection. mohon review dr,MC15;MF50.0,train,draft,synthetic,generated
 GEN02935,72YO male c/o tidak epigastric pain + PMHx sakit tapak kaki pagi hx + sendi sakit tkde. minta MC,FB40.1,train,draft,synthetic,generated
-GEN02936,"datang sebab DX bronkitis - dr dah tgk, diabetic foot stabil, excessive urination kuat, masa kerja, wheezy kuat",BD54;CA42.Z;MD11.C;MF55,train,draft,synthetic,generated
+GEN02936,"datang sebab DX bronkitis - dr dah tgk, diabetic foot stabil, excessive urination kuat, masa kerja, wheezy kuat",BD54;CA42.Z;MF55,train,draft,synthetic,generated
 GEN02937,"pt komplen gord, kat tangan kiri",DA22.Z,train,draft,synthetic,generated
 GEN02938,minum ok n tiada numb,,train,draft,synthetic,generated
 GEN02939,"ibu bawa anak, negative for limb pain, PMHX: graves known, nafi passing a lot of urine, UBAT hbis, queasy teruk since ysterday, kolestrol tinggi on ubat, pening lalat teruk sejak minggu lepas. minta MC",5A02.Z;5C80.0Z;MB48.Z;MD90.0,train,draft,synthetic,generated
@@ -3156,7 +3156,7 @@ GEN02959,pt mengadu known case OF angin ahmar; kemungkinan knee oa; pening lalat
 GEN02960,"c/o negative for letih, tolerating orally, suspek kudis berair, dm retinopathy hx stabil, tidak sakit badan. BP 119/71",9B71.0Z,train,draft,synthetic,generated
 GEN02961,complains of kahak berdarah sikit sejak semalam. coffee ground vomit x4/7. no h/o SAKIT tangan. kurang selera makan xde. tight chest dah 5 hari,MD22;MD30.Z;ME24.A5,train,draft,synthetic,generated
 GEN02962,"advse rehat, known hx nash, jaundiced dah 5 hari",DB92.Z;ME10.1,train,draft,synthetic,generated
-GEN02963,PMHx asma stabil; tercungap since this morning; no risau sangat; advise minum air byk; pelat tiba2,CA23;MA80.2Z;MD11.5,train,draft,synthetic,generated
+GEN02963,PMHx asma stabil; tercungap since this morning; no risau sangat; advise minum air byk; pelat tiba2,CA23;MA80.2Z,train,draft,synthetic,generated
 GEN02964,"pt mengadu najis hitam x3 days, unintentional weight loss teruk on off, lbo sejak minggu lepas",ME05.1;ME24.A4;MG43.5,train,draft,synthetic,generated
 GEN02965,presnted with ubat habis dan PMH: kurang zat besi dan muka dan kaki bengkak kuat sejak minggu lepas dan on review. on paracetamol,3A00.Z;MG29.1,train,draft,synthetic,generated
 GEN02966,"senggugut takde, kat pinggang kiri, acute gastroenteritis, chest pains sangat 6/7, ear PAIN kuat, T 37.0, ITCHES kuat. BP 138/92",1A40.Z;AB70.2;EC90.Z;MD30.Z,train,draft,synthetic,generated
@@ -3204,7 +3204,7 @@ IND007,Peluh banyak sgt ptg ni. No sakit badan. BP ok. Sweating++ only.,ME66.5,t
 IND008,"Perut buncit sgt. Pt ckp mcm kembung. Obs: distension +++. Advise: minum air, observe. F/U if x baik.",ME01,train,draft,synthetic,independent_dev
 IND009,"Radang tekak akute, doc ckp. No pening/collapse/jatuh. PRN paracetamol. F/U if x baik.",CA02.Z,train,draft,synthetic,independent_dev
 IND010,"Period sgt banyak x teratur, + protein dlm air kencing. Telinga sakit rn. BP ok. Advise follow up dr.",AB70.2;GA22;MF96.Z,train,draft,synthetic,independent_dev
-IND011,"Vomiting x3, pg sakit perut (infeksi usus dr kata). No rasa pedih htg. ORS given, advise diet & hydration. F/U if x baik.",1A40.Z;MD90.1,train,draft,synthetic,independent_dev
+IND011,"Vomiting x3, pg sakit perut (infeksi usus dr kata). No rasa pedih htg. ORS given, advise diet & hydration. F/U if x baik.",1A40.Z,train,draft,synthetic,independent_dev
 IND012,"Sakit kencing! Pt c/o pedih time kencing. Suspect UTI, advise ++ air, follow up if x baik.",MF50.7,train,draft,synthetic,independent_dev
 IND013,"Pt c/o sakit perut xsure area. PRN paracetamol, advise observe. F/U if xbaik.",MD81.4,train,draft,synthetic,independent_dev
 IND014,"GERD & anemia besi known hx. Pt c/o heartburn, okay2. No batuk darah. BP: 120/80. Advised to cont meds & iron. 👍",3A00.Z;DA22.Z,train,draft,synthetic,independent_dev

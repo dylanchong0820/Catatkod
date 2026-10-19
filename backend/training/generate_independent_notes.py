@@ -105,8 +105,19 @@ def main() -> None:
     parser.add_argument("--rpm", type=float, default=9)
     parser.add_argument("--seed", type=int, default=1126)
     parser.add_argument("--style", choices=sorted(STYLES), default="malay")
+    parser.add_argument("--model", default=MODEL, help="SEA-LION model that writes the notes")
+    parser.add_argument("--train-notes", type=int, default=0,
+                        help="write N TRAINING notes (split=train) instead of the dev/test evaluation set")
+    parser.add_argument("--out", help="output CSV (default depends on --style / --train-notes)")
     args = parser.parse_args()
     prompt, dest, prefix, n_dev, n_test = STYLES[args.style]
+    if args.train_notes:
+        n_dev, n_test = args.train_notes, 0
+        tag = args.model.split("/")[-1].split("-")[0].lower()
+        dest = ROOT / "data" / f"llm_training_notes_{args.style}_{tag}.csv"
+        prefix = f"TR{args.style[0].upper()}{tag[:3].upper()}"
+    if args.out:
+        dest = Path(args.out)
 
     bench.load_env_file(ROOT.parent / ".env")
     key = os.environ.get("SEALION_API_KEY")
@@ -121,7 +132,7 @@ def main() -> None:
     rows, failed = [], 0
     for i, plan in enumerate(plans):
         try:
-            note = parse_note(bench.ask(cache, "sealion", MODEL, key, prompt.format(body=plan["body"])))
+            note = parse_note(bench.ask(cache, "sealion", args.model, key, prompt.format(body=plan["body"])))
         except Exception as exc:  # noqa: BLE001
             print(f"  note {i}: {exc}")
             failed += 1
@@ -130,8 +141,9 @@ def main() -> None:
             failed += 1
             continue
         rows.append({"note_id": f"{prefix}{i + 1:03d}", "note_text": note, "gold_codes": ";".join(sorted(plan["codes"])),
-                     "negated_codes": ";".join(plan["negated"]), "split": "dev" if i < n_dev else "test",
-                     "source": f"sealion:{MODEL}"})
+                     "negated_codes": ";".join(plan["negated"]),
+                     "split": ("train" if args.train_notes else "dev") if i < n_dev else "test",
+                     "source": f"sealion:{args.model}"})
         if (i + 1) % 20 == 0:
             print(f"{i + 1}/{len(plans)} notes", flush=True)
     if failed:

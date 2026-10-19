@@ -1,46 +1,46 @@
 {
   "model_type": "normalise() + word/char TF-IDF + OneVsRest LogisticRegression",
   "C": 32.0,
-  "threshold": 0.65,
+  "threshold": 0.75,
   "hybrid_threshold": 0.925,
   "n_codes": 121,
   "rows": {
+    "test": 105,
     "validation": 47,
-    "train": 3143,
-    "test": 105
+    "train": 3143
   },
   "test_results": {
     "naive_keyword_baseline": {
-      "micro_precision": 0.8315789473684211,
-      "micro_recall": 0.9518072289156626,
-      "micro_f1": 0.8876404494382022,
-      "macro_f1_present_codes": 0.9100517368810052,
-      "exact_match": 0.7047619047619048,
-      "codes_in_split": 82
+      "micro_precision": 0.8223684210526315,
+      "micro_recall": 0.9124087591240876,
+      "micro_f1": 0.8650519031141869,
+      "macro_f1_present_codes": 0.8888286116134217,
+      "exact_match": 0.7428571428571429,
+      "codes_in_split": 79
     },
     "catatkod_rules": {
-      "micro_precision": 0.9575757575757575,
-      "micro_recall": 0.9518072289156626,
-      "micro_f1": 0.9546827794561934,
-      "macro_f1_present_codes": 0.9474190563143217,
-      "exact_match": 0.8761904761904762,
-      "codes_in_split": 82
+      "micro_precision": 0.9629629629629629,
+      "micro_recall": 0.948905109489051,
+      "micro_f1": 0.9558823529411765,
+      "macro_f1_present_codes": 0.9455897126783201,
+      "exact_match": 0.9142857142857143,
+      "codes_in_split": 79
     },
     "catatkod_ml": {
-      "micro_precision": 0.8728323699421965,
-      "micro_recall": 0.9096385542168675,
-      "micro_f1": 0.8908554572271387,
-      "macro_f1_present_codes": 0.890991946174873,
-      "exact_match": 0.6857142857142857,
-      "codes_in_split": 82
+      "micro_precision": 0.8652482269503546,
+      "micro_recall": 0.8905109489051095,
+      "micro_f1": 0.8776978417266187,
+      "macro_f1_present_codes": 0.8791207977750283,
+      "exact_match": 0.7428571428571429,
+      "codes_in_split": 79
     },
     "catatkod_ml_plus_rules": {
-      "micro_precision": 0.9257142857142857,
-      "micro_recall": 0.9759036144578314,
-      "micro_f1": 0.9501466275659824,
-      "macro_f1_present_codes": 0.9532262572434739,
-      "exact_match": 0.8380952380952381,
-      "codes_in_split": 82
+      "micro_precision": 0.9436619718309859,
+      "micro_recall": 0.9781021897810219,
+      "micro_f1": 0.9605734767025089,
+      "macro_f1_present_codes": 0.959774964838256,
+      "exact_match": 0.8952380952380953,
+      "codes_in_split": 79
     }
   },
   "labels_reviewed": false,

@@ -312,6 +312,24 @@ export function NotePage() {
                     </div>
                   </div>
                 )}
+                {result.coveredSymptoms && result.coveredSymptoms.length > 0 && (
+                  <div className="border-t border-[#DCE3E1] p-4">
+                    <h3 className="mb-1 text-sm font-semibold">{isBm ? "Diliputi oleh diagnosis" : "Covered by diagnosis"}</h3>
+                    <p className="mb-2 text-xs text-[#52635F]">
+                      {isBm
+                        ? "Simptom ini sebahagian daripada diagnosis yang dikodkan, jadi tidak dikodkan berasingan."
+                        : "These symptoms are part of a coded diagnosis, so they are not coded separately."}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {result.coveredSymptoms.map((item) => (
+                        <span className="rounded border border-[#C9D1CF] bg-[#F7F8F8] px-2.5 py-1 text-xs" key={item.code}>
+                          <code className="font-semibold">{item.code}</code> {isBm ? item.labelMs : item.labelEn}{" "}
+                          <span className="text-[#52635F]">&rarr; {item.coveredBy}</span>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 {result.catalogueSuggestions && result.catalogueSuggestions.length > 0 && (
                   <div className="border-t border-[#DCE3E1] p-4">
                     <h3 className="text-sm font-semibold">{isBm ? "Kod lain yang mungkin" : "Other possible codes"}</h3>

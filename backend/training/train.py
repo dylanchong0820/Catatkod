@@ -29,6 +29,7 @@ sys.path.insert(0, str(ROOT.parent))
 from nlp.catalogue import load_lexicon  # noqa: E402
 from nlp.features import build_features  # noqa: E402
 from nlp.normalise import normalise  # noqa: E402
+from nlp.policy import apply as apply_policy  # noqa: E402
 from nlp.rules import LexiconMatcher, naive_keyword_codes  # noqa: E402
 
 DATA = ROOT / "data" / "labelled_notes.csv"
@@ -42,6 +43,16 @@ THRESHOLDS = np.round(np.arange(0.15, 0.96, 0.05), 2)
 
 def parse_codes(value: str) -> list[str]:
     return sorted({c.strip() for c in str(value).split(";") if c.strip()})
+
+
+def policy_matrix(y, classes):
+    """Apply the integral-symptom coding policy (nlp/policy.py) to a binary label matrix."""
+    out = np.zeros_like(y)
+    index = {c: j for j, c in enumerate(classes)}
+    for i, row in enumerate(y):
+        for code in apply_policy(classes[j] for j in np.flatnonzero(row)):
+            out[i, index[code]] = 1
+    return out
 
 
 def metrics(y_true, y_pred, classes) -> dict:
@@ -86,7 +97,7 @@ def main() -> None:
     if not (df["review_status"] == "reviewed").all() and not args.allow_draft:
         raise SystemExit("Some labels are not review_status=reviewed. Re-run with --allow-draft for a prototype model.")
 
-    df["labels"] = df["gold_codes"].map(parse_codes)
+    df["labels"] = df["gold_codes"].map(lambda v: sorted(apply_policy(parse_codes(v))))
     unknown = {c for labels in df["labels"] for c in labels} - set(allowed)
     if unknown:
         raise SystemExit(f"Labels not in the tier-1 catalogue: {', '.join(sorted(unknown))}")
@@ -107,7 +118,7 @@ def main() -> None:
         model = build_model(c).fit(parts["train"]["normalised"], y["train"])
         proba = model.predict_proba(parts["validation"]["normalised"])
         for t in THRESHOLDS:
-            f1 = f1_score(y["validation"], (proba >= t).astype(int), average="micro", zero_division=0)
+            f1 = f1_score(y["validation"], policy_matrix((proba >= t).astype(int), allowed), average="micro", zero_division=0)
             if best is None or f1 > best[0]:
                 best = (f1, c, float(t), model)
         print(f"C={c:<5} best validation micro-F1 so far {best[0]:.3f} (C={best[1]}, threshold={best[2]})")
@@ -120,17 +131,19 @@ def main() -> None:
     val_proba = model.predict_proba(parts["validation"]["normalised"])
     hybrid_threshold = max(
         (float(t) for t in np.round(np.arange(0.5, 1.0, 0.025), 3)),
-        key=lambda t: f1_score(y["validation"], np.maximum(val_rules, (val_proba >= t).astype(int)), average="micro", zero_division=0),
+        key=lambda t: f1_score(y["validation"], policy_matrix(np.maximum(val_rules, (val_proba >= t).astype(int)), allowed),
+                               average="micro", zero_division=0),
     )
     print(f"hybrid ML threshold (validation): {hybrid_threshold}")
 
     # Evaluate once on the held-out test split.
     test = parts["test"]
     test_proba = model.predict_proba(test["normalised"])
-    ml_pred = (test_proba >= threshold).astype(int)
-    naive_pred = mlb.transform([sorted(naive_keyword_codes(t, entries)) for t in test["note_text"]])
-    rules_pred = mlb.transform([sorted(matcher.codes(t)) for t in test["note_text"]])
-    hybrid_pred = np.maximum(rules_pred, (test_proba >= hybrid_threshold).astype(int))
+    ml_pred = policy_matrix((test_proba >= threshold).astype(int), allowed)
+    naive_pred = policy_matrix(mlb.transform([sorted(naive_keyword_codes(t, entries)) for t in test["note_text"]]), allowed)
+    rules_raw = mlb.transform([sorted(matcher.codes(t)) for t in test["note_text"]])
+    rules_pred = policy_matrix(rules_raw, allowed)
+    hybrid_pred = policy_matrix(np.maximum(rules_raw, (test_proba >= hybrid_threshold).astype(int)), allowed)
 
     results = {
         "naive_keyword_baseline": metrics(y["test"], naive_pred, allowed),

@@ -26,7 +26,8 @@ sys.path.insert(0, str(ROOT.parent))
 from nlp.catalogue import load_lexicon  # noqa: E402
 from nlp.normalise import normalise  # noqa: E402
 from nlp.rules import LexiconMatcher, naive_keyword_codes  # noqa: E402
-from train import ARTIFACTS, CATALOGUE, metrics, parse_codes  # noqa: E402
+from nlp.policy import apply as apply_policy  # noqa: E402
+from train import ARTIFACTS, CATALOGUE, metrics, parse_codes, policy_matrix  # noqa: E402
 
 DATA = ROOT / "data" / "independent_notes.csv"
 OUT = ARTIFACTS / "independent_eval.json"
@@ -51,7 +52,7 @@ def main() -> None:
     print(f"{'split':<6}{'system':<26}{'microP':>8}{'microR':>8}{'microF1':>9}{'macroF1':>9}{'exact':>8}")
     for split in ["dev", "test"]:
         part = df[df["split"] == split]
-        gold = mlb.fit_transform(part["gold_codes"].map(parse_codes))
+        gold = mlb.fit_transform(part["gold_codes"].map(lambda v: sorted(apply_policy(parse_codes(v)))))
         proba = bundle["model"].predict_proba(part["note_text"].map(normalise))
         rules = mlb.transform([sorted(matcher.codes(t)) for t in part["note_text"]])
         systems = {
@@ -60,6 +61,7 @@ def main() -> None:
             "catatkod_ml": (proba >= bundle["threshold"]).astype(int),
             "catatkod_ml_plus_rules": np.maximum(rules, (proba >= bundle["hybrid_threshold"]).astype(int)),
         }
+        systems = {name: policy_matrix(pred, allowed) for name, pred in systems.items()}
         report[split] = {name: metrics(gold, pred, allowed) for name, pred in systems.items()}
         report[split]["n_notes"] = len(part)
         for name, m in report[split].items():

@@ -13,6 +13,7 @@ from pathlib import Path
 import joblib
 
 from .normalise import expand, normalise
+from .policy import apply as apply_policy, covered_by
 from .retrieval import default_search
 from .rules import default_matcher
 
@@ -42,8 +43,10 @@ def analyze(note: str, search_k: int = 5) -> dict:
     else:
         ml_codes = set()
 
+    found = set(rule_hits) | ml_codes
+    covered = covered_by(found)  # symptoms explained by a coded diagnosis (nlp/policy.py)
     codes = []
-    for code in sorted(set(rule_hits) | ml_codes, key=lambda c: (-scores.get(c, 1.0), rule_hits.get(c, {}).get("start") or 0)):
+    for code in sorted(apply_policy(found), key=lambda c: (-scores.get(c, 1.0), rule_hits.get(c, {}).get("start") or 0)):
         entry = matcher.entries[code]
         hit = rule_hits.get(code, {})
         codes.append({
@@ -53,14 +56,16 @@ def analyze(note: str, search_k: int = 5) -> dict:
             "modelScore": round(scores[code], 3) if code in scores else None,
         })
 
-    tier1 = {c["code"] for c in codes}
+    tier1 = {c["code"] for c in codes} | set(covered)  # don't re-suggest covered symptoms
     other = [h for h in default_search().search(note, k=search_k + len(tier1)) if h["code"] not in tier1][:search_k]
     negated = [{"text": m.group(0), "start": m.start(), "end": m.end(), "meaningMs": f"Dinafikan: {m.group(2)}"}
                for m in NEGATION_RE.finditer(note)]
     d = DURATION_RE.search(note)
     duration = {"value": int(d.group(1)), "unit": UNIT_MAP.get(d.group(2).lower(), d.group(2).lower())} if d else None
     return {"codes": codes, "negated": negated, "duration": duration, "expandedNote": expand(note),
-            "catalogueSuggestions": other, "codeSystem": "ICD-11 MMS"}
+            "catalogueSuggestions": other, "codeSystem": "ICD-11 MMS",
+            "coveredSymptoms": [{"code": s, "labelEn": matcher.entries[s].title_en, "labelMs": matcher.entries[s].label_ms,
+                                 "coveredBy": d} for s, d in sorted(covered.items())]}
 
 
 if __name__ == "__main__":

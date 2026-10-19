@@ -34,6 +34,15 @@ export type AnalysisResult = {
   expandedNote: string;
   catalogueSuggestions?: CatalogueSuggestion[];
   codeSystem?: string;
+  coveredSymptoms?: CoveredSymptom[];
+};
+
+// A symptom found in the note but not coded separately, because a coded diagnosis already covers it.
+export type CoveredSymptom = {
+  code: string;
+  labelMs: string;
+  labelEn: string;
+  coveredBy: string;
 };
 
 export function analyzeNote(text: string): AnalysisResult {

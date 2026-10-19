@@ -1,0 +1,583 @@
+{
+ "ENG041": {
+  "extra": [
+   "Body aches"
+  ],
+  "missing": [],
+  "uncertain": [
+   "myalgia"
+  ],
+  "clean": false
+ },
+ "ENG042": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "cause"
+  ],
+  "clean": false
+ },
+ "ENG043": {
+  "extra": [
+   "blurry vision",
+   "dehydration"
+  ],
+  "missing": [],
+  "uncertain": [
+   "dehydration"
+  ],
+  "clean": false
+ },
+ "ENG044": {
+  "extra": [
+   "SOB"
+  ],
+  "missing": [],
+  "uncertain": [
+   "LOC"
+  ],
+  "clean": false
+ },
+ "ENG045": {
+  "extra": [
+   "R shoulder stiff",
+   "h/o frozen shoulder"
+  ],
+  "missing": [],
+  "uncertain": [
+   "IV fluids"
+  ],
+  "clean": false
+ },
+ "ENG046": {
+  "extra": [
+   "sore throat",
+   "swollen tonsils"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG047": {
+  "extra": [
+   "sore throat"
+  ],
+  "missing": [],
+  "uncertain": [
+   "viral"
+  ],
+  "clean": false
+ },
+ "ENG048": {
+  "extra": [
+   "history of fatty liver disease"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG049": {
+  "extra": [
+   "LOC intact"
+  ],
+  "missing": [],
+  "uncertain": [
+   "musculoskeletal/cardiac"
+  ],
+  "clean": false
+ },
+ "ENG050": {
+  "extra": [
+   "SOB/LOC"
+  ],
+  "missing": [],
+  "uncertain": [
+   "SOB/LOC"
+  ],
+  "clean": false
+ },
+ "ENG051": {
+  "extra": [
+   "low platelets",
+   "body aches"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG052": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "Cellulitis/lymphangitis"
+  ],
+  "clean": false
+ },
+ "ENG053": {
+  "extra": [
+   "history of (obesity)"
+  ],
+  "missing": [],
+  "uncertain": [
+   "DM"
+  ],
+  "clean": false
+ },
+ "ENG054": {
+  "extra": [
+   "burning in chest"
+  ],
+  "missing": [],
+  "uncertain": [
+   "GI bleed"
+  ],
+  "clean": false
+ },
+ "ENG055": {
+  "extra": [
+   "heartburn",
+   "discomfort"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Gastro-oesophageal reflux disease"
+  ],
+  "clean": false
+ },
+ "ENG056": {
+  "extra": [
+   "dehydration",
+   "GI upset"
+  ],
+  "missing": [],
+  "uncertain": [
+   "GI upset"
+  ],
+  "clean": false
+ },
+ "ENG057": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "haematemesis"
+  ],
+  "clean": false
+ },
+ "ENG058": {
+  "extra": [
+   "normal skin colour"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG059": {
+  "extra": [
+   "runny nose",
+   "sore throat"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG060": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "Otalgia"
+  ],
+  "clean": false
+ },
+ "ENG061": {
+  "extra": [
+   "hives"
+  ],
+  "missing": [],
+  "uncertain": [
+   "autoimmune"
+  ],
+  "clean": false
+ },
+ "ENG062": {
+  "extra": [
+   "SOB (Shortness of Breath)",
+   "Red eye"
+  ],
+  "missing": [],
+  "uncertain": [
+   "asthma"
+  ],
+  "clean": false
+ },
+ "ENG063": {
+  "extra": [
+   "cough",
+   "sore throat",
+   "minimal shortness of breath (SOB)"
+  ],
+  "missing": [],
+  "uncertain": [
+   "viral"
+  ],
+  "clean": false
+ },
+ "ENG064": {
+  "extra": [
+   "SOB",
+   "discomfort"
+  ],
+  "missing": [],
+  "uncertain": [
+   "abd pain"
+  ],
+  "clean": false
+ },
+ "ENG065": {
+  "extra": [
+   "Shortness of breath",
+   "Fluid overload"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG066": {
+  "extra": [
+   "food sticking"
+  ],
+  "missing": [],
+  "uncertain": [
+   "structural vs functional"
+  ],
+  "clean": false
+ },
+ "ENG067": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "DM"
+  ],
+  "clean": false
+ },
+ "ENG068": {
+  "extra": [
+   "Itchy skin",
+   "generalised scratching"
+  ],
+  "missing": [],
+  "uncertain": [
+   "eczema"
+  ],
+  "clean": false
+ },
+ "ENG069": {
+  "extra": [
+   "?LOC c/w fatigue"
+  ],
+  "missing": [],
+  "uncertain": [
+   "?LOC"
+  ],
+  "clean": false
+ },
+ "ENG070": {
+  "extra": [
+   "feeling shaky"
+  ],
+  "missing": [],
+  "uncertain": [
+   "diabetes"
+  ],
+  "clean": false
+ },
+ "ENG071": {
+  "extra": [
+   "fatigue"
+  ],
+  "missing": [],
+  "uncertain": [
+   "dyspnoea"
+  ],
+  "clean": false
+ },
+ "ENG072": {
+  "extra": [
+   "trouble sleeping x3/7",
+   "? dehydration"
+  ],
+  "missing": [],
+  "uncertain": [
+   "? dehydration"
+  ],
+  "clean": false
+ },
+ "ENG073": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "Gastric ulcer"
+  ],
+  "clean": false
+ },
+ "ENG074": {
+  "extra": [
+   "irritation",
+   "stress incontinence"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Conjunctivitis"
+  ],
+  "clean": false
+ },
+ "ENG075": {
+  "extra": [
+   "SOB x3/7",
+   "?LOC",
+   "infiltrate on CXR"
+  ],
+  "missing": [],
+  "uncertain": [
+   "?LOC"
+  ],
+  "clean": false
+ },
+ "ENG076": {
+  "extra": [
+   "itchy rash"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Diabetic foot ulcer"
+  ],
+  "clean": false
+ },
+ "ENG077": {
+  "extra": [
+   "complaint of needing to pee a lot"
+  ],
+  "missing": [],
+  "uncertain": [
+   "UTI"
+  ],
+  "clean": false
+ },
+ "ENG078": {
+  "extra": [
+   "Skin fungal infection"
+  ],
+  "missing": [],
+  "uncertain": [
+   "dermatomycosis"
+  ],
+  "clean": false
+ },
+ "ENG079": {
+  "extra": [
+   "SOB"
+  ],
+  "missing": [],
+  "uncertain": [
+   "GI bleed",
+   "anaemia"
+  ],
+  "clean": false
+ },
+ "ENG080": {
+  "extra": [
+   "dysuria"
+  ],
+  "missing": [],
+  "uncertain": [
+   "E.coli"
+  ],
+  "clean": false
+ },
+ "ENG081": {
+  "extra": [
+   "fever",
+   "body ache"
+  ],
+  "missing": [],
+  "uncertain": [
+   "dengue"
+  ],
+  "clean": false
+ },
+ "ENG082": {
+  "extra": [
+   "tired"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG083": {
+  "extra": [
+   "feeling panicky",
+   "shortness of breath (SOB)",
+   "loss of consciousness (LOC)"
+  ],
+  "missing": [],
+  "uncertain": [
+   "anxiety"
+  ],
+  "clean": false
+ },
+ "ENG084": {
+  "extra": [
+   "fluid overload"
+  ],
+  "missing": [],
+  "uncertain": [
+   "CHF"
+  ],
+  "clean": false
+ },
+ "ENG085": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "DM"
+  ],
+  "clean": false
+ },
+ "ENG086": {
+  "extra": [
+   "R sided facial weakness"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Bell's palsy"
+  ],
+  "clean": false
+ },
+ "ENG087": {
+  "extra": [
+   "cough",
+   "sore throat"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG088": {
+  "extra": [
+   "L leg cellulitis/lymphangitis"
+  ],
+  "missing": [],
+  "uncertain": [
+   "sciatica"
+  ],
+  "clean": false
+ },
+ "ENG089": {
+  "extra": [
+   "watery bowel movement"
+  ],
+  "missing": [],
+  "uncertain": [
+   "dehydration"
+  ],
+  "clean": false
+ },
+ "ENG090": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "ENG091": {
+  "extra": [
+   "black stools"
+  ],
+  "missing": [],
+  "uncertain": [
+   "GI bleed"
+  ],
+  "clean": false
+ },
+ "ENG092": {
+  "extra": [
+   "Shortness of breath",
+   "Loss of consciousness"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG093": {
+  "extra": [
+   "struggling to breath"
+  ],
+  "missing": [],
+  "uncertain": [
+   "asthma"
+  ],
+  "clean": false
+ },
+ "ENG094": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "ENG095": {
+  "extra": [
+   "shortness of breath"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "ENG096": {
+  "extra": [
+   "cough"
+  ],
+  "missing": [],
+  "uncertain": [
+   "bronchitis"
+  ],
+  "clean": false
+ },
+ "ENG097": {
+  "extra": [
+   "SOB x3/7"
+  ],
+  "missing": [],
+  "uncertain": [
+   "?musculoskeletal"
+  ],
+  "clean": false
+ },
+ "ENG098": {
+  "extra": [
+   "h/o"
+  ],
+  "missing": [],
+  "uncertain": [
+   "UTI"
+  ],
+  "clean": false
+ },
+ "ENG099": {
+  "extra": [
+   "history of diabetic retinopathy"
+  ],
+  "missing": [],
+  "uncertain": [
+   "infectious colitis"
+  ],
+  "clean": false
+ },
+ "ENG100": {
+  "extra": [
+   "discomfort"
+  ],
+  "missing": [],
+  "uncertain": [
+   "cause"
+  ],
+  "clean": false
+ }
+}

@@ -76,7 +76,7 @@ tier-2 catalogue suggestions. It scores with the same `metrics()` as `train.py`.
 `artifacts/llm_cache.json`; results go to `artifacts/llm_benchmark.json`.
 
 ```bash
-export GEMINI_API_KEY=...            # or put it in backend/.env; GEMINI_MODEL defaults to gemini-2.5-flash
+export GEMINI_API_KEY=...            # or put it in backend/.env; GEMINI_MODEL defaults to gemini-3.8-flash
 export SEALION_API_KEY=...           # optional; SEALION_MODEL defaults to aisingapore/Gemma-SEA-LION-v4-27B-IT
 python training/benchmark_llm.py --update-readme   # fills the table below
 ```

@@ -74,7 +74,7 @@ def llm_candidates(result: dict, original_note: str) -> tuple[list[dict], str]:
         allowed = _gemini_catalogue(result["catalogueSuggestions"])
         prompt = f"""You assist with a prototype clinical coding workflow. This is decision support, not diagnosis. Use ONLY ICD-11 MMS codes from the supplied catalogue. Do not infer missing findings. Respect negation and uncertainty (do not code negated or suspected findings). Return JSON only in this schema: {{\"codes\":[{{\"code\":\"catalogue code\",\"evidence\":\"exact substring from original note\"}}]}}. Include only supported candidate codes.\nCATALOGUE={json.dumps(list(allowed.values()), ensure_ascii=False)}\nORIGINAL_NOTE={json.dumps(original_note, ensure_ascii=False)}\nNORMALISED_NOTE={json.dumps(result["expandedNote"], ensure_ascii=False)}\nRULE_CANDIDATES={json.dumps([x["code"] for x in candidates])}"""
         response = client.models.generate_content(
-            model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+            model=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
             contents=prompt,
             config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0),
         )

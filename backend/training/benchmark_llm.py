@@ -86,7 +86,7 @@ def call_sealion(prompt: str, model: str, key: str) -> str:
 
 
 PROVIDERS = {
-    "gemini": (call_gemini, "GEMINI_API_KEY", "GEMINI_MODEL", "gemini-2.5-flash"),
+    "gemini": (call_gemini, "GEMINI_API_KEY", "GEMINI_MODEL", "gemini-3.8-flash"),
     "sealion": (call_sealion, "SEALION_API_KEY", "SEALION_MODEL", "aisingapore/Gemma-SEA-LION-v4-27B-IT"),
 }
 
@@ -216,7 +216,7 @@ def main() -> None:
         if os.environ.get(key_var):
             providers.append((name, os.environ.get(model_var) or default_model, os.environ[key_var]))
     if not providers:
-        raise SystemExit("No LLM API key found. Set GEMINI_API_KEY (and optionally GEMINI_MODEL, default gemini-2.5-flash) "
+        raise SystemExit("No LLM API key found. Set GEMINI_API_KEY (and optionally GEMINI_MODEL, default gemini-3.8-flash) "
                          "in the environment or backend/.env; SEALION_API_KEY / SEALION_MODEL add SEA-LION. No results written.")
 
     who = load_who()

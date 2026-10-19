@@ -37,7 +37,7 @@ MF50.4Z   | S | Kencing berdarah               | kencing berdarah; kencing ada d
 MF50.0  | S | Kerap kencing                  | kerap kencing; asyik kencing; selalu kencing; kencing banyak kali; urinary frequency; kencing malam banyak kali
 MF55    | S | Banyak kencing                 | banyak kencing; polyuria; air kencing banyak sangat; kencing banyak sangat
 MF50.2Z   | S | Tak tahan kencing              | terkencing; tak dapat tahan kencing; kencing terlepas; urinary incontinence; tak sempat ke tandas; tak tahan kencing; x tahan kencing
-MF96.Z      | S | Kencing berbuih                | kencing berbuih; air kencing berbuih; buih dalam kencing; proteinuria; protein dalam urin
+MF96.Z      | S | Kencing berbuih                | kencing berbuih; air kencing berbuih; buih dalam kencing; proteinuria; protein dalam urin; kencing buih; air kencing buih
 MG29.01 | S | Bengkak kaki                   | kaki bengkak; bengkak kaki; kaki sembab; buku lali bengkak; pedal oedema; leg swelling; leg bengkak; bengkak leg; legs bengkak
 MG29.1  | S | Bengkak seluruh badan          | badan bengkak; bengkak satu badan; muka dan kaki bengkak; generalised oedema; seluruh badan sembab
 MG43.0  | S | Selalu dahaga                  | cepat haus; selalu haus; dahaga; asyik haus; polydipsia; rasa haus; haus sangat; sangat haus; haus sgt

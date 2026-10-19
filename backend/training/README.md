@@ -1,72 +1,70 @@
-# CatatKod NLP training pipeline (starter)
+# CatatKod NLP pipeline (ICD-11)
 
-This is a reproducible training/evaluation scaffold, not a trained or clinically validated model. Because the project currently has ICD-10 descriptions but no labelled notes, the model cannot be trained until `data/labelled_notes.csv` contains reviewed examples.
+Research prototype. Labels are synthetic and **not clinician-reviewed**; nothing here is clinically validated.
 
-## Current CatatKod catalogue
+## Architecture
 
-The catalogue has been populated with the project's selected list. The two ranges supplied by the project owner were expanded into individual entries, resulting in 49 entries:
-
-- `Z68.30` through `Z68.45`
-- `Z91.120` through `Z91.128`
-
-**Before using this catalogue for clinical coding, verify it against the exact authoritative code-set/version used by the intended Malaysian workflow.** Some supplied labels describe a range generally rather than each individual code. This scaffold preserves the supplied scope and wording; format validation is not clinical validation. Do not train or deploy based on an unverified code list.
-
-## 1. Prepare the code catalogue
-
-Create `data/icd10_catalogue.txt`, one code per line, using:
-
-```text
-CODE | English description | Malay description
-E11 | Type 2 diabetes mellitus | Diabetes mellitus jenis 2
-I10 | Essential (primary) hypertension | Hipertensi primer
+```
+note ─► nlp/normalise.py   shorthand expansion (pt, hx, ari, smlm…), reduplication (sikit2),
+        │                  negation/uncertainty scope: "takde demam" → neg_demam, "?denggi" → unc_denggi
+        ├─► Tier 1 (121 codes, trained)
+        │     nlp/rules.py     lexicon phrase matching on normalised text → codes + evidence spans
+        │     classifier       word+char TF-IDF → one-vs-rest logistic regression (training/train.py)
+        │     final = rule matches ∪ classifier predictions above a strict threshold
+        └─► Tier 2 (all ~17k diagnostic ICD-11 codes, untrained)
+              nlp/retrieval.py Malay→English glossary + tier-1 titles → TF-IDF search over WHO titles
+nlp/pipeline.py  analyze(note) → {codes, negated, duration, expandedNote, catalogueSuggestions}
 ```
 
-Descriptions may be left blank if you only have the code, but include them if available. Only add codes in the approved first-release subset. Verify the code set and descriptions against the source you are authorised to use. Do not assume that a code is appropriate just because a symptom keyword appears.
+Tier 1 covers common primary-care symptoms, NCDs and acute infections. Tier 2 gives browseable
+candidates for anything else (e.g. *panau* → 1F2D.0 Pityriasis versicolor, *bisul* → 1B75.0 Furuncle).
+Every output is a suggestion for nurse/clinician confirmation.
 
-Validate/import the catalogue:
+## Data files (`training/data/`)
 
-```bash
-python training/prepare_catalogue.py
-```
+| File | What |
+|---|---|
+| `icd11_mms_simple_tabulation_en.csv` | Full WHO ICD-11 MMS export (2026-10-12) |
+| `tier1_lexicon.txt` | **Edit this to add codes.** `CODE \| kind \| Malay label \| phrase; phrase; …` |
+| `starter_labelled.csv` | The 60 starter notes with ICD-11 labels |
+| `handwritten_notes.csv` | 135 more independently written notes |
+| `generated_notes.csv` | 3,000 template notes from the lexicon (training only) |
+| `labelled_notes.csv` | Merged dataset with fixed train/validation/test splits |
 
-This creates `data/icd10_catalogue.json` and rejects malformed/duplicate codes. It does not verify clinical correctness against an external coding authority.
+**Labelling policy:** code every finding or condition the note states as present; never code negated
+(*takde demam*) or suspected (*?denggi*, *r/o TB*) ones. Symptoms are coded even alongside a diagnosis.
 
-## 2. Create labelled examples
-
-Copy `data/labelled_notes_template.csv` to `data/labelled_notes.csv`. One row per note:
-
-- `note_id`: non-identifying unique ID.
-- `note_text`: fictional/synthetic or authorised de-identified shorthand note.
-- `gold_codes`: one or more approved catalogue codes separated by `;`.
-- `split`: `train`, `validation`, or `test`.
-- `review_status`: use `reviewed` only after a qualified reviewer has checked the labels.
-- `source_type`: `synthetic` or `deidentified_authorized`.
-
-Never include names, identity numbers, phone numbers, addresses, dates of birth, or other direct identifiers. Do not send identifiable notes to an external LLM. Keep close paraphrases or notes derived from the same template in the same split to avoid leakage.
-
-For a first experiment, aim for at least 150–300 reviewed examples across the selected codes. Because the current catalogue contains 49 entries, that total may be too sparse for reliable per-code results; ensure every included code has independently reviewed examples and report codes with insufficient support. This is a prototype target, not a guarantee of accuracy. Try to include multiple independently authored examples per code and hard negatives/negations. A code with too few examples is not ready for reliable classification.
-
-## 3. Install dependencies
-
-From `backend/` in a virtual environment:
+## Run
 
 ```bash
+cd backend
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python training/prepare_catalogue.py      # validate lexicon against WHO catalogue
+python training/generate_synthetic.py     # 3,000 template training notes
+python training/build_dataset.py          # merge + split
+python training/train.py --allow-draft    # train, tune on validation, evaluate on test once
+python -m nlp.pipeline "pt dtg c/o kencing berbuih, kaki bengkak 3 ari, hx kencing manis"
 ```
 
-The training dependencies are included in `requirements.txt`.
+## Adding codes
 
-## 4. Train and evaluate
+1. Look the code up in the WHO CSV (prefer the leaf, often the `.Z` "unspecified" child).
+2. Add a line to `tier1_lexicon.txt` with at least 3 colloquial phrases. `prepare_catalogue.py` rejects
+   unknown codes and phrases shared between codes.
+3. Add a few hand-written notes using it to `handwritten_notes.csv` so it appears in evaluation.
+4. Re-run the four commands above.
 
-```bash
-python training/prepare_catalogue.py
-python training/train.py
-```
+## Current results (held-out test: 105 hand-written notes, 82 codes present)
 
-The training script requires reviewed examples and explicit train/validation/test splits. It saves a model under `training/artifacts/` and reports micro/macro precision, recall and F1, exact-match accuracy, plus per-code metrics on the held-out test set. Do not tune on the test set; use validation results to improve the pipeline, then rerun the final test once.
+| System | micro-P | micro-R | micro-F1 | macro-F1 | exact match |
+|---|---|---|---|---|---|
+| Naive keyword matching (no negation) | 0.832 | 0.952 | 0.888 | 0.910 | 0.705 |
+| CatatKod rules (normalised + negation) | 0.958 | 0.952 | 0.955 | 0.947 | 0.876 |
+| CatatKod classifier | 0.907 | 0.940 | 0.923 | 0.950 | 0.752 |
+| **CatatKod rules + classifier** | **0.942** | **0.982** | **0.962** | **0.971** | **0.876** |
 
-The initial model is a TF-IDF word/character n-gram multi-label classifier. It is a baseline custom NLP model, not a large language model. The existing rules and LLM should be evaluated separately and as a combined system on the same held-out notes before any model is allowed to influence user-facing suggestions.
-
-## 5. Next integration step
-
-Do not automatically use the trained classifier in clinical suggestions yet. First inspect held-out errors and calibrate per-code thresholds. Then add the model as a candidate generator in `backend/app.py`, keeping ICD-10 whitelist validation, negation/context checks, evidence extraction, and clinician confirmation. Predictions must remain suggestions, not diagnoses. Do not deploy a model trained on toy or unreviewed examples as clinically reliable.
+**Caveat — these numbers are optimistic.** The test notes were written by the same author as the lexicon,
+so they share its vocabulary. A credible number needs test notes written by people who have never seen
+the lexicon (nursing contacts, teammates), ideally reviewed by a clinician. The plan's headline comparison
+(system vs. a plain-prompted LLM) is not implemented yet.

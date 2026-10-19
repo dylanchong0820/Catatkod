@@ -1,130 +1,169 @@
-"""Train and evaluate a baseline multi-label TF-IDF ICD-10 classifier."""
+"""Train and evaluate the CatatKod tier-1 ICD-11 multi-label classifier.
+
+Pipeline: normalise() (shorthand expansion + negation scope) -> word + character TF-IDF
+-> one-vs-rest logistic regression -> one decision threshold tuned on the validation split.
+
+The held-out test split contains only independently written notes (never template-generated),
+and is compared against two baselines on the same notes:
+  * naive keyword matching (substring lookup, no negation handling)
+  * CatatKod rules (lexicon matching on normalised, negation-aware text)
+"""
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
 
 import joblib
+import numpy as np
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import classification_report, f1_score, precision_score, recall_score, accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from sklearn.multiclass import OneVsRestClassifier
-from sklearn.pipeline import FeatureUnion, Pipeline
+from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.svm import LinearSVC
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT.parent))
+from nlp.catalogue import load_lexicon  # noqa: E402
+from nlp.features import build_features  # noqa: E402
+from nlp.normalise import normalise  # noqa: E402
+from nlp.rules import LexiconMatcher, naive_keyword_codes  # noqa: E402
+
 DATA = ROOT / "data" / "labelled_notes.csv"
-CATALOGUE = ROOT / "data" / "icd10_catalogue.json"
+CATALOGUE = ROOT / "data" / "icd11_tier1_catalogue.json"
 ARTIFACTS = ROOT / "artifacts"
 REQUIRED_COLUMNS = {"note_id", "note_text", "gold_codes", "split", "review_status", "source_type"}
 VALID_SPLITS = {"train", "validation", "test"}
+C_GRID = [2.0, 8.0, 32.0]
+THRESHOLDS = np.round(np.arange(0.15, 0.96, 0.05), 2)
 
 
 def parse_codes(value: str) -> list[str]:
-    if not isinstance(value, str) or not value.strip():
-        raise ValueError("gold_codes must contain one or more codes separated by ';'")
-    return sorted({item.strip().upper() for item in value.split(";") if item.strip()})
+    return sorted({c.strip() for c in str(value).split(";") if c.strip()})
+
+
+def metrics(y_true, y_pred, classes) -> dict:
+    present = y_true.sum(axis=0) > 0  # macro-F1 only over codes that occur in this split
+    return {
+        "micro_precision": precision_score(y_true, y_pred, average="micro", zero_division=0),
+        "micro_recall": recall_score(y_true, y_pred, average="micro", zero_division=0),
+        "micro_f1": f1_score(y_true, y_pred, average="micro", zero_division=0),
+        "macro_f1_present_codes": f1_score(y_true[:, present], y_pred[:, present], average="macro", zero_division=0),
+        "exact_match": accuracy_score(y_true, y_pred),
+        "codes_in_split": int(present.sum()),
+    }
+
+
+def build_model(c: float) -> Pipeline:
+    return Pipeline([
+        ("features", build_features()),
+        ("clf", OneVsRestClassifier(LogisticRegression(C=c, solver="liblinear", class_weight="balanced", max_iter=2000))),
+    ])
 
 
 def main() -> None:
-    if not CATALOGUE.exists():
-        print("Run: python training/prepare_catalogue.py", file=sys.stderr)
-        raise SystemExit(2)
-    if not DATA.exists():
-        print(f"Create {DATA} from labelled_notes_template.csv and add reviewed examples.", file=sys.stderr)
-        raise SystemExit(2)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--allow-draft", action="store_true",
+                        help="train on labels not yet clinician-reviewed (prototype only; results are not clinical evidence)")
+    args = parser.parse_args()
 
+    for path, hint in [(CATALOGUE, "python training/prepare_catalogue.py"), (DATA, "python training/build_dataset.py")]:
+        if not path.exists():
+            raise SystemExit(f"Missing {path.name}. Run: {hint}")
     catalogue = json.loads(CATALOGUE.read_text(encoding="utf-8"))
-    allowed_codes = {row["code"] for row in catalogue}
+    allowed = sorted(row["code"] for row in catalogue)
     df = pd.read_csv(DATA, dtype=str, keep_default_na=False)
+
     missing = REQUIRED_COLUMNS - set(df.columns)
     if missing:
         raise SystemExit(f"Missing CSV columns: {', '.join(sorted(missing))}")
-    if df.empty:
-        raise SystemExit("Dataset is empty.")
     if df["note_id"].duplicated().any():
         raise SystemExit("note_id values must be unique.")
-    if (df["note_text"].str.strip() == "").any():
-        raise SystemExit("note_text cannot be empty.")
-    if not set(df["split"]).issubset(VALID_SPLITS):
-        raise SystemExit("split must be train, validation, or test.")
     if set(df["split"]) != VALID_SPLITS:
         raise SystemExit("Provide all three explicit splits: train, validation, test.")
-    if not (df["review_status"] == "reviewed").all():
-        raise SystemExit("Every example must have review_status=reviewed before training.")
-    if not set(df["source_type"]).issubset({"synthetic", "deidentified_authorized"}):
-        raise SystemExit("source_type must be synthetic or deidentified_authorized.")
+    if not (df["review_status"] == "reviewed").all() and not args.allow_draft:
+        raise SystemExit("Some labels are not review_status=reviewed. Re-run with --allow-draft for a prototype model.")
 
     df["labels"] = df["gold_codes"].map(parse_codes)
-    used_codes = {code for labels in df["labels"] for code in labels}
-    unknown = used_codes - allowed_codes
+    unknown = {c for labels in df["labels"] for c in labels} - set(allowed)
     if unknown:
-        raise SystemExit(f"Labels not in the approved catalogue: {', '.join(sorted(unknown))}")
+        raise SystemExit(f"Labels not in the tier-1 catalogue: {', '.join(sorted(unknown))}")
+    df["normalised"] = df["note_text"].map(normalise)
 
-    train_df = df[df["split"] == "train"]
-    val_df = df[df["split"] == "validation"]
-    test_df = df[df["split"] == "test"]
-    if len(train_df) < 20:
-        raise SystemExit("Need more reviewed training rows before fitting even a baseline (minimum 20).")
-    if val_df.empty or test_df.empty:
-        raise SystemExit("Validation and test splits must each contain at least one row.")
+    mlb = MultiLabelBinarizer(classes=allowed)
+    parts = {s: df[df["split"] == s] for s in VALID_SPLITS}
+    y = {s: mlb.fit_transform(parts[s]["labels"]) for s in VALID_SPLITS}
 
-    # Every target code needs positive and negative training examples; otherwise its
-    # classifier cannot learn a meaningful distinction.
-    train_labels = [set(labels) for labels in train_df["labels"]]
-    sparse_codes = []
-    for code in sorted(allowed_codes):
-        positives = sum(code in labels for labels in train_labels)
-        negatives = len(train_labels) - positives
-        if positives < 2 or negatives < 2:
-            sparse_codes.append(f"{code} (positive={positives}, negative={negatives})")
-    if sparse_codes:
-        raise SystemExit("Insufficient train examples per code; need at least 2 positive and 2 negative notes per code: " + ", ".join(sparse_codes))
+    train_support = y["train"].sum(axis=0)
+    sparse = [code for code, n in zip(allowed, train_support) if n < 2]
+    if sparse:
+        raise SystemExit(f"Codes with <2 training positives: {', '.join(sparse)}")
 
-    mlb = MultiLabelBinarizer(classes=sorted(allowed_codes))
-    y_train = mlb.fit_transform(train_df["labels"])
-    y_val = mlb.transform(val_df["labels"])
-    y_test = mlb.transform(test_df["labels"])
+    # Model selection on validation only: regularisation strength and one global threshold.
+    best = None
+    for c in C_GRID:
+        model = build_model(c).fit(parts["train"]["normalised"], y["train"])
+        proba = model.predict_proba(parts["validation"]["normalised"])
+        for t in THRESHOLDS:
+            f1 = f1_score(y["validation"], (proba >= t).astype(int), average="micro", zero_division=0)
+            if best is None or f1 > best[0]:
+                best = (f1, c, float(t), model)
+        print(f"C={c:<5} best validation micro-F1 so far {best[0]:.3f} (C={best[1]}, threshold={best[2]})")
+    _, best_c, threshold, model = best
 
-    features = FeatureUnion([
-        ("word", TfidfVectorizer(analyzer="word", ngram_range=(1, 2), lowercase=True, strip_accents=None, min_df=1, sublinear_tf=True)),
-        ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 5), lowercase=True, min_df=1, sublinear_tf=True)),
-    ])
-    model = Pipeline([
-        ("features", features),
-        ("classifier", OneVsRestClassifier(LinearSVC(class_weight="balanced"))),
-    ])
-    model.fit(train_df["note_text"], y_train)
+    # Hybrid = rule matches plus ML predictions above a second (stricter) threshold, also tuned on validation.
+    entries = load_lexicon()
+    matcher = LexiconMatcher(entries)
+    val_rules = mlb.transform([sorted(matcher.codes(t)) for t in parts["validation"]["note_text"]])
+    val_proba = model.predict_proba(parts["validation"]["normalised"])
+    hybrid_threshold = max(
+        (float(t) for t in np.round(np.arange(0.5, 1.0, 0.025), 3)),
+        key=lambda t: f1_score(y["validation"], np.maximum(val_rules, (val_proba >= t).astype(int)), average="micro", zero_division=0),
+    )
+    print(f"hybrid ML threshold (validation): {hybrid_threshold}")
 
-    def report(name: str, x: pd.Series, y_true) -> None:
-        pred = model.predict(x)
-        print(f"\n== {name} ({len(x)} notes) ==")
-        print(f"micro precision: {precision_score(y_true, pred, average='micro', zero_division=0):.3f}")
-        print(f"micro recall:    {recall_score(y_true, pred, average='micro', zero_division=0):.3f}")
-        print(f"micro F1:        {f1_score(y_true, pred, average='micro', zero_division=0):.3f}")
-        print(f"macro F1:        {f1_score(y_true, pred, average='macro', zero_division=0):.3f}")
-        print(f"exact match:     {accuracy_score(y_true, pred):.3f}")
-        print(classification_report(y_true, pred, target_names=mlb.classes_, zero_division=0))
+    # Evaluate once on the held-out test split.
+    test = parts["test"]
+    test_proba = model.predict_proba(test["normalised"])
+    ml_pred = (test_proba >= threshold).astype(int)
+    naive_pred = mlb.transform([sorted(naive_keyword_codes(t, entries)) for t in test["note_text"]])
+    rules_pred = mlb.transform([sorted(matcher.codes(t)) for t in test["note_text"]])
+    hybrid_pred = np.maximum(rules_pred, (test_proba >= hybrid_threshold).astype(int))
 
-    report("validation", val_df["note_text"], y_val)
-    report("test (held out)", test_df["note_text"], y_test)
+    results = {
+        "naive_keyword_baseline": metrics(y["test"], naive_pred, allowed),
+        "catatkod_rules": metrics(y["test"], rules_pred, allowed),
+        "catatkod_ml": metrics(y["test"], ml_pred, allowed),
+        "catatkod_ml_plus_rules": metrics(y["test"], hybrid_pred, allowed),
+    }
+    print(f"\n== Held-out test: {len(test)} independently written notes, {results['catatkod_ml']['codes_in_split']} codes present ==")
+    print(f"{'system':<26}{'microP':>8}{'microR':>8}{'microF1':>9}{'macroF1':>9}{'exact':>8}")
+    for name, m in results.items():
+        print(f"{name:<26}{m['micro_precision']:>8.3f}{m['micro_recall']:>8.3f}{m['micro_f1']:>9.3f}{m['macro_f1_present_codes']:>9.3f}{m['exact_match']:>8.3f}")
+
+    # Error listing for review (ML+rules system).
+    errors = []
+    for i, (_, row) in enumerate(test.iterrows()):
+        gold, pred = set(row["labels"]), {allowed[j] for j in np.flatnonzero(hybrid_pred[i])}
+        if gold != pred:
+            errors.append({"note_id": row["note_id"], "note_text": row["note_text"], "gold": ";".join(sorted(gold)),
+                           "missed": ";".join(sorted(gold - pred)), "extra": ";".join(sorted(pred - gold))})
 
     ARTIFACTS.mkdir(parents=True, exist_ok=True)
-    model_path = ARTIFACTS / "icd10_tfidf_classifier.joblib"
-    joblib.dump({"model": model, "classes": list(mlb.classes_), "catalogue": catalogue}, model_path)
+    joblib.dump({"model": model, "classes": allowed, "threshold": threshold, "hybrid_threshold": hybrid_threshold}, ARTIFACTS / "icd11_tier1_classifier.joblib")
+    pd.DataFrame(errors).to_csv(ARTIFACTS / "test_errors.csv", index=False)
     metadata = {
-        "model_type": "word+character TF-IDF + OneVsRest LinearSVC",
-        "training_rows": len(train_df),
-        "validation_rows": len(val_df),
-        "test_rows": len(test_df),
-        "catalogue_codes": sorted(allowed_codes),
-        "warning": "Research prototype. Review test errors and validate clinically before use. LinearSVC scores are not calibrated probabilities.",
+        "model_type": "normalise() + word/char TF-IDF + OneVsRest LogisticRegression",
+        "C": best_c, "threshold": threshold, "hybrid_threshold": hybrid_threshold, "n_codes": len(allowed),
+        "rows": {s: len(parts[s]) for s in VALID_SPLITS},
+        "test_results": results,
+        "labels_reviewed": bool((df["review_status"] == "reviewed").all()),
+        "warning": "Research prototype trained on synthetic, unreviewed labels. Not clinically validated.",
     }
-    (ARTIFACTS / "metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"\nSaved model: {model_path}")
-    print("Do not interpret model scores as calibrated probabilities or clinical certainty.")
+    (ARTIFACTS / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
+    print(f"\nSaved model + metadata to {ARTIFACTS.relative_to(ROOT.parent)}/ ({len(errors)} test notes with errors -> test_errors.csv)")
 
 
 if __name__ == "__main__":

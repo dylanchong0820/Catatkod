@@ -1,0 +1,136 @@
+note_id,note_text,gold_codes,source
+HW001,"pt 54thn, hx DM HPT on meds. dtg utk FU. takde komplen. BP 150/90",5A11;BA00.Z,handwritten
+HW002,"demam 2 hari, sakit sendi, ruam merah kat badan. NS1 +ve, denggi positif",MG26;ME82;ME66.6Z;1D2Z,handwritten
+HW003,"?denggi. demam 3 ari, sakit kepala blkg mata, takde muntah",MG26;MB4D,handwritten
+HW004,"budak 5thn, cirit 5x sejak pagi, muntah 2x, nampak lemah badan. imp: AGE w mild dehidrasi",ME05.1;MD90.1;MG22;1A40.Z;5C70.0,handwritten
+HW005,"c/o pedih kencing n kerap kencing 2 hari. no fever. UFEME nitrite +. dx UTI",MF50.7;MF50.0;GC08.Z,handwritten
+HW006,"batuk berkahak 1 minggu, demam on off, sesak nafas sikit. CXR consolidation kanan bawah. ?pneumonia",MD12;MG26;MD11.5,handwritten
+HW007,"imp: pneumonia. batuk n demam 5 hari, crepitations R base",CA40.Z;MD12;MG26,handwritten
+HW008,"known asthmatic, semput sejak malam tadi, wheeze ++. tak demam",CA23;MD11.5;MD11.C,handwritten
+HW009,"pt lelah dah lama, datang sebab nafas berbunyi lepas hujan",CA23;MD11.C,handwritten
+HW010,"smoker 30 pack yr, copd, batuk kronik n sesak bila jalan jauh",QE13;CA22.Z;MD12;MD11.5,handwritten
+HW011,"hidung berair, bersin2, tekak gatal sikit 2 hari. no SOB",CA00,handwritten
+HW012,"selsema n batuk sikit 3 ari. imp URTI",CA00;MD12;CA07.0,handwritten
+HW013,"tekak sakit gile, tonsil bengkak ada nanah, demam 38.5",MD36.0;CA03.Z;MG26,handwritten
+HW014,"sakit tekak 2 hari, tekak merah, tiada demam",MD36.0;CA02.Z,handwritten
+HW015,"resdung teruk, hidung tersumbat, sakit kat dahi",CA01;CA00,handwritten
+HW016,"alergi hidung, bersin2 waktu pagi setiap hari",CA08.0Z,handwritten
+HW017,"kayap kat pinggang kiri, pedih n melepuh",1E91.Z,handwritten
+HW018,"anak cacar air, bintik merah berair satu badan, gatal",1E90.Z;ME66.6Z;EC90.Z,handwritten
+HW019,"kudis buta, gatal teruk waktu malam, adik pun sama",1G04.Z;EC90.Z,handwritten
+HW020,"kurap kat celah peha, gatal, dah 2 minggu",1F28.Z;EC90.Z,handwritten
+HW021,"biduran naik lepas makan udang, takde sesak nafas, takde bengkak bibir",EB00.Z,handwritten
+HW022,"ekzema dari kecik, kulit kering n gatal kat lipatan siku",EA80.Z;EC90.Z,handwritten
+HW023,jerawat batu kat muka dah 3 bulan,ED80.Z,handwritten
+HW024,"luka kat kaki kanan merah, panas, merebak. imp cellulitis",1B70.Z,handwritten
+HW025,"kanak2 ada luka bernanah kat bibir n hidung, impetigo",1B72.Z,handwritten
+HW026,"telinga kiri sakit n keluar nanah lepas selsema. AOM",AB70.2;AA90;CA00,handwritten
+HW027,"lepas berenang telinga sakit, gatal. otitis externa",AB70.2;AA3Z;EC90.Z,handwritten
+HW028,"mata merah berair, bertahi pagi2, kawan sekelas pun kena",MC15;9A60.Z,handwritten
+HW029,"gigi berlubang sakit sejak 3 hari, susah makan",DA08.0,handwritten
+HW030,"kaki terseliuh main futsal semalam, buku lali bengkak",ND14.7Z;MG29.01,handwritten
+HW031,"hx gout, ibu jari kaki kanan merah bengkak sakit sejak pagi",FA25,handwritten
+HW032,"OA lutut both, sakit bila naik tangga, nak ubat tahan sakit",FA01.Z,handwritten
+HW033,"frozen shoulder kiri, susah angkat tangan, dah 2 bulan",FB53.0,handwritten
+HW034,"tumit sakit waktu pagi lepas bangun, plantar fasciitis",FB40.1,handwritten
+HW035,"tangan kebas n mencucuk2 waktu malam, ?carpal tunnel",MB40.Z,handwritten
+HW036,"carpal tunnel kanan, tangan kebas sebab kerja taip",8C10.0;MB40.Z,handwritten
+HW037,sakit pinggang menjalar ke kaki kiri lepas angkat beg beras,ME84.3;ME84.2Z,handwritten
+HW038,"sakit kepala sebelah berdenyut, loya, silau cahaya. hx migrain",8A80.Z;MB4D;MD90.0,handwritten
+HW039,"pening berpusing bila toleh kepala, loya, takde muntah",MB48.Z;MB48.0Z;MD90.0,handwritten
+HW040,"pengsan masa beratur kat pasar, sedar balik dlm 1 minit",MG45.Z,handwritten
+HW041,"muka senget sebelah kanan bangun tidur, mata tak boleh tutup. imp: bell palsy",8B88.0,handwritten
+HW042,"hx strok 2019, lemah sebelah kiri, on aspirin",8B11,handwritten
+HW043,tiba2 cakap pelat n tangan kanan lemah 1 jam lepas,MA80.2Z,handwritten
+HW044,"IHD, dah buat stent, sakit dada bila jalan laju",BA52.Z;MD30.Z,handwritten
+HW045,"CCF, kaki bengkak bertambah, sesak nafas bila baring",BD10;MG29.01;MD11.5,handwritten
+HW046,"jantung berdebar laju, tangan terketar, berat turun 5kg. ?hyperthyroid",MC81.2;MG43.5,handwritten
+HW047,"hipotiroid on thyroxine, letih n berat naik",5A00.Z;MG22,handwritten
+HW048,"known thyrotoxicosis, default ubat 3 bulan",5A02.Z;QC49,handwritten
+HW049,"CKD stage 3, kencing berbuih, kaki sembab",GB61.Z;MF96.Z;MG29.01,handwritten
+HW050,"batu karang kiri, sakit pinggang teruk n air kencing merah",GB70.0Z;ME84.2Z;MF50.4Z,handwritten
+HW051,"fatty liver dari scan, kolesterol tinggi, obes",DB92.Z;5C80.0Z;5B81.Z,handwritten
+HW052,"dyslipidaemia on statin, takde simptom",5C80.2,handwritten
+HW053,"hep b carrier, datang utk FU LFT",1E51.0Z,handwritten
+HW054,"PTB on treatment bulan ke 2, batuk dah kurang",1B10.Z;MD12,handwritten
+HW055,"batuk lebih 2 minggu, batuk ada darah, berpeluh malam, berat turun. r/o TB",MD12;MD22;ME66.5;MG43.5,handwritten
+HW056,"positif covid RTK, demam, sakit tekak, hilang deria bau",RA01;MG26;MD36.0,handwritten
+HW057,"ILI, demam tinggi, sakit otot satu badan, batuk",1E32;MG26;FB56.2;MD12,handwritten
+HW058,"imp acute bronchitis. batuk berkahak 10 hari, no fever",CA42.Z;MD12,handwritten
+HW059,buasir berdarah bila berak keras,DB60.Z,handwritten
+HW060,"sembelit seminggu, perut kembung, ada buasir",ME05.0;ME01;DB60.Z,handwritten
+HW061,"gastrik datang lagi, pedih ulu hati lepas makan pedas",DA42.Z;MD95,handwritten
+HW062,"GERD, asid naik ke tekak waktu malam, batuk kering",DA22.Z;MD12,handwritten
+HW063,"ulser perut dulu, skrg najis hitam 2 hari, pening",DA60.Z;ME24.A4;MB48.Z,handwritten
+HW064,"muntah darah 2x pagi ni, hx minum arak",ME24.A5,handwritten
+HW065,"mata kuning n kencing pekat macam teh, gatal badan",ME10.1;EC90.Z,handwritten
+HW066,"susah telan makanan pejal, rasa tersekat kat dada, berat turun",MD93;MG43.5,handwritten
+HW067,"anemia kekurangan zat besi, pucat, cepat penat",3A00.Z;MG22,handwritten
+HW068,"senggugut teruk hari pertama period, muntah sekali",GA34.3;MD90.1,handwritten
+HW069,"period tak datang 3 bulan, UPT negatif",GA20.0Z,handwritten
+HW070,"haid lebat 10 hari, pening n letih",GA22;MB48.Z;MG22,handwritten
+HW071,"DM, gula rendah pagi tadi, berpeluh n tangan terketar, lepas minum air manis ok",5A11;5A21.Z;ME66.5,handwritten
+HW072,"luka kaki kencing manis kat ibu jari kanan, berbau, dah 2 minggu",BD54;5A11,handwritten
+HW073,"DM 10 thn, mata kabur, retinopati diabetik on FU eye clinic",5A11;9B71.0Z,handwritten
+HW074,"T1DM since kecik, on insulin, datang sebab muntah n sakit perut",5A10;MD90.1;MD81.4,handwritten
+HW075,"perokok 20 batang sehari, nak berhenti merokok",QE13,handwritten
+HW076,"vape, batuk kering sebulan",QE13;MD12,handwritten
+HW077,"cemas, susah tidur, jantung berdebar sejak hilang kerja",MB24.3;7A0Z;MC81.2,handwritten
+HW078,"tak boleh tidur 2 minggu, fikir masalah keluarga",7A0Z,handwritten
+HW079,"terkencing bila batuk atau bersin, makcik 60thn",MF50.2Z,handwritten
+HW080,"badan bengkak satu badan, muka sembab pagi, kencing berbuih",MG29.1;MF96.Z,handwritten
+HW081,"hidung berdarah tak berhenti 20 minit, hx HPT",MD20;BA00.Z,handwritten
+HW082,"batuk ada darah sikit, demam malam",MD22;MG26,handwritten
+HW083,"suara serak dah sebulan, perokok",MA82.10;QE13,handwritten
+HW084,dada sakit masa tarik nafas dalam lepas jatuh motor,MD30.0,handwritten
+HW085,"dada rasa ketat menjalar ke lengan kiri, berpeluh banyak",MD30.Z;ME66.5,handwritten
+HW086,"kaki cramp tiap malam, takde bengkak",MB47.3,handwritten
+HW087,"sakit tangan kanan lepas jatuh, boleh gerak",FB56.4,handwritten
+HW088,"sengal badan n lenguh2 lepas kerja kebun",FB56.2,handwritten
+HW089,"tak lalu makan seminggu, mual, perut kembung",MG43.7;MD90.0;ME01,handwritten
+HW090,"anak tak nak minum, bibir kering, kurang kencing. cirit 6x",5C70.0;ME05.1,handwritten
+HW091,"kencing malam 4-5 kali, cepat haus, berat turun. gula rawak 18",MF50.0;MG43.0;MG43.5,handwritten
+HW092,air kencing banyak sangat n selalu dahaga,MF55;MG43.0,handwritten
+HW093,"kencing ada darah tanpa sakit, perokok lama",MF50.4Z;QE13,handwritten
+HW094,"pedih masa kencing, takde demam, takde sakit pinggang",MF50.7,handwritten
+HW095,"obes BMI 35, nak kurus, darah tinggi baru dx",5B81.Z;BA00.Z,handwritten
+HW096,"ckd, hpt, dm. FU biasa. kaki takde bengkak",GB61.Z;BA00.Z;5A11,handwritten
+HW097,"sakit perut kanan atas lepas makan berlemak, loya",MD81.4;MD90.0,handwritten
+HW098,cirit birit n muntah lepas makan nasi lemak kenduri. keracunan makanan,ME05.1;MD90.1;1A40.Z,handwritten
+HW099,"takde batuk, takde selsema, cuma demam 1 hari",MG26,handwritten
+HW100,"nafi sakit dada, nafi sesak nafas. datang ambil ubat darah tinggi",BA00.Z,handwritten
+HW101,"no fever, no cough, no SOB. hx asthma stable",CA23,handwritten
+HW102,"pt deny pedih kencing, mengadu kencing berbuih je",MF96.Z,handwritten
+HW103,"tiada muntah, tiada cirit. sakit perut bawah kiri 2 hari",MD81.4,handwritten
+HW104,"bukan sakit kepala, tapi pening macam nak pitam bila bangun",MB48.Z,handwritten
+HW105,?gastritis vs ?GERD. pedih ulu hati 1 minggu,MD95,handwritten
+HW106,"r/o dengue. demam 2 hari, badan sakit",MG26;FB56.2,handwritten
+HW107,"measles contact. anak demam, mata merah, ruam mula kat muka. imp campak",1F03;MG26;MC15;ME66.6Z,handwritten
+HW108,"pneumonia discharged last week, datang FU, batuk sikit lagi",CA40.Z;MD12,handwritten
+HW109,"sesak nafas tiba2 malam, kaki bengkak, hx heart failure",MD11.5;MG29.01;BD10,handwritten
+HW110,"gatal2 kulit lepas pakai sabun baru, ruam merah kat tangan",EC90.Z;ME66.6Z,handwritten
+HW111,"sakit telinga kanan 2 hari, demam sikit, budak 3 thn",AB70.2;MG26,handwritten
+HW112,"imp tonsilitis. sakit bila telan, demam",CA03.Z;MD36.0;MG26,handwritten
+HW113,"letih je, tidur cukup, makan ok",MG22,handwritten
+HW114,"pt mengadu sakit pinggang bawah dah 3 minggu, takde kebas kaki",ME84.2Z,handwritten
+HW115,"berat badan turun 8kg dalam 2 bulan tanpa diet, hilang selera makan",MG43.5;MG43.7,handwritten
+HW116,"darah tinggi tak terkawal, ubat tak makan sebab takut buah pinggang rosak",BA00.Z;QC49,handwritten
+HW117,"kencing manis, kolesterol tinggi, fatty liver. FU 3 bulan",5A11;5C80.0Z;DB92.Z,handwritten
+HW118,"lutut haus kiri kanan, bengkak sikit lepas jalan jauh",FA01.Z,handwritten
+HW119,"sakit dada, takde sesak, takde berpeluh. ECG normal",MD30.Z,handwritten
+HW120,"semput sikit bila naik bukit, takde batuk",MD11.5,handwritten
+HW121,"denggi positif, demam hari ke 4, muntah, sakit perut",1D2Z;MG26;MD90.1;MD81.4,handwritten
+HW122,"kanak2 cirit cair 3 hari, demam, nampak kering, imp gastroenteritis",ME05.1;MG26;1A40.Z,handwritten
+HW123,"BP 160/100 masa check, pt takde hx darah tinggi",,handwritten
+HW124,"mak cik tanya pasal vaksin, takde komplen",,handwritten
+HW125,"datang utk ambil MC, sihat",,handwritten
+HW126,"luka kecil kat jari kena pisau, dah cuci",,handwritten
+HW127,"ruam kat celah kaki, gatal, kulit merekah. ?tinea pedis",ME66.6Z;EC90.Z,handwritten
+HW128,"uri, batuk n selsema, takde demam",CA07.0;MD12;CA00,handwritten
+HW129,"influenza, demam n sakit badan",1E32;MG26;FB56.2,handwritten
+HW130,"kencing pedih n darah sikit, imp UTI",MF50.7;MF50.4Z;GC08.Z,handwritten
+HW131,"demam seram sejuk sejak semalam, menggigil",MG26;MG21,handwritten
+HW132,"kerap kencing waktu malam, aliran lemah, pakcik 70",MF50.0,handwritten
+HW133,"loya muntah sejak pagi, pening",MD90.0;MD90.1;MB48.Z,handwritten
+HW134,"susah nak lena, terjaga pukul 3 pagi",7A0Z,handwritten
+HW135,"sakit dada bila bernafas, demam, batuk",MD30.0;MG26;MD12,handwritten

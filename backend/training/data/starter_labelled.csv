@@ -1,0 +1,61 @@
+note_id,note_text,gold_codes,source
+CK001,kaki bengkak dah 3 ari,MG29.01,starter_csv
+CK002,dua2 kaki sembab sejak minggu lepas,MG29.01,starter_csv
+CK003,"nafas pendek bila naik tangga, rehat ok",MD11.5,starter_csv
+CK004,dada rasa ketat on off sejak smlm,MD30.Z,starter_csv
+CK005,"takde sakit dada, cuma cepat penat",MG22,starter_csv
+CK006,"batuk dah 2 minggu, kahak kuning",MD12,starter_csv
+CK007,batuk kering waktu malam je,MD12,starter_csv
+CK008,"demam datang pergi 3 hari, badan menggigil",MG26;MG21,starter_csv
+CK009,tak demam tapi tekak sakit bila telan,MD36.0,starter_csv
+CK010,nafas berbunyi wheeze lepas kemas rumah,MD11.C,starter_csv
+CK011,"kencing malam banyak kali, cepat haus",MF50.0;MG43.0,starter_csv
+CK012,"asyik kencing, tapi keluar sikit2",MF50.0,starter_csv
+CK013,pedih masa kencing sejak semalam,MF50.7,starter_csv
+CK014,air kencing berbuih kebelakangan ni,MF96.Z,starter_csv
+CK015,kencing ada darah sikit tadi,MF50.4Z,starter_csv
+CK016,"DM, ubat tak makan dah 2 minggu",5A11;QC49,starter_csv
+CK017,"ubat kencing manis habis, belum refill",5A11,starter_csv
+CK018,"darah tinggi, selalu lupa makan ubat",BA00.Z;QC49,starter_csv
+CK019,"BP tinggi masa check tadi, takde simptom",,starter_csv
+CK020,kepala pening bila bangun berdiri,MB48.Z,starter_csv
+CK021,"sakit kepala kuat sejak pagi, muntah sekali",MB4D;MD90.1,starter_csv
+CK022,tangan kiri kebas kejap lepas tu hilang,MB40.Z,starter_csv
+CK023,"muka senget tiba2, cakap tak jelas",MA80.2Z,starter_csv
+CK024,pening macam bilik berpusing bila pusing kepala,MB48.0Z,starter_csv
+CK025,sakit pinggang bawah sejak angkat barang,ME84.2Z,starter_csv
+CK026,"lutut sakit bila naik tangga, tak bengkak",ME82,starter_csv
+CK027,"bahu kanan sakit dah seminggu, susah angkat tangan",ME82,starter_csv
+CK028,"perut memulas lepas makan, cirit 3 kali",MD81.4;ME05.1,starter_csv
+CK029,sakit perut kanan bawah dari malam tadi,MD81.4,starter_csv
+CK030,"muntah 2 kali, tak lalu makan hari ni",MD90.1;MG43.7,starter_csv
+CK031,najis hitam sejak pagi,ME24.A4,starter_csv
+CK032,"sembelit dah 4 hari, perut kembung",ME05.0;ME01,starter_csv
+CK033,"cirit cair sejak semalam, takde darah",ME05.1,starter_csv
+CK034,pedih ulu hati bila baring lepas makan,MD95,starter_csv
+CK035,"kurang selera makan, berat turun tanpa diet",MG43.7;MG43.5,starter_csv
+CK036,"badan letih je 2 minggu, tidur tak cukup",MG22,starter_csv
+CK037,pucat dan cepat penat bila jalan,MG22,starter_csv
+CK038,ruam gatal naik lepas makan seafood,ME66.6Z;EC90.Z,starter_csv
+CK039,gatal satu badan waktu malam,EC90.Z,starter_csv
+CK040,"luka kaki lambat baik, ada kencing manis",5A11,starter_csv
+CK041,mata merah dan berair sejak pagi,MC15,starter_csv
+CK042,"sakit telinga kanan, dengar macam tersumbat",AB70.2,starter_csv
+CK043,"period lambat 2 minggu, rasa loya",MD90.0,starter_csv
+CK044,"haid banyak sangat bulan ni, pening",GA22;MB48.Z,starter_csv
+CK045,"takde demam, tak batuk, cuma sakit badan",FB56.2,starter_csv
+CK046,sakit dada bila tarik nafas dalam,MD30.0,starter_csv
+CK047,"kaki cramp waktu malam, selalu jadi",MB47.3,starter_csv
+CK048,"rasa gelisah, susah tidur sejak kerja shift",MB24.3;7A0Z,starter_csv
+CK049,"stress sangat, jantung berdebar bila fikir kerja",MC81.2,starter_csv
+CK050,sedih dan takde mood hampir tiap hari,,starter_csv
+CK051,luka kecil tapi merah makin merebak,,starter_csv
+CK052,"sakit tekak, suara serak 3 hari",MD36.0;MA82.10,starter_csv
+CK053,"gula selalu tinggi, cepat haus dan letih",MG43.0;MG22,starter_csv
+CK054,"menggigil bila lambat makan, lepas makan ok",,starter_csv
+CK055,"sakit kepala datang pergi, makan panadol lega",MB4D,starter_csv
+CK056,"perut sakit sejak semalam, tak muntah",MD81.4,starter_csv
+CK057,kaki kanan sakit dan bengkak sejak pagi,FB56.4;MG29.01,starter_csv
+CK058,"tak lalu makan, loya bila bau makanan",MG43.7;MD90.0,starter_csv
+CK059,selalu rasa haus walaupun dah minum,MG43.0,starter_csv
+CK060,"susah tidur, terjaga banyak kali malam",7A0Z,starter_csv

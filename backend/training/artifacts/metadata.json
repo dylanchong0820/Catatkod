@@ -1,0 +1,48 @@
+{
+  "model_type": "normalise() + word/char TF-IDF + OneVsRest LogisticRegression",
+  "C": 32.0,
+  "threshold": 0.8,
+  "hybrid_threshold": 0.95,
+  "n_codes": 121,
+  "rows": {
+    "test": 105,
+    "train": 3043,
+    "validation": 47
+  },
+  "test_results": {
+    "naive_keyword_baseline": {
+      "micro_precision": 0.8315789473684211,
+      "micro_recall": 0.9518072289156626,
+      "micro_f1": 0.8876404494382022,
+      "macro_f1_present_codes": 0.9100517368810052,
+      "exact_match": 0.7047619047619048,
+      "codes_in_split": 82
+    },
+    "catatkod_rules": {
+      "micro_precision": 0.9575757575757575,
+      "micro_recall": 0.9518072289156626,
+      "micro_f1": 0.9546827794561934,
+      "macro_f1_present_codes": 0.9474190563143217,
+      "exact_match": 0.8761904761904762,
+      "codes_in_split": 82
+    },
+    "catatkod_ml": {
+      "micro_precision": 0.9069767441860465,
+      "micro_recall": 0.9397590361445783,
+      "micro_f1": 0.9230769230769231,
+      "macro_f1_present_codes": 0.9501290489095369,
+      "exact_match": 0.7523809523809524,
+      "codes_in_split": 82
+    },
+    "catatkod_ml_plus_rules": {
+      "micro_precision": 0.9421965317919075,
+      "micro_recall": 0.9819277108433735,
+      "micro_f1": 0.9616519174041298,
+      "macro_f1_present_codes": 0.9711124361052624,
+      "exact_match": 0.8761904761904762,
+      "codes_in_split": 82
+    }
+  },
+  "labels_reviewed": false,
+  "warning": "Research prototype trained on synthetic, unreviewed labels. Not clinically validated."
+}

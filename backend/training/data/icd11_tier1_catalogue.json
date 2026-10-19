@@ -1,0 +1,1796 @@
+[
+  {
+    "code": "MG26",
+    "kind": "S",
+    "labelMs": "Demam",
+    "labelEn": "Fever of other or unknown origin",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "demam",
+      "panas badan",
+      "badan panas",
+      "demam panas",
+      "fever",
+      "deman",
+      "dmm"
+    ]
+  },
+  {
+    "code": "MG21",
+    "kind": "S",
+    "labelMs": "Menggigil",
+    "labelEn": "Chills",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "menggigil",
+      "seram sejuk",
+      "chills",
+      "rigors",
+      "badan menggigil"
+    ]
+  },
+  {
+    "code": "MD12",
+    "kind": "S",
+    "labelMs": "Batuk",
+    "labelEn": "Cough",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "batuk",
+      "batuk kering",
+      "batuk berkahak",
+      "cough",
+      "btk",
+      "batuk2"
+    ]
+  },
+  {
+    "code": "MD11.5",
+    "kind": "S",
+    "labelMs": "Sesak nafas",
+    "labelEn": "Dyspnoea",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sesak nafas",
+      "nafas pendek",
+      "susah bernafas",
+      "sob",
+      "tercungap",
+      "semput",
+      "nafas sesak"
+    ]
+  },
+  {
+    "code": "MD11.C",
+    "kind": "S",
+    "labelMs": "Nafas berdehit",
+    "labelEn": "Wheezing",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "wheeze",
+      "wheezing",
+      "nafas berbunyi",
+      "bunyi siul bila bernafas",
+      "nafas berdehit"
+    ]
+  },
+  {
+    "code": "MD22",
+    "kind": "S",
+    "labelMs": "Batuk berdarah",
+    "labelEn": "Haemoptysis",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "batuk berdarah",
+      "batuk ada darah",
+      "kahak berdarah",
+      "haemoptysis",
+      "kahak ada darah"
+    ]
+  },
+  {
+    "code": "MD30.Z",
+    "kind": "S",
+    "labelMs": "Sakit dada",
+    "labelEn": "Chest pain, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit dada",
+      "dada sakit",
+      "dada rasa ketat",
+      "chest pain",
+      "dada rasa berat",
+      "dada sesak"
+    ]
+  },
+  {
+    "code": "MD30.0",
+    "kind": "S",
+    "labelMs": "Sakit dada bila bernafas",
+    "labelEn": "Chest pain on breathing",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit dada bila tarik nafas",
+      "dada sakit masa tarik nafas dalam",
+      "pleuritic chest pain",
+      "dada sakit bila bernafas"
+    ]
+  },
+  {
+    "code": "MD36.0",
+    "kind": "S",
+    "labelMs": "Sakit tekak",
+    "labelEn": "Pain in throat",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit tekak",
+      "tekak sakit",
+      "tekak perit",
+      "sakit bila telan",
+      "sore throat",
+      "tekak pedih"
+    ]
+  },
+  {
+    "code": "MA82.10",
+    "kind": "S",
+    "labelMs": "Suara serak",
+    "labelEn": "Hoarseness",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "suara serak",
+      "suara garau",
+      "hoarse voice",
+      "suara hilang",
+      "suara pecah"
+    ]
+  },
+  {
+    "code": "MD20",
+    "kind": "S",
+    "labelMs": "Hidung berdarah",
+    "labelEn": "Epistaxis",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "hidung berdarah",
+      "darah keluar hidung",
+      "epistaxis",
+      "nosebleed",
+      "berdarah hidung"
+    ]
+  },
+  {
+    "code": "MB4D",
+    "kind": "S",
+    "labelMs": "Sakit kepala",
+    "labelEn": "Headache, not elsewhere classified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit kepala",
+      "kepala sakit",
+      "kepala berdenyut",
+      "headache",
+      "pening kepala",
+      "kepala berat"
+    ]
+  },
+  {
+    "code": "MB48.Z",
+    "kind": "S",
+    "labelMs": "Pening",
+    "labelEn": "Dizziness or giddiness, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "pening",
+      "rasa nak pitam",
+      "kepala ringan",
+      "dizzy",
+      "dizziness",
+      "pening lalat"
+    ]
+  },
+  {
+    "code": "MB48.0Z",
+    "kind": "S",
+    "labelMs": "Vertigo",
+    "labelEn": "Vertigo, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "bilik berpusing",
+      "rasa berpusing",
+      "vertigo",
+      "dunia berputar",
+      "macam bilik pusing"
+    ]
+  },
+  {
+    "code": "MG45.Z",
+    "kind": "S",
+    "labelMs": "Pengsan",
+    "labelEn": "Syncope or collapse, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "pengsan",
+      "jatuh pengsan",
+      "syncope",
+      "tak sedarkan diri sekejap",
+      "pitam sampai jatuh"
+    ]
+  },
+  {
+    "code": "MD90.0",
+    "kind": "S",
+    "labelMs": "Loya",
+    "labelEn": "Nausea",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "loya",
+      "mual",
+      "rasa nak muntah",
+      "nausea",
+      "mual2",
+      "loya tekak"
+    ]
+  },
+  {
+    "code": "MD90.1",
+    "kind": "S",
+    "labelMs": "Muntah",
+    "labelEn": "Vomiting",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "muntah",
+      "muntah2",
+      "vomit",
+      "vomiting",
+      "termuntah"
+    ]
+  },
+  {
+    "code": "ME05.1",
+    "kind": "S",
+    "labelMs": "Cirit-birit",
+    "labelEn": "Diarrhoea",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "cirit",
+      "cirit birit",
+      "berak cair",
+      "najis cair",
+      "diarrhoea",
+      "diarrhea",
+      "buang air besar cair"
+    ]
+  },
+  {
+    "code": "ME05.0",
+    "kind": "S",
+    "labelMs": "Sembelit",
+    "labelEn": "Constipation",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sembelit",
+      "susah berak",
+      "susah buang air besar",
+      "constipation",
+      "sembelit teruk"
+    ]
+  },
+  {
+    "code": "MD81.4",
+    "kind": "S",
+    "labelMs": "Sakit perut",
+    "labelEn": "Other and unspecified abdominal pain",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit perut",
+      "perut sakit",
+      "perut memulas",
+      "senak perut",
+      "abdominal pain",
+      "abd pain",
+      "perut pedih"
+    ]
+  },
+  {
+    "code": "MD95",
+    "kind": "S",
+    "labelMs": "Pedih ulu hati",
+    "labelEn": "Heartburn",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "pedih ulu hati",
+      "ulu hati pedih",
+      "heartburn",
+      "pedih hulu hati",
+      "ulu hati rasa terbakar"
+    ]
+  },
+  {
+    "code": "ME01",
+    "kind": "S",
+    "labelMs": "Perut kembung",
+    "labelEn": "Abdominal distension",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "perut kembung",
+      "kembung perut",
+      "bloating",
+      "perut rasa penuh angin",
+      "perut masuk angin"
+    ]
+  },
+  {
+    "code": "ME24.A4",
+    "kind": "S",
+    "labelMs": "Najis hitam",
+    "labelEn": "Melaena",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "najis hitam",
+      "berak hitam",
+      "tahi hitam",
+      "melaena",
+      "malena"
+    ]
+  },
+  {
+    "code": "ME24.A5",
+    "kind": "S",
+    "labelMs": "Muntah darah",
+    "labelEn": "Haematemesis",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "muntah darah",
+      "muntah ada darah",
+      "haematemesis",
+      "hematemesis"
+    ]
+  },
+  {
+    "code": "MD93",
+    "kind": "S",
+    "labelMs": "Susah menelan",
+    "labelEn": "Dysphagia",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "susah telan",
+      "susah nak menelan",
+      "makanan tersekat",
+      "dysphagia",
+      "payah nak telan"
+    ]
+  },
+  {
+    "code": "ME10.1",
+    "kind": "S",
+    "labelMs": "Kuning",
+    "labelEn": "Unspecified jaundice",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "mata kuning",
+      "kulit kuning",
+      "badan kuning",
+      "jaundice",
+      "kekuningan"
+    ]
+  },
+  {
+    "code": "MF50.7",
+    "kind": "S",
+    "labelMs": "Pedih kencing",
+    "labelEn": "Dysuria",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "pedih kencing",
+      "sakit masa kencing",
+      "kencing pedih",
+      "kencing rasa panas",
+      "dysuria",
+      "burning micturition"
+    ]
+  },
+  {
+    "code": "MF50.4Z",
+    "kind": "S",
+    "labelMs": "Kencing berdarah",
+    "labelEn": "Haematuria, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "kencing berdarah",
+      "kencing ada darah",
+      "air kencing merah",
+      "haematuria",
+      "hematuria"
+    ]
+  },
+  {
+    "code": "MF50.0",
+    "kind": "S",
+    "labelMs": "Kerap kencing",
+    "labelEn": "Frequent micturition",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "kerap kencing",
+      "asyik kencing",
+      "selalu kencing",
+      "kencing banyak kali",
+      "urinary frequency",
+      "kencing malam banyak kali"
+    ]
+  },
+  {
+    "code": "MF55",
+    "kind": "S",
+    "labelMs": "Banyak kencing",
+    "labelEn": "Polyuria",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "banyak kencing",
+      "polyuria",
+      "air kencing banyak sangat",
+      "kencing banyak sangat"
+    ]
+  },
+  {
+    "code": "MF50.2Z",
+    "kind": "S",
+    "labelMs": "Tak tahan kencing",
+    "labelEn": "Urinary incontinence, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "terkencing",
+      "tak dapat tahan kencing",
+      "kencing terlepas",
+      "urinary incontinence",
+      "tak sempat ke tandas"
+    ]
+  },
+  {
+    "code": "MF96.Z",
+    "kind": "S",
+    "labelMs": "Kencing berbuih",
+    "labelEn": "Proteinuria, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "kencing berbuih",
+      "air kencing berbuih",
+      "buih dalam kencing",
+      "proteinuria",
+      "protein dalam urin"
+    ]
+  },
+  {
+    "code": "MG29.01",
+    "kind": "S",
+    "labelMs": "Bengkak kaki",
+    "labelEn": "Oedema of lower limbs",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "kaki bengkak",
+      "bengkak kaki",
+      "kaki sembab",
+      "buku lali bengkak",
+      "pedal oedema",
+      "leg swelling"
+    ]
+  },
+  {
+    "code": "MG29.1",
+    "kind": "S",
+    "labelMs": "Bengkak seluruh badan",
+    "labelEn": "Generalised oedema",
+    "chapter": "21",
+    "isLeaf": false,
+    "phrases": [
+      "badan bengkak",
+      "bengkak satu badan",
+      "muka dan kaki bengkak",
+      "generalised oedema",
+      "seluruh badan sembab"
+    ]
+  },
+  {
+    "code": "MG43.0",
+    "kind": "S",
+    "labelMs": "Selalu dahaga",
+    "labelEn": "Polydipsia",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "cepat haus",
+      "selalu haus",
+      "dahaga",
+      "asyik haus",
+      "polydipsia",
+      "rasa haus"
+    ]
+  },
+  {
+    "code": "MG43.7",
+    "kind": "S",
+    "labelMs": "Hilang selera makan",
+    "labelEn": "Anorexia",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "tak lalu makan",
+      "hilang selera makan",
+      "kurang selera makan",
+      "tak selera makan",
+      "poor appetite",
+      "selera makan kurang"
+    ]
+  },
+  {
+    "code": "MG43.5",
+    "kind": "S",
+    "labelMs": "Berat badan turun",
+    "labelEn": "Excessive weight loss",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "berat turun",
+      "berat badan turun",
+      "kurus mendadak",
+      "weight loss",
+      "susut berat badan"
+    ]
+  },
+  {
+    "code": "MG22",
+    "kind": "S",
+    "labelMs": "Letih",
+    "labelEn": "Fatigue",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "letih",
+      "penat",
+      "cepat penat",
+      "lemah badan",
+      "lesu",
+      "fatigue",
+      "tak bermaya"
+    ]
+  },
+  {
+    "code": "FB56.2",
+    "kind": "S",
+    "labelMs": "Sakit otot",
+    "labelEn": "Myalgia",
+    "chapter": "15",
+    "isLeaf": true,
+    "phrases": [
+      "sakit badan",
+      "sengal badan",
+      "sakit otot",
+      "lenguh badan",
+      "myalgia",
+      "sengal2 badan"
+    ]
+  },
+  {
+    "code": "ME84.2Z",
+    "kind": "S",
+    "labelMs": "Sakit pinggang",
+    "labelEn": "Low back pain, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit pinggang",
+      "pinggang sakit",
+      "sakit belakang bawah",
+      "lbp",
+      "low back pain"
+    ]
+  },
+  {
+    "code": "ME84.3",
+    "kind": "S",
+    "labelMs": "Sciatica",
+    "labelEn": "Sciatica",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit menjalar ke kaki",
+      "sakit pinggang turun ke kaki",
+      "sciatica",
+      "sakit menjalar dari punggung"
+    ]
+  },
+  {
+    "code": "ME82",
+    "kind": "S",
+    "labelMs": "Sakit sendi",
+    "labelEn": "Pain in joint",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "sakit sendi",
+      "sendi sakit",
+      "lutut sakit",
+      "sakit lutut",
+      "bahu sakit",
+      "joint pain",
+      "arthralgia"
+    ]
+  },
+  {
+    "code": "FB56.4",
+    "kind": "S",
+    "labelMs": "Sakit anggota",
+    "labelEn": "Pain in limb",
+    "chapter": "15",
+    "isLeaf": true,
+    "phrases": [
+      "sakit kaki",
+      "sakit tangan",
+      "tangan sakit",
+      "pain in limb",
+      "lengan sakit"
+    ]
+  },
+  {
+    "code": "MB47.3",
+    "kind": "S",
+    "labelMs": "Kejang otot",
+    "labelEn": "Cramp or spasm",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "kejang otot",
+      "cramp",
+      "kaki cramp",
+      "urat tegang",
+      "kekejangan otot"
+    ]
+  },
+  {
+    "code": "MB40.Z",
+    "kind": "S",
+    "labelMs": "Kebas",
+    "labelEn": "Sensation disturbance, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "kebas",
+      "tangan kebas",
+      "kaki kebas",
+      "numbness",
+      "rasa semut2",
+      "mencucuk2"
+    ]
+  },
+  {
+    "code": "EC90.Z",
+    "kind": "S",
+    "labelMs": "Gatal",
+    "labelEn": "Pruritus, unspecified",
+    "chapter": "14",
+    "isLeaf": true,
+    "phrases": [
+      "gatal",
+      "gatal2",
+      "kegatalan",
+      "itchy",
+      "pruritus",
+      "gatal badan"
+    ]
+  },
+  {
+    "code": "ME66.6Z",
+    "kind": "S",
+    "labelMs": "Ruam",
+    "labelEn": "Rash, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "ruam",
+      "ruam merah",
+      "bintik merah",
+      "rash",
+      "naik ruam"
+    ]
+  },
+  {
+    "code": "MC81.2",
+    "kind": "S",
+    "labelMs": "Berdebar",
+    "labelEn": "Palpitations",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "berdebar",
+      "jantung berdebar",
+      "dada berdebar",
+      "palpitation",
+      "jantung laju"
+    ]
+  },
+  {
+    "code": "MC15",
+    "kind": "S",
+    "labelMs": "Mata merah",
+    "labelEn": "Red eye",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "mata merah",
+      "red eye",
+      "mata kemerahan"
+    ]
+  },
+  {
+    "code": "AB70.2",
+    "kind": "S",
+    "labelMs": "Sakit telinga",
+    "labelEn": "Otalgia",
+    "chapter": "10",
+    "isLeaf": true,
+    "phrases": [
+      "sakit telinga",
+      "telinga sakit",
+      "otalgia",
+      "ear pain",
+      "telinga berdenyut"
+    ]
+  },
+  {
+    "code": "MB24.3",
+    "kind": "S",
+    "labelMs": "Cemas",
+    "labelEn": "Anxiety",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "cemas",
+      "gelisah",
+      "risau sangat",
+      "anxiety",
+      "rasa takut tak tentu pasal"
+    ]
+  },
+  {
+    "code": "MA80.2Z",
+    "kind": "S",
+    "labelMs": "Cakap tidak jelas",
+    "labelEn": "Dysarthria, unspecified",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "cakap tak jelas",
+      "pelat tiba2",
+      "slurred speech",
+      "dysarthria",
+      "percakapan tak jelas"
+    ]
+  },
+  {
+    "code": "5C70.0",
+    "kind": "S",
+    "labelMs": "Dehidrasi",
+    "labelEn": "Dehydration",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "dehidrasi",
+      "bibir kering",
+      "dehydrated",
+      "kurang air",
+      "kering tekak teruk"
+    ]
+  },
+  {
+    "code": "ME66.5",
+    "kind": "S",
+    "labelMs": "Berpeluh",
+    "labelEn": "Complaint of abnormal sweating",
+    "chapter": "21",
+    "isLeaf": true,
+    "phrases": [
+      "berpeluh banyak",
+      "peluh sejuk",
+      "berpeluh malam",
+      "excessive sweating",
+      "berpeluh2"
+    ]
+  },
+  {
+    "code": "7A0Z",
+    "kind": "S",
+    "labelMs": "Susah tidur",
+    "labelEn": "Insomnia disorders, unspecified",
+    "chapter": "07",
+    "isLeaf": true,
+    "phrases": [
+      "susah tidur",
+      "tak boleh tidur",
+      "insomnia",
+      "terjaga malam",
+      "susah nak lena"
+    ]
+  },
+  {
+    "code": "5A11",
+    "kind": "H",
+    "labelMs": "Diabetes mellitus jenis 2",
+    "labelEn": "Type 2 diabetes mellitus",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "kencing manis",
+      "diabetes",
+      "dm",
+      "t2dm",
+      "dm type 2",
+      "sakit gula",
+      "dm2"
+    ]
+  },
+  {
+    "code": "5A10",
+    "kind": "H",
+    "labelMs": "Diabetes mellitus jenis 1",
+    "labelEn": "Type 1 diabetes mellitus",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "t1dm",
+      "dm type 1",
+      "kencing manis jenis 1",
+      "diabetes jenis 1",
+      "type 1 diabetes"
+    ]
+  },
+  {
+    "code": "BA00.Z",
+    "kind": "H",
+    "labelMs": "Hipertensi primer",
+    "labelEn": "Essential hypertension, unspecified",
+    "chapter": "11",
+    "isLeaf": true,
+    "phrases": [
+      "darah tinggi",
+      "hipertensi",
+      "hpt",
+      "htn",
+      "tekanan darah tinggi",
+      "hypertension"
+    ]
+  },
+  {
+    "code": "5C80.0Z",
+    "kind": "H",
+    "labelMs": "Kolesterol tinggi",
+    "labelEn": "Hypercholesterolaemia, unspecified",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "kolesterol tinggi",
+      "high cholesterol",
+      "hypercholesterolaemia",
+      "kolestrol tinggi",
+      "chol tinggi"
+    ]
+  },
+  {
+    "code": "5C80.2",
+    "kind": "H",
+    "labelMs": "Hiperlipidemia campuran",
+    "labelEn": "Mixed hyperlipidaemia",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "dyslipidaemia",
+      "dyslipidemia",
+      "lemak darah tinggi",
+      "hyperlipidaemia",
+      "hld"
+    ]
+  },
+  {
+    "code": "5B81.Z",
+    "kind": "H",
+    "labelMs": "Obesiti",
+    "labelEn": "Obesity, unspecified",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "obes",
+      "obesiti",
+      "obesity",
+      "berat berlebihan",
+      "terlebih berat"
+    ]
+  },
+  {
+    "code": "GB61.Z",
+    "kind": "H",
+    "labelMs": "Penyakit buah pinggang kronik",
+    "labelEn": "Chronic kidney disease, stage unspecified",
+    "chapter": "16",
+    "isLeaf": true,
+    "phrases": [
+      "ckd",
+      "sakit buah pinggang kronik",
+      "buah pinggang lemah",
+      "chronic kidney disease",
+      "ginjal lemah"
+    ]
+  },
+  {
+    "code": "BA52.Z",
+    "kind": "H",
+    "labelMs": "Aterosklerosis koronari",
+    "labelEn": "Coronary atherosclerosis, unspecified site",
+    "chapter": "11",
+    "isLeaf": true,
+    "phrases": [
+      "ihd",
+      "cad",
+      "sakit jantung koronari",
+      "salur jantung tersumbat",
+      "ischaemic heart disease"
+    ]
+  },
+  {
+    "code": "BD10",
+    "kind": "H",
+    "labelMs": "Kegagalan jantung kongestif",
+    "labelEn": "Congestive heart failure",
+    "chapter": "11",
+    "isLeaf": true,
+    "phrases": [
+      "ccf",
+      "heart failure",
+      "jantung lemah",
+      "kegagalan jantung",
+      "chf"
+    ]
+  },
+  {
+    "code": "8B11",
+    "kind": "H",
+    "labelMs": "Strok iskemia",
+    "labelEn": "Cerebral ischaemic stroke",
+    "chapter": "08",
+    "isLeaf": false,
+    "phrases": [
+      "strok",
+      "stroke",
+      "angin ahmar",
+      "cva",
+      "pernah strok"
+    ]
+  },
+  {
+    "code": "CA23",
+    "kind": "H",
+    "labelMs": "Asma",
+    "labelEn": "Asthma",
+    "chapter": "12",
+    "isLeaf": false,
+    "phrases": [
+      "asma",
+      "athma",
+      "asthma",
+      "lelah",
+      "bronchial asthma"
+    ]
+  },
+  {
+    "code": "CA22.Z",
+    "kind": "H",
+    "labelMs": "COPD",
+    "labelEn": "Chronic obstructive pulmonary disease, unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "copd",
+      "chronic obstructive",
+      "paru2 tersumbat kronik",
+      "emphysema"
+    ]
+  },
+  {
+    "code": "FA25",
+    "kind": "H",
+    "labelMs": "Gout",
+    "labelEn": "Gout",
+    "chapter": "15",
+    "isLeaf": false,
+    "phrases": [
+      "gout",
+      "penyakit gout",
+      "serangan gout",
+      "asid urik naik sendi bengkak"
+    ]
+  },
+  {
+    "code": "FA01.Z",
+    "kind": "H",
+    "labelMs": "Osteoartritis lutut",
+    "labelEn": "Osteoarthritis of knee, unspecified",
+    "chapter": "15",
+    "isLeaf": true,
+    "phrases": [
+      "oa lutut",
+      "oa knee",
+      "osteoarthritis lutut",
+      "lutut haus",
+      "sendi lutut haus"
+    ]
+  },
+  {
+    "code": "DA22.Z",
+    "kind": "H",
+    "labelMs": "Refluks gastro-esofagus",
+    "labelEn": "Gastro-oesophageal reflux disease, unspecified",
+    "chapter": "13",
+    "isLeaf": true,
+    "phrases": [
+      "gerd",
+      "gastric reflux",
+      "asid naik",
+      "reflux",
+      "asid naik ke tekak"
+    ]
+  },
+  {
+    "code": "DA42.Z",
+    "kind": "H",
+    "labelMs": "Gastritis",
+    "labelEn": "Gastritis, unspecified",
+    "chapter": "13",
+    "isLeaf": true,
+    "phrases": [
+      "gastrik",
+      "gastritis",
+      "sakit gastrik",
+      "perut gastrik",
+      "gastrik datang"
+    ]
+  },
+  {
+    "code": "3A00.Z",
+    "kind": "H",
+    "labelMs": "Anemia kekurangan zat besi",
+    "labelEn": "Iron deficiency anaemia, unspecified",
+    "chapter": "03",
+    "isLeaf": true,
+    "phrases": [
+      "anemia kekurangan zat besi",
+      "ida",
+      "anemia zat besi",
+      "kurang zat besi",
+      "iron deficiency"
+    ]
+  },
+  {
+    "code": "5A00.Z",
+    "kind": "H",
+    "labelMs": "Hipotiroid",
+    "labelEn": "Hypothyroidism, unspecified",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "hypothyroid",
+      "tiroid kurang aktif",
+      "hipotiroid",
+      "hypothyroidism"
+    ]
+  },
+  {
+    "code": "5A02.Z",
+    "kind": "H",
+    "labelMs": "Tirotoksikosis",
+    "labelEn": "Thyrotoxicosis, unspecified",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "hyperthyroid",
+      "tiroid terlampau aktif",
+      "hipertiroid",
+      "thyrotoxicosis",
+      "thyrotoxic"
+    ]
+  },
+  {
+    "code": "DB92.Z",
+    "kind": "H",
+    "labelMs": "Hati berlemak",
+    "labelEn": "Non-alcoholic fatty liver disease, unspecified",
+    "chapter": "13",
+    "isLeaf": true,
+    "phrases": [
+      "fatty liver",
+      "hati berlemak",
+      "nafld",
+      "lemak hati"
+    ]
+  },
+  {
+    "code": "1E51.0Z",
+    "kind": "H",
+    "labelMs": "Hepatitis B kronik",
+    "labelEn": "Chronic hepatitis B, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "hep b",
+      "hepatitis b",
+      "hbv carrier",
+      "pembawa hepatitis b",
+      "hbsag positif"
+    ]
+  },
+  {
+    "code": "1B10.Z",
+    "kind": "H",
+    "labelMs": "Tibi paru-paru",
+    "labelEn": "Respiratory tuberculosis, without mention of bacteriological or histological confirmation",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "tibi",
+      "ptb",
+      "pulmonary tb",
+      "tuberculosis",
+      "tb paru"
+    ]
+  },
+  {
+    "code": "DB60.Z",
+    "kind": "H",
+    "labelMs": "Buasir",
+    "labelEn": "Haemorrhoids, unspecified",
+    "chapter": "13",
+    "isLeaf": true,
+    "phrases": [
+      "buasir",
+      "piles",
+      "haemorrhoid",
+      "buasir berdarah",
+      "hemorrhoids"
+    ]
+  },
+  {
+    "code": "GA34.3",
+    "kind": "S",
+    "labelMs": "Senggugut",
+    "labelEn": "Dysmenorrhoea",
+    "chapter": "16",
+    "isLeaf": true,
+    "phrases": [
+      "senggugut",
+      "sakit period",
+      "sakit haid",
+      "period pain",
+      "dysmenorrhoea"
+    ]
+  },
+  {
+    "code": "GA20.0Z",
+    "kind": "S",
+    "labelMs": "Amenorea",
+    "labelEn": "Amenorrhoea, unspecified",
+    "chapter": "16",
+    "isLeaf": true,
+    "phrases": [
+      "haid tak datang",
+      "period tak datang",
+      "amenorrhoea",
+      "tak datang bulan"
+    ]
+  },
+  {
+    "code": "GA22",
+    "kind": "S",
+    "labelMs": "Haid berlebihan",
+    "labelEn": "Excessive menstruation with irregular cycle",
+    "chapter": "16",
+    "isLeaf": true,
+    "phrases": [
+      "haid banyak",
+      "period banyak sangat",
+      "darah haid banyak",
+      "menorrhagia",
+      "haid lebat"
+    ]
+  },
+  {
+    "code": "QE13",
+    "kind": "H",
+    "labelMs": "Penggunaan tembakau",
+    "labelEn": "Tobacco use",
+    "chapter": "24",
+    "isLeaf": true,
+    "phrases": [
+      "merokok",
+      "hisap rokok",
+      "perokok",
+      "smoker",
+      "vape",
+      "smoking"
+    ]
+  },
+  {
+    "code": "QC49",
+    "kind": "H",
+    "labelMs": "Sejarah tidak patuh rawatan",
+    "labelEn": "Personal history of noncompliance with medical treatment or regimen",
+    "chapter": "24",
+    "isLeaf": true,
+    "phrases": [
+      "selalu lupa makan ubat",
+      "ubat tak makan",
+      "ponteng ubat",
+      "default ubat",
+      "poor compliance",
+      "tak ambil ubat"
+    ]
+  },
+  {
+    "code": "5A21.Z",
+    "kind": "D",
+    "labelMs": "Hipoglisemia (diabetes)",
+    "labelEn": "Hypoglycaemia in the context of diabetes, unspecified",
+    "chapter": "05",
+    "isLeaf": true,
+    "phrases": [
+      "hypo",
+      "gula rendah",
+      "hipoglisemia",
+      "gula jatuh",
+      "hypoglycaemia"
+    ]
+  },
+  {
+    "code": "BD54",
+    "kind": "H",
+    "labelMs": "Ulser kaki diabetik",
+    "labelEn": "Diabetic foot ulcer",
+    "chapter": "11",
+    "isLeaf": true,
+    "phrases": [
+      "luka kaki kencing manis",
+      "diabetic foot",
+      "dfu",
+      "diabetic foot ulcer",
+      "ulser kaki diabetik"
+    ]
+  },
+  {
+    "code": "9B71.0Z",
+    "kind": "H",
+    "labelMs": "Retinopati diabetik",
+    "labelEn": "Diabetic retinopathy, unspecified whether nonproliferative or proliferative",
+    "chapter": "09",
+    "isLeaf": true,
+    "phrases": [
+      "diabetic retinopathy",
+      "retinopati diabetik",
+      "mata rosak sebab kencing manis"
+    ]
+  },
+  {
+    "code": "GB70.0Z",
+    "kind": "H",
+    "labelMs": "Batu karang",
+    "labelEn": "Calculus of kidney, unspecified",
+    "chapter": "16",
+    "isLeaf": true,
+    "phrases": [
+      "batu karang",
+      "batu buah pinggang",
+      "kidney stone",
+      "renal calculi",
+      "renal stone"
+    ]
+  },
+  {
+    "code": "8A80.Z",
+    "kind": "H",
+    "labelMs": "Migrain",
+    "labelEn": "Migraine, unspecified",
+    "chapter": "08",
+    "isLeaf": true,
+    "phrases": [
+      "migrain",
+      "migraine",
+      "sakit kepala sebelah",
+      "serangan migrain"
+    ]
+  },
+  {
+    "code": "8B88.0",
+    "kind": "D",
+    "labelMs": "Bell palsy",
+    "labelEn": "Bell palsy",
+    "chapter": "08",
+    "isLeaf": true,
+    "phrases": [
+      "bell palsy",
+      "bells palsy",
+      "facial nerve palsy"
+    ]
+  },
+  {
+    "code": "8C10.0",
+    "kind": "H",
+    "labelMs": "Sindrom terowong karpal",
+    "labelEn": "Carpal tunnel syndrome",
+    "chapter": "08",
+    "isLeaf": true,
+    "phrases": [
+      "carpal tunnel",
+      "cts",
+      "sindrom terowong karpal"
+    ]
+  },
+  {
+    "code": "FB53.0",
+    "kind": "H",
+    "labelMs": "Bahu beku",
+    "labelEn": "Adhesive capsulitis of shoulder",
+    "chapter": "15",
+    "isLeaf": true,
+    "phrases": [
+      "frozen shoulder",
+      "bahu beku",
+      "adhesive capsulitis"
+    ]
+  },
+  {
+    "code": "FB40.1",
+    "kind": "H",
+    "labelMs": "Plantar fasciitis",
+    "labelEn": "Plantar fasciitis",
+    "chapter": "15",
+    "isLeaf": true,
+    "phrases": [
+      "plantar fasciitis",
+      "tumit sakit waktu pagi",
+      "sakit tapak kaki pagi"
+    ]
+  },
+  {
+    "code": "CA00",
+    "kind": "D",
+    "labelMs": "Selesema",
+    "labelEn": "Acute nasopharyngitis",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "selesema",
+      "selsema",
+      "hidung berair",
+      "hidung tersumbat",
+      "common cold",
+      "flu"
+    ]
+  },
+  {
+    "code": "CA02.Z",
+    "kind": "D",
+    "labelMs": "Faringitis akut",
+    "labelEn": "Acute pharyngitis, unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "faringitis",
+      "pharyngitis",
+      "tekak radang",
+      "tekak merah"
+    ]
+  },
+  {
+    "code": "CA03.Z",
+    "kind": "D",
+    "labelMs": "Tonsilitis akut",
+    "labelEn": "Acute tonsillitis, unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "tonsilitis",
+      "tonsillitis",
+      "tonsil bengkak",
+      "amandel bengkak"
+    ]
+  },
+  {
+    "code": "CA07.0",
+    "kind": "D",
+    "labelMs": "Jangkitan saluran pernafasan atas",
+    "labelEn": "Acute upper respiratory infection, site unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "urti",
+      "jangkitan saluran pernafasan atas",
+      "upper respiratory infection",
+      "uri"
+    ]
+  },
+  {
+    "code": "CA01",
+    "kind": "D",
+    "labelMs": "Sinusitis akut",
+    "labelEn": "Acute sinusitis",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "sinusitis",
+      "resdung",
+      "sinus tersumbat",
+      "acute sinusitis"
+    ]
+  },
+  {
+    "code": "CA08.0Z",
+    "kind": "H",
+    "labelMs": "Rinitis alergi",
+    "labelEn": "Allergic rhinitis, unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "alergi hidung",
+      "allergic rhinitis",
+      "bersin2 waktu pagi",
+      "rhinitis alergi"
+    ]
+  },
+  {
+    "code": "CA42.Z",
+    "kind": "D",
+    "labelMs": "Bronkitis akut",
+    "labelEn": "Acute bronchitis, unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "bronkitis",
+      "bronchitis",
+      "acute bronchitis"
+    ]
+  },
+  {
+    "code": "CA40.Z",
+    "kind": "D",
+    "labelMs": "Pneumonia",
+    "labelEn": "Pneumonia, organism unspecified",
+    "chapter": "12",
+    "isLeaf": true,
+    "phrases": [
+      "radang paru2",
+      "pneumonia",
+      "jangkitan paru2",
+      "cap",
+      "paru2 berair"
+    ]
+  },
+  {
+    "code": "1E32",
+    "kind": "D",
+    "labelMs": "Influenza",
+    "labelEn": "Influenza, virus not identified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "influenza",
+      "ili",
+      "influenza like illness"
+    ]
+  },
+  {
+    "code": "RA01",
+    "kind": "D",
+    "labelMs": "COVID-19",
+    "labelEn": "COVID-19",
+    "chapter": "25",
+    "isLeaf": false,
+    "phrases": [
+      "covid",
+      "covid-19",
+      "positif covid",
+      "rtk positif",
+      "covid positif"
+    ]
+  },
+  {
+    "code": "1D2Z",
+    "kind": "D",
+    "labelMs": "Denggi",
+    "labelEn": "Dengue, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "denggi",
+      "dengue",
+      "demam denggi",
+      "ns1 positif",
+      "denggi positif"
+    ]
+  },
+  {
+    "code": "1A40.Z",
+    "kind": "D",
+    "labelMs": "Gastroenteritis",
+    "labelEn": "Infectious gastroenteritis or colitis without specification of infectious agent",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "gastroenteritis",
+      "age",
+      "jangkitan perut",
+      "gastro",
+      "keracunan makanan"
+    ]
+  },
+  {
+    "code": "GC08.Z",
+    "kind": "D",
+    "labelMs": "Jangkitan saluran kencing",
+    "labelEn": "Urinary tract infection, site and agent not specified",
+    "chapter": "16",
+    "isLeaf": true,
+    "phrases": [
+      "uti",
+      "jangkitan saluran kencing",
+      "jangkitan kuman kencing",
+      "urinary tract infection"
+    ]
+  },
+  {
+    "code": "1B70.Z",
+    "kind": "D",
+    "labelMs": "Selulitis",
+    "labelEn": "Bacterial cellulitis or lymphangitis due to unspecified bacterium",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "selulitis",
+      "cellulitis",
+      "jangkitan kulit merebak"
+    ]
+  },
+  {
+    "code": "1F28.Z",
+    "kind": "D",
+    "labelMs": "Kurap",
+    "labelEn": "Dermatophytosis, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "kurap",
+      "tinea",
+      "jangkitan kulat kulit",
+      "ringworm"
+    ]
+  },
+  {
+    "code": "1E91.Z",
+    "kind": "D",
+    "labelMs": "Kayap",
+    "labelEn": "Zoster, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "kayap",
+      "shingles",
+      "herpes zoster",
+      "zoster"
+    ]
+  },
+  {
+    "code": "1E90.Z",
+    "kind": "D",
+    "labelMs": "Cacar air",
+    "labelEn": "Varicella, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "cacar air",
+      "chickenpox",
+      "varicella",
+      "chicken pox"
+    ]
+  },
+  {
+    "code": "1F03",
+    "kind": "D",
+    "labelMs": "Campak",
+    "labelEn": "Measles",
+    "chapter": "01",
+    "isLeaf": false,
+    "phrases": [
+      "campak",
+      "measles",
+      "demam campak"
+    ]
+  },
+  {
+    "code": "1G04.Z",
+    "kind": "D",
+    "labelMs": "Kudis buta",
+    "labelEn": "Scabies, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "kudis buta",
+      "scabies",
+      "skabies"
+    ]
+  },
+  {
+    "code": "EA80.Z",
+    "kind": "H",
+    "labelMs": "Ekzema atopik",
+    "labelEn": "Atopic eczema, unspecified",
+    "chapter": "14",
+    "isLeaf": true,
+    "phrases": [
+      "ekzema",
+      "eczema",
+      "atopic dermatitis",
+      "atopic eczema"
+    ]
+  },
+  {
+    "code": "EB00.Z",
+    "kind": "D",
+    "labelMs": "Urtikaria",
+    "labelEn": "Spontaneous urticaria, unspecified",
+    "chapter": "14",
+    "isLeaf": true,
+    "phrases": [
+      "biduran",
+      "urtikaria",
+      "urticaria",
+      "hives",
+      "naik bintat"
+    ]
+  },
+  {
+    "code": "ED80.Z",
+    "kind": "H",
+    "labelMs": "Jerawat",
+    "labelEn": "Acne, unspecified",
+    "chapter": "14",
+    "isLeaf": true,
+    "phrases": [
+      "jerawat",
+      "acne",
+      "jerawat batu"
+    ]
+  },
+  {
+    "code": "1B72.Z",
+    "kind": "D",
+    "labelMs": "Impetigo",
+    "labelEn": "Impetigo, unspecified",
+    "chapter": "01",
+    "isLeaf": true,
+    "phrases": [
+      "impetigo",
+      "kudis berair",
+      "luka bernanah kanak2"
+    ]
+  },
+  {
+    "code": "AA90",
+    "kind": "D",
+    "labelMs": "Otitis media akut",
+    "labelEn": "Acute suppurative otitis media",
+    "chapter": "10",
+    "isLeaf": true,
+    "phrases": [
+      "jangkitan telinga tengah",
+      "otitis media",
+      "aom",
+      "telinga bernanah"
+    ]
+  },
+  {
+    "code": "AA3Z",
+    "kind": "D",
+    "labelMs": "Otitis eksterna",
+    "labelEn": "Otitis externa, unspecified",
+    "chapter": "10",
+    "isLeaf": true,
+    "phrases": [
+      "otitis externa",
+      "jangkitan saluran telinga luar",
+      "swimmer ear"
+    ]
+  },
+  {
+    "code": "9A60.Z",
+    "kind": "D",
+    "labelMs": "Konjunktivitis",
+    "labelEn": "Conjunctivitis, unspecified",
+    "chapter": "09",
+    "isLeaf": true,
+    "phrases": [
+      "konjunktivitis",
+      "conjunctivitis",
+      "pink eye",
+      "mata bertahi",
+      "sakit mata merah berjangkit"
+    ]
+  },
+  {
+    "code": "DA08.0",
+    "kind": "D",
+    "labelMs": "Karies gigi",
+    "labelEn": "Dental caries",
+    "chapter": "13",
+    "isLeaf": true,
+    "phrases": [
+      "gigi berlubang",
+      "gigi rosak",
+      "dental caries",
+      "karies gigi"
+    ]
+  },
+  {
+    "code": "ND14.7Z",
+    "kind": "D",
+    "labelMs": "Terseliuh buku lali",
+    "labelEn": "Strain or sprain of ankle, unspecified",
+    "chapter": "22",
+    "isLeaf": true,
+    "phrases": [
+      "terseliuh buku lali",
+      "kaki terseliuh",
+      "ankle sprain",
+      "buku lali terseliuh"
+    ]
+  },
+  {
+    "code": "DA60.Z",
+    "kind": "H",
+    "labelMs": "Ulser perut",
+    "labelEn": "Gastric ulcer, unspecified",
+    "chapter": "13",
+    "isLeaf": true,
+    "phrases": [
+      "ulser perut",
+      "gastric ulcer",
+      "ulser gastrik"
+    ]
+  }
+]

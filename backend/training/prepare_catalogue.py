@@ -1,44 +1,64 @@
-"""Validate a user-maintained plain-text ICD-10 subset and emit JSON."""
+"""Validate the tier-1 Malay lexicon against the WHO ICD-11 MMS catalogue and emit JSON.
+
+Checks: every code exists in the WHO export, no duplicate codes, no phrase shared by two
+codes (after normalisation), and every code has enough phrases to generate varied notes.
+Format validation is not clinical validation.
+"""
 from __future__ import annotations
 
 import json
-import re
+import sys
+from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "data" / "icd10_catalogue.txt"
-DEST = ROOT / "data" / "icd10_catalogue.json"
-CODE_RE = re.compile(r"^[A-Z][0-9]{2}(?:\.[A-Z0-9]{1,4})?$", re.I)
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from nlp.catalogue import DATA, load_lexicon, load_who  # noqa: E402
+from nlp.normalise import normalise  # noqa: E402
+
+DEST = DATA / "icd11_tier1_catalogue.json"
+MIN_PHRASES = 3
 
 
 def main() -> None:
-    if not SOURCE.exists():
-        raise SystemExit(f"Missing catalogue: {SOURCE}")
-    rows = []
-    seen = set()
-    for line_no, raw in enumerate(SOURCE.read_text(encoding="utf-8").splitlines(), 1):
-        line = raw.strip()
-        if not line or line.startswith("#"):
+    who = load_who()
+    entries = load_lexicon(who=who)
+    errors, warnings = [], []
+    seen: set[str] = set()
+    phrase_owner: dict[str, list[str]] = defaultdict(list)
+    for e in entries:
+        if e.code in seen:
+            errors.append(f"duplicate code {e.code}")
+        seen.add(e.code)
+        if e.code not in who:
+            errors.append(f"{e.code} is not a coded entry in the WHO ICD-11 MMS export")
             continue
-        parts = [part.strip() for part in line.split("|")]
-        if len(parts) not in (1, 2, 3):
-            raise SystemExit(f"Line {line_no}: expected CODE | English | Malay")
-        code = parts[0].upper()
-        if not CODE_RE.fullmatch(code):
-            raise SystemExit(f"Line {line_no}: invalid-looking ICD-10 code {code!r}")
-        if code in seen:
-            raise SystemExit(f"Line {line_no}: duplicate code {code}")
-        seen.add(code)
-        rows.append({
-            "code": code,
-            "labelEn": parts[1] if len(parts) >= 2 else "",
-            "labelMs": parts[2] if len(parts) >= 3 else "",
-        })
-    if not rows:
-        raise SystemExit("No codes found. Add one code per line to icd10_catalogue.txt.")
+        if not e.is_leaf:
+            unspecified = e.code + ("Z" if "." in e.code else ".Z")
+            hint = f" (consider {unspecified})" if unspecified in who else ""
+            warnings.append(f"{e.code} '{e.title_en}' has subcategories{hint}")
+        if len(e.phrases) < MIN_PHRASES:
+            warnings.append(f"{e.code} has only {len(e.phrases)} phrases")
+        for phrase in e.phrases:
+            phrase_owner[normalise(phrase)].append(e.code)
+    for phrase, owners in phrase_owner.items():
+        if len(set(owners)) > 1:
+            errors.append(f"phrase {phrase!r} is used by {', '.join(sorted(set(owners)))}")
+
+    for w in warnings:
+        print("warning:", w)
+    if errors:
+        for e in errors:
+            print("ERROR:", e, file=sys.stderr)
+        raise SystemExit(1)
+
+    rows = [{"code": e.code, "kind": e.kind, "labelMs": e.label_ms, "labelEn": e.title_en,
+             "chapter": e.chapter, "isLeaf": e.is_leaf, "phrases": e.phrases} for e in entries]
     DEST.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Validated {len(rows)} unique code entries -> {DEST}")
-    print("Note: format validation is not clinical validation. Verify codes/descriptions against your authoritative source.")
+    by_kind = defaultdict(int)
+    for e in entries:
+        by_kind[e.kind] += 1
+    print(f"Validated {len(rows)} tier-1 codes ({dict(by_kind)}) against {len(who)} WHO coded entries -> {DEST.name}")
+    print("Note: format validation is not clinical validation.")
 
 
 if __name__ == "__main__":

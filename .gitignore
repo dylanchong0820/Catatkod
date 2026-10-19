@@ -19,3 +19,10 @@ logs/
 # beside it.
 /.plugins/
 /.opencode-skills/
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/*.db
+backend/training/artifacts/*.joblib

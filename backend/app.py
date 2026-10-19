@@ -1,10 +1,9 @@
-"""CatatKod analysis API. Prototype only; not for real patient data."""
+"""CatatKod analysis API (ICD-11 MMS). Prototype only; not for real patient data. Suggestions are never final codes."""
 from __future__ import annotations
 
 import hashlib
 import json
 import os
-import re
 import time
 from datetime import datetime, timezone
 
@@ -12,6 +11,10 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Index
+
+from nlp.pipeline import analyze as analyze_note, load_model
+from nlp.retrieval import default_search
+from nlp.rules import default_matcher
 
 app = Flask(__name__)
 database_url = os.getenv("DATABASE_URL", "sqlite:///catatkod_dev.db")
@@ -25,7 +28,7 @@ app.config["MAX_CONTENT_LENGTH"] = 32 * 1024
 
 db = SQLAlchemy(app)
 
-allowed_origins = [origin.strip() for origin in os.getenv("FRONTEND_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if origin.strip()]
+allowed_origins = [origin.strip() for origin in os.getenv("FRONTEND_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,http://localhost:8443,http://127.0.0.1:8443").split(",") if origin.strip()]
 CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
 
 
@@ -42,136 +45,89 @@ class AnalysisAudit(db.Model):
     __table_args__ = (Index("ix_analysis_audit_created_at", "created_at"),)
 
 
-# Narrow initial catalogue. Validate every LLM suggestion against this list.
-ICD10 = {
-    "R50.9": ("Demam, tidak dinyatakan", "Fever, unspecified", ["demam", "fever"]),
-    "R05": ("Batuk", "Cough", ["batuk", "cough"]),
-    "J00": ("Nasofaringitis akut (selesema biasa)", "Acute nasopharyngitis (common cold)", ["selesema", "selsema", "common cold"]),
-    "J02.9": ("Faringitis akut, tidak dinyatakan", "Acute pharyngitis, unspecified", ["tekak merah", "sakit tekak", "sore throat"]),
-    "R51": ("Sakit kepala", "Headache", ["sakit kepala", "headache"]),
-    "E11": ("Diabetes mellitus jenis 2", "Type 2 diabetes mellitus", ["kencing manis", "diabetes jenis 2", "type 2 diabetes"]),
-    "I10": ("Hipertensi primer", "Essential (primary) hypertension", ["darah tinggi", "hipertensi", "hypertension"]),
-    "R06.0": ("Dispnea", "Dyspnoea", ["sesak nafas", "shortness of breath", "sob"]),
-    "R80": ("Proteinuria", "Proteinuria", ["kencing berbuih", "proteinuria", "foamy urine"]),
-    "R60.0": ("Edema setempat", "Localized oedema", ["kaki bengkak", "bengkak kaki", "localized oedema"]),
-}
-
-ABBREVIATIONS = [
-    (r"\bpt\b", "pesakit"),
-    (r"\bdtg\b", "datang"),
-    (r"\bhx\b", "sejarah"),
-    (r"\bari\b", "hari"),
-    (r"\bc/o\b", "mengadu"),
-    (r"\bsob\b", "sesak nafas"),
-    (r"\+|\bplus\b", "dan"),
-]
-NEGATIONS = [
-    (r"\bno\s+sob\b", "tiada sesak nafas"),
-    (r"\btiada\s+sesak\s+nafas\b", "tiada sesak nafas"),
-    (r"\btidak\s+sesak\s+nafas\b", "tiada sesak nafas"),
-    (r"\btiada\s+demam\b", "tiada demam"),
-    (r"\btidak\s+demam\b", "tiada demam"),
-    (r"\btiada\s+batuk\b", "tiada batuk"),
-    (r"\btidak\s+batuk\b", "tiada batuk"),
-]
+def _no_span(code: dict) -> dict:
+    """Model-only codes have no evidence span; the UI convention for that is start = end = -1."""
+    if code.get("start") is None or code.get("end") is None:
+        return {**code, "evidence": code.get("evidence") or "", "start": -1, "end": -1}
+    return code
 
 
-def expand_note(text: str) -> str:
-    result = text
-    for pattern, replacement in ABBREVIATIONS:
-        result = re.sub(pattern, replacement, result, flags=re.IGNORECASE)
-    return re.sub(r"\s+", " ", result).strip()
+def _gemini_catalogue(suggestions: list[dict]) -> dict[str, dict]:
+    """Codes Gemini may choose from: the tier-1 lexicon plus this note's catalogue suggestions."""
+    allowed = {code: {"code": code, "labelMs": e.label_ms, "labelEn": e.title_en, "terms": e.phrases}
+               for code, e in default_matcher().entries.items()}
+    for item in suggestions:
+        allowed.setdefault(item["code"], {"code": item["code"], "labelMs": item["labelEn"], "labelEn": item["labelEn"], "terms": []})
+    return allowed
 
 
-def extract_duration(text: str):
-    match = re.search(r"\b(\d+)\s*(hari|ari|day|days|minggu|week|weeks|bulan|month|months)\b", text, re.I)
-    if not match:
-        return None
-    unit = match.group(2).lower()
-    unit_map = {"ari": "hari", "day": "hari", "days": "hari", "week": "minggu", "weeks": "minggu", "month": "bulan", "months": "bulan"}
-    return {"value": int(match.group(1)), "unit": unit_map.get(unit, unit)}
-
-
-def rule_based_candidates(text: str):
-    lower = text.lower()
-    negated = []
-    negated_spans = []
-    for pattern, meaning in NEGATIONS:
-        for match in re.finditer(pattern, lower):
-            negated.append({"text": text[match.start():match.end()], "start": match.start(), "end": match.end(), "meaningMs": f"Dinafikan: {meaning}"})
-            negated_spans.append((match.start(), match.end()))
-
-    candidates = []
-    for code, (label_ms, label_en, terms) in ICD10.items():
-        match = None
-        for term in sorted(terms, key=len, reverse=True):
-            found = re.search(re.escape(term), lower)
-            if found:
-                match = found
-                break
-        if not match:
-            continue
-        # Exclude a finding when the match is within a recognised negated span.
-        if any(match.start() >= start and match.end() <= end for start, end in negated_spans):
-            continue
-        # Avoid coding SOB if the phrase is explicitly negated.
-        candidates.append({
-            "id": f"{code}-{match.start()}", "code": code,
-            "labelMs": label_ms, "labelEn": label_en,
-            "evidence": text[match.start():match.end()],
-            "start": match.start(), "end": match.end(),
-        })
-    return candidates, negated
-
-
-def llm_candidates(expanded_note: str, original_note: str, rule_candidates: list[dict]):
-    """Optional Gemini enrichment. Deterministic rules remain the fallback and whitelist gate."""
+def llm_candidates(result: dict, original_note: str) -> tuple[list[dict], str]:
+    """Optional Gemini enrichment. The ICD-11 pipeline stays the fallback; Gemini can only add whitelisted codes."""
+    candidates = result["codes"]
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
-        return rule_candidates, "rules"
+        return candidates, "rules"
     try:
         from google import genai
         from google.genai import types
         client = genai.Client(api_key=api_key)
-        catalogue = [{"code": code, "labelMs": values[0], "labelEn": values[1], "terms": values[2]} for code, values in ICD10.items()]
-        prompt = f"""You assist with a prototype clinical coding workflow. This is decision support, not diagnosis. Use ONLY codes from the supplied catalogue. Do not infer missing findings. Respect negation and uncertainty. Return JSON only in this schema: {{\"codes\":[{{\"code\":\"catalogue code\",\"evidence\":\"exact substring from original note\"}}]}}. Include only supported candidate codes.\nCATALOGUE={json.dumps(catalogue, ensure_ascii=False)}\nORIGINAL_NOTE={json.dumps(original_note, ensure_ascii=False)}\nNORMALISED_NOTE={json.dumps(expanded_note, ensure_ascii=False)}\nRULE_CANDIDATES={json.dumps([x['code'] for x in rule_candidates])}"""
+        allowed = _gemini_catalogue(result["catalogueSuggestions"])
+        prompt = f"""You assist with a prototype clinical coding workflow. This is decision support, not diagnosis. Use ONLY ICD-11 MMS codes from the supplied catalogue. Do not infer missing findings. Respect negation and uncertainty (do not code negated or suspected findings). Return JSON only in this schema: {{\"codes\":[{{\"code\":\"catalogue code\",\"evidence\":\"exact substring from original note\"}}]}}. Include only supported candidate codes.\nCATALOGUE={json.dumps(list(allowed.values()), ensure_ascii=False)}\nORIGINAL_NOTE={json.dumps(original_note, ensure_ascii=False)}\nNORMALISED_NOTE={json.dumps(result["expandedNote"], ensure_ascii=False)}\nRULE_CANDIDATES={json.dumps([x["code"] for x in candidates])}"""
         response = client.models.generate_content(
             model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
             contents=prompt,
             config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0),
         )
         parsed = json.loads(response.text or "{}")
-        by_code = {item["code"]: item for item in rule_candidates}
-        final = list(rule_candidates)
-        _, negated_phrases = rule_based_candidates(original_note)
-        negated_spans = [(item["start"], item["end"]) for item in negated_phrases]
-        # LLM may add only catalogue-grounded evidence from the original note, never a negated span.
+        present = {item["code"] for item in candidates}
+        final = list(candidates)
+        negated_spans = [(item["start"], item["end"]) for item in result["negated"]]
+        # Gemini may add only whitelisted codes with exact evidence from the original note, never a negated span.
         for suggestion in parsed.get("codes", []):
             code = suggestion.get("code")
             evidence = suggestion.get("evidence", "")
-            if code not in ICD10 or not isinstance(evidence, str) or not evidence or evidence not in original_note:
+            if code not in allowed or not isinstance(evidence, str) or not evidence or evidence not in original_note:
                 continue
-            if code in by_code:
+            # Skip duplicates, including a parent/child of a code already suggested (MG29 vs MG29.01).
+            if any(code.startswith(other) or other.startswith(code) for other in present):
                 continue
             start = original_note.index(evidence)
             end = start + len(evidence)
-            if any(start >= neg_start and end <= neg_end for neg_start, neg_end in negated_spans):
+            if any(start < neg_end and end > neg_start for neg_start, neg_end in negated_spans):
                 continue
-            _, _, allowed_terms = ICD10[code]
-            if not any(term in evidence.lower() or evidence.lower() in term for term in allowed_terms):
-                continue
-            label_ms, label_en, _ = ICD10[code]
-            final.append({"id": f"{code}-{start}", "code": code, "labelMs": label_ms, "labelEn": label_en, "evidence": evidence, "start": start, "end": end})
-        # The LLM can add only whitelist-validated candidates; it cannot silently remove deterministic candidates.
+            entry = allowed[code]
+            final.append({"id": f"{code}-{start}", "code": code, "labelMs": entry["labelMs"], "labelEn": entry["labelEn"],
+                          "evidence": evidence, "start": start, "end": end, "source": "gemini", "modelScore": None})
+            present.add(code)
+        # Gemini can add only whitelist-validated candidates; it cannot silently remove pipeline candidates.
         return final, "gemini+rules"
     except Exception:
-        app.logger.exception("Gemini enrichment failed; using rule-based candidates")
-        return rule_candidates, "rules-fallback"
+        app.logger.exception("Gemini enrichment failed; using pipeline candidates")
+        return candidates, "rules-fallback"
 
 
 @app.get("/api/health")
 def health():
-    return jsonify({"status": "ok", "service": "catatkod-api", "databaseConfigured": bool(os.getenv("DATABASE_URL"))})
+    return jsonify({"status": "ok", "service": "catatkod-api", "codeSystem": "ICD-11 MMS",
+                    "modelLoaded": load_model() is not None, "databaseConfigured": bool(os.getenv("DATABASE_URL"))})
+
+
+@app.get("/api/icd11/search")
+def icd11_search():
+    """Manual search over the full ICD-11 MMS diagnostic catalogue (Malay or English query)."""
+    query = (request.args.get("q") or "").strip()
+    if not query:
+        return jsonify({"error": "A non-empty q parameter is required."}), 400
+    if len(query) > 200:
+        return jsonify({"error": "Search queries must be 200 characters or fewer."}), 413
+    try:
+        limit = max(1, min(int(request.args.get("limit", "10")), 50))
+    except ValueError:
+        limit = 10
+    tier1 = default_matcher().entries
+    results = [{**hit, "labelMs": tier1[hit["code"]].label_ms if hit["code"] in tier1 else None}
+               for hit in default_search().search(query, k=limit)]
+    return jsonify({"query": query, "codeSystem": "ICD-11 MMS", "results": results})
 
 
 @app.post("/api/analyze")
@@ -185,12 +141,14 @@ def analyze():
     if len(note) > 5000:
         return jsonify({"error": "Notes must be 5,000 characters or fewer."}), 413
 
-    expanded = expand_note(note)
-    candidates, negated = rule_based_candidates(note)
-    candidates, provider = llm_candidates(expanded, note, candidates)
+    result = analyze_note(note)
+    candidates, provider = llm_candidates(result, note)
+    result["codes"] = [_no_span(item) for item in candidates]
+    coded = {item["code"] for item in candidates}
+    result["catalogueSuggestions"] = [item for item in result["catalogueSuggestions"] if item["code"] not in coded]
+    if load_model() is None and provider == "rules":
+        provider = "rules-nomodel"
     duration_ms = int((time.perf_counter() - started) * 1000)
-    duration = extract_duration(note)
-    result = {"codes": candidates, "negated": negated, "duration": duration, "expandedNote": expanded}
 
     # Keep operational metrics, but do not persist raw note content or direct identifiers.
     try:
@@ -217,5 +175,11 @@ with app.app_context():
         # Allows import/build in environments where the database is not provisioned yet.
         app.logger.warning("Database is not ready; tables were not created", exc_info=True)
 
+# Build the lexicon matcher and TF-IDF catalogue index once at startup, not on the first request.
+default_matcher()
+default_search()
+if load_model() is None:
+    app.logger.warning("Tier-1 classifier not found; run `python training/train.py --allow-draft`. Using rules + catalogue search only.")
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.getenv("PORT", "5000")), debug=False)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", "5001")), debug=False)

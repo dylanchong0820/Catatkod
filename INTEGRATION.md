@@ -26,7 +26,7 @@ Terminal 2, from project root:
 
 ```bash
 cp .env.example .env.local
-# Set VITE_API_BASE_URL=http://localhost:5000 in .env.local
+# Set VITE_API_BASE_URL=http://localhost:5001 in .env.local
 pnpm install
 pnpm dev
 ```
@@ -62,3 +62,7 @@ Response keys remain compatible with the frontend:
 - `negated`: `text`, `start`, `end`, `meaningMs`
 - `duration`: `{ "value": 3, "unit": "hari" }` or `null`
 - `expandedNote`: normalized text
+
+## ICD-11 migration (backend + note page)
+
+`POST /api/analyze` now calls `nlp.pipeline.analyze()` (ICD-11 MMS) instead of the old 10-code ICD-10 dictionary. It keeps the previous response keys and adds `catalogueSuggestions`, `codeSystem`, and per-code `source`/`modelScore`. `GET /api/icd11/search?q=` exposes the full-catalogue search, and the note page shows ICD-11 codes, an "Other possible codes" list and a manual search box. Run `python training/train.py --allow-draft` once before `python app.py`; without the trained model the API falls back to rules + search. See `backend/README.md`. The browser-side `analyzeNote()` fallback and seeded records in `src/app/data.ts` / `HistoryPage.tsx` still use ICD-10 codes.

@@ -299,6 +299,7 @@ export function HighlightedNote({
   removedCodes?: AnalyzedCode[];
 }) {
   const segments: Segment[] = [
+    // Keep styleIndex aligned with the code table; codes without an evidence span (start = -1) are not highlighted.
     ...result.codes.map((code, index) => ({
       key: code.id,
       start: code.start,
@@ -306,7 +307,7 @@ export function HighlightedNote({
       text: text.slice(code.start, code.end),
       code,
       styleIndex: index,
-    })),
+    })).filter((segment) => segment.start >= 0),
     ...result.negated.map((negated, index) => ({
       key: `negated-${index}-${negated.start}`,
       start: negated.start,

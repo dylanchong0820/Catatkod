@@ -4,8 +4,20 @@ export type AnalyzedCode = {
   labelMs: string;
   labelEn: string;
   evidence: string;
+  /** Character span in the note; -1 when the code has no evidence span (model-only or added manually). */
   start: number;
   end: number;
+  source?: "rules" | "model" | "rules+model" | "gemini" | "catalogue" | "manual";
+  modelScore?: number | null;
+};
+
+/** A browseable ICD-11 code from the full WHO MMS catalogue (not a trained suggestion). */
+export type CatalogueSuggestion = {
+  code: string;
+  labelEn: string;
+  labelMs?: string | null;
+  score: number;
+  tier1: boolean;
 };
 
 export type NegatedPhrase = {
@@ -20,6 +32,8 @@ export type AnalysisResult = {
   negated: NegatedPhrase[];
   duration: { value: number; unit: string } | null;
   expandedNote: string;
+  catalogueSuggestions?: CatalogueSuggestion[];
+  codeSystem?: string;
 };
 
 export function analyzeNote(text: string): AnalysisResult {

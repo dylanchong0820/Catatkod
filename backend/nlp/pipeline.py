@@ -43,7 +43,7 @@ def analyze(note: str, search_k: int = 5) -> dict:
         ml_codes = set()
 
     codes = []
-    for code in sorted(set(rule_hits) | ml_codes, key=lambda c: -scores.get(c, 1.0)):
+    for code in sorted(set(rule_hits) | ml_codes, key=lambda c: (-scores.get(c, 1.0), rule_hits.get(c, {}).get("start") or 0)):
         entry = matcher.entries[code]
         hit = rule_hits.get(code, {})
         codes.append({

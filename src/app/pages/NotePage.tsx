@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router";
-import { analyzeNote, type AnalysisResult } from "../../lib/analyze";
-import { analyzeNoteWithBackend } from "../../lib/api";
+import { analyzeNote, type AnalysisResult, type CatalogueSuggestion } from "../../lib/analyze";
+import { analyzeNoteWithBackend, searchIcd11 } from "../../lib/api";
 import { useStore } from "../store";
 import { HighlightedNote, PageHeader, PatientBanner, highlightStyles } from "../ui";
 
@@ -31,6 +31,10 @@ export function NotePage() {
   const [analysisError, setAnalysisError] = useState("");
   const [editingDetails, setEditingDetails] = useState(Boolean(draft));
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState<CatalogueSuggestion[] | null>(null);
+  const [catalogueSearching, setCatalogueSearching] = useState(false);
+  const [searchError, setSearchError] = useState("");
   const patient = patients.find((item) => item.id === patientId) ?? activePatient;
 
   useEffect(() => {
@@ -58,6 +62,51 @@ export function NotePage() {
     } finally {
       setSearching(false);
     }
+  }
+
+  async function runCatalogueSearch() {
+    const query = searchQuery.trim();
+    if (!query || catalogueSearching) return;
+    setCatalogueSearching(true);
+    setSearchError("");
+    try {
+      setSearchResults(await searchIcd11(query));
+    } catch (error) {
+      setSearchResults(null);
+      setSearchError(
+        error instanceof Error
+          ? error.message
+          : isBm
+            ? "Tidak dapat mencari katalog ICD-11."
+            : "Could not search the ICD-11 catalogue."
+      );
+    } finally {
+      setCatalogueSearching(false);
+    }
+  }
+
+  // Nurse-chosen code from the catalogue suggestions or manual search; it has no evidence span in the note.
+  function addCode(item: CatalogueSuggestion, source: "catalogue" | "manual") {
+    if (!result || result.codes.some((code) => code.code === item.code)) return;
+    const id = `${item.code}-manual`;
+    setResult({
+      ...result,
+      codes: [
+        ...result.codes,
+        {
+          id,
+          code: item.code,
+          labelMs: item.labelMs || item.labelEn,
+          labelEn: item.labelEn,
+          evidence: "Ditambah secara manual",
+          start: -1,
+          end: -1,
+          source,
+          modelScore: null,
+        },
+      ],
+    });
+    setSelected((current) => [...current, id]);
   }
 
   function save(status: "Disahkan" | "Draf") {
@@ -170,7 +219,12 @@ export function NotePage() {
 
           <section className="min-w-0 overflow-hidden rounded border border-[#C9D1CF] bg-white">
             <div className="border-b border-[#DCE3E1] px-4 py-3">
-              <h2 className="font-semibold">{isBm ? "Kod dicadangkan" : "Suggested codes"}</h2>
+              <h2 className="font-semibold">
+                {isBm ? "Kod dicadangkan" : "Suggested codes"}
+                <span className="ml-2 rounded bg-[#E7EFEC] px-1.5 py-0.5 text-xs font-medium text-[#1F5446]">
+                  {result?.codeSystem ?? "ICD-11 MMS"}
+                </span>
+              </h2>
             </div>
             <p className="border-b border-[#DCE3E1] px-4 py-3 text-xs text-[#405955]">
               {isBm
@@ -184,7 +238,7 @@ export function NotePage() {
                     <thead className="bg-[#F4F7F6] text-xs font-semibold text-[#354B46]">
                       <tr>
                         <th className="w-20 border-b border-[#C9D1CF] px-3 py-2.5 text-center">{isBm ? "Terima" : "Accept"}</th>
-                        <th className="w-20 border-b border-[#C9D1CF] px-3 py-2.5">{isBm ? "Kod" : "Code"}</th>
+                        <th className="w-24 border-b border-[#C9D1CF] px-3 py-2.5">{isBm ? "Kod ICD-11" : "ICD-11 code"}</th>
                         <th className="border-b border-[#C9D1CF] px-3 py-2.5">{isBm ? "Penerangan" : "Description"}</th>
                         {settings.showEvidence && (
                           <th className="w-44 border-b border-[#C9D1CF] px-3 py-2.5">{isBm ? "Petikan rekod" : "Record excerpt"}</th>
@@ -218,9 +272,24 @@ export function NotePage() {
                               />
                             </td>
                             <td className="border-b border-[#DCE3E1] px-3 py-3 font-mono font-semibold text-[#1F5446]">{item.code}</td>
-                            <td className="border-b border-[#DCE3E1] px-3 py-3">{isBm ? item.labelMs : item.labelEn}</td>
+                            <td className="border-b border-[#DCE3E1] px-3 py-3">
+                              <div>{isBm ? item.labelMs : item.labelEn}</div>
+                              {item.source && (
+                                <div className="mt-0.5 text-xs text-[#5A6966]">
+                                  {sourceLabel(item.source, isBm)}
+                                  {typeof item.modelScore === "number" &&
+                                    ` · ${isBm ? "skor model" : "model score"} ${Math.round(item.modelScore * 100)}%`}
+                                </div>
+                              )}
+                            </td>
                             {settings.showEvidence && (
-                              <td className="border-b border-[#DCE3E1] px-3 py-3 font-mono text-xs text-[#405955]">“{item.evidence}”</td>
+                              <td className="border-b border-[#DCE3E1] px-3 py-3 font-mono text-xs text-[#405955]">
+                                {item.start < 0
+                                  ? item.evidence === "Ditambah secara manual" && !isBm
+                                    ? "Added manually"
+                                    : item.evidence || (isBm ? "Tiada petikan" : "No excerpt")
+                                  : `“${item.evidence}”`}
+                              </td>
                             )}
                           </tr>
                         );
@@ -236,13 +305,73 @@ export function NotePage() {
                         <div className="flex gap-4 rounded border border-[#C9D1CF] border-l-4 border-l-[#7A8784] bg-[#F7F8F8] px-3 py-2.5" key={`${item.start}-${item.text}`}>
                           <code className="text-xs font-semibold line-through">{item.text}</code>
                           <span className="text-xs text-[#52635F]">
-                            {isBm ? item.meaningMs : "Negated: no shortness of breath"}
+                            {isBm ? item.meaningMs : item.meaningMs.replace(/^Dinafikan:/, "Negated:")}
                           </span>
                         </div>
                       ))}
                     </div>
                   </div>
                 )}
+                {result.catalogueSuggestions && result.catalogueSuggestions.length > 0 && (
+                  <div className="border-t border-[#DCE3E1] p-4">
+                    <h3 className="text-sm font-semibold">{isBm ? "Kod lain yang mungkin" : "Other possible codes"}</h3>
+                    <p className="mb-2 text-xs text-[#5A6966]">
+                      {isBm
+                        ? "Carian katalog ICD-11 penuh. Tidak dipilih secara automatik."
+                        : "From the full ICD-11 catalogue. Not selected automatically."}
+                    </p>
+                    <CodeList
+                      added={result.codes.map((code) => code.code)}
+                      isBm={isBm}
+                      items={result.catalogueSuggestions}
+                      onAdd={(item) => addCode(item, "catalogue")}
+                    />
+                  </div>
+                )}
+                <div className="border-t border-[#DCE3E1] p-4">
+                  <h3 className="mb-2 text-sm font-semibold">{isBm ? "Cari kod ICD-11" : "Search ICD-11 codes"}</h3>
+                  <form
+                    className="flex gap-2"
+                    onSubmit={(event) => {
+                      event.preventDefault();
+                      runCatalogueSearch();
+                    }}
+                  >
+                    <input
+                      aria-label={isBm ? "Cari katalog ICD-11" : "Search the ICD-11 catalogue"}
+                      className="h-9 min-w-0 flex-1 rounded border border-[#9FB0AD] px-3 text-sm outline-none focus:border-[#1F5446] focus:ring-2 focus:ring-[#1F5446]/20"
+                      onChange={(event) => setSearchQuery(event.target.value)}
+                      placeholder={isBm ? "cth. panau, bisul, asthma" : "e.g. panau, bisul, asthma"}
+                      value={searchQuery}
+                    />
+                    <button
+                      className="h-9 rounded border border-[#9FB0AD] bg-white px-4 text-sm font-semibold text-[#1F5446] hover:bg-[#F1F4F3] disabled:text-[#7E9891]"
+                      disabled={!searchQuery.trim() || catalogueSearching}
+                      type="submit"
+                    >
+                      {catalogueSearching ? (isBm ? "Mencari..." : "Searching...") : isBm ? "Cari" : "Search"}
+                    </button>
+                  </form>
+                  {searchError && (
+                    <div role="alert" className="mt-2 text-xs text-[#B42318]">
+                      {searchError}
+                    </div>
+                  )}
+                  {searchResults && (
+                    <div className="mt-3">
+                      {searchResults.length === 0 ? (
+                        <p className="text-xs text-[#5A6966]">{isBm ? "Tiada padanan." : "No matches."}</p>
+                      ) : (
+                        <CodeList
+                          added={result.codes.map((code) => code.code)}
+                          isBm={isBm}
+                          items={searchResults}
+                          onAdd={(item) => addCode(item, "manual")}
+                        />
+                      )}
+                    </div>
+                  )}
+                </div>
               </>
             ) : (
               <div className="px-4 py-12 text-center text-sm text-[#52635F]">
@@ -282,5 +411,51 @@ export function NotePage() {
         </div>
       </div>
     </>
+  );
+}
+
+function sourceLabel(source: string, isBm: boolean) {
+  const labels: Record<string, [string, string]> = {
+    rules: ["Peraturan leksikon", "Lexicon rules"],
+    model: ["Model terlatih", "Trained model"],
+    "rules+model": ["Peraturan + model", "Rules + model"],
+    gemini: ["Gemini (disahkan)", "Gemini (validated)"],
+    catalogue: ["Katalog ICD-11", "ICD-11 catalogue"],
+    manual: ["Carian manual", "Manual search"],
+  };
+  const label = labels[source];
+  return label ? label[isBm ? 0 : 1] : source;
+}
+
+function CodeList({
+  items,
+  added,
+  isBm,
+  onAdd,
+}: {
+  items: CatalogueSuggestion[];
+  added: string[];
+  isBm: boolean;
+  onAdd: (item: CatalogueSuggestion) => void;
+}) {
+  return (
+    <ul className="divide-y divide-[#DCE3E1] rounded border border-[#C9D1CF]">
+      {items.map((item) => {
+        const isAdded = added.includes(item.code);
+        return (
+          <li className="flex items-center gap-3 px-3 py-2 text-sm" key={item.code}>
+            <code className="w-20 shrink-0 font-semibold text-[#1F5446]">{item.code}</code>
+            <span className="min-w-0 flex-1">{isBm && item.labelMs ? item.labelMs : item.labelEn}</span>
+            <button
+              className="shrink-0 text-xs font-semibold text-[#1F5446] hover:underline disabled:text-[#7E9891] disabled:no-underline"
+              disabled={isAdded}
+              onClick={() => onAdd(item)}
+            >
+              {isAdded ? (isBm ? "Ditambah" : "Added") : isBm ? "Tambah" : "Add"}
+            </button>
+          </li>
+        );
+      })}
+    </ul>
   );
 }

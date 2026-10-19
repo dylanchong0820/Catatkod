@@ -64,9 +64,12 @@ def build_prompt(note: str, variant: str, tier1: list[dict]) -> str:
     return f"{prompt}\n\nNOTE: {note}"
 
 
+TIMEOUT = 120  # seconds per request; short-answer callers lower it so a dropped connection is retried quickly
+
+
 def _post(url: str, headers: dict, body: dict) -> dict:
     req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", **headers})
-    with urllib.request.urlopen(req, timeout=120) as resp:
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
         return json.loads(resp.read())
 
 

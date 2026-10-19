@@ -20,17 +20,20 @@ from nlp.normalise import NEGATORS  # noqa: E402
 DEST = DATA / "generated_notes.csv"
 
 OPENERS = ["", "", "", "pt dtg c/o ", "pt komplen ", "mengadu ", "datang sebab ", "S: ", "c/o ", "pt mengadu ",
-           "pt {age}thn, ", "{sex} {age} thn dtg dgn ", "pesakit datang, ", "ibu bawa anak, "]
+           "pt {age}thn, ", "{sex} {age} thn dtg dgn ", "pesakit datang, ", "ibu bawa anak, ",
+           "complains of ", "presented with ", "pt presents with ", "{age}yo {sexen} c/o ", "pt c/o "]
 DURATIONS = ["", "", "", " {n} hari", " {n} ari", " dah {n} hari", " sejak semalam", " sejak smlm", " sejak pagi",
-             " {n} minggu", " dah seminggu", " sejak minggu lepas", " {n}/7", " sejak {n} bulan", " on off", " kebelakangan ni"]
+             " {n} minggu", " dah seminggu", " sejak minggu lepas", " {n}/7", " sejak {n} bulan", " on off", " kebelakangan ni",
+             " x{n}/7", " x{n} days", " for {n} days", " since yesterday", " for {n} weeks", " since this morning", " for 1/52"]
 SEVERITY = ["", "", "", "", " sikit", " teruk", " sangat", " skit2", " kuat"]
-HISTORY_PREFIX = ["hx ", "known ", "k/c/o ", "ada ", "sejarah ", "", "", "background ", "pmhx: ", "PMH: ", "known hx "]
+HISTORY_PREFIX = ["hx ", "known ", "k/c/o ", "ada ", "sejarah ", "", "", "background ", "pmhx: ", "PMH: ", "known hx ", "h/o ", "known case of ", "PMHx "]
 HISTORY_SUFFIX = ["", "", " on ubat", " on meds", " tak terkawal", " dah {n} thn", " FU klinik", " stabil",
                   " (old case)", " hx", " known", " - stable"]
 DX_PREFIX = ["imp: ", "imp ", "dx ", "disahkan ", "", "", "diagnosis: ", "A: ", "dr ckp ", "doc cnfrm "]
 DX_SUFFIX = ["", "", "", " dr cnfrm", ", doc ckp", " - dr dah tgk", " (dr ckp)"]
 NEG_TEMPLATES = ["takde {p}", "tak {p}", "tiada {p}", "no {p}", "nafi {p}", "x {p}", "takda {p}", "tidak {p}", "denies {p}",
-                 "{p} takde", "{p} xde", "{p} tiada", "No {p}"]
+                 "{p} takde", "{p} xde", "{p} tiada", "No {p}",
+                 "nil {p}", "negative for {p}", "{p} absent", "denied {p}", "no h/o {p}"]
 UNC_TEMPLATES = ["?{p}", "? {p}", "r/o {p}", "suspek {p}", "kemungkinan {p}"]
 JOINERS = [", ", ", ", ". ", " n ", " dan ", "; ", ", ", " + "]
 CLOSERS = ["", "", "", ". BP {sys}/{dia}", ". T 37.{d}", ". mohon review dr", ". on paracetamol", ". minta MC"]
@@ -45,11 +48,13 @@ CONTEXT = ["waktu malam", "bila bangun pagi", "lepas makan", "kahak kuning", "ka
            "luka kecil", "sakit sikit je", "on off", "bila naik tangga", "lepas balik kampung", "kat sekolah",
            "ubat habis", "nak refill ubat", "badan rasa tak sedap", "susah angkat tangan", "lepas main bola",
            "PRN paracetamol", "F/U if x baik", "BP ok", "advise rehat", "bg MC 2 hari", "follow up klinik",
-           "advise minum air byk", "HR stable", "refill meds", "doc dah tgk", "ASAP", "Rx abx", "advise diet"]
+           "advise minum air byk", "HR stable", "refill meds", "doc dah tgk", "ASAP", "Rx abx", "advise diet",
+           "vitals stable", "afebrile", "O/E unremarkable", "advised fluids", "review in 3 days", "T 37.0",
+           "chest clear", "on review", "tolerating orally", "came with mother", "at night", "after meals"]
 
 
 def fill(template: str, rng: random.Random) -> str:
-    return template.format(n=rng.randint(2, 6), age=rng.randint(18, 80), sex=rng.choice(["lelaki", "perempuan", "pakcik", "makcik"]),
+    return template.format(n=rng.randint(2, 6), age=rng.randint(18, 80), sex=rng.choice(["lelaki", "perempuan", "pakcik", "makcik"]), sexen=rng.choice(["M", "F", "male", "female"]),
                            sys=rng.randint(110, 170), dia=rng.randint(60, 100), d=rng.randint(0, 9))
 
 

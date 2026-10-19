@@ -1923,5 +1923,500 @@
   "provider": "sealion",
   "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
   "response": "```json\n{\"note\": \"Tidur xboleh nk lena, ckp susah nk tido. Advise good sleep hygiene, bg info pasal insomnia. Follow up dgn doktor. \"}\n```\n\n\n\n"
+ },
+ "ec0d2c76716a1bbcc58e69189a23b46154033afebe1e1732111210ee8f06e573": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Asthma, poor adherence to meds h/o. No dizziness. SOB x3/7, c/o wheezing. c/w exacerbation?\"}\n```"
+ },
+ "fa9114399b88b5f7313507a949591bbb7cecdd106f3dba6d0ebff8dcdc0ae0dd": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Scabies c/w itchy rash. Vertigo x3/7, ?BPPV.\"}\n```"
+ },
+ "afd3c050ad811acfc9ee0055f4ae62411ca613fa55da33e1f8c7559628344b25": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Acne h/o. C/o freq urination. Impetigo c/w lesions x3/7.\"}\n```"
+ },
+ "d9e7d2d816bf3034d1178b4dcfe93b7600f973c850dc80a3de62ac48ca034adb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"TB h/o, IDA h/o, no periods. No slurred speech. SOB ? c/w anaemia x3/7.\"}\n```"
+ },
+ "f5083d7550f35a8a84c9a25ef0c7f4041179f664e686672aaf58b98e4fef5290": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Excessive sweating c/o. Flu-like illness, ?viral. \"}\n```"
+ },
+ "73644aa12e0db5b3a00055b6571e3ae7803b292b23c1a751680b3ff3b0934481": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Hyperthyroidism & gastritis h/o. Pt stable, no acute concerns. ?med adherence.\"}\n```"
+ },
+ "3c1c2db8168563af7fb3cd9915b1e9e836b0865a839653a48c4405d0991dfe7a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sore throat, cough x3/7, c/o SOB. ?Pneumonia/bronchitis c/w pharyngitis. \"}\n```"
+ },
+ "1d4d3962dc112da8d655ef7f1bad49ad3a37212fd45e304e967c8c7d0014405f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o heart probs, c/o chest tightness x3/7. Atherosclerosis c/w stable angina. ?\"}\n```"
+ },
+ "3d092ee8c489a0115cfd37ab15307ef2629fc57f832a05f0cf994ca36d3c52ee": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sinusitis + UTI c/o dysuria. Tx started x3/7. c/w likely bacterial.\"}\n```"
+ },
+ "74e7a11536dea6bc63d45a8a21b05bb4d18df28afdfd2340353b1855522d7cda": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o long-term liver B. No fatigue c/o pt. SOB/LOC ruled out. c/w stable. ? further follow up.\"}\n```"
+ },
+ "f78ff53331f500457996c13eee27bfd2ed3a73bf3e96204f1c2d5bbe2dc557ce": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"T1DM h/o, c/o incontinence, FUO + fever x3/7. ?UTI. \"}\n```"
+ },
+ "f09097d15a4a1322de13441f7282d21cce111c667530ef93508a3dbf3d23507d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"C/o period pains x3/7, no excessive thirst. Dysmenorrhea c/w typical presentation.\"}\n```"
+ },
+ "b99165d06b6db1656e92c424f78395ef920e2b4bd7df442122e0183cb15efb67": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o nosebleed, then LOC. ?Vasovagal. Observe x30 mins.\"}\n```"
+ },
+ "7944dc3f589cc6884ab646bc5f7ad6abf223cc0a91d0cf477f2f93317f459b25": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Wt loss signif x3/7, c/o feeling weak. ?rule out underlying cause.\"}\n```"
+ },
+ "05b6f14210be7a064b5ba988276383dd9737d6a01a5d76979c06ec4a9588c664": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Dizzy, c/o chills. H/o HTN. ? viral. Check BP.\"}\n```\n"
+ },
+ "861db3ea2ed7e0bfb87333757b458a2cb96308ddd135ea2325e32ae52fb7e68e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o migraines, c/o HA. No fatigue. SOB/LOC ruled out, c/w usual pattern. x3/7.\"}\n```"
+ },
+ "1e4a6f7c9639ff42254abce3c9e6f99f132e310c73aaae644376a911c29b5e80": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Prob gut bug, c/o D&V x3/7. H/o kidney stones. ?Dehydration. \"}\n```"
+ },
+ "d81a47304063e0124c0bbae6d3a5a1682f94fdda09753f4a274e1bc38a283af5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sciatica + painful pee. No sore throat. ?UTI c/o leg pain x3/7.\"}\n```"
+ },
+ "f38f5e95e882d9d5707e7d340f4ec5c9ae89df0e221ebe3e827a26557cdb54a0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Anx, leg swelling + numb feet x3/7. No pain w/ pee. ?peripheral neuropathy c/w anxiety. \"}\n```"
+ },
+ "4e3ed19c8836900e3643c1cc70a6a2e77b9fc0a70740ac7c5b7334b556b04fa3": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o itchy skin x3/7, c/w generalised pruritus. ?eczema.\"}\n```"
+ },
+ "428d187369e9f0fa1182f466ee1de9069293f61b7789d9d84668a77736419b4f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"R eye red c/o irritation. H/o gastric ulcer. Voice hoarse. No wheeze. ?viral conjunctivitis c/w URI. \"}\n```"
+ },
+ "799d3a0cd216bbb4007b1b3571ea990f98b42a0e8c5128dc3cd2ce6205ff2f88": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU pt stable, no c/o. No black stools noted. \"}\n```"
+ },
+ "4e88a3f25e705e2d2a8a282fb0ca2ec4d95c1439f7afcd311cceadac8999ae23": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"C/o muscle spasms + headache. H/o eczema, stable. ?dehydration. \"}\n```"
+ },
+ "96f002dff432b1898a222e67bb76b4bc5e571426f6e060a86e06ab8c5a8bcad3": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU: no c/o. No leaking pee. All ok.\"}\n```"
+ },
+ "819a1189da6b6fd5a7c3f847c4b1102c4ee091c894663e44ae91571df7346a28": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Knee pain c/o OA (h/o). No SOB/chest pain w/ breathing. x3/7. ?Progression.\"}\n```"
+ },
+ "b4203c2b649c752c0584fad48f04ebd48e922c81ad87a65afefe4072e6699365": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Fatigue + fungal skin infxn c/w dermatomycosis. Tx clotrimazole x3/7.\"}\n```"
+ },
+ "75f5637e515d855bd77e4d2a61ad4cb928a98b09b822cbcc1a99ad9a8a1ba88f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o high cholesterol. C/o constipation x3/7. No joint pain. C/w lifestyle advice given.\"}\n```\n"
+ },
+ "d5b2feac39a5ccf4bb731dca8f668ac8875009998e2d7d13ea722e51cff2306a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"LBP + SOB x3/7. ?musculoskeletal vs resp. c/w exertion. \"}\n```"
+ },
+ "7078cdefd76f5ea5da39a3730e2885b60df4d13d2cf8cb5b8705f19f795a706a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Palps c/o racing heart x3/7. No HA, NEC. ?anxiety. \"}\n```"
+ },
+ "eb317125edf8cc9d366f493ef517648bc8f852ba43d027047a94f1dd2e176ea2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine. No complaints, no excessive thirst. BP stable x3/7. \"}\n```"
+ },
+ "31809193e841de666272e9a875ad4071d5dd48af7d9c86914747645da34a1c56": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Rash c/o itching x3/7, c/w dermatitis? No fever.\"}\n```"
+ },
+ "31c45ca32d375ae4f2edb7520c9d6856398684cc361cd599fb6c362c91988ca9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o high cholesterol. Insomnia x3/7, ?sleep hygiene. C/w current meds.\"}\n```"
+ },
+ "94734249a26c6b5c36be7bb260a06f60c9a5fbffc72e5aec4222f69adfd2292e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine. No c/o. Joints - no pain. BP stable x3/7. All good.\"}\n```"
+ },
+ "ec5e64e779822b3dd7b6cb131185d50a748bce3faca171eb0749ae1c0510ccca": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Ear infection c/o pain. Jaundice noted, ?cause. \"}\n```"
+ },
+ "7e0e5759ce4f18dca6c962edf5ba93affbb62de63eeceb30c5cceb70b33c54ac": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Heel pain c/o plantar fasciitis, h/o same. Advised stretches x3/7.\"}\n```"
+ },
+ "f72130c667e4c1c87617c31b69c6152c1a0d343586bd4a10b38ea693c749076d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Chickenpox c/o anorexia. Pt looks unwell x3/7.\"}\n```"
+ },
+ "f8d271acd9ea26d2ba5bcaa15f6bed7e666e7509094b59f50c00709c4879c1d2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Protein in urine c/o swelling legs. No vomiting. ?early renal, repeat dipstick x3/7.\"}\n```"
+ },
+ "51fcc5cef8a92b7b7c5a0332dd9a9d4baf9a981c96e3f45942120ee3398ab213": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"T2DM h/o. C/o chest pain w/ breathing, haematuria x3/7. ?UTI/cardiac. \"}\n```"
+ },
+ "76c69d5b5eb04230f5811d9c7009372641580cde126c90e900526ca2549d175a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Low BS c/o dizziness, h/o DM. Tx w/ glucose. ?Hypo. \"}\n```"
+ },
+ "a5f4f987222009b151f5bb1993a6604bfce8fd6cd1aba09205df9af70f2c8f8b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Slurred speech c/o difficulty speaking. Heavy/irregular periods x3/7, ?anaemia. \"}\n```"
+ },
+ "3ee16e92cc6f16313b21be0394abc7a605d1b7afa8a76edca54bfaccef50da84": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Body aches x3/7, no FUO. ?myalgia c/w muscle strain.\"}\n```"
+ },
+ "ae23b020f0767e6b70e9bbdb278f753a3afb360a4d4eda6ef1d1a70af7fe1d41": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Measles + facial weakness (Bell's palsy) c/w generalised swelling. ?cause. \"}\n```"
+ },
+ "2354778d9fd496dac229fdf84f75f1ab325a5b540e9d3a9f144ce783ce4749ad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Vomiting x3/7, c/o blurry vision. H/o diabetic eye probs. ? dehydration.\"}\n```"
+ },
+ "d524012e7ed97aa8fede734218341769c049621626693f7b4bcda4f187f2b171": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Hypothyroid, h/o CVA. +ve COVID. No nose bleed. ?LOC x3/7, c/o SOB c/w likely viral.\"}\n```"
+ },
+ "3ff0f1c0477e3363c7f8bcedab709084c425ee68c6c06b7c3cb057ef197e1665": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Dehydrated. R shoulder stiff, h/o frozen shoulder. ?IV fluids.\"}\n```"
+ },
+ "cb9cd1cb6d783fa8436546396eb8c9b11640a9b5c5213557f470ae5a66a16d82": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Smoker, h/o tobacco use. Sore throat c/o swollen tonsils, c/w acute tonsillitis. No red eye. \"}\n```"
+ },
+ "2fbe239dbce1d0a84f21373a691a721456313af7368bdab9926856fe98e93044": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Throat pain c/o sore throat x3/7. No constipation. ?viral. \"}\n```"
+ },
+ "8568298e963bf098c62c97cd0f6930d9111d592ac0302a4ed986ee57bc4b9be6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Fatty liver dz, h/o. Stable. ?FU w/ diet plan.\"}\n```"
+ },
+ "e7d09d95c4813a7137e10145aabe48ccb354aa218a1b261a07d9ea09f63d9f3c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Limb pain + chest discomfort. No SOB. ?musculoskeletal/cardiac. c/o pain x3/7. LOC intact.\"}\n```"
+ },
+ "2c4b399c6f22f43d653df23c0ff4c670b9a503ad15439a01cf7271d812c67b50": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CKD h/o. Ankle sprain c/w mx. No sciatica. SOB/LOC ? x3/7. \"}\n```"
+ },
+ "6ca726b05e7142119b1ed4617e22100fe6580949890f0e09cb9561e00f9c1f94": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Dengue+. Platelets low, c/o body aches x3/7. Advised PRN paracetamol & hydration. ?FU if worsening.\"}\n```"
+ },
+ "fcbdd70dd826cf66be0a7be98de949c30b8fb8c2ef607ab75e50656238ff2c70": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CTS h/o. R ear infection c/w suppurative otitis media. ?Cellulitis/lymphangitis L arm. No vomiting.\"}\n```"
+ },
+ "5f7a55a122222e635d407970cbc490cefd219abf4355c6f30f3fca1824770ccb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o excessive thirst. Obese, h/o. ?DM. \"}\n```"
+ },
+ "35b29779d10a36adbc3fb88271a7e5cc958d700a36fa9da104b10cd86f13d9ee": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"C/o burning in chest, black stools x3/7. No chest pain. ?GI bleed c/w melaena. \"}\n```"
+ },
+ "a005131d4066e9b10259387deb7790bbc6c8d38c80fad8728b8f0e4df5ab292e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o heartburn, likely GERD. No anorexia. Pt stable, c/o discomfort x3/7.\"}\n```"
+ },
+ "15466ceaf6bee07309eb9c852396795c8d5472c98e214a7b8dea55c1e1d60dbb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Abd distension, nausea, watery stools x3/7. No insomnia h/o. ?GI upset c/w dehydration.\"}\n```\n"
+ },
+ "638f4b1d0da9ee49da9f3e7415fdaf85bd2d629cd8f15947ecf8cc906a3fa889": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Dental decay. Vomiting blood x3/7, ?source. c/w caries.\"}\n```"
+ },
+ "130947ceefe5bd8068419ddb27099c581ee18bc60143f81d98a169edd5d594ac": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU: no c/o. Skin colour normal, no yellowness. No liver probs c/w jaundice. \"}\n```"
+ },
+ "9a9eefed8e6da4330378737f92572f85a0e9e9813b6ac8f642253d1d8fee900a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"C/o sore throat & runny nose x3/7. Exam c/w acute viral URI. \"}\n```"
+ },
+ "0974cee7202ba63ad65500e9fae4a7bcdf98fc9bc756c4c2b6bd2ab238d6878c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Piles & gout h/o. R ear pain c/o. ? ear infection c/w pain.\"}\n```"
+ },
+ "d6feb11aa8123525827e523d28779bfa2fabadb15e508e02d27bfcfeaa442069": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Shingles + hives. ?autoimmune. Start antivirals & antihistamine x3/7. c/w rash.\"}\n```\n"
+ },
+ "0f08623598afdbe820e78636a1cbe47be55234bddfe63b638ae6250994dc4779": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Conjunctivitis c/w red eye. DFU h/o, wheezing noted. No ear pain. SOB x3/7 ?asthma?\"}\n```"
+ },
+ "0832c804eab4e5ac04780c7d054764ecf5494e3986f8f1645e8fc0fb474b05a6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"URI c/o cough/sore throat. H/o allergic rhinitis & COPD. No abd distension. SOB minimal, LOC alert. ?viral.\"}\n```"
+ },
+ "28dabf7f4d0068ea38a33b314a85528ba86ce59e0d571ddfa74fec1bfc089455": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Jt pain, coughing up blood x3/7, ?abd pain. SOB c/o discomfort.\"}\n```"
+ },
+ "e7cf5ca31a68a54be8b0bdd5e384fd58f7d71c09c48bdd036a64d6c0d2421e94": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CHF h/o, c/o cough x3/7. No chills. SOB c/w fluid overload?\"}\n```"
+ },
+ "020c7ca57c6b4153a2ebc5c4c2736e6ef55cf4d30e1b48e228c8661c50ac568c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Difficulty swallowing x3/7, c/o food sticking. ?structural vs functional.\"}\n```"
+ },
+ "3947504f943eb79c3e1c80f4d22276297a3b6d25cc55a715b811bd42b0270101": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o passing lots of urine x3/7. ?DM. \"}\n```"
+ },
+ "5c6203fcc60343f66531b7627907348163001e02cec5b38e9180c0a733aef209": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Itchy skin x3/7, c/o generalised scratching. No red eye. ?eczema c/w pruritus.\"}\n```"
+ },
+ "0891f3cef7a66e3ae4693c2fbaabf9e6053b4dcc9d70f97d15e2a3fc82c06971": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"TB h/o, poor compliance x3/7. No constipation. ?LOC c/w fatigue.\"}\n```"
+ },
+ "e82be95efad543b5952e0dd54aa2d8fe9c45984ca2f78eb448a653de730c4367": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Low blood sugar, likely diabetes related. No trouble swallowing. LOC ruled out. c/o feeling shaky x3/7. c/w hypoglycaemia ?\"}\n```"
+ },
+ "cabe1b84abf2698419b32ce26b49e4276d8aa06ec300966e154475f37a9478da": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Muscle aches, SOB x3/7. No joint pain. c/o fatigue. ?viral. \"}\n```"
+ },
+ "102d6147fd157e41626a7db532619a2835f70c6c3ecbf792c25f8ba91c42161e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Insomnia c/o trouble sleeping x3/7, vomiting. NAFLD h/o. No dysarthria. ? dehydration. \"}\n```"
+ },
+ "2675b13c3bcecd6f9d714875ee7d11255f79be19b348d55d2be1f8d3ce777073": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o stomach ulcer. C/o excessive sweating + ear pain. ? cause. \"}\n```"
+ },
+ "e680cfe7233a41825df5a20d544a9736eed327b77811ad440b487dc2a4dabfdb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Red eye c/o irritation. UI x3/7, no myalgia. ?Conjunctivitis c/w stress incontinence.\"}\n```"
+ },
+ "483d587dbd65c1446e305e5290053944393071baadd6783889696abbd7da27c6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pneumonia c/w infiltrate on CXR. No limb pain. SOB x3/7, ?LOC. Start abx.\"}\n```"
+ },
+ "475a45eca9136ea5d65b95793aff3f6e9543134896171e3d0db078effc5cca0f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Scabies c/w itchy rash. DFU h/o, no haematemesis. Tx permethrin, wound care advised.\"}\n```"
+ },
+ "8c71969ad5f288c73312f5cc15e2471b66034628a9c683a1f6fdfb0fa229158c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Freq urination x3/7, c/o needing to pee a lot. ?UTI\"}\n```"
+ },
+ "b9579880275f1d38430928a51a7f2ac839b336b1464a216add142c4669c8bad5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Skin fungal infxn c/w dermatomycosis. No heartburn. \"}\n```"
+ },
+ "fe021b93d12c6b46a43e06f37ac18fba3a0590efb24b6bc9b6fd33bd08fe6604": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Spont urticaria + haematemesis. H/o GORD. ?GI bleed. SOB c/w possible anaemia. Investigate x3/7.\"}\n```"
+ },
+ "608db85065a2d5840f42c86dcf251f77b8dc218e519c120f9221629225e9ee0b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Ear infection (ASOM) + UTI. c/o dysuria. ?E.coli. Tx started x3/7.\"}\n```\n"
+ },
+ "43acec8a26c9890c1cdb496e89cbd26c6b93c6ff4a7409afd512204f00a860ac": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"PF h/o, ?dengue c/w fever/body ache x3/7, migraine h/o. No generalised oedema. \"}\n```"
+ },
+ "e7b5f0201573d50c2895077bcacdea903905cfd1236a63cbb96b5ff7e429abe0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"IDA h/o, pt c/o tired x3/7. Check FBC c/w low Hb.\"}\n```"
+ },
+ "180964671e5252fca943d5635a61222115a5ae81d90233f99d16a368321e44ad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Anx, c/o feeling panicky x3/7. No SOB, LOC or haemoptysis. c/w anxiety ?\"}\n```"
+ },
+ "356dd80097182e043bc1da9dbb0c93f611344e1020f296d0bc4e1a2716b51237": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"B/L leg swell, constipated x3/7. No rash. ?CHF c/w fluid overload.\"}\n```"
+ },
+ "f5a9362be0274df4af42ad7037c829ab7c8526b87633a427d391cd74f43f5fb2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cough, R sided facial weakness c/w Bell's palsy. Poor appetite x3/7. \"}\n```"
+ },
+ "b73d06eb6cf8acb685c507fb5cf3d017017ca20c847fcc6581f3562bee494268": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"URI c/o cough/sore throat. CKD h/o. No dysarthria. Rx symp x3/7. \"}\n```"
+ },
+ "5fc5e702bfc32e8e32e2aba75e40fc8a1adfcfda53f213da42ea8b3088745fe0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"L leg cellulitis/lymphangitis c/w oedema x3/7, ?sciatica. Start abx.\"}\n```\n"
+ },
+ "6f3169d73a0bba82c023c326ba8a80b5c6f7eda040cdf7265bad28e92ae7576a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Loose stools x3/7, c/o watery BM. ?Dehydration.\"}\n```"
+ },
+ "d13a6a0bf65800658f8243dfbaf2253515994d4d0b32e1457cd4d863d5457fb7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"HBsAg pos, h/o chronic HBV. Stable. \"}\n```"
+ },
+ "d8aa733abcf047a623cb535b60c35c425f49e33a9a081d4ed5203b70b6364016": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"H/o black stools x3/7, c/o headache. ?GI bleed. c/w melaena.\"}\n```"
+ },
+ "a5339f849739f5212d19a9c36800ebe84e9d82ccae8af90b50d12dd90a96530b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Stomach pain c/o gastritis (h/o). No period probs. SOB/LOC ruled out. c/w stable. ?FU x3/7.\"}\n```"
+ },
+ "b166893365e5db767da8376288efcc896a848cd18ef0d0dd968ebabca1dc3908": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Wheezing bilaterally, c/w asthma? Pt struggling to breath x3/7.\"}\n```"
+ },
+ "831300216e8b2f7fa8b6c3aaa73289181e07c4fa81633905546e9d27a4241ff1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Asthma h/o, c/o leg cramp x3/7, c/w dental decay. \"}\n```"
+ },
+ "26cd1c2ca8826bd0400ca60b76f530153798a40320afcdf1a5dcf55816c4d2ba": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"COPD f/u. Pt c/o SOB x3/7, c/w stable. Rx as per usual.\"}\n```"
+ },
+ "c8e4244fb4fb7b94a4618165bf3f0781854dd7b68dd2be8159de9c1a65b9f60b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Smoker h/o. Pt c/o cough x3/7, ?bronchitis. \"}\n```"
+ },
+ "27f9520970d5fc4264efa21c6c64c46cb072d051f7b365fcaa8787150ffb1d56": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"C/o chest pain w/ breathing, ?musculoskeletal. SOB x3/7.\"}\n```"
+ },
+ "c314c05fd0d3f3288fc4bf4ef5feaf8a8f8200d7baed1cdf6bdb827b3f3380cf": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"C/o chills. +proteinuria. Obese, h/o. ?UTI\"}\n```"
+ },
+ "dfb720b85e4741e39914578c585344e4a88ea8c26b51151d5c93e5c7b0ce1af6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM retinopathy h/o. Diarrhea x3/7, ?infectious colitis. c/w gastroenteritis.\"}\n```"
+ },
+ "a7ca90a61ba6c00d6b3fdc3a3feb78c9717fda9f37b251da57c11fc2ea35887e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Abdo pain, diffuse, ?cause. No burning when pee. x3/7. c/o discomfort. \"}\n```"
  }
 }

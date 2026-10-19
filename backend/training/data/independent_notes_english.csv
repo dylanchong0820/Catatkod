@@ -1,0 +1,101 @@
+note_id,note_text,gold_codes,negated_codes,split,source
+ENG001,"Asthma, poor adherence to meds h/o. No dizziness. SOB x3/7, c/o wheezing. c/w exacerbation?",CA23;QC49,MB48.Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG002,"Scabies c/w itchy rash. Vertigo x3/7, ?BPPV.",1G04.Z;MB48.0Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG003,Acne h/o. C/o freq urination. Impetigo c/w lesions x3/7.,1B72.Z;ED80.Z;MF50.0,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG004,"TB h/o, IDA h/o, no periods. No slurred speech. SOB ? c/w anaemia x3/7.",1B10.Z;3A00.Z;GA20.0Z,MA80.2Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG005,"Excessive sweating c/o. Flu-like illness, ?viral.",1E32;ME66.5,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG006,"Hyperthyroidism & gastritis h/o. Pt stable, no acute concerns. ?med adherence.",5A02.Z;DA42.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG007,"Sore throat, cough x3/7, c/o SOB. ?Pneumonia/bronchitis c/w pharyngitis.",CA02.Z;CA40.Z;CA42.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG008,"H/o heart probs, c/o chest tightness x3/7. Atherosclerosis c/w stable angina. ?",BA52.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG009,Sinusitis + UTI c/o dysuria. Tx started x3/7. c/w likely bacterial.,CA01;GC08.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG010,H/o long-term liver B. No fatigue c/o pt. SOB/LOC ruled out. c/w stable. ? further follow up.,1E51.0Z,MG22,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG011,"T1DM h/o, c/o incontinence, FUO + fever x3/7. ?UTI.",5A10;MF50.2Z;MG26,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG012,"C/o period pains x3/7, no excessive thirst. Dysmenorrhea c/w typical presentation.",GA34.3,MG43.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG013,"Pt c/o nosebleed, then LOC. ?Vasovagal. Observe x30 mins.",MD20;MG45.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG014,"Wt loss signif x3/7, c/o feeling weak. ?rule out underlying cause.",MG43.5,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG015,"Dizzy, c/o chills. H/o HTN. ? viral. Check BP.",BA00.Z;MB48.Z;MG21,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG016,"H/o migraines, c/o HA. No fatigue. SOB/LOC ruled out, c/w usual pattern. x3/7.",8A80.Z,MG22,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG017,"Prob gut bug, c/o D&V x3/7. H/o kidney stones. ?Dehydration.",1A40.Z;GB70.0Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG018,Sciatica + painful pee. No sore throat. ?UTI c/o leg pain x3/7.,ME84.3;MF50.7,MD36.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG019,"Anx, leg swelling + numb feet x3/7. No pain w/ pee. ?peripheral neuropathy c/w anxiety.",MB24.3;MB40.Z;MG29.01,MF50.7,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG020,"Pt c/o itchy skin x3/7, c/w generalised pruritus. ?eczema.",EC90.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG021,R eye red c/o irritation. H/o gastric ulcer. Voice hoarse. No wheeze. ?viral conjunctivitis c/w URI.,DA60.Z;MA82.10;MC15,MD11.C,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG022,"FU pt stable, no c/o. No black stools noted.",,ME24.A4,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG023,"C/o muscle spasms + headache. H/o eczema, stable. ?dehydration.",EA80.Z;MB47.3;MB4D,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG024,FU: no c/o. No leaking pee. All ok.,,MF50.2Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG025,Knee pain c/o OA (h/o). No SOB/chest pain w/ breathing. x3/7. ?Progression.,FA01.Z,MD30.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG026,Fatigue + fungal skin infxn c/w dermatomycosis. Tx clotrimazole x3/7.,1F28.Z;MG22,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG027,H/o high cholesterol. C/o constipation x3/7. No joint pain. C/w lifestyle advice given.,5C80.0Z;ME05.0,ME82,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG028,LBP + SOB x3/7. ?musculoskeletal vs resp. c/w exertion.,MD11.5;ME84.2Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG029,"Palps c/o racing heart x3/7. No HA, NEC. ?anxiety.",MC81.2,MB4D,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG030,"FU routine. No complaints, no excessive thirst. BP stable x3/7.",,MG43.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG031,"Rash c/o itching x3/7, c/w dermatitis? No fever.",ME66.6Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG032,"H/o high cholesterol. Insomnia x3/7, ?sleep hygiene. C/w current meds.",5C80.2;7A0Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG033,FU routine. No c/o. Joints - no pain. BP stable x3/7. All good.,,ME82,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG034,"Ear infection c/o pain. Jaundice noted, ?cause.",AA3Z;ME10.1,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG035,"Heel pain c/o plantar fasciitis, h/o same. Advised stretches x3/7.",FB40.1,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG036,Chickenpox c/o anorexia. Pt looks unwell x3/7.,1E90.Z;MG43.7,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG037,"Protein in urine c/o swelling legs. No vomiting. ?early renal, repeat dipstick x3/7.",MF96.Z,MD90.1,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG038,"T2DM h/o. C/o chest pain w/ breathing, haematuria x3/7. ?UTI/cardiac.",5A11;MD30.0;MF50.4Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG039,"Low BS c/o dizziness, h/o DM. Tx w/ glucose. ?Hypo.",5A21.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG040,"Slurred speech c/o difficulty speaking. Heavy/irregular periods x3/7, ?anaemia.",GA22;MA80.2Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG041,"Body aches x3/7, no FUO. ?myalgia c/w muscle strain.",FB56.2,MG26,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG042,Measles + facial weakness (Bell's palsy) c/w generalised swelling. ?cause.,1F03;8B88.0;MG29.1,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG043,"Vomiting x3/7, c/o blurry vision. H/o diabetic eye probs. ? dehydration.",9B71.0Z;MD90.1,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG044,"Hypothyroid, h/o CVA. +ve COVID. No nose bleed. ?LOC x3/7, c/o SOB c/w likely viral.",5A00.Z;8B11;RA01,MD20,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG045,"Dehydrated. R shoulder stiff, h/o frozen shoulder. ?IV fluids.",5C70.0;FB53.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG046,"Smoker, h/o tobacco use. Sore throat c/o swollen tonsils, c/w acute tonsillitis. No red eye.",CA03.Z;QE13,MC15,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG047,Throat pain c/o sore throat x3/7. No constipation. ?viral.,MD36.0,ME05.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG048,"Fatty liver dz, h/o. Stable. ?FU w/ diet plan.",DB92.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG049,Limb pain + chest discomfort. No SOB. ?musculoskeletal/cardiac. c/o pain x3/7. LOC intact.,FB56.4;MD30.Z,MD11.5,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG050,CKD h/o. Ankle sprain c/w mx. No sciatica. SOB/LOC ? x3/7.,GB61.Z;ND14.7Z,ME84.3,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG051,"Dengue+. Platelets low, c/o body aches x3/7. Advised PRN paracetamol & hydration. ?FU if worsening.",1D2Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG052,CTS h/o. R ear infection c/w suppurative otitis media. ?Cellulitis/lymphangitis L arm. No vomiting.,1B70.Z;8C10.0;AA90,MD90.1,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG053,"Pt c/o excessive thirst. Obese, h/o. ?DM.",5B81.Z;MG43.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG054,"C/o burning in chest, black stools x3/7. No chest pain. ?GI bleed c/w melaena.",MD95;ME24.A4,MD30.Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG055,"H/o heartburn, likely GERD. No anorexia. Pt stable, c/o discomfort x3/7.",DA22.Z,MG43.7,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG056,"Abd distension, nausea, watery stools x3/7. No insomnia h/o. ?GI upset c/w dehydration.",MD90.0;ME01;ME05.1,7A0Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG057,"Dental decay. Vomiting blood x3/7, ?source. c/w caries.",DA08.0;ME24.A5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG058,"FU: no c/o. Skin colour normal, no yellowness. No liver probs c/w jaundice.",,ME10.1,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG059,C/o sore throat & runny nose x3/7. Exam c/w acute viral URI.,CA00,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG060,Piles & gout h/o. R ear pain c/o. ? ear infection c/w pain.,AB70.2;DB60.Z;FA25,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG061,Shingles + hives. ?autoimmune. Start antivirals & antihistamine x3/7. c/w rash.,1E91.Z;EB00.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG062,"Conjunctivitis c/w red eye. DFU h/o, wheezing noted. No ear pain. SOB x3/7 ?asthma?",9A60.Z;BD54;MD11.C,AB70.2,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG063,"URI c/o cough/sore throat. H/o allergic rhinitis & COPD. No abd distension. SOB minimal, LOC alert. ?viral.",CA07.0;CA08.0Z;CA22.Z,ME01,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG064,"Jt pain, coughing up blood x3/7, ?abd pain. SOB c/o discomfort.",MD22;MD81.4;ME82,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG065,"CHF h/o, c/o cough x3/7. No chills. SOB c/w fluid overload?",BD10;MD12,MG21,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG066,"Difficulty swallowing x3/7, c/o food sticking. ?structural vs functional.",MD93,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG067,Pt c/o passing lots of urine x3/7. ?DM.,MF55,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG068,"Itchy skin x3/7, c/o generalised scratching. No red eye. ?eczema c/w pruritus.",EC90.Z,MC15,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG069,"TB h/o, poor compliance x3/7. No constipation. ?LOC c/w fatigue.",1B10.Z;QC49,ME05.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG070,"Low blood sugar, likely diabetes related. No trouble swallowing. LOC ruled out. c/o feeling shaky x3/7. c/w hypoglycaemia ?",5A21.Z,MD93,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG071,"Muscle aches, SOB x3/7. No joint pain. c/o fatigue. ?viral.",FB56.2;MD11.5,ME82,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG072,"Insomnia c/o trouble sleeping x3/7, vomiting. NAFLD h/o. No dysarthria. ? dehydration.",7A0Z;DB92.Z;MD90.1,MA80.2Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG073,H/o stomach ulcer. C/o excessive sweating + ear pain. ? cause.,AB70.2;DA60.Z;ME66.5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG074,"Red eye c/o irritation. UI x3/7, no myalgia. ?Conjunctivitis c/w stress incontinence.",MC15;MF50.2Z,FB56.2,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG075,"Pneumonia c/w infiltrate on CXR. No limb pain. SOB x3/7, ?LOC. Start abx.",CA40.Z,FB56.4,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG076,"Scabies c/w itchy rash. DFU h/o, no haematemesis. Tx permethrin, wound care advised.",1G04.Z;BD54,ME24.A5,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG077,"Freq urination x3/7, c/o needing to pee a lot. ?UTI",MF50.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG078,Skin fungal infxn c/w dermatomycosis. No heartburn.,1F28.Z,MD95,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG079,Spont urticaria + haematemesis. H/o GORD. ?GI bleed. SOB c/w possible anaemia. Investigate x3/7.,DA22.Z;EB00.Z;ME24.A5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG080,Ear infection (ASOM) + UTI. c/o dysuria. ?E.coli. Tx started x3/7.,AA90;GC08.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG081,"PF h/o, ?dengue c/w fever/body ache x3/7, migraine h/o. No generalised oedema.",1D2Z;8A80.Z;FB40.1,MG29.1,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG082,"IDA h/o, pt c/o tired x3/7. Check FBC c/w low Hb.",3A00.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG083,"Anx, c/o feeling panicky x3/7. No SOB, LOC or haemoptysis. c/w anxiety ?",MB24.3,MD22,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG084,"B/L leg swell, constipated x3/7. No rash. ?CHF c/w fluid overload.",ME05.0;MG29.01,ME66.6Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG085,Pt c/o passing lots of urine x3/7. ?DM.,MF55,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG086,"Cough, R sided facial weakness c/w Bell's palsy. Poor appetite x3/7.",8B88.0;MD12;MG43.7,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG087,URI c/o cough/sore throat. CKD h/o. No dysarthria. Rx symp x3/7.,CA07.0;GB61.Z,MA80.2Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG088,"L leg cellulitis/lymphangitis c/w oedema x3/7, ?sciatica. Start abx.",1B70.Z;ME84.3;MG29.1,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG089,"Loose stools x3/7, c/o watery BM. ?Dehydration.",ME05.1,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG090,"HBsAg pos, h/o chronic HBV. Stable.",1E51.0Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG091,"H/o black stools x3/7, c/o headache. ?GI bleed. c/w melaena.",MB4D;ME24.A4,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG092,Stomach pain c/o gastritis (h/o). No period probs. SOB/LOC ruled out. c/w stable. ?FU x3/7.,DA42.Z,GA34.3,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG093,"Wheezing bilaterally, c/w asthma? Pt struggling to breath x3/7.",MD11.C,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG094,"Asthma h/o, c/o leg cramp x3/7, c/w dental decay.",CA23;DA08.0;MB47.3,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG095,"COPD f/u. Pt c/o SOB x3/7, c/w stable. Rx as per usual.",CA22.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG096,"Smoker h/o. Pt c/o cough x3/7, ?bronchitis.",QE13,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG097,"C/o chest pain w/ breathing, ?musculoskeletal. SOB x3/7.",MD30.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG098,"C/o chills. +proteinuria. Obese, h/o. ?UTI",5B81.Z;MF96.Z;MG21,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG099,"DM retinopathy h/o. Diarrhea x3/7, ?infectious colitis. c/w gastroenteritis.",1A40.Z;9B71.0Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+ENG100,"Abdo pain, diffuse, ?cause. No burning when pee. x3/7. c/o discomfort.",MD81.4,MF50.7,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT

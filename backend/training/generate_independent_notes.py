@@ -7,7 +7,8 @@ Labels are the codes we asked for. Notes are split once, deterministically:
   * test (100) - never inspected while improving the system; report this number
 Responses are cached (artifacts/llm_cache.json), so reruns are free.
 
-  python training/generate_independent_notes.py --rpm 9
+  python training/generate_independent_notes.py --rpm 9                     # Malay (60 dev / 100 test)
+  python training/generate_independent_notes.py --rpm 9 --style english     # English (40 dev / 60 test)
 """
 from __future__ import annotations
 
@@ -36,6 +37,20 @@ abbreviations, typos allowed, no full sentences needed.
 Do not copy the English medical terms above; write it the way a Malaysian nurse would. Do not add any other \
 symptom, diagnosis or medical history. No patient names or IDs.
 Answer with JSON only: {{"note": "..."}}"""
+
+PROMPT_ENGLISH = """You are a doctor at a busy government klinik kesihatan in Malaysia. Write ONE short clinical note \
+(1-2 lines) in ENGLISH ONLY, the way clinicians really type in a hurry: terse, medical abbreviations \
+(c/o, h/o, x3/7, SOB, LOC, c/w, ?), plain everyday wording is fine, typos allowed, no full sentences needed. \
+Do not use any Malay words.
+{body}
+Vary the wording: do not simply copy the condition names above; use the words a clinician would actually type. \
+Do not add any other symptom, diagnosis or medical history. No patient names or IDs.
+Answer with JSON only: {{"note": "..."}}"""
+
+STYLES = {  # style -> (prompt, default output file, note-id prefix, n_dev, n_test)
+    "malay": (PROMPT, DEST, "IND", 60, 100),
+    "english": (PROMPT_ENGLISH, ROOT / "data" / "independent_notes_english.csv", "ENG", 40, 60),
+}
 
 KIND_HINT = {"S": "", "H": " (known medical history)", "D": " (doctor's impression / diagnosis)"}
 
@@ -89,21 +104,24 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--rpm", type=float, default=9)
     parser.add_argument("--seed", type=int, default=1126)
+    parser.add_argument("--style", choices=sorted(STYLES), default="malay")
     args = parser.parse_args()
+    prompt, dest, prefix, n_dev, n_test = STYLES[args.style]
 
     bench.load_env_file(ROOT.parent / ".env")
     key = os.environ.get("SEALION_API_KEY")
     if not key:
         raise SystemExit("Set SEALION_API_KEY in backend/.env")
     bench.PACER = bench.Pacer(args.rpm)
+    bench.TIMEOUT = 30  # notes are 1-2 lines (~2 s); don't wait 2 minutes on a dropped connection
     cache = bench.Cache(bench.CACHE)
     catalogue = json.loads(bench.CATALOGUE.read_text(encoding="utf-8"))
 
-    plans = plan_notes(catalogue, N_DEV + N_TEST, args.seed)
+    plans = plan_notes(catalogue, n_dev + n_test, args.seed)
     rows, failed = [], 0
     for i, plan in enumerate(plans):
         try:
-            note = parse_note(bench.ask(cache, "sealion", MODEL, key, PROMPT.format(body=plan["body"])))
+            note = parse_note(bench.ask(cache, "sealion", MODEL, key, prompt.format(body=plan["body"])))
         except Exception as exc:  # noqa: BLE001
             print(f"  note {i}: {exc}")
             failed += 1
@@ -111,18 +129,18 @@ def main() -> None:
         if not note:
             failed += 1
             continue
-        rows.append({"note_id": f"IND{i + 1:03d}", "note_text": note, "gold_codes": ";".join(sorted(plan["codes"])),
-                     "negated_codes": ";".join(plan["negated"]), "split": "dev" if i < N_DEV else "test",
+        rows.append({"note_id": f"{prefix}{i + 1:03d}", "note_text": note, "gold_codes": ";".join(sorted(plan["codes"])),
+                     "negated_codes": ";".join(plan["negated"]), "split": "dev" if i < n_dev else "test",
                      "source": f"sealion:{MODEL}"})
         if (i + 1) % 20 == 0:
             print(f"{i + 1}/{len(plans)} notes", flush=True)
     if failed:
         raise SystemExit(f"{failed} notes failed; cached ones are kept - rerun to resume.")
-    with DEST.open("w", encoding="utf-8", newline="") as fh:
+    with dest.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
-    print(f"Wrote {len(rows)} notes -> {DEST.name}")
+    print(f"Wrote {len(rows)} notes -> {dest.name}")
 
 
 if __name__ == "__main__":

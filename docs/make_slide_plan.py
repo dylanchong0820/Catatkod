@@ -176,28 +176,29 @@ story.append(slide(6, "How it works", "0:30",
 
 story.append(slide(7, "Our own NLP (not just an API call)", "0:30",
     "Earn the 'we built our own NLP' credit.",
-    ["<b>Malay clinical lexicon:</b> 121 ICD-11 codes, 667 colloquial phrases (58 symptoms, 36 chronic conditions, 27 acute diagnoses), every code validated against the WHO ICD-11 catalogue",
+    ["<b>Malay clinical lexicon:</b> 121 ICD-11 codes, 1,168 Malay, English and Manglish phrases (58 symptoms, 36 chronic conditions, 27 acute diagnoses), every code validated against the WHO ICD-11 catalogue",
      "<b>Normaliser:</b> expands shorthand (pt, hx, dtg, ari, smlm), splits <i>sikit2</i>, scopes negation and uncertainty (<i>takde, no, nafi, ?denggi, r/o</i>)",
-     "<b>Trained classifier:</b> word + character n-gram model, trained on 3,000+ synthetic notes plus 255 hand-labelled and independently written notes",
+     "<b>Trained classifier:</b> word + character n-gram model, trained on 3,000+ synthetic notes plus 295 hand-labelled and independently written notes; works on Malay, English and mixed notes",
      "<b>Full-catalogue search:</b> Malay-English clinical glossary over ~17,000 ICD-11 diagnosis codes"],
     "Everything in this pipeline is ours: the Malay lexicon, the shorthand normaliser, the negation handling and the trained model. It runs in milliseconds on a laptop and doesn't need to send patient notes to an external AI."))
 
 results = grid([
-    ["System (rows 1-4: our test notes; rows 5-6: independent notes)", "F1", "Notes fully correct"],
+    ["System (rows 1-4: our test notes; rows 5-7: independent notes)", "F1", "Notes fully correct"],
     ["CatatKod (rules + trained model)", "0.95", "84%"],
     ["Keyword matching", "0.89", "71%"],
     ["SEA-LION 120B, given our 121-code list", "0.73", "53%"],
     ["SEA-LION 120B, asked for ICD-11 codes directly", "0.03", "2%"],
-    ["CatatKod on independent notes (written by a different AI)", "0.77", "54%"],
-    ["Keyword matching on the same independent notes", "0.60", "22%"],
+    ["CatatKod on independent Malay notes (written by a different AI)", "0.80", "55%"],
+    ["CatatKod on independent English-only notes", "0.78", "37%"],
+    ["Keyword matching on the independent Malay notes", "0.61", "23%"],
 ], [88 * mm, 18 * mm, 32 * mm], bold_row=1)
 story.append(slide(8, "Results vs. baselines", "0:40",
     "The key evaluation stat: our system vs. a large AI model built for Southeast Asian languages.",
     ["One bar chart or the table below. Make <b>0.95 vs 0.03</b> the biggest thing on the slide",
      "One line explaining F1: <i>“How many codes it gets right, balancing wrong suggestions and missed codes. 1.0 = perfect.”</i>",
      "Footnote: test notes held out from training; synthetic data; not clinically validated"],
-    "We benchmarked against SEA-LION, the largest model built specifically for Southeast Asian languages. Asked for ICD-11 codes directly, it scores 0.03 — most of its codes are wrong, and 54 don't even exist. Even when we hand it the list of codes, it reaches 0.73. CatatKod scores 0.95, and 0.77 on notes written independently by a different AI, which is our honest real-world estimate.",
-    note="Lead with 0.95 vs 0.03, but be ready to say 0.77 on independent notes. The 0.95 test set was written by the same person who built the lexicon, so it is optimistic; 0.77 is the honest figure, and it still beats keywords (0.60) and SEA-LION with the code list (0.73).",
+    "We benchmarked against SEA-LION, the largest model built specifically for Southeast Asian languages. Asked for ICD-11 codes directly, it scores 0.03 — most of its codes are wrong, and 54 don't even exist. Even when we hand it the list of codes, it reaches 0.73. CatatKod scores 0.95, and about 0.80 on notes written independently by a different AI, in Malay or English, which is our honest real-world estimate.",
+    note="Lead with 0.95 vs 0.03, but be ready to say ~0.80 on independent notes (0.80 Malay, 0.78 English). The 0.95 test set was written by the same person who built the lexicon, so it is optimistic; ~0.80 is the honest figure, and it still beats keywords (0.61) and SEA-LION with the code list (0.73).",
     extra=results))
 
 story.append(slide(9, "Safety & privacy", "0:25",
@@ -234,16 +235,17 @@ qa = grid([
     ["Likely question", "Answer"],
     ["What if it suggests the wrong code?", "It never codes by itself. Every suggestion shows the exact words it came from, and the nurse confirms or unticks each one."],
     ["Where did your data come from?", "Synthetic notes only (no real patients). We wrote labelled notes by hand, generated 3,000 training notes from our lexicon, and had a separate AI (SEA-LION) write independent test notes our system had never seen."],
-    ["Isn't the 0.95 inflated?", "Partly — that test set shares vocabulary with our lexicon. So we also had a different AI (SEA-LION) write 100 notes we never looked at: CatatKod scores 0.77 there, vs 0.60 for keyword matching. Real validation with clinicians is our next step."],
+    ["Isn't the 0.95 inflated?", "Partly — that test set shares vocabulary with our lexicon. So we also had a different AI (SEA-LION) write 100 notes we never looked at: CatatKod scores 0.80 there (0.78 on English-only notes), vs 0.61 for keyword matching. Real validation with clinicians is our next step."],
     ["Why not just use ChatGPT / Gemini / SEA-LION?", "We tested it. Asked for ICD-11 codes directly, SEA-LION scored 0.03 and invented codes that don't exist. Ours runs locally, so patient notes never leave the clinic."],
     ["Why ICD-11 and not ICD-10?", "ICD-11 is WHO's current classification (in effect since 2022). Building on it now avoids a migration later; an ICD-10 crosswalk is on the roadmap for systems still on ICD-10."],
+    ["Does it work for English notes?", "Yes, and for mixed Malay-English. Every code has both Malay and English phrases. On 60 independent English-only notes it scores 0.78, vs 0.62 for keyword matching."],
     ["How many codes do you support?", "121 trained codes covering common primary-care symptoms, NCDs and infections, plus search across ~17,000 ICD-11 diagnosis codes for anything else."],
     ["PDPA?", "Prototype uses synthetic data. The API stores no note text, only a fingerprint and timing. A real deployment would need a privacy review and run inside KKM infrastructure."],
     ["How long does it take per note?", "Milliseconds for our model on a laptop (measure the live demo and quote it)."],
 ], [52 * mm, 122 * mm])
 story += [qa, Spacer(1, 14), Paragraph("Before the pitch — checklist", S["h1"])]
 story += bullets([
-    "Know both numbers cold: 0.95 (our test set) and 0.77 (independent notes) \u2014 and why they differ.",
+    "Know both numbers cold: 0.95 (our test set) and ~0.80 (independent notes) \u2014 and why they differ.",
     "Re-verify every statistic on slides 2–3 against its original source and add small citations.",
     "Record a backup demo video; rehearse the 90-second demo until it's under time.",
     "Start the API and web app before going on stage; test the exact demo note once more.",

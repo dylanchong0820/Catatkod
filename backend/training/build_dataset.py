@@ -18,7 +18,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from nlp.catalogue import DATA  # noqa: E402
 
-SOURCES = ["starter_labelled.csv", "handwritten_notes.csv", "generated_notes.csv", "independent_notes.csv"]
+SOURCES = ["starter_labelled.csv", "handwritten_notes.csv", "generated_notes.csv", "independent_notes.csv",
+           "independent_notes_english.csv"]
 DEST = DATA / "labelled_notes.csv"
 CATALOGUE = DATA / "icd11_tier1_catalogue.json"
 
@@ -50,7 +51,7 @@ def main() -> None:
                 unknown = set(codes) - allowed
                 if unknown:
                     raise SystemExit(f"{row['note_id']}: codes not in tier-1 catalogue: {sorted(unknown)}")
-                if name == "independent_notes.csv":
+                if name.startswith("independent_notes"):
                     if row["split"] != "dev":
                         continue  # independent TEST notes are never trained on
                     row["source"] = "independent_dev"

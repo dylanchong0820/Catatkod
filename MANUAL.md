@@ -167,7 +167,8 @@ MF96.Z  | S    | Kencing berbuih | kencing berbuih; air kencing berbuih; kencing
 ```
 
 - **kind:** `S` symptom, `H` chronic condition / history, `D` acute diagnosis / doctor's impression
-- **phrases:** written the way notes really look: shorthand, Manglish, common typos. Lowercase.
+- **phrases:** written the way notes really look: Malay, English and Manglish, shorthand, common typos, plurals
+  and past tenses (*vomit; vomited; vomiting*). Lowercase.
 - Don't add a phrase that is a negation itself unless the meaning needs it (e.g. *tak lalu makan*).
 
 **Add a phrase:** append it to the right line with `; `.
@@ -205,6 +206,7 @@ what's *denied* (*takde demam*) or only *suspected* (*?denggi*, *r/o TB*).
 | `.venv/bin/python training/train.py --allow-draft` | Retrains, then scores on 105 held-out hand-written notes (optimistic: same author as the lexicon) |
 | `.venv/bin/python training/evaluate_independent.py` | Scores the current model on the 100 SEA-LION-written test notes (**the honest number**) |
 | `.venv/bin/python training/evaluate_independent.py --errors` | Also lists mistakes on the 60 **dev** notes, to find missing phrases |
+| `.venv/bin/python training/evaluate_independent.py --data english` | Same, on the 60 English-only test notes |
 
 Run them from `backend/`. Results are saved in `backend/training/artifacts/` (`metadata.json`,
 `independent_eval.json`, `test_errors.csv`).
@@ -218,7 +220,8 @@ score stops being honest.
 - **F1**: both combined, 0–1, higher is better
 - **Exact match**: % of notes where every code was exactly right
 
-Current: **0.95** F1 on our test set, **0.77** on independent notes (keyword matching: 0.60).
+Current: **0.95** F1 on our test set, **0.80** on independent Malay/Manglish notes and **0.78** on independent
+English-only notes (keyword matching: 0.61 / 0.62). Mixed Malay-English notes work the same way.
 
 ---
 
@@ -246,7 +249,8 @@ cd backend
 .venv/bin/python training/generate_independent_notes.py --rpm 9
 ```
 
-Writes `training/data/independent_notes.csv` (160 notes, ~18 minutes). Changing `--seed` or the `MODEL` /
+Writes `training/data/independent_notes.csv` (160 notes, ~18 minutes). Add `--style english` for English-only
+notes (`independent_notes_english.csv`, 100 notes). Changing `--seed` or the `MODEL` /
 `PROMPT` inside the script gives a different batch, e.g. Llama-SEA-LION 70B, or patient-voice / dialect notes.
 Keep the laptop awake while it runs.
 
@@ -282,6 +286,6 @@ Edit the text inside `docs/make_slide_plan.py`, then rerun.
 ## 12. Limits to be honest about
 
 - All data is synthetic; nothing is clinically validated. Codes are suggestions for a nurse to confirm.
-- 0.95 is optimistic (same author wrote lexicon and test notes); 0.77 on independent notes is the fairer figure.
+- 0.95 is optimistic (same author wrote lexicon and test notes); ~0.80 on independent notes is the fairer figure.
 - Biggest weakness: wording it has never seen. The cure is more varied notes from more writers.
 - Before real use: clinician-reviewed labels, real de-identified notes, PDPA review, proper login and audit trail.

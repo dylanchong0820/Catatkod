@@ -26,12 +26,19 @@ SHORTHAND = {
     "sob": "sesak nafas", "dm2": "dm", "t2dm": "dm", "htn": "hpt",
     "mkn": "makan", "ckp": "cakap", "doc": "doktor", "dr": "doktor", "cnfrm": "sahkan", "confirm": "sahkan",
     "sdh": "dah", "bg": "bagi", "jg": "juga", "jgk": "juga", "dm1": "t1dm", "pnemonia": "pneumonia",
+    "h/o": "sejarah", "pmh": "sejarah", "k/c/o": "known", "c/w": "consistent", "can't": "cannot",
+    "freq": "frequent", "wt": "weight", "infxn": "infection", "inf": "infection", "bs": "sugar",
+    "d&v": "diarrhoea vomiting", "n&v": "nausea vomiting", "abd": "abdominal", "sx": "symptoms",
 }
 
 # Words that open a negation scope. Multi-word negators are joined first.
 NEGATORS = {"tak", "tidak", "tiada", "takde", "takda", "xde", "xda", "x", "tk", "tade", "no", "nafi",
-            "denies", "deny", "bukan", "tanpa", "tiade", "neg", "nil", "-ve"}
-MULTI_NEGATORS = [(r"\btak\s+ada\b", "takde"), (r"\btidak\s+ada\b", "takde"), (r"\bno\s+history\s+of\b", "no")]
+            "denies", "deny", "bukan", "tanpa", "tiade", "neg", "nil", "-ve",
+            "denied", "without", "cannot", "unable", "absent", "never"}
+MULTI_NEGATORS = [(r"\btak\s+ada\b", "takde"), (r"\btidak\s+ada\b", "takde"), (r"\bno\s+history\s+of\b", "no"),
+                  (r"\bnegative\s+for\b", "no"), (r"\bno\s+h/o\b", "no"), (r"\bno\s+c/o\b", "no"),
+                  (r"\b(?:ruled|rules)\s+out\b", "absent"), (r"\bnot\s+present\b", "absent"),
+                  (r"\bto\s+rule\s+out\b", "r/o"), (r"\brule\s+out\b", "r/o")]
 # Uncertainty markers: findings are not coded when only suspected / to be ruled out.
 UNCERTAIN = {"?", "r/o", "suspek", "suspect", "kemungkinan", "mungkin", "query", "ruleout"}
 
@@ -56,6 +63,8 @@ def tokenize(text: str) -> list[str]:
     text = _split_reduplication(text)
     text = re.sub(r"(\d+)\s*/\s*(\d+)", r"\1_\2", text)  # keep BP readings together: 150/90
     text = re.sub(r"\+{2,}", " ", text)  # emphasis: "bengkak ++", "sweating+++"
+    text = re.sub(r"(?<=[a-z])-(?=[a-z])", " ", text)  # "flu-like" -> "flu like" (keeps "covid-19")
+    text = re.sub(r"\b([a-z]{3,})/(?=[a-z]{3,}\b)", r"\1 ", text)  # "heavy/irregular" -> "heavy irregular" (keeps c/o, h/o)
     text = re.sub(r"(?<=[a-z0-9])\+(?=[\s,.;:)]|$)", " positif", text)  # "covid+", "ns1+" = positive
     tokens = TOKEN_RE.findall(text)
     out: list[str] = []

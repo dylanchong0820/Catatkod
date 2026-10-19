@@ -6,6 +6,7 @@ so lexicon gaps can be fixed without ever looking at the test notes.
 
   python training/evaluate_independent.py            # scores, writes artifacts/independent_eval.json
   python training/evaluate_independent.py --errors   # also list dev-split mistakes
+  python training/evaluate_independent.py --data english   # English-only independent notes
 """
 from __future__ import annotations
 
@@ -35,14 +36,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--errors", action="store_true", help="print dev-split mistakes (never test)")
     parser.add_argument("--label", default="current", help="name for this run in independent_eval.json")
+    parser.add_argument("--data", default="malay", help="'malay', 'english', or a path to a CSV with the same columns")
     args = parser.parse_args()
+    data = {"malay": DATA, "english": ROOT / "data" / "independent_notes_english.csv"}.get(args.data, Path(args.data))
 
     allowed = sorted(row["code"] for row in json.loads(CATALOGUE.read_text(encoding="utf-8")))
     bundle = joblib.load(ARTIFACTS / "icd11_tier1_classifier.joblib")
     entries = load_lexicon()
     matcher = LexiconMatcher(entries)
     mlb = MultiLabelBinarizer(classes=allowed)
-    df = pd.read_csv(DATA, dtype=str, keep_default_na=False)
+    df = pd.read_csv(data, dtype=str, keep_default_na=False)
 
     report = {}
     print(f"{'split':<6}{'system':<26}{'microP':>8}{'microR':>8}{'microF1':>9}{'macroF1':>9}{'exact':>8}")
@@ -77,7 +80,7 @@ def main() -> None:
             print()
 
     history = json.loads(OUT.read_text()) if OUT.exists() else {}
-    history[args.label] = report
+    history[f"{args.label}" if args.data == "malay" else f"{args.label}:{Path(data).stem}"] = report
     OUT.write_text(json.dumps(history, indent=2) + "\n", encoding="utf-8")
     print(f"\nSaved run '{args.label}' -> {OUT.name}")
 

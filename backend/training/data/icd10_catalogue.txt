@@ -1,0 +1,55 @@
+# CatatKod selected ICD-10 subset provided by the project owner.
+# 49 entries after expanding the two supplied ranges (Z68.30-Z68.45 and Z91.120-Z91.128).
+# IMPORTANT: labels for range entries are intentionally broad because only range-level descriptions were supplied.
+# Verify every code, descriptor, billable status, and code-set version against the authoritative ICD-10 variant used by the target Malaysian workflow.
+# Format: CODE | English description | Malay description
+# Malay descriptions were not supplied, so the third field is blank.
+E11.9 | Type 2 diabetes mellitus without complications | 
+E11.65 | Type 2 diabetes mellitus with hyperglycemia | 
+E11.649 | Type 2 diabetes mellitus with hypoglycemia | 
+I10 | Essential (primary) hypertension | 
+I11.9 | Hypertensive heart disease without heart failure | 
+I25.10 | Atherosclerotic heart disease (CAD) | 
+I50.9 | Heart failure, unspecified | 
+I63.9 | Cerebral infarction, unspecified (Stroke) | 
+E78.5 | Hyperlipidemia, unspecified | 
+E66.9 | Obesity, unspecified | 
+E66.01 | Morbid (severe) obesity due to excess calories | 
+Z68.30 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.31 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.32 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.33 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.34 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.35 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.36 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.37 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.38 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.39 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.40 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.41 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.42 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.43 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.44 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z68.45 | Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor) | 
+Z72.0 | Tobacco use | 
+Z73.0 | Burn-out (state of vital exhaustion) | 
+Z73.3 | Stress, not elsewhere classified | 
+F41.9 | Anxiety disorder, unspecified | 
+F32.9 | Major depressive disorder, single episode, unspecified | 
+G47.9 | Sleep disorder, unspecified | 
+Z91.19 | Patient's noncompliance with medical treatment and regimen | 
+Z91.120 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.121 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.122 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.123 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.124 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.125 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.126 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.127 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z91.128 | Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor) | 
+Z79.899 | Other long-term (current) drug therapy | 
+T50.905A | Adverse effect of unspecified drugs, initial encounter | 
+R07.9 | Chest pain, unspecified | 
+R06.02 | Shortness of breath / dyspnea | 
+R55 | Syncope and collapse | 
+R42 | Dizziness and giddiness | 

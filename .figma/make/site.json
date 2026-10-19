@@ -1,0 +1,10 @@
+{
+  "description": "Streamline clinical note coding by converting Malay shorthand into accurate ICD-10 codes, helping Malaysian nurses and doctors save time and improve accuracy.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,247 @@
+[
+  {
+    "code": "E11.9",
+    "labelEn": "Type 2 diabetes mellitus without complications",
+    "labelMs": ""
+  },
+  {
+    "code": "E11.65",
+    "labelEn": "Type 2 diabetes mellitus with hyperglycemia",
+    "labelMs": ""
+  },
+  {
+    "code": "E11.649",
+    "labelEn": "Type 2 diabetes mellitus with hypoglycemia",
+    "labelMs": ""
+  },
+  {
+    "code": "I10",
+    "labelEn": "Essential (primary) hypertension",
+    "labelMs": ""
+  },
+  {
+    "code": "I11.9",
+    "labelEn": "Hypertensive heart disease without heart failure",
+    "labelMs": ""
+  },
+  {
+    "code": "I25.10",
+    "labelEn": "Atherosclerotic heart disease (CAD)",
+    "labelMs": ""
+  },
+  {
+    "code": "I50.9",
+    "labelEn": "Heart failure, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "I63.9",
+    "labelEn": "Cerebral infarction, unspecified (Stroke)",
+    "labelMs": ""
+  },
+  {
+    "code": "E78.5",
+    "labelEn": "Hyperlipidemia, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "E66.9",
+    "labelEn": "Obesity, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "E66.01",
+    "labelEn": "Morbid (severe) obesity due to excess calories",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.30",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.31",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.32",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.33",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.34",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.35",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.36",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.37",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.38",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.39",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.40",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.41",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.42",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.43",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.44",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z68.45",
+    "labelEn": "Body mass index (BMI) indicator (description supplied as range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z72.0",
+    "labelEn": "Tobacco use",
+    "labelMs": ""
+  },
+  {
+    "code": "Z73.0",
+    "labelEn": "Burn-out (state of vital exhaustion)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z73.3",
+    "labelEn": "Stress, not elsewhere classified",
+    "labelMs": ""
+  },
+  {
+    "code": "F41.9",
+    "labelEn": "Anxiety disorder, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "F32.9",
+    "labelEn": "Major depressive disorder, single episode, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "G47.9",
+    "labelEn": "Sleep disorder, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.19",
+    "labelEn": "Patient's noncompliance with medical treatment and regimen",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.120",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.121",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.122",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.123",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.124",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.125",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.126",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.127",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z91.128",
+    "labelEn": "Patient's intentional or unintentional underdosing of medication regimen (range-level label; verify exact official descriptor)",
+    "labelMs": ""
+  },
+  {
+    "code": "Z79.899",
+    "labelEn": "Other long-term (current) drug therapy",
+    "labelMs": ""
+  },
+  {
+    "code": "T50.905A",
+    "labelEn": "Adverse effect of unspecified drugs, initial encounter",
+    "labelMs": ""
+  },
+  {
+    "code": "R07.9",
+    "labelEn": "Chest pain, unspecified",
+    "labelMs": ""
+  },
+  {
+    "code": "R06.02",
+    "labelEn": "Shortness of breath / dyspnea",
+    "labelMs": ""
+  },
+  {
+    "code": "R55",
+    "labelEn": "Syncope and collapse",
+    "labelMs": ""
+  },
+  {
+    "code": "R42",
+    "labelEn": "Dizziness and giddiness",
+    "labelMs": ""
+  }
+]

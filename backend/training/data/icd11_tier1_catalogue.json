@@ -13,7 +13,9 @@
       "demam panas",
       "fever",
       "deman",
-      "dmm"
+      "dmm",
+      "feverish",
+      "febrile"
     ]
   },
   {
@@ -28,7 +30,9 @@
       "seram sejuk",
       "chills",
       "rigors",
-      "badan menggigil"
+      "badan menggigil",
+      "sejuk sejuk",
+      "rasa sejuk menggigil"
     ]
   },
   {
@@ -199,7 +203,9 @@
       "kepala ringan",
       "dizzy",
       "dizziness",
-      "pening lalat"
+      "pening lalat",
+      "pusing kepala",
+      "kepala pusing"
     ]
   },
   {
@@ -214,7 +220,9 @@
       "rasa berpusing",
       "vertigo",
       "dunia berputar",
-      "macam bilik pusing"
+      "macam bilik pusing",
+      "pusing pusing",
+      "pusing keliling"
     ]
   },
   {
@@ -292,7 +300,10 @@
       "susah berak",
       "susah buang air besar",
       "constipation",
-      "sembelit teruk"
+      "sembelit teruk",
+      "constip",
+      "constipated",
+      "x berak"
     ]
   },
   {
@@ -429,7 +440,10 @@
       "kencing ada darah",
       "air kencing merah",
       "haematuria",
-      "hematuria"
+      "hematuria",
+      "blood dalam air kencing",
+      "darah dalam kencing",
+      "darah dalam air kencing"
     ]
   },
   {
@@ -474,7 +488,9 @@
       "tak dapat tahan kencing",
       "kencing terlepas",
       "urinary incontinence",
-      "tak sempat ke tandas"
+      "tak sempat ke tandas",
+      "tak tahan kencing",
+      "x tahan kencing"
     ]
   },
   {
@@ -505,7 +521,10 @@
       "kaki sembab",
       "buku lali bengkak",
       "pedal oedema",
-      "leg swelling"
+      "leg swelling",
+      "leg bengkak",
+      "bengkak leg",
+      "legs bengkak"
     ]
   },
   {
@@ -536,7 +555,10 @@
       "dahaga",
       "asyik haus",
       "polydipsia",
-      "rasa haus"
+      "rasa haus",
+      "haus sangat",
+      "sangat haus",
+      "haus sgt"
     ]
   },
   {
@@ -552,7 +574,10 @@
       "kurang selera makan",
       "tak selera makan",
       "poor appetite",
-      "selera makan kurang"
+      "selera makan kurang",
+      "tak nak makan",
+      "x selera",
+      "selera kurang"
     ]
   },
   {
@@ -567,7 +592,10 @@
       "berat badan turun",
       "kurus mendadak",
       "weight loss",
-      "susut berat badan"
+      "susut berat badan",
+      "sangat kurus",
+      "makin kurus",
+      "berat makin turun"
     ]
   },
   {
@@ -811,7 +839,9 @@
       "bibir kering",
       "dehydrated",
       "kurang air",
-      "kering tekak teruk"
+      "kering tekak teruk",
+      "dehydration",
+      "kurang air badan"
     ]
   },
   {
@@ -873,7 +903,10 @@
       "dm type 1",
       "kencing manis jenis 1",
       "diabetes jenis 1",
-      "type 1 diabetes"
+      "type 1 diabetes",
+      "dm1 hx",
+      "dm type1",
+      "insulin dependent"
     ]
   },
   {
@@ -964,7 +997,10 @@
       "cad",
       "sakit jantung koronari",
       "salur jantung tersumbat",
-      "ischaemic heart disease"
+      "ischaemic heart disease",
+      "sakit jantung",
+      "athero",
+      "atherosclerosis"
     ]
   },
   {
@@ -1097,7 +1133,10 @@
       "ida",
       "anemia zat besi",
       "kurang zat besi",
-      "iron deficiency"
+      "iron deficiency",
+      "anemia besi",
+      "anaemia besi",
+      "iron deficiency anaemia"
     ]
   },
   {
@@ -1111,7 +1150,10 @@
       "hypothyroid",
       "tiroid kurang aktif",
       "hipotiroid",
-      "hypothyroidism"
+      "hypothyroidism",
+      "hypot",
+      "underactive thyroid",
+      "thyroid underactive"
     ]
   },
   {
@@ -1126,7 +1168,10 @@
       "tiroid terlampau aktif",
       "hipertiroid",
       "thyrotoxicosis",
-      "thyrotoxic"
+      "thyrotoxic",
+      "thyroid overactive",
+      "overactive thyroid",
+      "tiroid overactive"
     ]
   },
   {
@@ -1170,7 +1215,10 @@
       "ptb",
       "pulmonary tb",
       "tuberculosis",
-      "tb paru"
+      "tb paru",
+      "tb",
+      "tb hx",
+      "tibi paru"
     ]
   },
   {
@@ -1214,7 +1262,9 @@
       "haid tak datang",
       "period tak datang",
       "amenorrhoea",
-      "tak datang bulan"
+      "tak datang bulan",
+      "missed period",
+      "terlepas period"
     ]
   },
   {
@@ -1229,7 +1279,10 @@
       "period banyak sangat",
       "darah haid banyak",
       "menorrhagia",
-      "haid lebat"
+      "haid lebat",
+      "period banyak",
+      "period sangat banyak",
+      "haid sangat banyak"
     ]
   },
   {
@@ -1261,7 +1314,11 @@
       "ponteng ubat",
       "default ubat",
       "poor compliance",
-      "tak ambil ubat"
+      "tak ambil ubat",
+      "x comply",
+      "tak comply",
+      "non compliant",
+      "default rawatan"
     ]
   },
   {
@@ -1304,7 +1361,10 @@
     "phrases": [
       "diabetic retinopathy",
       "retinopati diabetik",
-      "mata rosak sebab kencing manis"
+      "mata rosak sebab kencing manis",
+      "dm reti",
+      "dm retinopathy",
+      "retinopathy"
     ]
   },
   {
@@ -1319,7 +1379,9 @@
       "batu buah pinggang",
       "kidney stone",
       "renal calculi",
-      "renal stone"
+      "renal stone",
+      "batu kencing",
+      "batu dalam kencing"
     ]
   },
   {
@@ -1346,7 +1408,10 @@
     "phrases": [
       "bell palsy",
       "bells palsy",
-      "facial nerve palsy"
+      "facial nerve palsy",
+      "facial drop",
+      "facial palsy",
+      "muka senget sebelah"
     ]
   },
   {
@@ -1429,7 +1494,10 @@
       "tonsilitis",
       "tonsillitis",
       "tonsil bengkak",
-      "amandel bengkak"
+      "amandel bengkak",
+      "tonsil sakit",
+      "tonsil radang",
+      "tonsil merah"
     ]
   },
   {
@@ -1471,7 +1539,9 @@
       "alergi hidung",
       "allergic rhinitis",
       "bersin2 waktu pagi",
-      "rhinitis alergi"
+      "rhinitis alergi",
+      "rhinitis",
+      "allergic rhinitis hx"
     ]
   },
   {
@@ -1499,7 +1569,9 @@
       "pneumonia",
       "jangkitan paru2",
       "cap",
-      "paru2 berair"
+      "paru2 berair",
+      "pneumonia akut",
+      "radang paru paru"
     ]
   },
   {
@@ -1557,7 +1629,10 @@
       "age",
       "jangkitan perut",
       "gastro",
-      "keracunan makanan"
+      "keracunan makanan",
+      "infeksi usus",
+      "jangkitan usus",
+      "stomach flu"
     ]
   },
   {
@@ -1681,7 +1756,10 @@
       "urtikaria",
       "urticaria",
       "hives",
-      "naik bintat"
+      "naik bintat",
+      "bentol",
+      "bentol bentol",
+      "gatal bentol"
     ]
   },
   {
@@ -1721,7 +1799,10 @@
       "jangkitan telinga tengah",
       "otitis media",
       "aom",
-      "telinga bernanah"
+      "telinga bernanah",
+      "asom",
+      "otitis media akut",
+      "telinga bengkak nanah"
     ]
   },
   {
@@ -1734,7 +1815,9 @@
     "phrases": [
       "otitis externa",
       "jangkitan saluran telinga luar",
-      "swimmer ear"
+      "swimmer ear",
+      "oe",
+      "telinga luar bengkak"
     ]
   },
   {

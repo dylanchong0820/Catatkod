@@ -24,10 +24,13 @@ OPENERS = ["", "", "", "pt dtg c/o ", "pt komplen ", "mengadu ", "datang sebab "
 DURATIONS = ["", "", "", " {n} hari", " {n} ari", " dah {n} hari", " sejak semalam", " sejak smlm", " sejak pagi",
              " {n} minggu", " dah seminggu", " sejak minggu lepas", " {n}/7", " sejak {n} bulan", " on off", " kebelakangan ni"]
 SEVERITY = ["", "", "", "", " sikit", " teruk", " sangat", " skit2", " kuat"]
-HISTORY_PREFIX = ["hx ", "known ", "k/c/o ", "ada ", "sejarah ", "", "", "background ", "pmhx: "]
-HISTORY_SUFFIX = ["", "", " on ubat", " on meds", " tak terkawal", " dah {n} thn", " FU klinik", " stabil"]
-DX_PREFIX = ["imp: ", "imp ", "dx ", "disahkan ", "", "", "diagnosis: ", "A: "]
-NEG_TEMPLATES = ["takde {p}", "tak {p}", "tiada {p}", "no {p}", "nafi {p}", "x {p}", "takda {p}", "tidak {p}", "denies {p}"]
+HISTORY_PREFIX = ["hx ", "known ", "k/c/o ", "ada ", "sejarah ", "", "", "background ", "pmhx: ", "PMH: ", "known hx "]
+HISTORY_SUFFIX = ["", "", " on ubat", " on meds", " tak terkawal", " dah {n} thn", " FU klinik", " stabil",
+                  " (old case)", " hx", " known", " - stable"]
+DX_PREFIX = ["imp: ", "imp ", "dx ", "disahkan ", "", "", "diagnosis: ", "A: ", "dr ckp ", "doc cnfrm "]
+DX_SUFFIX = ["", "", "", " dr cnfrm", ", doc ckp", " - dr dah tgk", " (dr ckp)"]
+NEG_TEMPLATES = ["takde {p}", "tak {p}", "tiada {p}", "no {p}", "nafi {p}", "x {p}", "takda {p}", "tidak {p}", "denies {p}",
+                 "{p} takde", "{p} xde", "{p} tiada", "No {p}"]
 UNC_TEMPLATES = ["?{p}", "? {p}", "r/o {p}", "suspek {p}", "kemungkinan {p}"]
 JOINERS = [", ", ", ", ". ", " n ", " dan ", "; ", ", ", " + "]
 CLOSERS = ["", "", "", ". BP {sys}/{dia}", ". T 37.{d}", ". mohon review dr", ". on paracetamol", ". minta MC"]
@@ -40,7 +43,9 @@ CONTEXT = ["waktu malam", "bila bangun pagi", "lepas makan", "kahak kuning", "ka
            "belum ambil ubat", "anak sulung", "kerja shift", "lepas berenang", "lepas angkat barang", "mata kabur sikit",
            "kencing ok", "berak ok", "selera ok", "bawa surat rujukan", "ada alahan ubat", "datang dengan isteri",
            "luka kecil", "sakit sikit je", "on off", "bila naik tangga", "lepas balik kampung", "kat sekolah",
-           "ubat habis", "nak refill ubat", "badan rasa tak sedap", "susah angkat tangan", "lepas main bola"]
+           "ubat habis", "nak refill ubat", "badan rasa tak sedap", "susah angkat tangan", "lepas main bola",
+           "PRN paracetamol", "F/U if x baik", "BP ok", "advise rehat", "bg MC 2 hari", "follow up klinik",
+           "advise minum air byk", "HR stable", "refill meds", "doc dah tgk", "ASAP", "Rx abx", "advise diet"]
 
 
 def fill(template: str, rng: random.Random) -> str:
@@ -68,7 +73,7 @@ def render_positive(entry, rng: random.Random) -> str:
     if entry.kind == "H":
         return fill(rng.choice(HISTORY_PREFIX) + phrase + rng.choice(HISTORY_SUFFIX), rng)
     if entry.kind == "D":
-        return rng.choice(DX_PREFIX) + phrase
+        return rng.choice(DX_PREFIX) + phrase + rng.choice(DX_SUFFIX)
     return fill(phrase + rng.choice(SEVERITY) + rng.choice(DURATIONS), rng)
 
 

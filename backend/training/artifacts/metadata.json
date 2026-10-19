@@ -5,9 +5,9 @@
   "hybrid_threshold": 0.95,
   "n_codes": 121,
   "rows": {
-    "test": 105,
-    "train": 3043,
-    "validation": 47
+    "train": 3103,
+    "validation": 47,
+    "test": 105
   },
   "test_results": {
     "naive_keyword_baseline": {
@@ -27,19 +27,19 @@
       "codes_in_split": 82
     },
     "catatkod_ml": {
-      "micro_precision": 0.9069767441860465,
-      "micro_recall": 0.9397590361445783,
-      "micro_f1": 0.9230769230769231,
-      "macro_f1_present_codes": 0.9501290489095369,
-      "exact_match": 0.7523809523809524,
+      "micro_precision": 0.9090909090909091,
+      "micro_recall": 0.9036144578313253,
+      "micro_f1": 0.9063444108761329,
+      "macro_f1_present_codes": 0.9120338108142987,
+      "exact_match": 0.7619047619047619,
       "codes_in_split": 82
     },
     "catatkod_ml_plus_rules": {
-      "micro_precision": 0.9421965317919075,
-      "micro_recall": 0.9819277108433735,
-      "micro_f1": 0.9616519174041298,
-      "macro_f1_present_codes": 0.9711124361052624,
-      "exact_match": 0.8761904761904762,
+      "micro_precision": 0.9257142857142857,
+      "micro_recall": 0.9759036144578314,
+      "micro_f1": 0.9501466275659824,
+      "macro_f1_present_codes": 0.9511937369182707,
+      "exact_match": 0.8476190476190476,
       "codes_in_split": 82
     }
   },

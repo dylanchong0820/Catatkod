@@ -1,0 +1,218 @@
+{
+  "before": {
+    "dev": {
+      "naive_keyword_baseline": {
+        "micro_precision": 0.45714285714285713,
+        "micro_recall": 0.5,
+        "micro_f1": 0.47761194029850745,
+        "macro_f1_present_codes": 0.4255208333333333,
+        "exact_match": 0.16666666666666666,
+        "codes_in_split": 96
+      },
+      "catatkod_rules": {
+        "micro_precision": 0.6571428571428571,
+        "micro_recall": 0.4791666666666667,
+        "micro_f1": 0.5542168674698795,
+        "macro_f1_present_codes": 0.4461805555555555,
+        "exact_match": 0.2833333333333333,
+        "codes_in_split": 96
+      },
+      "catatkod_ml": {
+        "micro_precision": 0.7236842105263158,
+        "micro_recall": 0.5729166666666666,
+        "micro_f1": 0.6395348837209303,
+        "macro_f1_present_codes": 0.5515873015873016,
+        "exact_match": 0.3333333333333333,
+        "codes_in_split": 96
+      },
+      "catatkod_ml_plus_rules": {
+        "micro_precision": 0.6666666666666666,
+        "micro_recall": 0.6041666666666666,
+        "micro_f1": 0.6338797814207651,
+        "macro_f1_present_codes": 0.5625,
+        "exact_match": 0.36666666666666664,
+        "codes_in_split": 96
+      },
+      "n_notes": 60
+    },
+    "test": {
+      "naive_keyword_baseline": {
+        "micro_precision": 0.5664739884393064,
+        "micro_recall": 0.547486033519553,
+        "micro_f1": 0.5568181818181818,
+        "macro_f1_present_codes": 0.48527482618391704,
+        "exact_match": 0.17,
+        "codes_in_split": 121
+      },
+      "catatkod_rules": {
+        "micro_precision": 0.7769230769230769,
+        "micro_recall": 0.5642458100558659,
+        "micro_f1": 0.6537216828478964,
+        "macro_f1_present_codes": 0.5556473829201101,
+        "exact_match": 0.33,
+        "codes_in_split": 121
+      },
+      "catatkod_ml": {
+        "micro_precision": 0.7714285714285715,
+        "micro_recall": 0.6033519553072626,
+        "micro_f1": 0.677115987460815,
+        "macro_f1_present_codes": 0.6082394189832206,
+        "exact_match": 0.36,
+        "codes_in_split": 121
+      },
+      "catatkod_ml_plus_rules": {
+        "micro_precision": 0.7697368421052632,
+        "micro_recall": 0.6536312849162011,
+        "micro_f1": 0.7069486404833837,
+        "macro_f1_present_codes": 0.6419126328217238,
+        "exact_match": 0.43,
+        "codes_in_split": 121
+      },
+      "n_notes": 100
+    }
+  },
+  "after": {
+    "dev": {
+      "naive_keyword_baseline": {
+        "micro_precision": 0.5433070866141733,
+        "micro_recall": 0.71875,
+        "micro_f1": 0.6188340807174888,
+        "macro_f1_present_codes": 0.6407986111111111,
+        "exact_match": 0.21666666666666667,
+        "codes_in_split": 96
+      },
+      "catatkod_rules": {
+        "micro_precision": 0.75,
+        "micro_recall": 0.78125,
+        "micro_f1": 0.7653061224489796,
+        "macro_f1_present_codes": 0.7385416666666668,
+        "exact_match": 0.43333333333333335,
+        "codes_in_split": 96
+      },
+      "catatkod_ml": {
+        "micro_precision": 0.8676470588235294,
+        "micro_recall": 0.6145833333333334,
+        "micro_f1": 0.7195121951219512,
+        "macro_f1_present_codes": 0.5972222222222222,
+        "exact_match": 0.4166666666666667,
+        "codes_in_split": 96
+      },
+      "catatkod_ml_plus_rules": {
+        "micro_precision": 0.75,
+        "micro_recall": 0.8125,
+        "micro_f1": 0.78,
+        "macro_f1_present_codes": 0.7663194444444444,
+        "exact_match": 0.45,
+        "codes_in_split": 96
+      },
+      "n_notes": 60
+    },
+    "test": {
+      "naive_keyword_baseline": {
+        "micro_precision": 0.5945945945945946,
+        "micro_recall": 0.6145251396648045,
+        "micro_f1": 0.6043956043956044,
+        "macro_f1_present_codes": 0.5519414928505838,
+        "exact_match": 0.22,
+        "codes_in_split": 121
+      },
+      "catatkod_rules": {
+        "micro_precision": 0.8013698630136986,
+        "micro_recall": 0.6536312849162011,
+        "micro_f1": 0.72,
+        "macro_f1_present_codes": 0.6457693821330185,
+        "exact_match": 0.43,
+        "codes_in_split": 121
+      },
+      "catatkod_ml": {
+        "micro_precision": 0.8584070796460177,
+        "micro_recall": 0.5418994413407822,
+        "micro_f1": 0.6643835616438356,
+        "macro_f1_present_codes": 0.5537190082644629,
+        "exact_match": 0.37,
+        "codes_in_split": 121
+      },
+      "catatkod_ml_plus_rules": {
+        "micro_precision": 0.8089171974522293,
+        "micro_recall": 0.7094972067039106,
+        "micro_f1": 0.7559523809523809,
+        "macro_f1_present_codes": 0.7074773711137348,
+        "exact_match": 0.49,
+        "codes_in_split": 121
+      },
+      "n_notes": 100
+    }
+  },
+  "final_with_dev_in_training": {
+    "dev": {
+      "naive_keyword_baseline": {
+        "micro_precision": 0.5433070866141733,
+        "micro_recall": 0.71875,
+        "micro_f1": 0.6188340807174888,
+        "macro_f1_present_codes": 0.6407986111111111,
+        "exact_match": 0.21666666666666667,
+        "codes_in_split": 96
+      },
+      "catatkod_rules": {
+        "micro_precision": 0.75,
+        "micro_recall": 0.78125,
+        "micro_f1": 0.7653061224489796,
+        "macro_f1_present_codes": 0.7385416666666668,
+        "exact_match": 0.43333333333333335,
+        "codes_in_split": 96
+      },
+      "catatkod_ml": {
+        "micro_precision": 1.0,
+        "micro_recall": 1.0,
+        "micro_f1": 1.0,
+        "macro_f1_present_codes": 1.0,
+        "exact_match": 1.0,
+        "codes_in_split": 96
+      },
+      "catatkod_ml_plus_rules": {
+        "micro_precision": 0.7933884297520661,
+        "micro_recall": 1.0,
+        "micro_f1": 0.8847926267281107,
+        "macro_f1_present_codes": 0.9486111111111111,
+        "exact_match": 0.65,
+        "codes_in_split": 96
+      },
+      "n_notes": 60
+    },
+    "test": {
+      "naive_keyword_baseline": {
+        "micro_precision": 0.5945945945945946,
+        "micro_recall": 0.6145251396648045,
+        "micro_f1": 0.6043956043956044,
+        "macro_f1_present_codes": 0.5519414928505838,
+        "exact_match": 0.22,
+        "codes_in_split": 121
+      },
+      "catatkod_rules": {
+        "micro_precision": 0.8013698630136986,
+        "micro_recall": 0.6536312849162011,
+        "micro_f1": 0.72,
+        "macro_f1_present_codes": 0.6457693821330185,
+        "exact_match": 0.43,
+        "codes_in_split": 121
+      },
+      "catatkod_ml": {
+        "micro_precision": 0.8888888888888888,
+        "micro_recall": 0.5363128491620112,
+        "micro_f1": 0.6689895470383276,
+        "macro_f1_present_codes": 0.5652892561983471,
+        "exact_match": 0.41,
+        "codes_in_split": 121
+      },
+      "catatkod_ml_plus_rules": {
+        "micro_precision": 0.8125,
+        "micro_recall": 0.7262569832402235,
+        "micro_f1": 0.7669616519174042,
+        "macro_f1_present_codes": 0.7267611176702085,
+        "exact_match": 0.52,
+        "codes_in_split": 121
+      },
+      "n_notes": 100
+    }
+  }
+}

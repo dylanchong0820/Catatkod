@@ -1,0 +1,161 @@
+note_id,note_text,gold_codes,negated_codes,split,source
+IND001,"x mkn, sgt kurus. Advise mkn byk sikit. Pt sgt lemah. F/U klinik.",MG43.7,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND002,"DM1, ulser perut & thyroid overactive - stable. No sakit kepala NEC. BP ok, refill meds. 👍",5A02.Z;5A10;DA60.Z,MB4D,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND003,Batuk2 je. Cpt dgr paru2 ok. Adv mc if x baik. 👍,MD12,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND004,COVID+ doc cnfrm. No degup jantung laju. HR stable. Advise isolasi. 👍,RA01,MC81.2,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND005,"Pt c/o haus sgt + rasa pedih htg, rhinitis ada sdh. No mual. Bp ok, advise air byk & antacid. F/U if x baik.",CA08.0Z;MD95;MG43.0,MD90.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND006,UTI - dr ckp kena jangkitan kencing. CTS hx known. No cramp/spasm. Pt c/o sakit tangan. Rx abx & advise rest. F/U klinik.,8C10.0;GC08.Z,MB47.3,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND007,Peluh banyak sgt ptg ni. No sakit badan. BP ok. Sweating++ only.,ME66.5,FB56.2,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND008,"Perut buncit sgt. Pt ckp mcm kembung. Obs: distension +++. Advise: minum air, observe. F/U if x baik.",ME01,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND009,"Radang tekak akute, doc ckp. No pening/collapse/jatuh. PRN paracetamol. F/U if x baik.",CA02.Z,MG45.Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND010,"Period sgt banyak x teratur, + protein dlm air kencing. Telinga sakit rn. BP ok. Advise follow up dr.",AB70.2;GA22;MF96.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND011,"Vomiting x3, pg sakit perut (infeksi usus dr kata). No rasa pedih htg. ORS given, advise diet & hydration. F/U if x baik.",1A40.Z;MD90.1,MD95,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND012,"Sakit kencing! Pt c/o pedih time kencing. Suspect UTI, advise ++ air, follow up if x baik.",MF50.7,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND013,"Pt c/o sakit perut xsure area. PRN paracetamol, advise observe. F/U if xbaik.",MD81.4,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND014,"GERD & anemia besi known hx. Pt c/o heartburn, okay2. No batuk darah. BP: 120/80. Advised to cont meds & iron. 👍",3A00.Z;DA22.Z,MD22,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND015,"Sakit jantung ada, history kencing manis xde. Athero sdh lama, bg info diet & ubat. BP ok, HR reg. Follow up dgn doktor.",BA52.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND016,"Denggi + ckp xjelas (slurred speech). Doc dah tgk. PRN paracetamol, advise rehydratn & dtg blk if worsen. ASAP!",1D2Z;MA80.2Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND017,"OE + tonsil sakit, doc ckp. No serdah. Pt c/o telinga gatal & tekak sakit. PRN paracetamol. F/U if x baik.",AA3Z;CA03.Z,MA82.10,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND018,"Constip, last 3 days. No sakit kencing/nyut2. Advised air & serat + movicol. F/U if x baik.",ME05.0,MF50.7,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND019,"Demam bentol2 satu badan, mata merah sikit. Dr ckp 'allergy' kot. Antihistamine & eye drop bg. F/U klinik if x baik.",EB00.Z;MC15,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND020,"DM pt, gula rendah (BG <3.0), hidung berdarah sikit, x tahan kencing. Doc dah tau. 🩺",5A21.Z;MD20;MF50.2Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND021,"Sakit sendi, rasa mcm kebas2. No susah nafas. PRN painkiller given. F/U klinik.",MB40.Z;ME82,MD11.5,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND022,Flu + sakit dada time tarik nafas. Doc ckp virus x kenal. No numb2/rasa hilang. PRN paracetamol. Bg MC 3 hari.,1E32;MD30.0,MB40.Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND023,K/junctivitis dr cnfrm. Mata merah2. No suara serak. Advise eye drop & hygiene. F/U if x baik.,9A60.Z,MA82.10,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND024,"Pusing2 keliling, xde melaena. BP ok. Advise rehat + p minum air. F/U if still pusing.",MB48.0Z,ME24.A4,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND025,"Obesiti KN, berat badan naik sikit. Nasihat diet & senaman. Boleh repeat BP next week.",5B81.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND026,BP (doc ckp facial drop) - no pain kaki/tgn. OK.,8B88.0,FB56.4,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND027,"Gout hx, telinga bengkak + nanah (ASOM dr ckp). Rx Augmentin 5/7. Bg painkiller jg.",AA90;FA25,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND028,Impettigo dr cnfrm. Salap + edukasi bersih2. F/U klinik if x baik pulak.,1B72.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND029,DM reti (old case) + feverish. PRN paracetamol. FU klinik if x baik.,9B71.0Z;MG26,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND030,"Cellulitis/lymphangitis (doc suspek infeksi kuman). No pusing2/vertigo. Rx: Abx given, wound care advised. F/U klinik if x baik pulih.",1B70.Z,MB48.0Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND031,"Sciatica + pusing2 (dizzy). PRN panadol. Advise rest, if still sakit call balik.",MB48.Z;ME84.3,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND032,Edema seluruh badan + cramp kaki. Bg ubat spasma & suruh follow up dgn doktor. PRN painkiller jg.,MB47.3;MG29.1,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND033,K/o batu kencing & kolesterol tinggi. No pusing2. BP: 130/80. Advised follow up dgn Dr. OK.,5C80.2;GB70.0Z,MB48.0Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND034,Jerawat & ekzema (lama dh) - advise cetaphil/moisturizer. Follow up dgn dr if x baik. 👍,EA80.Z;ED80.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND035,"FU routine, no c/o. Kaki x bengkak, NO edema LL. BP ok, advise cont meds. 👍",,MG29.01,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND036,"CKD follow up. BP ok, dialisis schedule confirmed. Pesan ubat repeat, bg info diet sikit. 👍",GB61.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND037,"Bronkitis akot, doc ckp. No perut pain/susah perut. BP: normal. PRN neb & cough syrup. F/U klinik.",CA42.Z,MD81.4,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND038,Kencing byk sgt! Polyuria +++. No gatal2 skin. BP ok. Pt ckp minum air byk. F/U klinik.,MF55,EC90.Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND039,SOB + blood dlm air kencing. BP ok. Advise dtg hosp if teruk. PRN O2 if perlu.,MD11.5;MF50.4Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND040,Pnemonia dr cnfrm. Sakit2 badan teruk. No blood dlm air kencing. PRN paracetamol. F/U klinik.,CA40.Z;FB56.2,MF50.4Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND041,"Frozen shoulder (old case). Scabies - dr cnfrm, bg lotion & ubat gatal. Nasihat hygiene.",1G04.Z;FB53.0,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND042,Sejuk2 + gatal1 badan. No sakit dada. PR ok. Doc check ASAP pls!,EC90.Z;MG21,MD30.Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND043,"HypoT (known), gigi busuk dr ckp. No demam/FUO. BP ok. Pt advise follow up dentist & dr.",5A00.Z;DA08.0,MG26,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND044,"Smoker hx, pt stable. No muntah darah. BP ok, advise kurangkan rokok. F/U klinik.",QE13,ME24.A5,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND045,"Sakit tekak ckp byk, kencing kerap sgt. Prob UTI? Bg ubat demam + air byk. Follow up klinik.",MD36.0;MF50.0,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND046,Risau sgt. Bg diazepam 2mg. Ck balik klinik if x ok. PRN.,MB24.3,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND047,"CHF hx, +demam panas2 ruam full body. Dr ckp measles. PRN paracetamol, advise jgn dtg klinik lg smpi sihat.",1F03;BD10,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND048,"Pt tiba2 pengsan dkt luar. BP ok. Cek gula normal. Suruh rehat, observe 15min. Bg air.",MG45.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND049,"Pt c/o pening & lemah sikit. PRN drip 1L NS stat. Kena bg air bnyk2, dehydration jelas. 👍",5C70.0,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND050,Batuk berdarah 🩸+ sedikit. Advise rest + follow up dr. ASAP. PRN paracetamol if demam.,MD22,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND051,"Leg bengkak ++. Gastrik & Hep B known. No rash. BP ok, advise diet & follow up. PRN painkiller.",1E51.0Z;DA42.Z;MG29.01,ME66.6Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND052,"TB hx, muntah darah +++ now. Migrain jgk. No sakit tekak. BP ok, PR:88. Doc pls check ASAP!",1B10.Z;8A80.Z;ME24.A5,MD36.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND053,"PMH: x comply dgn ubat2, liver berlemak. + missed period. Boleh jadi preg ke? Nanti check urine.",DB92.Z;GA20.0Z;QC49,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND054,Chicken pox + selsema biasa. Doc ckp viral. No chest pain. PRN paracetamol. Bg advice jgn garu. F/U if demam tinggi.,1E90.Z;CA07.0,MD30.Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND055,"FU routine. No c/o. Nafas ok, xde sakit dada bila bernafas. BP: 120/80. All good 👍",,MD30.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND056,P/w: buasir lama. Advise diet & cream. F/U if x baik pulak. 👍,DB60.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND057,"Lg sakit kaki, xde sakit tekak. PRN paracetamol, advise rest. F/U if worsen. ASAP!",FB56.4,MD36.0,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND058,"Skit pusing, suara serak. No rash. PRN paracetamol, advise rehat. F/U if x baik.",MA82.10;MB4D,ME66.6Z,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND059,"Rash + stroke lama (CVA hx). Check BP, advise follow up dgn doktor. Ok je.",8B11;ME66.6Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND060,"sgt sakit pinggang, doc ckp kena 'api'…pain lvl 8/10. Advise rest + antiviral. F/U klinik.",1E91.Z,,dev,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND061,"Tidur xboleh lena, sakit dada sikit. Bg panadol + advise kurang stress. Follow up dgn doktor. ASAP!",7A0Z;MD30.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND062,"Astma & sakit lutut lama. No chillz. PRN inhaler refill, advise senaman ringan. 👍",CA23;FA01.Z,MG21,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND063,"Dysmenorrhea kuat sgt, COPD hx, wt loss noted. No joint pain. Bp ok, advise diet & follow up dr. Cepat!",CA22.Z;GA34.3;MG43.5,ME82,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND064,"Melena + ankle terseliuh/terkehel (Dr sdh tgk), kurap jg ada. No minum byk2. BP ok, PR normal. Doc instruct follow up.",1F28.Z;ME24.A4;ND14.7Z,MG43.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND065,Pt c/o letih sgt. Cholesterol tinggi (known case). BP ok. Advise diet & follow up dgn doktor. 👍,5C80.0Z;MG22,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND066,"Nausea ++, ckp rasa loya2. Advise makan sikit2, plain biskut. PRN panadol.",MD90.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND067,"Jaundis + cirit birit. PF hx ada. BP ok. Advise: minum byk air, rehat. Follow up klinik.",FB40.1;ME05.1;ME10.1,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND068,"Wheezing + BP tinggi (HTN known case). No melaena. Neb salbutamol stat, advise follow up dr. ASAP.",BA00.Z;MD11.C,ME24.A4,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND069,"DM + DFU, luka kaki still ada. Bg info wound care, check BS lvl. Follow up klinik.",5A11;BD54,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND070,LBP + selsema akot. Doc ckp 'naso' je. PRN paracetamol.,CA00;ME84.2Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND071,"Susah telan + jantung berdebar2. Cek BP normal. Advise makan slow2, if teruk, g hosp.",MC81.2;MD93,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND072,FU routine. OK sgt. No ckp apa2. Xde turun berat badan teruk. BP: 120/80. All good 👍,,MG43.5,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND073,"Sinus teruk, doc ckp. Scabies jg ada. CTS known hx. Rx: abx, permethrin. Follow up klinik.",1G04.Z;8C10.0;CA01,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND074,Sejuk2 + lelah nafas. Mata merah2 doc ckp konjuntivitis. PRN paracetamol & eye drop. F/U klinik.,9A60.Z;MD11.C;MG21,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND075,"Abdo pain ++, ckp sikit2 je. Gout history, bg ubat yg lama. PRN painkiller. F/U klinik.",FA25;MD81.4,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND076,"Sinus teruk, sembelit + sakit2 badan. Doc ckp sinus akot. Advise byk air, movicol, panadol. F/U if x baik.",CA01;FB56.2;ME05.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND077,Rash + air kencing ada darah. Suspek allergy/UTI? Kena refer doc ASAP.,ME66.6Z;MF50.4Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND078,Nasofaringitis akut + hidung berdarah. No generalized swelling. PRN paracetamol. Advise plenty fluids. F/U if worsen. 👍,CA00;MD20,MG29.1,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND079,"NAFLD hx, advise diet & exercise. BP ok, wt stable. Follow up dgn dr.",DB92.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND080,"TB history (x confirm), heartburn c/o. Urine -ve protein. PRN antacid. F/U klinik.",1B10.Z;MD95,MF96.Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND081,Cholesterol tinggi (known hx). Ankle terseliuh/terkehel doc ckp. Urticaria tiba2 muncul. No palpitations. BP ok. Advised rest & antihistamine. F/U if x baik.,5C80.0Z;EB00.Z;ND14.7Z,MC81.2,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND082,"CHF & BP tinggi known case. Period x dtg, ask preg test. No batuk darah. OK.",BA00.Z;BD10;GA20.0Z,MD22,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND083,"Protein dlm air kencing + (++) , suara serak sikit. Eczema ada since dulu. BP ok. Advise follow up dr.",EA80.Z;MA82.10;MF96.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND084,"Bronkitis akot, doc ckp. No demam/FUO. Bg ubat batuk & nasihat rehat. Ok.",CA42.Z,MG26,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND085,"Gastrik kdg2 sakit perut. No LBP. BP ok, advise makan ubat & elak pedas/masam. F/U if x baik.",DA42.Z,ME84.2Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND086,"Wt loss sgt2, kaki bengkak merah2 (doc suspek jangkitan kuman). Abx given, follow up klinik.",1B70.Z;MG43.5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND087,"SOB ++, susah nak bernafas. No rash. O2 sat ok. PRN nebuliser. F/U klinik.",MD11.5,ME66.6Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND088,"HB kronik stable. Ckp xjelas sikit (dysarthria?), +ve COVID doc ckp. Advise isolasi, follow up klinik.",1E51.0Z;MA80.2Z;RA01,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND089,Ptg: sakit perut period + pusing2. No sakit blkg. BP normal. Advil & rest. F/U if x baik.,GA34.3;MB48.0Z,ME84.2Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND090,"Batuk berdarah +++. No sakit badan. BP ok, SpO2 98%. Advise follow up dr ASAP.",MD22,FB56.2,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND091,"Dehydrated pt, chicken pox (dr sdh ckp). Reflux ada. IV fluids given, advise minum byk air.",1E90.Z;5C70.0;DA22.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND092,"Telinga sakit ➡️ kanan. Cek ear, normal. Advise paracetamol + observe. F/U if x baik.",AB70.2,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND093,Batuk + loya. Bg ubat batuk & anti-emetic. Ck BP normal. Settle.,MD12;MD90.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND094,"BP (muka senget) - doc ckp Bell's Palsy. Advise pt observe, follow up klinik. 👍",8B88.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND095,"Stroke pt, selsema biasa (URI dx by Dr). No thrsty2 sgt. BP ok, monitor.",8B11;CA07.0,MG43.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND096,"Frozen shoulder, history ada. Advised ROM exc & pain meds, follow up dgn Dr. next wk. 👍",FB53.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND097,"DM reti (old case), lutut sakit2 (osteo). No bengkak kaki. BP ok. Follow up dgn mata & ortho. 👍",9B71.0Z;FA01.Z,MG29.1,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND098,Pt c/o letih sgt. No rasa kebas2. BP ok. Adv rest + ptg minum air.,MG22,MB40.Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND099,"Sakit2 sendi, ckp 'nyer' je. Ptg Paracetamol, suruh dtg lg klau x baik.",ME82,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND100,"Throat sakit, dr ckp radang. DM type 2, + non-compliant pt. Follow up klinik ya.",5A11;CA02.Z;QC49,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND101,"Asma k/o. Neb PEF normal. Salbutamol PRN given, advise follow up klinik. Ok bai.",CA23,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND102,"vomit darah! BP stable. Alert, but pale. Dr call ASAP. Hb check stat!",ME24.A5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND103,Smoker hx. Jaundice + headache (NEC). No serdah. BP ok. Advise follow up dr. ASAP.,MB4D;ME10.1;QE13,MA82.10,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND104,"PF hx, gigi berlubang doc ckp. Minum byk sgt. No period pain. BP ok. Advise: follow up dentist & PF care. F/U klinik.",DA08.0;FB40.1;MG43.0,GA34.3,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND105,UTI - doc ckp kena air kencing. Perut kembung sikit. Advise minum byk air. F/U if x baik.,GC08.Z;ME01,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND106,Cirit2 + peluh byk sgt. Bg ORS & nasihat diet. F/U if x baik.,ME05.1;ME66.5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND107,"Kencing byk sgt, sakit pinggang sikit. BP ok. Advise minum air cukup & observe. F/U if x baik.",ME84.2Z;MF55,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND108,"Pusing2 + demam, Dr sdh cnfrm denggi. PRN paracetamol, advise rehydratn & dtg blk jgn lg teruk.",1D2Z;MB48.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND109,"DM pt, gula rendah (hypo) - bg check 2.8mmol/L, bgv given. No batuk darah.",5A21.Z,MD22,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND110,"Loss appetite sgt, x mkn. No mata merah. Boleh cuba multivitamin, advise ++ makan.",MG43.7,MC15,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND111,"COPD pt, bgk stabil. xde gatal2. Neb O2 stat. BP ok. HR ok. Doc review pls.",CA22.Z,EC90.Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND112,Cramp kaki + ruam api (doc suspek shingles) + demam. PRN paracetamol. FU klinik.,1E91.Z;MB47.3;MG26,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND113,"UL sering sakit perut, history gastrik. No muntah/mual. PRN antacid. F/U dgn doktor.",DA60.Z,MD90.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND114,Kencing tak tahan + risau sgt. Advise pelvic floor exercises & bg panadol. Follow up dgn doktor. ASAP!,MB24.3;MF50.2Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND115,"TSH rendah sgt, pt ckp panas2, dah tau pn sakit kelenjar thyroid. Ref endocrin ASAP.",5A02.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND116,Sciatica + gatal2 (pruritus). Period banyak & x teratur. Advise iron + painkiller. F/U if worsen.,EC90.Z;GA22;ME84.3,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND117,"Pt tiba2 pengsan dkt luar. BP ok. Cek gula normal. Suruh rehat, observe 15min. Bg air.",MG45.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND118,Throat sakit ckit. No demam/lain2. PRN lozenges. 👍,MD36.0,MG26,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND119,Sakit dada time tarik nafas. Ckp 'sakit sini' ptg chest. BP ok. Advise: dtg balik kalau teruk.,MD30.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND120,Pneumonia + cirit birit/demam. Doc sdh bg Rx. Monitor suhu & hydration. ASAP follow up.,1A40.Z;CA40.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND121,"kulit kayap + kencing manis kaki bnm (ulser), telan mskin. Dr sdh tgk. F/U klinik.",1F28.Z;BD54;MD93,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND122,"Cholesterol tinggi sdh lama, pt bgtau. Lipids check last visit ok je. Repeat lipids next appt. 👍",5C80.2,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND123,"Jerawat (old case). Sakit jantung sdh lama. BM ok, xde sembelit. BP: 130/80. PRN meds given. F/U klinik.",BA52.Z;ED80.Z,ME05.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND124,IDA & gemuk k/o. Impetigo (dr dx). Sciatica -ve. Bg Hb check next appt. K/o iron tabs & diet advice given.,1B72.Z;3A00.Z;5B81.Z,ME84.3,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND125,"Leg bengkak ++, muntah2 xberapa, mata merah skit. PRN paracetamol & ORS. F/U if worsen.",MC15;MD90.1;MG29.01,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND126,"Tonsil bengkak teruk, doc ckp acute. Edema seluruh badan +++. No abdominal pain reported. PRN paracetamol. F/U doc.",CA03.Z;MG29.1,MD81.4,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND127,💩hitam pekat! Melaena jelas. Dr perlu tgk cpt. BP stable.,ME24.A4,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND128,"Lg sakit2...kt tgn/kaki? Paracetamol bg, suruh dtg lg klu x baik. PRN.",FB56.4,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND129,Sakit kencing! Dysuria +ve. No slurred speech (x dysarthria). Pt c/o rasa pedih time kencing. BP normal.,MF50.7,MA80.2Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND130,"Snsn terganggu, xde sakit telinga. Pt ckp mcm kebas2. F/U dr.",MB40.Z,AB70.2,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND131,"CKD follow up. BP ok, dialisis schedule confirmed. Pesan ubat repeat, bg info diet sikit. 👍",GB61.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND132,"Migrain kdg2, now chest pain cpt. Rhinitis ada sdh lama. BP ok. PRN panadol + antihistamine. Advise rest & observe.",8A80.Z;CA08.0Z;MD30.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND133,FU routine. No c/o. BP ok. Abdomen: x sakit perut lain2. All good 👍,,MD81.4,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND134,"Kencing kerap sgt, xde demam/sejuk. Pt ckp nk pi toilet byk kali. No chills. Boleh bg advice air ptg?",MF50.0,MG21,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND135,"Batu kencing (old case). Flu - doc ckp viral. PRN paracetamol, advise bnyk mnum air. 👍",1E32;GB70.0Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND136,"FU routine, no c/o. BP ok, wt stable. No sembelit! 👍",,ME05.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND137,"ASOM dx by Dr. Ear sakit, nanah keluar. No serak. Rx: Abx + ear drops. F/U klinik if x baik.",AA90,MA82.10,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND138,"Telinga luar merah2, sakit. Dr ckp 'swimming ear' - give ototrim drops, advise jgn kluar air. F/U if x baik.",AA3Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND139,"T1DM hx, tido xblh lena. No period pon. B/P ok. Advised sleep hygiene + follow up dr. ASAP.",5A10;7A0Z,GA20.0Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND140,P/t dgn buasir & thyroid lama. Dr ckp measles. Advise rest + paracetamol. F/U if demam tinggi.,1F03;5A00.Z;DB60.Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND141,"Pt c/o jantung berdebar2. BP ok, PR slightly fast. Adv rest & drink air. F/U if x baik.",MC81.2,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND142,"DM reti (old case), tonsil bengkak doc ckp. No bengkak kaki. BP ok. PRN paracetamol. F/U klinik.",9B71.0Z;CA03.Z,MG29.01,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND143,"Telinga sakit, sembelit. No ruam. PRN laxative bg, advise air byk. F/U if x baik.",AB70.2;ME05.0,ME66.6Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND144,Nausea + gatal2 (scabies - Dr sdh ckp). No serak. PRN anti-histamine & permethrin. F/U klinik.,1G04.Z;MD90.0,MA82.10,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND145,HB kronik - follow up dgn dr. Pastikan ada ambil ubat. OK.,1E51.0Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND146,"FU routine, no c/o. BP ok, nadi ok. X pening/pengsan/jatuh. All good 👍",,MG45.Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND147,"Kencing kerap sgt. Pt ckp nk pi toilet byk kali. Adv drink more air, observe. F/U if x baik.",MF50.0,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND148,PMH: x comply dgn ubat. Ckp jantung berdebar2. Dr sdh ckp measles. Nasihat follow up & jgn lupa mkn ubat ye.,1F03;MC81.2;QC49,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND149,"CHF & thyrotoxic - both KNOWN. BP ok, sbg reminder ubat kena telan. F/U dgn Dr.",5A02.Z;BD10,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND150,"Batu kencing - history ada. Advise minum air byk, follow up dgn Dr. OK.",GB70.0Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND151,"Sensasi pelik2, telan mskn + gatal2 satu badan (doktr ckp allergic). PRN antihistamine. F/U if xbaik.",EB00.Z;MB40.Z;MD93,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND152,"Kencing byk sgt, gout lama2, doc ckp kena shingles. PRN pain meds given. F/U klinik.",1E91.Z;FA25;MF55,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND153,Hemo (known). Sakit tekak sikit. No chest pain bila nafas. PRN paracetamol. Bgak surat MC 1 hari. F/U if x baik.,DB60.Z;MD36.0,MD30.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND154,"Batuk berdarah +++. No sign dehidration. BP ok, SPO2 98%. Doc review pls ASAP!",MD22,5C70.0,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND155,"Peluh byk sgt, chicken pox dr ckp. Advise calamine, rest. 👍",1E90.Z;ME66.5,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND156,Cough++ x haematemesis. Bgth p/u prn. K/S okay.,MD12,ME24.A5,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND157,"Sakit kencing! Pt c/o pedih time kencing. Suspect UTI, advise ++ air, follow up if x baik.",MF50.7,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND158,"Impetigo - doc ckp. Rhinitis ada sblm ni. No chest pain. K/u baik. Pt ok, advise bersih2 luka. F/u klinik.",1B72.Z;CA08.0Z,MD30.Z,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND159,"PI: kencing tak tahan + doc ckp pnemonia & demam denggi. PRN: abx, advise minum byk air. F/U klinik.",1D2Z;CA40.Z;MF50.2Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT
+IND160,"Tidur xboleh nk lena, ckp susah nk tido. Advise good sleep hygiene, bg info pasal insomnia. Follow up dgn doktor.",7A0Z,,test,sealion:aisingapore/Gemma-SEA-LION-v4-27B-IT

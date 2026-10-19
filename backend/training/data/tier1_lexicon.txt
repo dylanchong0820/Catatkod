@@ -6,8 +6,8 @@
 # Draft by the CatatKod team - every code and phrase needs clinical review before real use.
 
 # ---------- Symptoms / findings (chapter 21 and similar) ----------
-MG26    | S | Demam                          | demam; panas badan; badan panas; demam panas; fever; deman; dmm
-MG21    | S | Menggigil                      | menggigil; seram sejuk; chills; rigors; badan menggigil
+MG26    | S | Demam                          | demam; panas badan; badan panas; demam panas; fever; deman; dmm; feverish; febrile
+MG21    | S | Menggigil                      | menggigil; seram sejuk; chills; rigors; badan menggigil; sejuk sejuk; rasa sejuk menggigil
 MD12    | S | Batuk                          | batuk; batuk kering; batuk berkahak; cough; btk; batuk2
 MD11.5  | S | Sesak nafas                    | sesak nafas; nafas pendek; susah bernafas; sob; tercungap; semput; nafas sesak
 MD11.C  | S | Nafas berdehit                 | wheeze; wheezing; nafas berbunyi; bunyi siul bila bernafas; nafas berdehit
@@ -18,13 +18,13 @@ MD36.0  | S | Sakit tekak                    | sakit tekak; tekak sakit; tekak p
 MA82.10 | S | Suara serak                    | suara serak; suara garau; hoarse voice; suara hilang; suara pecah
 MD20    | S | Hidung berdarah                | hidung berdarah; darah keluar hidung; epistaxis; nosebleed; berdarah hidung
 MB4D    | S | Sakit kepala                   | sakit kepala; kepala sakit; kepala berdenyut; headache; pening kepala; kepala berat
-MB48.Z      | S | Pening                         | pening; rasa nak pitam; kepala ringan; dizzy; dizziness; pening lalat
-MB48.0Z   | S | Vertigo                        | bilik berpusing; rasa berpusing; vertigo; dunia berputar; macam bilik pusing
+MB48.Z      | S | Pening                         | pening; rasa nak pitam; kepala ringan; dizzy; dizziness; pening lalat; pusing kepala; kepala pusing
+MB48.0Z   | S | Vertigo                        | bilik berpusing; rasa berpusing; vertigo; dunia berputar; macam bilik pusing; pusing pusing; pusing keliling
 MG45.Z      | S | Pengsan                        | pengsan; jatuh pengsan; syncope; tak sedarkan diri sekejap; pitam sampai jatuh
 MD90.0  | S | Loya                           | loya; mual; rasa nak muntah; nausea; mual2; loya tekak
 MD90.1  | S | Muntah                         | muntah; muntah2; vomit; vomiting; termuntah
 ME05.1  | S | Cirit-birit                    | cirit; cirit birit; berak cair; najis cair; diarrhoea; diarrhea; buang air besar cair
-ME05.0  | S | Sembelit                       | sembelit; susah berak; susah buang air besar; constipation; sembelit teruk
+ME05.0  | S | Sembelit                       | sembelit; susah berak; susah buang air besar; constipation; sembelit teruk; constip; constipated; x berak
 MD81.4  | S | Sakit perut                    | sakit perut; perut sakit; perut memulas; senak perut; abdominal pain; abd pain; perut pedih
 MD95    | S | Pedih ulu hati                 | pedih ulu hati; ulu hati pedih; heartburn; pedih hulu hati; ulu hati rasa terbakar
 ME01    | S | Perut kembung                  | perut kembung; kembung perut; bloating; perut rasa penuh angin; perut masuk angin
@@ -33,16 +33,16 @@ ME24.A5 | S | Muntah darah                   | muntah darah; muntah ada darah; h
 MD93    | S | Susah menelan                  | susah telan; susah nak menelan; makanan tersekat; dysphagia; payah nak telan
 ME10.1  | S | Kuning                         | mata kuning; kulit kuning; badan kuning; jaundice; kekuningan
 MF50.7  | S | Pedih kencing                  | pedih kencing; sakit masa kencing; kencing pedih; kencing rasa panas; dysuria; burning micturition
-MF50.4Z   | S | Kencing berdarah               | kencing berdarah; kencing ada darah; air kencing merah; haematuria; hematuria
+MF50.4Z   | S | Kencing berdarah               | kencing berdarah; kencing ada darah; air kencing merah; haematuria; hematuria; blood dalam air kencing; darah dalam kencing; darah dalam air kencing
 MF50.0  | S | Kerap kencing                  | kerap kencing; asyik kencing; selalu kencing; kencing banyak kali; urinary frequency; kencing malam banyak kali
 MF55    | S | Banyak kencing                 | banyak kencing; polyuria; air kencing banyak sangat; kencing banyak sangat
-MF50.2Z   | S | Tak tahan kencing              | terkencing; tak dapat tahan kencing; kencing terlepas; urinary incontinence; tak sempat ke tandas
+MF50.2Z   | S | Tak tahan kencing              | terkencing; tak dapat tahan kencing; kencing terlepas; urinary incontinence; tak sempat ke tandas; tak tahan kencing; x tahan kencing
 MF96.Z      | S | Kencing berbuih                | kencing berbuih; air kencing berbuih; buih dalam kencing; proteinuria; protein dalam urin
-MG29.01 | S | Bengkak kaki                   | kaki bengkak; bengkak kaki; kaki sembab; buku lali bengkak; pedal oedema; leg swelling
+MG29.01 | S | Bengkak kaki                   | kaki bengkak; bengkak kaki; kaki sembab; buku lali bengkak; pedal oedema; leg swelling; leg bengkak; bengkak leg; legs bengkak
 MG29.1  | S | Bengkak seluruh badan          | badan bengkak; bengkak satu badan; muka dan kaki bengkak; generalised oedema; seluruh badan sembab
-MG43.0  | S | Selalu dahaga                  | cepat haus; selalu haus; dahaga; asyik haus; polydipsia; rasa haus
-MG43.7  | S | Hilang selera makan            | tak lalu makan; hilang selera makan; kurang selera makan; tak selera makan; poor appetite; selera makan kurang
-MG43.5  | S | Berat badan turun              | berat turun; berat badan turun; kurus mendadak; weight loss; susut berat badan
+MG43.0  | S | Selalu dahaga                  | cepat haus; selalu haus; dahaga; asyik haus; polydipsia; rasa haus; haus sangat; sangat haus; haus sgt
+MG43.7  | S | Hilang selera makan            | tak lalu makan; hilang selera makan; kurang selera makan; tak selera makan; poor appetite; selera makan kurang; tak nak makan; x selera; selera kurang
+MG43.5  | S | Berat badan turun              | berat turun; berat badan turun; kurus mendadak; weight loss; susut berat badan; sangat kurus; makin kurus; berat makin turun
 MG22    | S | Letih                          | letih; penat; cepat penat; lemah badan; lesu; fatigue; tak bermaya
 FB56.2  | S | Sakit otot                     | sakit badan; sengal badan; sakit otot; lenguh badan; myalgia; sengal2 badan
 ME84.2Z   | S | Sakit pinggang                 | sakit pinggang; pinggang sakit; sakit belakang bawah; lbp; low back pain
@@ -58,19 +58,19 @@ MC15    | S | Mata merah                     | mata merah; red eye; mata kemerah
 AB70.2  | S | Sakit telinga                  | sakit telinga; telinga sakit; otalgia; ear pain; telinga berdenyut
 MB24.3  | S | Cemas                          | cemas; gelisah; risau sangat; anxiety; rasa takut tak tentu pasal
 MA80.2Z   | S | Cakap tidak jelas              | cakap tak jelas; pelat tiba2; slurred speech; dysarthria; percakapan tak jelas
-5C70.0  | S | Dehidrasi                      | dehidrasi; bibir kering; dehydrated; kurang air; kering tekak teruk
+5C70.0  | S | Dehidrasi                      | dehidrasi; bibir kering; dehydrated; kurang air; kering tekak teruk; dehydration; kurang air badan
 ME66.5  | S | Berpeluh                       | berpeluh banyak; peluh sejuk; berpeluh malam; excessive sweating; berpeluh2
 7A0Z    | S | Susah tidur                    | susah tidur; tak boleh tidur; insomnia; terjaga malam; susah nak lena
 
 # ---------- Chronic conditions / history ----------
 5A11    | H | Diabetes mellitus jenis 2      | kencing manis; diabetes; dm; t2dm; dm type 2; sakit gula; dm2
-5A10    | H | Diabetes mellitus jenis 1      | t1dm; dm type 1; kencing manis jenis 1; diabetes jenis 1; type 1 diabetes
+5A10    | H | Diabetes mellitus jenis 1      | t1dm; dm type 1; kencing manis jenis 1; diabetes jenis 1; type 1 diabetes; dm1 hx; dm type1; insulin dependent
 BA00.Z      | H | Hipertensi primer              | darah tinggi; hipertensi; hpt; htn; tekanan darah tinggi; hypertension
 5C80.0Z   | H | Kolesterol tinggi              | kolesterol tinggi; high cholesterol; hypercholesterolaemia; kolestrol tinggi; chol tinggi
 5C80.2  | H | Hiperlipidemia campuran        | dyslipidaemia; dyslipidemia; lemak darah tinggi; hyperlipidaemia; hld
 5B81.Z      | H | Obesiti                        | obes; obesiti; obesity; berat berlebihan; terlebih berat
 GB61.Z      | H | Penyakit buah pinggang kronik  | ckd; sakit buah pinggang kronik; buah pinggang lemah; chronic kidney disease; ginjal lemah
-BA52.Z      | H | Aterosklerosis koronari        | ihd; cad; sakit jantung koronari; salur jantung tersumbat; ischaemic heart disease
+BA52.Z      | H | Aterosklerosis koronari        | ihd; cad; sakit jantung koronari; salur jantung tersumbat; ischaemic heart disease; sakit jantung; athero; atherosclerosis
 BD10    | H | Kegagalan jantung kongestif    | ccf; heart failure; jantung lemah; kegagalan jantung; chf
 8B11    | H | Strok iskemia                  | strok; stroke; angin ahmar; cva; pernah strok
 CA23    | H | Asma                           | asma; athma; asthma; lelah; bronchial asthma
@@ -79,24 +79,24 @@ FA25    | H | Gout                           | gout; penyakit gout; serangan gou
 FA01.Z      | H | Osteoartritis lutut            | oa lutut; oa knee; osteoarthritis lutut; lutut haus; sendi lutut haus
 DA22.Z      | H | Refluks gastro-esofagus        | gerd; gastric reflux; asid naik; reflux; asid naik ke tekak
 DA42.Z      | H | Gastritis                      | gastrik; gastritis; sakit gastrik; perut gastrik; gastrik datang
-3A00.Z      | H | Anemia kekurangan zat besi     | anemia kekurangan zat besi; ida; anemia zat besi; kurang zat besi; iron deficiency
-5A00.Z      | H | Hipotiroid                     | hypothyroid; tiroid kurang aktif; hipotiroid; hypothyroidism
-5A02.Z      | H | Tirotoksikosis                 | hyperthyroid; tiroid terlampau aktif; hipertiroid; thyrotoxicosis; thyrotoxic
+3A00.Z      | H | Anemia kekurangan zat besi     | anemia kekurangan zat besi; ida; anemia zat besi; kurang zat besi; iron deficiency; anemia besi; anaemia besi; iron deficiency anaemia
+5A00.Z      | H | Hipotiroid                     | hypothyroid; tiroid kurang aktif; hipotiroid; hypothyroidism; hypot; underactive thyroid; thyroid underactive
+5A02.Z      | H | Tirotoksikosis                 | hyperthyroid; tiroid terlampau aktif; hipertiroid; thyrotoxicosis; thyrotoxic; thyroid overactive; overactive thyroid; tiroid overactive
 DB92.Z      | H | Hati berlemak                  | fatty liver; hati berlemak; nafld; lemak hati
 1E51.0Z   | H | Hepatitis B kronik             | hep b; hepatitis b; hbv carrier; pembawa hepatitis b; hbsag positif
-1B10.Z      | H | Tibi paru-paru                 | tibi; ptb; pulmonary tb; tuberculosis; tb paru
+1B10.Z      | H | Tibi paru-paru                 | tibi; ptb; pulmonary tb; tuberculosis; tb paru; tb; tb hx; tibi paru
 DB60.Z      | H | Buasir                         | buasir; piles; haemorrhoid; buasir berdarah; hemorrhoids
 GA34.3  | S | Senggugut                      | senggugut; sakit period; sakit haid; period pain; dysmenorrhoea
-GA20.0Z   | S | Amenorea                       | haid tak datang; period tak datang; amenorrhoea; tak datang bulan
-GA22    | S | Haid berlebihan                | haid banyak; period banyak sangat; darah haid banyak; menorrhagia; haid lebat
+GA20.0Z   | S | Amenorea                       | haid tak datang; period tak datang; amenorrhoea; tak datang bulan; missed period; terlepas period
+GA22    | S | Haid berlebihan                | haid banyak; period banyak sangat; darah haid banyak; menorrhagia; haid lebat; period banyak; period sangat banyak; haid sangat banyak
 QE13    | H | Penggunaan tembakau            | merokok; hisap rokok; perokok; smoker; vape; smoking
-QC49    | H | Sejarah tidak patuh rawatan    | selalu lupa makan ubat; ubat tak makan; ponteng ubat; default ubat; poor compliance; tak ambil ubat
+QC49    | H | Sejarah tidak patuh rawatan    | selalu lupa makan ubat; ubat tak makan; ponteng ubat; default ubat; poor compliance; tak ambil ubat; x comply; tak comply; non compliant; default rawatan
 5A21.Z      | D | Hipoglisemia (diabetes)        | hypo; gula rendah; hipoglisemia; gula jatuh; hypoglycaemia
 BD54    | H | Ulser kaki diabetik            | luka kaki kencing manis; diabetic foot; dfu; diabetic foot ulcer; ulser kaki diabetik
-9B71.0Z   | H | Retinopati diabetik            | diabetic retinopathy; retinopati diabetik; mata rosak sebab kencing manis
-GB70.0Z   | H | Batu karang                    | batu karang; batu buah pinggang; kidney stone; renal calculi; renal stone
+9B71.0Z   | H | Retinopati diabetik            | diabetic retinopathy; retinopati diabetik; mata rosak sebab kencing manis; dm reti; dm retinopathy; retinopathy
+GB70.0Z   | H | Batu karang                    | batu karang; batu buah pinggang; kidney stone; renal calculi; renal stone; batu kencing; batu dalam kencing
 8A80.Z      | H | Migrain                        | migrain; migraine; sakit kepala sebelah; serangan migrain
-8B88.0  | D | Bell palsy                     | bell palsy; bells palsy; facial nerve palsy
+8B88.0  | D | Bell palsy                     | bell palsy; bells palsy; facial nerve palsy; facial drop; facial palsy; muka senget sebelah
 8C10.0  | H | Sindrom terowong karpal        | carpal tunnel; cts; sindrom terowong karpal
 FB53.0  | H | Bahu beku                      | frozen shoulder; bahu beku; adhesive capsulitis
 FB40.1  | H | Plantar fasciitis              | plantar fasciitis; tumit sakit waktu pagi; sakit tapak kaki pagi
@@ -104,16 +104,16 @@ FB40.1  | H | Plantar fasciitis              | plantar fasciitis; tumit sakit wa
 # ---------- Acute diagnoses / impressions ----------
 CA00    | D | Selesema                       | selesema; selsema; hidung berair; hidung tersumbat; common cold; flu
 CA02.Z      | D | Faringitis akut                | faringitis; pharyngitis; tekak radang; tekak merah
-CA03.Z      | D | Tonsilitis akut                | tonsilitis; tonsillitis; tonsil bengkak; amandel bengkak
+CA03.Z      | D | Tonsilitis akut                | tonsilitis; tonsillitis; tonsil bengkak; amandel bengkak; tonsil sakit; tonsil radang; tonsil merah
 CA07.0  | D | Jangkitan saluran pernafasan atas | urti; jangkitan saluran pernafasan atas; upper respiratory infection; uri
 CA01    | D | Sinusitis akut                 | sinusitis; resdung; sinus tersumbat; acute sinusitis
-CA08.0Z   | H | Rinitis alergi                 | alergi hidung; allergic rhinitis; bersin2 waktu pagi; rhinitis alergi
+CA08.0Z   | H | Rinitis alergi                 | alergi hidung; allergic rhinitis; bersin2 waktu pagi; rhinitis alergi; rhinitis; allergic rhinitis hx
 CA42.Z      | D | Bronkitis akut                 | bronkitis; bronchitis; acute bronchitis
-CA40.Z      | D | Pneumonia                      | radang paru2; pneumonia; jangkitan paru2; cap; paru2 berair
+CA40.Z      | D | Pneumonia                      | radang paru2; pneumonia; jangkitan paru2; cap; paru2 berair; pneumonia akut; radang paru paru
 1E32    | D | Influenza                      | influenza; ili; influenza like illness
 RA01    | D | COVID-19                       | covid; covid-19; positif covid; rtk positif; covid positif
 1D2Z    | D | Denggi                         | denggi; dengue; demam denggi; ns1 positif; denggi positif
-1A40.Z      | D | Gastroenteritis                | gastroenteritis; age; jangkitan perut; gastro; keracunan makanan
+1A40.Z      | D | Gastroenteritis                | gastroenteritis; age; jangkitan perut; gastro; keracunan makanan; infeksi usus; jangkitan usus; stomach flu
 GC08.Z      | D | Jangkitan saluran kencing      | uti; jangkitan saluran kencing; jangkitan kuman kencing; urinary tract infection
 1B70.Z      | D | Selulitis                      | selulitis; cellulitis; jangkitan kulit merebak
 1F28.Z      | D | Kurap                          | kurap; tinea; jangkitan kulat kulit; ringworm
@@ -122,11 +122,11 @@ GC08.Z      | D | Jangkitan saluran kencing      | uti; jangkitan saluran kencin
 1F03    | D | Campak                         | campak; measles; demam campak
 1G04.Z      | D | Kudis buta                     | kudis buta; scabies; skabies
 EA80.Z      | H | Ekzema atopik                  | ekzema; eczema; atopic dermatitis; atopic eczema
-EB00.Z      | D | Urtikaria                      | biduran; urtikaria; urticaria; hives; naik bintat
+EB00.Z      | D | Urtikaria                      | biduran; urtikaria; urticaria; hives; naik bintat; bentol; bentol bentol; gatal bentol
 ED80.Z      | H | Jerawat                        | jerawat; acne; jerawat batu
 1B72.Z      | D | Impetigo                       | impetigo; kudis berair; luka bernanah kanak2
-AA90    | D | Otitis media akut              | jangkitan telinga tengah; otitis media; aom; telinga bernanah
-AA3Z    | D | Otitis eksterna                | otitis externa; jangkitan saluran telinga luar; swimmer ear
+AA90    | D | Otitis media akut              | jangkitan telinga tengah; otitis media; aom; telinga bernanah; asom; otitis media akut; telinga bengkak nanah
+AA3Z    | D | Otitis eksterna                | otitis externa; jangkitan saluran telinga luar; swimmer ear; oe; telinga luar bengkak
 9A60.Z      | D | Konjunktivitis                 | konjunktivitis; conjunctivitis; pink eye; mata bertahi; sakit mata merah berjangkit
 DA08.0  | D | Karies gigi                    | gigi berlubang; gigi rosak; dental caries; karies gigi
 ND14.7Z   | D | Terseliuh buku lali            | terseliuh buku lali; kaki terseliuh; ankle sprain; buku lali terseliuh

@@ -1138,5 +1138,790 @@
   "provider": "sealion",
   "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
   "response": ""
+ },
+ "ae0cd639f172766d8982f59ee6a21a41029ed5ecdc9cc6483d43040aaef68f26": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"x mkn, sgt kurus. Advise mkn byk sikit. Pt sgt lemah. F/U klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **x mkn:** \"Tak makan\" - Doesn't eat/loss of appetite.\n*   **sgt:** \"Sangat\" - Very\n*   **kurus:** Thin/underweight\n*   **Advise:** (English used as common in clinic notes) - Advised\n*   **mkn byk sikit:** \"Makan banyak sedikit\" - Eat a little more.\n*   **Pt:** Patient\n*   **lemah:** Weak\n*   **F/U:** Follow-up\n*   **klinik:** Clinic (English used as common in clinic notes)\n\n\n\nThis reflects the rapid, abbreviated style often used in busy Malaysian public health clinics. It prioritizes key information for quick understanding by other healthcare staff."
+ },
+ "6527bfa4a63b2acaa44c9b723a4a47cf03d97eb20d1327ed912110de1977127f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM1, ulser perut & thyroid overactive - stable. No sakit kepala NEC. BP ok, refill meds. 👍\"}\n```\n\n\n\n"
+ },
+ "efe941edfe0ab57c5912c0e6bcf878390afd090a2d9ea848d67d51c173de7773": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batuk2 je. Cpt dgr paru2 ok. Adv mc if x baik. 👍\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Batuk2 je:** Just a cough (repeated \"batuk\" emphasizes it's the only thing).\n*   **Cpt:** Cepat (Quickly)\n*   **Dgr paru2 ok:** Listened to lungs, okay.\n*   **Adv mc:** Advise medical certificate (MC = medical certificate)\n*   **x baik:** Not better (x = tidak - common shorthand for \"not\")\n*   **👍:** Thumbs up - indicating assessment complete/okay.\n\n\n\nThis reflects the fast-paced, practical note-taking style common in busy Malaysian clinics."
+ },
+ "87f71cd650337b642c8e82c570b7bc5adddc15176b9434794f570e9582333a4d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"COVID+ doc cnfrm. No degup jantung laju. HR stable. Advise isolasi. 👍\"}\n```"
+ },
+ "7de8f69d21d9fdbfd0627d2adbd01300943e2881754f04310e117eea9e3ab2a6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o haus sgt + rasa pedih htg, rhinitis ada sdh. No mual. Bp ok, advise air byk & antacid. F/U if x baik.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Pt\"**: Patient (standard abbreviation)\n*   **\"c/o\"**: Complains of (very common)\n*   **\"haus sgt\"**: Very thirsty (direct Malay translation of polydipsia, how a patient would describe it)\n*   **\"rasa pedih htg\"**: Feeling of heartburn (direct Malay translation)\n*   **\"rhinitis ada sdh\"**: Rhinitis already present/known (colloquial way to state known history)\n*   **\"No mual\"**: No nausea (direct Malay)\n*   **\"Bp ok\"**: Blood pressure okay (quick check noted)\n*   **\"advise air byk & antacid\"**: Advised plenty of water and antacid (mix of English and Malay)\n*   **\"F/U if x baik\"**: Follow up if not better (\"x\" for \"tidak\" - not, common shorthand)\n*   **Typos/lack of full sentences**: Reflects the speed and pressure of a busy clinic.\n*   **Malay/English mix**: Very typical of Malaysian healthcare communication.\n*   **Concise**: Only essential information is recorded.\n\n\n\n"
+ },
+ "af5472de741349806cd6c217bf147c7d0da67dc9eb0ee86fb3309b4cfcb64053": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"UTI - dr ckp kena jangkitan kencing. CTS hx known. No cramp/spasm. Pt c/o sakit tangan. Rx abx & advise rest. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "cff7b8c50637b53e9fa6fbbc8bcefb5572f2b32da979f8545ca1e9db14649913": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Peluh banyak sgt ptg ni. No sakit badan. BP ok. Sweating++ only. \"}\n```\n\n\n\n"
+ },
+ "332edfd6066a38501e285cfe53c4007fa91638fbceb59b220de1a172dceebb18": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Perut buncit sgt. Pt ckp mcm kembung. Obs: distension +++. Advise: minum air, observe. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Perut buncit sgt:** \"Very bloated stomach\" (colloquial Malay)\n*   **Pt:** Patient\n*   **ckp:** Cakap (Malay for \"say\")\n*   **mcm:** Macam (Malay for \"like/as if\")\n*   **kembung:** Bloated/gas (Malay)\n*   **Obs:** Observations\n*   **distension +++:** Severe distension (+++ indicates severity)\n*   **Advise:** Advice given\n*   **F/U:** Follow-up\n*   **x baik:** \"Not better\" (colloquial Malay, \"tak baik\") - using 'x' for 'tak' is common in quick texting/notes.\n\n\n\nThis reflects the fast-paced, abbreviated style often used in busy Malaysian klinik kesihatan settings. It prioritizes quickly recording the key finding."
+ },
+ "723e2508147286d70aefa986fa8a5a17e49a1dc6781654a50538078c3417c926": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Radang tekak akute, doc ckp. No pening/collapse/jatuh. PRN paracetamol. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Radang tekak akute:** Acute sore throat (direct Malay translation)\n*   **doc ckp:** Doctor said\n*   **No pening/collapse/jatuh:** No dizziness/collapse/falling down (covers syncope)\n*   **PRN:** As needed (Latin abbreviation, commonly used)\n*   **paracetamol:** Common painkiller name\n*   **F/U:** Follow-up\n*   **x baik:** Not better (colloquial Malay for \"tidak baik\")\n\n\n\n"
+ },
+ "e442794f86e3787e4a54c31755b4ef627bdd323952b9003a2e0d27574035f0af": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Period sgt banyak x teratur, + protein dlm air kencing. Telinga sakit rn. BP ok. Advise follow up dr.\"}\n```"
+ },
+ "0ce5c7df40fd0d063c2ad5c7526ba9618854e698d3f6cddc411e4acf222960bb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Vomiting x3, pg sakit perut (infeksi usus dr kata). No rasa pedih htg. ORS given, advise diet & hydration. F/U if x baik.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **pg:** pagi (morning - often used generally for \"complaining of\")\n*   **sakit perut:** stomach ache\n*   **dr kata:** doctor said\n*   **rasa pedih htg:** feeling of heartburn (literally \"feeling spicy heart\")\n*   **ORS:** Oral Rehydration Solution\n*   **F/U:** Follow-up\n*   **x baik:** not well/better (x = tidak)\n*   **infeksi usus:** infection of the intestines (covers both gastroenteritis/colitis)\n*   **htg:** hati (heart) - used colloquially to refer to heartburn/acid reflux.\n\n\n\nThis note reflects the rapid, shorthand style common in busy Malaysian clinics, mixing Malay and English terms and using abbreviations to save time. Typos are also common in real-world notes."
+ },
+ "561d4962de8078de55e3900062b2a8c1e7e01707fd8a3001a4792175045e05e9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit kencing! Pt c/o pedih time kencing. Suspect UTI, advise ++ air, follow up if x baik. \"}\n```"
+ },
+ "68ba2a249d9ac1c2689b867e9e4b3f124f060bdeed2085001cdcd03e64cd326c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o sakit perut xsure area. PRN paracetamol, advise observe. F/U if xbaik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Pt:** Patient\n*   **c/o:** Complains of\n*   **xsure:** Not sure/uncertain\n*   **PRN:** As needed (from Latin *pro re nata*)\n*   **F/U:** Follow up\n*   **xbaik:** Not better/doesn't improve\n*   **sakit perut:** Stomach ache/abdominal pain (common Malay phrasing)\n*   Mixing Malay and English is very common in Malaysian healthcare settings, especially in quick notes.\n*   Typos are common in hurried notes.\n\n\n\n"
+ },
+ "a8a774a8955cc5e858c7689a89511bff7822bf796132c4987b0f7b0274e9f2c9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"GERD & anemia besi known hx. Pt c/o heartburn, okay2. No batuk darah. BP: 120/80. Advised to cont meds & iron. 👍\"}\n```"
+ },
+ "96c6a4ca4d3d787c72c024e1bd198498117d511701eea73f2e62665e41683518": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit jantung ada, history kencing manis xde. Athero sdh lama, bg info diet & ubat. BP ok, HR reg. Follow up dgn doktor.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Sakit jantung ada\"**: \"Heart disease present\" - common way to state known coronary artery disease.\n*   **\"history kencing manis xde\"**: \"No history of diabetes\" - quickly ruling out a common comorbidity.\n*   **\"Athero sdh lama\"**: \"Atherosclerosis long-standing\" - shorthand for the condition.\n*   **\"bg info diet & ubat\"**: \"gave info on diet & meds\" - very typical nurse action.\n*   **\"BP ok, HR reg\"**: \"Blood pressure okay, heart rate regular\" - vital signs check.\n*   **\"Follow up dgn doktor\"**: \"Follow up with doctor\" - standard instruction.\n*   **Malay/English mix**: Very common in Malaysian healthcare settings.\n*   **Abbreviations**: \"BP\", \"HR\" are standard.\n*   **\"xde\"**: Colloquial Malay for \"tidak ada\" (doesn't have/no).\n*   **\"sdh\"**: Colloquial Malay for \"sudah\" (already).\n*   **Typos/informal spelling**: Realistic for quick notes.\n*   **No full sentences**: Reflects the speed of a busy clinic.\n\n\n\n"
+ },
+ "1e28278591ca6fe91a94d7d61d4b9c989c3b42d0e1a9ed04b8d74fee7e426f5b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Denggi + ckp xjelas (slurred speech). Doc dah tgk. PRN paracetamol, advise rehydratn & dtg blk if worsen. ASAP!\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **Denggi:** Dengue (common Malay shortening)\n*   **ckp xjelas:** \"cakap tak jelas\" - speaks unclearly/slurred speech\n*   **Doc dah tgk:** Doctor already seen (patient)\n*   **PRN:** As needed (Latin abbreviation, commonly used)\n*   **paracetamol:** (used directly, common)\n*   **advise rehydratn:** advise rehydration\n*   **dtg blk:** datang balik - come back\n*   **if worsen:** if worsens\n*   **ASAP:** As soon as possible (English abbreviation, commonly used)\n*   The general style reflects hurried typing, missing spaces, and mixing Malay and English.\n\n\n\n"
+ },
+ "4b69eeebae9a1bba2c87ae0db74eb45d4c1bd00db53605d00c68168cb24909b5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"OE + tonsil sakit, doc ckp. No serdah. Pt c/o telinga gatal & tekak sakit. PRN paracetamol. F/U if x baik.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **OE:** Otitis Externa (inflammation of the outer ear - commonly understood)\n*   **tonsil sakit:** Sore throat (tonsillitis)\n*   **doc ckp:** Doctor said\n*   **No serdah:** No hoarseness (serdah = hoarse)\n*   **Pt:** Patient\n*   **c/o:** Complains of\n*   **PRN:** As needed (for pain relief)\n*   **F/U:** Follow up\n*   **x baik:** Not better (x = tidak - informal Malay for \"not\")\n*   **telinga gatal:** Itchy ear\n*   **tekak sakit:** Sore throat (tekak = throat)\n\n\n\nThis note reflects the rapid, shorthand style often used in busy Malaysian klinik kesihatan settings, mixing Malay and English terms for efficiency. Typos are also common in such notes."
+ },
+ "e471f1c4c7409b8c477e241178d3c443b994f31a73e294ddd37ea8f4b58e459e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Constip, last 3 days. No sakit kencing/nyut2. Advised air & serat + movicol. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Constip:** Short for \"sembelit\" (constipation)\n*   **sakit kencing/nyut2:** \"Pain when pee/burning sensation\" - covers dysuria.\n*   **Advised:** Gave advice\n*   **air & serat:** Water and fiber\n*   **movicol:** Brand name of a common osmotic laxative.\n*   **F/U:** Follow-up\n*   **x baik:** \"Not better\" (colloquial Malay)\n*   Typos are intentionally included to reflect hurried typing.\n\n\n\n"
+ },
+ "3ebd83022c3b4ded8e3a8c68389d1a46da339d9fe177eb75f53c48f67a12de6f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Demam bentol2 satu badan, mata merah sikit. Dr ckp 'allergy' kot. Antihistamine & eye drop bg. F/U klinik if x baik.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Demam bentol2 satu badan\"**:  \"Demam\" (fever-ish feeling, often used for any rash/skin reaction), \"bentol2\" (bumps/welts - colloquial for urticaria), \"satu badan\" (all over the body).\n*   **\"mata merah sikit\"**: \"Red eye, a little bit\".  \"Sikit\" is very common for indicating mild severity.\n*   **\"Dr ckp 'allergy' kot\"**: \"Doctor said 'allergy' maybe\".  Mixing Malay and English is *extremely* common. \"Kot\" is a colloquial particle meaning \"maybe/perhaps\".\n*   **\"Antihistamine & eye drop bg\"**: \"Gave antihistamine and eye drop\". \"bg\" is shorthand for \"bagi\" (give).\n*   **\"F/U klinik if x baik\"**: \"Follow-up at the clinic if not better\". \"F/U\" is standard nursing shorthand. \"x baik\" is colloquial for \"tidak baik\" (not well/not better).\n*   **Typos/Informal Spelling**:  The lack of full sentences, and the use of \"x\" instead of \"tak\" (not) are typical of quick note-taking.\n*   **Conciseness**:  The note is *extremely* brief, focusing only on the presented information.  Time is limited in a busy klinik kesihatan.\n\n\n\n"
+ },
+ "a7a19b274bace6e5bc87b0264e163098198da427a47676416f90403d6df92d57": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM pt, gula rendah (BG <3.0), hidung berdarah sikit, x tahan kencing. Doc dah tau. 🩺\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **DM pt:** Diabetes patient\n*   **gula rendah:** Low blood sugar\n*   **BG <3.0:** Blood glucose less than 3.0 mmol/L (common threshold for hypoglycemia in Malaysia)\n*   **hidung berdarah sikit:** Nosebleed, a little bit\n*   **x tahan kencing:** Can't hold urine/urinary incontinence (very common phrasing)\n*   **Doc dah tau:** Doctor already knows\n*   **🩺:** Nurse emoji - common in quick notes.\n\n\n\nThis reflects the fast-paced, practical style of notes taken in a busy Malaysian klinik kesihatan. It prioritizes key information for quick handover."
+ },
+ "978cf7a2ed42ed15d694086c4c40d35423d2d3204a9161b66b74818873f069e2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit sendi, rasa mcm kebas2. No susah nafas. PRN painkiller given. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "7ccb60e9f16b5b626b201a52706d9fcb9230a2c68303b8457274baea5f3f1852": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Flu + sakit dada time tarik nafas. Doc ckp virus x kenal. No numb2/rasa hilang. PRN paracetamol. Bg MC 3 hari.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Flu:** Influenza (common usage)\n*   **sakit dada:** Chest pain\n*   **time tarik nafas:** when breathing (literally \"time pull breath\")\n*   **Doc ckp:** Doctor said\n*   **x kenal:** not identified (short for \"tidak kenal\")\n*   **numb2/rasa hilang:** numbness/loss of sensation (combined for brevity)\n*   **PRN:** As needed (from Latin *pro re nata*) - common in Malaysian healthcare\n*   **Bg:** Give (short for \"Berikan\")\n*   **MC:** Medical Certificate\n*   **3 hari:** 3 days\n\n\n\nThis note reflects the fast-paced, abbreviated style often used in busy Malaysian *klinik kesihatan* settings. It prioritizes key information and uses a mix of Malay and English common in the workplace. Typos are also common in real-world notes."
+ },
+ "3e9b2285206a4d2200aec7f82f4a8811d89036dc77d3a161d16fc945a5b8347c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"K/junctivitis dr cnfrm. Mata merah2. No suara serak. Advise eye drop & hygiene. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **K/junctivitis:** \"Konjunktivitis\" (Conjunctivitis) - common abbreviation.\n*   **dr cnfrm:** Doctor confirmed.\n*   **Mata merah2:** Red eyes.\n*   **No suara serak:** No hoarseness.\n*   **Advise:** Advice given.\n*   **eye drop:** Eye drops.\n*   **F/U:** Follow-up.\n*   **x baik:** Not better (using \"x\" for \"tak\" - not).\n*   The general style is very fragmented, typical of quick notes in a busy clinic.\n*   Typos are common in this style of note-taking.\n\n\n\n"
+ },
+ "1573dbab2b5a5b436888536888573cb6b89f8f6c178bd948c09c3aa380572dca": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pusing2 keliling, xde melaena. BP ok. Advise rehat + p minum air. F/U if still pusing. \"}\n```"
+ },
+ "86dd7ce92097dbcea1509ba434fe9be404ba6b6beca77c99c8eb8bd63c0b2a31": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Obesiti KN, berat badan naik sikit. Nasihat diet & senaman. Boleh repeat BP next week.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **Obesiti KN:** \"Obesiti\" (obesity) is used directly, \"KN\" = \"Ketahui/Known\" (known history).\n*   **berat badan naik sikit:** \"Weight increased a little\" - very common phrasing.\n*   **Nasihat diet & senaman:** \"Advised diet & exercise\" - direct and to the point.\n*   **Boleh repeat BP next week:** \"Can repeat BP next week\" - using \"repeat\" (English) is common in quick notes.\n*   **&:** Using \"&\" instead of \"dan\" is typical for speed.\n*   **No full sentences:** It's a fragmented note, as would be written during a busy clinic.\n*   **Malay/English mix:** Reflects the common code-switching in Malaysian healthcare settings.\n*   **No unnecessary detail:** Only the relevant information is included.\n*   **Typos/abbreviations:** While not *intentional* typos, the speed of typing often leads to minor errors that are understood in context.\n\n\n\n"
+ },
+ "44a6c726c2a0677f808fbcb887a934652936072a3fc52078b47a86ce25c799bc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"BP (doc ckp facial drop) - no pain kaki/tgn. OK. \"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **BP:** Common shorthand for *berak palzi* (local pronunciation/understanding of Bell's Palsy).\n*   **doc ckp:** \"Doctor said\" - very common colloquialism.\n*   **facial drop:**  Direct translation of the observed symptom, understood by all staff.\n*   **no pain kaki/tgn:** \"No pain leg/arm\" - direct, concise way to state the negative finding. *Kaki* (leg) and *tangan* (arm) are used together to cover all limbs quickly.\n*   **OK:**  Indicates assessment complete and no immediate concerns.\n*   **Heavy shorthand & abbreviations:**  Time is of the essence in a busy clinic.\n*   **Colloquial Malay/English mix:**  Reflects the common language use in Malaysian healthcare settings.\n*   **Typos/lack of full sentences:** Realistic representation of hurried note-taking.\n\n\n\n"
+ },
+ "1a3f633199dbe19c43b489335545e400e9530f698b91e6ec95f61a6ad268337c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Gout hx, telinga bengkak + nanah (ASOM dr ckp). Rx Augmentin 5/7. Bg painkiller jg.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **Gout hx:** Gout history\n*   **telinga bengkak + nanah:** Ear swollen + pus (describing ASOM symptoms)\n*   **ASOM dr ckp:** Acute Suppurative Otitis Media, doctor said\n*   **Rx:** Prescription\n*   **5/7:** 5 days\n*   **Bg:** Beri (Give)\n*   **painkiller jg:** Painkiller also (meaning give a painkiller as well)\n*   **dr:** doctor\n*   **ckp:** cakap (said)\n\n\n\nThis note reflects the fast-paced, shorthand style common in busy Malaysian klinik kesihatan settings, mixing Malay and English terms for efficiency. Typos are also common in real-world quick notes."
+ },
+ "f2156d1d8a83eb5a5ccc7d4d61752cb450976caa102c91a0a25febdd94b6a906": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Impettigo dr cnfrm. Salap + edukasi bersih2. F/U klinik if x baik pulak.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Impettigo:** Common mispelling of impetigo, frequently used.\n*   **dr cnfrm:** Doctor confirmed.\n*   **Salap:** Ointment.\n*   **+ edukasi bersih2:** And educated on cleanliness. (\"bersih2\" means clean, clean)\n*   **F/U:** Follow-up.\n*   **klinik:** Clinic.\n*   **if x baik pulak:** if not better then. (\"x\" is a common shorthand for \"tidak\" - not)\n*   **pulak:** Adds a colloquial feel, meaning \"then\" or \"again\" in this context.\n\n\n\nThis note reflects the rapid, practical style of documentation often seen in busy Malaysian public health clinics. It prioritizes key information for the next healthcare provider."
+ },
+ "12f8167f36c4a71ce26a1c4af7fc8061b1967a6bd19f37305e7745b1695edb58": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM reti (old case) + feverish. PRN paracetamol. FU klinik if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **DM reti:** Diabetes Retinopathy (reti = retinopathy, commonly used shortening)\n*   **PRN:** \"Pro re nata\" - as needed (standard medical abbreviation, used in Malay clinics)\n*   **paracetamol:** Common painkiller/fever reducer name.\n*   **FU:** Follow-up\n*   **klinik:** Clinic\n*   **x baik:** Not well/improving (x = tidak - not, common in texting/quick notes)\n*   **+:** and/also (used to list findings)\n*   **feverish:** Demam (fever) - but often just said as \"feverish\" in a busy clinic.\n\n\n\nThis note reflects the speed and style of a busy Malaysian klinik kesihatan nurse's documentation. It prioritizes key information and uses common shortcuts."
+ },
+ "480ffee6ff0088bf8e0da3c5942a63426cf3fb40110bbfe07235a6809a23f86a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cellulitis/lymphangitis (doc suspek infeksi kuman). No pusing2/vertigo. Rx: Abx given, wound care advised. F/U klinik if x baik pulih.\"}\n```\n\n\n\n"
+ },
+ "a47118833f9c2d05a72d212a8ff128d3ae7ac7ab64c0d9b03fb6a700960f1fa7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sciatica + pusing2 (dizzy). PRN panadol. Advise rest, if still sakit call balik.\"}\n```\n\n\n\n"
+ },
+ "b7c37fc65c25dbfdc3f7bf3244ef87c4a903c7dee23ca00f9ea79e592e0eb16d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Edema seluruh badan + cramp kaki. Bg ubat spasma & suruh follow up dgn doktor. PRN painkiller jg.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Edema seluruh badan:** Swelling all over the body. \"Seluruh badan\" is Malay for \"whole body\".\n*   **cramp kaki:** Leg cramp. \"Kaki\" is Malay for \"leg\".\n*   **Bg ubat spasma:** Give spasm medication. \"Bg\" is short for \"Berikan\" (give).\n*   **suruh follow up dgn doktor:** Tell to follow up with the doctor. \"Suruh\" means \"tell/instruct\". \"Dgn\" is short for \"dengan\" (with).\n*   **PRN painkiller jg:** Also give painkiller as needed. \"PRN\" (Latin *pro re nata*) is commonly used in Malaysian healthcare. \"jg\" is short for \"juga\" (also).\n\n\n\n"
+ },
+ "fa69c75145022cade3e2b540727bc845556c51a41e74b105313a7b52e3a78232": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"K/o batu kencing & kolesterol tinggi. No pusing2. BP: 130/80. Advised follow up dgn Dr. OK.\"}\n```\n\n\n\n"
+ },
+ "23708136e001be3d1dbc9fc88e752d9e655badd13d2cf5d6064d83c3f3758e22": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Jerawat & ekzema (lama dh) - advise cetaphil/moisturizer. Follow up dgn dr if x baik. 👍\"}\n```"
+ },
+ "ea7b43d6ff1ca6948f8d3692fa93c664ce380c7a2bebb0979870c96cd90a5c48": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine, no c/o. Kaki x bengkak, NO edema LL. BP ok, advise cont meds. 👍\"}\n```"
+ },
+ "4cab5acaa87f0eb6c017fbcf378cec9477a7ee69c9ede3eab3215ffec75ae224": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CKD follow up. BP ok, dialisis schedule confirmed. Pesan ubat repeat, bg info diet sikit. 👍\"}\n```\n\n\n\n"
+ },
+ "73520a98657e4594a30c28144c6b52b5707b1dfee52c1a855cf24df23872a152": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Bronkitis akot, doc ckp. No perut pain/susah perut. BP: normal. PRN neb & cough syrup. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "02bc26d4ce0571e4efda3a129ccb21db550b349d8fb35ce802477f1da1ebe003": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Kencing byk sgt! Polyuria +++. No gatal2 skin. BP ok. Pt ckp minum air byk. F/U klinik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Kencing byk sgt!\"**:  Direct Malay for \"urinating a lot!\". \"Sgt\" is shorthand for \"sangat\" (very).\n*   **\"Polyuria +++\"**:  Uses the English term (common in Malaysian clinics) with \"+++\" to indicate significant/severe.\n*   **\"No gatal2 skin\"**:  \"Gatal2\" is colloquial Malay for \"itchy\".  Directly states absence of pruritus.\n*   **\"BP ok\"**: Blood pressure is okay.\n*   **\"Pt ckp minum air byk\"**: Patient says drinks a lot of water. \"Ckp\" is shorthand for \"cakap\" (say).\n*   **\"F/U klinik\"**: Follow-up at the clinic.\n*   **Typos/Informal Language**: The note is deliberately not perfectly grammatically correct, reflecting the speed and pressure of a busy clinic.\n*   **Mixed Malay/English**: Very typical of Malaysian healthcare settings.\n*   **Abbreviations**: Common abbreviations used in quick notes.\n\n\n\n"
+ },
+ "4266899d0680646485b2d26743d98e97e434418ee48899be199fb53e19f1045b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"SOB + blood dlm air kencing. BP ok. Advise dtg hosp if teruk. PRN O2 if perlu. \"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **SOB:** Short of breath (from English)\n*   **dlm:** Dalam (Malay for \"in\")\n*   **air kencing:** Urine (Malay)\n*   **BP ok:** Blood pressure okay (English/Malay mix)\n*   **Advise dtg hosp:** Advise come to hospital (Malay/English mix, \"dtg\" = datang = come)\n*   **if teruk:** if severe (Malay)\n*   **PRN O2:** As needed oxygen (English medical shorthand)\n*   **if perlu:** if needed (Malay)\n\n\n\nThis reflects the rapid, abbreviated style often used in busy Malaysian klinik kesihatan settings. It prioritizes key findings for quick communication with doctors."
+ },
+ "7fc9d7cf88436ab41e6199c2c30ecd84ddc33c506da7cab5806f87bc410953bf": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pnemonia dr cnfrm. Sakit2 badan teruk. No blood dlm air kencing. PRN paracetamol. F/U klinik.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Pnemonia dr cnfrm\"**:  \"Pneumonia\" shortened to \"Pnemonia\", \"doctor confirmed\" to \"dr cnfrm\". Common abbreviation.\n*   **\"Sakit2 badan teruk\"**:  \"Myalgia\" translated to colloquial Malay (\"sakit2 badan\" = body aches) and \"teruk\" = severe.\n*   **\"No blood dlm air kencing\"**: Direct translation of \"no haematuria\" into everyday Malay. \"Dlm\" = dalam (in).\n*   **\"PRN paracetamol\"**:  \"As needed\" (PRN) followed by the medication.\n*   **\"F/U klinik\"**: \"Follow-up\" abbreviated to \"F/U\", \"klinik\" (clinic).\n*   **Typos/Informal Spelling**:  The slight misspelling of \"cnfrm\" is realistic for quick typing.\n*   **Mixed Language**: Seamlessly switches between Malay and English abbreviations/terms.\n*   **Brevity**: Extremely concise, focusing *only* on the given information. No unnecessary words.\n*   **No full sentences**: Typical of hurried notes.\n\n\n\n"
+ },
+ "4a350bcc140f61d401e8e0c1ed5dd72cd27ec4121a948f859ff8dc78b986a420": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Frozen shoulder (old case). Scabies - dr cnfrm, bg lotion & ubat gatal. Nasihat hygiene. \"}\n```\n\n\n\n"
+ },
+ "137093252990e01abb4dc760620bfd7067ee053ef58545cfa7b83c4db459a9ad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sejuk2 + gatal1 badan. No sakit dada. PR ok. Doc check ASAP pls!\"}\n```\n\n\n\n**Explanation of choices & why it fits the prompt:**\n\n*   **Colloquial Malay/English mix:** \"Sejuk2\" (cold/chills - repeated for emphasis), \"gatal1\" (itchy - '1' often used for 'sikit' - a little), \"Doc check ASAP\" (Doctor check as soon as possible).\n*   **Heavy Shorthand/Abbreviations:** \"PR ok\" (Pulse Rate okay - assumed checked), \"pls\" (please).\n*   **Typos Allowed:** The '1' instead of 'sikit' is a common typing shortcut.\n*   **Only specified findings:**  Only chills and itch are mentioned. Explicitly states \"No sakit dada\" (no chest pain).\n*   **Klinik Kesihatan Style:**  Direct, urgent, and focused on getting the doctor's attention.  The \"ASAP\" is very typical.\n*   **JSON format:** Correctly formatted as requested.\n*   **No patient identifiers:** No names or IDs are included.\n\n\n\n"
+ },
+ "f527683f97bd725605a46ab914b4877d79a33bb019a99272e9cf2b31c76dabd1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"HypoT (known), gigi busuk dr ckp. No demam/FUO. BP ok. Pt advise follow up dentist & dr. \"}\n```\n\n\n\n"
+ },
+ "659c26f41c9f5135c8be66484fe0268309431dbe5a085d50e631d154d4c049d0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Smoker hx, pt stable. No muntah darah. BP ok, advise kurangkan rokok. F/U klinik.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Smoker hx\"**:  \"Smoking history\" - common abbreviation. \"Hx\" is universally used.\n*   **\"pt stable\"**: \"Patient stable\" - standard shorthand.\n*   **\"No muntah darah\"**: \"No vomiting blood\" - uses the Malay term for vomiting blood (\"muntah darah\") as that's how it's commonly documented.\n*   **\"BP ok\"**: \"Blood pressure okay\" - quick assessment.\n*   **\"advise kurangkan rokok\"**: \"Advise reduce cigarettes\" - mixes Malay (\"kurangkan\" - reduce) with English (\"rokok\" - cigarettes).  Direct, practical advice.\n*   **\"F/U klinik\"**: \"Follow-up clinic\" - standard abbreviation.\n*   **Typos/informality**: The lack of full sentences, and the direct, almost telegraphic style, is typical of quick notes taken during peak hours.\n*   **Colloquial Malay/English mix**: This is *extremely* common in Malaysian healthcare settings, especially in verbal communication and quick notes.\n\n\n\n"
+ },
+ "ad0b9a573bc8f64d201e313d81bb4cce123615c65f498edb40ef1a0747655459": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit tekak ckp byk, kencing kerap sgt. Prob UTI? Bg ubat demam + air byk. Follow up klinik.\"}\n```\n\n\n\n"
+ },
+ "a73f0e4c11ce68a91afbbf564da682a72e7454cf23f0556e530ac30dfb9138c5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Risau sgt. Bg diazepam 2mg. Ck balik klinik if x ok. PRN.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Risau sgt:** Very anxious (risau = worried/anxious, sgt = sangat = very)\n*   **Bg:** Bagi (Give)\n*   **diazepam 2mg:** Diazepam 2mg (common medication for anxiety)\n*   **Ck:** Check\n*   **balik klinik:** Return to clinic\n*   **if x ok:** If not okay (x = tidak = not)\n*   **PRN:** Pro re nata (as needed) - standard nursing abbreviation.\n\n\n\nThis reflects the fast-paced, abbreviated style often used in busy Malaysian klinik kesihatan notes. It prioritizes quick communication of essential information."
+ },
+ "d5ec7e83a41745f654f1ac60cfa32dc7c1b467dc2f0af6ac9d11879a6a17d388": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CHF hx, +demam panas2 ruam full body. Dr ckp measles. PRN paracetamol, advise jgn dtg klinik lg smpi sihat.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **CHF hx:** Congestive Heart Failure history\n*   **+demam panas2:** Positive for fever (high fever)\n*   **ruam full body:** Rash all over the body\n*   **Dr ckp:** Doctor said\n*   **PRN:** As needed\n*   **jgn dtg klinik lg:** Don't come to the clinic again\n*   **smpi sihat:** until healthy/recovered\n*   The mix of Malay and English is very common in Malaysian healthcare settings.\n*   Typos are deliberately included to reflect hurried note-taking.\n\n\n\n"
+ },
+ "9618e086dd7352fd9927da26edcc783c2a54e8efd7947daabe00d34dbba64c1c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt tiba2 pengsan dkt luar. BP ok. Cek gula normal. Suruh rehat, observe 15min. Bg air. \"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Pt tiba2 pengsan dkt luar\"**: \"Patient suddenly fainted outside\" - very common phrasing. \"tiba2\" (suddenly) and \"dkt\" (near/at) are colloquial.\n*   **\"BP ok\"**: Blood pressure okay - standard abbreviation.\n*   **\"Cek gula normal\"**: \"Check sugar normal\" - quick way to note blood glucose.\n*   **\"Suruh rehat, observe 15min\"**: \"Tell to rest, observe 15 minutes\" - direct instruction.\n*   **\"Bg air\"**: \"Give water\" - \"Bg\" is very common shorthand for \"Berikan\" (give).\n*   **No full sentences**: Nurses in busy clinics rarely have time for complete sentences.\n*   **Malay/English mix**: Reflects the common practice in Malaysian healthcare settings.\n*   **Concise**: Gets the essential information across quickly.\n*   **Typos/informal spelling**: While not *intentional* typos, the speed of typing often leads to minor errors in real-world notes. (e.g., \"dkt\" instead of \"dekat\").\n\n\n\n"
+ },
+ "dd07c71abd451e34df48390786e4f45f97eec8ed1c84d7695ca8745fa7e4027b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o pening & lemah sikit. PRN drip 1L NS stat. Kena bg air bnyk2, dehydration jelas. 👍\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Pt:** Patient\n*   **c/o:** Complains of\n*   **pening:** Dizzy/lightheaded\n*   **lemah:** Weak\n*   **sikit:** A little\n*   **PRN:** As needed (common usage in clinics)\n*   **drip:** IV drip\n*   **NS:** Normal Saline\n*   **stat:** Immediately\n*   **Kena bg:** Must give/needs to be given\n*   **bnyk2:** A lot/plenty\n*   **dehydration jelas:** Obvious dehydration\n*   **👍:** Thumbs up - indicating acknowledgement/note completion.\n\n\n\nThis reflects the fast-paced, practical note-taking style common in busy Malaysian public health clinics. It prioritizes key information quickly."
+ },
+ "14d57cb34a9a423331c7a76bbf8f3acf94e3f43a5c62db6a7cd53077da526588": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batuk berdarah 🩸+ sedikit. Advise rest + follow up dr. ASAP. PRN paracetamol if demam.\"}\n```"
+ },
+ "aaee5a15baed738e6430e779adb5f1a3dbd29b025c408c6d6ec9a593697a4b13": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Leg bengkak ++. Gastrik & Hep B known. No rash. BP ok, advise diet & follow up. PRN painkiller.\"}\n```"
+ },
+ "945c8168290448187a93b4d2c32d84c2a714dee23b4e2a011264df23aebc75ef": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"TB hx, muntah darah +++ now. Migrain jgk. No sakit tekak. BP ok, PR:88. Doc pls check ASAP!\"}\n```"
+ },
+ "41b25b0b8f9ded8bde70c9437bad68d93e93a9c65ef6ea5b8319b13533bcd69b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"PMH: x comply dgn ubat2, liver berlemak. + missed period. Boleh jadi preg ke? Nanti check urine.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **PMH:** Past Medical History\n*   **x comply dgn ubat2:** Doesn't comply with medications (very common phrasing)\n*   **liver berlemak:** Fatty liver (literally \"fatty liver\" in Malay)\n*   **+ missed period:** Positive for missed period (amenorrhoea)\n*   **Boleh jadi preg ke?:** Could be pregnant? (colloquial question)\n*   **Nanti check urine:** Will check urine later. (common instruction)\n*   The lack of full sentences and grammatical correctness reflects hurried note-taking.\n\n\n\n"
+ },
+ "429b0d38c55df42864bfced16745130c0354d22ec330a585084c7d9ab4291120": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Chicken pox + selsema biasa. Doc ckp viral. No chest pain. PRN paracetamol. Bg advice jgn garu. F/U if demam tinggi.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Chicken pox + selsema biasa\"**:  Directly translates the conditions in common Malay. \"Selsema biasa\" is everyday language for a common cold/URI.\n*   **\"Doc ckp viral\"**: \"Doc\" for doctor, \"ckp\" for cakap (say), \"viral\" is commonly used to mean a viral infection.\n*   **\"No chest pain\"**: Explicitly stated as requested.\n*   **\"PRN paracetamol\"**:  \"PRN\" (pro re nata - as needed) is standard nursing shorthand. Paracetamol is the common painkiller.\n*   **\"Bg advice jgn garu\"**: \"Bg\" for bagi (give), \"jgn\" for jangan (don't), \"garu\" (scratch).  Direct instruction to avoid scratching.\n*   **\"F/U if demam tinggi\"**: \"F/U\" (follow up), \"demam tinggi\" (high fever).\n*   **Typos/abbreviations**:  The note is deliberately concise and uses common abbreviations a nurse would use when quickly documenting.\n*   **Colloquial Malay**: The language is very conversational and how a nurse would *speak* to a colleague, not formal medical writing.\n\n\n\n"
+ },
+ "68c8b8d1c496c84622dd0c8c095960b36a538425ba858c8fe2298d7843da4f13": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine. No c/o. Nafas ok, xde sakit dada bila bernafas. BP: 120/80. All good 👍\"}\n```"
+ },
+ "002e3a40dbb25da65fae295836e325fda6c580da8d12129f80bec562dfa7167b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"P/w: buasir lama. Advise diet & cream. F/U if x baik pulak. 👍\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **P/w:** Presents with (patient datang dengan)\n*   **buasir lama:** Old/known haemorrhoids (literally \"old piles\")\n*   **Advise:** Advised (patient)\n*   **diet & cream:** Dietary advice and haemorrhoid cream\n*   **F/U:** Follow-up\n*   **x baik pulak:** Not improving (literally \"not good again\") - very common spoken Malay phrasing.\n*   **👍:** Thumbs up - indicating completion/acknowledgement.\n\n\n\nThis reflects the fast-paced, practical note-taking style common in busy Malaysian clinics. It prioritizes key information and uses a mix of Malay and English for efficiency. Typos are also common in this environment."
+ },
+ "d70935407d7c9bb3bfb4675d793fb15eb6987a134950d0f10947f562b9dbf4bb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Lg sakit kaki, xde sakit tekak. PRN paracetamol, advise rest. F/U if worsen. ASAP!\"}\n```"
+ },
+ "94d6f3af0a598a32cdb4a9d4cf39766f79ed0f830c0471f8bec48a08f649f7a7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Skit pusing, suara serak. No rash. PRN paracetamol, advise rehat. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Skit:** Short for *sikit* (a little)\n*   **Pusing:** Headache/dizzy (context implies headache here)\n*   **Suara serak:** Hoarse voice\n*   **No rash:** Explicitly stated as per prompt.\n*   **PRN:** *Pro re nata* (as needed) - common usage in Malaysian clinics.\n*   **Paracetamol:** Common painkiller.\n*   **Advise rehat:** Advise rest.\n*   **F/U:** Follow-up\n*   **x baik:** Not better (using 'x' for 'tak' - not, common in texting/quick notes)\n*   The lack of full sentences and grammatical correctness reflects hurried note-taking.\n*   Malay/English mix is typical in Malaysian healthcare settings.\n\n\n\n"
+ },
+ "2e589abdf4c74cea00801718d1e8748497f521ae9c434676f4a2375f32089b63": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Rash + stroke lama (CVA hx). Check BP, advise follow up dgn doktor. Ok je.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Rash + stroke lama (CVA hx)\"**:  \"Rash\" is kept as is (common usage). \"Stroke lama\" = old stroke. \"(CVA hx)\" = Cerebral Vascular Accident history - a common abbreviation even in Malay notes.\n*   **\"Check BP\"**: Blood Pressure - universally understood.\n*   **\"advise follow up dgn doktor\"**: \"dgn\" = with. \"doktor\" = doctor.  Direct, practical instruction.\n*   **\"Ok je\"**: \"Ok je\" = \"Okay only\" - a very common, quick way to indicate the patient is currently stable/not in acute distress *at the time of the note*.\n*   **Colloquial Malay/English mix**: This is *extremely* common in Malaysian healthcare settings, especially in fast-paced clinics.\n*   **Brevity**:  Notes are short and to the point.\n*   **No full sentences**:  Typical of hurried notes.\n*   **No patient identifiers**:  As requested.\n*   **No extra info**: Only the given conditions are noted.\n\n\n\n"
+ },
+ "1bbbf3984452205c57405edc4f7fe198392d43c1146a54252566b888b14c33b9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"sgt sakit pinggang, doc ckp kena 'api'…pain lvl 8/10. Advise rest + antiviral. F/U klinik.\"}\n```"
+ },
+ "0d0b971782060a66356f41b9f4a8383df17b65eb5a3244b86ea35abe83d1188a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Tidur xboleh lena, sakit dada sikit. Bg panadol + advise kurang stress. Follow up dgn doktor. ASAP!\"}\n```\n\n\n\n"
+ },
+ "ee97b1a8392f4f7c9793b300a5732c4b6fa064f912fcbe87d93990919af6982a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Astma & sakit lutut lama. No chillz. PRN inhaler refill, advise senaman ringan. 👍\"}\n```"
+ },
+ "ffecbc782f41700b2d2b30bc2ea62f11ffff43a45ec31e64da829ff5c06edf29": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Dysmenorrhea kuat sgt, COPD hx, wt loss noted. No joint pain. Bp ok, advise diet & follow up dr. Cepat!\"}\n```"
+ },
+ "5ce8b52bb482cf3a846a73d2b0916a2024180ce658a0851288ec9ce70f1ed334": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Melena + ankle terseliuh/terkehel (Dr sdh tgk), kurap jg ada. No minum byk2. BP ok, PR normal. Doc instruct follow up.\"}\n```"
+ },
+ "c9425bb754c83f7db3e30bad7270d2e7655a555058dc201ee24f4127c2391040": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o letih sgt. Cholesterol tinggi (known case). BP ok. Advise diet & follow up dgn doktor. 👍\"}\n```\n"
+ },
+ "545223aceccf71aa4893410638b4cb2dd0d65c14038cfbaa20a276f70c1e3962": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Nausea ++, ckp rasa loya2. Advise makan sikit2, plain biskut. PRN panadol. \"}\n```"
+ },
+ "2d349cff2a7ddff44a442330460cc0a2b2680c19f1ee25f294afd286faab42de": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Jaundis + cirit birit. PF hx ada. BP ok. Advise: minum byk air, rehat. Follow up klinik.\"}\n```\n\n\n\n"
+ },
+ "5d6ca3e0e480645d11aded13e80cd8814d6bffe5920558abf5352c5c19f0d3a1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Wheezing + BP tinggi (HTN known case). No melaena. Neb salbutamol stat, advise follow up dr. ASAP.\"}\n```"
+ },
+ "ffcbe6e79b6b407128c2dc46644d553ab427589d7a05059a7fb257cf862d67d7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM + DFU, luka kaki still ada. Bg info wound care, check BS lvl. Follow up klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **DM:** Diabetes Mellitus (Kencing Manis)\n*   **DFU:** Diabetic Foot Ulcer (Luka Kaki Diabetes)\n*   **luka kaki still ada:** Foot ulcer still present\n*   **Bg info:** Beri informasi (Give information)\n*   **wound care:** Penjagaan luka\n*   **check BS lvl:** Check blood sugar level (periksa gula)\n*   **Follow up klinik:** Follow up at the clinic (jumpa balik klinik)\n*   The general style is very fragmented, omitting articles (\"the\", \"a\") and using direct, quick phrasing. Typos are common in real-world hurried notes.\n\n\n\n"
+ },
+ "d1558c430a690c13d6565ea2dc772fc2acca7e630b5ad055abbc7f3feb8e54ae": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"LBP + selsema akot. Doc ckp 'naso' je. PRN paracetamol.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **LBP:** Low Back Pain (standard abbreviation)\n*   **selsema akot:** Acute common cold/flu (colloquial Malay for acute nasopharyngitis)\n*   **Doc ckp:** Doctor said\n*   **naso:** Short for 'nasofaringitis' - a common way to refer to it quickly.\n*   **PRN:** *Pro re nata* (as needed) - standard medical abbreviation.\n*   **Paracetamol:** Common painkiller/fever reducer.\n\n\n\nThis reflects the fast-paced, practical note-taking style common in busy Malaysian *klinik kesihatan*. It prioritizes key information for quick understanding by other healthcare staff."
+ },
+ "84a8cad462ccd1cafe9294b142c48535604c36f5c908986bfcd50c81ece2a939": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Susah telan + jantung berdebar2. Cek BP normal. Advise makan slow2, if teruk, g hosp. \"}\n```\n\n\n\n"
+ },
+ "bca39a8574fd4725cab06e05fa1babdff6fbf80428605bf6ccec9b0852faca44": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine. OK sgt. No ckp apa2. Xde turun berat badan teruk. BP: 120/80. All good 👍\"}\n```"
+ },
+ "b2cbdca2265e00e42b2ff5d1940714bacb0ecc9b4f40ef249c908d81b381fe64": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sinus teruk, doc ckp. Scabies jg ada. CTS known hx. Rx: abx, permethrin. Follow up klinik.\"}\n```"
+ },
+ "f9655266f39f9e2586ec97f0584888f8cd50fc335814eed7a2e3124244734728": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sejuk2 + lelah nafas. Mata merah2 doc ckp konjuntivitis. PRN paracetamol & eye drop. F/U klinik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Sejuk2\"**: Colloquial Malay for \"chills\" (literally \"cold-cold\").\n*   **\"Lelah nafas\"**: Colloquial Malay for \"wheezing\" (literally \"tired breath\").\n*   **\"Mata merah2\"**: Colloquial Malay for \"red eyes\" (conjunctivitis).\n*   **\"Doc ckp\"**: Short for \"Doctor cakap\" - \"Doctor said\".\n*   **\"Konjuntivitis\"**:  Often the English term is used directly, even by nurses.\n*   **\"PRN\"**: Latin abbreviation for \"as needed\" - common in Malaysian healthcare.\n*   **\"F/U\"**:  Abbreviation for \"Follow-up\".\n*   **\"Klinik\"**: Clinic.\n*   No full sentences - typical of hurried notes.\n*   Mix of Malay and English is very common in daily practice.\n*   No unnecessary details.\n*   Typos are *likely* in a fast-paced environment. (Though I haven't deliberately added any, the style lends itself to them).\n\n\n\n"
+ },
+ "d9595a628bf4f2d0744423a275e3d7bfedbb17a8f41e14856b1236e570e806b6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Abdo pain ++, ckp sikit2 je. Gout history, bg ubat yg lama. PRN painkiller. F/U klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Abdo pain ++:** Abdominal pain, quite a bit (++)\n*   **ckp sikit2 je:** Says it's just a little pain\n*   **bg ubat yg lama:** Gave the usual medication\n*   **PRN painkiller:** As needed painkiller\n*   **F/U klinik:** Follow up at the clinic.\n\n\n\n"
+ },
+ "c84478b443068fbe940cd3018c8cec39c041cf5719139fb5f40d2b780c668f9b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sinus teruk, sembelit + sakit2 badan. Doc ckp sinus akot. Advise byk air, movicol, panadol. F/U if x baik.\"}\n```"
+ },
+ "5efe453ec47f46c87840ccb81f10dcc24d9589d889464a766166a8e334057805": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Rash + air kencing ada darah. Suspek allergy/UTI? Kena refer doc ASAP. \"}\n```"
+ },
+ "15ec62aa07e67e2d070478aa9e24ba2344695a608081856775c02eb0829279e2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Nasofaringitis akut + hidung berdarah. No generalized swelling. PRN paracetamol. Advise plenty fluids. F/U if worsen. 👍\"}\n```\n\n\n\n"
+ },
+ "54363ec0dfd7d2dfb19580ca7132b8bd6e3aa9341630c66bfafbf74d57f058fa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"NAFLD hx, advise diet & exercise. BP ok, wt stable. Follow up dgn dr.\"}\n```\n\n\n\n"
+ },
+ "f7677beb35516ee348e5c96361a4663b7a73c4932fbd8824f2f279cbc9d47335": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"TB history (x confirm), heartburn c/o. Urine -ve protein. PRN antacid. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "62647aa182c46744ccd155c067e33887f699f8f9894358fe113795ee0c3f71b2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cholesterol tinggi (known hx). Ankle terseliuh/terkehel doc ckp. Urticaria tiba2 muncul. No palpitations. BP ok. Advised rest & antihistamine. F/U if x baik.\"}\n```"
+ },
+ "908c87b63beb35dda33031246a43a764b9a95f87cdd70cfa14d46ca6e397a6c2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CHF & BP tinggi known case. Period x dtg, ask preg test. No batuk darah. OK.\"}\n```\n\n\n\n"
+ },
+ "6f32394c2ab1e5f15ae487e49594c05653f2e863c585ea9409f6f2bd577c5aa0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Protein dlm air kencing + (++) , suara serak sikit. Eczema ada since dulu. BP ok. Advise follow up dr.\"}\n```"
+ },
+ "bcc095bffa40284476027d252f0b76121636571d757ef87a73614f673c976252": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Bronkitis akot, doc ckp. No demam/FUO. Bg ubat batuk & nasihat rehat. Ok.\"}\n```\n\n\n\n"
+ },
+ "52a0994650b4fd28ca7fb51f1bc501933df1f3e1dcb0a547969536da7599663b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Gastrik kdg2 sakit perut. No LBP. BP ok, advise makan ubat & elak pedas/masam. F/U if x baik.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **Gastrik:** Common Malay term for gastritis/stomach issues.\n*   **kdg2:** Kadang-kadang (sometimes)\n*   **LBP:** Low Back Pain\n*   **BP:** Blood Pressure\n*   **ok:** Okay\n*   **ubat:** Medicine\n*   **elak:** Avoid\n*   **pedas/masam:** Spicy/Sour (foods)\n*   **F/U:** Follow-up\n*   **x baik:** Tidak baik (not well/improved) - 'x' is often used instead of 'tidak' in quick typing.\n\n\n\nThis note reflects the hurried, shorthand style common in busy Malaysian klinik kesihatan settings, mixing Malay and English terms. It prioritizes key information and uses common abbreviations to save time. Typos are also common in such notes."
+ },
+ "c59865d8ad106aa07f589a0d82223972328a4f60d47f2534c50e94b8c1c79d77": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Wt loss sgt2, kaki bengkak merah2 (doc suspek jangkitan kuman). Abx given, follow up klinik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Wt loss sgt2\"**: \"Wt\" for weight, \"sgt2\" (very very) - common shorthand for excessive.\n*   **\"kaki bengkak merah2\"**: \"kaki\" (leg/foot), \"bengkak\" (swollen), \"merah2\" (red/reddish) - describes cellulitis/lymphangitis visually.\n*   **\"(doc suspek jangkitan kuman)\"**: \"(doctor suspects bacterial infection)\" -  \"doc\" for doctor, \"suspek\" (suspects), \"jangkitan kuman\" (bacterial infection - common lay term). Parentheses indicate it's the doctor's impression.\n*   **\"Abx given\"**: \"Abx\" for antibiotics.\n*   **\"follow up klinik\"**:  Standard instruction.\n*   **Colloquial Malay/English mix**: Very typical in Malaysian healthcare settings.\n*   **No full sentences**: Nurses in busy clinics rarely have time for complete sentences.\n*   **Typos/abbreviations**: Realistic for quick note-taking.\n\n\n\n"
+ },
+ "b96fa4fa1192d5d0cb3cdd80aaf8227650b03a4cb29879fe0f830fb5da15509f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"SOB ++, susah nak bernafas. No rash. O2 sat ok. PRN nebuliser. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "5d7717eaec55484e64bbd4a5ebf32740847bd89d7a27676226198de151418eac": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"HB kronik stable. Ckp xjelas sikit (dysarthria?), +ve COVID doc ckp. Advise isolasi, follow up klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **HB kronik:** Chronic Hepatitis B (common abbreviation)\n*   **stable:** Stable condition\n*   **Ckp xjelas:** Speech unclear/difficult (colloquial Malay for \"cakap tidak jelas\")\n*   **sikit:** A little/slightly\n*   **+ve:** Positive (for COVID-19)\n*   **doc ckp:** Doctor said\n*   **Advise:** Advice given\n*   **isolasi:** Isolation\n*   **follow up:** Follow-up appointment\n*   **klinik:** Clinic (referring to the klinik kesihatan)\n\n\n\nThis note reflects the hurried, abbreviated style often used in busy Malaysian public health clinics, mixing Malay and English terms. It prioritizes key information for quick handover. Typos are also common in such notes."
+ },
+ "b6315d54c6fdb365ae7852ec93936c0f793ea2ff455d8547df08eae82ba31379": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Ptg: sakit perut period + pusing2. No sakit blkg. BP normal. Advil & rest. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Ptg:** Patient (short for *pesakit*)\n*   **sakit perut period:** Menstrual pain (literally \"stomach ache period\")\n*   **pusing2:** Dizzy/Vertigo (repeated \"pusing\" intensifies the meaning)\n*   **No sakit blkg:** No low back pain (*sakit belakang* = back pain)\n*   **BP normal:** Blood pressure normal\n*   **Advil:** Common brand name for ibuprofen\n*   **F/U:** Follow-up\n*   **x baik:** Not better (using \"x\" for \"tak\" - not)\n*   The general style is very fragmented, omitting articles and using direct, concise phrasing. Typos are common in fast note-taking.\n\n\n\n"
+ },
+ "33508598f50d97ce52141ba137767e5bef20845ae9a4a4b0375a30b6e773d7b1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batuk berdarah +++. No sakit badan. BP ok, SpO2 98%. Advise follow up dr ASAP. \"}\n```"
+ },
+ "13192d4279f7eef6fc65b3c826ce606ca2cc1b05a7a3aa0fb0580fbd97a40156": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Dehydrated pt, chicken pox (dr sdh ckp). Reflux ada. IV fluids given, advise minum byk air. \"}\n```\n"
+ },
+ "32ceadb5c7807a536a75eb682cc54fd0f64c229c99fb8f08a8570c000f046bda": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Telinga sakit ➡️ kanan. Cek ear, normal. Advise paracetamol + observe. F/U if x baik.\"}\n```"
+ },
+ "2d691b816177121389e2b991b8b7f8cea62bacbf86e59f3e807cb591a6384099": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batuk + loya. Bg ubat batuk & anti-emetic. Ck BP normal. Settle.\"}\n```"
+ },
+ "86ed0470d28dcd36e9703329c6b1aa18fb6ea7012ced0f5471c2bbe37779c06d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"BP (muka senget) - doc ckp Bell's Palsy. Advise pt observe, follow up klinik. 👍\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **BP (muka senget):** \"BP\" for Bell's Palsy, \"(muka senget)\" meaning \"crooked face\" in Malay - a common way to describe the facial droop.\n*   **doc ckp:** \"Doctor said\" (ckp = cakap)\n*   **Advise pt:** Advice patient\n*   **follow up klinik:** Follow up at the clinic\n*   **👍:** Thumbs up emoji - common in quick notes to indicate acknowledgement/completion.\n\n\n\n"
+ },
+ "c33f60a6de805532e6084c045f7a3d8673b3364ce4b9ceed6bcedff9674cc2a4": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Stroke pt, selsema biasa (URI dx by Dr). No thrsty2 sgt. BP ok, monitor. \"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Stroke pt\"**:  Commonly used shorthand for \"stroke patient\".\n*   **\"selsema biasa\"**: Colloquial Malay for \"common cold\".\n*   **\"(URI dx by Dr)\"**:  \"URI\" (Upper Respiratory Infection) is often used even in Malay contexts, and \"dx by Dr\" quickly notes the diagnosis source.\n*   **\"No thrsty2 sgt\"**:  \"Thirsty\" is often anglicized, \"2\" is used for \"too\", and \"sgt\" is Malay for \"very\". This directly addresses the negative finding (no polydipsia) in a quick way.\n*   **\"BP ok, monitor\"**: Standard abbreviation for blood pressure, \"ok\" is common, and \"monitor\" indicates follow-up.\n*   **Typos/Informal Spelling**: The \"2\" for \"too\" is a common typing shortcut.\n*   **No full sentences**:  Notes are fragmented, focusing on key information.\n*   **Malay/English mix**: Reflects the common code-switching in Malaysian healthcare settings.\n*   **Concise**: Extremely brief, prioritizing speed of documentation.\n\n\n\n"
+ },
+ "1a6461fee8d59147558a9e13d68e21a29df713d7a0edf2ff795b4843dbe438c7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Frozen shoulder, history ada. Advised ROM exc & pain meds, follow up dgn Dr. next wk. 👍\"}\n```"
+ },
+ "9325989fbf4e76c7dc123e948e684488792494504a0d6ae2a66e68d32c0dc768": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM reti (old case), lutut sakit2 (osteo). No bengkak kaki. BP ok. Follow up dgn mata & ortho. 👍\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **DM reti:** Diabetes Retinopathy (reti = retinopathy, commonly used shortening)\n*   **lutut sakit2:** Knee pain (sakit2 = pain, repeated for emphasis)\n*   **osteo:** Osteoarthritis\n*   **No bengkak kaki:** No leg swelling (bengkak = swelling, kaki = legs)\n*   **BP ok:** Blood pressure okay\n*   **Follow up dgn:** Follow up with\n*   **mata:** Eyes/ophthalmology\n*   **ortho:** Orthopedics\n*   **👍:** Thumbs up - common quick indicator of 'all good' or 'understood' in notes.\n\n\n\nThis reflects the fast-paced, shorthand style often used in busy Malaysian klinik kesihatan settings. It prioritizes key information and uses a mix of Malay and English terms common in clinical practice. Typos are also common in such notes."
+ },
+ "f6c8037a2bb0e9a0df5c71a413af2a432884292a23a909ceac61b8f93d2a2cca": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o letih sgt. No rasa kebas2. BP ok. Adv rest + ptg minum air. \"}\n```\n"
+ },
+ "0d585958066607ad309d6e03e90acbad95c614171ee951e63b8e372217369509": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit2 sendi, ckp 'nyer' je. Ptg Paracetamol, suruh dtg lg klau x baik. \"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Sakit2 sendi\"**: Common Malay for \"joint pain\".\n*   **\"ckp 'nyer' je\"**: Colloquial for \"patient just says it hurts\".  \"Ckp\" is short for \"cakap\" (say). \"Je\" means \"just\".\n*   **\"Ptg Paracetamol\"**: \"Ptg\" is short for \"patut\" (should).  Giving Paracetamol is a very common first-line treatment.\n*   **\"suruh dtg lg klau x baik\"**: \"Suruh\" (tell/instruct), \"dtg\" (come), \"klau\" (if), \"x baik\" (not better). Very typical instruction.\n*   **Typos/abbreviations**: The lack of full words and potential typos (\"klau\" instead of \"kalau\") are common in fast-paced note-taking.\n*   **Malay/English mix**:  Very common in Malaysian healthcare settings.\n*   **Concise**: Extremely brief, focusing *only* on the given information. No extra details.\n\n\n\n"
+ },
+ "d0d9d7a1591901cb343b54bdc94b1c37309885a03f8a687fbf2c6318d70ded45": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Throat sakit, dr ckp radang. DM type 2, + non-compliant pt. Follow up klinik ya.\"}\n```\n\n\n\n"
+ },
+ "ad2de88d1e74c7c1299ff8c3082a62bfed2f1ee218e0b4257de820255c29ffad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Asma k/o. Neb PEF normal. Salbutamol PRN given, advise follow up klinik. Ok bai.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Asma k/o:** Asthma known/chronic (k/o = known/chronic condition)\n*   **Neb PEF normal:** Nebulizer Peak Expiratory Flow rate normal.\n*   **Salbutamol PRN:** Salbutamol as needed (PRN = *pro re nata* - Latin for \"as needed\")\n*   **Klinik:** Clinic\n*   **Ok bai:** Okay, bye (common informal farewell)\n*   **PEF:** Peak Expiratory Flow\n*   Typo/informal spelling is intentional to reflect hurried note-taking.\n\n\n\n"
+ },
+ "a5d1f46d3585f3bff1c1f799161d8c9b80fae826ad78381a8b613ab3e4830bae": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"vomit darah! BP stable. Alert, but pale. Dr call ASAP. Hb check stat!\"}\n```"
+ },
+ "2adbce9adf458fe260771c6d6975045ccbfa44e8c77b10610a7af33fa57daf8a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Smoker hx. Jaundice + headache (NEC). No serdah. BP ok. Advise follow up dr. ASAP. \"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Smoker hx\"**:  \"Hx\" is standard shorthand for history. \"Smoker\" is directly used, common in notes.\n*   **\"Jaundice + headache (NEC)\"**: \"+\" indicates presence. \"NEC\" (Not Elsewhere Classified) is used directly, a common practice.\n*   **\"No serdah\"**: \"Serdah\" is the colloquial Malay word for hoarseness. Directly stating the *absence* of a symptom is efficient.\n*   **\"BP ok\"**: Blood pressure is often quickly noted as \"ok\" if within normal limits.\n*   **\"Advise follow up dr. ASAP\"**:  \"Advise\" is used as a verb. \"Dr.\" is standard abbreviation. \"ASAP\" (As Soon As Possible) is frequently used.\n*   **Typos/Informal Language**: The note is deliberately slightly informal and could contain minor typos (e.g., missing spaces) as would be common in a fast-paced environment.\n*   **Malay/English Mix**: The blend of Malay (\"serdah\") and English abbreviations/terms is typical.\n*   **Conciseness**: The note is extremely brief, focusing *only* on the provided information. No unnecessary phrasing.\n\n\n\n"
+ },
+ "9362e1d967fffa94d96d5d33116eb426c03ced3aacc659748e19ebfb1b30a154": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"PF hx, gigi berlubang doc ckp. Minum byk sgt. No period pain. BP ok. Advise: follow up dentist & PF care. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "9f542cfe1e67a54acc71b92bee9af2c84e92a6fe8bae398c52382fd2a309e628": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"UTI - doc ckp kena air kencing. Perut kembung sikit. Advise minum byk air. F/U if x baik.\"}\n```"
+ },
+ "06783da02128c70bddeb6c0a1760068f47abc349f619afdc8eb4d53a33fd84a1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cirit2 + peluh byk sgt. Bg ORS & nasihat diet. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Cirit2:** Diarrhoea (very common colloquial term)\n*   **peluh byk sgt:** Excessive sweating (\"peluh\" = sweat, \"byk sgt\" = very much)\n*   **Bg:** Bagi (Give)\n*   **ORS:** Oral Rehydration Solution (widely understood abbreviation)\n*   **F/U:** Follow-up\n*   **x baik:** Not better (common abbreviation for \"tidak baik\")\n\n\n\n"
+ },
+ "1efa28b1e479634406b1294317eacd2689321977d1051c61b8d41b5e81428031": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Kencing byk sgt, sakit pinggang sikit. BP ok. Advise minum air cukup & observe. F/U if x baik.\"}\n```\n\n\n\n"
+ },
+ "1fad38b0faf72064ce817742deb1dacec1d6ac4e93ab56b0745664904dfc2402": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pusing2 + demam, Dr sdh cnfrm denggi. PRN paracetamol, advise rehydratn & dtg blk jgn lg teruk. \"}\n```"
+ },
+ "9039200ba3fbd5f9dd9ea97a3b644b4ab5931ffe14c60872eb249922fb685fb0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM pt, gula rendah (hypo) - bg check 2.8mmol/L, bgv given. No batuk darah. \"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **DM pt:** Diabetes patient (common shorthand)\n*   **gula rendah (hypo):** Low sugar (hypoglycemia) - mixing Malay and English.\n*   **bg check 2.8mmol/L:** Blood glucose check result.\n*   **bgv given:**  Blood glucose value given (likely referring to oral glucose or IV dextrose).\n*   **No batuk darah:** No coughing up blood (specifically addressing the negative finding). *Batuk darah* is the common Malay term for haemoptysis.\n*   **Typos/abbreviations:** The note is concise and uses common abbreviations a nurse would use in a fast-paced clinic.\n*   **Colloquial Malay:** The use of \"gula\" instead of \"glukosa\" is typical.\n*   **No full sentences:** Reflects the hurried nature of note-taking.\n\n\n\n"
+ },
+ "f86a33e191b9f2d2463d1d6bc466d5fb3b39c01751f8fa1de48566adcd7d15b8": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Loss appetite sgt, x mkn. No mata merah. Boleh cuba multivitamin, advise ++ makan. \"}\n```\n\n\n\n**Explanation of choices & why it fits the prompt:**\n\n*   **Colloquial Malay/English mix:** \"Loss appetite\" (English phrase used commonly), \"sgt\" (very), \"x mkn\" (don't eat - very common shorthand).\n*   **Heavy Shorthand/Abbreviations:**  \"++\" (meaning \"a lot\" or \"emphasize\"), \"mkn\" (eat).\n*   **Typos/Informal Spelling:**  While not *intentional* typos, the style is very fast-typed and reflects how notes are often written in a busy clinic.\n*   **Focus on Given Findings:** Only anorexia (loss of appetite) is mentioned.\n*   **Explicitly states absence of red eye:** \"No mata merah\" (no red eye).\n*   **Practical Advice:** \"Boleh cuba multivitamin\" (can try multivitamin) is a typical quick instruction.\n*   **JSON Format:**  The answer is correctly formatted as a JSON object.\n*   **No Patient Identifiers:** No names or IDs are included.\n*   **Authenticity:** This note *sounds* like something a Malaysian nurse would quickly jot down in a busy klinik kesihatan. It prioritizes speed and key information.\n\n\n\n"
+ },
+ "ffd0d8dd877f405514ef03859541ba8e85e5ff0756f42f6b19bfb42fdf52fd87": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"COPD pt, bgk stabil. xde gatal2. Neb O2 stat. BP ok. HR ok. Doc review pls.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **COPD pt:** COPD patient\n*   **bgk:**  Breathing (from \"bernapas\")\n*   **stabil:** Stable\n*   **xde:** Tidak ada (doesn't have/no)\n*   **gatal2:** Itchy/pruritus\n*   **Neb O2 stat:** Nebulized oxygen stat (immediately)\n*   **BP:** Blood Pressure\n*   **HR:** Heart Rate\n*   **Doc review pls:** Doctor review please.\n\n\n\nThis note reflects the hurried, shorthand style common in busy Malaysian klinik kesihatan settings, mixing Malay and English terms. It prioritizes key information and omits unnecessary formality. Typos are also common in such notes."
+ },
+ "0ad5c17c78da1333cd5cf4f4b10b8a04866143e4de2153bf071608dcf08f2a45": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cramp kaki + ruam api (doc suspek shingles) + demam. PRN paracetamol. FU klinik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Cramp kaki\"**: \"Kaki\" means leg in Malay. Common to specify *where* the cramp is.\n*   **\"Ruam api\"**: Literally \"fire rash\" - the colloquial term for shingles/herpes zoster.\n*   **\"Doc suspek shingles\"**: \"Doc\" for doctor, \"suspek\" (suspect) is used instead of diagnosis. Shingles is sometimes used directly, but \"ruam api\" is very common.\n*   **\"Demam\"**: Fever.\n*   **\"PRN paracetamol\"**:  \"As needed\" (PRN - *pro re nata*) paracetamol. Standard pain/fever management.\n*   **\"FU klinik\"**: Follow-up at the clinic.\n*   **No full sentences**: Typical of quick notes.\n*   **Malay/English mix**: Very common in Malaysian healthcare settings.\n*   **Abbreviations**: PRN, FU.\n*   **Concise**: Gets the key info down quickly.\n*   **No unnecessary detail**: Only the given conditions are noted.\n\n\n\n"
+ },
+ "b4ce7f23a0a04b9b3969316b2f9b191a519b844a3370fb5dcf9835b983ea9ed1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"UL sering sakit perut, history gastrik. No muntah/mual. PRN antacid. F/U dgn doktor.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **UL:** Urat Lenguh (common way to describe stomach pain/discomfort)\n*   **sering:** often\n*   **sakit perut:** stomach ache\n*   **history gastrik:** history of gastric (ulcer)\n*   **No muntah/mual:** No vomiting/nausea (direct translation)\n*   **PRN:** Pro Re Nata (as needed - common in Malaysian healthcare)\n*   **antacid:** antacid (often used directly in Malay)\n*   **F/U:** Follow-up\n*   **dgn:** dengan (with)\n*   **doktor:** doctor (common usage)\n\n\n\nThis note reflects the hurried, shorthand style often used in busy Malaysian klinik kesihatan, mixing Malay and English terms and abbreviations. It prioritizes key information quickly."
+ },
+ "e26b574a6af10630160f0fb3a7fd3ab865ed98a3daaf0da12273e6e4d0e8ef2d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Kencing tak tahan + risau sgt. Advise pelvic floor exercises & bg panadol. Follow up dgn doktor. ASAP!\"}\n```\n"
+ },
+ "ba859b5f6d329c1151cf0f43c27e110ea710f1a91a1309aef2f395da2b36ae73": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"TSH rendah sgt, pt ckp panas2, dah tau pn sakit kelenjar thyroid. Ref endocrin ASAP.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **TSH rendah sgt:** TSH very low (indicating hyperthyroidism)\n*   **pt:** Patient\n*   **ckp:** Cakap (Malay for \"says\" or \"complains of\")\n*   **panas2:** Feeling hot/flushed\n*   **dah tau pn:** Already known/previously diagnosed\n*   **sakit kelenjar thyroid:** Thyroid disease (general term, understood in context)\n*   **Ref endocrin ASAP:** Refer to endocrinology as soon as possible.\n\n\n\nThis reflects the fast-paced, shorthand style common in busy Malaysian clinics. It prioritizes key information for quick handover to a doctor. Typos are also common in real-world notes."
+ },
+ "99a9cd649d00186a8535a5fe4a7443e5e9975d94682a87adcf58d453f6848255": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sciatica + gatal2 (pruritus). Period banyak & x teratur. Advise iron + painkiller. F/U if worsen.\"}\n```\n\n\n\n"
+ },
+ "c16939b5f3936142572b872e7b60d10ca3ae73ad55d42adcc8831ab00b03b0f7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Throat sakit ckit. No demam/lain2. PRN lozenges. 👍\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Throat sakit ckit\"**:  \"Sakit\" (Malay for pain) is used directly. \"Ckit\" is a very common, quick abbreviation for \"sikit\" (a little).\n*   **\"No demam/lain2\"**: \"Demam\" (Malay for fever). \"/lain2\" is shorthand for \"dan lain-lain\" (and others/unknown origin) - very common in notes to quickly rule things out.\n*   **\"PRN lozenges\"**:  \"PRN\" (Latin *pro re nata* - as needed) is universally understood in Malaysian healthcare.  Using English \"lozenges\" is common as it's quicker than the Malay equivalent.\n*   **\"👍\"**:  A quick visual indicator of \"okay\" or \"acknowledged\" - common in fast-paced environments.\n*   **Colloquial & Shorthand**: The entire note is a mix of Malay and English, with heavy abbreviations.\n*   **Typos/Informality**: The lack of full sentences and slightly informal language is typical of quick notes taken during busy clinic hours.\n*   **Focus on Key Info**: Only the provided information is included. No extra details are added.\n\n\n\n"
+ },
+ "fa1ccae8c9e3846ec85e303a4682bdc3aaa6838fa7f45067dadafd1e73483c37": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit dada time tarik nafas. Ckp 'sakit sini' ptg chest. BP ok. Advise: dtg balik kalau teruk.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Sakit dada time tarik nafas\"**:  Directly translates to \"Chest pain when breathing\" - common phrasing.\n*   **\"Ckp 'sakit sini' ptg chest\"**: \"Says 'pain here' pointing to chest\" -  'Ckp' (cakap - speak), 'ptg' (pointing).  Mixing Malay and English is *extremely* common.\n*   **\"BP ok\"**: Blood pressure is okay. Standard abbreviation.\n*   **\"Advise: dtg balik kalau teruk\"**: \"Advice: come back if severe\". 'dtg' (datang - come), 'teruk' (severe/bad).\n*   **Punctuation/Typos**:  The lack of full sentences, run-on style, and potential for minor typos (\"ptg\" instead of \"pointing\") reflect the speed and pressure of a busy clinic.\n*   **Conciseness**:  Only the essential information is recorded. No unnecessary detail.\n\n\n\n"
+ },
+ "ea11584c6458ceff915c9ca41c585799d20c30161fa579d19b9d81f9bea1181d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pneumonia + cirit birit/demam. Doc sdh bg Rx. Monitor suhu & hydration. ASAP follow up.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **Colloquial Malay & English mix:** \"cirit birit\" (diarrhea) is common Malay, \"Rx\" (prescription) is English abbreviation.\n*   **Heavy Shorthand/Abbreviations:** \"sdh\" (sudah - already), \"bg\" (bagi - give), \"ASAP\" (as soon as possible).\n*   **Typos/Informal Spelling:** Likely to happen in a fast-paced environment.\n*   **No Full Sentences:**  Notes are often fragmented, focusing on key info.\n*   **Focus on Action:** \"Monitor suhu & hydration\" - what *needs* to happen.\n*   **\"Doc sdh bg Rx\"**:  Acknowledges the doctor's orders quickly.\n*   **\"follow up\"**: Implies the need for a return visit.\n*   **\"+\"**: Used to quickly list multiple diagnoses.\n\n\n\n"
+ },
+ "d99372d4f92bb3a025331eba752194d6b591d4659f1189f3b28f015cb6dfecaa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"kulit kayap + kencing manis kaki bnm (ulser), telan mskin. Dr sdh tgk. F/U klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **kulit kayap:** Dermatophytosis (ringworm/skin fungus) - common local term.\n*   **kencing manis kaki bnm (ulser):** Diabetic foot ulcer - \"kencing manis\" = diabetes, \"kaki bnm\" = swollen foot, \"(ulser)\" clarifies.\n*   **telan mskin:** Dysphagia - \"telan\" = swallow, \"mskin\" = difficult/poor.\n*   **Dr sdh tgk:** Doctor has already seen (patient). \"sdh\" = already, \"tgk\" = see/look.\n*   **F/U klinik:** Follow-up at the clinic.\n*   The lack of full sentences and grammatical correctness reflects hurried note-taking.\n\n\n\n"
+ },
+ "572bd72bfdbf08cc8b33c8555260800ecf348e86dd0487216057d82333013dba": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cholesterol tinggi sdh lama, pt bgtau. Lipids check last visit ok je. Repeat lipids next appt. 👍\"}\n```\n\n\n\n"
+ },
+ "92d6d6dfe19f513a1c0aeedc5c835eeeca1875b9cbd7fcbebcde284c679d8260": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Jerawat (old case). Sakit jantung sdh lama. BM ok, xde sembelit. BP: 130/80. PRN meds given. F/U klinik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **Jerawat:** Malay for acne.\n*   **Sakit jantung sdh lama:** Malay for \"heart disease for a long time\" (coronary atherosclerosis).  \"Sdh\" is shorthand for \"sudah\" (already).\n*   **BM ok, xde sembelit:**  \"BM\" is *very* common shorthand for bowel movement. \"Ok\" is English. \"xde\" is colloquial Malay for \"tidak ada\" (no/doesn't have). \"Sembelit\" is Malay for constipation.\n*   **BP: 130/80:** Blood pressure reading, standard notation.\n*   **PRN meds given:** \"PRN\" (as needed) is universally understood.\n*   **F/U klinik:** Follow-up at the clinic.\n*   **Typos/Informal:** The note is deliberately not perfectly grammatically correct, reflecting the speed of writing in a busy clinic.\n*   **Concise:** Extremely brief, focusing only on the given information.\n*   **Mix of Languages:** The blend of Malay and English is typical in Malaysian healthcare settings.\n\n\n\n"
+ },
+ "a6ff138966d481f3b2e3d09d2a883b4a703648ff5174df652100beb9c8f309a7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"IDA & gemuk k/o. Impetigo (dr dx). Sciatica -ve. Bg Hb check next appt. K/o iron tabs & diet advice given. \"}\n```"
+ },
+ "4ad69a45f5309e60761b19e374eb8b1406b899050b21dac7a2fd56937eb2f495": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Leg bengkak ++, muntah2 xberapa, mata merah skit. PRN paracetamol & ORS. F/U if worsen.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Leg bengkak ++:** Legs swollen (bengkak = swollen), ++ indicates moderate swelling.\n*   **muntah2 xberapa:** Vomiting, not much (muntah = vomit, xberapa = not much/not significant).\n*   **mata merah skit:** Red eye (merah = red, skit = a little/slightly).\n*   **PRN:** As needed (from Latin *pro re nata* - commonly used in Malaysian healthcare).\n*   **F/U:** Follow up.\n*   **ORS:** Oral Rehydration Solution.\n\n\n\nThis reflects the fast-paced, practical note-taking style common in busy Malaysian *klinik kesihatan*. It prioritizes key findings over formal medical terminology. Typos are also common in such notes."
+ },
+ "3f987b066d6823fbc20e1051efc9a1b701aa8d1cd3eae23a2b8360b0710bb5ef": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Tonsil bengkak teruk, doc ckp acute. Edema seluruh badan +++. No abdominal pain reported. PRN paracetamol. F/U doc.\"}\n```\n\n\n\n"
+ },
+ "44e0188ca513ab031ecb3b8bf01c61205bff4f5482917523d489c1686f750b1d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"💩hitam pekat! Melaena jelas. Dr perlu tgk cpt. BP stable.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **💩hitam pekat!**:  Uses emoji for speed and common slang for \"black, tarry stool\". \"Pekat\" means concentrated/thick.  Exclamation mark shows urgency.\n*   **Melaena jelas**:  Uses the Malay transliteration of the condition, but keeps it short. \"Jelas\" means clear/obvious.\n*   **Dr perlu tgk cpt**: \"Dr\" for doctor, \"perlu\" means need, \"tgk\" (short for \"tengok\") means look/see, \"cpt\" (short for \"cepat\") means quickly.\n*   **BP stable**: Common English abbreviation used even in Malay-speaking settings.\n*   **No full sentences**:  Very typical of quick notes.\n*   **Colloquial Malay**:  The language is very informal and how a nurse would *speak* to a colleague.\n*   **Typos/abbreviations**:  Reflects the speed and pressure of a busy clinic.\n\n\n\n"
+ },
+ "1f3cf2698a1a15333c71f046b80e4998a861b06e321506175879aa0faac21768": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Lg sakit2...kt tgn/kaki? Paracetamol bg, suruh dtg lg klu x baik. PRN.\"}\n```"
+ },
+ "56f2ebe08509cb5df85250794b036df1accc680a08379d382346093301f16bc7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sakit kencing! Dysuria +ve. No slurred speech (x dysarthria). Pt c/o rasa pedih time kencing. BP normal. \"}\n```"
+ },
+ "ceabbabac74f6d2edf290a442583e82c73184d566387ce363f77d4e53ce9d9ff": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Snsn terganggu, xde sakit telinga. Pt ckp mcm kebas2. F/U dr.\"}\n```\n\n\n\n**Explanation of choices & why it fits the prompt:**\n\n* **Colloquial Malay/English mix:** \"Snsn\" (sensation), \"Pt\" (patient), \"F/U\" (follow-up), \"dr\" (doctor) are common abbreviations.  \"xde\" is colloquial for \"tidak ada\" (doesn't have). \"kebas2\" is a common way to describe numbness/tingling.\n* **Heavy Shorthand/Abbreviations:**  Uses minimal words.\n* **Typos Allowed:**  The prompt specifically allows for this.\n* **Only Given Findings:**  Only mentions sensation disturbance and the *absence* of ear pain.\n* **Malaysian Nurse Style:** This reflects how a nurse in a busy Malaysian klinik kesihatan would likely jot down a quick note – prioritizing speed and key information.\n* **JSON Format:**  Correctly formatted as requested.\n* **No Patient Identifiers:** No names or IDs are included.\n* **Avoided English Medical Terms:** Used Malay equivalents for the given conditions.\n\n\n\n"
+ },
+ "f2cb12398e93da9701ebd42bc927adac536df7c7ac5db7e990cc0d298c68f7bd": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Migrain kdg2, now chest pain cpt. Rhinitis ada sdh lama. BP ok. PRN panadol + antihistamine. Advise rest & observe. \"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"Migrain kdg2\"**: \"Migrain\" (Migraine) is often used directly. \"kdg2\" = \"kadang-kadang\" (sometimes).\n*   **\"now chest pain cpt\"**: \"cpt\" = \"cepat\" (quickly/suddenly).  Directly stating the complaint.\n*   **\"Rhinitis ada sdh lama\"**: \"Rhinitis\" used directly. \"ada sdh lama\" = \"ada sejak lama\" (has for a long time).\n*   **\"BP ok\"**: Blood pressure is routinely checked and noted briefly.\n*   **\"PRN panadol + antihistamine\"**: \"PRN\" (as needed) is common shorthand.  Medication advice is direct.\n*   **\"Advise rest & observe\"**: Standard advice, abbreviated.\n*   **Typos/Informal Language**: The note is deliberately not perfectly grammatically correct, reflecting the speed of documentation.\n*   **Malay/English Mix**: Common in Malaysian healthcare settings.\n*   **No Full Sentences**:  Notes are often fragmented phrases.\n*   **Concise**: Extremely brief, focusing only on the provided information.\n\n\n\n"
+ },
+ "09c31ce52b479ae6c790fd40ef70504f7789ffd04c0b28258cad1d7f52e2291f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine. No c/o. BP ok. Abdomen: x sakit perut lain2. All good 👍\"}\n```"
+ },
+ "0b42be9e5094dbade6e3646e6b2ffe780e951434be372737be202e32f1172dba": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Kencing kerap sgt, xde demam/sejuk. Pt ckp nk pi toilet byk kali. No chills. Boleh bg advice air ptg?\"}\n```\n\n\n\n"
+ },
+ "1512dfffb1fe4431b354d36b1f48f82416dc28f496b9bb12707ac9e588f7c45d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batu kencing (old case). Flu - doc ckp viral. PRN paracetamol, advise bnyk mnum air. 👍\"}\n```\n\n\n\n"
+ },
+ "60b24cf6f9fdf206486588845c50f73e445e27b3b02686284f961f1cd4b52ee8": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine, no c/o. BP ok, wt stable. No sembelit! 👍\"}\n```\n\n\n\n"
+ },
+ "0108da334d12ebeb1e84ddd9863706ea300dba60ce0808f42d252f2012cc99ca": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"ASOM dx by Dr. Ear sakit, nanah keluar. No serak. Rx: Abx + ear drops. F/U klinik if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **ASOM:** Acute Suppurative Otitis Media (understood contextually)\n*   **dx:** diagnosis\n*   **Dr:** Doctor\n*   **Ear sakit:** Ear pain\n*   **nanah keluar:** pus discharge\n*   **No serak:** No hoarseness\n*   **Rx:** Prescription\n*   **Abx:** Antibiotics\n*   **F/U:** Follow-up\n*   **klinik:** clinic\n*   **x baik:** not better (using 'x' for 'tak' - not)\n*   Typo in \"x\" instead of \"tak\" is common in hurried notes.\n\n\n\nThis reflects the style of quick, practical notes taken in a busy Malaysian *klinik kesihatan* setting."
+ },
+ "cfa7978201023d81fb3df6dbb93ce28e37c70f69cc1c4cadef8c56811b0c4cc2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Telinga luar merah2, sakit. Dr ckp 'swimming ear' - give ototrim drops, advise jgn kluar air. F/U if x baik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Telinga luar merah2, sakit.\"** - \"Outer ear red, painful.\" (Direct observation, common phrasing)\n*   **\"Dr ckp 'swimming ear'\"** - \"Doctor said 'swimming ear'\" (Doctors often use English terms even when explaining to nurses, who then translate for patients. Using the English term directly in the note is common.)\n*   **\"give ototrim drops\"** -  \"Give Ototrim drops\" (Common antibiotic ear drop brand in Malaysia, directly written)\n*   **\"advise jgn kluar air\"** - \"Advise don't go into water\" (Mixing Malay \"jgn\" (don't) with English \"go into water\" is very typical)\n*   **\"F/U if x baik\"** - \"Follow-up if not better\" (\"F/U\" is standard shorthand, \"x\" for \"tak\" (not) is common in quick typing)\n*   **No full sentences:** Reflects the speed of a busy clinic.\n*   **Typos/abbreviations:** Realistic for a hurried note.\n*   **Colloquial Malay:** Uses everyday Malay phrasing.\n\n\n\n"
+ },
+ "7582a99d2ff522a4017250e899e0fd88a03ed946ac8d2fc69cf9dfaaa4676255": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"T1DM hx, tido xblh lena. No period pon. B/P ok. Advised sleep hygiene + follow up dr. ASAP.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **T1DM hx:** Type 1 Diabetes Mellitus history\n*   **tido xblh lena:** Malay for \"cannot sleep well\" (insomnia)\n*   **No period pon:** No menstruation (amenorrhoea - explicitly stated negative finding)\n*   **B/P ok:** Blood pressure okay\n*   **Advised:** Advised patient\n*   **dr:** Doctor\n*   **ASAP:** As Soon As Possible\n*   **xblh:** cannot (short for *tidak boleh*)\n*   **pon:** also/either (filler word common in colloquial Malay)\n\n\n\nThis note reflects the hurried, shorthand style often used in busy Malaysian klinik kesihatan settings, mixing Malay and English terms. It prioritizes key information and uses common abbreviations. Typos are also common in real-world notes."
+ },
+ "6f48ceff0887d581a27ce7a8f6a217c1da5a66b041c29e5ec0683bd55b823538": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"P/t dgn buasir & thyroid lama. Dr ckp measles. Advise rest + paracetamol. F/U if demam tinggi.\"}\n```\n\n\n\n**Explanation of abbreviations/colloquialisms:**\n\n*   **P/t:** Patient\n*   **dgn:** Dengan (with)\n*   **lama:** Long-standing/existing\n*   **Dr ckp:** Doctor said\n*   **F/U:** Follow-up\n*   **demam tinggi:** High fever\n*   **buasir:** Hemorrhoids (common Malay term)\n*   **thyroid:** Hypothyroidism (understood contextually)\n*   **paracetamol:** Common painkiller/fever reducer.\n*   **+:** and (used for listing conditions)\n\n\n\nThis note reflects the rapid, shorthand style often used in busy Malaysian clinics, mixing Malay and English terms, and prioritizing brevity. Typos are also common in such notes."
+ },
+ "08ebd1890617960b0b0d8692aaf303eabff8ddb28f42b900da6fa743aaa0c1d1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Pt c/o jantung berdebar2. BP ok, PR slightly fast. Adv rest & drink air. F/U if x baik.\"}\n```"
+ },
+ "b24f8564b73845bf2bbabd35c769e73c583705be165af5b569e3561bbc55f90e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"DM reti (old case), tonsil bengkak doc ckp. No bengkak kaki. BP ok. PRN paracetamol. F/U klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **DM reti:** Diabetes Retinopathy (reti = retinopathy, commonly used shortening)\n*   **tonsil bengkak:** Swollen tonsils (bengkak = swollen)\n*   **doc ckp:** Doctor said/diagnosed\n*   **No bengkak kaki:** No leg swelling (direct translation, common phrasing)\n*   **BP ok:** Blood pressure okay\n*   **PRN:** As needed (from Latin *pro re nata*)\n*   **F/U:** Follow-up\n*   **klinik:** Clinic (referring to the klinik kesihatan)\n\n\n\nThis note reflects the rapid, abbreviated style often used in busy Malaysian public health clinics. It prioritizes key information and uses a mix of Malay and English terms common in clinical practice there. Typos are also common in real-world notes."
+ },
+ "6919dc104a9985902cbe507cf8143c41a23de94b0cbe353bcc20d20951b0637f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Telinga sakit, sembelit. No ruam. PRN laxative bg, advise air byk. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Telinga sakit:** Ear pain\n*   **Sembelit:** Constipation\n*   **No ruam:** No rash\n*   **PRN laxative bg:** Give PRN (as needed) laxative\n*   **advise air byk:** Advise plenty of water\n*   **F/U if x baik:** Follow up if not better (\"x\" is used for \"tidak\" - not)\n*   **bg:** bagi (give) - common in spoken/written Malay in clinical settings.\n\n\n\nThis reflects the fast-paced, abbreviated style often used in busy Malaysian klinik kesihatan notes. Typos are also common in such notes."
+ },
+ "a4f23dd57381477c0d451f34adcd2ce871010a8b7a268bfc5f3afe028e551b24": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Nausea + gatal2 (scabies - Dr sdh ckp). No serak. PRN anti-histamine & permethrin. F/U klinik.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **\"Nausea + gatal2\"**:  \"Nausea\" is often used directly. \"Gatal2\" is colloquial Malay for \"itchy\" (specifically, the intense itch of scabies).\n*   **\"(scabies - Dr sdh ckp)\"**:  \"(scabies - Doctor already said)\" -  Very common to note the diagnosis *as told by the doctor*, rather than writing it formally. \"sdh ckp\" is shorthand for \"sudah cakap\" (already said).\n*   **\"No serak\"**: \"Serak\" is Malay for hoarseness. Directly stating the *absence* of a symptom is common for clarity.\n*   **\"PRN anti-histamine & permethrin\"**: \"PRN\" (as needed) is standard nursing shorthand.  Medication names are often used directly.\n*   **\"F/U klinik\"**: \"Follow-up at the clinic\".\n*   **Typos/Spacing**: The slight inconsistencies in spacing and capitalization are typical of fast typing.\n*   **Malay/English Mix**:  Reflects the common code-switching in Malaysian healthcare settings.\n*   **Conciseness**: Extremely brief, focusing only on the given information. No unnecessary words.\n\n\n\n"
+ },
+ "39a6dd24c032eb9fb9d7652b9dca646207a95f318affcf1957815871fc1a21f2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"HB kronik - follow up dgn dr. Pastikan ada ambil ubat. OK.\"}\n```\n\n\n\n**Explanation of choices & why it reflects a busy Malaysian klinik kesihatan nurse's style:**\n\n*   **\"HB kronik\"**:  Commonly used shorthand for Hepatitis B kronik (chronic).  Nurses rarely write out the full Malay translation in notes.\n*   **\"follow up dgn dr.\"**: \"dengan doktor\" (with the doctor) -  very typical phrasing. \"dgn\" is a common abbreviation.\n*   **\"Pastikan ada ambil ubat\"**: \"Ensure taking medication\" - direct, practical instruction.  \"Pastikan\" is a very common word.\n*   **\"OK\"**:  Used as a quick sign-off indicating the patient was stable/no immediate concerns.\n*   **Colloquial/Mixed Language**: The mix of Malay and English is extremely common in Malaysian healthcare settings, especially in notes.\n*   **Brevity**: Extremely short and to the point.  Time is limited in a busy klinik kesihatan.\n*   **No full sentences**:  Notes are often fragments.\n*   **No unnecessary detail**: Only the essential information is recorded.\n\n\n\n"
+ },
+ "8fc54c8b1af82e3a41342179c1286c0e103eb00ec77712da9648bf9c30d420f7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"FU routine, no c/o. BP ok, nadi ok. X pening/pengsan/jatuh. All good 👍\"}\n```\n\n\n\n"
+ },
+ "42627f5aea37994cc3b3a4458549c022d0a23e038cfeb0bca8fa2e1b3e3c2527": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Kencing kerap sgt. Pt ckp nk pi toilet byk kali. Adv drink more air, observe. F/U if x baik.\"}\n```"
+ },
+ "8eb36e169e32f71e0c0243eebb61a05d12e7bae6c64c2be4f3dd6ce3ea4894ad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"PMH: x comply dgn ubat. Ckp jantung berdebar2. Dr sdh ckp measles. Nasihat follow up & jgn lupa mkn ubat ye.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **PMH:** (Past Medical History) - standard abbreviation.\n*   **x comply dgn ubat:** \"x\" for \"tidak\" (not) - common shorthand for negation. \"comply dgn\" is mixing English \"comply\" with Malay \"dengan\" (with). \"ubat\" = medicine.\n*   **Ckp:** Short for \"cakap\" (say/report).\n*   **jantung berdebar2:** \"Heart palpitations\" - literally \"heart beating fast fast\".\n*   **Dr sdh ckp measles:** \"Dr\" for doctor, \"sdh\" for \"sudah\" (already), \"ckp\" for \"cakap\" (said). Using \"measles\" directly as it's commonly understood.\n*   **Nasihat follow up & jgn lupa mkn ubat ye:** \"Nasihat\" (advice), \"follow up\" (English used), \"jgn\" for \"jangan\" (don't), \"lupa\" (forget), \"mkn\" for \"makan\" (eat), \"ubat\" (medicine), \"ye\" (a common particle for politeness/confirmation).\n*   **Typos/informal:** The note is deliberately not perfectly grammatically correct, reflecting the speed of writing in a busy clinic.\n\n\n\n"
+ },
+ "100a20019a1d9e44c9f3b34a1a5ab3ac73cd6f62bccdbf4508411a7db14268f0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"CHF & thyrotoxic - both KNOWN. BP ok, sbg reminder ubat kena telan. F/U dgn Dr.\"}\n```\n\n\n\n**Explanation of elements & why it's realistic:**\n\n*   **CHF:** Common abbreviation for Congestive Heart Failure.\n*   **thyrotoxic:**  Often used directly, even though the full Malay term exists.\n*   **KNOWN:** Capitalized for emphasis - common in quick notes.\n*   **sbg reminder:** \"Sebagai reminder\" (as a reminder) - colloquial Malay mixed in.\n*   **ubat kena telan:** \"Medicine must be swallowed\" - very direct, common patient instruction phrasing.\n*   **F/U:** Follow-up.\n*   **Dr:** Doctor.\n*   **BP ok:** Blood pressure okay.\n*   **typos/lack of full sentences:** Reflects the speed of writing in a busy clinic.\n\n\n\n"
+ },
+ "5f179ddc8de59504b85692f425ad59e9c58d539b9832893113930c2d46de353c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batu kencing - history ada. Advise minum air byk, follow up dgn Dr. OK.\"}\n```"
+ },
+ "9822e093611d884cd65433d7b200535e6217b34542aec2fc9e23404eb9d1c66c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Sensasi pelik2, telan mskn + gatal2 satu badan (doktr ckp allergic). PRN antihistamine. F/U if xbaik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Sensasi pelik2:** Strange sensations/feeling odd.\n*   **Telan mskn:** Difficulty swallowing.\n*   **Gatal2 satu badan:** Itchy all over the body (urticaria).\n*   **Doktr ckp:** Doctor said.\n*   **PRN:** As needed (from Latin *pro re nata*).\n*   **Antihistamine:** (English word commonly used directly).\n*   **F/U:** Follow up.\n*   **xbaik:** Not better. (Commonly used abbreviation for *tidak baik*).\n\n\n\nThis note reflects the fast-paced, practical style of documentation often seen in busy Malaysian public health clinics. It prioritizes key information and uses a mix of Malay and English terms for efficiency. Typos are also common in real-world hurried notes."
+ },
+ "3bb6990ec397a6c29410579300de9259dc672b2e9431dc8c09c851dae85cbe10": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Kencing byk sgt, gout lama2, doc ckp kena shingles. PRN pain meds given. F/U klinik.\"}\n```\n\n\n\n"
+ },
+ "e7a03f1e15c4bb1c4ddc936898838ec7004a7fd6c2158fd647266ab9dee78a1d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Hemo (known). Sakit tekak sikit. No chest pain bila nafas. PRN paracetamol. Bgak surat MC 1 hari. F/U if x baik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Hemo:** Short for *hemoroid* (piles/berak berdarah)\n*   **Sakit tekak:** Sore throat\n*   **Sikit:** A little/slightly\n*   **No chest pain bila nafas:** No chest pain when breathing. *Bila* = when.\n*   **PRN:** *Pro re nata* (as needed) - common usage in Malaysian clinics.\n*   **Bgak:** Give (from *berikan*)\n*   **MC:** Medical Certificate\n*   **F/U:** Follow-up\n*   **x baik:** Not better (x = tidak)\n*   **Tekak:** Throat.\n\n\n\nThis note reflects the rapid, abbreviated style often used in busy Malaysian public health clinics. It prioritizes key information and uses a mix of Malay and English common in the clinical setting. Typos are also common in such notes."
+ },
+ "4bcef7b08c4a4b8cdfdfba3354e2c4b14099db1cda898c58e4228e51987b3941": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Batuk berdarah +++. No sign dehidration. BP ok, SPO2 98%. Doc review pls ASAP!\"}\n```\n\n\n\n"
+ },
+ "5df2eeb5e01fccfd1d315ad7dc4fab0134bf6d533cf47f0e2c5bed2f3a6fe779": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Peluh byk sgt, chicken pox dr ckp. Advise calamine, rest. 👍\"}\n```\n\n\n\n"
+ },
+ "5213a6558bf69e556e43396ff5a565297be779970d85a1da024eaceb7e1ccf2c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Cough++ x haematemesis. Bgth p/u prn. K/S okay.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **Cough++:** Significant cough. The \"++\" indicates severity.\n*   **x:**  Means \"no\" or \"without\".\n*   **haematemesis:**  \"Darah tercampak\" (vomiting blood) - implied as the negative finding.\n*   **Bgth:** *Beritahu* (tell/inform)\n*   **p/u:** *Perlu* (need to)\n*   **prn:** *Pro re nata* (as needed) - common usage in Malaysian clinics.\n*   **K/S:** *Keadaan stabil* (condition stable)\n*   **okay:** English used commonly in Malaysian healthcare settings.\n\n\n\n"
+ },
+ "c91a6e7878f3d9ebd026ff9ed51fb64663046fad991d4cb62ec0adceeb52d9ae": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Impetigo - doc ckp. Rhinitis ada sblm ni. No chest pain. K/u baik. Pt ok, advise bersih2 luka. F/u klinik.\"}\n```"
+ },
+ "9b1fb40df2f944ec33557124fb81a2af1882200e7473425d312b9f1f3e6cdd7e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"PI: kencing tak tahan + doc ckp pnemonia & demam denggi. PRN: abx, advise minum byk air. F/U klinik.\"}\n```\n\n\n\n**Explanation of shorthand/colloquialisms:**\n\n*   **PI:** Presentation/Patient Information (common starting point)\n*   **kencing tak tahan:** Urinary incontinence (literally \"can't hold pee\")\n*   **doc ckp:** Doctor said\n*   **pnemonia:** Pneumonia (common mis-spelling/pronunciation)\n*   **demam denggi:** Dengue fever\n*   **PRN:** As needed (often used for medication instructions)\n*   **abx:** Antibiotics\n*   **F/U:** Follow-up\n*   **klinik:** Clinic\n*   **byk:** Banyak (Malay for \"much/many\") - used instead of \"lebih\" for speed.\n\n\n\nThis note reflects the hurried, practical style of documentation often seen in busy Malaysian public health clinics. It prioritizes key information for quick understanding by other healthcare staff."
+ },
+ "fd97ea9414bdf5dbe32a6ae3521cea77933f52025b7b9389390dc635282e9291": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"note\": \"Tidur xboleh nk lena, ckp susah nk tido. Advise good sleep hygiene, bg info pasal insomnia. Follow up dgn doktor. \"}\n```\n\n\n\n"
  }
 }

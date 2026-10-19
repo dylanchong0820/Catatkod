@@ -24,6 +24,8 @@ SHORTHAND = {
     "kanak2": "kanak kanak", "ngan": "dengan", "sgt": "sangat", "sngt": "sangat",
     "btk": "batuk", "dmm": "demam", "deman": "demam", "selsema": "selesema", "athma": "asma",
     "sob": "sesak nafas", "dm2": "dm", "t2dm": "dm", "htn": "hpt",
+    "mkn": "makan", "ckp": "cakap", "doc": "doktor", "dr": "doktor", "cnfrm": "sahkan", "confirm": "sahkan",
+    "sdh": "dah", "bg": "bagi", "jg": "juga", "jgk": "juga", "dm1": "t1dm", "pnemonia": "pneumonia",
 }
 
 # Words that open a negation scope. Multi-word negators are joined first.
@@ -53,6 +55,8 @@ def tokenize(text: str) -> list[str]:
         text = re.sub(pattern, repl, text)
     text = _split_reduplication(text)
     text = re.sub(r"(\d+)\s*/\s*(\d+)", r"\1_\2", text)  # keep BP readings together: 150/90
+    text = re.sub(r"\+{2,}", " ", text)  # emphasis: "bengkak ++", "sweating+++"
+    text = re.sub(r"(?<=[a-z0-9])\+(?=[\s,.;:)]|$)", " positif", text)  # "covid+", "ns1+" = positive
     tokens = TOKEN_RE.findall(text)
     out: list[str] = []
     for tok in tokens:
@@ -67,8 +71,17 @@ def normalise(text: str) -> str:
     out: list[str] = []
     scope = 0
     prefix = ""
-    for tok in tokens:
+    for i, tok in enumerate(tokens):
         if tok in NEGATORS:
+            nxt = tokens[i + 1] if i + 1 < len(tokens) else None
+            if nxt is None or nxt in SCOPE_BREAK:
+                # Post-negation, common in Malay: "kencing manis xde", "demam takde." negates the words before it.
+                j, n = len(out) - 1, 0
+                while j >= 0 and n < MAX_SCOPE and out[j] not in SCOPE_BREAK:
+                    if not out[j].startswith(("neg_", "unc_")):
+                        out[j] = "neg_" + out[j]
+                    j, n = j - 1, n + 1
+                continue
             scope, prefix = MAX_SCOPE, "neg_"
             continue
         if tok in UNCERTAIN:
@@ -98,5 +111,6 @@ if __name__ == "__main__":
         "tak demam tapi tekak sakit bila telan",
         "asyik kencing, tapi keluar sikit2",
         "?denggi, r/o UTI. no SOB",
+        "Sakit jantung ada, history kencing manis xde. COVID+, bengkak ++",
     ]:
         print(f"{sample!r}\n  -> {normalise(sample)}")

@@ -2,6 +2,7 @@
 
 Split policy (deterministic, by note_id hash):
   * generated notes            -> train only (templates must never leak into evaluation)
+  * independent (SEA-LION) dev -> train; independent test notes are excluded here and scored by evaluate_independent.py
   * starter + hand-written     -> 25% train, 25% validation, 50% test
 Every row is review_status=draft until a qualified clinician reviews the labels.
 """
@@ -17,7 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from nlp.catalogue import DATA  # noqa: E402
 
-SOURCES = ["starter_labelled.csv", "handwritten_notes.csv", "generated_notes.csv"]
+SOURCES = ["starter_labelled.csv", "handwritten_notes.csv", "generated_notes.csv", "independent_notes.csv"]
 DEST = DATA / "labelled_notes.csv"
 CATALOGUE = DATA / "icd11_tier1_catalogue.json"
 
@@ -27,7 +28,7 @@ def bucket(note_id: str) -> float:
 
 
 def split_for(row: dict) -> str:
-    if row["source"] == "generated":
+    if row["source"] in {"generated", "independent_dev"}:
         return "train"
     b = bucket(row["note_id"])
     return "train" if b < 0.25 else "validation" if b < 0.5 else "test"
@@ -49,6 +50,10 @@ def main() -> None:
                 unknown = set(codes) - allowed
                 if unknown:
                     raise SystemExit(f"{row['note_id']}: codes not in tier-1 catalogue: {sorted(unknown)}")
+                if name == "independent_notes.csv":
+                    if row["split"] != "dev":
+                        continue  # independent TEST notes are never trained on
+                    row["source"] = "independent_dev"
                 out.append({"note_id": row["note_id"], "note_text": row["note_text"], "gold_codes": ";".join(codes),
                             "split": split_for(row), "review_status": "draft", "source_type": "synthetic",
                             "origin": row["source"]})

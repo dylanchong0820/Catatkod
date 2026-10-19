@@ -32,7 +32,7 @@ INTEGRAL: dict[str, set[str]] = {
     "CA40.Z": {"MD12", "MG26", "MD11.5"},            # pneumonia
     "CA23": {"MD11.C", "MD11.5", "MD12"},            # asthma
     "CA22.Z": {"MD11.5", "MD12", "MD11.C"},          # COPD
-    "1E32": {"MG26", "FB56.2", "MD12", "MD36.0"},    # influenza
+    "1E32": {"MG26", "FB56.2", "MD12", "MD36.0", "CA00"},  # influenza (also covers "flu" -> common cold)
     "RA01": {"MG26", "MD12", "MD36.0", "FB56.2"},    # COVID-19
     "1B10.Z": {"MD12"},                              # pulmonary TB
     # Infections / GI

@@ -1,0 +1,779 @@
+{
+ "TRELLA001": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA002": {
+  "extra": [
+   "RBS 12.0"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA003": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA004": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA005": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA006": {
+  "extra": [
+   "coughing blood"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA007": {
+  "extra": [
+   "sleep disturbances"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA008": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA009": {
+  "extra": [
+   "heel pain x3/7"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA010": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA011": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA012": {
+  "extra": [
+   "ear pain"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA013": {
+  "extra": [
+   "throat pain"
+  ],
+  "missing": [],
+  "uncertain": [
+   "acute pharyngitis"
+  ],
+  "clean": false
+ },
+ "TRELLA014": {
+  "extra": [
+   "numbness in hands"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA015": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA016": {
+  "extra": [
+   "Known hyperthyroidism"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA017": {
+  "extra": [
+   "intense pruritus",
+   "burrows on fingers/wrists"
+  ],
+  "missing": [
+   "rash"
+  ],
+  "uncertain": [
+   "scabies"
+  ],
+  "clean": false
+ },
+ "TRELLA018": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA019": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "Dengue"
+  ],
+  "clean": false
+ },
+ "TRELLA020": {
+  "extra": [
+   "painful rash",
+   "L flank pain"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA021": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA022": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA023": {
+  "extra": [
+   "sore throat"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA024": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA025": {
+  "extra": [
+   "breathlessness"
+  ],
+  "missing": [],
+  "uncertain": [
+   "urticaria"
+  ],
+  "clean": false
+ },
+ "TRELLA026": {
+  "extra": [
+   "dizziness"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA027": {
+  "extra": [
+   "shoulder stiffness"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA028": {
+  "extra": [
+   "epigastric pain"
+  ],
+  "missing": [
+   "chest pain"
+  ],
+  "uncertain": [
+   "DKA"
+  ],
+  "clean": false
+ },
+ "TRELLA029": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA030": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA031": {
+  "extra": [
+   "yellowing of skin"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA032": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "chest pain on breathing"
+  ],
+  "clean": false
+ },
+ "TRELLA033": {
+  "extra": [
+   "Headache"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA034": {
+  "extra": [
+   "LBP (Low Back Pain)",
+   "leg pain"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA035": {
+  "extra": [
+   "numbness",
+   "tingling"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA036": {
+  "extra": [
+   "dysuria",
+   "frequency",
+   "urgency"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Urinary tract infection"
+  ],
+  "clean": false
+ },
+ "TRELLA037": {
+  "extra": [
+   "history of Peptic Ulcer Disease (PUD)",
+   "epigastric pain"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA038": {
+  "extra": [
+   "slurred speech"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA039": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA040": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA041": {
+  "extra": [
+   "fungal skin infection",
+   "diabetic eye disease"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA042": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA043": {
+  "extra": [
+   "no appetite loss"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA044": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA045": {
+  "extra": [
+   "myalgia"
+  ],
+  "missing": [],
+  "uncertain": [
+   "flu"
+  ],
+  "clean": false
+ },
+ "TRELLA046": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA047": {
+  "extra": [
+   "facial skin lesions"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA048": {
+  "extra": [
+   "excessive thirst"
+  ],
+  "missing": [
+   "Polydipsia"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA049": {
+  "extra": [
+   "reflux sx"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA050": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA051": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "Infectious gastroenteritis"
+  ],
+  "clean": false
+ },
+ "TRELLA052": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA053": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA054": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "Diarrhoea"
+  ],
+  "clean": false
+ },
+ "TRELLA055": {
+  "extra": [
+   "ear pain"
+  ],
+  "missing": [],
+  "uncertain": [
+   "ASOM"
+  ],
+  "clean": false
+ },
+ "TRELLA056": {
+  "extra": [
+   "IDDM",
+   "fever",
+   "rash",
+   "shortness of breath (SOB)",
+   "loss of consciousness (LOC)"
+  ],
+  "missing": [
+   "Iron deficiency anaemia"
+  ],
+  "uncertain": [
+   "sepsis",
+   "Cerebral ischaemic stroke"
+  ],
+  "clean": false
+ },
+ "TRELLA057": {
+  "extra": [
+   "fever",
+   "sore throat"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA058": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA059": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA060": {
+  "extra": [
+   "HMB"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA061": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA062": {
+  "extra": [
+   "hard stools"
+  ],
+  "missing": [],
+  "uncertain": [
+   "obstipation"
+  ],
+  "clean": false
+ },
+ "TRELLA063": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA064": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA065": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA066": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA067": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA068": {
+  "extra": [
+   "L facial weakness"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Bell's palsy"
+  ],
+  "clean": false
+ },
+ "TRELLA069": {
+  "extra": [
+   "maculopapular lesions on trunk",
+   "rash x3/7"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA070": {
+  "extra": [
+   "red eyes"
+  ],
+  "missing": [],
+  "uncertain": [
+   "conjunctivitis",
+   "melaena"
+  ],
+  "clean": false
+ },
+ "TRELLA071": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA072": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA073": {
+  "extra": [
+   "heel pain x3/7"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA074": {
+  "extra": [
+   "ear pain"
+  ],
+  "missing": [],
+  "uncertain": [
+   "otitis externa"
+  ],
+  "clean": false
+ },
+ "TRELLA075": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA076": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [
+   "anorexia"
+  ],
+  "clean": false
+ },
+ "TRELLA077": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA078": {
+  "extra": [
+   "facial weakness L side"
+  ],
+  "missing": [],
+  "uncertain": [
+   "Bell palsy"
+  ],
+  "clean": false
+ },
+ "TRELLA079": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA080": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA081": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA082": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA083": {
+  "extra": [
+   "skin infection",
+   "lower limb pain"
+  ],
+  "missing": [],
+  "uncertain": [
+   "impetigo",
+   "sciatica"
+  ],
+  "clean": false
+ },
+ "TRELLA084": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA085": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA086": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA087": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA088": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA089": {
+  "extra": [
+   "sleep disturbances"
+  ],
+  "missing": [],
+  "uncertain": [
+   "insomnia"
+  ],
+  "clean": false
+ },
+ "TRELLA090": {
+  "extra": [
+   "history of CVA x3/7"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA091": {
+  "extra": [
+   "itchy rash"
+  ],
+  "missing": [],
+  "uncertain": [
+   "scabies"
+  ],
+  "clean": false
+ },
+ "TRELLA092": {
+  "extra": [
+   "hyperlipidemia"
+  ],
+  "missing": [
+   "hypercholesterolaemia"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA093": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRELLA094": {
+  "extra": [
+   "freq urination",
+   "h/o GU"
+  ],
+  "missing": [
+   "Gastric ulcer"
+  ],
+  "uncertain": [
+   "Polyuria"
+  ],
+  "clean": false
+ },
+ "TRELLA095": {
+  "extra": [
+   "chronic cough"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA096": {
+  "extra": [
+   "slurred speech"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA097": {
+  "extra": [
+   "Chronic cough"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA098": {
+  "extra": [
+   "epigastric burning"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA099": {
+  "extra": [
+   "rash"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRELLA100": {
+  "extra": [
+   "pleuritic"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ }
+}

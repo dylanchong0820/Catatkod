@@ -24,6 +24,7 @@ catatkod/
 │   │   ├── normalise.py      ← shorthand expansion + negation ("takde demam")
 │   │   ├── rules.py          ← matches lexicon phrases in a note
 │   │   ├── retrieval.py      ← searches all ~17,000 ICD-11 codes
+│   │   ├── policy.py         ← which symptoms a diagnosis covers (not coded twice)
 │   │   └── pipeline.py       ← analyze(note): puts it all together
 │   └── training/
 │       ├── data/tier1_lexicon.txt        ← ★ the Malay phrase list (edit this most)
@@ -127,6 +128,8 @@ the new version (the web app reloads by itself).
    - **Tidak dikodkan**: *takde demam* is a denial, so fever is not coded
    - **Kod lain yang mungkin**: full-catalogue suggestions. Try adding *bisul kat punggung* → Furuncle
    - the **Cari kod ICD-11** search box for any code by keyword
+   - **Diliputi oleh diagnosis**: try `imp tonsilitis, sakit tekak, demam`: sore throat is covered by
+     tonsillitis, so it isn't coded twice
 5. Untick a code if wrong, then **Sahkan** to confirm. The nurse is always in control.
 
 Before the pitch: rehearse, record a backup video, and start both servers before going on stage.
@@ -197,6 +200,13 @@ Fix the line it names and rerun. Then **restart the API**.
 **Labelling rule** (use it for every note you label): code everything the note says is *present*; never code
 what's *denied* (*takde demam*) or only *suspected* (*?denggi*, *r/o TB*).
 
+**Coding policy for symptoms that belong to a diagnosis** (`backend/nlp/policy.py`): when a note has a confirmed
+diagnosis, symptoms that are a normal part of it are not coded separately (scabies covers itching and rash;
+UTI covers painful urination; tonsillitis covers sore throat; vertigo replaces dizziness). The app shows these
+under **Diliputi oleh diagnosis**. The rule is applied automatically to labels and predictions, so you can still
+label every finding you see. To change it, edit the `INTEGRAL` table: one line per diagnosis, listing the
+symptom codes it covers. It's a draft and should be checked by a clinician or certified coder.
+
 ---
 
 ## 7. Check accuracy
@@ -220,8 +230,8 @@ score stops being honest.
 - **F1**: both combined, 0–1, higher is better
 - **Exact match**: % of notes where every code was exactly right
 
-Current: **0.95** F1 on our test set, **0.80** on independent Malay/Manglish notes and **0.78** on independent
-English-only notes (keyword matching: 0.61 / 0.62). Mixed Malay-English notes work the same way.
+Current: **0.96** F1 on our test set, **0.82** on independent Malay/Manglish notes and **0.85** on independent
+English-only notes (keyword matching: 0.62 / 0.64). Mixed Malay-English notes work the same way.
 
 ---
 
@@ -254,7 +264,22 @@ notes (`independent_notes_english.csv`, 100 notes). Changing `--seed` or the `MO
 `PROMPT` inside the script gives a different batch, e.g. Llama-SEA-LION 70B, or patient-voice / dialect notes.
 Keep the laptop awake while it runs.
 
-## 10. Regenerate the slide plan PDF
+## 10. Add AI-written training notes (needs SEA-LION key)
+
+More varied training notes from a different AI writer (Llama-SEA-LION 70B, so the Gemma-written test notes
+stay independent):
+
+```bash
+cd backend
+.venv/bin/python training/generate_independent_notes.py --style english --train-notes 100 --seed 311 --model aisingapore/Llama-SEA-LION-v3-70B-IT --rpm 9
+.venv/bin/python training/verify_notes.py --data data/llm_training_notes_english_llama.csv --rpm 9
+```
+
+`verify_notes.py` asks Gemma-SEA-LION whether each note actually contains the findings it was supposed to;
+notes with a missing finding are skipped automatically by `build_dataset.py` (their labels would be wrong).
+Use a new `--seed` for each new batch and `--style malay` for Malay notes. Then rebuild and retrain (section 6).
+
+## 11. Regenerate the slide plan PDF
 
 ```bash
 cd backend
@@ -266,7 +291,7 @@ Edit the text inside `docs/make_slide_plan.py`, then rerun.
 
 ---
 
-## 11. Troubleshooting
+## 12. Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -279,13 +304,13 @@ Edit the text inside `docs/make_slide_plan.py`, then rerun.
 | Gemini `HTTP 404 … no longer available` | Set `GEMINI_MODEL=` to a current model in `backend/.env` |
 | A script seems stuck | Usually rate-limit waiting. Ctrl + C and rerun: cached answers are kept |
 | `prepare_catalogue.py` error | The message names the code/phrase; fix that line in the lexicon |
-| Changes don't show in the app | Restart the API after editing the lexicon or retraining |
+| Changes don't show in the app | Restart the API after editing the lexicon, policy or retraining |
 
 ---
 
-## 12. Limits to be honest about
+## 13. Limits to be honest about
 
 - All data is synthetic; nothing is clinically validated. Codes are suggestions for a nurse to confirm.
-- 0.95 is optimistic (same author wrote lexicon and test notes); ~0.80 on independent notes is the fairer figure.
+- 0.96 is optimistic (same author wrote lexicon and test notes); 0.82 to 0.85 on independent notes is the fairer figure.
 - Biggest weakness: wording it has never seen. The cure is more varied notes from more writers.
 - Before real use: clinician-reviewed labels, real de-identified notes, PDPA review, proper login and audit trail.

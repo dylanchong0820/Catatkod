@@ -3033,5 +3033,1685 @@
   "provider": "sealion",
   "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
   "response": "{\"note\": \"c/o nausea x3/7\"}"
+ },
+ "d26e445559675a898e90f7a50c553007e2a8eff99cdf9fbcb8082c6ed80926e5": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o breathlessness, h/o allergic rhinitis, c/w spontaneous hives, no LOC/collapse, ?urticaria\"}"
+ },
+ "25f0ddf234e440e2b10f68b99a273fca224a5941f4dd87b5f690b69f249ccc5e": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o dizziness x3/7, known DM w/ foot ulcer, no hematemesis\"}"
+ },
+ "4844c986c9e61683a6723dd208a8f43687cbc759107f1ee4c09b525f1cbbafbd": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o shoulder stiffness x3/7, h/o frozen shoulder, c/w hematuria\"}"
+ },
+ "ddf12007bd0d235576e73b85e891bb94dc8b55c64e5a68c08e99f56a84b16701": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o epigastric pain + vomiting x3/7, h/o T1DM, ?DKA\"}"
+ },
+ "e8c68310caf2e034294a3afda3f441dc9a6a67913848643374d4606a7c17f478": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o muscle aches, cough x3/7, painful urination. No itch.\"}"
+ },
+ "8226838acd9ada209927e9646f827be4f7b3187c967fe1c9840726a073f2b9db": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o HA x3/7, painful menses, no radiculopathy\"}"
+ },
+ "728b3db6e8867628c938671832c510467c12db8cd7804132ab184df671790c23": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o yellowing of skin, h/o asthma, dental decay noted\"}"
+ },
+ "a4f1f5486662f2bc2e436844eb4880c00358165d815a84c84666b71865077f1f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o pleuritic CP x3/7, c/w pneumonia\"}"
+ },
+ "3d7bd64dc3938f3ea5887fa943e5295e55cb995cb025a723cce95ebce4378b68": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o HA x3/7, h/o migraines, no freq micturition\"}"
+ },
+ "cdd4cd9e33e1e1b9a2a2328b745e22f41a7db6d7b51c8028d82a33654100a0fe": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o LBP radiating down L leg x3/7, intermittent chills\"}"
+ },
+ "4c050d183dabc335268ef6692d552bd982a5c601171acf9609e89d91cd408b50": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o numbness + tingling, trace protein on dipstick\"}"
+ },
+ "b084fc61878c692189f612463f47ef4e45440d459ccba6e8af845d63dacade61": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"UTI likely, dysuria x3/7, c/o freq/urgency\"}"
+ },
+ "3c20a8b644491818278a9f21da30602c8c7f32e5de1c4222145862482ca44f37": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"h/o PUD, c/o epigastric pain x3/7\"}"
+ },
+ "5a6109586e7b8d0a134907aca3a0a729c0bc6cab3d37a9e966fa076d78c859bd": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"slurred speech, smoker\"}"
+ },
+ "e6aef93fea05ce3255df4d4fac8e3228d3ee0c4775e01f5e3118107d27336f57": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o anxiety, no cramps/spasms\"}"
+ },
+ "d430185a5b93ec9ecc489cd26a55919d4143faf0927e0cfafbeea38ac6acd575": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o COVID-19, h/o gout, no c/o cough\"}"
+ },
+ "be8cd51b4d22b16c760271115b763cb78b6a22a10368c3d45946c5aee36a744d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Fungal skin infection, known hypothyroid, diabetic eye disease\"}"
+ },
+ "4b383aaedb641be674bb520a0ceaff5a1484fde8189b2b58b8a36b74af7c5b65": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Known TB, no recent sputum results\"}"
+ },
+ "be4c55710ccfefa066001ebbe06459e7b1f80e6a61a2c79933be4499ac001806": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"B/l lower limb swelling, recent nosebleeds x2, no appetite loss\"}"
+ },
+ "5916017ed84ecd2ae2a95d618bad1030d9c14a68574591ba9c71928be6c09715": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o red eye, ankle pain c/w sprain, h/o HBV\"}"
+ },
+ "160b7035774ad49910e0aa9fa56ec7d980ef1e6ef210ef229d76000888150d43": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o fever, cough, myalgia x3/7, ?flu\"}"
+ },
+ "42bb2a38bb493b5acbf9648cbba298a8f908571462511e69690b5a763f344401": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"CKD pt, stable\"}"
+ },
+ "ff6073a578af529b7d87fc6cfdf6243204b76d2c2dc1792418ab8d0e76bc5ac7": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"h/o hyperlipidemia, c/o facial skin lesions, dx impetigo, no chills\"}"
+ },
+ "84743d0c470790a593e1586342e981b0547e68e561bf2eeda404075d0a7e1cc9": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o excessive thirst + vomiting blood x1\"}"
+ },
+ "9d110115d088dead59ce616fd26cc6f5b57eb6fdd399267f437d8742285ece90": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"f/u, no c/o, neg for reflux sx\"}"
+ },
+ "d6af04d9915eeaa4651647ed81b7180a285221c64c0407c5d12b8683f041596c": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"pt c/o tiredness x3/7, h/o non-adherence to meds, no c/o abnormal sweating\"}"
+ },
+ "a16659f5ebe0f8e4fd86590e027705dd6648294639c81d79b746ff900327ae06": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o syncope x1, heartburn, ?infectious GE\"}"
+ },
+ "40277dbcc95ee143090c53b49c67126fa4e53f27bc26517ea40c4ced8865a7f3": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o muscle spasms x3/7, no CP on inspiration\"}"
+ },
+ "2a3a45841ad8f40b824220b127b6cc6d2ab95807496ecf501f8373f3fce9cd6a": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o black tarry stools x3/7, h/o atopic dermatitis, no polyuria\"}"
+ },
+ "03d471eac6b31180b7682dc8e54ec9743bde78d96ba6ebb3bf9d62184fc056cb": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o loose stools x3/7, rash c/w chickenpox\"}"
+ },
+ "706f8086d8acf671576fecd1edb61588e28fa1ab9158f8edb268a2fd560281e0": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o ear pain, h/o CAD, ?ASOM\"}"
+ },
+ "57faacd953843e69db93cc412bb7ac06cf4771faba924dec92845ca20cb7752f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"IDDM, measles, c/w fever, rash, c/o SOB, h/o CVA x3/7, LOC clear, ?sepsis\"}"
+ },
+ "39f2163619dca597df2b94ed9c1fb3d2dace29c05c89b3281910c7ad1bacae5d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o productive cough x3/7, fever, sore throat. Imp: acute bronchitis, bacterial cellulitis, viral URTI.\"}"
+ },
+ "c11b0333ad402341874327362ffb94fc761cb4034de251f239944e6957bf3ed8": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o dehydration, h/o CHF, no polydipsia\"}"
+ },
+ "a74ac226a29e9c61f98555601c6de1ee17f155ec5dacf1ad1f5d5e6de075113d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o ear pain + abnormal sweating, no gen edema\"}"
+ },
+ "cdc0e02d1b10e5b6cefd4e0a5fe1be07ce4ddb4aa31f39e60412588467885517": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"HMB, irregular cycles x3/7. Acute sinusitis. No anxiety.\"}"
+ },
+ "565eecf5a4f20f3bde4e6a8588ff1d80ddc4646c5755ecb33bbefb63ed27b74c": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o limb pain x3/7, no h/o insomnia\"}"
+ },
+ "ca228e3224d5925e497c4ecf3e6712e99a123531593ee36d59588fcc83316a49": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o hard stools x3/7, no dysarthria, ?obstipation\"}"
+ },
+ "c6b7478c6c9d548242479e7fa7cc96c91ff8ea009f9a63b6fc2f4073adb4e6ab": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"itching x3/7, h/o NAFLD, pyrexia of unknown origin\"}"
+ },
+ "cb1411a173081a9e00de49d776831f0c4c9f8914483cd5dc9567597cac03d46a": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"COPD pt c/o freq urination, abdo distension x3/7\"}"
+ },
+ "12c73551696c26ada7af68213515045c4127a47651e2dd58e7d5e9f49fdf46d9": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"h/o renal stone, no freq urination\"}"
+ },
+ "af9788b4909c37996998b1c6fdd6d7ac8eb4f6c9e3b307dc49d0df9b243b8a98": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"DM pt c/o low sugar, difficulty swallowing\"}"
+ },
+ "45e3290e4347587f602b946155e1046e42120f35bd212ad652d21ef00fd67a58": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o urine leakage, unable to hold bladder\"}"
+ },
+ "15936fa39f00aeffc1da950a2ae2945dfffc451df284809faf8e965ca05c6e87": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o L facial weakness x3/7, h/o GERD, ? Bell's palsy\"}"
+ },
+ "ace8b2d2d01a64c537cda892c1b9ed86782d704ad94a4912255679babb705876": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o rash x3/7, maculopapular lesions on trunk\"}"
+ },
+ "4d2f9abb6ba157f246e1ee1338162e52fd15bd698c20ff584724d30881103f09": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o red eyes, h/o black tarry stools x3/7, ?conjunctivitis, ?melaena\"}"
+ },
+ "a5ca30bc16f7cb107d692a9f5fc23dd5be78880f4fb29bf193baa8df01cc7ded": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o excessive diaphoresis\"}"
+ },
+ "2aa5192e4cd9eca28fcca71c43833da9870d6fea76ae3ad410aedb6653e31e0c": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o HA x3/7, h/o IDA\"}"
+ },
+ "2cbfc8b64d08c7147ae6008a0947c4a3f50c0075eebfecbf943a9955db39e312": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o heel pain x3/7, h/o plantar fasciitis + mixed hyperlipidemia\"}"
+ },
+ "08674f355b2c5a1764e5acb180a564b609f93edbc06bfe114d1854c58c49adc5": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o ear pain + joint pain, h/o hypothyroidism, no cough, ?otitis externa\"}"
+ },
+ "1cd0bf6d378ad1cc3fecd266a85646d1f49988db5f205640a74993d67b0d454b": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Fever x3/7, no red eye, poor appetite\"}"
+ },
+ "45cd517a6f1636fb6d8e7d7365891e6e1cd759d026e1f89ba9c2b84292fec85e": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"f/u, no c/o, no loss of appetite, no SOB, no LOC issues, no ?anorexia\"}"
+ },
+ "3c75a71a6e5313f8b3cba3e7a8c12371fba5f104a6a402758025bf56843710ed": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o diabetic foot ulcer, no joint pain\"}"
+ },
+ "524509c004a116671459d027f8c31afad7e2216c3600a190080e503d962c31dc": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o dizziness x3/7, facial weakness L side, ?Bell palsy, h/o NAFLD\"}"
+ },
+ "efd820dad59f3c2b0c911559e08469c3166fe2bcf76da6d5d2efcb1efb30c4ba": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"f/u, no c/o, no hematemesis, no GI bleed\"}"
+ },
+ "e85830794321a6f8af2c15fabbed9019064e05f89d74b14d5c0c0270d4b62283": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o sudden collapse, nose bleed x1, no fatigue\"}"
+ },
+ "91620b7ff1d566e4287ede89feaf579152f5e39744ec0414e53cc42ff28af9c2": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o rash + fatigue x3/7\"}"
+ },
+ "8792054effe3f2076152a320c0efed8a826d5bed2d13b18017f8c2660f15a38f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o freq urination x3/7, no HA NEC\"}"
+ },
+ "5a75836807153a00948d1c73784df98541a7770306c7911bbd38cbd70c0cc5db": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o skin infection, lower limb pain radiating down leg, known obesity, no urinary freq, ?impetigo, ?sciatica\"}"
+ },
+ "236bc9014853a3e306bca7861bdaf97de14b468f85eb35c829aca8af5e7885ed": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"h/o CAD, stable\"}"
+ },
+ "06aa6f16f07c4b3709592e4635fe96808a7ac62a54e5b05855d442aa0d83848f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o LBP x3/7, no radiculopathy\"}"
+ },
+ "51aa8e7c439a806100b51c82a966d970b859c481465d439d3b46f1a86d05d358": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o protein in urine, no nosebleeds\"}"
+ },
+ "c597289873a84bd8709546c8b30d90dc8f41aece01bb7d64e0740e6c68bd66c6": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o wheeze, h/o HTN, BP 160/90\"}"
+ },
+ "172e739db8caf8bfa349e4d6bcdf8c8a37d9ff7a57944b00b273e90bae6c9890": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o difficulty swallowing, heavy irregular periods x3/7, no wheeze noted\"}"
+ },
+ "fe2cb6da9d0eb73175b07cdb5cc8e1828b1058bf1ec420adcdc4abf5a8b10307": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o sleep disturbances x3/7, no LOC or syncope, ?insomnia\"}"
+ },
+ "3a21c33a9b43477161fcdd0dd10cfee936fd698b851769b5f87642d538dc4351": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o stroke h/o CVA x3/7, no freq micturition\"}"
+ },
+ "60d7921f00ce854a1d97809062c3d7dc10566ce45d174fa5f70bb83840913b69": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o itchy rash x3/7, burrows noted, ?scabies. Dental exam shows cavities. No CP on breathing.\"}"
+ },
+ "c6d387d5284a64d17cd3ca77962caae51b0f3f8a0e17153d09875cc58b9c1e1f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o thyrotoxicosis, h/o hyperlipidemia, no wheeze noted\"}"
+ },
+ "d97819a33a5cbcf98a3ae0ecb4b1ab6c7f8e2d60daad8aa53cc10aba37c0d168": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"CHF pt, no joint pain\"}"
+ },
+ "295c123fb8b9afd9bc754ba20a290a73afd612b7f8012fc013d96156747696e5": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o freq urination x3/7, h/o GU\"}"
+ },
+ "612b8f3543828f43080ced7915b0a9b2eeb4b8347415837115e3a9157c0223a2": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o hoarseness + sore throat, h/o TB lung, c/w chronic cough x3/7\"}"
+ },
+ "b84eccc8306d8a3e3f69129a2a4e0756b062ff6670d1956a5f410ba77e3cbad0": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o slurred speech, dx bacterial skin infection\"}"
+ },
+ "e79289f952246b02e9248753e855621e6019b8365a9c45a0147cb12c624f24d9": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o stiff shoulder x3/7, h/o frozen shoulder, chronic cough, no hemoptysis, constipated x1w\"}"
+ },
+ "9f1d769e37538eed691e825c1aab39f0f8c0d81c89a29d1efa2a68d2b11429c0": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o epigastric burning x3/7, h/o GERD\"}"
+ },
+ "b0dfda5d703556f8054e10b102d5996cbb586d6e11e70231719bddf796967d5d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o rash x3/7, dx: chickenpox\"}"
+ },
+ "8b38d64d8d529572f1f4d966e94f5926fe1634d3e865a242a9f4e0997d972725": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"c/o pleuritic CP x3/7, worse w/ deep breathing\"}"
+ },
+ "775a84c91daaeb42bf1a4976abc2dc8d6d9ef5337f1eaf6a95dbd3e096764d6c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "661b8bca9cc30b713a5354e1967283567fa2cec343db3783c9bc8af42223b33f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"RBS 12.0\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "5f8a25e0e7b1bff34cec59cfe9a2e5a83e643cdedf5abeddc85871183840456d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "786b06b90220fa6d5dd4f4a224395e2ee0ed16ab7d1fce7c31040ac3079744c5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "49bf564eea6876d609096f4227b3beb0e0a4a3f33657d9376ad615da1cd2145f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "63ee26817ee6e7390f2a75e761621d5a7ccf3328e82758ebbb0ae0d0c4500fe8": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"coughing blood\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "094ab8a64cf0095b9e585fb1795612904869ac9bcb909b3988a636c9406b0e42": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sleep disturbances\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8731bababa7984cf3d4d65dd678e9800aaf84c91d086c726f99112306c60c3f7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "eb972608af5c4c70212bfb020e191e21e4cb00186d5458e607fda9f90689dedc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"heel pain x3/7\"], \"missing\": [], \"uncertain\": []}\n```"
+ },
+ "22a14feec001bc1fa2d601d56e75e2f0ee086c834144c5fa988a58ce33a9d756": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "5ddbee34d04d8643f02ae6bec7b7186bb5a50522266fff5f6bd0250f6dea7bb7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6e9f60782f60074fa428edc97c814a27906e6bae8ef6b9936aafe4bd2ca225c8": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"ear pain\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d3e48f0e037a3c09b03d89076189ca1f907afa87ee991b33895a15fb8f59edaa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"throat pain\"],\n \"missing\": [],\n \"uncertain\": [\"acute pharyngitis\"]}\n```"
+ },
+ "eafd3814d6c70b49f0d4a726a03c5075f2eef5571c427dfa77d1ea53c362a718": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"numbness in hands\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d244553f0a7fe7e19ed2be225b7bda15aa907296c245fa9c91bda92dffc68b00": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "7ecbafac9cf68a7cb58476553821bda668eec8c6c74272609caeec73cfa44aa9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Known hyperthyroidism\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "ec3d03906bca59d902b9141e9fd43f373e582f588b11f90241d68c86d68f66aa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"intense pruritus\", \"burrows on fingers/wrists\"],\n \"missing\": [\"rash\"],\n \"uncertain\": [\"scabies\"]}\n```"
+ },
+ "f45cb885ee992be6ca40aa88e8c36b582a9c9cb302f414db288e10a6cb5521ad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "bf666a860a7a10481adb180a4462601540d5688b8ee5b977f45ae0e7f8870209": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": [\"Dengue\"]}\n```"
+ },
+ "40249f418238432bcfc48eeb9495f4e63795cad22e20e7bb8e0e4d4205e9f17a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"painful rash\", \"L flank pain\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "93d5f1730baaad6225b64e290510c3fbf8752c29b7a57f462652b2c9890d0755": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "67ba35eb7eb30178d98a6e962635afce5a81bb01b6a2bb6c120fbdf68b85bfc7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "9987a277a72ce3e9bdfaf11eee1c48104aeb18f0ace7abf85a8feb90469018b6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sore throat\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "4d9c7dbafb4e017e74f6c8617f400830b700ee918cfd8131969472216fbf9aec": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d9cee2fc375092a6482d52d0e18168db28aa2a0ccbab47e91301490f40e17a72": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"breathlessness\"],\n \"missing\": [],\n \"uncertain\": [\"urticaria\"]}\n```"
+ },
+ "dc9b31432b2d2001977acf1154113ac96ccb500ce9204081f9b857379c42992d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"dizziness\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "4da2cc60bd65cd09ee6603a7295244835a1b73282e3b169be7df3c3cac283aa0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"shoulder stiffness\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "4ad8a7ce915f215262c9d66d530ef82ec84ece66b2d1078ee18dbacf4421e3a9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"epigastric pain\"],\n \"missing\": [\"chest pain\"],\n \"uncertain\": [\"DKA\"]}\n```"
+ },
+ "22a8350d879e099c38554e2c92185cf7c7b96edb2d5cbf374e12c68abff401d3": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "3bb67eeba85173e9ea317bddf021144c97f4ede1b0049015cb16980c26c8fa42": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "23f2c1268c2d6df2ed5b7460e8a2adbb806531f607cc4a0ced2e4036edf1b395": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"yellowing of skin\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "fd5982ab99e79e886413687e122a3c467a70d375bd285a78315b10b510d33718": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": [\"chest pain on breathing\"]}\n```"
+ },
+ "d6e41a5a115cfc0b6e1e6dc2e59f0c2256bff5a3e17333d50fcfd61fc2eddd75": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Headache\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "a243d84afe882981af239c5edba971f6758660224291aaa3b1d8966df4b9a6b8": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"LBP (Low Back Pain)\", \"leg pain\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "4b186fc0d9cd77571febdf7abf8a752aeac8cb080adf681cdaa9d9f12ebb8855": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"numbness\", \"tingling\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "3da85329d26283ba9fc2b8c7661d8283f5700341bc5a23f6c6466c833ef28dce": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"dysuria\", \"frequency\", \"urgency\"],\n \"missing\": [],\n \"uncertain\": [\"Urinary tract infection\"]}\n```"
+ },
+ "450aa5fd180965763918b2330300b6296a6d06d31ea1cc155ad9c66648d53183": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"history of Peptic Ulcer Disease (PUD)\", \"epigastric pain\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8b4cf1013d7a39d9a6d7e55155cd5cbcde8719a28bc194e893742adba07e648b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"slurred speech\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6d7cc7f11693240050f46e4e16e09f8302eec12ec03a9b183203ae05f1b239a1": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "e869e92c32652fc90af58e0ae143adcad8afed184247bb821ce31491abab14cd": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "f6c2669e3dd1c6423eb77aaf4e788316a2468a5eb0ade5eeee24140f2b417883": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"fungal skin infection\", \"diabetic eye disease\"], \"missing\": [], \"uncertain\": []}\n```"
+ },
+ "6f7fb6b5b5a3af3404a2ea1083187588874ff1edb825c9cc63af0cac9bcb09d0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "98ed27f2c54b5052cb8f96daa2553a06226f8182a8e4877579e30282c6fcaf1a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"no appetite loss\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "cc4fe306e7702f06f3f08286345c7259a137642354be7e1b3fed5a60b8cb9a8c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "0d04196fcbab47992bbbfa99798e8808318d7f114b33dc496141cb4c40c18465": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"myalgia\"],\n \"missing\": [],\n \"uncertain\": [\"flu\"]}\n```"
+ },
+ "a1e1879589df4cf006d2253538f92afec77dd9a051f0365801a90cbc54f709dc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "886e33b83d83c9428eb2eb41ca690df0ebfc9ada1fd0879cab58c2455a3031bc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"facial skin lesions\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "79dc1b07922264afe764652165b2f9edb0dfc687ef7ca8873eb6af9b4f5c5034": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"excessive thirst\"],\n \"missing\": [\"Polydipsia\"],\n \"uncertain\": []}\n```"
+ },
+ "f978d186bf091845f45ff820daf0e81d4f8e843de7d9c01098ec54824b0533f5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"reflux sx\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "90e78d573a5b48829e1d90d6cdaa027cf29ddd2420915dadc7817d4fd49e6a38": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6c9652a40219c503fdb62255fa3ce1087d16ebd115464bbc5681e4b11c589df5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": [\"Infectious gastroenteritis\"]}\n```"
+ },
+ "3093ba9e4ae3a3fc4ac980ef38f86057606f27ff4d5086b424175ec66700c597": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "f5dfb077286d7abac87351ee216d0d9e874062ffe43c8a17163e9f24754ba344": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "567acaeee3b322a929be398d4d7c9128b33ed1ba60ebe11ea71c7b080fd6bed2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": [\"Diarrhoea\"]}\n```"
+ },
+ "15cc00c96767ca2d0deba57ae6c0fe19c4dbd3581467361e970c384980b1ff03": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"ear pain\"],\n \"missing\": [],\n \"uncertain\": [\"ASOM\"]}\n```"
+ },
+ "11f7f6b95cadc269a48653700d790eef03fa73cf13eea29d4d598575f69e5700": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"IDDM\", \"fever\", \"rash\", \"shortness of breath (SOB)\", \"loss of consciousness (LOC)\"],\n \"missing\": [\"Iron deficiency anaemia\"],\n \"uncertain\": [\"sepsis\", \"Cerebral ischaemic stroke\"]}\n```"
+ },
+ "a75cb7ed410ea80cc905398a968bf0838b2bb457f07e38c51264feffdc8da3ed": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"fever\", \"sore throat\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "2be1dce66a38b2ed50fd4743af94fcd9838e111815a59c80388ff9e65b81aad0": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "7a8196791837c6711c2fc4da33a1f16b4bc60a3c19093be18c5fd0aa8e47a077": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "56850d547413af78474b306904841c87078e960b76d593b10e5e108c6c0252b3": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"HMB\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "dc6ae3de0210fb7bb884c3ba9ce6ee78fa67c8e668c8c1251ee85b278ab0999b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "aea80c675e8f40520b2aefd64970bbe19b03fedb2706271a629843aed4f20025": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"hard stools\"],\n \"missing\": [],\n \"uncertain\": [\"obstipation\"]}\n```"
+ },
+ "c557675772c2413258b411bf16fe522b0acf533c697d547a14454d6251e4c683": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "32bf7ccba51075646eea4d7c855844d0d961019aa61095df5e7ad98989b83bfa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "23f034f6ce8cc1d80bab00e7746fb85d5a08beeeeaf935118ca5f04e03c9308f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "e689f3fa3b761571a1e958159dfdf2cf973b2a9212a0c2f8c95ae4415434e23e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "a8c0a50bc49a433a18f42cc4aa4b7cd12b52bf2eb53afdcb00488df87359b10e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "079b6a0258d5ad3acb4d98e5b1f952fa1b3ba9bba9fbe1faeca5b9a9bd63d590": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"L facial weakness\"],\n \"missing\": [],\n \"uncertain\": [\"Bell's palsy\"]}\n```"
+ },
+ "e6c28abb126c9540e09f0892891caf838c1441734303a7d1c28c1d4af171ba03": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"maculopapular lesions on trunk\", \"rash x3/7\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6e98d82125a6c4f55dfec63e182b98eef07ba97ae0471611417dbf958c31cffe": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"red eyes\"],\n \"missing\": [],\n \"uncertain\": [\"conjunctivitis\", \"melaena\"]}\n```"
+ },
+ "0533660737c5f3d61b339a8fc75a18eed6e34abf5b7c5c890c5bd6ad59dd7e2a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "39b646b14e84c23964bd9d34a80d60f5f4c5ec1d7ca81b61b136804799a92958": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "480ad46b86229826d64636c0e996948f13f888d16821fe75a86b6ddc3d555503": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"heel pain x3/7\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6de3ee11af4072cf6a63a5047424c469e02e98244210c044838879faeace3201": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"ear pain\"],\n \"missing\": [],\n \"uncertain\": [\"otitis externa\"]}\n```"
+ },
+ "71b6743ac6b699f467440d16f2cb205d0b8e9684ca050063b185308ebdbce1f4": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "f999f395612dd662bb7cc0202e200b7c2b2ff14212fb428aef49c42efea971d6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": [\"anorexia\"]}\n```"
+ },
+ "54a7309200785f6695f561335109c1975b0e9325994dead306e50b3238d08360": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "5f1fe3e8477e806c9b86683ad51ac353596f82e16b89b55f04f1b159771f4290": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"facial weakness L side\"],\n \"missing\": [],\n \"uncertain\": [\"Bell palsy\"]}\n```"
+ },
+ "b715bf332f2165120705b20e98abc0de231da8ab0e625019849faa92d706a914": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "7bdc56b4fb699f23336793bdf706b2ace185b194c00a34c14f5704b2f1e099df": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "519f94a863919d0a2d3ced9a33c564827027618bc123c3f9abac8ab179dcd2db": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8aedaef95d5cd15491da1cf33c69ca82d7efc9baa30ab84347e25a1143075fc5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "131aae30b5e87190bb0a8680816ce04740fe22455abf351bf5b5f3d28f25c0cf": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"skin infection\", \"lower limb pain\"],\n \"missing\": [],\n \"uncertain\": [\"impetigo\", \"sciatica\"]}\n```"
+ },
+ "f9aa426b3baa83eaf57608cdabb0203c9c10c0adb7c99321e92a5b59a2b47178": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "70aa751ff4353b6663366b2456f2a6c969ca961462614b57292494e4d9e110d2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "183117b2d882d7093d234a8eb76fa226e5251616182692f8408cb337c694563c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6903700e917d861d3fa777baa139a333bae4701f07f92b511aad95ac8fc63c44": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6d421d00bdc0743924030e3f35d032c32ec88695544e510937faed885ef8a546": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "32161d5f4b89ac49a0f184647e35d8b536023b75b7e31339b1caddfeae1fa713": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sleep disturbances\"],\n \"missing\": [],\n \"uncertain\": [\"insomnia\"]}\n```"
+ },
+ "6e498f6052f605bdf3d26bfa17502f78210251e0d10f0311ed94dc6bfb578798": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"history of CVA x3/7\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "459132f9ff98acc2786e7bc3dd4225a676f86d8aadde56cbd87ee44b7b7d6aea": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"itchy rash\"],\n \"missing\": [],\n \"uncertain\": [\"scabies\"]}\n```"
+ },
+ "ee7dc671215bde98b2f216179e89cfe5da5a0f6501af754ebe51b41b5d8cebe6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"hyperlipidemia\"],\n \"missing\": [\"hypercholesterolaemia\"],\n \"uncertain\": []}\n```"
+ },
+ "5e9938a7fb5cd0d01bc9dd802f896898c49dc48c37644b90a42674ce8c33c88f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "5f5d0dbc7d03ab8877f269e784cecda590619ac1ad04e566a41b822c924e43a9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"freq urination\", \"h/o GU\"],\n \"missing\": [\"Gastric ulcer\"],\n \"uncertain\": [\"Polyuria\"]}\n```"
+ },
+ "6d565bd7907cfe535f5c03c52142d724efb8a433c3f82efe6f854ac795790195": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"chronic cough\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "57b4fe45002e8357ae6a97b49083fd7df4b60773b87062bc179728e10dccc05f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"slurred speech\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "ce7a808b72b88f8941941c508de2677622d6f9597f80dfb1f71ed3918eed85f4": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Chronic cough\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "c56109af7225d9314e365408823be47aba44ffba2a5d0c40a4c633b019e684cc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"epigastric burning\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "475e5a96627fd5ff63e4daec494620a6994a2a5a9846d7da8e4963309c24cc30": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"rash\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "f59829ba02e7181869776758f54886b0c8dc7c04d2337e4a1fda1d6c2da2de60": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"pleuritic\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "e32e294db5b5f65e9feb12725a723548c725fd9fbc53562fb4216d76c28bd8c7": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Wheezing + sakit tekak akut (dr dx)\"}"
+ },
+ "e0ba022a6ee1e6c39ea143f8f27e5f365f123c00170b47b2835b6b17114f6a61": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit sendi, sembelit\"}"
+ },
+ "d0271d00b8d428965448d7af74267c33a8db30296eb0765040320a5bcb5aa97b": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"kencing byk, susah telan. xde anxiety.\"}"
+ },
+ "d0f8fd2a85c3f316afd57bf4ef4c7164cb325eb9ba7bb9038386ab500efa81ce": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Hiperkolesterolemia sedia ada. Tiada edema kaki.\"}"
+ },
+ "7f049c986fa21b08dc0119c3f2bb8644be81533ed86560dc9d3e6136be3b07c2": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit kepala migrain, tiada kurus\"}"
+ },
+ "9e6ce2bc01486d01325af777973ed65b7c26e8fadf5cc15fc2b6e230dd5f9bc9": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Dx: campak. Dr confirm.\"}"
+ },
+ "4e9e1f74b3381acb68e183d2017eae5bc5d1134bed11d40f5eb83783e71d1af5": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"DM1, muntah, tiada serak\"}"
+ },
+ "4960beeb3723aa50072d69ed173ccdba81f8a6be2e1ca899bf3fb57bf54f52ae": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit badan, x sakit telinga\"}"
+ },
+ "938232ff2d90697bfee24c8b62b396293275792db87f5bb29d9212714465578a": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Dr dx: Bell palsy. Adv: physio & eye care\"}"
+ },
+ "967cd888dc48f4be0c01f7dc4c14581e36d43dd744a3aa05e4bf2de87d119f9f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit anggota badan, sakit perut x tentu, tiada lesu\"}"
+ },
+ "519d5e041ce242bbf8622438f2a12a793367b2f6a9095f7ffd160306524e19a8": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"F/U rutin, tiada keluhan. Tiada bengkak kaki.\"}"
+ },
+ "bc93e8b8a93fb00fb301562e852a330b08615091f92c021b30250c53ef5b2e21": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"demam tak tentu sebab, tiada dehidrasi\"}"
+ },
+ "e586e8a4cbe5f1dd7523d97d8fc9e64cb8701c1bb5e4757f5e564f62f401bdf3": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit belakang bawah sebelah kiri, x myalgia\"}"
+ },
+ "9c711d04f03f64d5296d235affdc462fe9c8f8ef9c393a10572f03d7770fc546": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"minum byk\"}"
+ },
+ "9f89f2f3a427e45c633518b90173f94d595128b16bf36b8f8ccb554327fc9bc6": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Flu x, rhinitis alergi\"}"
+ },
+ "6148a0b1f25c2b1f00125bdeea7bbaca0961082d3766d91e4a32d0a2a04b169f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"URTI, no berat badan turun\"}"
+ },
+ "bd538b5fd074fb43998240cfd6a225b85ff20aa8a911834bb2da317205feb8a5": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit dada atas, x polyuria\"}"
+ },
+ "7626cc25c3535a78645e9cc511b3ab779f71fefaa7c89adde8895d16ed246c07": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit tekak + kulat kulit, bengkak kaki\"}"
+ },
+ "8a050d7c17114ccc911758734b1e9a16db4ce6341e4fc5545b109440e174b717": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Sakit dada, mata merah (conjunctivitis), kurang selera makan. Tidak ada sembelit.\"}"
+ },
+ "3c49cfb6c478c36f8432160d7e244ca5c5397fe5928d891c68898810b6e47ed1": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"UTI, sakit kencing\"}"
+ },
+ "63f5b72d0057740b61f53c33e18995a56910dc01c4fe8111590fbbf0c6a1ee0b": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Pusing2, dizziness\"}"
+ },
+ "1d64f6e6b65e3d8347340eb1548129f780e956cae36778395786c1ad1049e035": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"muntah darah, sakit telinga\"}"
+ },
+ "20630960c0fa90cc9de14e41922479d2e286423cb3249c61e94b10f185c99202": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"darah dlm air kencing, sesak nafas\"}"
+ },
+ "ae2014b4055cff889dea7ed8fa00a16d59570474019b2132a49eeda34aebfa60": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Dr dx: kutu air. Treated w/ permethrin cream.\"}"
+ },
+ "9f0a71bde817e0ea5bb7ea582479ee462ba49c137f4a6827d068a0155cb73262": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Impetigo. Dr dx.\"}"
+ },
+ "7950837169907241cb6e9f0d04706550f1094da46cc7daaee86e0bd6942a7de5": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"diarrhea + GERD, tiada haid berlebihan/irreg\"}"
+ },
+ "7f4180e0c9b438afb4595261b40c515e48844896429aa5735a5b628dda45b568": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit belakang, CTS sedia ada, eczema atopik\"}"
+ },
+ "36112a272575e75d587ea07190c821834b52f4cc24eee1fabdc5ab73878e9765": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"ankle sprain, ASOM, TB pulmo\"}"
+ },
+ "5faced96bb876062c54bf5b388c0b7232904a7fa92c3ead3550694cf7e84b216": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"DR, perut bengkak, suara serak. Tiada pening.\"}"
+ },
+ "2507b7df45c6c08c4b5c37ca7e4d2eb8892d0dec0b34e23b8cdafcd089fad6dc": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"melaena, HBV kronik\"}"
+ },
+ "dfa7b9516c84213c87d41d08dad3fb3b795ed9f0cf48eaaf2823254ec86b234a": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Hipo gula dlm konteks DM. IDA sedia ada. Tiada lesu.\"}"
+ },
+ "2d3e5bf15ae9836b7e2c2ce20669b4bf1bb695f34967dda18b82415af532bac8": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"kuning mata, protein dlm air kencing\"}"
+ },
+ "b01e5df512e92d66538ddf41e5b3978c5417c849933745228f85148ac4e7a8ae": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"suka kencing, ada sejarah penyakit jantung, tiada sakit belakang\"}"
+ },
+ "e13a2fec9fa4e89ceeac2a3f6377338a95d006b49d2f4dc3e987ef167a629ccd": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Pusing2, perokok\"}"
+ },
+ "5733671090861a303a833fa4161a7e9d8e56cbe874b67419ac88dca1dfdb7cae": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Kes: anxiety, sakit bahu frozen shoulder. Tindakan: nasihatkan senaman, rujuk fisio\"}"
+ },
+ "31988220144d8f462c67526855ef8189bbc34526038e53f748f92caac786d3fb": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"oedema gen, doc impression covid+cacar\"}"
+ },
+ "cf0c225c692473c5e66ea347ad4f2818e1126446ed7a1d70afb20595da45f848": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"gatal2, denggi\"}"
+ },
+ "47e1c26151a7ef35587d33b4320ca361597e3ff5155f636bc8334f406b7a2a79": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"HTN sedia ada. Haid berlebihan, tak teratur.\"}"
+ },
+ "7d02bff85ffed0bda83b2c31e93a70ec471755714d63836bde233c096c71f542": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Sinusitis akut. Keluhan peluh berlebihan.\"}"
+ },
+ "17a014c26dc2aa551e7be61051c090eaff5ab0c85ee79464549daa1a6d71510c": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit tekak akut\"}"
+ },
+ "9a25d0cfcf7ff649b7d6ec8f74ef798f7f6aab3a2541cd130519f77744d599a0": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"OA lutut + plantar fasciitis, tiada sakit dada\"}"
+ },
+ "ab7fcdbbec32844d80b5aeba0ca63ccdd5d1c5510616c4449494c594037f490c": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Mata merah, tiada demam\"}"
+ },
+ "1242a5dd10fbe202f1e4c3582f9aa09381844422db2741579d28dd1382e02a66": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"kram, doc dx selulitis bakteria\"}"
+ },
+ "c4bda4725559f2a6d882a7d2c6d6cc7cb55fda7033dd63c2efbc4fc10137811d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Amenoreh 3bln, lesu. Tiada sakit tekak.\"}"
+ },
+ "360d6309a099307f866a5a283afd9757012566cdb85a1727a67a37361abab417": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Sakit dada bila nafas, ulcer perut, kencing manis\"}"
+ },
+ "50c942b7abc8dae1fc58f9990aa8e3d0b11ebfeb3673ec0915f292701d38b064": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Stroke sebelumnya, batuk, thyrotoxicosis\"}"
+ },
+ "015cff414d95d652fe5cd8cb51936a0885d4c9132cf8d54f2e67103f7c38958a": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"kencing manis, luka kaki, pengsan\"}"
+ },
+ "46d5c39ea665539d5b280765eb8199a3dc2738c406f54e7380117d4dbc50cdfd": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"COPD sedia ada, sakit kepala NOS, karies gigi, tiada sakit belakang\"}"
+ },
+ "78b357f8f3e029a662681cb3a70adf4f0a2cfd03d5935597ad74240c43714f54": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"berat badan turun banyak, batu karang buah pinggang\"}"
+ },
+ "fbf6c0ba84664dfef52c354fe5bd49b5cc7af09e4e9b703d82680e88c1598c1e": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"palpitasi, urtikaria spontan, bronkitis akut\"}"
+ },
+ "77eec3a63769d1cbd95e3535b97f6c224bc23804c4917b747c8f1731d9e03583": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"hidung berdarah, tiada protein dalam air kencing\"}"
+ },
+ "94bab1e6f1e9a6d6c3192682ad2aa9e5be2705af45fff49cde182cf0f33da8a1": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit perut kronik, jerawat\"}"
+ },
+ "d15e099c2d9ae1a39eae95a21a802ec43123e09cb2302bbe0ed8828c0cee2850": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Gout sedia ada, ada gangguan deria, hiperlipidemia campuran\"}"
+ },
+ "34c704caadea8c65c23dda779796ad673a622ac6447eb364c8d5f82bb719d08d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"batuk darah, NAFLD sedia ada, obes\"}"
+ },
+ "36de47b3b617d01eb67ad39a7d3054991a8938edca30705872dc0b3bd2cdacf8": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Gastro masalah, bukan cirit. Ada buasir. Doktor cakap gastroenteritis.\"}"
+ },
+ "1a1ad99f067eb32272d125c6feea0b2245d4fc3a311f57b4621243d02993d625": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"CKD + hypothyroid, rash\"}"
+ },
+ "4212ec66747dbc89df19bbe48fef7d25ab351bc77d9459055d5ab8b73d77474b": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Zoster. Sakit tekak.\"}"
+ },
+ "a6e542ec111280d62893c23c2ac9b5c7cd967ddf72f8194d44bbf527a63ea5c3": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit haid teruk, susah cakap\"}"
+ },
+ "2b05a10ffc60527569e1a252a1b3273fd83fb9f7e6d937746d86f15fe80b8db4": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"dehidrasi, perlu IVFD\"}"
+ },
+ "2aecffc00681f2ea6b2002a393d177c0d92605db52063357ad87728a3c802dec": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"muntah, CHF, doc impression pnemonia\"}"
+ },
+ "bc0990301e8942d4b0f4857321d0e177b230e0629c26b0d79510454aea79dc37": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Asma, dlm kawalan\"}"
+ },
+ "d05dc9db6a844f855bace8b473391434d8342a9579756fd8419b9ab3d31e3e89": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"demam sejuk, sejarah tak ikut ubat\"}"
+ },
+ "dc75c2759d2dce27d6db10d575c35fc5ba37a5d5b82936b2160569a772b9c860": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"tidur tak lena, telinga sakit (doktor cakap otitis), COPD sedia ada\"}"
+ },
+ "fd61a357eea1b3886916011311e13949abd7675127ae00eaeea95711b6180502": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"kaki bengkak\"}"
+ },
+ "d64a0d63a2118181cc9e498c48fcd4616fd912de370ccebaeb014d4b43cb2b46": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"hilang selera makan\"}"
+ },
+ "1a9802a607ba03f4d93b2545abd2f493b87f7a7deebc8b6837f42d4258fdeb31": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Mata merah, tiada proteinuria\"}"
+ },
+ "b3ea8d256930294ebb8eb772f5ad714c023c367b8ce12e223c9c7d253c5f2202": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"URTI + diarrea, tiada muntah\"}"
+ },
+ "90861715a7a5c614321ba937bc8034390ad57b75b50b90d5d333f397ec1f4a9f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"muntah darah, tiada sakit kencing\"}"
+ },
+ "4a3e4d3d532b8d5cb5daa37b3d2a45cf8a9781673e7fe5c0deafc6683e13ed05": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Kram otot, buasir sedia ada\"}"
+ },
+ "589a29e487f0b00f77e6ba29d3b977040427514f0530f1c34b7b8748631a9036": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"minum byk, sakit hidung\"}"
+ },
+ "d82dc458e18f3cb34a991881f6f0a7226c41c49fe2b538c9dbdaeec10b287800": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"F/U rutin, tiada aduan. Tiada masalah kencing terus.\"}"
+ },
+ "1d0a027a44b0a00ef82a6bc32a81fc210ec55b0d0f2f26026781cd80ee43538c": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"F/U rutin, tiada aduan. Tiada pengsan/terjatuh.\"}"
+ },
+ "6519c4b374cec0b61a3d4edcb07b61cda8bac4df942dcfbf8b9eee68a60309de": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"thyrotoxicosis, slurred speech, bengkak seluruh badan\"}"
+ },
+ "a3579f3b06d4e90d6303564576ebc9f28c571c312df4ccf7225c76f398ebda5d": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"DM2 + CHF, polyuria\"}"
+ },
+ "e259ce898ff1855fdeee3a4d6e8510c5c45b04fb82e580de264236dcf147dd02": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Dr dx: radang tekak akut\"}"
+ },
+ "41bb85e83094e43a2ec655ffc0fef9b1d74a9d0b25fbee0cc08bfa572fb399d9": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"dx: otitis eksterna. CTS sedia ada. tiada wheezing.\"}"
+ },
+ "68d0f46bc76bc0211ef12fa37a1289518aa9a384152deda4f3a4f35ad9c3fe90": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"demam sejuk, x lelah\"}"
+ },
+ "6c788cdd538821fbcd281dc45de2346b6f40062fd6e04b6fd956736722f08e26": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"keluhan berpeluh xtra, kurus drastik, sakit bahu macam kaku (ada sebelum ni), tiada cirit-birit\"}"
+ },
+ "ff4a68344dc3ed3dee89dc22de521bf849d543fa420e05fd4a52f1fe8ba1451f": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"Mata merah, diagnosis dr: konjungtivitis. Tiada syncope/collapse.\"}"
+ },
+ "1bfe94730f589ed65f0f10b234a842a440ae137edc685e1c93463e62616432e9": {
+  "provider": "sealion",
+  "model": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+  "response": "{\"note\": \"sakit belakang, ada sejarah penyakit jantung, anxiety\"}"
+ },
+ "831f5c7bbe8563525851687e254a915a6a3e0793aa7e8d3c9bfdd2ba9608d20e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit tekak akut\"],\n \"missing\": [\"Acute tonsillitis\"],\n \"uncertain\": []}\n```"
+ },
+ "945e899198108913aa608cd00c07f2e9301c53d7244c2592b78f8326098a4951": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "14bd1e0a7ee4f6d35deddc3937bed07336392bff941ee891aaed56745d9a8d6d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"polyuria\"],\n \"missing\": [],\n \"uncertain\": [\"dysphagia\"]}\n```"
+ },
+ "d4395b374c1dde9f8f4e102cd180c88d94a7e712e98dda0d8f9fb4de5f4e0b0a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8f810440e9151781b34522fb53686a3a0f2587d7f13b99d308a76f08343a9e84": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "3af81923f01e243ae862a4180d6ace1644bb7152243cd021e737851296e042e5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "a8fb81e3374c99e37ed2261b4aa3a639c1f3d2c50d1afc7f9a7c1f3d649f9584": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "a635c66bfd0c5cce0fbc5ae8bdb83d23a686dbc0d5725c97611fd6b57bab8964": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "0bd8a7db2bbb3557da3dd987334e53ec231e27d064d06cd32dac0c11d22bed11": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"eye care\", \"physio\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "189f073059c9bd013b757a968012c5315741971506cb5a3d57e83d7220655dad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "fa795e3cf757345a6abbb900b497b7102675320434991b515e514173c1b36071": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "2d67790dcfa33d7bf798f4303b8d57879f3541652f6ac4baa2894a200d1efd92": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8799cc816e82d57730fd9a28714e0fe3edfb64f9c2fc477306a38c27d9a39184": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit belakang bawah sebelah kiri\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "be5ddaf744cee6b60ee9bdd48179e626e265c1daffceeb42e86d55aaaaf4f9ef": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Increased fluid intake\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d3a6f642e29a288ce24d500ff3dde705992d06911cd139bf09d46c783fdc1e5d": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "3bc3bda9e5233122d5b3e7bd52828de4da4cfe958a5c17fb880a5ff087526602": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"berat badan turun\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6a315b39771e77b8a7e90c2f88f3ddab51f46fb7def6a3000d2f3d809eeeda05": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit dada atas\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "3c6a067a3ba4107895ac69f9a794b52b92b85f5cf9cb627e0d43da79e89170cc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8b7df4c6ef9e663bb8034da7c9b166a3d4cf8e956bfd9d6717e08c22aa877272": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "5829d7754f49b4903560e6099b27a8e08436028b5b7796d5f1f40daeedbab653": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "9439ae78504083737bf22a91d8ef8dc96798dbf9a52f5f70d5ba9eb0787597dc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Pusing2 (dizziness)\"],\n \"missing\": [\"Vertigo\"],\n \"uncertain\": []}\n```"
+ },
+ "96965d6dd8c06a0c204769895a982ac42ec64b5796b14a5e6a7dbc62ab9327d9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "b29e66aadf4050fe7c68a6691c72ad2f63cec950c0fe420981546490b36f55f4": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "661f14647c973ed1fc513228baa1ceeaf3c87877af5bb781219856b5d4fa66ac": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "e842e49eb5350d45f7676ae1a7d150bc62b2eb110cc550132f92d2ef21e0038c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Dr dx\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "9bc631095d87a779ea27c27a4946715b09465e493f66fd9926425fe192811ccb": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "71211a87aa17d7f42b29fb7aa4483bdbf1c033b9fc91c6f13710dbddffe4c5f4": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "52720b924ed0daf2e2febe6cc7ee416fb316b973ec6f5733e36ee3bc4d9a692e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "de00c42c041d6b0b1686e55478d28842b4fb53254980101af950cb891c71dd99": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [\"Diabetic retinopathy\"],\n \"uncertain\": []}\n```"
+ },
+ "edb836e8f320b2e1ac651dab55e4d0a69f3d5bfde337bd29097c155953ad3cb2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "f108b7bc19852185abdd3eecafead11406fe1ceaa22997df1968498148e55b89": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "3c729056ca55d027f429bfe2703dd45a3c87949f72e511e8a69d21023d9bb2dc": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "dc2af362d5b4113c11f80f1dcbeaca84ace0a0e478a18ecdd2e7e755b4191a88": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"history of heart disease\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "bd35a6821dee9fabfd7a245f2a9cfd58cb8ff7a6b252223b8912b8d2492e13aa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "cb1fa4e19adc02dc5b712419d191d6db27cfff5d8fed873c5f3159dcbb87c23e": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit bahu\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "423f132cc5ac5bfeda2f00ff7f2e487f0b052e0aaca1eb9f199d3ee1d3124c5a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6dffaef81ceff1fddc176f0091679cdfbd62a408681553d0fd498bae0e8d8230": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "b348aef6682b4fb7fbfe2d0a1ddd0915174800454e8bbcb3b8901b5f3520f3a2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "182bead93ab82839da91ff00ea74f60136e1269c44d441da629fb05b1f361571": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "cef6753fa710e55502fd6f1c140602a189da6995baac3ec0a3876c040ca67a02": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "bfc3d2507f0cd28d8f102c2775156ce8eb4a7d0e0a5121f1098cdf09c5a80872": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d6800383546c0d3f2fa390508f6184900b614e041482dabe7dceb4c33301d420": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "c95e1f68d73a0aa1adfc3da4ab8eff0c89e91de1eaeef77ffdd256a4c3488010": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d4e72ff4df2f8a1a3174a1f214b2817a71f8be553541fe395d0dac5537b873ba": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "cc8d920616a03d8f23b7cdb1d1c93ffa6eb9e3000fda60df004f15d113123fa2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "c2e56c2e0607270993abe7799e647eaef2b4242b872aca0924365cfb57e00b61": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Stroke sebelumnya\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "788274a81de064e98ebc29a3f14270625d4cc9807b35e9864348594eeda5be4f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"kencing manis\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "41561d8d2eae359bcb13d7d2d8507028d9fdc9b0846e001ab7538c71f4efebf2": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d1754329eed39e347cef92a2d4e7719cd20e555468876b0d12a415cacdc31194": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "cf0d9525972a1a17d156d78d62aa673c9ae13aba28024aa9cc51c65f08722157": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d439057071ea00cf1f24b78724a6a885590686a62acab52ec6dc6567ad7bfe22": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "07bafc357a85efd76b94af0c90a5796eeb767d0d65d7fc13c73cc7c231037264": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit perut kronik\"],\n \"missing\": [\"Gastritis\"],\n \"uncertain\": [\"Acne\"]}\n```"
+ },
+ "3bb3119156f3a0fcfc2a681edad37acdaffef2fcc209ddfa691316ae37d88082": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "fe76eeb216944fe7ba885c8708941329644b4a5a23800f6601b3ecfcee0b9a8f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "f06da11ceb8accd0126c9313e60b34b3794e97daaeb4a71596e0577b2eb689c7": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "8c7b064f9c96f9b5e79558dca618238c997c05248177fdae53c2b77ffdb59356": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d7b367724190ad345dab3e72249260010b803c568ebb9af0bb4c6dac2b29bbc6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Sakit tekak\"],\n \"missing\": [\"Pain in throat\"],\n \"uncertain\": []}\n```"
+ },
+ "fd5018aa3710a6de069386ceb792fb764e952a9553dc543c2b93ec90459877e6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit haid teruk\"],\n \"missing\": [\"Dysarthria\"],\n \"uncertain\": []}\n```"
+ },
+ "aa7516f2a4dd3d4dbbc746f8592b6356a4decdbd4cdc45579a2ab0c06492af0c": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"IVFD\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "dc4d3026ef094d9da3edd00fd670abeb50065f7232f4cd15e6f50d2cb3310b84": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "e34b56529d7c69c6334b35c1e7a3fadafd37526e2c5fbb32a626c702f74bacad": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "62d3e035da13efe155e170f16c1edd1c418f067a4cd6c6a64951efea7e52a4d9": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "af89f0a68fddad631d111afbc82b8164130cb44ffb72df2a73416d40c1f3331a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "6f0e14a337cbf252348cdd4f58e9d824484075fca6807df52d42e3202a1a51e6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "bf6cf5218fc8232d106bdf96ad8b87203869c9acd138877016ef2a54662cb0e5": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "02b552b7fc4c936e84026d2438f161f6a7ab5344ac7554f46e675817ef86bc49": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "30fcd67542a91d790fd1b9940a0ab91588cadfd4f40f0f6f4266d6bd4cdbcfac": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "58ae19623e996665877f28035304595c913214052024fb7f24d79828748f20c6": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "7e1d0798d6c9e9af38ae7ba0ab395a93126ba5c5095b4cc7b509869de60bfb89": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "db55aa45ca693c35f56e82db73a0ebc02b59766d4ce08a38214875dacde8ccae": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"sakit hidung\"],\n \"missing\": [\"Acute sinusitis\"],\n \"uncertain\": [\"Polydipsia\"]}\n```"
+ },
+ "65a56e2dc6276157ad2fd3ef299247bfa4090e035b53e8339c04453eb21d3319": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "46a62c47af10fa6a56bfa996c3b839da6112c2742d6cd2df703f88c0659919af": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "43da3f5ba8745511e3985a3574f907fee9213a661df21ead59e84d7f077e0967": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [\"Dysarthria\"],\n \"uncertain\": []}\n```"
+ },
+ "5055bae8d67e3abc7e5cc3677dc79ac3ad0589f76924d75defe892e1e6556bab": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "d4590915ccd5dab9dd498aa4f246803ce1abd45b16911aefc8c3c24c8ffffba4": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"radang tekak akut\"],\n \"missing\": [\"Acute tonsillitis\"],\n \"uncertain\": []}\n```"
+ },
+ "3b2e09db54497490c0092b9aed3bdea893a0c66e0d501778cc0264529f55d81f": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "a756d0f1cf1276430d9dce6def4bb82a17108a10ee7a67945096fc1f52bbdd1b": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"demam sejuk\"],\n \"missing\": [\"Fatigue\"],\n \"uncertain\": []}\n```"
+ },
+ "8d00cbb08302e0e54ab21f3fa916fe6b88779d7881cab5c84de22523c55c9a50": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "2c4399e8b899439db8a62c28f5e2c9182072bd161cbe1a3e47e3993751b5b27a": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [\"Mata merah\"],\n \"missing\": [],\n \"uncertain\": []}\n```"
+ },
+ "18c9d90f13b4c8539e59ea85671e232dca615436bdcd852a7e4549f3553e2baa": {
+  "provider": "sealion",
+  "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "response": "```json\n{\"extra\": [],\n \"missing\": [],\n \"uncertain\": []}\n```"
  }
 }

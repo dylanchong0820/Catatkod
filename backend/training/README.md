@@ -31,6 +31,7 @@ Every output is a suggestion for nurse/clinician confirmation.
 | `generated_notes.csv` | 3,000 template notes from the lexicon (training only) |
 | `independent_notes.csv` | 160 Malay/Manglish notes written by SEA-LION from English condition names only (60 dev, 100 test) |
 | `independent_notes_english.csv` | 100 English-only notes written the same way (40 dev, 60 test) |
+| `llm_training_notes_*_llama.csv` | 180 training notes by Llama-SEA-LION-70B (kept only if `verify_notes.py` finds nothing missing) |
 | `labelled_notes.csv` | Merged dataset with fixed train/validation/test splits |
 
 **Labelling policy:** code every finding or condition the note states as present; never code negated
@@ -61,10 +62,13 @@ python -m nlp.pipeline "pt dtg c/o kencing berbuih, kaki bengkak 3 ari, hx kenci
 
 | System | micro-P | micro-R | micro-F1 | macro-F1 | exact match |
 |---|---|---|---|---|---|
-| Naive keyword matching (no negation) | 0.832 | 0.952 | 0.888 | 0.910 | 0.705 |
-| CatatKod rules (normalised + negation) | 0.958 | 0.952 | 0.955 | 0.947 | 0.876 |
-| CatatKod classifier | 0.873 | 0.910 | 0.891 | 0.891 | 0.686 |
-| **CatatKod rules + classifier** | **0.926** | **0.976** | **0.950** | **0.953** | **0.838** |
+| Naive keyword matching (no negation) | 0.828 | 0.912 | 0.868 | 0.891 | 0.752 |
+| CatatKod rules (normalised + negation) | 0.963 | 0.949 | 0.956 | 0.946 | 0.914 |
+| CatatKod classifier | 0.880 | 0.854 | 0.867 | 0.868 | 0.714 |
+| **CatatKod rules + classifier** | **0.944** | **0.978** | **0.961** | **0.960** | **0.895** |
+
+All scores in this file use the coding policy in `nlp/policy.py` (symptoms covered by a coded diagnosis are
+not coded separately), applied identically to gold labels and to every system's predictions.
 
 **Caveat — these numbers are optimistic.** The test notes were written by the same author as the lexicon,
 so they share its vocabulary. A credible number needs test notes written by people who have never seen
@@ -85,7 +89,8 @@ notes (never inspected; only their aggregate score was read). Score with `python
 | CatatKod after dev-driven fixes | 0.809 | 0.709 | 0.756 | 0.707 | 0.490 |
 | CatatKod with dev notes added to training | 0.812 | 0.726 | 0.767 | 0.727 | 0.520 |
 | CatatKod + confusable-pair training notes | 0.814 | 0.732 | 0.771 | 0.730 | 0.540 |
-| **CatatKod final (bilingual: + English variants and English dev notes)** | **0.809** | **0.782** | **0.795** | **0.769** | **0.550** |
+| CatatKod bilingual (+ English variants and English dev notes) | 0.809 | 0.782 | 0.795 | 0.769 | 0.550 |
+| **CatatKod final (+ coding policy, + Llama training notes)** | **0.858** | **0.777** | **0.815** | **0.781** | **0.590** |
 
 Fixes made from the dev notes: post-negation (*"kencing manis xde"*), trailing-plus positives (*"COVID+"*),
 general shorthand (*mkn, ckp, doc, dr, sdh, bg*), 83 new lexicon phrases across 31 codes (584 -> 667) (*constip, bentol2,
@@ -112,13 +117,28 @@ negative for, no h/o*) and slash/hyphen splitting (*heavy/irregular*, *flu-like*
 |---|---|---|---|---|---|
 | Naive keyword matching | 0.475 | 0.882 | 0.618 | 0.735 | 0.150 |
 | CatatKod before English work | 0.714 | 0.682 | 0.698 | 0.656 | 0.233 |
-| **CatatKod final (bilingual)** | **0.690** | **0.891** | **0.778** | **0.846** | **0.367** |
+| CatatKod bilingual | 0.690 | 0.891 | 0.778 | 0.846 | 0.367 |
+| **CatatKod final (+ coding policy, + Llama training notes)** | **0.803** | **0.891** | **0.845** | **0.873** | **0.583** |
 
 Mixed Malay-English notes need nothing special: every phrase is matched independently, and the Malay set above
 is already Manglish. Caveat: the English notes are noisier than the Malay ones. SEA-LION often added findings it
 was not asked for (*SOB, wheezing*) and wrote some requested diagnoses as uncertain (*?Pneumonia*), which our
 policy does not code; both count against CatatKod, mostly as lower precision. One intermediate version scored
 0.800 on this set; with 60 notes a ±0.02 difference is noise, so the final version is reported.
+
+
+### Round 3: coding policy, LLM training notes, and two things that didn't work
+
+| Change | English test F1 | Malay test F1 | Kept? |
+|---|---|---|---|
+| Before this round (bilingual) | 0.778 | 0.795 | |
+| **Coding policy** (`nlp/policy.py`): a coded diagnosis covers its usual symptoms (scabies → itching/rash, UTI → dysuria, vertigo → not also dizziness), as in standard ICD coding practice | 0.835 | 0.815 | yes |
+| **+164 Llama-SEA-LION-70B training notes** (written by a different model than the Gemma test notes; 16 dropped by the completeness check) | **0.845** | **0.815** | yes |
+| Multilingual sentence embeddings (multilingual-e5-small) added to the classifier, compared on the independent dev notes | no change (dev 0.847 → 0.847) | | no: adds ~500 MB and PyTorch for nothing |
+| LLM "verifier" to relabel/filter the test sets | 2 of 60 English notes judged clean | | no: it flagged requested findings as extra and any "?" as uncertain; only its "missing finding" check is used (for training notes) |
+
+The coding policy is a draft clinical mapping and needs review by a clinician or certified coder. The API
+returns the suppressed symptoms as `coveredSymptoms`, and the note page shows them under *Diliputi oleh diagnosis*.
 
 ## CatatKod vs. a plain-prompted LLM
 
@@ -137,27 +157,28 @@ SEALION_MODEL=aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B python training/bench
 
 **Reading the results (run 2026-10-19, SEA-LION v4.8 120B — the largest SEA-LION model available):**
 
-- Asked for ICD-11 codes from memory, the LLM is almost always wrong (micro-F1 0.032). 54 of its answers are
+- Asked for ICD-11 codes from memory, the LLM is almost always wrong (micro-F1 0.035). 54 of its answers are
   not real ICD-11 codes at all, and most of the rest are wrong categories (e.g. `MB23` for frequent urination,
   `MG10` for cough). Scoring leniently at the 4-character stem level (so `MG29` matches `MG29.01`) only raises
   it to 0.090, so this is not a strict-scoring artefact.
-- Even when handed the 121-code list plus catalogue suggestions, it reaches 0.725 micro-F1 (0.866 at stem level)
-  vs **0.950** for CatatKod; about 30% of its suggestions are wrong (precision 0.698) vs 7% for CatatKod (0.926).
+- Even when handed the 121-code list plus catalogue suggestions, it reaches 0.649 micro-F1 vs **0.961** for
+  CatatKod; about 40% of its suggestions are wrong (precision 0.594) vs 6% for CatatKod (0.944). (Before the coding
+  policy these were 0.725 vs 0.950; its wrong diagnoses now also suppress symptoms it had right.)
 - On one note (HW030, ankle sprain) the model reasoned for 4,000 tokens without answering; it is scored as an
   empty answer. Gemini rows are pending: the free-tier quota ran out after 18 of 210 calls.
 - Same caveat as above: the test notes share vocabulary with CatatKod's lexicon, which favours CatatKod.
 
 <!-- llm-benchmark:start -->
-### CatatKod vs. a plain-prompted LLM (same 105 held-out notes, 82 codes present)
+### CatatKod vs. a plain-prompted LLM (same 105 held-out notes, 79 codes present)
 
 | System | micro-P | micro-R | micro-F1 | macro-F1 | exact match |
 |---|---|---|---|---|---|
-| Naive keyword matching (no negation) | 0.832 | 0.952 | 0.888 | 0.910 | 0.705 |
-| CatatKod rules | 0.958 | 0.952 | 0.955 | 0.947 | 0.876 |
-| CatatKod classifier | 0.873 | 0.910 | 0.891 | 0.891 | 0.686 |
-| **CatatKod rules + classifier** | **0.926** | **0.976** | **0.950** | **0.953** | **0.838** |
-| Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (any ICD-11 code) | 0.029 | 0.036 | 0.032 | 0.022 | 0.019 |
-| Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (choose from 121 tier-1 + catalogue suggestions) | 0.698 | 0.753 | 0.725 | 0.686 | 0.533 |
+| Naive keyword matching (no negation) | 0.828 | 0.912 | 0.868 | 0.891 | 0.752 |
+| CatatKod rules | 0.963 | 0.949 | 0.956 | 0.946 | 0.914 |
+| CatatKod classifier | 0.880 | 0.854 | 0.867 | 0.868 | 0.714 |
+| **CatatKod rules + classifier** | **0.944** | **0.978** | **0.961** | **0.960** | **0.895** |
+| Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (any ICD-11 code) | 0.029 | 0.044 | 0.035 | 0.025 | 0.019 |
+| Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (choose from 121 tier-1 + catalogue suggestions) | 0.594 | 0.715 | 0.649 | 0.652 | 0.543 |
 
 LLM rows: `training/benchmark_llm.py`, temperature 0, no lexicon or normaliser, one call per note; the prompt states the labelling policy above. Codes outside tier 1 count as false positives. Out-of-tier-1 / not-a-real-ICD-11-code answers: sealion:open: 191 / 54; sealion:tier1: 34 / 0.
 <!-- llm-benchmark:end -->

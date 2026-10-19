@@ -1,0 +1,81 @@
+note_id,note_text,gold_codes,negated_codes,split,source
+TRMLLA001,Wheezing + sakit tekak akut (dr dx),CA03.Z;MD11.C,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA002,"sakit sendi, sembelit",ME05.0;ME82,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA003,"kencing byk, susah telan. xde anxiety.",MD93;MF55,MB24.3,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA004,Hiperkolesterolemia sedia ada. Tiada edema kaki.,5C80.0Z,MG29.01,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA005,"sakit kepala migrain, tiada kurus",8A80.Z,MG43.5,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA006,Dx: campak. Dr confirm.,1F03,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA007,"DM1, muntah, tiada serak",5A10;MD90.0,MA82.10,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA008,"sakit badan, x sakit telinga",FB56.2,AB70.2,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA009,Dr dx: Bell palsy. Adv: physio & eye care,8B88.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA010,"sakit anggota badan, sakit perut x tentu, tiada lesu",FB56.4;MD81.4,MG22,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA011,"F/U rutin, tiada keluhan. Tiada bengkak kaki.",,MG29.01,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA012,"demam tak tentu sebab, tiada dehidrasi",MG26,5C70.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA013,"sakit belakang bawah sebelah kiri, x myalgia",ME84.3,FB56.2,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA014,minum byk,MG43.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA015,"Flu x, rhinitis alergi",1E32;CA08.0Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA016,"URTI, no berat badan turun",CA07.0,MG43.5,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA017,"sakit dada atas, x polyuria",MD95,MF55,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA018,"sakit tekak + kulat kulit, bengkak kaki",1F28.Z;CA00;MG29.01,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA019,"Sakit dada, mata merah (conjunctivitis), kurang selera makan. Tidak ada sembelit.",9A60.Z;MD30.Z;MG43.7,ME05.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA020,"UTI, sakit kencing",GC08.Z;MF50.7,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA021,"Pusing2, dizziness",MB48.0Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA022,"muntah darah, sakit telinga",AB70.2;ME24.A5,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA023,"darah dlm air kencing, sesak nafas",MD11.5;MF50.4Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA024,Dr dx: kutu air. Treated w/ permethrin cream.,1G04.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA025,Impetigo. Dr dx.,1B72.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA026,"diarrhea + GERD, tiada haid berlebihan/irreg",DA22.Z;ME05.1,GA22,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA027,"sakit belakang, CTS sedia ada, eczema atopik",8C10.0;EA80.Z;ME84.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA028,"ankle sprain, ASOM, TB pulmo",1B10.Z;AA90;ND14.7Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA029,"DR, perut bengkak, suara serak. Tiada pening.",9B71.0Z;MA82.10;ME01,MB48.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA030,"melaena, HBV kronik",1E51.0Z;ME24.A4,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA031,Hipo gula dlm konteks DM. IDA sedia ada. Tiada lesu.,3A00.Z;5A21.Z,MG22,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA032,"kuning mata, protein dlm air kencing",ME10.1;MF96.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA033,"suka kencing, ada sejarah penyakit jantung, tiada sakit belakang",BA52.Z;MF50.0,ME84.2Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA034,"Pusing2, perokok",MB48.Z;QE13,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA035,"Kes: anxiety, sakit bahu frozen shoulder. Tindakan: nasihatkan senaman, rujuk fisio",FB53.0;MB24.3,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA036,"oedema gen, doc impression covid+cacar",1E90.Z;MG29.1;RA01,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA037,"gatal2, denggi",1D2Z;EC90.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA038,"HTN sedia ada. Haid berlebihan, tak teratur.",BA00.Z;GA22,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA039,Sinusitis akut. Keluhan peluh berlebihan.,CA01;ME66.5,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA040,sakit tekak akut,CA02.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA041,"OA lutut + plantar fasciitis, tiada sakit dada",FA01.Z;FB40.1,MD30.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA042,"Mata merah, tiada demam",MC15,MG21,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA043,"kram, doc dx selulitis bakteria",1B70.Z;MB47.3,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA044,"Amenoreh 3bln, lesu. Tiada sakit tekak.",GA20.0Z;MG22,MD36.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA045,"Sakit dada bila nafas, ulcer perut, kencing manis",5A11;DA60.Z;MD30.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA046,"Stroke sebelumnya, batuk, thyrotoxicosis",5A02.Z;8B11;MD12,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA047,"kencing manis, luka kaki, pengsan",BD54;MG45.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA048,"COPD sedia ada, sakit kepala NOS, karies gigi, tiada sakit belakang",CA22.Z;DA08.0;MB4D,ME84.2Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA049,"berat badan turun banyak, batu karang buah pinggang",GB70.0Z;MG43.5,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA050,"palpitasi, urtikaria spontan, bronkitis akut",CA42.Z;EB00.Z;MC81.2,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA051,"hidung berdarah, tiada protein dalam air kencing",MD20,MF96.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA052,"sakit perut kronik, jerawat",DA42.Z;ED80.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA053,"Gout sedia ada, ada gangguan deria, hiperlipidemia campuran",5C80.2;FA25;MB40.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA054,"batuk darah, NAFLD sedia ada, obes",5B81.Z;DB92.Z;MD22,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA055,"Gastro masalah, bukan cirit. Ada buasir. Doktor cakap gastroenteritis.",1A40.Z;DB60.Z,ME05.1,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA056,"CKD + hypothyroid, rash",5A00.Z;GB61.Z;ME66.6Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA057,Zoster. Sakit tekak.,1E91.Z;MD36.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA058,"sakit haid teruk, susah cakap",GA34.3;MA80.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA059,"dehidrasi, perlu IVFD",5C70.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA060,"muntah, CHF, doc impression pnemonia",BD10;CA40.Z;MD90.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA061,"Asma, dlm kawalan",CA23,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA062,"demam sejuk, sejarah tak ikut ubat",MG21;QC49,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA063,"tidur tak lena, telinga sakit (doktor cakap otitis), COPD sedia ada",7A0Z;AA3Z;CA22.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA064,kaki bengkak,MG29.01,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA065,hilang selera makan,MG43.7,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA066,"Mata merah, tiada proteinuria",MC15,MF96.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA067,"URTI + diarrea, tiada muntah",CA07.0;ME05.1,MD90.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA068,"muntah darah, tiada sakit kencing",ME24.A5,MF50.7,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA069,"Kram otot, buasir sedia ada",DB60.Z;MB47.3,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA070,"minum byk, sakit hidung",CA01;MG43.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA071,"F/U rutin, tiada aduan. Tiada masalah kencing terus.",,MF50.2Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA072,"F/U rutin, tiada aduan. Tiada pengsan/terjatuh.",,MG45.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA073,"thyrotoxicosis, slurred speech, bengkak seluruh badan",5A02.Z;MA80.2Z;MG29.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA074,"DM2 + CHF, polyuria",5A11;BD10;MF55,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA075,Dr dx: radang tekak akut,CA03.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA076,dx: otitis eksterna. CTS sedia ada. tiada wheezing.,8C10.0;AA3Z,MD11.C,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA077,"demam sejuk, x lelah",MG21,MG22,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA078,"keluhan berpeluh xtra, kurus drastik, sakit bahu macam kaku (ada sebelum ni), tiada cirit-birit",FB53.0;ME66.5;MG43.5,ME05.1,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA079,"Mata merah, diagnosis dr: konjungtivitis. Tiada syncope/collapse.",9A60.Z,MG45.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRMLLA080,"sakit belakang, ada sejarah penyakit jantung, anxiety",BA52.Z;MB24.3;ME84.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT

@@ -1,0 +1,101 @@
+note_id,note_text,gold_codes,negated_codes,split,source
+TRELLA001,c/o hoarse voice x3/7,MA82.10,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA002,"DM2 known, RBS 12.0, Rx metformin 500mg BD",5A11,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA003,"f/u, no c/o ear pain, no otalgia",,AB70.2,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA004,"c/o acne, h/o obesity",5B81.Z;ED80.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA005,"c/o abd pain x3/7, poor appetite",MD81.4;MG43.7,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA006,"coughing blood x3/7, h/o gastritis + knee OA, no sleep issues",DA42.Z;FA01.Z;MD22,7A0Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA007,"c/o sleep disturbances x3/7, no wheezing noted",7A0Z,MD11.C,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA008,"c/o excessive urine output x3/7, no abd pain",MF55,MD81.4,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA009,"c/o heel pain x3/7, h/o plantar fasciitis",FB40.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA010,c/o joint pain + LBP x3/7,ME82;ME84.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA011,"c/o dizziness x3/7, c/w URI sx",CA07.0;MB48.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA012,"c/o ear pain x3/7, amenorrhea, dx otitis externa, no hematuria",AA3Z;GA20.0Z,MF50.4Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA013,"c/o throat pain x3/7, gen edema, no dehydration, ? acute pharyngitis",CA02.Z;MG29.1,5C70.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA014,"c/o numbness in hands, h/o CTS, recent unexplained wt loss, no dysuria",8C10.0;MG43.5,MF50.7,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA015,c/o sore throat x3/7,MD36.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA016,"Known hyperthyroidism, no abdo distension",5A02.Z,ME01,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA017,"c/o intense pruritus, burrows on fingers/wrists, no rash, ?scabies",1G04.Z,ME66.6Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA018,"Known h/o piles, no freq micturition",DB60.Z,MF50.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA019,"c/o palpitations x3/7, ?dengue",1D2Z;MC81.2,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA020,"c/o painful rash L flank x3/7, vesicular lesions c/w zoster",1E91.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA021,"HTN on Rx, BP 160/95",BA00.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA022,"c/o wheezing, h/o mixed hyperlipidaemia",5C80.2;MD11.C,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA023,"c/o sore throat x3/7, no freq mict, dx: acute tonsillitis",CA03.Z,MF50.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA024,c/o nausea x3/7,MD90.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA025,"c/o breathlessness, h/o allergic rhinitis, c/w spontaneous hives, no LOC/collapse, ?urticaria",CA08.0Z;EB00.Z;MD11.5,MG45.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA026,"c/o dizziness x3/7, known DM w/ foot ulcer, no hematemesis",BD54;MB48.0Z,ME24.A5,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA027,"c/o shoulder stiffness x3/7, h/o frozen shoulder, c/w hematuria",FB53.0;MF50.4Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA028,"c/o epigastric pain + vomiting x3/7, h/o T1DM, ?DKA",5A10;MD30.Z;MD90.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA029,"c/o muscle aches, cough x3/7, painful urination. No itch.",FB56.2;MD12;MF50.7,EC90.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA030,"c/o HA x3/7, painful menses, no radiculopathy",GA34.3;MB4D,ME84.3,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA031,"c/o yellowing of skin, h/o asthma, dental decay noted",CA23;DA08.0;ME10.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA032,"c/o pleuritic CP x3/7, c/w pneumonia",CA40.Z;MD30.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA033,"c/o HA x3/7, h/o migraines, no freq micturition",8A80.Z,MF50.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA034,"c/o LBP radiating down L leg x3/7, intermittent chills",ME84.3;MG21,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA035,"c/o numbness + tingling, trace protein on dipstick",MB40.Z;MF96.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA036,"UTI likely, dysuria x3/7, c/o freq/urgency",GC08.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA037,"h/o PUD, c/o epigastric pain x3/7",DA60.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA038,"slurred speech, smoker",MA80.2Z;QE13,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA039,"c/o anxiety, no cramps/spasms",MB24.3,MB47.3,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA040,"c/o COVID-19, h/o gout, no c/o cough",FA25;RA01,MD12,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA041,"Fungal skin infection, known hypothyroid, diabetic eye disease",1F28.Z;5A00.Z;9B71.0Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA042,"Known TB, no recent sputum results",1B10.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA043,"B/l lower limb swelling, recent nosebleeds x2, no appetite loss",MD20;MG29.01,MG43.7,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA044,"c/o red eye, ankle pain c/w sprain, h/o HBV",1E51.0Z;MC15;ND14.7Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA045,"c/o fever, cough, myalgia x3/7, ?flu",1E32,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA046,"CKD pt, stable",GB61.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA047,"h/o hyperlipidemia, c/o facial skin lesions, dx impetigo, no chills",1B72.Z;5C80.0Z,MG21,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA048,c/o excessive thirst + vomiting blood x1,ME24.A5;MG43.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA049,"f/u, no c/o, neg for reflux sx",,MD95,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA050,"pt c/o tiredness x3/7, h/o non-adherence to meds, no c/o abnormal sweating",MG22;QC49,ME66.5,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA051,"c/o syncope x1, heartburn, ?infectious GE",1A40.Z;MD95;MG45.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA052,"c/o muscle spasms x3/7, no CP on inspiration",MB47.3,MD30.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA053,"c/o black tarry stools x3/7, h/o atopic dermatitis, no polyuria",EA80.Z;ME24.A4,MF55,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA054,"c/o loose stools x3/7, rash c/w chickenpox",1E90.Z;ME05.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA055,"c/o ear pain, h/o CAD, ?ASOM",AA90;BA52.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA056,"IDDM, measles, c/w fever, rash, c/o SOB, h/o CVA x3/7, LOC clear, ?sepsis",1F03;3A00.Z;8B11,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA057,"c/o productive cough x3/7, fever, sore throat. Imp: acute bronchitis, bacterial cellulitis, viral URTI.",1B70.Z;CA00;CA42.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA058,"c/o dehydration, h/o CHF, no polydipsia",5C70.0;BD10,MG43.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA059,"c/o ear pain + abnormal sweating, no gen edema",AB70.2;ME66.5,MG29.1,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA060,"HMB, irregular cycles x3/7. Acute sinusitis. No anxiety.",CA01;GA22,MB24.3,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA061,"c/o limb pain x3/7, no h/o insomnia",FB56.4,7A0Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA062,"c/o hard stools x3/7, no dysarthria, ?obstipation",ME05.0,MA80.2Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA063,"itching x3/7, h/o NAFLD, pyrexia of unknown origin",DB92.Z;EC90.Z;MG26,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA064,"COPD pt c/o freq urination, abdo distension x3/7",CA22.Z;ME01;MF50.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA065,"h/o renal stone, no freq urination",GB70.0Z,MF50.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA066,"DM pt c/o low sugar, difficulty swallowing",5A21.Z;MD93,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA067,"c/o urine leakage, unable to hold bladder",MF50.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA068,"c/o L facial weakness x3/7, h/o GERD, ? Bell's palsy",8B88.0;DA22.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA069,"c/o rash x3/7, maculopapular lesions on trunk",ME66.6Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA070,"c/o red eyes, h/o black tarry stools x3/7, ?conjunctivitis, ?melaena",9A60.Z;ME24.A4,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA071,c/o excessive diaphoresis,ME66.5,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA072,"c/o HA x3/7, h/o IDA",3A00.Z;MB4D,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA073,"c/o heel pain x3/7, h/o plantar fasciitis + mixed hyperlipidemia",5C80.2;FB40.1,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA074,"c/o ear pain + joint pain, h/o hypothyroidism, no cough, ?otitis externa",5A00.Z;AA3Z;ME82,MD12,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA075,"Fever x3/7, no red eye, poor appetite",MG26;MG43.7,MC15,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA076,"f/u, no c/o, no loss of appetite, no SOB, no LOC issues, no ?anorexia",,MG43.7,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA077,"c/o diabetic foot ulcer, no joint pain",BD54,ME82,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA078,"c/o dizziness x3/7, facial weakness L side, ?Bell palsy, h/o NAFLD",8B88.0;DB92.Z;MB48.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA079,"f/u, no c/o, no hematemesis, no GI bleed",,ME24.A5,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA080,"c/o sudden collapse, nose bleed x1, no fatigue",MD20;MG45.Z,MG22,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA081,c/o rash + fatigue x3/7,ME66.6Z;MG22,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA082,"c/o freq urination x3/7, no HA NEC",MF50.0,MB4D,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA083,"c/o skin infection, lower limb pain radiating down leg, known obesity, no urinary freq, ?impetigo, ?sciatica",1B72.Z;5B81.Z;ME84.3,MF50.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA084,"h/o CAD, stable",BA52.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA085,"c/o LBP x3/7, no radiculopathy",ME84.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA086,"c/o protein in urine, no nosebleeds",MF96.Z,MD20,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA087,"c/o wheeze, h/o HTN, BP 160/90",BA00.Z;MD11.C,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA088,"c/o difficulty swallowing, heavy irregular periods x3/7, no wheeze noted",GA22;MD93,MD11.C,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA089,"c/o sleep disturbances x3/7, no LOC or syncope, ?insomnia",7A0Z,MG45.Z,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA090,"c/o stroke h/o CVA x3/7, no freq micturition",8B11,MF50.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA091,"c/o itchy rash x3/7, burrows noted, ?scabies. Dental exam shows cavities. No CP on breathing.",1G04.Z;DA08.0,MD30.0,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA092,"c/o thyrotoxicosis, h/o hyperlipidemia, no wheeze noted",5A02.Z;5C80.0Z,MD11.C,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA093,"CHF pt, no joint pain",BD10,ME82,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA094,"c/o freq urination x3/7, h/o GU",DA60.Z;MF55,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA095,"c/o hoarseness + sore throat, h/o TB lung, c/w chronic cough x3/7",1B10.Z;MA82.10;MD36.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA096,"c/o slurred speech, dx bacterial skin infection",1B70.Z;MA80.2Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA097,"c/o stiff shoulder x3/7, h/o frozen shoulder, chronic cough, no hemoptysis, constipated x1w",CA22.Z;FB53.0;ME05.0,MD22,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA098,"c/o epigastric burning x3/7, h/o GERD",DA22.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA099,"c/o rash x3/7, dx: chickenpox",1E90.Z,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT
+TRELLA100,"c/o pleuritic CP x3/7, worse w/ deep breathing",MD30.0,,train,sealion:aisingapore/Llama-SEA-LION-v3-70B-IT

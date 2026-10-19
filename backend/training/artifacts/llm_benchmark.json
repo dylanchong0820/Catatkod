@@ -9,11 +9,11 @@
       "variant": "open",
       "metrics": {
         "micro_precision": 0.028846153846153848,
-        "micro_recall": 0.03614457831325301,
-        "micro_f1": 0.03208556149732621,
-        "macro_f1_present_codes": 0.02181571815718157,
+        "micro_recall": 0.043795620437956206,
+        "micro_f1": 0.034782608695652174,
+        "macro_f1_present_codes": 0.02489451476793249,
         "exact_match": 0.01904761904761905,
-        "codes_in_split": 82
+        "codes_in_split": 79
       },
       "out_of_tier1_codes": 191,
       "not_in_who_catalogue": 54,
@@ -24,12 +24,12 @@
       "model": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
       "variant": "tier1",
       "metrics": {
-        "micro_precision": 0.6983240223463687,
-        "micro_recall": 0.7530120481927711,
-        "micro_f1": 0.7246376811594203,
-        "macro_f1_present_codes": 0.6860378830534176,
-        "exact_match": 0.5333333333333333,
-        "codes_in_split": 82
+        "micro_precision": 0.593939393939394,
+        "micro_recall": 0.7153284671532847,
+        "micro_f1": 0.6490066225165563,
+        "macro_f1_present_codes": 0.6515261110197819,
+        "exact_match": 0.5428571428571428,
+        "codes_in_split": 79
       },
       "out_of_tier1_codes": 34,
       "not_in_who_catalogue": 0,
@@ -38,36 +38,36 @@
   },
   "catatkod_results": {
     "naive_keyword_baseline": {
-      "micro_precision": 0.8315789473684211,
-      "micro_recall": 0.9518072289156626,
-      "micro_f1": 0.8876404494382022,
-      "macro_f1_present_codes": 0.9100517368810052,
-      "exact_match": 0.7047619047619048,
-      "codes_in_split": 82
+      "micro_precision": 0.8278145695364238,
+      "micro_recall": 0.9124087591240876,
+      "micro_f1": 0.8680555555555556,
+      "macro_f1_present_codes": 0.8905163753265019,
+      "exact_match": 0.7523809523809524,
+      "codes_in_split": 79
     },
     "catatkod_rules": {
-      "micro_precision": 0.9575757575757575,
-      "micro_recall": 0.9518072289156626,
-      "micro_f1": 0.9546827794561934,
-      "macro_f1_present_codes": 0.9474190563143217,
-      "exact_match": 0.8761904761904762,
-      "codes_in_split": 82
+      "micro_precision": 0.9629629629629629,
+      "micro_recall": 0.948905109489051,
+      "micro_f1": 0.9558823529411765,
+      "macro_f1_present_codes": 0.9455897126783201,
+      "exact_match": 0.9142857142857143,
+      "codes_in_split": 79
     },
     "catatkod_ml": {
-      "micro_precision": 0.8728323699421965,
-      "micro_recall": 0.9096385542168675,
-      "micro_f1": 0.8908554572271387,
-      "macro_f1_present_codes": 0.890991946174873,
-      "exact_match": 0.6857142857142857,
-      "codes_in_split": 82
+      "micro_precision": 0.8796992481203008,
+      "micro_recall": 0.8540145985401459,
+      "micro_f1": 0.8666666666666667,
+      "macro_f1_present_codes": 0.8681925090711391,
+      "exact_match": 0.7142857142857143,
+      "codes_in_split": 79
     },
     "catatkod_ml_plus_rules": {
-      "micro_precision": 0.9257142857142857,
-      "micro_recall": 0.9759036144578314,
-      "micro_f1": 0.9501466275659824,
-      "macro_f1_present_codes": 0.9532262572434739,
-      "exact_match": 0.8380952380952381,
-      "codes_in_split": 82
+      "micro_precision": 0.9436619718309859,
+      "micro_recall": 0.9781021897810219,
+      "micro_f1": 0.9605734767025089,
+      "macro_f1_present_codes": 0.959774964838256,
+      "exact_match": 0.8952380952380953,
+      "codes_in_split": 79
     }
   },
   "predictions": {
@@ -427,9 +427,7 @@
       {
         "note_id": "HW007",
         "gold": [
-          "CA40.Z",
-          "MD12",
-          "MG26"
+          "CA40.Z"
         ],
         "pred": [
           "CA40",
@@ -441,8 +439,7 @@
       {
         "note_id": "HW009",
         "gold": [
-          "CA23",
-          "MD11.C"
+          "CA23"
         ],
         "pred": [
           "MD11",
@@ -453,7 +450,6 @@
         "note_id": "HW013",
         "gold": [
           "CA03.Z",
-          "MD36.0",
           "MG26"
         ],
         "pred": [
@@ -465,8 +461,7 @@
       {
         "note_id": "HW014",
         "gold": [
-          "CA02.Z",
-          "MD36.0"
+          "CA02.Z"
         ],
         "pred": [
           "MG30.0",
@@ -487,8 +482,7 @@
       {
         "note_id": "HW020",
         "gold": [
-          "1F28.Z",
-          "EC90.Z"
+          "1F28.Z"
         ],
         "pred": [
           "EA00.0",
@@ -498,8 +492,7 @@
       {
         "note_id": "HW022",
         "gold": [
-          "EA80.Z",
-          "EC90.Z"
+          "EA80.Z"
         ],
         "pred": [
           "EA00",
@@ -533,7 +526,6 @@
         "note_id": "HW026",
         "gold": [
           "AA90",
-          "AB70.2",
           "CA00"
         ],
         "pred": [
@@ -585,8 +577,7 @@
       {
         "note_id": "HW036",
         "gold": [
-          "8C10.0",
-          "MB40.Z"
+          "8C10.0"
         ],
         "pred": [
           "8A40",
@@ -598,7 +589,6 @@
         "note_id": "HW039",
         "gold": [
           "MB48.0Z",
-          "MB48.Z",
           "MD90.0"
         ],
         "pred": [
@@ -639,9 +629,7 @@
       {
         "note_id": "HW045",
         "gold": [
-          "BD10",
-          "MD11.5",
-          "MG29.01"
+          "BD10"
         ],
         "pred": [
           "BA00.0",
@@ -682,8 +670,6 @@
       {
         "note_id": "HW056",
         "gold": [
-          "MD36.0",
-          "MG26",
           "RA01"
         ],
         "pred": [
@@ -696,10 +682,7 @@
       {
         "note_id": "HW057",
         "gold": [
-          "1E32",
-          "FB56.2",
-          "MD12",
-          "MG26"
+          "1E32"
         ],
         "pred": [
           "1E80",
@@ -711,8 +694,7 @@
       {
         "note_id": "HW058",
         "gold": [
-          "CA42.Z",
-          "MD12"
+          "CA42.Z"
         ],
         "pred": [
           "CA20",
@@ -914,9 +896,7 @@
       {
         "note_id": "HW098",
         "gold": [
-          "1A40.Z",
-          "MD90.1",
-          "ME05.1"
+          "1A40.Z"
         ],
         "pred": [
           "1A00",
@@ -974,10 +954,7 @@
       {
         "note_id": "HW107",
         "gold": [
-          "1F03",
-          "MC15",
-          "ME66.6Z",
-          "MG26"
+          "1F03"
         ],
         "pred": [
           "9A00",
@@ -990,9 +967,7 @@
       {
         "note_id": "HW109",
         "gold": [
-          "BD10",
-          "MD11.5",
-          "MG29.01"
+          "BD10"
         ],
         "pred": [
           "BA00",
@@ -1015,7 +990,6 @@
         "note_id": "HW112",
         "gold": [
           "CA03.Z",
-          "MD36.0",
           "MG26"
         ],
         "pred": [
@@ -1106,8 +1080,7 @@
         "note_id": "HW128",
         "gold": [
           "CA00",
-          "CA07.0",
-          "MD12"
+          "CA07.0"
         ],
         "pred": [
           "MB20",
@@ -1118,9 +1091,7 @@
       {
         "note_id": "HW129",
         "gold": [
-          "1E32",
-          "FB56.2",
-          "MG26"
+          "1E32"
         ],
         "pred": [
           "1E60",
@@ -1521,21 +1492,16 @@
       {
         "note_id": "HW007",
         "gold": [
-          "CA40.Z",
-          "MD12",
-          "MG26"
+          "CA40.Z"
         ],
         "pred": [
-          "CA40.Z",
-          "MD12",
-          "MG26"
+          "CA40.Z"
         ]
       },
       {
         "note_id": "HW009",
         "gold": [
-          "CA23",
-          "MD11.C"
+          "CA23"
         ],
         "pred": [
           "MD11.C",
@@ -1546,7 +1512,6 @@
         "note_id": "HW013",
         "gold": [
           "CA03.Z",
-          "MD36.0",
           "MG26"
         ],
         "pred": [
@@ -1558,8 +1523,7 @@
       {
         "note_id": "HW014",
         "gold": [
-          "CA02.Z",
-          "MD36.0"
+          "CA02.Z"
         ],
         "pred": [
           "MD36.0"
@@ -1578,8 +1542,7 @@
       {
         "note_id": "HW020",
         "gold": [
-          "1F28.Z",
-          "EC90.Z"
+          "1F28.Z"
         ],
         "pred": [
           "1F28.2",
@@ -1589,8 +1552,7 @@
       {
         "note_id": "HW022",
         "gold": [
-          "EA80.Z",
-          "EC90.Z"
+          "EA80.Z"
         ],
         "pred": [
           "EA80.1",
@@ -1619,12 +1581,10 @@
         "note_id": "HW026",
         "gold": [
           "AA90",
-          "AB70.2",
           "CA00"
         ],
         "pred": [
-          "AA90",
-          "AB70.2"
+          "AA90"
         ]
       },
       {
@@ -1670,19 +1630,16 @@
       {
         "note_id": "HW036",
         "gold": [
-          "8C10.0",
-          "MB40.Z"
+          "8C10.0"
         ],
         "pred": [
-          "8C10.0",
-          "MB40.Z"
+          "8C10.0"
         ]
       },
       {
         "note_id": "HW039",
         "gold": [
           "MB48.0Z",
-          "MB48.Z",
           "MD90.0"
         ],
         "pred": [
@@ -1723,14 +1680,10 @@
       {
         "note_id": "HW045",
         "gold": [
-          "BD10",
-          "MD11.5",
-          "MG29.01"
+          "BD10"
         ],
         "pred": [
-          "BD10",
-          "MD11.5",
-          "MG29.01"
+          "BD10"
         ]
       },
       {
@@ -1765,8 +1718,6 @@
       {
         "note_id": "HW056",
         "gold": [
-          "MD36.0",
-          "MG26",
           "RA01"
         ],
         "pred": [
@@ -1778,10 +1729,7 @@
       {
         "note_id": "HW057",
         "gold": [
-          "1E32",
-          "FB56.2",
-          "MD12",
-          "MG26"
+          "1E32"
         ],
         "pred": [
           "FB56.2",
@@ -1792,8 +1740,7 @@
       {
         "note_id": "HW058",
         "gold": [
-          "CA42.Z",
-          "MD12"
+          "CA42.Z"
         ],
         "pred": [
           "CA42",
@@ -1831,8 +1778,7 @@
         ],
         "pred": [
           "DA22.Z",
-          "MD12",
-          "MD95"
+          "MD12"
         ]
       },
       {
@@ -1994,14 +1940,10 @@
       {
         "note_id": "HW098",
         "gold": [
-          "1A40.Z",
-          "MD90.1",
-          "ME05.1"
+          "1A40.Z"
         ],
         "pred": [
-          "1A40.Z",
-          "MD90.1",
-          "ME05.1"
+          "1A40.Z"
         ]
       },
       {
@@ -2054,10 +1996,7 @@
       {
         "note_id": "HW107",
         "gold": [
-          "1F03",
-          "MC15",
-          "ME66.6Z",
-          "MG26"
+          "1F03"
         ],
         "pred": [
           "MC15",
@@ -2068,14 +2007,10 @@
       {
         "note_id": "HW109",
         "gold": [
-          "BD10",
-          "MD11.5",
-          "MG29.01"
+          "BD10"
         ],
         "pred": [
-          "BD10",
-          "MD11.5",
-          "MG29.01"
+          "BD10"
         ]
       },
       {
@@ -2093,12 +2028,10 @@
         "note_id": "HW112",
         "gold": [
           "CA03.Z",
-          "MD36.0",
           "MG26"
         ],
         "pred": [
           "CA03.Z",
-          "MD36.0",
           "MG26"
         ]
       },
@@ -2183,8 +2116,7 @@
         "note_id": "HW128",
         "gold": [
           "CA00",
-          "CA07.0",
-          "MD12"
+          "CA07.0"
         ],
         "pred": [
           "MD12",
@@ -2194,14 +2126,10 @@
       {
         "note_id": "HW129",
         "gold": [
-          "1E32",
-          "FB56.2",
-          "MG26"
+          "1E32"
         ],
         "pred": [
-          "1E32",
-          "FB56.2",
-          "MG26"
+          "1E32"
         ]
       },
       {

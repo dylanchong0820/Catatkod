@@ -1,0 +1,551 @@
+{
+ "TRMLLA001": {
+  "extra": [
+   "sakit tekak akut"
+  ],
+  "missing": [
+   "Acute tonsillitis"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA002": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA003": {
+  "extra": [
+   "polyuria"
+  ],
+  "missing": [],
+  "uncertain": [
+   "dysphagia"
+  ],
+  "clean": false
+ },
+ "TRMLLA004": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA005": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA006": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA007": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA008": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA009": {
+  "extra": [
+   "eye care",
+   "physio"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA010": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA011": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA012": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA013": {
+  "extra": [
+   "sakit belakang bawah sebelah kiri"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA014": {
+  "extra": [
+   "Increased fluid intake"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA015": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA016": {
+  "extra": [
+   "berat badan turun"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA017": {
+  "extra": [
+   "sakit dada atas"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA018": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA019": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA020": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA021": {
+  "extra": [
+   "Pusing2 (dizziness)"
+  ],
+  "missing": [
+   "Vertigo"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA022": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA023": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA024": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA025": {
+  "extra": [
+   "Dr dx"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA026": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA027": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA028": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA029": {
+  "extra": [],
+  "missing": [
+   "Diabetic retinopathy"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA030": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA031": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA032": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA033": {
+  "extra": [
+   "history of heart disease"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA034": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA035": {
+  "extra": [
+   "sakit bahu"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA036": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA037": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA038": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA039": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA040": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA041": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA042": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA043": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA044": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA045": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA046": {
+  "extra": [
+   "Stroke sebelumnya"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA047": {
+  "extra": [
+   "kencing manis"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA048": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA049": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA050": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA051": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA052": {
+  "extra": [
+   "sakit perut kronik"
+  ],
+  "missing": [
+   "Gastritis"
+  ],
+  "uncertain": [
+   "Acne"
+  ],
+  "clean": false
+ },
+ "TRMLLA053": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA054": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA055": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA056": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA057": {
+  "extra": [
+   "Sakit tekak"
+  ],
+  "missing": [
+   "Pain in throat"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA058": {
+  "extra": [
+   "sakit haid teruk"
+  ],
+  "missing": [
+   "Dysarthria"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA059": {
+  "extra": [
+   "IVFD"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA060": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA061": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA062": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA063": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA064": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA065": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA066": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA067": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA068": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA069": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA070": {
+  "extra": [
+   "sakit hidung"
+  ],
+  "missing": [
+   "Acute sinusitis"
+  ],
+  "uncertain": [
+   "Polydipsia"
+  ],
+  "clean": false
+ },
+ "TRMLLA071": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA072": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA073": {
+  "extra": [],
+  "missing": [
+   "Dysarthria"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA074": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA075": {
+  "extra": [
+   "radang tekak akut"
+  ],
+  "missing": [
+   "Acute tonsillitis"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA076": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA077": {
+  "extra": [
+   "demam sejuk"
+  ],
+  "missing": [
+   "Fatigue"
+  ],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA078": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ },
+ "TRMLLA079": {
+  "extra": [
+   "Mata merah"
+  ],
+  "missing": [],
+  "uncertain": [],
+  "clean": false
+ },
+ "TRMLLA080": {
+  "extra": [],
+  "missing": [],
+  "uncertain": [],
+  "clean": true
+ }
+}

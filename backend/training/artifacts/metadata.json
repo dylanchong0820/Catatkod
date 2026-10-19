@@ -1,21 +1,21 @@
 {
   "model_type": "normalise() + word/char TF-IDF + OneVsRest LogisticRegression",
   "C": 32.0,
-  "threshold": 0.75,
+  "threshold": 0.8,
   "hybrid_threshold": 0.925,
   "n_codes": 121,
   "rows": {
-    "test": 105,
+    "train": 3307,
     "validation": 47,
-    "train": 3143
+    "test": 105
   },
   "test_results": {
     "naive_keyword_baseline": {
-      "micro_precision": 0.8223684210526315,
+      "micro_precision": 0.8278145695364238,
       "micro_recall": 0.9124087591240876,
-      "micro_f1": 0.8650519031141869,
-      "macro_f1_present_codes": 0.8888286116134217,
-      "exact_match": 0.7428571428571429,
+      "micro_f1": 0.8680555555555556,
+      "macro_f1_present_codes": 0.8905163753265019,
+      "exact_match": 0.7523809523809524,
       "codes_in_split": 79
     },
     "catatkod_rules": {
@@ -27,11 +27,11 @@
       "codes_in_split": 79
     },
     "catatkod_ml": {
-      "micro_precision": 0.8652482269503546,
-      "micro_recall": 0.8905109489051095,
-      "micro_f1": 0.8776978417266187,
-      "macro_f1_present_codes": 0.8791207977750283,
-      "exact_match": 0.7428571428571429,
+      "micro_precision": 0.8796992481203008,
+      "micro_recall": 0.8540145985401459,
+      "micro_f1": 0.8666666666666667,
+      "macro_f1_present_codes": 0.8681925090711391,
+      "exact_match": 0.7142857142857143,
       "codes_in_split": 79
     },
     "catatkod_ml_plus_rules": {

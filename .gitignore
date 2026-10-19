@@ -26,3 +26,4 @@ __pycache__/
 *.pyc
 backend/*.db
 backend/training/artifacts/*.joblib
+backend/instance/

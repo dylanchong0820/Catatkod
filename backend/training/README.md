@@ -62,8 +62,8 @@ python -m nlp.pipeline "pt dtg c/o kencing berbuih, kaki bengkak 3 ari, hx kenci
 |---|---|---|---|---|---|
 | Naive keyword matching (no negation) | 0.832 | 0.952 | 0.888 | 0.910 | 0.705 |
 | CatatKod rules (normalised + negation) | 0.958 | 0.952 | 0.955 | 0.947 | 0.876 |
-| CatatKod classifier | 0.909 | 0.904 | 0.906 | 0.912 | 0.762 |
-| **CatatKod rules + classifier** | **0.926** | **0.976** | **0.950** | **0.951** | **0.848** |
+| CatatKod classifier | 0.901 | 0.880 | 0.890 | 0.884 | 0.724 |
+| **CatatKod rules + classifier** | **0.925** | **0.970** | **0.947** | **0.945** | **0.838** |
 
 **Caveat — these numbers are optimistic.** The test notes were written by the same author as the lexicon,
 so they share its vocabulary. A credible number needs test notes written by people who have never seen
@@ -82,12 +82,14 @@ notes (never inspected; only their aggregate score was read). Score with `python
 | Naive keyword matching | 0.595 | 0.615 | 0.604 | 0.552 | 0.220 |
 | CatatKod before fixes | 0.770 | 0.654 | 0.707 | 0.642 | 0.430 |
 | CatatKod after dev-driven fixes | 0.809 | 0.709 | 0.756 | 0.707 | 0.490 |
-| **CatatKod final (dev notes added to training)** | **0.812** | **0.726** | **0.767** | **0.727** | **0.520** |
+| CatatKod with dev notes added to training | 0.812 | 0.726 | 0.767 | 0.727 | 0.520 |
+| **CatatKod final (+ confusable-pair training notes)** | **0.814** | **0.732** | **0.771** | **0.730** | **0.540** |
 
 Fixes made from the dev notes: post-negation (*"kencing manis xde"*), trailing-plus positives (*"COVID+"*),
 general shorthand (*mkn, ckp, doc, dr, sdh, bg*), 83 new lexicon phrases across 31 codes (584 -> 667) (*constip, bentol2,
 DM1, hypoT, batu kencing, infeksi usus, x tahan kencing, missed period, ASOM, TB hx…*), and new
-doctor-impression styles in the synthetic generator (*"dr ckp …", "doc cnfrm", "(old case)"*).
+doctor-impression styles in the synthetic generator (*"dr ckp …", "doc cnfrm", "(old case)"*), and
+"confusable pair" training notes that combine codes sharing a word (*batuk* + *darah tinggi* is not *batuk berdarah*).
 
 **How to read this:** ~0.77 is the more honest estimate of real-world accuracy today, and recall (0.73) is the
 weak side: about a quarter of findings written in unfamiliar wording are still missed. Caveats: the notes are
@@ -117,7 +119,7 @@ SEALION_MODEL=aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B python training/bench
   `MG10` for cough). Scoring leniently at the 4-character stem level (so `MG29` matches `MG29.01`) only raises
   it to 0.090, so this is not a strict-scoring artefact.
 - Even when handed the 121-code list plus catalogue suggestions, it reaches 0.725 micro-F1 (0.866 at stem level)
-  vs **0.950** for CatatKod; about 30% of its suggestions are wrong (precision 0.698) vs 7% for CatatKod (0.926).
+  vs **0.947** for CatatKod; about 30% of its suggestions are wrong (precision 0.698) vs 8% for CatatKod (0.925).
 - On one note (HW030, ankle sprain) the model reasoned for 4,000 tokens without answering; it is scored as an
   empty answer. Gemini rows are pending: the free-tier quota ran out after 18 of 210 calls.
 - Same caveat as above: the test notes share vocabulary with CatatKod's lexicon, which favours CatatKod.
@@ -129,8 +131,8 @@ SEALION_MODEL=aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B python training/bench
 |---|---|---|---|---|---|
 | Naive keyword matching (no negation) | 0.832 | 0.952 | 0.888 | 0.910 | 0.705 |
 | CatatKod rules | 0.958 | 0.952 | 0.955 | 0.947 | 0.876 |
-| CatatKod classifier | 0.909 | 0.904 | 0.906 | 0.912 | 0.762 |
-| **CatatKod rules + classifier** | **0.926** | **0.976** | **0.950** | **0.951** | **0.848** |
+| CatatKod classifier | 0.901 | 0.880 | 0.890 | 0.884 | 0.724 |
+| **CatatKod rules + classifier** | **0.925** | **0.970** | **0.947** | **0.945** | **0.838** |
 | Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (any ICD-11 code) | 0.029 | 0.036 | 0.032 | 0.022 | 0.019 |
 | Sealion `aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B`, plain prompt (choose from 121 tier-1 + catalogue suggestions) | 0.698 | 0.753 | 0.725 | 0.686 | 0.533 |
 

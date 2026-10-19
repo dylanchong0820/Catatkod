@@ -102,6 +102,14 @@ def generate(n_notes: int, seed: int) -> list[dict]:
         primary = order.pop()
         k = rng.choices([0, 1, 2, 3], weights=[3, 4, 2, 1])[0]
         positives = [primary] + rng.sample([e for e in entries if e.code != primary.code], k)
+        if rng.random() < 0.35:
+            # Confusable pairing: add a code whose phrases share a word with this one ("batuk" + "darah tinggi"
+            # vs "batuk berdarah"), so the model learns word combinations instead of single-word shortcuts.
+            words = {w for ph in primary.phrases for w in ph.split() if len(w) > 3}
+            twins = [e for e in entries if e.code not in {x.code for x in positives}
+                     and any(w in ph.split() for ph in e.phrases for w in words)]
+            if twins:
+                positives.append(rng.choice(twins))
         labels = {e.code for e in positives}
 
         parts = [render_positive(e, rng) for e in positives]

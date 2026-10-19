@@ -184,11 +184,11 @@ story.append(slide(7, "Our own NLP (not just an API call)", "0:30",
 
 results = grid([
     ["System (rows 1-4: our test notes; rows 5-6: independent notes)", "F1", "Notes fully correct"],
-    ["CatatKod (rules + trained model)", "0.95", "85%"],
+    ["CatatKod (rules + trained model)", "0.95", "84%"],
     ["Keyword matching", "0.89", "71%"],
     ["SEA-LION 120B, given our 121-code list", "0.73", "53%"],
     ["SEA-LION 120B, asked for ICD-11 codes directly", "0.03", "2%"],
-    ["CatatKod on independent notes (written by a different AI)", "0.77", "52%"],
+    ["CatatKod on independent notes (written by a different AI)", "0.77", "54%"],
     ["Keyword matching on the same independent notes", "0.60", "22%"],
 ], [88 * mm, 18 * mm, 32 * mm], bold_row=1)
 story.append(slide(8, "Results vs. baselines", "0:40",

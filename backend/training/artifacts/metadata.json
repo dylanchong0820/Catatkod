@@ -1,13 +1,13 @@
 {
   "model_type": "normalise() + word/char TF-IDF + OneVsRest LogisticRegression",
   "C": 32.0,
-  "threshold": 0.8,
-  "hybrid_threshold": 0.95,
+  "threshold": 0.9,
+  "hybrid_threshold": 0.975,
   "n_codes": 121,
   "rows": {
+    "test": 105,
     "train": 3103,
-    "validation": 47,
-    "test": 105
+    "validation": 47
   },
   "test_results": {
     "naive_keyword_baseline": {
@@ -27,19 +27,19 @@
       "codes_in_split": 82
     },
     "catatkod_ml": {
-      "micro_precision": 0.9090909090909091,
-      "micro_recall": 0.9036144578313253,
-      "micro_f1": 0.9063444108761329,
-      "macro_f1_present_codes": 0.9120338108142987,
-      "exact_match": 0.7619047619047619,
+      "micro_precision": 0.9012345679012346,
+      "micro_recall": 0.8795180722891566,
+      "micro_f1": 0.8902439024390244,
+      "macro_f1_present_codes": 0.8844019920777453,
+      "exact_match": 0.7238095238095238,
       "codes_in_split": 82
     },
     "catatkod_ml_plus_rules": {
-      "micro_precision": 0.9257142857142857,
-      "micro_recall": 0.9759036144578314,
-      "micro_f1": 0.9501466275659824,
-      "macro_f1_present_codes": 0.9511937369182707,
-      "exact_match": 0.8476190476190476,
+      "micro_precision": 0.9252873563218391,
+      "micro_recall": 0.9698795180722891,
+      "micro_f1": 0.9470588235294117,
+      "macro_f1_present_codes": 0.9446896718776203,
+      "exact_match": 0.8380952380952381,
       "codes_in_split": 82
     }
   },

@@ -28,3 +28,4 @@ backend/*.db
 backend/training/artifacts/*.joblib
 backend/instance/
 .DS_Store
+!.env.example

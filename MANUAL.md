@@ -88,6 +88,14 @@ SEALION_API_KEY=your-sealion-key
 
 ## 3. Run the app
 
+**Easiest (Mac): double-click `Start CatatKod.command`** in the project folder in Finder. It opens a Terminal
+window, sets up anything missing the first time (Python packages, web packages, the trained model), starts the
+API and the web app, and opens CatatKod in your browser. Keep that window open while you use the app; close it
+or press Ctrl + C to stop. If macOS says it can't be opened (only for copies downloaded as a zip), right-click
+it → **Open** → **Open** once.
+
+**Manually**, in two terminal windows:
+
 Use **two terminal windows**.
 
 **Terminal 1 — API** (port 5001):

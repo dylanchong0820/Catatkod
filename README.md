@@ -63,7 +63,8 @@ Full method, every experiment (including ideas that didn't work) and all tables:
 
 ## Run it
 
-You need Python 3 and Node.js. From this folder:
+You need Python 3 and Node.js. **On a Mac, double-click `Start CatatKod.command`**: it sets everything up the
+first time, starts both servers and opens the app. Or run it manually, from this folder:
 
 ```bash
 cd backend && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt

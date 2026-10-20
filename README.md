@@ -19,7 +19,7 @@ pt dtg komplen kencing berbuih, kaki bengkak 3 ari, hx kencing manis. takde dema
 > **Prototype.** Trained and tested on synthetic notes only; not clinically validated. Every code is a suggestion
 > that a nurse must confirm. Do not use with real patient data.
 
-![CatatKod note page showing suggested ICD-11 codes with evidence](assets/demo_screenshot.jpg)
+![CatatKod note page: the note with highlighted evidence and the suggested ICD-11 codes](assets/demo_screenshot.jpg)
 
 ## Why
 

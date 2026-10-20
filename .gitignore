@@ -29,3 +29,7 @@ backend/training/artifacts/*.joblib
 backend/instance/
 .DS_Store
 !.env.example
+
+# Local AI-assistant config (kept on this machine, not published)
+.claude/
+CLAUDE.md

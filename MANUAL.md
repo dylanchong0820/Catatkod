@@ -121,7 +121,7 @@ the new version (the web app reloads by itself).
 1. **Log in:** any staff ID and password work (e.g. `KKM10248` / `demo`). It's a prototype login. You stay
    signed in if the page reloads; tick *Kekalkan sesi* to stay signed in after closing the browser too.
 2. On **Utama**, search a patient (e.g. *Ahmad*), open them, click **Lawatan baharu**.
-3. Clear the box (**Kosongkan**), type a note, click **Cari kod** (or Ctrl + Enter). Good demo note:
+3. Type a note in the empty box and click **Cari kod** (or Ctrl + Enter). Good demo note:
    `pt dtg komplen kencing berbuih, kaki bengkak 3 ari, hx kencing manis. takde demam`
 4. Point out:
    - each code's **evidence** (highlighted words) → MF96.Z, MG29.01, 5A11

@@ -5,9 +5,6 @@ import { analyzeNoteWithBackend, searchIcd11 } from "../../lib/api";
 import { useStore } from "../store";
 import { HighlightedNote, PageHeader, PatientBanner, highlightStyles } from "../ui";
 
-const initialNote =
-  "pt demam sejak semalam, batuk + selesema 3 hari. tekak merah. no SOB. makan minum ok.";
-
 export function NotePage() {
   const { activePatient, history, language, patients, saveNote, setActivePatient, settings } = useStore();
   const navigate = useNavigate();
@@ -15,7 +12,7 @@ export function NotePage() {
   const [searchParams] = useSearchParams();
   const draft = history.find((item) => item.id === searchParams.get("draft") && item.status === "Draf");
   const isBm = language === "bm";
-  const [note, setNote] = useState(draft?.note ?? initialNote);
+  const [note, setNote] = useState(draft?.note ?? "");
   const [result, setResult] = useState<AnalysisResult | null>(() => {
     if (!draft) return null;
     return {
@@ -156,6 +153,7 @@ export function NotePage() {
                 <textarea
                   className="min-h-52 w-full resize-none rounded border border-[#9FB0AD] bg-white p-3 font-mono text-sm leading-7 outline-none focus:border-[#1F5446] focus:ring-2 focus:ring-[#1F5446]/20"
                   onChange={(event) => setNote(event.target.value)}
+                  placeholder={isBm ? "Taip nota klinikal di sini…" : "Type the clinical note here…"}
                   onKeyDown={(event) => {
                     if (event.ctrlKey && event.key === "Enter") {
                       event.preventDefault();

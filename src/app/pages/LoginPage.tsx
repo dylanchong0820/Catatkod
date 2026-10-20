@@ -59,7 +59,6 @@ export function LoginPage() {
                   setStaffId(event.target.value);
                   setError("");
                 }}
-                placeholder={isBm ? "Contoh: KKM10248" : "Example: KKM10248"}
                 value={staffId}
               />
             </div>

@@ -277,14 +277,7 @@ cd backend
 notes with a missing finding are skipped automatically by `build_dataset.py` (their labels would be wrong).
 Use a new `--seed` for each new batch and `--style malay` for Malay notes. Then rebuild and retrain (section 6).
 
-## 11. Pitch materials
-
-- **Slide deck:** the [CatatKod Pitch Deck](https://claude.ai/artifact/DpunwTZ2JCESoMv8Lu4Jj7) on claude.ai
-  (downloadable as PowerPoint or PDF from its menu).
-
----
-
-## 12. Troubleshooting
+## 11. Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -301,7 +294,7 @@ Use a new `--seed` for each new batch and `--style malay` for Malay notes. Then 
 
 ---
 
-## 13. Limits to be honest about
+## 12. Limits to be honest about
 
 - All data is synthetic; nothing is clinically validated. Codes are suggestions for a nurse to confirm.
 - 0.96 is optimistic (same author wrote lexicon and test notes); 0.82 to 0.85 on independent notes is the fairer figure.

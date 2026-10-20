@@ -82,10 +82,6 @@ click **Cari kod**. The trained model file isn't stored in git, which is why the
 
 **Step-by-step guide** (setup, demo, adding codes, retraining, evaluation, troubleshooting): [MANUAL.md](MANUAL.md)
 
-## Pitch materials
-
-- **Slide deck:** [CatatKod Pitch Deck](https://claude.ai/artifact/DpunwTZ2JCESoMv8Lu4Jj7)
-
 ## Repository map
 
 | Path | What |

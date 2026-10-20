@@ -5,6 +5,10 @@ import { analyzeNoteWithBackend, searchIcd11 } from "../../lib/api";
 import { useStore } from "../store";
 import { HighlightedNote, PageHeader, PatientBanner, highlightStyles } from "../ui";
 
+// Shared by the note textarea and its highlight backdrop. Inline, because a global `textarea { font: inherit }`
+// rule would otherwise override utility classes and the two layers' text would stop lining up.
+const noteFont = { fontFamily: "var(--font-mono)", fontSize: "0.875rem", lineHeight: "1.75rem", letterSpacing: "0" };
+
 export function NotePage() {
   const { activePatient, history, language, patients, saveNote, setActivePatient, settings } = useStore();
   const navigate = useNavigate();
@@ -26,7 +30,8 @@ export function NotePage() {
   );
   const [searching, setSearching] = useState(false);
   const [analysisError, setAnalysisError] = useState("");
-  const [editingDetails, setEditingDetails] = useState(Boolean(draft));
+  // The note text the current suggestions were made from; highlights only show while the note still matches it.
+  const [analyzedNote, setAnalyzedNote] = useState<string | null>(draft?.note ?? null);
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<CatalogueSuggestion[] | null>(null);
@@ -40,14 +45,15 @@ export function NotePage() {
 
   async function runAnalysis() {
     if (!note.trim() || searching) return;
+    const text = note;
     setSearching(true);
     setAnalysisError("");
     setResult(null);
     try {
-      const next = await analyzeNoteWithBackend(note);
+      const next = await analyzeNoteWithBackend(text);
       setResult(next);
+      setAnalyzedNote(text);
       setSelected(next.codes.map((item) => item.id));
-      setEditingDetails(false);
     } catch (error) {
       setAnalysisError(
         error instanceof Error
@@ -121,6 +127,8 @@ export function NotePage() {
     }
   }
 
+  const highlightsCurrent = result !== null && analyzedNote === note;
+
   return (
     <>
       <main className="mx-auto max-w-[1440px] px-4 py-5 sm:px-6 lg:px-8">
@@ -140,18 +148,29 @@ export function NotePage() {
               <h2 className="font-semibold">{isBm ? "Butiran lawatan" : "Visit details"}</h2>
             </div>
             <div className="p-4">
-              {result && !editingDetails ? (
-                <div className="min-h-52 whitespace-pre-wrap rounded border border-[#9FB0AD] bg-white p-3 font-mono text-sm leading-7">
-                  <HighlightedNote
-                    hoveredCode={hoveredCode}
-                    result={result}
-                    setHoveredCode={setHoveredCode}
-                    text={note}
-                  />
+              {/* Always editable: the textarea's text sits over a matching backdrop that paints the evidence highlights. */}
+              <div className="relative">
+                <div
+                  aria-hidden="true"
+                  className="min-h-52 whitespace-pre-wrap break-words rounded border border-transparent bg-white p-3 text-transparent"
+                  style={noteFont}
+                >
+                  {highlightsCurrent && result ? (
+                    <HighlightedNote
+                      hoveredCode={hoveredCode}
+                      result={result}
+                      setHoveredCode={setHoveredCode}
+                      text={note}
+                    />
+                  ) : (
+                    note
+                  )}
+                  {"\n"}
                 </div>
-              ) : (
                 <textarea
-                  className="min-h-52 w-full resize-none rounded border border-[#9FB0AD] bg-white p-3 font-mono text-sm leading-7 outline-none focus:border-[#1F5446] focus:ring-2 focus:ring-[#1F5446]/20"
+                  aria-label={isBm ? "Nota klinikal" : "Clinical note"}
+                  className="absolute inset-0 h-full w-full resize-none overflow-hidden rounded border border-[#9FB0AD] bg-transparent p-3 text-[#172B27] outline-none focus:border-[#1F5446] focus:ring-2 focus:ring-[#1F5446]/20"
+                  style={noteFont}
                   onChange={(event) => setNote(event.target.value)}
                   placeholder={isBm ? "Taip nota klinikal di sini…" : "Type the clinical note here…"}
                   onKeyDown={(event) => {
@@ -160,8 +179,16 @@ export function NotePage() {
                       runAnalysis();
                     }
                   }}
+                  spellCheck={false}
                   value={note}
                 />
+              </div>
+              {result && !highlightsCurrent && (
+                <p className="mt-2 text-xs font-medium text-[#8A5A0B]">
+                  {isBm
+                    ? "Nota telah diubah. Klik Cari kod untuk kemas kini cadangan."
+                    : "The note has changed. Click Find codes to update the suggestions."}
+                </p>
               )}
               {result?.duration && (
                 <p className="mt-2 text-xs font-medium text-[#405955]">
@@ -182,14 +209,6 @@ export function NotePage() {
                       ? "Cari kod"
                       : "Find codes"}
                 </button>
-                {result && !editingDetails && (
-                  <button
-                    className="text-sm font-medium text-[#1F5446] hover:underline"
-                    onClick={() => setEditingDetails(true)}
-                  >
-                    {isBm ? "Ubah butiran" : "Edit details"}
-                  </button>
-                )}
                 <button
                   className="text-sm font-medium text-[#1F5446] hover:underline"
                   onClick={() => {
@@ -197,7 +216,7 @@ export function NotePage() {
                     setResult(null);
                     setAnalysisError("");
                     setSelected([]);
-                    setEditingDetails(false);
+                    setAnalyzedNote(null);
                   }}
                 >
                   {isBm ? "Kosongkan" : "Clear"}
@@ -244,6 +263,15 @@ export function NotePage() {
                       </tr>
                     </thead>
                     <tbody>
+                      {result.codes.length === 0 && (
+                        <tr>
+                          <td className="px-4 py-6 text-center text-sm text-[#5A6966]" colSpan={settings.showEvidence ? 4 : 3}>
+                            {isBm
+                              ? "Tiada kod ditemui dalam nota ini. Cuba carian katalog ICD-11 di bawah."
+                              : "No codes found in this note. Try the ICD-11 catalogue search below."}
+                          </td>
+                        </tr>
+                      )}
                       {result.codes.map((item, index) => {
                         const style = highlightStyles[index % highlightStyles.length];
                         return (

@@ -11,6 +11,7 @@ export function AppShell() {
   const [collapsed, setCollapsed] = useState(false);
   const [locked, setLocked] = useState(false);
   const [unlockPassword, setUnlockPassword] = useState("");
+  const [unlockError, setUnlockError] = useState(false);
   const isBm = language === "bm";
   const draftCount = history.filter(
     (record) => record.status === "Draf" && record.lastEditedBy === settings.displayName
@@ -54,6 +55,7 @@ export function AppShell() {
   function signOut() {
     setLocked(false);
     setUnlockPassword("");
+    setUnlockError(false);
     logout();
     navigate("/login");
   }
@@ -216,13 +218,20 @@ export function AppShell() {
               {isBm
                 ? "Sesi dikunci. Masukkan kata laluan untuk sambung."
                 : "Session locked. Enter your password to continue."}
+              {" "}
+              <span className="font-semibold">{settings.displayName}</span>
             </p>
             <form
               className="mt-6"
               onSubmit={(event) => {
                 event.preventDefault();
                 if (!unlockPassword.trim()) return;
+                if (unlockPassword !== currentUser?.password) {
+                  setUnlockError(true);
+                  return;
+                }
                 setUnlockPassword("");
+                setUnlockError(false);
                 setLocked(false);
               }}
             >
@@ -233,10 +242,18 @@ export function AppShell() {
                 autoFocus
                 className="h-11 w-full rounded border border-[#9FB0AD] bg-white px-3 text-sm outline-none focus:border-[#1F5446] focus:ring-2 focus:ring-[#1F5446]/20"
                 id="unlock-password"
-                onChange={(event) => setUnlockPassword(event.target.value)}
+                onChange={(event) => {
+                  setUnlockPassword(event.target.value);
+                  setUnlockError(false);
+                }}
                 type="password"
                 value={unlockPassword}
               />
+              {unlockError && (
+                <p className="mt-2 text-sm font-medium text-[#B42318]" role="alert">
+                  {isBm ? "Kata laluan tidak betul." : "Incorrect password."}
+                </p>
+              )}
               <button className="mt-4 h-11 w-full rounded bg-[#1F5446] px-4 text-sm font-semibold text-white hover:bg-[#173F35] disabled:bg-[#7E9891]" disabled={!unlockPassword.trim()} type="submit">
                 {isBm ? "Buka kunci" : "Unlock"}
               </button>

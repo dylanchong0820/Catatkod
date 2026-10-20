@@ -40,6 +40,11 @@ export function ageFrom(birthDate: string, today = new Date()): number {
   return Math.max(0, age);
 }
 
+/** A patient's current age: from the birth date when known, else the age recorded at registration. */
+export function currentAge(patient: { age: number; birthDate?: string }, today = new Date()): number {
+  return patient.birthDate ? ageFrom(patient.birthDate, today) : patient.age;
+}
+
 /** YYYY-MM-DD -> DD/MM/YYYY. */
 export function formatDayMonthYear(isoDate: string): string {
   const [year, month, day] = isoDate.split("-");

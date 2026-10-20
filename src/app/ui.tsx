@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Link } from "react-router";
 import type { AnalysisResult, AnalyzedCode, NegatedPhrase } from "../lib/analyze";
 import type { Language, NoteRecord, Patient } from "./data";
+import { currentAge } from "./identity";
 import { useStore } from "./store";
 
 export type IconName =
@@ -130,7 +131,7 @@ export function PatientBanner({ patient, isBm }: { patient: Patient; isBm: boole
   return (
     <section className="mb-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded border border-[#C9D1CF] bg-white px-4 py-3 text-sm">
       <strong className="font-semibold">{patient.name}</strong>
-      <span>{patient.age} {isBm ? "tahun" : "years"}</span>
+      <span>{currentAge(patient)} {isBm ? "tahun" : "years"}</span>
       <span>{isBm ? patient.sexMs : patient.sexEn}</span>
       <span className="font-mono text-xs text-[#52635F]">{patient.ic}</span>
       <span className={hasAllergy ? "rounded border border-[#DED39A] bg-[#FFFBE8] px-2 py-1 font-semibold text-[#655A29]" : "text-[#405955]"}>

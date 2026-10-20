@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Patient } from "../data";
-import { ageFrom, icDigits } from "../identity";
+import { currentAge, icDigits } from "../identity";
 import { Link, useLocation, useNavigate, useParams } from "react-router";
+import { PatientFormModal } from "../PatientForm";
 import { useStore } from "../store";
 import { PageHeader, PatientBanner, RecordBy, RecordCodeChips, RecordDateTime, RecordStatusBadge } from "../ui";
 
 export function PatientPage() {
-  const { history, language, patients, setActivePatient, settings } = useStore();
+  const { deletePatient, history, language, patients, setActivePatient, settings, updatePatient } = useStore();
   const { patientId } = useParams();
+  const [editing, setEditing] = useState(false);
+  const [confirmingDelete, setConfirmingDelete] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const isBm = language === "bm";
@@ -50,7 +53,54 @@ export function PatientPage() {
         <Link className="text-sm font-semibold text-[#1F5446] hover:underline" to="/pesakit">
           {isBm ? "Tukar pesakit" : "Change patient"}
         </Link>
+        <button className="text-sm font-semibold text-[#1F5446] hover:underline" onClick={() => setEditing(true)}>
+          {isBm ? "Kemas kini butiran" : "Edit details"}
+        </button>
+        {records.length === 0 && (
+          <button className="text-sm font-semibold text-[#B42318] hover:underline" onClick={() => setConfirmingDelete(true)}>
+            {isBm ? "Padam pesakit" : "Delete patient"}
+          </button>
+        )}
       </div>
+      {editing && (
+        <PatientFormModal
+          isBm={isBm}
+          onClose={() => setEditing(false)}
+          onSave={(next) => {
+            updatePatient(next);
+            setEditing(false);
+            setToast(isBm ? "Butiran pesakit dikemas kini" : "Patient details updated");
+          }}
+          patient={patient}
+          patients={patients}
+        />
+      )}
+      {confirmingDelete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 px-4" role="presentation" onMouseDown={() => setConfirmingDelete(false)}>
+          <section aria-labelledby="delete-patient-title" aria-modal="true" className="w-full max-w-[440px] rounded border border-[#C9D1CF] bg-white p-5" role="dialog" onMouseDown={(event) => event.stopPropagation()}>
+            <h2 className="font-semibold" id="delete-patient-title">{isBm ? "Padam pesakit ini?" : "Delete this patient?"}</h2>
+            <p className="mt-2 text-sm leading-6 text-[#405955]">
+              {isBm
+                ? `${patient.name} (${patient.ic}) akan dikeluarkan daripada senarai pesakit. Tindakan ini tidak boleh dibatalkan.`
+                : `${patient.name} (${patient.ic}) will be removed from the patient list. This can't be undone.`}
+            </p>
+            <div className="mt-5 flex justify-end gap-3">
+              <button autoFocus className="h-10 rounded border border-[#9FB0AD] bg-white px-4 text-sm font-semibold text-[#1F5446] hover:bg-[#F1F4F3]" onClick={() => setConfirmingDelete(false)}>
+                {isBm ? "Batal" : "Cancel"}
+              </button>
+              <button
+                className="h-10 rounded bg-[#B42318] px-4 text-sm font-semibold text-white hover:bg-[#912018]"
+                onClick={() => {
+                  if (deletePatient(patient.id)) navigate("/pesakit", { replace: true });
+                  setConfirmingDelete(false);
+                }}
+              >
+                {isBm ? "Padam" : "Delete"}
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
       <section className="overflow-hidden rounded border border-[#C9D1CF] bg-white">
         <h2 className="border-b border-[#DCE3E1] px-4 py-3 font-semibold">{isBm ? "Rekod pesakit" : "Patient records"}</h2>
         <div className="overflow-x-auto">
@@ -88,10 +138,6 @@ export function PatientPage() {
       </section>
     </main>
   );
-}
-
-function displayAge(patient: Patient) {
-  return patient.birthDate ? ageFrom(patient.birthDate) : patient.age;
 }
 
 function formatShortDate(value: string, isBm: boolean) {
@@ -184,7 +230,7 @@ export function PatientListPage() {
                 <tr className="h-12 cursor-pointer hover:bg-[#F1F4F3]" key={patient.id} onClick={() => openPatient(patient)}>
                   <td className="truncate border-b border-[#DCE3E1] px-4 py-2 font-semibold" title={patient.name}>{patient.name}</td>
                   <td className="border-b border-[#DCE3E1] px-4 py-2 font-mono text-xs">{patient.ic}</td>
-                  <td className="border-b border-[#DCE3E1] px-4 py-2">{displayAge(patient)}</td>
+                  <td className="border-b border-[#DCE3E1] px-4 py-2">{currentAge(patient)}</td>
                   <td className="border-b border-[#DCE3E1] px-4 py-2">{isBm ? patient.sexMs : patient.sexEn}</td>
                   <td className="truncate border-b border-[#DCE3E1] px-4 py-2" title={isBm ? patient.allergiesMs : patient.allergiesEn}>{isBm ? patient.allergiesMs : patient.allergiesEn}</td>
                   <td className="border-b border-[#DCE3E1] px-4 py-2">{recordCounts.get(patient.id) ?? 0}</td>

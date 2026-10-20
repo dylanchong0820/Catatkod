@@ -135,11 +135,13 @@ the new version (the web app reloads by itself).
    | `0004` | Jordan Voo Yee Fung |
 
    You stay signed in if the page reloads; tick *Kekalkan sesi* to stay signed in after closing the browser too.
+   After 10 minutes without activity the session locks; unlock it with the signed-in account's password.
 2. The app starts with no patients. On **Utama**, click **+ Daftar pesakit baharu**: type the name and the IC
    number (it formats itself as `YYMMDD-PB-####`); the date of birth (DD/MM/YYYY), age and sex are filled in from
    the IC. An IC that's already registered is refused. Then open the patient and click **Lawatan baharu**.
    **Pesakit** in the menu lists every registered patient (search by name or IC, with or without dashes);
-   **Rekod** lists every visit.
+   **Rekod** lists every visit. On a patient's page, **Kemas kini butiran** corrects their details (records show
+   the corrected details too), and **Padam pesakit** removes a patient who has no records yet.
 3. Type a note in the empty box and click **Cari kod** (or Ctrl + Enter). Good demo note:
    `pt dtg komplen kencing berbuih, kaki bengkak 3 ari, hx kencing manis. takde demam`
 4. Point out:

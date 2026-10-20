@@ -37,6 +37,8 @@ type AppStore = {
   setSettings: (settings: Settings) => void;
   setActivePatient: (patient: Patient) => void;
   addPatient: (patient: Patient) => void;
+  updatePatient: (patient: Patient) => void;
+  deletePatient: (patientId: string) => boolean;
   saveNote: (patient: Patient, note: string, result: AnalysisResult, status: NoteStatus, draftId?: string) => NoteRecord;
   amendRecord: (
     recordId: string,
@@ -237,6 +239,21 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       },
       setActivePatient: setActivePatientState,
       addPatient: (patient) => setPatients((current) => [...current, patient]),
+      // Records keep a copy of the patient's details, so corrections are copied into them too.
+      updatePatient: (patient) => {
+        setPatients((current) => current.map((item) => (item.id === patient.id ? patient : item)));
+        setHistory((current) => current.map((record) =>
+          record.patient.id === patient.id ? { ...record, patient } : record
+        ));
+        if (activePatient?.id === patient.id) setActivePatientState(patient);
+      },
+      // Only patients without any records (drafts included) can be removed, so no visit is ever orphaned.
+      deletePatient: (patientId) => {
+        if (history.some((record) => record.patient.id === patientId)) return false;
+        setPatients((current) => current.filter((item) => item.id !== patientId));
+        if (activePatient?.id === patientId) setActivePatientState(null);
+        return true;
+      },
       saveNote: (patient, note, result, status, draftId) => {
         const now = new Date().toISOString();
         const record: NoteRecord = {

@@ -17,7 +17,7 @@ pt dtg komplen kencing berbuih, kaki bengkak 3 ari, hx kencing manis. takde dema
 > **Prototype.** Trained and tested on synthetic notes only; not clinically validated. Every code is a suggestion
 > that a nurse must confirm. Do not use with real patient data.
 
-![CatatKod note page showing suggested ICD-11 codes with evidence](docs/pitch_deck/demo_screenshot.jpg)
+![CatatKod note page showing suggested ICD-11 codes with evidence](assets/demo_screenshot.jpg)
 
 ## Why
 
@@ -82,8 +82,7 @@ click **Cari kod**. The trained model file isn't stored in git, which is why the
 
 ## Pitch materials
 
-- **Slide deck:** [CatatKod Pitch Deck](https://claude.ai/artifact/DpunwTZ2JCESoMv8Lu4Jj7) (source in [docs/pitch_deck/](docs/pitch_deck/))
-- **Slide plan and judge Q&A:** [docs/CatatKod_slide_plan.pdf](docs/CatatKod_slide_plan.pdf)
+- **Slide deck:** [CatatKod Pitch Deck](https://claude.ai/artifact/DpunwTZ2JCESoMv8Lu4Jj7)
 
 ## Repository map
 
@@ -93,7 +92,7 @@ click **Cari kod**. The trained model file isn't stored in git, which is why the
 | `backend/app.py` | Flask API: `/api/analyze`, `/api/icd11/search`, `/api/health` |
 | `backend/nlp/` | The NLP engine: normaliser, lexicon rules, catalogue search, coding policy, pipeline |
 | `backend/training/` | Lexicon, datasets, training, evaluation and LLM benchmark scripts |
-| `docs/` | Pitch deck source and slide plan |
+| `assets/` | Images used in this README |
 
 ## Data and licences
 

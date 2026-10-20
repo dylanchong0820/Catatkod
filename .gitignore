@@ -33,3 +33,6 @@ backend/instance/
 # Local AI-assistant config (kept on this machine, not published)
 .claude/
 CLAUDE.md
+
+# Local pitch materials (kept on this machine, not published)
+docs/

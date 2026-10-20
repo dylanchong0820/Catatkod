@@ -35,9 +35,7 @@ catatkod/
 │       ├── evaluate_independent.py, generate_independent_notes.py, benchmark_llm.py
 │       ├── artifacts/        ← trained model + results (JSON)
 │       └── README.md         ← technical details and full results tables
-└── docs/
-    ├── CatatKod_slide_plan.pdf   ← pitch slide plan
-    └── make_slide_plan.py        ← regenerates that PDF
+└── assets/                   ← images used in README.md
 ```
 
 **How a note is coded:** note → `normalise` (expand shorthand, mark negations) → **Tier 1**: lexicon rules +
@@ -281,18 +279,8 @@ Use a new `--seed` for each new batch and `--style malay` for Malay notes. Then 
 
 ## 11. Pitch materials
 
-- **Slide deck:** the CatatKod Pitch Deck artifact on claude.ai; its source is backed up in `docs/pitch_deck/`.
-- **Slide plan and Q&A:** `docs/CatatKod_slide_plan.pdf`.
-
-### Regenerate the slide plan PDF
-
-```bash
-cd backend
-.venv/bin/pip install reportlab
-.venv/bin/python ../docs/make_slide_plan.py ../docs/CatatKod_slide_plan.pdf
-```
-
-Edit the text inside `docs/make_slide_plan.py`, then rerun.
+- **Slide deck:** the [CatatKod Pitch Deck](https://claude.ai/artifact/DpunwTZ2JCESoMv8Lu4Jj7) on claude.ai
+  (downloadable as PowerPoint or PDF from its menu).
 
 ---
 

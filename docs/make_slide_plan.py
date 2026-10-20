@@ -135,12 +135,11 @@ story.append(slide(1, "Title & hook", "0:15",
 
 story.append(slide(2, "The problem", "0:30",
     "Show the digitisation push is real, funded, and is adding work for frontline staff.",
-    ["KKM rolling out the Cloud-Based Clinic Management System (CCMS) to <b>2,489</b> primary-care facilities by 2028",
-     "<b>RM650 million</b> national digitalisation initiative",
-     "Only <b>160</b> clinics fully digitalised as of Oct 2025 — the rollout is early",
+    ["Persada digital health initiative: <b>RM1 billion</b> (raised from RM650 million, Aug 2026) for 150 hospitals and 2,488 facilities to 2028",
+     "Cloud clinic system (CCMS) planned for <b>2,917</b> health clinics by 2028",
      "Quote: staff report working overtime to keep digital records accurate (Malay Mail, TPC-OHCIS)"],
-    "Malaysia is spending RM650 million to put every clinic on a digital record. But the people doing the typing are nurses who are already stretched, and staff are already reporting overtime just to keep records up to date.",
-    note="These figures come from the team's planning PDF. Re-open each source (KKM statement, Malay Mail, The Edge, NST) and put the citation in small text on the slide. Lead with official KKM numbers; only use ccmshub.my as 'early tracking data', clearly labelled as partial."))
+    "Malaysia is spending RM1 billion to put every clinic on a digital record. But the people doing the typing are nurses who are already stretched, and staff are already reporting overtime just to keep records up to date.",
+    note="Checked 20 Oct 2026: Persada RM650m (NST/The Sun, Jun 2026), raised to RM1bil (The Star, 30 Aug 2026); CCMS 2,917 clinics by 2028 (Malay Mail, 8 Jul 2026); overtime quote from Malay Mail, 25 May 2024 (anonymous sources, say 'reported'). The planning PDF's '160 clinics digitalised' could not be confirmed and was dropped."))
 
 story.append(slide(3, "Who it affects", "0:20",
     "Make it human: NCD patients generate the most complex notes.",
@@ -148,7 +147,7 @@ story.append(slide(3, "Who it affects", "0:20",
      "<b>2.3 million</b> adults live with 3+ chronic conditions — dense notes, hardest to code by hand",
      "Optional: a nurse persona (“Nurse Aisyah, Klinik Kesihatan, 80 patients a day”)"],
     "Non-communicable diseases drive most clinic visits. A patient with diabetes, hypertension and kidney disease produces exactly the kind of note that's slowest to code.",
-    note="Confirm which NHMS year these come from and cite it on the slide."))
+    note="Checked: NHMS 2023 (Institute for Public Health). Diabetes 15.6% (3.6M), hypertension 29.2% (6.7M), ~2.3M adults with three NCDs."))
 
 story.append(slide(4, "Why it's hard — worked example", "0:25",
     "Prove this is a genuine Malay NLP problem, not just translation.",
@@ -247,7 +246,7 @@ qa = grid([
 story += [qa, Spacer(1, 14), Paragraph("Before the pitch — checklist", S["h1"])]
 story += bullets([
     "Know both numbers cold: 0.96 (our test set) and 0.82 to 0.85 (independent notes) \u2014 and why they differ.",
-    "Re-verify every statistic on slides 2–3 against its original source and add small citations.",
+    "Statistics on slides 2\u20133 were checked on 20 Oct 2026; the deck carries the citations.",
     "Record a backup demo video; rehearse the 90-second demo until it's under time.",
     "Start the API and web app before going on stage; test the exact demo note once more.",
     "Confirm ICD-11 code labels on screen match the WHO browser (icd.who.int) for the demo codes.",

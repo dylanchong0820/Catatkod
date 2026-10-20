@@ -24,7 +24,7 @@ elif database_url.startswith("postgresql://"):
     database_url = database_url.replace("postgresql://", "postgresql+psycopg://", 1)
 app.config["SQLALCHEMY_DATABASE_URI"] = database_url
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.config["MAX_CONTENT_LENGTH"] = 32 * 1024
+app.config["MAX_CONTENT_LENGTH"] = 2 * 1024 * 1024  # room for a full records sync; notes are capped separately
 
 db = SQLAlchemy(app)
 
@@ -43,6 +43,28 @@ class AnalysisAudit(db.Model):
     duration_ms = db.Column(db.Integer, nullable=False)
 
     __table_args__ = (Index("ix_analysis_audit_created_at", "created_at"),)
+
+
+class Patient(db.Model):
+    """A patient as the web app shows it. Key fields are columns; the full object is kept as JSON."""
+    id = db.Column(db.String(64), primary_key=True)
+    name = db.Column(db.String(200), nullable=False, default="")
+    ic = db.Column(db.String(40), nullable=False, default="")
+    data = db.Column(db.Text, nullable=False)
+    updated_at = db.Column(db.DateTime(timezone=True), nullable=False, default=lambda: datetime.now(timezone.utc))
+
+
+class ClinicalRecord(db.Model):
+    """A saved visit (confirmed record or draft): note, accepted ICD-11 codes, amendments. Full object as JSON."""
+    __tablename__ = "clinical_record"
+    id = db.Column(db.String(64), primary_key=True)
+    patient_id = db.Column(db.String(64), nullable=False, default="")
+    status = db.Column(db.String(20), nullable=False, default="")
+    record_date = db.Column(db.String(40), nullable=False, default="")
+    data = db.Column(db.Text, nullable=False)
+    updated_at = db.Column(db.DateTime(timezone=True), nullable=False, default=lambda: datetime.now(timezone.utc))
+
+    __table_args__ = (Index("ix_clinical_record_patient", "patient_id"),)
 
 
 def _no_span(code: dict) -> dict:
@@ -161,6 +183,52 @@ def analyze():
         db.session.rollback()
         app.logger.warning("Could not write analysis metrics to database", exc_info=True)
     return jsonify(result)
+
+
+@app.get("/api/data")
+def load_data():
+    """All patients and records, newest records first. `empty` tells the web app to seed its demo data."""
+    patients = [json.loads(row.data) for row in Patient.query.order_by(Patient.name).all()]
+    records = [json.loads(row.data) for row in ClinicalRecord.query.order_by(ClinicalRecord.record_date.desc()).all()]
+    return jsonify({"patients": patients, "records": records, "empty": not patients and not records})
+
+
+@app.put("/api/data")
+def save_data():
+    """Replace the stored patients and records with the web app's current lists (prototype sync, last write wins)."""
+    body = request.get_json(silent=True) or {}
+    patients, records = body.get("patients"), body.get("records")
+    if not isinstance(patients, list) or not isinstance(records, list):
+        return jsonify({"error": "Body must be {\"patients\": [...], \"records\": [...]}."}), 400
+    if any(not isinstance(item, dict) or not str(item.get("id", "")).strip() for item in patients + records):
+        return jsonify({"error": "Every patient and record needs a non-empty id."}), 400
+    now = datetime.now(timezone.utc)
+    try:
+        keep_patients = set()
+        for item in patients:
+            pid = str(item["id"])[:64]
+            keep_patients.add(pid)
+            row = db.session.get(Patient, pid) or Patient(id=pid)
+            row.name, row.ic = str(item.get("name", ""))[:200], str(item.get("ic", ""))[:40]
+            row.data, row.updated_at = json.dumps(item, ensure_ascii=False), now
+            db.session.add(row)
+        keep_records = set()
+        for item in records:
+            rid = str(item["id"])[:64]
+            keep_records.add(rid)
+            row = db.session.get(ClinicalRecord, rid) or ClinicalRecord(id=rid)
+            row.patient_id = str((item.get("patient") or {}).get("id", ""))[:64]
+            row.status, row.record_date = str(item.get("status", ""))[:20], str(item.get("date", ""))[:40]
+            row.data, row.updated_at = json.dumps(item, ensure_ascii=False), now
+            db.session.add(row)
+        Patient.query.filter(Patient.id.notin_(keep_patients or {""})).delete(synchronize_session=False)
+        ClinicalRecord.query.filter(ClinicalRecord.id.notin_(keep_records or {""})).delete(synchronize_session=False)
+        db.session.commit()
+    except Exception:
+        db.session.rollback()
+        app.logger.exception("Could not save patients/records")
+        return jsonify({"error": "Could not save to the database."}), 500
+    return jsonify({"saved": True, "patients": len(keep_patients), "records": len(keep_records)})
 
 
 @app.errorhandler(413)

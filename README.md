@@ -36,7 +36,8 @@ records accurate. NCD patients, the largest groups in primary care (NHMS 2023: 1
    121 common primary-care conditions.
 3. **Tier 2:** search across all ~17,000 ICD-11 diagnosis codes for anything rarer.
 4. **Coding policy:** symptoms that belong to a coded diagnosis are not coded twice (tonsillitis covers sore throat).
-5. **Nurse confirms** every code. The model runs locally (about 9 ms per note) and no note text is stored.
+5. **Nurse confirms** every code. The model runs locally (about 9 ms per note), and the analysis step stores no
+   note text; only records the nurse saves go to the database.
 
 ## Results
 
@@ -87,7 +88,7 @@ click **Cari kod**. The trained model file isn't stored in git, which is why the
 | Path | What |
 |---|---|
 | `src/` | React web app (note page: `src/app/pages/NotePage.tsx`) |
-| `backend/app.py` | Flask API: `/api/analyze`, `/api/icd11/search`, `/api/health` |
+| `backend/app.py` | Flask API: `/api/analyze`, `/api/icd11/search`, `/api/data` (patients and records), `/api/health` |
 | `backend/nlp/` | The NLP engine: normaliser, lexicon rules, catalogue search, coding policy, pipeline |
 | `backend/training/` | Lexicon, datasets, training, evaluation and LLM benchmark scripts |
 | `assets/` | Images used in this README |

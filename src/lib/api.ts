@@ -33,3 +33,25 @@ export async function searchIcd11(query: string, limit = 10): Promise<CatalogueS
   }
   return payload.results;
 }
+
+// Patients and visit records stored by the API's database (see backend/app.py, /api/data).
+export type StoredData<P, R> = { patients: P[]; records: R[]; empty: boolean };
+
+export async function loadStoredData<P, R>(): Promise<StoredData<P, R>> {
+  const response = await fetch(`${API_BASE_URL}/api/data`);
+  if (!response.ok) throw new Error(`Loading records failed (${response.status})`);
+  const payload = (await response.json()) as StoredData<P, R>;
+  if (!Array.isArray(payload.patients) || !Array.isArray(payload.records)) {
+    throw new Error("The records service returned an unexpected response.");
+  }
+  return payload;
+}
+
+export async function saveStoredData<P, R>(patients: P[], records: R[]): Promise<void> {
+  const response = await fetch(`${API_BASE_URL}/api/data`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ patients, records }),
+  });
+  if (!response.ok) throw new Error(`Saving records failed (${response.status})`);
+}

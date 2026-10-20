@@ -134,6 +134,23 @@ Before the pitch: rehearse, record a backup video, and start both servers before
 
 ---
 
+### Where patients and records are saved
+
+Patients, visit records, drafts and amendments are saved to the API's database: an SQLite file at
+`backend/instance/catatkod_dev.db` on the computer running the API. The page footer shows the status:
+
+- *Rekod disimpan dalam pangkalan data*: saved to the database.
+- *Pangkalan data tidak dapat dihubungi…*: the API isn't running; changes are kept in this browser and sent to
+  the database automatically when it's back.
+
+The first time the app connects to an empty database, it fills it with the demo patients. To start over with the
+demo data, stop the API, delete `backend/instance/catatkod_dev.db`, and clear the site's data in your browser. To
+use a hosted PostgreSQL instead, set `DATABASE_URL` in `backend/.env`. Look inside with
+`sqlite3 backend/instance/catatkod_dev.db "select id, status, record_date from clinical_record;"`.
+
+The analysis step (`/api/analyze`) still stores no note text, only a fingerprint and timing. There is no real
+login or access control yet, so only synthetic data belongs in this database.
+
 ## 5. Use the NLP without the web app
 
 **From the terminal** (prints the full JSON result):
@@ -283,6 +300,7 @@ Use a new `--seed` for each new batch and `--style malay` for Malay notes. Then 
 |---|---|
 | `Address already in use` / `Port 5001 is in use` | An old API is still running. Find it: `lsof -iTCP:5001 -sTCP:LISTEN`, then `kill <PID>`. (macOS AirPlay uses port 5000, which is why we use 5001.) |
 | Web app says the API is unreachable | Start the API (section 3); check http://localhost:5001/api/health |
+| Footer says the database is unreachable | Start the API (section 3). Changes made meanwhile are kept in the browser and sent automatically once it's back |
 | Logged out unexpectedly | The prototype login lasts for the browser tab; tick *Kekalkan sesi* when logging in to keep it longer |
 | `"modelLoaded": false` | Run the training commands in section 2, then restart the API |
 | `No LLM API key found` | Create `backend/.env` — exact name `.env`, inside `backend/` (section 2) |

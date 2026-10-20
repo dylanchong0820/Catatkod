@@ -4,7 +4,7 @@ import { Icon, LanguageToggle, type IconName } from "./ui";
 import { useStore } from "./store";
 
 export function AppShell() {
-  const { authenticated, history, language, logout, settings } = useStore();
+  const { authenticated, history, language, logout, settings, syncStatus } = useStore();
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -191,6 +191,14 @@ export function AppShell() {
             {isBm
               ? "Prototaip demo. Bukan sistem rasmi KKM. Data adalah sintetik."
               : "Demo prototype. Not an official MOH system. Data is synthetic."}
+            <span className="ml-2" title={isBm ? "Tempat rekod disimpan" : "Where records are saved"}>
+              ·{" "}
+              {syncStatus === "database"
+                ? isBm ? "Rekod disimpan dalam pangkalan data" : "Records saved to the database"
+                : syncStatus === "offline"
+                  ? isBm ? "Pangkalan data tidak dapat dihubungi: rekod disimpan dalam pelayar ini sahaja" : "Database unreachable: records saved in this browser only"
+                  : isBm ? "Menyambung ke pangkalan data…" : "Connecting to the database…"}
+            </span>
           </footer>
         </div>
       </div>

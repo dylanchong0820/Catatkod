@@ -3,7 +3,7 @@ import { useStore, type Settings } from "../store";
 import { PageHeader } from "../ui";
 
 export function SettingsPage() {
-  const { language, resetDemoData, settings, setSettings } = useStore();
+  const { language, settings, setSettings } = useStore();
   const [form, setForm] = useState<Settings>(settings);
   const [saved, setSaved] = useState(false);
   const isBm = language === "bm";
@@ -98,24 +98,6 @@ export function SettingsPage() {
           {saved && <span className="text-sm font-medium text-[#1F5446]">{isBm ? "Tetapan disimpan" : "Settings saved"}</span>}
         </div>
       </form>
-      <section className="mt-5 rounded border border-[#C9D1CF] bg-white p-5">
-        <h2 className="font-semibold">{isBm ? "Data demo" : "Demo data"}</h2>
-        <p className="mt-2 text-sm leading-6 text-[#52635F]">
-          {isBm
-            ? "Pulihkan semua pesakit dan rekod sintetik kepada keadaan asal."
-            : "Restore all synthetic patients and records to their original state."}
-        </p>
-        <button
-          className="mt-4 h-10 rounded border border-[#9FB0AD] bg-white px-4 text-sm font-semibold text-[#1F5446] hover:bg-[#F1F4F3]"
-          onClick={() => {
-            resetDemoData();
-            setSaved(false);
-          }}
-          type="button"
-        >
-          {isBm ? "Tetapkan semula data demo" : "Reset demo data"}
-        </button>
-      </section>
     </main>
   );
 }

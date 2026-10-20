@@ -79,8 +79,8 @@ In a second terminal, from this folder:
 npx -y pnpm@10.34.3 install && npx -y pnpm@10.34.3 dev   # web app on http://localhost:8443
 ```
 
-Log in with any staff ID and password (prototype login), open a patient, choose **Lawatan baharu**, type a note and
-click **Cari kod**. The trained model file isn't stored in git, which is why the training step comes first.
+Log in with staff ID `0001` and password `1234` (prototype accounts; the full list is in the manual), register a
+patient, choose **Lawatan baharu**, type a note and click **Cari kod**. The trained model file isn't stored in git, which is why the training step comes first.
 
 **Step-by-step guide** (setup, demo, adding codes, retraining, evaluation, troubleshooting): [MANUAL.md](MANUAL.md)
 

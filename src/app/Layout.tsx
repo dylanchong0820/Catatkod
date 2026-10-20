@@ -4,7 +4,7 @@ import { Icon, LanguageToggle, type IconName } from "./ui";
 import { useStore } from "./store";
 
 export function AppShell() {
-  const { authenticated, history, language, logout, settings, syncStatus } = useStore();
+  const { authenticated, currentUser, history, language, logout, settings, syncStatus } = useStore();
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,6 +35,7 @@ export function AppShell() {
 
   const navItems: { to: string; label: string; icon: IconName }[] = [
     { to: "/utama", label: isBm ? "Utama" : "Home", icon: "home" },
+    { to: "/pesakit", label: isBm ? "Pesakit" : "Patients", icon: "users" },
     { to: "/rekod", label: isBm ? "Rekod" : "Records", icon: "history" },
   ];
   const lowerItems: { to: string; label: string; icon: IconName }[] = [
@@ -83,7 +84,7 @@ export function AppShell() {
         <div className="ml-auto flex items-center gap-3 sm:gap-5">
           <LanguageToggle />
           <span className="hidden text-sm text-[#263B37] sm:inline">
-            {settings.displayName}, {isBm ? "Jururawat U29" : "Nurse U29"}
+            {settings.displayName}, {isBm ? currentUser?.roleMs ?? "Jururawat" : currentUser?.roleEn ?? "Nurse"}
           </span>
           <button
             className="text-xs font-semibold text-[#1F5446] underline-offset-2 hover:underline sm:text-sm"
@@ -118,11 +119,7 @@ export function AppShell() {
           </div>
           <nav className="space-y-1">
             {navItems.map((item) => {
-              const isActive = item.to === "/utama"
-                ? location.pathname === "/utama" || location.pathname.startsWith("/pesakit/")
-                : item.to === "/rekod"
-                  ? location.pathname.startsWith("/rekod")
-                  : location.pathname === item.to;
+              const isActive = item.to === "/utama" ? location.pathname === "/utama" : location.pathname.startsWith(item.to);
               return (
                 <div key={item.to}>
                   <NavLink

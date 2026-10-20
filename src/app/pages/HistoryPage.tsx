@@ -521,7 +521,7 @@ export function HistoryDetailPage() {
                   <span className="absolute -left-[27px] top-2 h-3 w-3 rounded-full border-2 border-[#1F5446] bg-white" />
                   <p className="text-sm font-semibold">{isBm ? "Pengesahan asal" : "Original confirmation"}</p>
                   <p className="mt-1 text-xs text-[#52635F]">
-                    {formatAuditDate(record.confirmedAt ?? record.date, language)} · {record.confirmedBy ?? "Nur Aisyah"} · {isBm ? record.confirmedRoleMs ?? "Jururawat" : record.confirmedRoleEn ?? "Nurse"}
+                    {formatAuditDate(record.confirmedAt ?? record.date, language)} · {record.confirmedBy ?? "—"} · {isBm ? record.confirmedRoleMs ?? "Jururawat" : record.confirmedRoleEn ?? "Nurse"}
                   </p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {(record.originalCodes ?? record.codes).filter((code) => !code.removed).map((code) => (

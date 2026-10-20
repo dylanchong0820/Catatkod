@@ -25,8 +25,12 @@ export function LoginPage() {
     setError("");
     setLoading(true);
     window.setTimeout(() => {
-      login(remember);
-      navigate("/utama");
+      if (login(staffId, password, remember)) {
+        navigate("/utama");
+      } else {
+        setLoading(false);
+        setError(isBm ? "ID kakitangan atau kata laluan tidak sah." : "Staff ID or password is incorrect.");
+      }
     }, 600);
   }
 

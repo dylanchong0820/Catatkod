@@ -187,7 +187,7 @@ def analyze():
 
 @app.get("/api/data")
 def load_data():
-    """All patients and records, newest records first. `empty` tells the web app to seed its demo data."""
+    """All patients and records, newest records first. `empty` lets the web app upload anything entered while the API was down."""
     patients = [json.loads(row.data) for row in Patient.query.order_by(Patient.name).all()]
     records = [json.loads(row.data) for row in ClinicalRecord.query.order_by(ClinicalRecord.record_date.desc()).all()]
     return jsonify({"patients": patients, "records": records, "empty": not patients and not records})

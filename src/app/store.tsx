@@ -1,9 +1,10 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { AnalysisResult } from "../lib/analyze";
 import { loadStoredData, saveStoredData } from "../lib/api";
+import { todayIso } from "./identity";
 import {
-  initialHistory,
-  patients as initialPatients,
+  staffAccounts,
+  type StaffAccount,
   type Language,
   type NoteRecord,
   type NoteStatus,
@@ -23,19 +24,20 @@ export type SyncStatus = "connecting" | "database" | "offline";
 
 type AppStore = {
   authenticated: boolean;
+  currentUser: StaffAccount | null;
   syncStatus: SyncStatus;
   language: Language;
   settings: Settings;
-  activePatient: Patient;
+  activePatient: Patient | null;
   patients: Patient[];
   history: NoteRecord[];
-  login: (remember?: boolean) => void;
+  login: (staffId: string, password: string, remember?: boolean) => boolean;
   logout: () => void;
   setLanguage: (language: Language) => void;
   setSettings: (settings: Settings) => void;
   setActivePatient: (patient: Patient) => void;
   addPatient: (patient: Patient) => void;
-  saveNote: (note: string, result: AnalysisResult, status: NoteStatus, draftId?: string) => NoteRecord;
+  saveNote: (patient: Patient, note: string, result: AnalysisResult, status: NoteStatus, draftId?: string) => NoteRecord;
   amendRecord: (
     recordId: string,
     reason: string,
@@ -44,11 +46,23 @@ type AppStore = {
     removed: RecordCode[]
   ) => void;
   deleteDraft: (recordId: string) => void;
-  resetDemoData: () => void;
 };
 
 const StoreContext = createContext<AppStore | null>(null);
-const AUTH_KEY = "catatkod-auth";
+const AUTH_KEY = "catatkod-auth"; // holds the signed-in staff ID
+// Bumped to v7 when the demo patients and records were removed, so browsers drop their old copies.
+const PATIENTS_KEY = "catatkod-patients-v7";
+const HISTORY_KEY = "catatkod-history-v7";
+const ACTIVE_PATIENT_KEY = "catatkod-patient-v7";
+
+function signedInAccount(): StaffAccount | null {
+  try {
+    const id = window.sessionStorage.getItem(AUTH_KEY) ?? window.localStorage.getItem(AUTH_KEY);
+    return staffAccounts.find((account) => account.id === id) ?? null;
+  } catch {
+    return null;
+  }
+}
 
 function load<T>(key: string, fallback: T): T {
   try {
@@ -73,7 +87,7 @@ function normalizeHistory(records: NoteRecord[]): NoteRecord[] {
         ? record.originalCodes ?? codes.map((code) => ({ ...code, removed: false }))
         : undefined,
       confirmedBy: record.status === "Disahkan"
-        ? record.confirmedBy ?? defaultSettings.displayName
+        ? record.confirmedBy ?? ""
         : undefined,
       confirmedAt: record.status === "Disahkan"
         ? record.confirmedAt ?? record.date
@@ -89,32 +103,26 @@ const defaultSettings: Settings = {
   defaultLanguage: "bm",
   textSize: "normal",
   showEvidence: true,
-  displayName: "Nur Aisyah",
+  displayName: "",
 };
 
 export function StoreProvider({ children }: { children: ReactNode }) {
   // Prototype sign-in: kept for the browser tab (survives a refresh), or on this device when "remember" is ticked.
-  const [authenticated, setAuthenticated] = useState(() => {
-    try {
-      return window.sessionStorage.getItem(AUTH_KEY) === "1" || window.localStorage.getItem(AUTH_KEY) === "1";
-    } catch {
-      return false;
-    }
+  const [currentUser, setCurrentUser] = useState<StaffAccount | null>(signedInAccount);
+  const authenticated = currentUser !== null;
+  const [settings, setSettingsState] = useState<Settings>(() => {
+    const saved = load("catatkod-settings", defaultSettings);
+    return { ...saved, displayName: signedInAccount()?.name ?? "" };
   });
-  const [settings, setSettingsState] = useState<Settings>(() =>
-    load("catatkod-settings", defaultSettings)
-  );
   const [language, setLanguageState] = useState<Language>(() =>
     load("catatkod-language", load("catatkod-settings", defaultSettings).defaultLanguage)
   );
-  const [activePatient, setActivePatientState] = useState<Patient>(() =>
-    load("catatkod-patient", initialPatients[0])
+  const [activePatient, setActivePatientState] = useState<Patient | null>(() =>
+    load<Patient | null>(ACTIVE_PATIENT_KEY, null)
   );
-  const [patients, setPatients] = useState<Patient[]>(() =>
-    load("catatkod-patients-v5", initialPatients)
-  );
+  const [patients, setPatients] = useState<Patient[]>(() => load<Patient[]>(PATIENTS_KEY, []));
   const [history, setHistory] = useState<NoteRecord[]>(() =>
-    normalizeHistory(load<NoteRecord[]>("catatkod-history-v5", initialHistory))
+    normalizeHistory(load<NoteRecord[]>(HISTORY_KEY, []))
   );
   const [syncStatus, setSyncStatus] = useState<SyncStatus>("connecting");
   const hydrated = useRef(false);
@@ -124,8 +132,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const changedWhileOffline = useRef(false);
   const [hydratedAt, setHydratedAt] = useState(0); // bumps once loaded, so the first save also seeds an empty database
 
-  // Load patients and records from the API's database once it answers (retrying every 10 s). The first time,
-  // when the database is empty, this browser's data (the demo patients) seeds it.
+  // Load patients and records from the API's database once it answers (retrying every 10 s). When the database is
+  // empty, anything entered in this browser while it was unreachable seeds it.
   useEffect(() => {
     let cancelled = false;
     let timer: number | undefined;
@@ -178,37 +186,43 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [settings]);
 
   useEffect(() => {
-    window.localStorage.setItem("catatkod-patient", JSON.stringify(activePatient));
+    window.localStorage.setItem(ACTIVE_PATIENT_KEY, JSON.stringify(activePatient));
   }, [activePatient]);
 
   useEffect(() => {
-    window.localStorage.setItem("catatkod-history-v5", JSON.stringify(history));
+    window.localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   }, [history]);
 
   useEffect(() => {
-    window.localStorage.setItem("catatkod-patients-v5", JSON.stringify(patients));
+    window.localStorage.setItem(PATIENTS_KEY, JSON.stringify(patients));
   }, [patients]);
 
   const value = useMemo<AppStore>(
     () => ({
       authenticated,
+      currentUser,
       syncStatus,
       language,
       settings,
       activePatient,
       patients,
       history,
-      login: (remember = false) => {
-        setAuthenticated(true);
+      login: (staffId, password, remember = false) => {
+        const account = staffAccounts.find((item) => item.id === staffId.trim() && item.password === password);
+        if (!account) return false;
+        setCurrentUser(account);
+        setSettingsState((current) => ({ ...current, displayName: account.name }));
         try {
-          window.sessionStorage.setItem(AUTH_KEY, "1");
-          if (remember) window.localStorage.setItem(AUTH_KEY, "1");
+          window.sessionStorage.setItem(AUTH_KEY, account.id);
+          if (remember) window.localStorage.setItem(AUTH_KEY, account.id);
         } catch {
           // storage unavailable (private mode): stay signed in for this page only
         }
+        return true;
       },
       logout: () => {
-        setAuthenticated(false);
+        setCurrentUser(null);
+        setSettingsState((current) => ({ ...current, displayName: "" }));
         try {
           window.sessionStorage.removeItem(AUTH_KEY);
           window.localStorage.removeItem(AUTH_KEY);
@@ -223,12 +237,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       },
       setActivePatient: setActivePatientState,
       addPatient: (patient) => setPatients((current) => [...current, patient]),
-      saveNote: (note, result, status, draftId) => {
+      saveNote: (patient, note, result, status, draftId) => {
         const now = new Date().toISOString();
         const record: NoteRecord = {
           id: draftId ?? `record-${Date.now()}`,
           date: now,
-          patient: activePatient,
+          patient,
           note,
           codes: result.codes.map((code) => ({ ...code, origin: "original", removed: false })),
           originalCodes: status === "Disahkan"
@@ -237,18 +251,21 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           negated: result.negated,
           status,
           confirmedBy: status === "Disahkan" ? settings.displayName : undefined,
-          confirmedRoleMs: status === "Disahkan" ? "Jururawat" : undefined,
-          confirmedRoleEn: status === "Disahkan" ? "Nurse" : undefined,
+          confirmedRoleMs: status === "Disahkan" ? currentUser?.roleMs ?? "Jururawat" : undefined,
+          confirmedRoleEn: status === "Disahkan" ? currentUser?.roleEn ?? "Nurse" : undefined,
           confirmedAt: status === "Disahkan" ? now : undefined,
           lastEditedBy: settings.displayName,
-          lastEditedRoleMs: "Jururawat",
-          lastEditedRoleEn: "Nurse",
+          lastEditedRoleMs: currentUser?.roleMs ?? "Jururawat",
+          lastEditedRoleEn: currentUser?.roleEn ?? "Nurse",
           amendments: [],
         };
         setHistory((current) => [
           record,
           ...current.filter((item) => item.id !== draftId),
         ]);
+        const visited = { ...patient, lastVisit: todayIso() };
+        setPatients((current) => current.map((item) => (item.id === patient.id ? visited : item)));
+        setActivePatientState(visited);
         return record;
       },
       amendRecord: (recordId, reason, codes, added, removed) => {
@@ -268,8 +285,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
                     id: `amendment-${Date.now()}`,
                     date: new Date().toISOString(),
                     user: settings.displayName,
-                    roleMs: "Jururawat",
-                    roleEn: "Nurse",
+                    roleMs: currentUser?.roleMs ?? "Jururawat",
+                    roleEn: currentUser?.roleEn ?? "Nurse",
                     reason,
                     added: added.map(({ code, labelMs, labelEn }) => ({ code, labelMs, labelEn })),
                     removed: removed.map(({ code, labelMs, labelEn }) => ({ code, labelMs, labelEn })),
@@ -284,13 +301,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           record.id !== recordId || record.status !== "Draf"
         ));
       },
-      resetDemoData: () => {
-        setPatients(initialPatients);
-        setActivePatientState(initialPatients[0]);
-        setHistory(initialHistory);
-      },
     }),
-    [activePatient, authenticated, history, language, patients, settings, syncStatus]
+    [activePatient, authenticated, currentUser, history, language, patients, settings, syncStatus]
   );
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;

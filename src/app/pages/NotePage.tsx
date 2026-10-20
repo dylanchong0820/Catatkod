@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router";
+import { Navigate, useNavigate, useParams, useSearchParams } from "react-router";
 import { analyzeNote, type AnalysisResult, type CatalogueSuggestion } from "../../lib/analyze";
 import { analyzeNoteWithBackend, searchIcd11 } from "../../lib/api";
 import { useStore } from "../store";
@@ -40,8 +40,8 @@ export function NotePage() {
   const patient = patients.find((item) => item.id === patientId) ?? activePatient;
 
   useEffect(() => {
-    if (patient.id !== activePatient.id) setActivePatient(patient);
-  }, [activePatient.id, patient, setActivePatient]);
+    if (patient && patient.id !== activePatient?.id) setActivePatient(patient);
+  }, [activePatient?.id, patient, setActivePatient]);
 
   async function runAnalysis() {
     if (!note.trim() || searching) return;
@@ -113,13 +113,13 @@ export function NotePage() {
   }
 
   function save(status: "Disahkan" | "Draf") {
-    if (!note.trim()) return;
+    if (!note.trim() || !patient) return;
     const analysis = result ?? analyzeNote(note);
     const filtered = {
       ...analysis,
       codes: analysis.codes.filter((item) => selected.includes(item.id)),
     };
-    saveNote(note, filtered, status, draft?.id);
+    saveNote(patient, note, filtered, status, draft?.id);
     if (status === "Disahkan") {
       navigate(`/pesakit/${patient.id}`, { state: { toast: isBm ? "Rekod disimpan" : "Record saved" } });
     } else {
@@ -129,12 +129,14 @@ export function NotePage() {
 
   const highlightsCurrent = result !== null && analyzedNote === note;
 
+  if (!patient) return <Navigate replace to="/utama" />;
+
   return (
     <>
       <main className="mx-auto max-w-[1440px] px-4 py-5 sm:px-6 lg:px-8">
         <PageHeader
           crumbs={[
-            { label: isBm ? "Utama" : "Home", to: "/utama" },
+            { label: isBm ? "Pesakit" : "Patients", to: "/pesakit" },
             { label: patient.name, to: `/pesakit/${patient.id}` },
             { label: isBm ? "Lawatan baharu" : "New visit" },
           ]}

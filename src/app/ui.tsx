@@ -162,7 +162,7 @@ export function ConfirmationLine({
   return (
     <p className="mt-1 text-xs text-[#52635F]">
       {language === "bm" ? "Disahkan oleh" : "Confirmed by"}{" "}
-      {record.confirmedBy ?? "Nur Aisyah"}, {formatAuditDate(record.confirmedAt, language)}
+      {record.confirmedBy ?? "—"}, {formatAuditDate(record.confirmedAt, language)}
     </p>
   );
 }

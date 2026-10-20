@@ -124,9 +124,22 @@ the new version (the web app reloads by itself).
 
 ## 4. Demo walkthrough
 
-1. **Log in:** any staff ID and password work (e.g. `KKM10248` / `demo`). It's a prototype login. You stay
-   signed in if the page reloads; tick *Kekalkan sesi* to stay signed in after closing the browser too.
-2. On **Utama**, search a patient (e.g. *Ahmad*), open them, click **Lawatan baharu**.
+1. **Log in** with one of the staff accounts (all nurses, password `1234`; prototype accounts kept in
+   `src/app/data.ts`, so never reuse these passwords anywhere real):
+
+   | Staff ID | Name |
+   |---|---|
+   | `0001` | Dylan Chong |
+   | `0002` | Hansen Lee Ming Haw |
+   | `0003` | Ivan Liew Chun Fui |
+   | `0004` | Jordan Voo Yee Fung |
+
+   You stay signed in if the page reloads; tick *Kekalkan sesi* to stay signed in after closing the browser too.
+2. The app starts with no patients. On **Utama**, click **+ Daftar pesakit baharu**: type the name and the IC
+   number (it formats itself as `YYMMDD-PB-####`); the date of birth (DD/MM/YYYY), age and sex are filled in from
+   the IC. An IC that's already registered is refused. Then open the patient and click **Lawatan baharu**.
+   **Pesakit** in the menu lists every registered patient (search by name or IC, with or without dashes);
+   **Rekod** lists every visit.
 3. Type a note in the empty box and click **Cari kod** (or Ctrl + Enter). Good demo note:
    `pt dtg komplen kencing berbuih, kaki bengkak 3 ari, hx kencing manis. takde demam`
 4. Point out:
@@ -151,8 +164,8 @@ Patients, visit records, drafts and amendments are saved to the API's database: 
 - *Pangkalan data tidak dapat dihubungi…*: the API isn't running; changes are kept in this browser and sent to
   the database automatically when it's back.
 
-The first time the app connects to an empty database, it fills it with the demo patients. To start over with the
-demo data, stop the API, delete `backend/instance/catatkod_dev.db`, and clear the site's data in your browser. To
+There is no demo data: the database starts empty and holds only what you enter. To start over, stop the API,
+delete `backend/instance/catatkod_dev.db`, and clear the site's data in your browser. To
 use a hosted PostgreSQL instead, set `DATABASE_URL` in `backend/.env`. Look inside with
 `sqlite3 backend/instance/catatkod_dev.db "select id, status, record_date from clinical_record;"`.
 

@@ -1,5 +1,16 @@
-import { useMemo, useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { useEffect, useMemo, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
+import {
+  ageFrom,
+  birthDateFromIc,
+  formatDateInput,
+  formatDayMonthYear,
+  formatIc,
+  icDigits,
+  parseDayMonthYear,
+  sexFromIc,
+  todayIso,
+} from "../identity";
 import { useStore } from "../store";
 import { Icon } from "../ui";
 
@@ -12,22 +23,28 @@ function formatDate(value: string, language: "bm" | "en", withTime = false) {
   }).format(new Date(value));
 }
 
-const emptyForm = { name: "", ic: "", birthDate: "", sex: "female", allergy: "" };
+// birthDate is typed as DD/MM/YYYY. It and sex are filled in from the IC number until the nurse edits them.
+const emptyForm = { name: "", ic: "", birthDate: "", birthDateFromIc: true, sex: "", sexFromIc: true, allergy: "" };
+type FormErrors = Partial<Record<"name" | "ic" | "birthDate" | "sex", string>>;
 
 export function HomePage() {
   const { addPatient, history, language, patients, settings, setActivePatient } = useStore();
   const navigate = useNavigate();
+  const location = useLocation();
   const [query, setQuery] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [form, setForm] = useState(emptyForm);
+  const [errors, setErrors] = useState<FormErrors>({});
   const isBm = language === "bm";
   const results = useMemo(() => {
     if (!query.trim()) return [];
-    const term = query.toLowerCase();
+    const term = query.trim().toLowerCase();
+    const digits = icDigits(query);
     return patients.filter(
-      (patient) => patient.name.toLowerCase().includes(term) || patient.ic.includes(query)
+      (patient) => patient.name.toLowerCase().includes(term) || (digits.length > 0 && icDigits(patient.ic).includes(digits))
     );
   }, [patients, query]);
+  const birthIso = parseDayMonthYear(form.birthDate);
   const draftCount = history.filter(
     (record) => record.status === "Draf" && record.lastEditedBy === settings.displayName
   ).length;
@@ -37,24 +54,58 @@ export function HomePage() {
     navigate(`/pesakit/${patient.id}`);
   }
 
+  function openRegistration() {
+    setForm(emptyForm);
+    setErrors({});
+    setModalOpen(true);
+  }
+
+  // "Register new patient" on the patient list comes here with { register: true }.
+  useEffect(() => {
+    if (!location.state?.register) return;
+    openRegistration();
+    navigate(location.pathname, { replace: true, state: null });
+  }, [location.pathname, location.state, navigate]);
+
+  function changeIc(value: string) {
+    const ic = formatIc(value);
+    const fromIc = birthDateFromIc(ic);
+    const sex = sexFromIc(ic);
+    setForm((current) => ({
+      ...current,
+      ic,
+      birthDate: current.birthDateFromIc ? (fromIc ? formatDayMonthYear(fromIc) : "") : current.birthDate,
+      sex: current.sexFromIc ? sex ?? "" : current.sex,
+    }));
+    setErrors((current) => ({ ...current, ic: undefined, birthDate: undefined, sex: undefined }));
+  }
+
   function registerPatient(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const birthDate = new Date(form.birthDate);
-    const now = new Date("2026-10-12T12:00:00");
-    let age = now.getFullYear() - birthDate.getFullYear();
-    if (
-      now.getMonth() < birthDate.getMonth() ||
-      (now.getMonth() === birthDate.getMonth() && now.getDate() < birthDate.getDate())
-    ) age -= 1;
-    const digits = form.ic.replace(/\D/g, "");
+    const name = form.name.trim().replace(/\s+/g, " ");
+    const digits = icDigits(form.ic);
+    const next: FormErrors = {};
+    if (!name) next.name = isBm ? "Masukkan nama penuh." : "Enter the full name.";
+    if (digits.length !== 12) {
+      next.ic = isBm ? "No. kad pengenalan mesti 12 digit." : "The identity card no. must be 12 digits.";
+    } else if (!birthDateFromIc(digits)) {
+      next.ic = isBm ? "6 digit pertama bukan tarikh lahir yang sah." : "The first 6 digits aren't a valid birth date.";
+    } else if (patients.some((patient) => icDigits(patient.ic) === digits)) {
+      next.ic = isBm ? "Pesakit dengan no. kad pengenalan ini sudah didaftarkan." : "A patient with this identity card no. is already registered.";
+    }
+    if (!birthIso) next.birthDate = isBm ? "Masukkan tarikh lahir yang sah (HH/BB/TTTT)." : "Enter a valid date of birth (DD/MM/YYYY).";
+    if (!form.sex) next.sex = isBm ? "Pilih jantina." : "Choose the sex.";
+    setErrors(next);
+    if (Object.keys(next).length > 0 || !birthIso) return;
     const patient = {
       id: `patient-${Date.now()}`,
-      name: form.name,
-      age: Math.max(0, age),
+      name,
+      age: ageFrom(birthIso),
+      birthDate: birthIso,
       sexMs: form.sex === "male" ? "Lelaki" : "Perempuan",
       sexEn: form.sex === "male" ? "Male" : "Female",
-      ic: `${digits.slice(0, 6).padEnd(6, "0")}-${digits.slice(6, 8).padEnd(2, "0")}-${digits.slice(8, 12).padEnd(4, "0")}`,
-      lastVisit: "2026-10-12",
+      ic: formatIc(digits),
+      lastVisit: todayIso(),
       allergiesMs: form.allergy.trim() || "Tiada diketahui",
       allergiesEn: form.allergy.trim() || "None known",
     };
@@ -120,7 +171,7 @@ export function HomePage() {
             </div>
             <button
               className="mt-3 text-sm font-semibold text-[#1F5446] hover:underline"
-              onClick={() => setModalOpen(true)}
+              onClick={openRegistration}
             >
               + {isBm ? "Daftar pesakit baharu" : "Register new patient"}
             </button>
@@ -143,30 +194,51 @@ export function HomePage() {
                 <Icon name="close" size={18} />
               </button>
             </div>
-            <form onSubmit={registerPatient}>
+            <form noValidate onSubmit={registerPatient}>
               <div className="grid gap-5 p-5 sm:grid-cols-2">
                 <label className="sm:col-span-2">
                   <span className="mb-2 block text-sm font-semibold">{isBm ? "Nama penuh" : "Full name"}</span>
-                  <input autoFocus className="h-10 w-full rounded border border-[#9FB0AD] px-3 text-sm" required value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} />
+                  <input aria-invalid={Boolean(errors.name)} autoFocus className={fieldClass(errors.name)} value={form.name} onChange={(event) => { setForm({ ...form, name: event.target.value }); setErrors({ ...errors, name: undefined }); }} />
+                  <FieldError message={errors.name} />
                 </label>
                 <label>
                   <span className="mb-2 block text-sm font-semibold">{isBm ? "No. kad pengenalan" : "Identity card no."}</span>
-                  <input className="h-10 w-full rounded border border-[#9FB0AD] px-3 text-sm" required value={form.ic} onChange={(event) => setForm({ ...form, ic: event.target.value })} />
+                  <input aria-invalid={Boolean(errors.ic)} className={`${fieldClass(errors.ic)} font-mono`} inputMode="numeric" placeholder="890512-10-5678" value={form.ic} onChange={(event) => changeIc(event.target.value)} />
+                  <FieldError message={errors.ic} />
                 </label>
                 <label>
                   <span className="mb-2 block text-sm font-semibold">{isBm ? "Tarikh lahir" : "Date of birth"}</span>
-                  <input className="h-10 w-full rounded border border-[#9FB0AD] px-3 text-sm" required type="date" value={form.birthDate} onChange={(event) => setForm({ ...form, birthDate: event.target.value })} />
+                  <input
+                    aria-invalid={Boolean(errors.birthDate)}
+                    className={fieldClass(errors.birthDate)}
+                    inputMode="numeric"
+                    placeholder={isBm ? "HH/BB/TTTT" : "DD/MM/YYYY"}
+                    value={form.birthDate}
+                    onChange={(event) => {
+                      setForm({ ...form, birthDate: formatDateInput(event.target.value), birthDateFromIc: false });
+                      setErrors({ ...errors, birthDate: undefined });
+                    }}
+                  />
+                  {errors.birthDate ? <FieldError message={errors.birthDate} /> : (
+                    <span className="mt-1 block text-xs text-[#52635F]">
+                      {birthIso
+                        ? `${ageFrom(birthIso)} ${isBm ? "tahun" : "years old"}${form.birthDateFromIc ? (isBm ? " · daripada no. kad pengenalan" : " · from the identity card no.") : ""}`
+                        : isBm ? "Diisi daripada no. kad pengenalan." : "Filled in from the identity card no."}
+                    </span>
+                  )}
                 </label>
                 <label>
                   <span className="mb-2 block text-sm font-semibold">{isBm ? "Jantina" : "Sex"}</span>
-                  <select className="h-10 w-full rounded border border-[#9FB0AD] bg-white px-3 text-sm" value={form.sex} onChange={(event) => setForm({ ...form, sex: event.target.value })}>
+                  <select aria-invalid={Boolean(errors.sex)} className={`${fieldClass(errors.sex)} bg-white`} value={form.sex} onChange={(event) => { setForm({ ...form, sex: event.target.value, sexFromIc: false }); setErrors({ ...errors, sex: undefined }); }}>
+                    <option disabled value="">{isBm ? "Pilih" : "Choose"}</option>
                     <option value="female">{isBm ? "Perempuan" : "Female"}</option>
                     <option value="male">{isBm ? "Lelaki" : "Male"}</option>
                   </select>
+                  <FieldError message={errors.sex} />
                 </label>
                 <label>
                   <span className="mb-2 block text-sm font-semibold">{isBm ? "Alergi (pilihan)" : "Allergy (optional)"}</span>
-                  <input className="h-10 w-full rounded border border-[#9FB0AD] px-3 text-sm" value={form.allergy} onChange={(event) => setForm({ ...form, allergy: event.target.value })} />
+                  <input className={fieldClass()} placeholder={isBm ? "cth. Penisilin" : "e.g. Penicillin"} value={form.allergy} onChange={(event) => setForm({ ...form, allergy: event.target.value })} />
                 </label>
               </div>
               <div className="flex justify-end gap-3 border-t border-[#DCE3E1] px-5 py-4">
@@ -181,4 +253,15 @@ export function HomePage() {
       )}
     </>
   );
+}
+
+function fieldClass(error?: string) {
+  return `h-10 w-full rounded border px-3 text-sm outline-none focus:ring-2 ${
+    error ? "border-[#B42318] focus:ring-[#B42318]/20" : "border-[#9FB0AD] focus:border-[#1F5446] focus:ring-[#1F5446]/20"
+  }`;
+}
+
+function FieldError({ message }: { message?: string }) {
+  if (!message) return null;
+  return <span className="mt-1 block text-xs font-medium text-[#B42318]">{message}</span>;
 }

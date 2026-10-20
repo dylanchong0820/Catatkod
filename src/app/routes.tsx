@@ -6,7 +6,7 @@ import { DraftsPage, HistoryDetailPage, HistoryPage } from "./pages/HistoryPage"
 import { HomePage } from "./pages/HomePage";
 import { LoginPage } from "./pages/LoginPage";
 import { NotePage } from "./pages/NotePage";
-import { PatientPage } from "./pages/PatientsPage";
+import { PatientListPage, PatientPage } from "./pages/PatientsPage";
 import { SettingsPage } from "./pages/SettingsPage";
 
 function Root() {
@@ -33,6 +33,7 @@ export const router = createBrowserRouter([
         Component: AppShell,
         children: [
           { path: "utama", Component: HomePage },
+          { path: "pesakit", Component: PatientListPage },
           { path: "pesakit/:patientId", Component: PatientPage },
           { path: "pesakit/:patientId/lawatan-baharu", Component: NotePage },
           { path: "rekod", Component: HistoryPage },

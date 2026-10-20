@@ -118,8 +118,8 @@ the new version (the web app reloads by itself).
 
 ## 4. Demo walkthrough
 
-1. **Log in:** any staff ID and password work (e.g. `KKM10248` / `demo`). It's a prototype login.
-   *Reloading the page logs you out*, so move around using the app's own links, not the address bar.
+1. **Log in:** any staff ID and password work (e.g. `KKM10248` / `demo`). It's a prototype login. You stay
+   signed in if the page reloads; tick *Kekalkan sesi* to stay signed in after closing the browser too.
 2. On **Utama**, search a patient (e.g. *Ahmad*), open them, click **Lawatan baharu**.
 3. Clear the box (**Kosongkan**), type a note, click **Cari kod** (or Ctrl + Enter). Good demo note:
    `pt dtg komplen kencing berbuih, kaki bengkak 3 ari, hx kencing manis. takde demam`
@@ -279,7 +279,12 @@ cd backend
 notes with a missing finding are skipped automatically by `build_dataset.py` (their labels would be wrong).
 Use a new `--seed` for each new batch and `--style malay` for Malay notes. Then rebuild and retrain (section 6).
 
-## 11. Regenerate the slide plan PDF
+## 11. Pitch materials
+
+- **Slide deck:** the CatatKod Pitch Deck artifact on claude.ai; its source is backed up in `docs/pitch_deck/`.
+- **Slide plan and Q&A:** `docs/CatatKod_slide_plan.pdf`.
+
+### Regenerate the slide plan PDF
 
 ```bash
 cd backend
@@ -297,7 +302,7 @@ Edit the text inside `docs/make_slide_plan.py`, then rerun.
 |---|---|
 | `Address already in use` / `Port 5001 is in use` | An old API is still running. Find it: `lsof -iTCP:5001 -sTCP:LISTEN`, then `kill <PID>`. (macOS AirPlay uses port 5000, which is why we use 5001.) |
 | Web app says the API is unreachable | Start the API (section 3); check http://localhost:5001/api/health |
-| Logged out after refreshing the page | Prototype login isn't saved; log in again and navigate with in-app links |
+| Logged out unexpectedly | The prototype login lasts for the browser tab; tick *Kekalkan sesi* when logging in to keep it longer |
 | `"modelLoaded": false` | Run the training commands in section 2, then restart the API |
 | `No LLM API key found` | Create `backend/.env` — exact name `.env`, inside `backend/` (section 2) |
 | Gemini `HTTP 429 … quota` | Free daily quota used up; wait ~24 h or enable billing |

@@ -1,0 +1,18 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-20T02:09:17Z"},
+  "lists": "css",
+  "title": "CatatKod — CodeFest '26 HealthTech",
+  "order": ["cover", "problem", "burden", "hard", "demo", "pipeline", "ownnlp", "results", "honest", "safety", "business", "close"],
+  "sections": {
+    "s1": {"description": "Why clinic coding is a problem worth solving now", "start": "cover"},
+    "s2": {"description": "What CatatKod does, live", "start": "hard"},
+    "s3": {"description": "How it works and how well", "start": "pipeline"},
+    "s4": {"description": "Trust, business model and the ask", "start": "safety"}
+  },
+  "faces": {
+    "domine": {"family": "Domine", "href": "https://fonts.googleapis.com/css2?family=Domine:wght@500..700&display=swap"},
+    "public-sans": {"family": "Public Sans", "href": "https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap"}
+  },
+  "designSystems": []
+}

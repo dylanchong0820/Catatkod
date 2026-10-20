@@ -8,6 +8,7 @@ export function LoginPage() {
   const navigate = useNavigate();
   const [staffId, setStaffId] = useState("");
   const [password, setPassword] = useState("");
+  const [remember, setRemember] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -24,7 +25,7 @@ export function LoginPage() {
     setError("");
     setLoading(true);
     window.setTimeout(() => {
-      login();
+      login(remember);
       navigate("/utama");
     }, 600);
   }
@@ -93,7 +94,7 @@ export function LoginPage() {
               {error && <p className="mt-2 text-xs font-semibold text-[#B42318]">{error}</p>}
             </div>
             <label className="flex items-center gap-2 text-sm font-medium text-[#263B37]">
-              <input className="h-4 w-4 accent-[#0B5345]" type="checkbox" />
+              <input checked={remember} className="h-4 w-4 accent-[#0B5345]" onChange={(event) => setRemember(event.target.checked)} type="checkbox" />
               {isBm ? "Kekalkan sesi pada peranti ini" : "Keep me signed in on this device"}
             </label>
             <button

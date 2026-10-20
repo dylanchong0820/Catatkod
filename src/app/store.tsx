@@ -24,7 +24,7 @@ type AppStore = {
   activePatient: Patient;
   patients: Patient[];
   history: NoteRecord[];
-  login: () => void;
+  login: (remember?: boolean) => void;
   logout: () => void;
   setLanguage: (language: Language) => void;
   setSettings: (settings: Settings) => void;
@@ -43,6 +43,7 @@ type AppStore = {
 };
 
 const StoreContext = createContext<AppStore | null>(null);
+const AUTH_KEY = "catatkod-auth";
 
 function load<T>(key: string, fallback: T): T {
   try {
@@ -61,7 +62,14 @@ const defaultSettings: Settings = {
 };
 
 export function StoreProvider({ children }: { children: ReactNode }) {
-  const [authenticated, setAuthenticated] = useState(false);
+  // Prototype sign-in: kept for the browser tab (survives a refresh), or on this device when "remember" is ticked.
+  const [authenticated, setAuthenticated] = useState(() => {
+    try {
+      return window.sessionStorage.getItem(AUTH_KEY) === "1" || window.localStorage.getItem(AUTH_KEY) === "1";
+    } catch {
+      return false;
+    }
+  });
   const [settings, setSettingsState] = useState<Settings>(() =>
     load("catatkod-settings", defaultSettings)
   );
@@ -128,8 +136,24 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       activePatient,
       patients,
       history,
-      login: () => setAuthenticated(true),
-      logout: () => setAuthenticated(false),
+      login: (remember = false) => {
+        setAuthenticated(true);
+        try {
+          window.sessionStorage.setItem(AUTH_KEY, "1");
+          if (remember) window.localStorage.setItem(AUTH_KEY, "1");
+        } catch {
+          // storage unavailable (private mode): stay signed in for this page only
+        }
+      },
+      logout: () => {
+        setAuthenticated(false);
+        try {
+          window.sessionStorage.removeItem(AUTH_KEY);
+          window.localStorage.removeItem(AUTH_KEY);
+        } catch {
+          // nothing stored
+        }
+      },
       setLanguage: setLanguageState,
       setSettings: (next) => {
         setSettingsState(next);

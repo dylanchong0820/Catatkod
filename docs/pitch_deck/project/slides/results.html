@@ -1,0 +1,25 @@
+<section id="results" data-transition="fade" style="background:#F6F4EE;color:#1B2420;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9A6B12">Results</p>
+<h2 style="font-family:'Domine', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#173B2D">0.96 vs 0.04 against a 120B AI model</h2>
+<div style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;gap:32px;align-items:center">
+<p style="width:560px;font-size:32px;font-weight:700;line-height:1.2;color:#173B2D">CatatKod</p>
+<div style="flex:1;display:flex;align-items:center;gap:24px"><div style="width:920px;height:56px;background:#173B2D;border-radius:8px"></div><p style="font-size:44px;font-weight:700;color:#173B2D">0.96</p></div>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="width:560px;font-size:32px;line-height:1.2;color:#3F4B45">Keyword matching</p>
+<div style="flex:1;display:flex;align-items:center;gap:24px"><div style="width:835px;height:56px;background:#9AAFA4;border-radius:8px"></div><p style="font-size:44px;color:#3F4B45">0.87</p></div>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="width:560px;font-size:32px;line-height:1.2;color:#3F4B45">SEA-LION 120B, given our code list</p>
+<div style="flex:1;display:flex;align-items:center;gap:24px"><div style="width:624px;height:56px;background:#C98F1E;border-radius:8px"></div><p style="font-size:44px;color:#3F4B45">0.65</p></div>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="width:560px;font-size:32px;line-height:1.2;color:#3F4B45">SEA-LION 120B, asked directly</p>
+<div style="flex:1;display:flex;align-items:center;gap:24px"><div style="width:38px;height:56px;background:#C98F1E;border-radius:8px"></div><p style="font-size:44px;color:#3F4B45">0.04</p></div>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#3F4B45;width:1600px">F1 score: how many codes it gets right, balancing wrong suggestions and missed codes (1.0 = perfect). Asked directly, SEA-LION invented 54 codes that don’t exist.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5E6B64">105 held-out test notes, never used in training · SEA-LION v4.8 120B (AI Singapore) · synthetic data, not clinically validated</p>
+<aside>We benchmarked against SEA-LION, the largest model built specifically for Southeast Asian languages. Asked for ICD-11 codes directly, it scores 0.04: most of its codes are wrong, and 54 don’t even exist. Even when we hand it our list of codes, it reaches 0.65. CatatKod scores 0.96. F1 balances wrong suggestions against missed codes; 1.0 is perfect.</aside>
+</section>

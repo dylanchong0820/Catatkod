@@ -284,6 +284,7 @@ export function HistoryDetailPage() {
   });
 
   function startEditing() {
+    if (!record) return;
     setEditableCodes(record.codes.map((code) => ({ ...code })));
     setReason("");
     setPassword("");

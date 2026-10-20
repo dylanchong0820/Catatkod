@@ -76,7 +76,8 @@ export function AppShell() {
         >
           <Icon name="menu" size={20} />
         </button>
-        <div className="text-[22px] font-extrabold leading-none tracking-[-0.01em] text-[#1F5446]">
+        <div className="flex items-center gap-2 text-[22px] font-extrabold leading-none tracking-[-0.01em] text-[#1F5446]">
+          <img alt="" className="h-8 w-8" src="/favicon.svg" />
           CatatKod
         </div>
         <div className="ml-auto flex items-center gap-3 sm:gap-5">
@@ -197,7 +198,10 @@ export function AppShell() {
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#EAF1F0] px-4 py-8">
           <main className="w-full max-w-[440px] rounded border border-[#C9D1CF] bg-white p-6 sm:p-8">
             <div className="mb-6 flex items-center justify-between gap-4">
-              <div className="text-[24px] font-extrabold leading-none tracking-[-0.01em] text-[#1F5446]">CatatKod</div>
+              <div className="flex items-center gap-2 text-[24px] font-extrabold leading-none tracking-[-0.01em] text-[#1F5446]">
+                <img alt="" className="h-8 w-8" src="/favicon.svg" />
+                CatatKod
+              </div>
               <LanguageToggle />
             </div>
             <h1 className="text-xl font-bold tracking-[-0.02em]">

@@ -37,7 +37,8 @@ export function LoginPage() {
       </div>
       <div className="w-full max-w-[420px]">
         <main className="rounded-lg border border-[#C9D1CF] bg-white px-6 py-8 sm:px-8 sm:py-9">
-          <div className="mb-9 text-[40px] font-extrabold leading-none tracking-[-0.02em] text-[#0B5345] sm:text-[44px]">
+          <div className="mb-9 flex items-center gap-3 text-[40px] font-extrabold leading-none tracking-[-0.02em] text-[#0B5345] sm:text-[44px]">
+            <img alt="" className="h-12 w-12" src="/favicon.svg" />
             CatatKod
           </div>
           <h1 className="mb-6 text-[22px] font-bold tracking-[-0.02em]">

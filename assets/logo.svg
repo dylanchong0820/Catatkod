@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="CatatKod">
+  <title>CatatKod</title>
+  <rect width="120" height="120" rx="26" fill="#0B5345"/>
+  <path d="M34 24H72L88 40V96H34Z" fill="#F6F4EE"/>
+  <path d="M72 24V40H88Z" fill="#B9CCC3"/>
+  <rect x="44" y="50" width="34" height="6" rx="3" fill="#0B5345" fill-opacity="0.35"/>
+  <rect x="44" y="63" width="24" height="6" rx="3" fill="#0B5345" fill-opacity="0.35"/>
+  <circle cx="86" cy="88" r="21" fill="#E2A93B" stroke="#0B5345" stroke-width="5"/>
+  <path d="M76 88L84 96L97 81" fill="none" stroke="#0B5345" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

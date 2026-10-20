@@ -1,3 +1,5 @@
+<img src="assets/logo.svg" alt="CatatKod logo: a clinical note with an amber check mark" width="88">
+
 # CatatKod
 
 **Tulis macam biasa. Kod ICD-11 siap.** Write as usual, ICD-11 codes ready.

@@ -1,5 +1,6 @@
 {
-  "description": "Streamline clinical note coding by converting Malay shorthand into accurate ICD-10 codes, helping Malaysian nurses and doctors save time and improve accuracy.",
+  "title": "CatatKod",
+  "description": "Turns Malaysian clinic notes, in colloquial Malay, English or both, into suggested ICD-11 codes for nurses to confirm.",
   "robots": {
     "index": false
   },
